@@ -1,0 +1,2199 @@
+
+/* --- Fonts --- */
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: http://www.fontspring.com/licenses/fontsite/webfont
+ *
+ *
+ */
+
+
+/*
+RysLatinModernMono is a font face derived from Latin Modern, originally
+produced by GUST (http://www.gust.org.pl/projects/e-foundry/latin-modern) and
+released under the GUST Font License. The full license text can be found in
+fonts/GUSTFontLicense.txt.
+*/
+@font-face {
+	font-family: 'RysLatinModernMono';
+	src: url('../fonts/RysLatinModernMono.eot');
+	src: url('../fonts/RysLatinModernMono.eot?') format('embedded-opentype'),
+		   url('../fonts/RysLatinModernMono.woff') format('woff'),
+		   url('../fonts/RysLatinModernMono.ttf') format('truetype'),
+		   url('../fonts/RysLatinModernMono.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('../fonts/CenturySchoolbook-Bold-webfont.eot');
+    src: url('../fonts/CenturySchoolbook-Bold-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/CenturySchoolbook-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/CenturySchoolbook-Bold-webfont.woff') format('woff'),
+         url('../fonts/CenturySchoolbook-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/CenturySchoolbook-Bold-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('../fonts/CenturySchoolbook-Italic-webfont.eot');
+    src: url('../fonts/CenturySchoolbook-Italic-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/CenturySchoolbook-Italic-webfont.woff2') format('woff2'),
+         url('../fonts/CenturySchoolbook-Italic-webfont.woff') format('woff'),
+         url('../fonts/CenturySchoolbook-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/CenturySchoolbook-Italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('../fonts/CenturySchoolbook-Regular-webfont.eot');
+    src: url('../fonts/CenturySchoolbook-Regular-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/CenturySchoolbook-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/CenturySchoolbook-Regular-webfont.woff') format('woff'),
+         url('../fonts/CenturySchoolbook-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/CenturySchoolbook-Regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Harman Retro';
+    src: url('../fonts/Harman-Retro-webfont.eot');
+    src: url('../fonts/Harman-Retro-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/Harman-Retro-webfont.woff2') format('woff2'),
+         url('../fonts/Harman-Retro-webfont.woff') format('woff'),
+         url('../fonts/Harman-Retro-webfont.ttf') format('truetype'),
+         url('../fonts/Harman-Retro-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Harman Simple';
+    src: url('../fonts/Harman-Simple-webfont.eot');
+    src: url('../fonts/Harman-Simple-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/Harman-Simple-webfont.woff2') format('woff2'),
+         url('../fonts/Harman-Simple-webfont.woff') format('woff'),
+         url('../fonts/Harman-Simple-webfont.ttf') format('truetype'),
+         url('../fonts/Harman-Simple-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Harman Sans';
+    src: url('../fonts/Harman-Sans-webfont.eot');
+    src: url('../fonts/Harman-Sans-webfont.eot?') format('embedded-opentype'),
+         url('../fonts/Harman-Sans-webfont.woff2') format('woff2'),
+         url('../fonts/Harman-Sans-webfont.woff') format('woff'),
+         url('../fonts/Harman-Sans-webfont.ttf') format('truetype'),
+         url('../fonts/Harman-Sans-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article, section, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.6em;
+
+  font-family: 'Century';
+  color: #5D6063;
+
+  background-color: #FFFFFF;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  min-width: 320px;
+
+  position: relative;
+  z-index: 1;
+}
+
+a:link {
+  color: #5995DA;
+  text-decoration: none;
+}
+a:visited {
+  color: #407FC7;
+}
+a:hover,
+a:visited:hover {
+  color: #76AEED;
+  border-bottom: 1px solid #76AEED;
+}
+a:active,
+a:visited:active {
+  color: #5995DA;
+}
+
+code {
+  color: #7E8184;
+}
+
+a:link code,
+a:visited code,
+a:hover code,
+a:visited:hover code,
+a:active code,
+a:visited:active code {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+
+.page {
+  /* Gradient page background */
+  background-color: #F9FAFB;
+  background: -webkit-linear-gradient(bottom, #F9FAFB 0%, #FFFFFF 100%);
+  background: linear-gradient(to top, #F9FAFB 0%, #FFFFFF 100%);
+  background-repeat: no-repeat;
+
+  /* Need these so the .subheading rule shows */
+  position: relative;
+  z-index: -100;
+
+  overflow: hidden;
+  /* This top margin should match .main-nav height */
+  margin-top: 40px;
+}
+
+
+
+/* TODO: CHECK THIS FOR REFACTORING */
+
+.main-nav {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'Harman Simple';
+  color: #5D6063;
+  background-color: #FFFFFF;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  box-shadow: 0 2px 0 rgba(93, 96, 99, .1);
+  /*border-bottom: $border;*/
+  
+  width: 100%;
+  height: 40px;
+  padding: 0 13px;
+
+  display: -webkit-box;
+
+  display: -webkit-flex;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav__branding {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav__logo {
+  width: 30px; /* Need this for iOS 10 rendering bug */
+  height: 24px;
+  margin-right: 13px;
+
+  position: relative;
+  top: 3px;
+}
+
+.main-nav__logo-link:visited:hover,
+.main-nav__logo-link:hover {
+  border-bottom: none;
+}
+
+.main-nav__name {
+  position: relative;
+  top: 1px;
+}
+
+.main-nav__html-css {
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+/* --- Heading --- */
+
+.heading__title {
+  font-family: 'Harman Retro';
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 40px;
+  text-transform: lowercase;
+}
+
+/* This chapter needs smaller font size */
+
+.heading__title--success {
+  color: #5995DA;
+}
+
+.heading__title--error {
+  color: #D55C5F;
+}
+
+
+.heading__parenthesis {
+  font-family: 'Harman Simple';
+  font-weight: normal;
+}
+
+.heading__parenthesis-rule {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heading__rule-after {
+  border-top: 1px solid #959BA0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: 10px;
+  margin-left: 12px;
+}
+
+.heading__rule-before {
+  border-top: 1px solid #959BA0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: 10px;
+  margin-right: 12px;
+}
+
+.heading__subtitle {
+  font-family: 'Century';
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* --- End Heading --- */
+
+
+/* --- Subheading --- */
+
+.subheading {
+  text-align: center;
+}
+
+.subheading__heading {
+  font-family: 'Harman Retro';
+  font-size: 31px;
+  line-height: 41px;
+  text-transform: lowercase;
+  display: inline;
+}
+
+.subheading__heading span {
+  background-color: #FFFFFF;
+
+  /* Clever trick for padding each line of text */
+  /* This color needs to change based on background (JS in base.html) */
+  box-shadow: 11px 0 0 #FFFFFF, -13px 0 0 #FFFFFF;
+
+  /* For Firefox */
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.subheading__heading:after {
+  content: '';
+  border-top: 1px solid #959BA0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: -21px;
+  z-index: -1;
+}
+
+.subheading__desktop-title-br {
+  display: none;
+}
+
+/* --- End Subheading --- */
+
+
+
+
+/* --- Subsubheading --- */
+
+.subsubheading__heading {
+  font-family: 'Harman Sans';
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: lowercase;
+}
+
+/* --- End Subsubheading --- */
+
+
+/* --- Subsubheading --- */
+
+.subsubsubheading__heading {
+  font-family: 'Harman Sans';
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: lowercase;
+}
+
+/* --- End Subsubheading --- */
+
+
+
+/* --- Page Header --- */
+
+.page-header {
+  border-bottom: 1px solid #EAEDF0;
+}
+
+/* --- End Page Header --- */
+
+
+/* --- Home Page Header --- */
+
+.home-page-header {
+  border-bottom: 1px solid #EAEDF0;
+}
+
+.home-page-header__logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.home-page-header__tutorial-icon {
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.home-page-header__description {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* --- End Home Page Header --- */
+
+
+/* --- Tutorial Icon --- */
+
+.tutorial-icon {
+  width: 165px;
+  text-align: center;
+}
+
+.tutorial-icon__link:link, .tutorial-icon__link:visited, .tutorial-icon__link:hover, .tutorial-icon__link:visited:hover {
+	color: #5D6063;
+	border-bottom: none;
+}
+
+.tutorial-icon__link:hover .tutorial-icon__title,
+    .tutorial-icon__link:hover .tutorial-icon__start-here,
+    .tutorial-icon__link:visited:hover .tutorial-icon__title,
+    .tutorial-icon__link:visited:hover .tutorial-icon__start-here {
+	border-bottom: 1px solid #5D6063;
+}
+
+.tutorial-icon__title {
+  display: inline-block;
+  font-family: 'Harman Sans';
+  font-size: 22px;
+  margin-left: 10px;
+  line-height: .9;
+}
+
+.tutorial-icon__start-here {
+  display: inline-block;
+  font-family: 'Harman Simple';
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 1;
+}
+
+/* --- End Tutorial Icon --- */
+
+
+
+/* --- Content --- */
+
+.content {
+  border-bottom: 1px solid #EAEDF0;
+}
+
+.content--open {
+  border-bottom: none;
+}
+
+.content__wrapper {
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Need padding-bottom to simulate bottom padding on last item */
+
+/* Need padding-top to simulate bottom padding on previous item */
+
+.content__wrapper > *,
+.content__between > * {
+  /* Get even spacing between content items without explicit classes */
+  /* Use .content__between on any container that needs the spacing between, but
+   * isn't a direct child of .content__wrapper */
+  margin-bottom: 26px;
+}
+
+.content__wrapper > .content__subsubheading {
+  margin-top: 48px;
+  margin-bottom: 2px;
+}
+
+.content__wrapper > .content__subsubsubheading {
+  margin-top: 48px;
+  margin-bottom: 2px;
+}
+
+.content__wrapper > *:last-child,
+.content__between > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Standard behavior for plain elements in .content to avoid unnecessary
+ * classes */
+
+.content__between > ol,
+.content__wrapper > ol,
+.content__between > ul,
+.content__wrapper > ul {
+  margin-left: 1.3em;
+}
+
+.content__between > .diagram,
+.content__wrapper > .diagram,
+.content__between > figure,
+.content__wrapper > figure,
+.content__between > video,
+.content__wrapper > video {
+  /* Requires style='max-width: <whatever>' on the element */
+  width: 100%;
+}
+
+.content__wrapper > video {
+  -o-object-fit: inherit;
+     object-fit: inherit; /* To fix initial size flash */
+}
+
+.content__between > figure,
+.content__wrapper > figure,
+.content__between > .diagram,
+.content__wrapper > .diagram {
+  /* Kill between paddings in <figure> element because diagrams have their own
+   * padding in the image itself */
+  margin-top: -14px;
+  margin-bottom: 13px;
+}
+
+.content__between > figure > img,
+.content__wrapper > figure > img {
+  /* Want to keep this to be able to have unclassed <figure> and <img>
+   * elements*/
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.diagram__wrapper {
+  /* This does some nifty padding trickery to avoid re-flows */
+  /* This requires a style='max-width: <whatever>px'  on the element */
+  margin: 0 auto;
+}
+
+.diagram__padding {
+  /* This requires a style='padding-bottom: aspectRatio' on the element */
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.diagram__image {
+  /* Diagrams require width, height, and style='max-width: <whatever>px' */
+  /* This is used with {% diagram %} */
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+
+.content__wrapper > table {
+  width: 100%;
+  text-align: left;
+}
+
+.content__wrapper > table th {
+  font-family: 'Harman Sans';
+  font-weight: normal;
+}
+
+.content__wrapper > table td,
+.content__wrapper > table th {
+  font-size: 14px;
+  padding: 5px 10px 5px 0;
+  line-height: 1.4em;
+}
+
+.content__wrapper > table td:last-of-type,
+.content__wrapper > table th:last-of-type {
+  padding-right: 0;
+}
+
+
+/* --- End Content --- */
+
+
+
+/* FINISH HERE: REFACTORING. FINISH HEADER. FIGURE OUT LINK STYLING. */
+
+
+
+
+
+
+
+
+
+.header {
+  border-bottom: 1px solid #EAEDF0;
+}
+
+.header__title {
+  font-family: 'Harman Retro';
+  font-weight: normal;
+}
+
+.header__parenthesis {
+  font-family: 'Harman Simple';
+  font-weight: normal;
+}
+
+.header__parenthesis-rule {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__rule-after {
+  border-top: 1px solid #959BA0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: 10px;
+  margin-left: 12px;
+}
+
+.header__rule-before {
+  border-top: 1px solid #959BA0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: 10px;
+  margin-right: 12px;
+}
+
+.header__subtitle {
+  font-family: 'Century';
+  font-style: italic;
+}
+
+.chapter {
+  border-bottom: 1px solid #EAEDF0;
+}
+
+/* Make the chapter alignment alternate in mobile layout */
+
+.chapter__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chapter__link {
+  display: inline-block;
+  padding-bottom: 1px;
+}
+
+.chapter__link:link {
+	color: #5D6063;
+}
+
+.chapter__link:visited {
+	color: #5D6063;
+}
+
+.chapter__link:hover {
+	color: #5D6063;
+	border-bottom: 1px solid black;
+	padding-bottom: 0;
+}
+
+.chapter__link:visited:hover {
+	color: #5D6063;
+	border-bottom: 1px solid black;
+	padding-bottom: 0;
+}
+  
+.chapter__heading {
+  font-family: 'Harman Sans';
+  text-transform: lowercase;
+  font-size: 22px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.chapter__icon-link:hover, .chapter__icon-link:visited:hover {
+	border-bottom: none;
+}
+
+.chapter__cta {
+  position: relative;
+  padding-right: 15px;
+}
+
+.chapter__cta:after {
+	/*
+    content: '▸';
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+    left: 3px;
+    */
+	border-left: 6px solid #5995DA;
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+	content: "";
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+	width: 0;
+	height: 0;
+}
+
+.chapter__cta:visited:hover,
+  .chapter__cta:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #76AEED;
+}
+
+/* --- Forms --- */
+
+input:focus, button:focus {
+	outline: none;
+}
+
+.slide-animation {
+  -webkit-transition: height .2s linear;
+  transition: height .2s linear;
+  overflow: hidden;
+}
+
+.slide-animation--hidden {
+  height: 0;
+}
+
+.input-text {
+  text-align: center;
+  font-family: 'Harman Simple';
+  font-size: 17px;
+
+  background-color: #ffffff;
+  border: 1px solid #5D6063;
+  border-radius: 50px;
+
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.input-text:disabled {
+	color: #7E8184;
+	border: 1px solid #EAEDF0;
+}
+
+.input-text--small {
+  font-size: 14px;
+}
+
+.input-text--error {
+  color: #D55C5F;
+  border: 1px solid #D55C5F;
+}
+
+.input-status {
+  display: inline-block;
+  padding: 10px 18px 8px 18px;
+  border: 1px solid #5D6063;
+  border-radius: 2px;
+}
+
+.input-status--error {
+  border: 1px solid #D55C5F;
+}
+
+.input-status--error .input-status__title  {
+	color: #D55C5F;
+}
+
+.input-status--success {
+  border: 1px solid #5995DA;
+}
+
+.input-status--success .input-status__title  {
+	color: #5995DA;
+}
+
+
+.input-status__title {
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+
+/* --- About --- */
+
+.about {
+  font-size: 14px;
+  line-height: 22px;
+
+  border-bottom: 1px solid #EAEDF0;
+}
+
+.about__wrapper {
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.about__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+
+.about__rule-before {
+  border-top: 1px solid #959BA0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 12px;
+}
+
+.about__rule-after {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-top: 1px solid #959BA0;
+  margin-left: 12px;
+}
+
+.about__logo {
+  width: 50px;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__icons a:hover, .about__icons a:visited:hover {
+	border-bottom: none;
+}
+
+
+.about__facebook,
+.about__twitter {
+  width: 48px;
+}
+
+.about__email {
+  width: 48px;
+}
+
+
+
+.about__mailing-list {
+  border-top: 1px solid #EAEDF0;
+  padding-top: 26px;
+  padding-bottom: 48px;
+  padding-left: 12px;
+  padding-right: 18px;
+}
+
+
+
+/* Need custom margins for nice layout. This is not ideal */
+
+.about__mailing-list-description {
+  margin-bottom: 20px;
+}
+
+.about__mailing-list-below {
+  display: none;
+}
+
+.about__mailing-list-above {
+  display: none;
+}
+
+.about__mailing-list-email-label {
+  display: none;
+}
+
+.about__mailing-list-email {
+  display: block;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 280px;
+}
+
+.about__mailing-list-status {
+  margin-top: 26px;
+  text-align: left;
+}
+
+
+/* --- End About --- */
+
+
+/* --- Footer --- */
+
+.footer {
+  font-size: 14px;
+  font-family: 'Harman Simple';
+  color: #5995DA;
+  background-color: #FFFFFF;
+  text-transform: lowercase;
+
+  display: -webkit-box;
+
+  display: -webkit-flex;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer__copyright-symbol {
+  font-size: 22px;
+  position: relative;
+  top: 5px;
+  line-height: 0;
+}
+
+
+/* --- End Footer --- */
+
+
+/* --- Home Page Styles --- */
+
+/* This is pure layout */
+
+.comprehensive-stat {
+  text-align: center;
+
+}
+
+.comprehensive-stat__number {
+  font-family: 'Harman Sans';
+}
+
+.comprehensive-stat__name {
+  font-family: 'Harman Simple';
+}
+
+/* --- End Home Page Styles --- */
+
+
+/* --- CTA Button --- */
+
+.cta-button {
+  text-align: center;
+}
+
+.cta-button__link {
+  color: #FFFFFF;
+  background-color: #5995DA;
+  border: 1px solid #5D6063;
+  font-family: 'Harman Simple';
+  padding: 6px 56px 4px 56px;
+  border-radius: 50px;
+  font-size: 17px;
+  cursor: pointer;
+
+  display: inline-block;
+}
+
+/* TODO: THINK ABOUT LINK STYLES */
+
+.cta-button__link:link {
+	color: #FFFFFF;
+}
+
+.cta-button__link:visited {
+	color: #FFFFFF;
+}
+
+.cta-button__link:hover {
+	color: #FFFFFF;
+	background-color: #407FC7;
+	border: 1px solid #5D6063;
+}
+
+.cta-button__link:visited:hover {
+	color: #FFFFFF;
+	background-color: #407FC7;
+	border: 1px solid #5D6063;
+}
+
+.cta-button__link:disabled {
+	color: #AAADB0;
+	background-color: #D6D9DC;
+	border: 1px solid #AAADB0;
+	cursor: not-allowed;
+}
+
+.cta-button__link--small {
+  font-size: 14px;
+}
+
+.cta-button__link--disabled {
+  color: #AAADB0;
+  background-color: #D6D9DC;
+  border: 1px solid #AAADB0;
+  cursor: not-allowed;
+}
+
+.cta-button__link--disabled:visited,
+  .cta-button__link--disabled:hover,
+  .cta-button__link--disabled:visited:hover {
+	color: #AAADB0;
+	background-color: #D6D9DC;
+	border: 1px solid #AAADB0;
+	cursor: not-allowed;
+}
+
+
+/* --- End CTA Button --- */
+
+
+/* --- Horizontal Image --- */
+
+.horizontal-image {
+  /* Need an inline style='240px' to match the image height */
+  overflow: hidden;
+
+  /* Avoid weird layout on wide-screen monitors */
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+.horizontal-image__wrapper {
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	/* For iOS */
+	padding-bottom: 15px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+/* --- End Horizontal Image --- */
+
+
+/* --- List and Text --- */
+
+.list-and-text ul {
+  list-style-type: none;
+  font-family: 'Harman Simple';
+}
+
+/* --- End List and Text --- */
+
+
+/* --- Sidebar --- */
+
+.sidebar {
+  /* Separate position from fonts and colors */
+  font-family: 'Harman Simple';
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: lowercase;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 28px;
+
+  border-left: 1px solid #EAEDF0;
+}
+
+.sidebar__list {
+  list-style-type: none;
+}
+
+.sidebar__link:link,
+.sidebar__link:visited,
+.sidebar__link:hover,
+.sidebar__link:visited:hover {
+  color: rgba(93, 96, 99, .30);
+}
+
+.sidebar__link:hover,
+.sidebar__link:visited:hover {
+  border-bottom: 1px solid rgba(93, 96, 99, .30);
+}
+
+.sidebar__link--highlight:link,
+.sidebar__link--highlight:visited,
+.sidebar__link--highlight:hover,
+.sidebar__link--highlight:visited:hover {
+  color: #5D6063;
+}
+
+.sidebar__link--highlight:hover,
+.sidebar__link--highlight:visited:hover {
+  border-bottom: 1px solid #5D6063;
+}
+
+
+.chapter-sidebar {
+  display: none;
+
+  position: absolute;
+  right: 28px;
+  /* This needs to make it fit below .page-header */
+  top: 365px;
+}
+
+
+/* TODO: NEEDS A MIN HEIGHT */
+
+.chapter-sidebar--sticky {
+  position: fixed;
+  right: 28px;
+  /* This needs to match .main-nav height */
+  top: 42px;
+}
+
+
+/* --- End Sidebar --- */
+
+
+/* --- Next Chapter Link --- */
+
+
+.next-chapter {
+  overflow: hidden;
+}
+
+.next-chapter a {
+  float: right;
+  font-size: 24px;
+  font-family: 'Harman Simple';
+
+  padding-top: 9px;
+  padding-bottom: 1px;
+}
+
+.next-chapter a:hover,
+.next-chapter a:visited:hover {
+  /* Need this because it's a block */
+  padding-bottom: 0px;
+}
+
+/* --- End Next Chapter Link --- */
+
+
+/* --- Mailing List --- */
+
+.mailing-list-header {
+  margin-top: 40px;
+}
+
+.mailing-list-header__heading {
+  margin-bottom: 50px;
+}
+
+.mailing-list__cta-button {
+  margin-bottom: 54px;
+}
+
+.mailing-list-header__title--confirming {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* --- End Mailing List --- */
+
+
+/* --- Typography --- */
+
+/* --- End Typography --- */
+
+
+/* --- Code --- */
+
+pre.highlight code {
+  font-size: 14px;
+}
+
+code {
+  font-size: 17px;
+  font-family: "RysLatinModernMono", serif;
+}
+
+pre.highlight {
+  box-sizing: border-box;
+  line-height: 1.2em;
+  display: block;
+  overflow-x: scroll;
+
+  border-left: 1px solid rgba(100, 100, 100, .1);
+  
+  margin-left: -14px;
+  padding-left: 14px;
+}
+
+
+/* Colors */
+
+pre.highlight {
+  color: #7E8184;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-comment {
+  color: #999;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-built_in,
+.hljs-type,
+.hljs-addition,
+.hljs-tag,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #33649E;
+}
+
+.hljs-name {
+  color: #3D7CC6;
+}
+
+
+.hljs-quote,
+.hljs-string,
+.hljs-literal {
+  color: #CA6B15;
+}
+
+.hljs-meta,
+.hljs-subst,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-attribute,
+.hljs-deletion,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-bullet {
+  color: #509E33;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+/* --- End Code --- */
+
+@media only screen and (min-width: 750px) {
+	body {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.heading__title {
+		font-size: 57px;
+		line-height: 60px;
+		text-align: center;
+		margin-bottom: 12px;
+	}
+	.heading__title--advanced-positioning {
+		font-size: 51px;
+	}
+	.heading__parenthesis {
+		font-size: 24px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.heading__rule-after {
+		top: 12px;
+	}
+	.heading__rule-before {
+		top: 12px;
+	}
+	.heading__subtitle {
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+	}
+	.subheading__heading {
+		font-size: 32px;
+		line-height: 42px;
+		padding-top: 118px;
+		/* Trick anchor links into top margin */
+	}
+	.subheading__heading:after {
+		left: -18px;
+		padding-right: 36px;
+	}
+	.subsubheading__heading {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.subsubsubheading__heading {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.page-header {
+		padding-top: 114px;
+		padding-bottom: 112px;
+	}
+	.page-header__wrapper {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.home-page-header {
+		padding-top: 92px;
+		padding-bottom: 98px;
+	}
+	.home-page-header__logo {
+		width: 163px;
+		height: 128px;
+		margin-bottom: 58px;
+	}
+	.home-page-header__heading {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 42px;
+	}
+	.tutorial-icon__title {
+		font-size: 24px;
+	}
+	.content__wrapper {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.content__wrapper--first {
+		padding-top: 42px;
+	}
+	.content__wrapper--tall {
+		padding-top: 102px;
+		padding-bottom: 98px;
+	}
+	.content__wrapper--tall-open {
+		padding-bottom: 28px;
+	}
+	.content__wrapper--after-tall-open {
+		padding-top: 28px;
+	}
+	.content__wrapper > *,
+.content__between > * {
+		margin-bottom: 28px;
+	}
+	.content__wrapper > .content__subsubheading {
+		margin-top: 60px;
+		margin-bottom: 2px;
+	}
+	.content__wrapper > .content__subsubsubheading {
+		margin-top: 48px;
+		margin-bottom: 2px;
+	}
+	.content__cta-button {
+		margin-top: 8px;
+	}
+	.content__between > .subheading,
+.content__wrapper > .subheading {
+		margin-bottom: 18px;
+	}
+	.content__wrapper > table th {
+		font-size: 18px;
+	}
+	.content__wrapper > table td,
+.content__wrapper > table th {
+		font-size: 17px;
+		line-height: 1.6em;
+		padding: 5px 50px 5px 0;
+	}
+	.header {
+		padding: 118px 0 108px 0;
+		text-align: center;
+	}
+	.header--home-page {
+		padding-top: 72px;
+		padding-bottom: 50px;
+	}
+	.header__wrapper {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.header__title {
+		font-size: 57px;
+		margin-bottom: 32px;
+	}
+	.header__parenthesis {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.header__rule-after {
+		top: 12px;
+	}
+	.header__rule-before {
+		top: 12px;
+	}
+	.header__subtitle {
+		font-size: 18px;
+	}
+	.chapters--html-and-css .chapter__wrapper {
+		/* To align with the page title */
+		position: relative;
+		left: 12px;
+	}
+	.chapter__heading {
+		font-size: 24px;
+	}
+	.chapter__description {
+		margin-right: 40px;
+		max-width: 380px;
+	}
+	.chapter__icon {
+		margin-top: 18px;
+	}
+	.input-text {
+		font-size: 18px;
+	}
+	.input-text--small {
+		font-size: 14px;
+	}
+	.about__wrapper {
+		padding-bottom: 39px;
+	}
+	.about__mailing-list {
+		margin-top: -65px;
+	}
+	.comprehensive-stats {
+		margin-top: 18px;
+		margin-bottom: 37px;
+	}
+	.comprehensive-stat__name {
+		font-size: 24px;
+		line-height: 24px;
+		margin-top: 12px;
+	}
+	.cta-button__link {
+		font-size: 18px;
+	}
+	.cta-button__link--small {
+		font-size: 14px;
+	}
+	.mailing-list-header {
+		min-height: calc(100vh - 280px);
+	}
+	.mailing-list-header__title--confirming {
+		text-align: left;
+		padding-left: 20px;
+		width: 380px;
+	}
+	.nudge-desktop--much-smaller {
+		padding-right: 14px;
+	}
+	.nudge-desktop--smaller {
+		padding-right: 7px;
+	}
+	.nudge-desktop--bigger {
+		width: calc(100% + 5px);
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.main-nav {
+		padding-right: 26px;
+	}
+	.heading__title-br {
+		display: none;
+	}
+	.subheading__title-br {
+		display: none;
+	}
+	.subheading__desktop-title-br {
+		display: inline;
+	}
+	.header--home-page {
+		border-bottom: none;
+	}
+	.header__title-br {
+		display: none;
+	}
+	.chapter:nth-of-type(2n) .chapter__wrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-webkit-flex-direction: row-reverse;
+		    -ms-flex-direction: row-reverse;
+		        flex-direction: row-reverse;
+	}
+	.chapter:nth-of-type(2n) .chapter__heading {
+		margin-left: 24px;
+	}
+	.chapter:nth-of-type(2n) .chapter__description {
+		margin-right: 0;
+		margin-left: 24px;
+	}
+	.chapter__wrapper {
+		padding-top: 90px;
+		padding-bottom: 84px;
+		max-width: 580px;
+		margin: 0 auto;
+	}
+	.about__header {
+		margin-top: 41px;
+		margin-bottom: 10px;
+	}
+	.about__icons {
+		margin-top: 8px;
+		margin-left: 18px;
+		margin-right: 24px;
+	}
+	.about__facebook,
+.about__twitter {
+		display: block;
+		width: 48px;
+		margin-bottom: 5px;
+	}
+	.about__email {
+		display: block;
+		width: 48px;
+	}
+	.about__description {
+		border-left: 1px solid #EAEDF0;
+		padding-left: 28px;
+		padding-right: 36px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		margin-top: 8px;
+		margin-bottom: 15px;
+	}
+	.about__mailing-list {
+		border-top: none;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-webkit-flex-direction: column-reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+		margin-left: 108px;
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	.about__mailing-list-above {
+		display: inline;
+	}
+	.about__mailing-list-row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		margin-top: 8px;
+	}
+	.about__mailing-list-email {
+		text-align: left;
+		min-width: 180px;
+		margin-right: 14px;
+		margin-bottom: 26px;
+		margin-left: 0;
+	}
+	.about__mailing-list-button-link {
+		width: 120px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.about__mailing-list-status {
+		margin-top: 0;
+		margin-bottom: 18px;
+	}
+	.footer {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		width: 100%;
+		height: 40px;
+		padding: 0 13px;
+	}
+	.footer__copyright {
+		margin-right: 26px;
+	}
+	.footer__item {
+		margin-right: 26px;
+	}
+	.footer__item--auto {
+		margin-right: auto;
+	}
+	.footer__item:last-of-type {
+		margin-right: 0;
+	}
+	.comprehensive-stats {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+	}
+	.comprehensive-stat__number {
+		font-size: 42px;
+		line-height: 52px;
+		margin-bottom: -8px;
+	}
+	.list-and-text {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}
+	.list-and-text__list {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+		text-align: right;
+		padding-top: 10px;
+		padding-bottom: 9px;
+		padding-right: 26px;
+	}
+	.list-and-text__text {
+		-webkit-box-flex: 2.7;
+		-webkit-flex: 2.7;
+		    -ms-flex: 2.7;
+		        flex: 2.7;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-left: 26px;
+		border-left: 1px solid #EAEDF0;
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.heading__title {
+		text-align: left;
+		margin-bottom: 19px;
+	}
+	.heading__parenthesis {
+		font-size: 18px;
+		line-height: 22px;
+		text-align: left;
+		margin-bottom: 17px;
+	}
+	.heading__rule-after {
+		position: relative;
+		top: 10px;
+		margin-left: 12px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+	.heading__rule-before {
+		display: none;
+	}
+	.heading__subtitle {
+		text-align: left;
+	}
+	.subheading {
+		text-align: left;
+		/* This undoes the extra line from the 30px padding-right in __heading */
+		margin-bottom: -26px;
+	}
+	.subheading__heading {
+		/* This makes sure the rule is always visible */
+		padding-right: 30px;
+	}
+	.page-header {
+		padding-top: 84px;
+		padding-bottom: 84px;
+	}
+	.page-header__wrapper {
+		padding: 0 26px;
+	}
+	.home-page-header {
+		padding-top: 86px;
+		padding-bottom: 70px;
+	}
+	.home-page-header__mobile-header {
+		border-bottom: 1px solid #EAEDF0;
+		margin-bottom: 64px;
+	}
+	.home-page-header__logo {
+		position: absolute;
+		top: 92px;
+		left: 265px;
+		width: 80px;
+		height: 63px;
+	}
+	.home-page-header__heading {
+		padding: 0 26px;
+	}
+	.home-page-header__subtitle {
+		padding-bottom: 86px;
+	}
+	.home-page-header__description {
+		/* TODO: THIS SHOULD BE ABSTRACTED. SAME AS CONTENT */
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	.content__wrapper {
+		padding-left: 26px;
+		padding-right: 26px;
+		padding-top: 44px;
+		padding-bottom: 50px;
+	}
+	.content__wrapper--first {
+		padding-top: 26px;
+	}
+	.content__wrapper--tall {
+		padding-top: 86px;
+		padding-bottom: 86px;
+	}
+	.content__wrapper--tall-open {
+		padding-bottom: 26px;
+	}
+	.content__wrapper--after-tall-open {
+		padding-top: 26px;
+	}
+	.header {
+		padding: 86px 0;
+	}
+	.header--home-page {
+		margin-bottom: 43px;
+	}
+	.header__wrapper {
+		padding: 0 26px;
+	}
+	.header__title {
+		font-size: 37px;
+		line-height: 40px;
+		margin-bottom: 20px;
+	}
+	.header__parenthesis {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 17px;
+	}
+	.header__rule-after {
+		position: relative;
+		top: 10px;
+		margin-left: 12px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+	.header__rule-before {
+		display: none;
+	}
+	.header__subtitle {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.chapter:nth-of-type(2n) .chapter__wrapper {
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+		text-align: right;
+	}
+	.chapter:nth-of-type(2n) .chapter__icon {
+		left: 15px;
+	}
+	.chapter__wrapper {
+		padding-top: 76px;
+		padding-left: 26px;
+		padding-right: 26px;
+		padding-bottom: 69px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}
+	.chapter__text {
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+	.chapter__description {
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		    -ms-flex-order: 2;
+		        order: 2;
+		max-width: 360px;
+	}
+	.chapter__icon {
+		position: relative;
+		left: -15px;
+		margin-bottom: 14px;
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		    -ms-flex-order: 1;
+		        order: 1;
+	}
+	.about__wrapper {
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	.about__header {
+		margin-top: 58px;
+	}
+	.about__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-webkit-flex-direction: column-reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		line-height: 22px;
+	}
+	.about__icons {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.about__facebook,
+.about__twitter {
+		margin-right: 33px;
+	}
+	.about__description {
+		padding-left: 12px;
+		padding-right: 26px;
+	}
+	.about__mailing-list-below {
+		display: inline;
+	}
+	.about__mailing-list-form {
+		text-align: center;
+	}
+	.footer__copyright {
+		text-align: center;
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		    -ms-flex-order: 2;
+		        order: 2;
+		border-top: 1px solid #EAEDF0;
+		width: 100%;
+		padding: 7px 0;
+	}
+	.footer__links {
+		width: 100%;
+		height: 40px;
+		padding: 0 13px;
+	}
+	.footer__copyright-symbol {
+		font-size: 19px;
+	}
+	.comprehensive-stats {
+		margin-top: 18px;
+		margin-bottom: 28px;
+	}
+	.comprehensive-stats__stat {
+		margin-bottom: 52px;
+	}
+	.comprehensive-stat {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+	}
+	.comprehensive-stat:last-of-type {
+		margin-bottom: 0;
+	}
+	.comprehensive-stat__number {
+		margin-right: 9px;
+	}
+	.comprehensive-stat__number--chapters {
+		font-size: 96px;
+		line-height: 79px;
+	}
+	.comprehensive-stat__number--snippets {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.comprehensive-stat__number--words {
+		font-size: 29px;
+		line-height: 36px;
+	}
+	.comprehensive-stat__name {
+		font-size: 17px;
+	}
+	.cta-button__link {
+		padding-left: 46px;
+		padding-right: 46px;
+	}
+	.list-and-text__list {
+		line-height: 39px;
+		margin-bottom: 26px;
+	}
+	.mailing-list-header {
+		min-height: calc(100vh - 260px);
+	}
+	.nudge-mobile--smaller {
+		padding-right: 7px;
+	}
+	.nudge-mobile--bigger {
+		width: calc(100% + 5px);
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 749px) {
+	.heading__title {
+		margin-bottom: 6px;
+		text-align: center;
+	}
+	.heading__parenthesis {
+		margin-bottom: 8px;
+		text-align: center;
+	}
+	.heading__subtitle {
+		text-align: center;
+	}
+	.subheading__heading:after {
+		left: -9px;
+		padding-right: 18px;
+	}
+	.page-header {
+		padding-top: 84px;
+		padding-bottom: 84px;
+	}
+	.page-header__wrapper {
+		max-width: 420px;
+		margin: 0 auto;
+	}
+	.home-page-header {
+		padding-top: 66px;
+		padding-bottom: 82px;
+	}
+	.home-page-header__logo {
+		width: 114px;
+		height: 90px;
+		margin-bottom: 48px;
+	}
+	.home-page-header__heading {
+		max-width: 420px;
+		margin: 0 auto;
+		margin-bottom: 26px;
+	}
+	.home-page-header__description {
+		/* TODO: THIS SHOULD BE ABSTRACTED. SAME AS CONTENT */
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	.content__wrapper {
+		padding-top: 56px;
+		padding-bottom: 50px;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	.content__wrapper--first {
+		padding-top: 26px;
+	}
+	.content__wrapper--tall {
+		padding-top: 86px;
+		padding-bottom: 86px;
+	}
+	.content__wrapper--tall-open {
+		padding-bottom: 26px;
+	}
+	.content__wrapper--after-tall-open {
+		padding-top: 26px;
+	}
+	.content__between > .subheading,
+.content__wrapper > .subheading {
+		margin-bottom: 18px;
+	}
+	.header {
+		padding: 86px 0 68px 0;
+		text-align: center;
+	}
+	.header--home-page {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.header__wrapper {
+		max-width: 420px;
+		margin: 0 auto;
+	}
+	.header__title {
+		margin-bottom: 18px;
+	}
+	.header__parenthesis {
+		margin-bottom: 9px;
+	}
+	.header__subtitle {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.chapter__wrapper {
+		padding-left: 26px;
+		padding-right: 39px;
+	}
+	.chapter__description {
+		margin-right: 24px;
+		max-width: 380px;
+	}
+	.chapter__icon {
+		width: 154px;
+		margin-top: 28px;
+	}
+	.about__wrapper {
+		padding-left: 26px;
+		padding-right: 26px;
+		padding-bottom: 39px;
+	}
+	.comprehensive-stats {
+		margin-top: 18px;
+		margin-bottom: 16px;
+	}
+	.comprehensive-stat__name {
+		font-size: 22px;
+		line-height: 24px;
+		margin-top: 12px;
+	}
+	.mailing-list-header {
+		min-height: calc(100vh - 230px);
+	}
+	.mailing-list-header__title--confirming {
+		text-align: left;
+		padding-left: 25px;
+		width: 270px;
+	}
+}
+
+@media only screen and (max-width: 345px) {
+	.home-page-header__logo {
+		top: 130px;
+		left: 172px;
+		width: 43px;
+		height: 34px;
+	}
+	.input-text {
+		font-size: 16px;
+	}
+	.input-text--small {
+		font-size: 14px;
+	}
+	.about__mailing-list-email {
+		min-width: 200px;
+	}
+	.cta-button__link {
+		font-size: 16px;
+		padding-left: 28px;
+		padding-right: 28px;
+	}
+	.cta-button__link--small {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+	.about__mailing-list {
+		margin-top: -40px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 749px) {
+	.about__mailing-list {
+		margin-top: -65px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 450px) {
+	.chapter-sidebar {
+		display: block;
+	}
+}
+
