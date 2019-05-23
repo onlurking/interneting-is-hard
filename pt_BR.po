@@ -1,0 +1,341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-22 21:21-0200\n"
+"PO-Revision-Date: 2019-05-22 22:19-0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#: index.html%2Bhtml.head.title:4-3
+msgid "Interneting Is Hard | Web Development Tutorials For Complete Beginners"
+msgstr ""
+"Internetear É Díficil | Tutoriais de Desenvolvimento Web Para Completos "
+"Iniciantes"
+
+#: index.html%2Bhtml.head:-1--1
+msgid "width=device-width, initial-scale=1.0, maximum-scale=1.0"
+msgstr "width=device-width, initial-scale=1.0, maximum-scale=1.0"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "#FFFFFF"
+msgstr "#FFFFFF"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "/img/favicons/favicon-144-4696d9.png"
+msgstr "/img/favicons/favicon-144-4696d9.png"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "/img/favicons/browserconfig-8221df.xml"
+msgstr "/img/favicons/browserconfig-8221df.xml"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgctxt "index.html+html.head.meta:-1--1"
+msgid "Interneting Is Hard"
+msgstr "Internetear É Díficil"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgctxt "index.html+html.head.meta:-1--1"
+msgid "Friendly web development tutorials for complete beginners"
+msgstr "Tutoriais amigáveis de desenvolvimento web para completos iniciantes"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "article"
+msgstr "article"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgctxt "index.html+html.head.meta:-1--1"
+msgid "https://internetingishard.com/img/social-81cf56.png"
+msgstr "https://internetingishard.com/img/social-81cf56.png"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "summary_large_image"
+msgstr "summary_large_image"
+
+#: index.html%2Bhtml.head.meta:-1--1
+msgid "@internetinghard"
+msgstr "@internetinghard"
+
+#: index.html%2Bhtml.body.nav.div.div:66-5
+msgctxt "index.html+html.body.nav.div.div:66-5"
+msgid "Interneting Is Hard"
+msgstr "Internetear É Díficil"
+
+#: index.html%2Bhtml.body.nav.div:70-3
+msgctxt "index.html+html.body.nav.div:70-3"
+msgid "HTML & CSS"
+msgstr "HTML & CSS"
+
+#: index.html%2Bhtml.body.div.div.div.header.div.h1.br:86-9
+msgid "Interneting<br class='heading__title-br'> Is Hard"
+msgstr "Internetear<br class='heading__title-br'> É Díficil"
+
+#: index.html%2Bhtml.body.div.div.div.header.div.div.div:91-11
+msgid "(But it doesn’t have to be)"
+msgstr "(Mas não precisa ser)"
+
+#: index.html%2Bhtml.body.div.div.div.header.div.div:95-9
+msgctxt "index.html+html.body.div.div.div.header.div.div:95-9"
+msgid "Friendly web development tutorials for complete beginners"
+msgstr "Tutoriais amigáveis de desenvolvimento web para completos iniciantes"
+
+#: index.html%2Bhtml.body.div.div.div.div.a.div:105-9
+msgctxt "index.html+html.body.div.div.div.div.a.div:105-9"
+msgid "HTML & CSS"
+msgstr "HTML & CSS"
+
+#: index.html%2Bhtml.body.div.div.div.div.a.div:106-9
+msgid "(Start here)"
+msgstr "(Comece aqui)"
+
+#: index.html%2Bhtml.body.div.div.div.div.p:111-7
+msgid ""
+"Learning to code shouldn’t be hard. We’re making it easier by putting "
+"together a comprehensive set of web development tutorials to help transform "
+"complete beginners into talented Interneting professionals. We’ve got the "
+"curriculum, all you need is the motivation to start reading it."
+msgstr ""
+"Aprender a programar não deveria ser difícil. E estamos deixando fácil ao "
+"criar uma série de tutoriais abrangentes de desenvolvimento web para ajudar "
+"a transformar completos iniciantes em talentosos profissionais da Internet. "
+"Nós temos o material, tudo que você precisa é a motivação para começar a lê-"
+"lo."
+
+#: index.html%2Bhtml.body.div.div.div.div.h2:125-7
+msgid "Comprehensive Curriculum"
+msgstr "Material Abrangente"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:130-9
+msgid "14"
+msgstr "14"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:131-9
+msgid "Chapters"
+msgstr "Capítulos"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:134-9
+msgid "284"
+msgstr "284"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:135-9
+msgid "Code Examples"
+msgstr "Exemplos de Código"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:138-9
+msgid "42,835"
+msgstr "42,835"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.div:139-9
+msgid "Words"
+msgstr "Palavras"
+
+#: index.html%2Bhtml.body.div.div.div.p:143-5
+#, fuzzy
+msgid ""
+"Our HTML & CSS tutorial is the only introduction to web development that "
+"you’ll ever need. Over a dozen chapters cover every aspect of crafting a "
+"quality web page, thousands of code examples explain each HTML element and "
+"CSS property, and a textbook worth of words provide important real-world "
+"context around when and why you’d want to use each of them."
+msgstr ""
+"Nosso tutorial de HTML & CSS é a única introdução de desenvolvimento web que "
+"você precisa. Contendo mais de uma dúzia de capítulos cobrindo todos os "
+"aspectos da criação de uma página web de qualidade, com milhares de exemplos "
+"de código explicando cada elemento HTML e propriedade do CSS, este é um "
+"livro didático que irá lhe fornecer um importante contexto do mundo real "
+"sobre quando e por que você gostaria de usar cada um eles."
+
+#: index.html%2Bhtml.body.div.div.div.div:149-5
+msgid "Learn HTML & CSS For Free"
+msgstr "Aprenda HTML & CSS De Graça"
+
+#: index.html%2Bhtml.body.div.div.div.div.h2:161-7
+msgid "Beautiful Diagrams"
+msgstr "Lindos Diagramas"
+
+#: index.html%2Bhtml.body.div.div.div.p:164-5
+msgid ""
+"Our tutorial contains 250 diagrams that present complicated HTML and CSS "
+"concepts in simple, visual ways. Take our <a href='html-and-css/css-"
+"selectors/index.html'>CSS Selectors</a> chapter, for example. Instead of "
+"building your own mental model of how CSS selectors connect to HTML "
+"elements, you can visualize it the same way we do:"
+msgstr ""
+"Nosso tutorial tem 250 diagramas que apresentam conceitos complicados do "
+"HTML e CSS de formas simples, e visuais. Olhe o capítulo <a href='html-and-"
+"css/css-selectors/index.html'>Seletores do CSS</a> por exemplo. Em vez de "
+"criar seu próprio modelo mental de como os seletores CSS se conectam aos "
+"elementos HTML, você pode visualizá-lo da mesma maneira que vemos:"
+
+#: index.html%2Bhtml.body.div.div.div.p:183-5
+msgid ""
+"We think pretty matters, and our passion for pretty things permeates into "
+"the example projects you’ll be working on, too. If you want to build "
+"beautiful websites, you need to learn from people who care about design. We "
+"paid as much attention to the colors, typography, layout, and illustrations "
+"in our examples as we did to the HTML and CSS that we’re trying to teach you."
+msgstr ""
+"Nós achamos que beleza importa, e nossa paixão por coisas belas permeia os "
+"projetos de exemplo nos quais você também trabalhará. Se você quer criar "
+"sites lindos, você vai precisar aprender através de pessoas que ligam pra "
+"design. Demos tanta atenção às cores, tipografia, layout e ilustrações em "
+"nossos exemplos quanto ao HTML e CSS que estamos tentando te ensinar."
+
+#: index.html%2Bhtml.body.div.div.div.div.h2:197-7
+msgid "Modern Techniques"
+msgstr "Técnicas Modernas"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.ul.li:203-11
+msgid "Flexbox"
+msgstr "Flexbox"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.ul.li:204-11
+msgid "Responsive Design"
+msgstr "Design Responsivo"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.ul.li:205-11
+msgid "Responsive Images"
+msgstr "Imagens Responsivas"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.ul.li:206-11
+msgid "Semantic HTML"
+msgstr "HTML Semântico"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.ul.li:207-11
+msgid "Web Typography"
+msgstr "Tipografia Web"
+
+#: index.html%2Bhtml.body.div.div.div.div.div.p:212-9
+msgid ""
+"Our HTML & CSS tutorial covers modern techniques that are now considered "
+"best practices amongst professional web developers."
+msgstr ""
+"Nosso tutorial de HTML & CSS abordam técnicas modernas que agora são "
+"consideradas melhores práticas entre desenvolvedores profissionais da Web."
+
+#: index.html%2Bhtml.body.div.div.div.div.div.p:215-9
+msgid ""
+"Whether you’re a complete beginner or a full-time web developer who just "
+"wants to brush up on the state of the industry, these chapters are for you."
+msgstr ""
+"Seja você um completo novato ou um desenvolvedor web em tempo integral que "
+"só quer se atualizar de como está o mercado, esses capítulos são para você."
+
+#: index.html%2Bhtml.body.div.div.div.div.h2:229-7
+msgid "Hands-On Examples"
+msgstr "Exemplos Práticos"
+
+#: index.html%2Bhtml.body.div.div.div.p:232-5
+msgid ""
+"The best way to learn flexbox is to use it to move a bunch of boxes around. "
+"So, that’s exactly what we’ll do in the <a href='html-and-css/flexbox/index."
+"html'>Flexbox</a> chapter, as you can see below. This doesn’t just go for "
+"layouts, though—the entire tutorial follows this hands-on philosophy, from "
+"<a href='html-and-css/basic-web-pages/index.html'>Basic Web Pages</a> to <a "
+"href='html-and-css/web-typography/index.html'>Web Typography</a>."
+msgstr ""
+
+#: index.html%2Bhtml.body.div.div.div.p:249-5
+msgid ""
+"We meticulously designed our example projects to gently guide you through a "
+"new aspect of HTML and CSS while still demonstrating concepts with concrete "
+"scenarios."
+msgstr ""
+"Nós projetamos meticulosamente nossos projetos de exemplo para guiá-lo "
+"delicadamente com os novos aspectos do HTML e CSS, enquanto ainda "
+"demonstramos conceitos com cenários concretos."
+
+#: index.html%2Bhtml.body.div.div.div.p:253-5
+msgid ""
+"This means that you’ll rarely read more than a paragraph or two without "
+"writing some code and seeing what it does (so you’ll never get bored). In "
+"addition, you’ll get a ton of practice working in a text editor and checking "
+"your code in a browser, just like real web developers do."
+msgstr ""
+
+#: index.html%2Bhtml.body.div.div.div.div.h2:265-7
+msgid "It’s 100% Free"
+msgstr "É 100% de Graça"
+
+#: index.html%2Bhtml.body.div.div.div.p:268-5
+msgid ""
+"Nobody should have to pay to start learning how to program, especially if "
+"they’re not sure whether or not they actually want to become a web "
+"developer. Our mission is to make web development accessible to as many "
+"people as possible. That’s why we’re offering our entire HTML & CSS tutorial "
+"for free. Get to it!"
+msgstr ""
+
+#: index.html%2Bhtml.body.div.div.div.div:274-5
+msgid "Start Learning Now"
+msgstr "Comece a Aprender Agora"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.img:-1--1
+msgid "Wi-fi signal with exclamation mark through it"
+msgstr "Sinal de Wi-fi com um ponto de exclamação nele"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.p:311-11
+msgid ""
+"<em>InternetingIsHard.com</em> is an independent publisher of premium web "
+"development tutorials. All content is authored and maintained by Oliver "
+"James. He loves hearing from readers, so <a href='contact/index.html'>come "
+"say hello</a>!"
+msgstr ""
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.div:319-11
+msgid ""
+"More tutorials are coming. (Lots more.)<br/> Enter your email <span "
+"class='about__mailing-list-below'>below</span><span class='about__mailing-"
+"list-above'>above</span>, and we’ll let you know when they get here."
+msgstr ""
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.form.div.div.div:331-15
+msgid ""
+"<label for='about__mailing-list-email' class='about__mailing-list-email-"
+"label'>Email</label> <input id='about__mailing-list-email' class='input-text "
+"input-text--small about__mailing-list-email js-about__mailing-list-email' "
+"type='email' placeholder='you@example.com'/>"
+msgstr ""
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.form.div.div.div:340-17
+msgid "Subscribe"
+msgstr "Se inscreva"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div.form.div.div:348-15
+#, fuzzy
+msgid ""
+"Error!</span> <span class='js-about__mailing-list-status-text'>Can’t sign up "
+"for a mailing list without an email address..."
+msgstr ""
+"Erro!</span> <span class='js-about__mailing-list-status-text'>Can’t sign up "
+"for a mailing list without an email address..."
+
+#: index.html%2Bhtml.body.div.footer.div.div.div:365-9
+msgid ""
+"<span class='footer__copyright-symbol'>©</span> 2017 <a href='index."
+"html'>InternetingIsHard.com</a>"
+msgstr ""
+"<span class='footer__copyright-symbol'>©</span> 2017 <a href='index."
+"html'>InternetingIsHard.com</a>"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div:371-9
+msgid "Contact"
+msgstr "Contato"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div:374-9
+msgid "Licensing"
+msgstr "Licença"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div:377-9
+msgid "Privacy"
+msgstr "Privacidade"
+
+#: index.html%2Bhtml.body.div.footer.div.div.div:380-9
+msgid "Terms"
+msgstr "Termos"
