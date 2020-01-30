@@ -14,6 +14,12 @@
   }
 
   insertObfuscatedEmails();
+
+  mediumZoom('.diagram__image', {
+    margin: 4,
+    scrollOffset: 80,
+    background: '#fafafa'
+  })
 })();
 
 
@@ -322,4 +328,3 @@ function getParameterByName(name, url) {
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-
