@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>CSS Tutorial | HTML &amp; CSS Is Hard</title>
+	<meta charset='UTF-8' />
+	<meta name='viewport'
+		  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<link rel='stylesheet' href='../../css/styles-0c78e2.css' />
+
+  
+	<link rel='shortcut icon' href='../../img/favicons/favicon-204b2d.ico'>
+	<link rel='icon' sizes='16x16 32x32 64x64' href='../../img/favicons/favicon-204b2d.ico'>
+	<link rel='icon' type='image/png' sizes='196x196' href='../../img/favicons/favicon-192-a6e5b6.png'>
+	<link rel='icon' type='image/png' sizes='160x160' href='../../img/favicons/favicon-160-2e97e1.png'>
+	<link rel='icon' type='image/png' sizes='96x96' href='../../img/favicons/favicon-96-5bcf10.png'>
+	<link rel='icon' type='image/png' sizes='64x64' href='../../img/favicons/favicon-64-36b542.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='../../img/favicons/favicon-32-0ae869.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='../../img/favicons/favicon-16-653c3c.png'>
+	<link rel='apple-touch-icon' href='../../img/favicons/favicon-57-b21a49.png'>
+	<link rel='apple-touch-icon' sizes='114x114' href='../../img/favicons/favicon-114-271cbc.png'>
+	<link rel='apple-touch-icon' sizes='72x72' href='../../img/favicons/favicon-72-091952.png'>
+	<link rel='apple-touch-icon' sizes='144x144' href='../../img/favicons/favicon-144-4696d9.png'>
+	<link rel='apple-touch-icon' sizes='60x60' href='../../img/favicons/favicon-60-11c348.png'>
+	<link rel='apple-touch-icon' sizes='120x120' href='../../img/favicons/favicon-120-eb7cc9.png'>
+	<link rel='apple-touch-icon' sizes='76x76' href='../../img/favicons/favicon-76-65750a.png'>
+	<link rel='apple-touch-icon' sizes='152x152' href='../../img/favicons/favicon-152-bf36c7.png'>
+	<link rel='apple-touch-icon' sizes='180x180' href='../../img/favicons/favicon-180-ed255c.png'>
+	<meta name='msapplication-TileColor' content='#FFFFFF'>
+	<meta name='msapplication-TileImage' content='/img/favicons/favicon-144-4696d9.png'>
+	<meta name='msapplication-config' content='/img/favicons/browserconfig-8221df.xml'>
+
+  
+  
+  <meta property='og:title' content='Hello, CSS | HTML &amp; CSS Is Hard' />
+  <meta property='og:description' content='A friendly tutorial for crafting slightly prettier websites' />
+  <meta property='og:type' content='article' />
+  <meta property='og:url' content='/html-and-css/hello-css/' />
+  <meta property='og:image' itemprop='image' content='https://internetingishard.com/html-and-css/icons/social/hello-css-078ffb.png' />
+
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name='twitter:site' content='@internetinghard' />
+  <meta name='twitter:title' content='Hello, CSS | HTML &amp; CSS Is Hard' />
+  <meta name='twitter:description' content='A friendly tutorial for crafting slightly prettier websites' />
+  <meta name='twitter:image' content='https://internetingishard.com/html-and-css/icons/social/hello-css-078ffb.png'/>
+  
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91393617-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+
+
+<nav class='main-nav'>
+  <div class='main-nav__branding'>
+    <div><a class='main-nav__logo-link' href='../../index.html'><img class='main-nav__logo'
+                        src='../../img/interneting-is-hard-logo-97b225.svg'
+                        alt='Wifi signal with exclamation mark through it'></a></div>
+    <div>
+      <a class='main-nav__name' href='../../index.html'>Interneting Is Hard</a>
+    </div>
+  </div>
+  <div>
+    <a class='main-nav__html-css' href='../index.html'>HTML &amp; CSS</a>
+  </div>
+</nav>
+
+
+<div class='page'>
+  
+
+<header class='page-header'><div class='page-header__wrapper'><div class='heading'><h1 class='heading__title'>Hello, CSS</h1><div class='heading__parenthesis-rule'><div class='heading__rule-before'></div><div class='heading__parenthesis'>Nº 4. of <a href='../index.html'>HTML &amp; CSS Is Hard</a></div><div class='heading__rule-after'></div></div><div class='heading__subtitle'>A friendly tutorial for crafting slightly prettier websites</div></div></div></header>
+
+<div class='content'><div class='content__wrapper content__wrapper--first'>
+
+<p>The first few chapters of this tutorial focused exclusively on HTML. Now,
+it’s time to make things pretty (sort of) with Cascading Style Sheets
+(CSS). You can think of CSS as defining the “design” of a web page.
+It determines things like font size, margins, and colors using a language
+entirely separate from HTML.</p>
+
+<p>Why is it a separate language? Well, it serves a completely different
+purpose. HTML represents the content of your web page, while CSS defines how
+that content is presented to the user. This is a fundamental distinction
+central to modern web development.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 580px'><div class='diagram__padding' style='padding-bottom: 66.89655172413794%'><img class='diagram__image' alt='Diagram: designer’s mockup turning into CSS and raw content turning into HTML markup. Both CSS and HTML markup turn into a rendered web page' src='css-vs-html-f4fdfa.png' width='580' height='388'/></div></div></figure>
+
+<p>CSS provides the vocabulary to tell a web browser things like, “I want
+my headings to be really big and my sidebar to appear on the left of the main
+article.” HTML doesn’t have the terminology to make those kinds of
+layout decisions&mdash;all it can say is, “that’s a heading and
+that’s a sidebar.”</p>
+
+<p>In this chapter, we’ll explore the basic syntax of CSS, as well as how
+to connect it to our HTML documents. The goal isn’t so much to become a
+  CSS expert or memorize all the available styles, but rather to understand how
+  CSS and HTML interact. CSS typically lives in its own file, so as in the <a
+    href='../links-and-images/index.html'>previous chapter</a>, good file
+  organization will be paramount.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='setup'><span>Setup</span></h2></div>
+
+<p>To keep things simple, we’ll store the example for each chapter of this
+tutorial in a separate folder. <a
+href='../introduction/index.html#atom-text-editor'>Using Atom</a>, create a
+new project called <code>hello-css</code>. We’re going to be styling an
+existing page called <code>hello-css.html</code>, so go ahead and create that,
+then add the following markup:</p>
+
+<pre class='highlight'><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello, CSS<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, CSS<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>CSS lets us style HTML elements. There’s also
+       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'dummy.html'</span>&gt;</span>another page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> associated with this example.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>List Styles<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You can style unordered lists with the following bullets:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>disc<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>circle<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>square<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>And you can number ordered lists with the following:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>decimal<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>lower-roman<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>upper-roman<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>lower-alpha<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>upper-alpha<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>(and many more!)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+<p>In addition, we’ll need a small dummy page to learn how CSS styles can be
+applied to multiple web pages. Create <code>dummy.html</code> and add the
+following:</p>
+
+<pre class='highlight'><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Dummy<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Dummy<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a dummy page that helps us demonstrate reusable CSS
+       stylesheets. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'hello-css.html'</span>&gt;</span>Go back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Want to try crossing out an <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>obsolete link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>? This
+       is your chance!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='css-stylesheets'><span>CSS Stylesheets</span></h2></div>
+
+<p>CSS stylesheets reside in plaintext files with a <code>.css</code>
+extension. Create a new file called <code>styles.css</code> in our
+<code>hello-css</code> folder. This will house all our example snippets for
+this chapter. Let’s add one CSS rule so that we can tell if our
+stylesheet is hooked up to our HTML pages properly.</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#FF0000</span>;
+}
+</code></pre>
+
+<p>A CSS “rule” always start with a “selector” that defines which HTML elements
+it applies to. In this case, we’re trying to style the
+<code>&lt;body&gt;</code> element. After the selector, we have the
+“declarations block” inside of some curly braces. Any “properties” we set in
+here will affect the <code>&lt;body&gt;</code> element.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 384px'><div class='diagram__padding' style='padding-bottom: 80.46875%'><img class='diagram__image' alt='Diagram: CSS rule composed of a selector and a series of property-value pairs' src='css-rule-terminology-1a7961.png' width='384' height='309'/></div></div></figure>
+
+<p><code>color</code> is a built-in property defined by the CSS
+specification that determines the text color of whatever HTML elements have
+been selected. It accepts a hexadecimal value representing a color.
+<code>#FF0000</code> means bright red.</p>
+
+<p>CSS properties are kind of like <a
+  href='../links-and-images/index.html#links'>HTML attributes</a> in that they
+both deal with key-value pairs. Except, here we’re defining
+<em>presentational</em> information instead of contributing to the
+<em>semantic</em> meaning of the underlying content.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='linking-a-css-stylesheet'><span>Linking a CSS Stylesheet</span></h2></div>
+
+<p>If you try loading either of the HTML pages in a browser, you won’t
+see our stylesheet in action. That’s because we didn’t link them
+together yet. This is what the HTML <code>&lt;link/&gt;</code> element is for.
+In <code>hello-css.html</code>, change <code>&lt;head&gt;</code> to the
+following:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello, CSS<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+
+
+<p>This <code>&lt;link/&gt;</code> element is how browsers know they need to
+load <code>styles.css</code> when they try to render our
+<code>hello-css.html</code> page. We should now see blindingly red text
+everywhere:</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 404px'><div class='diagram__padding' style='padding-bottom: 99.00990099009901%'><img class='diagram__image' alt='Web page with a lot of bright red text due to body selector' src='linking-a-css-stylesheet-572fd1.png' width='404' height='400'/></div></div></figure>
+
+<p>The <code>&lt;link/&gt;</code> element is just like the
+<code>&lt;a&gt;</code> element, but it’s only meant to be used inside of
+<code>&lt;head&gt;</code>. Since it’s in the head of the document,
+<code>&lt;link/&gt;</code> connects to <em>metadata</em> that’s defined
+outside of the current document. Also notice that it’s an <a
+href='../basic-web-pages/index.html#empty-html-elements'>empty element</a>, so
+it doesn’t need a closing tag.</code>
+
+<p>The <code>rel</code> attribute defines the relationship between the resource
+and the HTML document. By far the most common value is <code>stylesheet</code>,
+  but there are a <a
+    href='https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types'>few
+    other options</a>. The <code>href</code> attribute works the same as in the
+  previous chapter, only it should point to a <code>.css</code> file instead of
+  another web page. The value for <code>href</code> can be an <a
+    href='../links-and-images/index.html#absolute-relative-and-root-relative-links'>absolute,
+    relative, or root-relative link</a>.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 470px'><div class='diagram__padding' style='padding-bottom: 87.87234042553192%'><img class='diagram__image' alt='Diagram: HTML &lt;link&gt; element directing the browser to a CSS stylesheet' src='link-element-1beb38.png' width='470' height='413'/></div></div></figure>
+
+<p>Note that there’s no <em>direct</em> connection between the browser and our
+stylesheet. It’s only through the HTML markup that the browser can find it.
+CSS, images, and even JavaScript all rely on an HTML page to glue everything
+together, making HTML the heart of most websites.</p>
+
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='css-comments'><span>CSS Comments</span></h2></div>
+
+<p>Now that our stylesheet is hooked up, let’s play with it a little bit.
+That red is horrible. Let’s tone it down to a nice gray:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#414141</span>;    <span class="hljs-comment">/* Dark gray */</span>
+}
+</code></pre>
+
+<p>Notice that comments in CSS are a little different than their HTML
+counterparts. Instead of the <code>&lt;!-- --&gt;</code> syntax, CSS ignores
+everything between <code>/*</code> and <code>*/</code> characters.</p>
+
+</div></div>
+
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='setting-multiple-properties'><span>Setting Multiple Properties</span></h2></div>
+
+<p>You can stick as many properties as you want in the declarations block of a
+CSS rule. Try setting the background color of the entire web page by changing
+our rule to the following:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#414141</span>;               <span class="hljs-comment">/* Dark gray */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEEEEE</span>;    <span class="hljs-comment">/* Light gray */</span>
+}
+</code></pre>
+
+<p>The <code>background-color</code> property is very similar to the
+<code>color</code> property, but it defines the background color of whatever
+  element you selected. Take a second to admire those semicolons at the end of
+  each declaration. Removing them will break the CSS rule, so <em>always mind
+    your semicolons!</em></p>
+
+<p>Why did we pick shades of grays instead of black and white? Using a
+<code>#000000</code> background with a <code>#FFFFFF</code> text color is too
+high of a contrast. It makes it look like the page is vibrating, which can be
+very distracting for readers.</p>
+
+</div></div>
+
+
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='selecting-different-elements'><span>Selecting Different Elements</span></h2></div>
+
+<p>Of course, you’ll want to apply styles to elements other than
+<code>&lt;body&gt;</code>. For that, simply add more CSS rules with different
+selectors. We can change the font size of our <code>&lt;h1&gt;</code> headings
+like so:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#414141</span>;               <span class="hljs-comment">/* Dark gray */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEEEEE</span>;    <span class="hljs-comment">/* Light gray */</span>
+}
+
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">36px</span>;
+}
+</code></pre>
+
+<p>And, if you want to alter <code>h2</code> headings, add another rule:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">28px</span>;
+}
+</code></pre>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='units-of-measurement'><span>Units of Measurement</span></h2></div>
+
+<p>Many CSS properties require a unit of measurement. There’s <a
+	href='https://developer.mozilla.org/en-US/docs/Web/CSS/length'>a lot of
+	units</a> available, but the most common ones you’ll encounter are
+<code>px</code> (pixel) and <code>em</code> (pronounced like the letter
+<em>m</em>). The former is what you would intuitively call a pixel, regardless
+of whether the user has a retina display or not, and the latter is the current
+font size of the element in question.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 40.5%'><img class='diagram__image' alt='Diagram: 1em, 1.6em, and 2em sizes for base font size of 12px, 16px, and 20px. Em sizes get bigger as base font sizes increase.' src='em-units-dad09a.png' width='600' height='243'/></div></div></figure>
+
+<p>The <code>em</code> unit is very useful for defining sizes relative to some
+base font. In the above diagram, you can see <code>em</code> units scaling to
+match a base font size of <code>12px</code>, <code>16px</code>, and
+<code>20px</code>. For a concrete example, consider the following alternative
+to the previous code snippet:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#414141</span>;               <span class="hljs-comment">/* Dark gray */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEEEEE</span>;    <span class="hljs-comment">/* Light gray */</span>
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2em</span>;
+}
+
+<span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.6em</span>;
+}
+</code></pre>
+
+<p>This sets our base font size for the document to <code>18px</code>, then
+says that our <code>&lt;h1&gt;</code> elements should be twice that size and
+our <code>&lt;h2&gt;</code>’s should be 1.6 times bigger. If we (or the
+user) ever wanted to make the base font bigger or smaller, <code>em</code>
+units would allow our entire page to scale accordingly.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='selecting-multiple-elements'><span>Selecting Multiple Elements</span></h2></div>
+
+<p>What if we want to add some styles to <em>all</em> our headings? We
+don’t want to have redundant rules, since that would eventually become a
+nightmare to maintain:</p>
+
+<pre class='highlight'><code><span class="hljs-comment">/* (You'll regret creating redundant styles like this) */</span>
+<span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
+}
+
+<span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
+}
+
+<span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
+}
+<span class="hljs-comment">/* (etc) */</span>
+</code></pre>
+
+<p>Instead, we can select multiple HTML elements in the same CSS rule by
+separating them with commas. Add this to our <code>styles.css</code> file:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
+}
+</code></pre>
+
+<p>This defines the font to use for all of our headings with a single rule.
+That’s great, ’cause if we ever want to change it, we only have to do so in one
+place. Copying and pasting code is usually a bad idea for web developers, and
+multiple selectors can help reduce that kind of behavior quite a bit.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 404px'><div class='diagram__padding' style='padding-bottom: 99.00990099009901%'><img class='diagram__image' alt='Web page showing &lt;h1&gt; and &lt;h2&gt; headings in a different font' src='heading-font-families-68964e.png' width='404' height='400'/></div></div></figure>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='defining-fonts'>Defining Fonts</h3></div>
+
+<p><code>font-family</code> is another built-in CSS property that defines the
+typeface for whatever element you selected. It accepts multiple values because
+not all users will have the same fonts installed. With the above snippet, the
+browser tries to load the left-most one first (<code>Helvetica</code>), falls
+back to <code>Arial</code> if the user doesn’t have it, and finally chooses the
+system’s default sans serif font.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 14.000000000000002%'><img class='diagram__image' alt='Diagram: Helvetica falling back to Arial falling back to any sans serif font' src='system-fonts-6a5c38.png' width='600' height='84'/></div></div></figure>
+
+<p>Relying on the user’s built-in fonts has historically been incredibly
+limiting for web designers. Nowadays, system fonts have been largely superseded
+by web fonts. You can read more about this in the <a
+href='../web-typography/index.html'>Web Typography</a> chapter of this
+tutorial.</p>
+
+</div></div>
+
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='list-styles'><span>List Styles</span></h2></div>
+
+<p>The <code>list-style-type</code> property lets you alter the bullet icon
+used for <code>&lt;li&gt;</code> elements. You’ll typically want to
+define it on the parent <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>
+element:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">ul</span> {
+  <span class="hljs-attribute">list-style-type</span>: circle;
+}
+
+<span class="hljs-selector-tag">ol</span> {
+  <span class="hljs-attribute">list-style-type</span>: lower-roman;
+}
+</code></pre>
+
+<p>You can find other common values in the <code>hello-css.html</code> example
+page. Of particular interest is <code>none</code>, which is commonly used when
+marking up menu navigation with a <code>&lt;ul&gt;</code> list. The
+<code>none</code> value allows the menu’s list items to be styled more like
+buttons. In the <a href='../advanced-positioning/index.html'>Advanced
+Positioning</a> chapter, we’ll actually use this technique to create the
+navigation menu shown below.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 266px'><div class='diagram__padding' style='padding-bottom: 94.3609022556391%'><img class='diagram__image' alt='Web page showing &lt;ul&gt; and &lt;li&gt; elements without list item bullets' src='list-items-for-menus-70abb2.png' width='266' height='251'/></div></div></figure>
+
+<p>This is good example of the separation of content from presentation. A
+navigation menu <em>is</em> an unordered list, but it also makes sense to
+display them as buttons instead of a typical bulleted list. Intelligently
+designed HTML allows search engines to infer the structure of our content,
+while CSS lets us display it to humans in beautiful ways.</p>
+
+<p>You can even create custom bullets for <code>&lt;li&gt;</code> elements with
+the <code>list-style-image</code> property (see MDN <a
+href='https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image'>for
+details</a>).</p>
+
+<p>Defining the color of your text and the appearance of your bullets might
+seem trivial, and it kind of is. But, look at the bigger picture: this is about
+gaining <em>complete</em> control over the appearance of an HTML document.
+Alone, a single CSS property is silly. Put them all together, and you’re
+able to create a totally customized web page.</p>
+
+</div></div>
+
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='reusable-stylesheets'><span>Reusable Stylesheets</span></h2></div>
+
+<p>So, we just defined some basic styles for one of our web pages. It would be
+really convenient if we could reuse them on our other page, too. For this, all
+we need to do is add the same <code>&lt;link/&gt;</code> element to any other
+pages we want to style. Try adding the following line to the
+<code>&lt;head&gt;</code> of <code>dummy.html</code>:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+</code></pre>
+
+<p>Now, our <code>dummy.html</code> pages should match our
+<code>hello-css.html</code> styles. Whenever we change a style in
+<code>styles.css</code>, those changes will automatically be reflected in both
+of our web pages. This is how you get a consistent look and feel across an
+entire website.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 490px'><div class='diagram__padding' style='padding-bottom: 84.28571428571429%'><img class='diagram__image' alt='Diagram: Three HTML files pointing to the same global CSS stylesheet' src='reusable-css-stylesheets-43a99a.png' width='490' height='413'/></div></div></figure>
+
+<p>You’ll almost always have at least one stylesheet that’s applied
+to the entire site. It’s usually a good idea to use <a
+href='../links-and-images/index.html#root-relative-links'>root-relative
+paths</a> when linking global stylesheets to avoid problems in nested pages.
+For example, <code>some-folder/page.html</code> would need to use
+<code>../styles.css</code> to reference our <code>styles.css</code> file, and
+this can get real confusing real quick.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='more-text-styles'><span>More Text Styles</span></h2></div>
+
+<p>There’s a whole bunch of different CSS properties that we’ll be
+introducing over the course of this tutorial, but for now, let’s finish
+up with some of the most common ways to format text.</p>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='underlines'>Underlines</h3></div>
+
+<p>The <code>text-decoration</code> property determines whether text is
+underlined or not. By setting it to <code>none</code>, we can remove the
+default underline from all of our links. We’ll discuss link styles
+in-depth <a href='https://internetingishard.com/html-and-css/css-selectors#pseudo-classes-for-links'>later
+on</a>.</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+</code></pre>
+
+<p>The other common value for <code>text-decoration</code> is
+<code>line-through</code> to strike out “deleted” text. But,
+	remember that <em>meaning</em> should always be conveyed through
+	HTML&mdash;not CSS. It’s better to use the <a
+		href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins'><code>&lt;ins&gt;</code></a>
+	and <a
+		href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del'><code>&lt;del&gt;</code></a>
+	elements instead of adding a <code>line-through</code> style to, say, an
+	ordinary <code>&lt;p&gt;</code> element.</p>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='text-alignment'>Text Alignment</h3></div>
+
+<p>The aptly named <code>text-align</code> property defines the alignment of
+the text in an HTML element.</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">text-align</span>: left;
+}
+</code></pre>
+
+<p>Other accepted values are <code>right</code>, <code>center</code>, or
+<code>justify</code>, but notice how it always aligns to the entire page:</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 564px'><div class='diagram__padding' style='padding-bottom: 33.51063829787234%'><img class='diagram__image' alt='Web page with right-aligned text' src='css-text-align-right-3c6a95.png' width='564' height='189'/></div></div></figure>
+
+<p>This isn’t what you want for most websites. We’ll learn why this is the case
+in the <a href='../css-box-model/index.html'>next chapter</a> when we start
+talking about CSS boxes.</p>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='font-weight-and-styles'>Font Weight and Styles</h3></div>
+
+<p>The <code>font-weight</code> property defines the “boldness” of
+the text in an element, and the <code>font-style</code> property indicates
+whether it’s italicized or not.</p>
+
+<p>Let’s say we don’t want our headings to be bold. Update our heading font
+rule in <code>styles.css</code> to match the following:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
+  <span class="hljs-attribute">font-weight</span>: normal;                              <span class="hljs-comment">/* Add this */</span>
+}
+</code></pre>
+
+<p>These properties clearly demonstrate the separation of content (HTML) from
+presentation (CSS). The following rules swap the appearance of the
+<code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements:</p>
+
+<pre class='highlight'><code><span class="hljs-comment">/* (You probably shouldn't do this) */</span>
+<span class="hljs-selector-tag">em</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">font-style</span>: normal;
+}
+
+<span class="hljs-selector-tag">strong</span> {
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">font-style</span>: italic;
+}
+</code></pre>
+
+<p>We don’t suggest doing this for real websites though. Font weights and
+styles will, however, become a lot more important once we start playing with
+custom fonts in the <a href='../web-typography/index.html'>Web Typography</a>
+chapter.</p>
+
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='the-cascade'><span>The Cascade</span></h2></div>
+
+<p>The “cascading” part of CSS is due to the fact that rules
+cascade down from multiple sources. So far, we’ve only seen one place
+where CSS can be defined: external <code>.css</code> files. However, external
+stylesheets are just one of many places you can put your CSS code.</p>
+
+<p>The CSS hierarchy for every web page looks like this:</p>
+
+<ul>
+	<li>The browser’s default stylesheet</li>
+	<li>User-defined stylesheets</li>
+	<li>External stylesheets (that’s us)</li>
+	<li>Page-specific styles (that’s also us)</li>
+	<li>Inline styles (that could be us, but it never should be)</li>
+</ul>
+
+<p>This is ordered from least to most precedence, which means styles defined in
+each subsequent step <em>override</em> previous ones. For example, inline
+styles will always make the browser ignore its default styles. The next few
+sections focus on the last two options because that’s what we have
+control over as web developers (in addition to the external styles we’ve
+already been working with).</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 281px'><div class='diagram__padding' style='padding-bottom: 222.77580071174378%'><img class='diagram__image' alt='Diagram: external stylesheets pointing to page-specific styles pointing to inline styles' src='css-cascade-0755f2.png' width='281' height='626'/></div></div></figure>
+
+<p>We made an effort to get you started down the right path with external
+stylesheets. It’s important to understand page-specific and inline
+styles because you’ll most definitely encounter them in the wild, but
+external stylesheets are by far the best place to define the appearance of your
+website.</p>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='page-specific-styles'>Page-Specific Styles</h3></div>
+
+<p>The <code>&lt;style&gt;</code> element is used to add page-specific CSS
+rules to individual HTML documents. The <code>&lt;style&gt;</code> element
+always lives in the <code>&lt;head&gt;</code> of a web page, which makes sense
+because it’s metadata, not actual content.</p>
+
+<p>As an example, let’s apply some styles to our <code>dummy.html</code>
+page by updating its <code>&lt;head&gt;</code> element to this:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Dummy<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">body</span> {
+      <span class="hljs-attribute">color</span>: <span class="hljs-number">#0000FF</span>;    <span class="hljs-comment">/* Blue */</span>
+    }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+
+<p>These apply <em>only</em> to <code>dummy.html</code>. Our
+<code>hello-css.html</code> page won’t be affected. If you did it right,
+you should see bright blue text when you load <code>dummy.html</code> in a
+browser.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 404px'><div class='diagram__padding' style='padding-bottom: 46.78217821782179%'><img class='diagram__image' alt='Web page with all blue text due to page-specific styles overriding global CSS stylesheet' src='page-specific-css-styles-example-99d6c8.png' width='404' height='189'/></div></div></figure>
+
+<p>Anything you would put in our <code>styles.css</code> file can live in this
+<code>&lt;style&gt;</code> element. It uses the exact same CSS syntax as an
+external stylesheet, but everything here will override rules in our
+<code>styles.css</code> file. In this case, we’re telling the browser to
+ignore the <code>color</code> property we defined for <code>&lt;body&gt;</code>
+in our external stylesheet and use <code>#0000FF</code> instead.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 560px'><div class='diagram__padding' style='padding-bottom: 51.964285714285715%'><img class='diagram__image' alt='Diagram: three page-specific CSS rules attached to three individual HTML documents' src='page-specific-css-styles-c6b688.png' width='560' height='291'/></div></div></figure>
+
+<p>The problem with page-specific styles is that they’re incredibly
+difficult to maintain. As shown in the above diagram, when you want to apply
+these styles to another page, you have to copy-and-paste them into
+<em>that</em> document’s <code>&lt;head&gt;</code>. Trying to track down
+redundant CSS rules in multiple <code>.html</code> files is much harder than
+editing a single <code>.css</code> file.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 537px'><div class='diagram__padding' style='padding-bottom: 76.35009310986965%'><img class='diagram__image' alt='Diagram: three web pages referring to a single global CSS stylesheet' src='external-css-styles-b073ea.png' width='537' height='410'/></div></div></figure>
+
+<p>Page-specific styles occasionally come in handy when you’re in a rush,
+but it’s almost always better to store all your CSS in external
+stylesheets opposed to <code>&lt;style&gt;</code> elements.</p>
+
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='inline-styles'>Inline Styles</h3></div>
+
+<p>You can also stick CSS rules in the <code>style</code> attribute of an HTML
+element. In <code>dummy.html</code>, we have a link that doesn’t actually
+go anywhere. Let’s make it red via an inline style so we remember
+it’s a dead link:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Want to try crossing out an <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>
+   <span class="hljs-attr">style</span>=<span class="hljs-string">'color: #990000; text-decoration: line-through;'</span>&gt;</span>obsolete link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>?
+   This is your chance!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+
+<p>Like page-specific styles, this is the same CSS syntax we’ve been
+working with. However, since it’s in an attribute, it needs to be
+condensed to a single line. Inline styles are the most specific way to define
+CSS. The <code>color</code> and <code>text-decoration</code> properties we
+defined here trump <em>everything</em>. Even if we went back and added a
+<code>text-decoration: none</code> to our <code>&lt;style&gt;</code> element,
+it wouldn’t have any effect.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 37.666666666666664%'><img class='diagram__image' alt='Diagram: 10 CSS rules attached directly to 10 different HTML elements via inline styles' src='inline-css-styles-are-bad-73261b.png' width='600' height='226'/></div></div></figure>
+
+<p>Inline styles should be avoided at all costs because they make it impossible
+to alter styles from an external stylesheet. If you ever wanted to re-style
+your website down the road, you can’t just change a few rules in your
+global <code>styles.css</code> file&mdash;you’d have to go through every
+single page and update every single HTML element that has a <code>style</code>
+attribute. It’s horrifying.</p>
+
+<p>That said, there will be many times when you need to apply styles to only a
+specific HTML element. For this, you should always use CSS classes instead of
+inline styles. We’ll explore classes in the <a
+href='../css-selectors/index.html'>CSS Selectors</a> chapter.</p>
+
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='multiple-stylesheets'>Multiple Stylesheets</h3></div>
+
+<p>CSS rules can be spread across several external stylesheets by adding
+multiple <code>&lt;link/&gt;</code> elements to the same page. A common use
+case is to separate out styles for different sections of your site. This lets
+you selectively apply consistent styles to distinct categories of web
+pages.</p>
+
+<p>For instance, if we had a bunch of product pages that looked entirely
+different than our blog, we could use the following. (We don’t actually
+have these stylesheets defined, so don’t bother adding them to our
+example project.)</p>
+
+<pre class='highlight'><code><span class="hljs-comment">&lt;!-- All product pages have this --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'product.css'</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+
+<pre class='highlight'><code><span class="hljs-comment">&lt;!-- While all blog posts have this --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'blog.css'</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+
+<p>The order of the <code>&lt;link/&gt;</code> elements matters. Stylesheets
+that come later will override styles in earlier ones. Typically, you’ll put
+your “base” or “default” styles in a global stylesheet
+(<code>styles.css</code>) and supplement them with section-specific stylesheets
+(<code>product.css</code> and <code>blog.css</code>). This allows you to
+organize CSS rules into manageable files while avoiding the perils of
+page-specific and inline styles.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='summary'><span>Summary</span></h2></div>
+
+<p>We talked a lot about separating content from presentation in this chapter.
+This not only allows us to reuse the same CSS stylesheet in multiple HTML
+documents, but also lets us conditionally apply <em>different</em> CSS rules to
+the <em>same</em> HTML content, depending on whether the user is on a mobile
+phone, tablet, or desktop computer. This latter part is called <a
+href='../responsive-design/index.html'>Responsive Design</a>.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 470px'><div class='diagram__padding' style='padding-bottom: 122.34042553191489%'><img class='diagram__image' alt='Diagram: single HTML file rendered with separate mobile and desktop CSS styles' src='responsive-css-b7a057.png' width='470' height='575'/></div></div></figure>
+
+<p>As a web developer, you’ll (hopefully) be given a polished design to work
+off of. Your job is to turn that mockup into a real web page leveraging your
+knowledge of CSS. As we mentioned earlier, setting individual CSS properties is
+actually quite simple. The hard part is combining the overwhelming number of
+built-in properties to create exactly what your web designer asked
+for&mdash;and do it quickly.</p>
+
+<p>This chapter focused mostly on text formatting, but the Cascading Style
+Sheet language can do a whole lot more. In the next chapter, we’ll start
+exploring how CSS defines the layout of our web pages. On a final note,
+remember that you can always refer to <a
+  href='https://developer.mozilla.org/en-US/docs/Web/CSS/Reference'>MDN’s CSS
+  Reference</a> when you’re not sure how a particular property works.</p>
+
+<div class='next-chapter'>
+  <a href='../css-box-model/index.html'>Next Chapter &gt;</a>
+</div>
+
+</div></div>
+
+
+<div class='chapter-sidebar'><div class='sidebar js-sidebar'><div class='sidebar__wrapper'><ul class='sidebar__list'><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#setup'>Setup</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#css-stylesheets'>CSS Stylesheets</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#linking-a-css-stylesheet'>Linking a Stylesheet</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#css-comments'>CSS Comments</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#setting-multiple-properties'>Multiple Properties</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#selecting-different-elements'>Different Elements</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#units-of-measurement'>Units of Measurement</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#selecting-multiple-elements'>Multiple Selectors</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#list-styles'>List Styles</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#reusable-stylesheets'>Reusable Stylesheets</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#more-text-styles'>More Text Styles</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#the-cascade'>The Cascade</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#summary'>Summary</a> </li></ul></div></div></div>
+
+
+
+  
+  <footer>
+
+    
+    <div class='about'>
+
+      <div class='about__wrapper'>
+        <div class='about__header'>
+          <div class='about__rule-before'></div>
+          <img class='about__logo' src='../../img/interneting-is-hard-logo-97b225.svg'
+               alt='Wi-fi signal with exclamation mark through it'>
+          <div class='about__rule-after'></div>
+        </div>
+
+        <div class='about__content'>
+          <div class='about__icons'>
+            <a href='https://twitter.com/internetinghard' target='_blank'><img
+               class='about__twitter' src='../../img/twitter-icon-29cd78.png'
+               alt='Twitter logo'></a>
+            <a href='https://www.facebook.com/Interneting-Is-Hard-120886695097813/' target='_blank'><img
+               class='about__facebook' src='../../img/facebook-icon-e6def5.png'
+               alt='Facebook logo'></a>
+            <a class='js-obfuscated-email__mailto'><img class='about__email'
+               src='../../img/email-icon-a4c505.png'
+               alt='Envelope icon'></a>
+          </div>
+
+          <p class='about__description'><em>InternetingIsHard.com</em> is an
+          independent publisher of premium web development tutorials. All
+          content is authored and maintained by Oliver James. He loves hearing
+          from readers, so <a href='../../contact/index.html'>come say hello</a>!</p>
+
+        </div>
+
+        <div class='about__mailing-list'>
+          <div class='about__mailing-list-description'>
+            More tutorials are coming. (Lots more.)<br/>
+            Enter your email <span
+              class='about__mailing-list-below'>below</span><span
+              class='about__mailing-list-above'>above</span>, and we’ll let you
+            know when they get here.
+          </div>
+
+          <form class='about__mailing-list-form js-about__mailing-list-form'
+                novalidate>
+
+            <div class='slide-animation'>
+              <div class='about__mailing-list-row js-about__mailing-list-row'>
+                <label for='about__mailing-list-email'
+                       class='about__mailing-list-email-label'>Email</label>
+                <input id='about__mailing-list-email'
+                       class='input-text input-text--small
+                              about__mailing-list-email js-about__mailing-list-email'
+                       type='email'
+                       placeholder='you@example.com'/>
+
+                <div class='cta-button about__mailing-list-button'>
+                  <button class='cta-button__link cta-button__link--small
+                                 about__mailing-list-button-link
+                                 js-about__mailing-list-button-link'>Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class='slide-animation slide-animation--hidden'>
+              <div class='input-status about__mailing-list-status
+                          js-about__mailing-list-status'>
+                <span class='input-status__title js-about__mailing-list-status-title'>Error!</span>
+                <span class='js-about__mailing-list-status-text'>Can’t sign up for a mailing
+                  list without an email address...</span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    
+
+    <div class='footer'>
+      <div class='footer__copyright'>
+        <div class='footer__item'>
+          <span class='footer__copyright-symbol'>©</span> 2017
+          <a href='../../index.html'>InternetingIsHard.com</a>
+        </div>
+      </div>
+      <div class='footer__links'>
+        <div class='footer__item footer__item--auto'>
+          <a href='../../contact/index.html'>Contact</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/licensing/index.html'>Licensing</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/privacy/index.html'>Privacy</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/terms-of-service/index.html'>Terms</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  
+</div>
+
+
+<script src='../../js/axios-3d1394.js'></script>
+<script src='../../js/validate-36917e.js'></script>
+<script src='../../js/global-466310.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Responsive Images Tutorial | HTML &amp; CSS Is Hard</title>
+	<meta charset='UTF-8' />
+	<meta name='viewport'
+		  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<link rel='stylesheet' href='../../css/styles-0c78e2.css' />
+
+  
+	<link rel='shortcut icon' href='../../img/favicons/favicon-204b2d.ico'>
+	<link rel='icon' sizes='16x16 32x32 64x64' href='../../img/favicons/favicon-204b2d.ico'>
+	<link rel='icon' type='image/png' sizes='196x196' href='../../img/favicons/favicon-192-a6e5b6.png'>
+	<link rel='icon' type='image/png' sizes='160x160' href='../../img/favicons/favicon-160-2e97e1.png'>
+	<link rel='icon' type='image/png' sizes='96x96' href='../../img/favicons/favicon-96-5bcf10.png'>
+	<link rel='icon' type='image/png' sizes='64x64' href='../../img/favicons/favicon-64-36b542.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='../../img/favicons/favicon-32-0ae869.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='../../img/favicons/favicon-16-653c3c.png'>
+	<link rel='apple-touch-icon' href='../../img/favicons/favicon-57-b21a49.png'>
+	<link rel='apple-touch-icon' sizes='114x114' href='../../img/favicons/favicon-114-271cbc.png'>
+	<link rel='apple-touch-icon' sizes='72x72' href='../../img/favicons/favicon-72-091952.png'>
+	<link rel='apple-touch-icon' sizes='144x144' href='../../img/favicons/favicon-144-4696d9.png'>
+	<link rel='apple-touch-icon' sizes='60x60' href='../../img/favicons/favicon-60-11c348.png'>
+	<link rel='apple-touch-icon' sizes='120x120' href='../../img/favicons/favicon-120-eb7cc9.png'>
+	<link rel='apple-touch-icon' sizes='76x76' href='../../img/favicons/favicon-76-65750a.png'>
+	<link rel='apple-touch-icon' sizes='152x152' href='../../img/favicons/favicon-152-bf36c7.png'>
+	<link rel='apple-touch-icon' sizes='180x180' href='../../img/favicons/favicon-180-ed255c.png'>
+	<meta name='msapplication-TileColor' content='#FFFFFF'>
+	<meta name='msapplication-TileImage' content='/img/favicons/favicon-144-4696d9.png'>
+	<meta name='msapplication-config' content='/img/favicons/browserconfig-8221df.xml'>
+
+  
+  
+  <meta property='og:title' content='Responsive Images | HTML &amp; CSS Is Hard' />
+  <meta property='og:description' content='Responsive images are hard. Like, actually hard. But don’t be scared.' />
+  <meta property='og:type' content='article' />
+  <meta property='og:url' content='/html-and-css/responsive-images/' />
+  <meta property='og:image' itemprop='image' content='https://internetingishard.com/html-and-css/icons/social/responsive-images-30ab52.png' />
+
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name='twitter:site' content='@internetinghard' />
+  <meta name='twitter:title' content='Responsive Images | HTML &amp; CSS Is Hard' />
+  <meta name='twitter:description' content='Responsive images are hard. Like, actually hard. But don’t be scared.' />
+  <meta name='twitter:image' content='https://internetingishard.com/html-and-css/icons/social/responsive-images-30ab52.png'/>
+  
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91393617-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+
+
+<nav class='main-nav'>
+  <div class='main-nav__branding'>
+    <div><a class='main-nav__logo-link' href='../../index.html'><img class='main-nav__logo'
+                        src='../../img/interneting-is-hard-logo-97b225.svg'
+                        alt='Wifi signal with exclamation mark through it'></a></div>
+    <div>
+      <a class='main-nav__name' href='../../index.html'>Interneting Is Hard</a>
+    </div>
+  </div>
+  <div>
+    <a class='main-nav__html-css' href='../index.html'>HTML &amp; CSS</a>
+  </div>
+</nav>
+
+
+<div class='page'>
+  
+
+<header class='page-header'><div class='page-header__wrapper'><div class='heading'><h1 class='heading__title'>Responsive Images</h1><div class='heading__parenthesis-rule'><div class='heading__rule-before'></div><div class='heading__parenthesis'>Nº 11. of <a href='../index.html'>HTML &amp; CSS Is Hard</a></div><div class='heading__rule-after'></div></div><div class='heading__subtitle'>Responsive images are hard. Like, actually hard. But don’t be scared.</div></div></div></header>
+
+<div class='content'><div class='content__wrapper content__wrapper--first'>
+
+<p class='nudge-desktop--smaller'>In <a
+  href='../responsive-design/index.html'>Responsive Design</a>, we learned how
+to use media queries to create separate mobile, tablet, and desktop layouts.
+Now, we’re going to add images to the mix. Just as media queries let us
+conditionally present different CSS rules, we want to display different images
+based on the user’s device.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 560px'><div class='diagram__padding' style='padding-bottom: 84.46428571428571%'><img class='diagram__image' alt='Diagram: low-resolution image sent to standard screen desktop devices and all mobile devices versus high-resolution image sent to retina desktop devices' src='responsive-images-overview-890631.png' width='560' height='473'/></div></div></figure>
+
+<p>The problem is, images have inherent dimensions. We can’t stretch a photo
+that’s 500&times;250 pixels to anything beyond 500 pixels wide because it’ll
+get pixelated. Retina displays and mobile devices complicate things even more.
+To make our images responsive, we now have to take three things into
+consideration:</p>
+
+<ul>
+  <li>The device’s dimensions</li>
+  <li>The image’s dimensions</li>
+  <li>The device’s screen resolution</li>
+</ul>
+
+<p>This will be more difficult than media queries, which were only concerned
+with device width. But don’t worry, there are standard ways to solve all these
+problems, and we’ll walk you through them one step at a time.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='setup'><span>Setup</span></h2></div>
+
+<p>To experiment with responsive images, we need a responsive website to work
+with. This chapter will be building off of the example web page we put together
+in the <a href='../responsive-design/index.html'>previous chapter</a>. We’ll
+be adding two images to the page so it looks  like the following. This might
+seem simple, but these images will change depending on the user’s device (which
+is <em>really</em> cool).</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 268px'><div class='diagram__padding' style='padding-bottom: 164.55223880597015%'><img class='diagram__image' alt='Web page with large photo in header and line art illustration in content' src='site-with-responsive-images-1f0431.png' width='268' height='441'/></div></div></figure>
+
+<p>If you’re continuing from the last chapter, you simply need to <a
+  href='responsive-images-5e8a2c.zip'>download these image assets</a> and add them to
+your project’s <code>images/</code> folder.</p>
+
+<p>If you’re just joining us, go ahead and download the <a
+  href='example-7be588.zip'>complete example project</a>, unzip it, and open it up
+with Atom. If you’re not familiar with the Atom text editor, be sure to take a
+read through the <a href='../introduction/index.html#atom-text-editor'>introduction</a> of this
+tutorial series.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 228px'><div class='diagram__padding' style='padding-bottom: 168.859649122807%'><img class='diagram__image' alt='Screenshot: Atom’s file browser after unzipping the project' src='project-files-d6d457.png' width='228' height='385'/></div></div></figure>
+
+<p>In either case, your project files should look like this before moving on.
+Notice how we have multiple copies of our PNG and JPG images (e.g.,
+<code>illustration-big.png</code> and <code>illustration-small.png</code>).
+We’ll be letting the browser pick which one of these it should load depending
+on the device’s size and screen resolution.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='retina-screens'><span>Retina Screens</span></h2></div>
+
+<p>This is our first time worrying about retina devices, so let’s talk a
+little bit about screen resolution. Retina screens have twice as many pixels
+per inch than standard-resolution screens. That is to say, each retina pixel is
+the equivalent of 4 standard pixels. This has a big impact on how images are
+displayed in a web browser.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 400px'><div class='diagram__padding' style='padding-bottom: 56.75%'><img class='diagram__image' alt='Diagram: standard-resolution screen with 4 pixels versus high-resolution screen with 16 pixels' src='standard-vs-retina-resolution-64f6b6.png' width='400' height='227'/></div></div></figure>
+
+<p>To render correctly on a retina device, an image needs to be twice as big as
+its final display dimensions. For example, if you want to add a 500&times;250
+pixel image to the page, the corresponding image file needs to be
+1000&times;500 pixels.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 42.16666666666667%'><img class='diagram__image' alt='Diagram: High-resolution image shrunk to half size and displayed on retina screen' src='retina-2x-image-dimensions-5a4673.png' width='600' height='253'/></div></div></figure>
+
+<p>This is actually a bit of a simplification&mdash;not all retina screens are
+created equal. For instance, the iPhone 6 Plus has <em>three times</em> as many
+pixels per inch as a standard screen. This tutorial focuses on the 2x use case,
+but the same techniques apply to 3x retina screens as well.</p>
+
+<p>What’s more, standard displays and smaller devices don’t need
+all those extra pixels in high-resolution images, and sending that much
+unnecessary data usually results in a bad user experience.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='responsive-svg-images'><span>Responsive SVG Images</span></h2></div>
+
+<p>The easiest way to solve all these problems is with <a
+  href='../links-and-images/index.html#svg-images'>SVG images</a>. They “just
+work.” Since they’re vector-based, SVGs avoid the screen resolution problems
+that we’ll see in the next section. Let’s take a look by adding an illustration
+to our <code>responsive.html</code> page. Replace the existing image in the
+<code>.content</code> div so that it matches the following:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section content'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'illustration'</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/illustration.svg'</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>Browsers automatically scale up SVGs for retina devices, so this
+500&times;250 pixel SVG image will render crisply on both standard and retina
+devices.</p>
+
+<p>SVGs let us forget about screen resolution issues, but we do need to shrink
+the illustration to fit neatly into our fluid tablet and mobile layouts.
+Firefox will do this automatically, but if you open this page with Chrome and
+make your browser very narrow, you’ll find that the image stays the same
+size.</p>
+
+<p>To get a fluid image in Chrome, we need to tell the illustration to always
+fill the width of its container. In <code>styles.css</code>, put the following
+rule with the rest of the base styles, outside of the media queries:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-class">.illustration</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+</code></pre>
+
+<p>When we specify <code>100%</code> width on an image, it’ll assume we
+want to maintain its aspect ratio and calculate its height automatically. This
+fixes the mobile layout, but now the desktop version is <em>huge</em>:</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 575px'><div class='diagram__padding' style='padding-bottom: 78.26086956521739%'><img class='diagram__image' alt='SVG image shrinking to fit mobile and tablet widths, but very large in desktop layout' src='responsive-svg-image-bfa291.png' width='575' height='450'/></div></div></figure>
+
+<p>This behavior is perfect for some designs (like the full bleed photo
+we’ll see in the next section), but not right now. We want to cap the
+  width of the illustration to its inherent width, which is 500 pixels. We can
+  do this with an <a href='../hello-css/index.html#inline-styles'>inline
+    style</a>:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section content'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'illustration'</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/illustration.svg'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'max-width: 500px'</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>This is one of the rare times an inline style is acceptable, due to the fact
+that it’s describing an innate property of the image. An image’s
+physical dimensions are more content than presentation, so it makes sense for
+this to appear in the HTML rather than the stylesheet.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 277px'><div class='diagram__padding' style='padding-bottom: 146.20938628158845%'><img class='diagram__image' alt='Adding an inline style to limit the size of the SVG image' src='max-width-inline-style-073cc7.png' width='277' height='405'/></div></div></figure>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+
+<div class='subheading'><h2 class='subheading__heading' id='responsive-png-gif-and-jpg-images'><span>Responsive PNG, GIF, and <span  class='subheading__desktop-title-br'><br/></span>JPG Images</span></h2></div>
+
+<p>Of course, not all images on the web are SVGs. Sometimes you need to include
+a photo. PNG, GIF, and JPG images are “raster images”, meaning that
+they are defined pixel-by-pixel instead of with vectors. As a result, they are
+much more sensitive to screen resolution than SVGs.</p>
+
+<p>If you’re not worried about optimization, responsive raster images
+really aren’t that much harder than using SVG images. Try swapping out
+our existing <code>illustration.svg</code> with a PNG file:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section content'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'illustration'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/illustration-big.png'</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'max-width: 500px'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>We changed around the HTML structure a bit, nesting our
+<code>&lt;img/&gt;</code> tag in another container. Without it, the image would
+get distorted because flexbox would try to set its height to be the same as the
+<code>.content</code> container. This requires a little tweak to our
+<code>.illustration</code> CSS rule, too:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-class">.illustration</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">display</span>: block;
+}
+</code></pre>
+
+<p>Also notice the <code>-big</code> suffix in the image’s filename. This
+is the high-resolution version of the PNG, which has dimensions of
+1000&times;500. Retina devices need this “2x” size to display the
+image crisply. If we were to use the low-resolution version of this image
+(500&times;250 pixels), it would look fine on standard screens, but fuzzy on
+retina devices.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 536px'><div class='diagram__padding' style='padding-bottom: 93.47014925373134%'><img class='diagram__image' alt='Diagram: serving a high-resolution image to both standard screens and retina screens (which is wasteful)' src='retina-responsive-images-9f367b.png' width='536' height='501'/></div></div></figure>
+
+<p>Consider this the lazy way to create responsive PNG, GIF, or JPG images, as
+it assumes everybody needs a high-resolution image, even if they don’t.
+That is to say, a 1000&times;500 pixel image is overkill for non-retina
+devices. We’ll get a little smarter about this in the next section.</p>
+
+</div></div>
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='responsive-image-optimization'><span>Responsive Image Optimization</span></h2></div>
+
+<p>Different devices have different image requirements. Fortunately, HTML
+provides a way to choose the best image for the user’s device. Over the
+next few sections, we’ll take a look at three scenarios for optimizing
+responsive images:</p>
+
+<ul>
+  <li>A standard-resolution screen that doesn’t need a retina-quality
+    image.</li>
+  <li>A retina mobile device that can use a standard-quality image because
+    it’s been scaled down so much.</li>
+  <li>A desktop layout that uses a wide image, and an associated mobile
+    layout that uses a taller image.</li>
+</ul>
+
+<p>The first method is the easiest, and it’s great for images smaller than 600
+pixels wide because they aren’t big enough to benefit from the second
+scenario. The second method is a very important optimization for larger images,
+especially full-bleed photos. The third is for when you’re feelin’ fancy.</p>
+
+</div></div>
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='retina-optimization-using-srcset'><span>Retina Optimization Using srcset</span></h2></div>
+
+<p>High-resolution images are big. Our <code>illustration-big.png</code> file
+takes up more than twice as much disk space as its low-resolution counterpart.
+It doesn’t make sense to serve all that extra data when the user
+doesn’t actually need it.</p>
+
+<p>Adding a <code>srcset</code> attribute to our <code>&lt;img/&gt;</code>
+element lets us present our high-resolution image <em>only</em> to retina
+devices, falling back to the low-resolution version for standard screens.
+Update our <code>.illustration</code> element to match the following:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'illustration'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'illustration-small.png'</span>
+       <span class="hljs-attr">srcset</span>=<span class="hljs-string">'images/illustration-small.png 1x,
+               images/illustration-big.png 2x'</span>
+       <span class="hljs-attr">style</span>=<span class="hljs-string">'max-width: 500px'</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>The <code>srcset</code> attribute points to a list of alternative image
+files, along with properties defining when the browser should use each of them.
+The <code>1x</code> tells the browser to display
+<code>illustration-small.png</code> on standard-resolution screens. The
+<code>2x</code> means that <code>illustration-big.png</code> is for retina
+screens. Older browsers that don’t understand <code>srcset</code> fall back to
+the <code>src</code> attribute.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 83.5%'><img class='diagram__image' alt='Diagram: serving a low-resolution image to a standard screen and a high-resolution image to retina screens' src='retina-responsive-images-with-srcset-707397.png' width='600' height='501'/></div></div></figure>
+
+<p>Typically, the low-res and high-res versions of an image would be the exact
+same (except for their dimensions), but we made
+<code>illustration-small.png</code> yellow so you can easily differentiate it
+from the retina version, which is blue.</p>
+
+<p>It’s a little hard to see this in action without a real website, so we
+included the previous snippet on this page. The image below should be blue if
+you’re viewing it on a retina device. Otherwise, it will be yellow for
+standard-resolution screens.</p>
+
+
+<figure style='margin-top: 1em; margin-bottom: 1em;'>
+  <img src='example/illustration-small.png'
+       srcset='example/illustration-small.png 1x,
+              example/illustration-big.pngg 2x'
+       style='max-width: 500px'/>
+</figure>
+
+<p>If you’re building these examples on a computer with a retina screen,
+you can also try temporarily changing that <code>2x</code> to <code>1x</code>
+to see what a non-retina image looks like. It’s a little fuzzy (and
+yellow).</p>
+
+</div></div>
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='screen-width-optimization-using-srcset'><span>Screen Width Optimization Using srcset</span></h2></div>
+
+<p>Great! We can save some extra bytes for non-retina devices. Regrettably, the
+above <code>srcset</code> technique misses an important use case for larger
+images: if the user has a retina smartphone, it’ll download the
+high-resolution image even when the standard version would suffice.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 85.33333333333334%'><img class='diagram__image' alt='Diagram: low-resolution image sent to standard screen desktop devices and all mobile devices versus high-resolution image sent to retina desktop devices' src='screen-width-optimization-with-srcset-6dd918.png' width='600' height='512'/></div></div></figure>
+
+<p>Imagine that we wanted to display a big photo in our <code>.header</code>
+element. The header is 960 pixels wide in our desktop layout, so our photo
+needs to be at least 1920 pixels wide to display well on retina screens.
+We’ll also provide a 960 pixel-wide photo for standard screens. Now,
+consider a smartphone with a retina screen. Smartphones are typically less than
+400 pixels wide in portrait mode, which means that the corresponding
+retina-quality image would only need to be 800(ish) pixels wide.</p>
+
+<p>Hey! We can serve our standard-resolution photo to retina smartphones!</p>
+
+<p>The lesson here is that we want to optimize larger images based on their
+final rendered dimensions, not just the device’s screen resolution.
+Let’s go ahead and add that big photo to our <code>.header</code>
+element:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section header'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'photo'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/photo-small.jpg'</span>
+         <span class="hljs-attr">srcset</span>=<span class="hljs-string">'images/photo-big.jpg 2000w,
+                 images/photo-small.jpg 1000w'</span>
+         <span class="hljs-attr">sizes</span>=<span class="hljs-string">'(min-width: 960px) 960px,
+                100vw'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>We have the same <code>srcset</code> element as the last section, but
+instead of the <code>1x</code> and <code>2x</code> descriptors, we’re
+providing the inherent physical width of the image. The <code>2000w</code>
+tells the browser that the <code>photo-big.jpg</code> file is 2000 pixels wide.
+Likewise, the <code>1000w</code> means <code>photo-small.jpg</code> has a width
+of 1000 pixels. If you’re wondering about that <code>w</code> character,
+it’s a special unit used only for this kind of image optimization
+scenario.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 564px'><div class='diagram__padding' style='padding-bottom: 47.340425531914896%'><img class='diagram__image' alt='Diagram: srcset=1000w as width of the low-resolution image file, srcset=2000w as width of the high-resolution image file' src='img-srcset-physical-width-2153b0.png' width='564' height='267'/></div></div></figure>
+
+<p>Image width alone isn’t enough for a device to determine which image
+it should load. We also need to tell it what the final rendered width of the
+image will be. That’s where the <code>sizes</code> attribute comes in. It
+defines a series of media queries along with the image’s rendered width
+when that media query is in effect.</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 478px'><div class='diagram__padding' style='padding-bottom: 110.0418410041841%'><img class='diagram__image' alt='Diagram: sizes=100vw as width of the image in the mobile layout, sizes=960px as width of the image in the desktop layout' src='img-sizes-display-width-1f02b4.png' width='478' height='526'/></div></div></figure>
+
+<p>Here, we’re saying that when the screen is at least <code>960px</code>
+wide, the image will also be 960 pixels wide. Otherwise, the <code>100vw</code>
+default value tells the browser that the image’s width will be 100% of
+the “viewport width” (a fancy term for screen width). You can read
+more about the <a
+href='https://developer.mozilla.org/en-US/docs/Web/CSS/length'><code>vw</code>
+unit</a> over at MDN. All of this matches the image resizing behavior
+that’s in our CSS.</p>
+
+<p>Speaking of which, we need to make some changes to position our new header
+image correctly. Add both of the following rules to our other base styles,
+right above the mobile styles media query:</p>
+
+<pre class='highlight'><code><span class="hljs-selector-class">.header</span> {
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">justify-content</span>: inherit;
+  <span class="hljs-attribute">align-items</span>: inherit;
+}
+
+<span class="hljs-selector-class">.photo</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">display</span>: block;
+}
+</code></pre>
+
+<p>Remember that our low-resolution photo is 1000 pixels wide, which means that
+2x retina devices can use it as long as their screen is less than 500 pixels
+wide. In Firefox, you should now be able to resize the browser to see the
+retina version (“Big”) when the window is wider than 500 pixels and
+the non-retina version (“Small”) for narrower widths.</p>
+
+<p>We’re now serving a 115KB image to mobile devices instead of forcing
+them to use the high-res 445KB image. That’s a big deal, especially for
+websites that use a lot of photos.</p>
+
+<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='testing-with-chrome'>Testing With Chrome</h3></div>
+
+<p>This technique works just fine in Chrome, but we can’t really tell
+because it’s being clever. Chrome will always use the high-res version if
+it has already been cached locally, which means we can’t see the low-res
+version by simply making the browser window narrow. We have to avoid the local
+browser cache by opening a new incognito window, then avoid loading
+<code>photo-big.jpg</code> by making the window very narrow <em>before</em>
+loading the page.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='art-direction-using-picture'><span>Art Direction Using &lt;picture&gt;</span></h2></div>
+
+<p>The previous section is perfectly acceptable in terms of optimizing data
+usage. We could stop there and be just fine, but we’re going to get a
+little bit fancier with “art direction”. Think of art direction as
+responsive image optimization for designers.</p>
+
+<p>It lets you optimize <em>layouts</em> by sending completely different images
+to the user depending on their device. Compare this to the previous section,
+which optimized the <em>same</em> image for different devices. For instance,
+our header photo is pretty wide. Wouldn’t it be great if we could crop a
+taller version and present that to mobile devices instead of the wide desktop
+version?</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 84%'><img class='diagram__image' alt='Diagram: serving a tall-cropped image to mobile devices and a wide-cropped image to standard- and high-resolution desktop devices' src='art-direction-with-picture-764252.png' width='600' height='504'/></div></div></figure>
+
+<p>For this, we need the <code>&lt;picture&gt;</code> and
+<code>&lt;source&gt;</code> elements. The former is just a wrapper, and the
+latter conditionally loads images based on media queries. Try changing our
+<code>.header</code> element to the following:</p>
+
+<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'section header'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'photo'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">'(min-width: 401px)'</span>
+              <span class="hljs-attr">srcset</span>=<span class="hljs-string">'images/photo-big.jpg'</span>/&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">'(max-width: 400px)'</span>
+              <span class="hljs-attr">srcset</span>=<span class="hljs-string">'images/photo-tall.jpg'</span>/&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/photo-small.jpg'</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<p>Conceptually, this is pretty similar to using media queries in CSS. In each
+<code>&lt;source&gt;</code> element, the <code>media</code> attribute defines
+<em>when</em> the image should be loaded, and <code>srcset</code> defines
+<em>which</em> image file should be loaded. The <code>&lt;img/&gt;</code>
+element is only used as a fallback for older browsers. You should be able to
+see the tall version of the photo when you shrink your browser window:</p>
+
+<figure class='diagram'><div class='diagram__wrapper' style='max-width: 424px'><div class='diagram__padding' style='padding-bottom: 117.68867924528301%'><img class='diagram__image' alt='Mobile web page with tall-cropped image and desktop web page with wide-cropped image' src='art-directed-mobile-image-91ca9e.png' width='424' height='499'/></div></div></figure>
+
+<p>This level of control will make your designer very happy, but the trade off
+is that it doesn’t let the browser automatically pick the optimal image.
+This means we lost our retina optimization from the previous section: as long
+as the screen width is 401 pixels or greater, the browser will <em>always</em>
+use the high-resolution, wide-cropped image.</p>
+
+<p>While it is possible to combine the best of both worlds, it gets complicated
+real quick. Our recommendation is to stick to the <code>1x</code> and
+<code>2x</code> version of <code>srcset</code> for images less than 600 pixels
+wide, use the <code>srcset</code> plus <code>sizes</code> method from the
+previous section for bigger photos, and reserve <code>&lt;picture&gt;</code>
+for when you’re trying to do something real fancy with your designer.</p>
+
+</div></div>
+
+
+<div class='content'><div class='content__wrapper'>
+
+<div class='subheading'><h2 class='subheading__heading' id='summary'><span>Summary</span></h2></div>
+
+<p>Responsive images may seem rather complicated, but there’s really only two
+problems we’re trying to solve:</p>
+
+<ul>
+  <li>Make images fit into mobile layouts while respecting their intrinsic size</li>
+  <li>Avoid making the user download unnecessarily large image files</li>
+</ul>
+
+<p>We accomplished the former by making images always stretch to fill 100%
+of their container while limiting their size with an inline
+<code>max-width</code> style. For the latter, we used <code>srcset</code> to
+optimize for screen resolution, <code>srcset</code> plus <code>sizes</code> to
+optimize for device width, and finally the <code>&lt;picture&gt;</code> element
+for manual control over which image file is displayed.</p>
+
+<p><a href='../responsive-design/index.html'>Responsive design</a> is an
+evolving topic. Browsers only recently implemented the image optimization
+techniques covered in this chapter, despite the fact that responsive design has
+been the standard for half a decade. While the technology used to create a
+responsive website may change, the fundamental problem of presenting the same
+content to different devices will never disappear. So, even if you eventually
+need to learn some new tools, the foundational concepts we just introduced
+should stay with you forever.</p>
+
+<p>These last five chapters focused entirely on layout. We explored floats,
+flexbox, advanced positioning, and how to apply all those concepts to various
+screen widths. This is pretty much everything you’ll ever need to lay out web
+pages with HTML and CSS. The next chapter scuffles back into the world of HTML,
+introducing a bunch of new elements that will make search engines much happier
+with our websites.</p>
+
+
+
+<div class='next-chapter'>
+  <a href='../semantic-html/index.html'>Next Chapter &gt;</a>
+</div>
+
+</div></div>
+
+<div class='chapter-sidebar'><div class='sidebar js-sidebar'><div class='sidebar__wrapper'><ul class='sidebar__list'><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#setup'>Setup</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#retina-screens'>Retina Screens</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#responsive-svg-images'>Responsive SVG Images</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#responsive-png-gif-and-jpg-images'>Responsive Raster Images</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#responsive-image-optimization'>Image Optimization</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#retina-optimization-using-srcset'>Retina Optimization w/ srcset</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#screen-width-optimization-using-srcset'>Screen Width Optimization</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#art-direction-using-picture'>Art Direction w/ &lt;picture&gt;</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#summary'>Summary</a> </li></ul></div></div></div>
+
+
+
+  
+  <footer>
+
+    
+    <div class='about'>
+
+      <div class='about__wrapper'>
+        <div class='about__header'>
+          <div class='about__rule-before'></div>
+          <img class='about__logo' src='../../img/interneting-is-hard-logo-97b225.svg'
+               alt='Wi-fi signal with exclamation mark through it'>
+          <div class='about__rule-after'></div>
+        </div>
+
+        <div class='about__content'>
+          <div class='about__icons'>
+            <a href='https://twitter.com/internetinghard' target='_blank'><img
+               class='about__twitter' src='../../img/twitter-icon-29cd78.png'
+               alt='Twitter logo'></a>
+            <a href='https://www.facebook.com/Interneting-Is-Hard-120886695097813/' target='_blank'><img
+               class='about__facebook' src='../../img/facebook-icon-e6def5.png'
+               alt='Facebook logo'></a>
+            <a class='js-obfuscated-email__mailto'><img class='about__email'
+               src='../../img/email-icon-a4c505.png'
+               alt='Envelope icon'></a>
+          </div>
+
+          <p class='about__description'><em>InternetingIsHard.com</em> is an
+          independent publisher of premium web development tutorials. All
+          content is authored and maintained by Oliver James. He loves hearing
+          from readers, so <a href='../../contact/index.html'>come say hello</a>!</p>
+
+        </div>
+
+        <div class='about__mailing-list'>
+          <div class='about__mailing-list-description'>
+            More tutorials are coming. (Lots more.)<br/>
+            Enter your email <span
+              class='about__mailing-list-below'>below</span><span
+              class='about__mailing-list-above'>above</span>, and we’ll let you
+            know when they get here.
+          </div>
+
+          <form class='about__mailing-list-form js-about__mailing-list-form'
+                novalidate>
+
+            <div class='slide-animation'>
+              <div class='about__mailing-list-row js-about__mailing-list-row'>
+                <label for='about__mailing-list-email'
+                       class='about__mailing-list-email-label'>Email</label>
+                <input id='about__mailing-list-email'
+                       class='input-text input-text--small
+                              about__mailing-list-email js-about__mailing-list-email'
+                       type='email'
+                       placeholder='you@example.com'/>
+
+                <div class='cta-button about__mailing-list-button'>
+                  <button class='cta-button__link cta-button__link--small
+                                 about__mailing-list-button-link
+                                 js-about__mailing-list-button-link'>Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class='slide-animation slide-animation--hidden'>
+              <div class='input-status about__mailing-list-status
+                          js-about__mailing-list-status'>
+                <span class='input-status__title js-about__mailing-list-status-title'>Error!</span>
+                <span class='js-about__mailing-list-status-text'>Can’t sign up for a mailing
+                  list without an email address...</span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    
+
+    <div class='footer'>
+      <div class='footer__copyright'>
+        <div class='footer__item'>
+          <span class='footer__copyright-symbol'>©</span> 2017
+          <a href='../../index.html'>InternetingIsHard.com</a>
+        </div>
+      </div>
+      <div class='footer__links'>
+        <div class='footer__item footer__item--auto'>
+          <a href='../../contact/index.html'>Contact</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/licensing/index.html'>Licensing</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/privacy/index.html'>Privacy</a>
+        </div>
+        <div class='footer__item'>
+          <a href='../../legal/terms-of-service/index.html'>Terms</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  
+</div>
+
+
+<script src='../../js/axios-3d1394.js'></script>
+<script src='../../js/validate-36917e.js'></script>
+<script src='../../js/global-466310.js'></script>
+
+
+</body>
+</html>
