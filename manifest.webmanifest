@@ -1,0 +1,89 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Interneting Is Hard | Web Development Tutori…",
+	"scope" : "/",
+	"display" : "browser",
+	"start_url" : "",
+	"short_name" : "Interneting Is ",
+	"theme_color" : "#FFFFFF",
+	"description" : "Friendly web development tutorials for complete beginners",
+	"orientation" : "any",
+	"background_color" : "#FFFFFF",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "img/favicons/favicon-144-4696d9.png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "img/favicons/favicon-204b2d.ico",
+			"sizes": "64x64 32x32 16x16"
+		},
+		{
+			"src": "img/favicons/favicon-204b2d.ico",
+			"sizes": "16x16 32x32 64x64"
+		},
+		{
+			"src": "img/favicons/favicon-192-a6e5b6.png",
+			"sizes": "196x196"
+		},
+		{
+			"src": "img/favicons/favicon-160-2e97e1.png",
+			"sizes": "160x160"
+		},
+		{
+			"src": "img/favicons/favicon-96-5bcf10.png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "img/favicons/favicon-64-36b542.png",
+			"sizes": "64x64"
+		},
+		{
+			"src": "img/favicons/favicon-32-0ae869.png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "img/favicons/favicon-16-653c3c.png",
+			"sizes": "16x16"
+		},
+		{
+			"src": "img/favicons/favicon-57-b21a49.png",
+			"sizes": "57x57"
+		},
+		{
+			"src": "img/favicons/favicon-114-271cbc.png",
+			"sizes": "114x114"
+		},
+		{
+			"src": "img/favicons/favicon-72-091952.png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "img/favicons/favicon-144-4696d9.png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "img/favicons/favicon-60-11c348.png",
+			"sizes": "60x60"
+		},
+		{
+			"src": "img/favicons/favicon-120-eb7cc9.png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "img/favicons/favicon-76-65750a.png",
+			"sizes": "76x76"
+		},
+		{
+			"src": "img/favicons/favicon-152-bf36c7.png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "img/favicons/favicon-180-ed255c.png",
+			"sizes": "180x180"
+		}],
+	"generated" : "true"
+}
