@@ -1,130 +1,288 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <title>CSS Box Model Tutorial | HTML &amp; CSS Is Hard</title>
-	<meta charset='UTF-8' />
-	<meta name='viewport'
-		  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel='stylesheet' href='../../css/styles-0c78e2.css' />
+<html lang="en">
+  <head>
+    <title>CSS Box Model Tutorial | HTML &amp; CSS Is Hard</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../../css/styles-0c78e2.css" />
 
-  
-	<link rel='shortcut icon' href='../../img/favicons/favicon-204b2d.ico'>
-	<link rel='icon' sizes='16x16 32x32 64x64' href='../../img/favicons/favicon-204b2d.ico'>
-	<link rel='icon' type='image/png' sizes='196x196' href='../../img/favicons/favicon-192-a6e5b6.png'>
-	<link rel='icon' type='image/png' sizes='160x160' href='../../img/favicons/favicon-160-2e97e1.png'>
-	<link rel='icon' type='image/png' sizes='96x96' href='../../img/favicons/favicon-96-5bcf10.png'>
-	<link rel='icon' type='image/png' sizes='64x64' href='../../img/favicons/favicon-64-36b542.png'>
-	<link rel='icon' type='image/png' sizes='32x32' href='../../img/favicons/favicon-32-0ae869.png'>
-	<link rel='icon' type='image/png' sizes='16x16' href='../../img/favicons/favicon-16-653c3c.png'>
-	<link rel='apple-touch-icon' href='../../img/favicons/favicon-57-b21a49.png'>
-	<link rel='apple-touch-icon' sizes='114x114' href='../../img/favicons/favicon-114-271cbc.png'>
-	<link rel='apple-touch-icon' sizes='72x72' href='../../img/favicons/favicon-72-091952.png'>
-	<link rel='apple-touch-icon' sizes='144x144' href='../../img/favicons/favicon-144-4696d9.png'>
-	<link rel='apple-touch-icon' sizes='60x60' href='../../img/favicons/favicon-60-11c348.png'>
-	<link rel='apple-touch-icon' sizes='120x120' href='../../img/favicons/favicon-120-eb7cc9.png'>
-	<link rel='apple-touch-icon' sizes='76x76' href='../../img/favicons/favicon-76-65750a.png'>
-	<link rel='apple-touch-icon' sizes='152x152' href='../../img/favicons/favicon-152-bf36c7.png'>
-	<link rel='apple-touch-icon' sizes='180x180' href='../../img/favicons/favicon-180-ed255c.png'>
-	<meta name='msapplication-TileColor' content='#FFFFFF'>
-	<meta name='msapplication-TileImage' content='/img/favicons/favicon-144-4696d9.png'>
-	<meta name='msapplication-config' content='/img/favicons/browserconfig-8221df.xml'>
+    <link rel="shortcut icon" href="../../img/favicons/favicon-204b2d.ico" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="../../img/favicons/favicon-204b2d.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="../../img/favicons/favicon-192-a6e5b6.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="../../img/favicons/favicon-160-2e97e1.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../img/favicons/favicon-96-5bcf10.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../../img/favicons/favicon-64-36b542.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/favicons/favicon-32-0ae869.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/favicons/favicon-16-653c3c.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../img/favicons/favicon-57-b21a49.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../img/favicons/favicon-114-271cbc.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../img/favicons/favicon-72-091952.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../img/favicons/favicon-144-4696d9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../img/favicons/favicon-60-11c348.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../img/favicons/favicon-120-eb7cc9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../img/favicons/favicon-76-65750a.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../img/favicons/favicon-152-bf36c7.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/favicons/favicon-180-ed255c.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/favicons/favicon-144-4696d9.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="/img/favicons/browserconfig-8221df.xml"
+    />
 
-  
-  
-  <meta property='og:title' content='CSS Box Model | HTML &amp; CSS Is Hard' />
-  <meta property='og:description' content='A friendly introduction to padding, borders, and margins' />
-  <meta property='og:type' content='article' />
-  <meta property='og:url' content='/html-and-css/css-box-model/' />
-  <meta property='og:image' itemprop='image' content='https://internetingishard.com/html-and-css/icons/social/the-css-box-model-001e59.png' />
+    <meta
+      property="og:title"
+      content="CSS Box Model | HTML &amp; CSS Is Hard"
+    />
+    <meta
+      property="og:description"
+      content="A friendly introduction to padding, borders, and margins"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/html-and-css/css-box-model/" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://internetingishard.com/html-and-css/icons/social/the-css-box-model-001e59.png"
+    />
 
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta name='twitter:site' content='@internetinghard' />
-  <meta name='twitter:title' content='CSS Box Model | HTML &amp; CSS Is Hard' />
-  <meta name='twitter:description' content='A friendly introduction to padding, borders, and margins' />
-  <meta name='twitter:image' content='https://internetingishard.com/html-and-css/icons/social/the-css-box-model-001e59.png'/>
-  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@internetinghard" />
+    <meta
+      name="twitter:title"
+      content="CSS Box Model | HTML &amp; CSS Is Hard"
+    />
+    <meta
+      name="twitter:description"
+      content="A friendly introduction to padding, borders, and margins"
+    />
+    <meta
+      name="twitter:image"
+      content="https://internetingishard.com/html-and-css/icons/social/the-css-box-model-001e59.png"
+    />
 
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga("create", "UA-91393617-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__branding">
+        <div>
+          <a class="main-nav__logo-link" href="../../index.html"
+            ><img
+              class="main-nav__logo"
+              src="../../img/interneting-is-hard-logo-97b225.svg"
+              alt="Wifi signal with exclamation mark through it"
+          /></a>
+        </div>
+        <div>
+          <a class="main-nav__name" href="../../index.html"
+            >Interneting Is Hard</a
+          >
+        </div>
+      </div>
+      <div>
+        <a class="main-nav__html-css" href="../index.html">HTML &amp; CSS</a>
+      </div>
+    </nav>
 
-    ga('create', 'UA-91393617-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
+    <div class="page">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="heading">
+            <h1 class="heading__title">CSS Box Model</h1>
+            <div class="heading__parenthesis-rule">
+              <div class="heading__rule-before"></div>
+              <div class="heading__parenthesis">
+                Nº 5. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+              </div>
+              <div class="heading__rule-after"></div>
+            </div>
+            <div class="heading__subtitle">
+              A friendly introduction to padding, borders, and margins
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <div class="content">
+        <div class="content__wrapper content__wrapper--first">
+          <p>
+            The
+            <a href="../hello-css/index.html">previous chapter</a> introduced
+            the basic text formatting properties of CSS, but that was only one
+            aspect of styling pages. Defining the <em>layout</em> of a web page
+            is an entirely different beast. That’s what this chapter is about.
+          </p>
 
-<nav class='main-nav'>
-  <div class='main-nav__branding'>
-    <div><a class='main-nav__logo-link' href='../../index.html'><img class='main-nav__logo'
-                        src='../../img/interneting-is-hard-logo-97b225.svg'
-                        alt='Wifi signal with exclamation mark through it'></a></div>
-    <div>
-      <a class='main-nav__name' href='../../index.html'>Interneting Is Hard</a>
-    </div>
-  </div>
-  <div>
-    <a class='main-nav__html-css' href='../index.html'>HTML &amp; CSS</a>
-  </div>
-</nav>
+          <p>
+            The “CSS box model“ is a set of rules that define how every web page
+            on the Internet is rendered. CSS treats each element in your HTML
+            document as a “box” with a bunch of different properties that
+            determine where it appears on the page. So far, all of our web pages
+            have just been a bunch of elements rendered one after another. The
+            box model is our toolkit for customizing this default layout scheme.
+          </p>
 
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 580px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 61.03448275862069%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: CSS stylesheet broken down into two parts (text formatting and the box model)"
+                  src="css-html-and-the-box-model-9d82a2.png"
+                  width="580"
+                  height="354"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='page'>
-  
+          <p>
+            A big part of your job as a web developer will be to apply rules
+            from the CSS box model to turn a design mockup into a web page. As
+            you work through this chapter, you might find yourself wondering why
+            we have to learn all these rules instead of just uploading a giant
+            static image of a web page (i.e., a mockup) to a web server and
+            calling it a day.
+          </p>
 
-<header class='page-header'><div class='page-header__wrapper'><div class='heading'><h1 class='heading__title'>CSS Box Model</h1><div class='heading__parenthesis-rule'><div class='heading__rule-before'></div><div class='heading__parenthesis'>Nº 5. of <a href='../index.html'>HTML &amp; CSS Is Hard</a></div><div class='heading__rule-after'></div></div><div class='heading__subtitle'>A friendly introduction to padding, borders, and margins</div></div></div></header>
+          <p>
+            Indeed, this would make life a lot easier; however, if we didn’t
+            separate out our content into HTML, search engines would have no way
+            to infer the structure of our web pages, we couldn’t make our site
+            <a href="../responsive-design/index.html">responsive</a>, and there
+            would be no way to add fancy animations or interactivity with
+            JavaScript. That’s a big enough trade-off to make CSS a worthwhile
+            cause.
+          </p>
 
-<div class='content'><div class='content__wrapper content__wrapper--first'>
+          <p>
+            This chapter covers the core components of the CSS box model:
+            padding, borders, margins, block boxes, and inline boxes. You can
+            think of this as the “micro” view of CSS layouts, as it defines the
+            individual behavior of boxes. In future chapters, we’ll learn more
+            about how HTML structure and the CSS box model combine to form all
+            sorts of complex page layouts.
+          </p>
+        </div>
+      </div>
 
-<p>The <a href='../hello-css/index.html'>previous chapter</a> introduced the
-basic text formatting properties of CSS, but that was only one aspect of
-styling pages. Defining the <em>layout</em> of a web page is an entirely
-different beast. That’s what this chapter is about.</p>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+          </div>
 
-<p>The “CSS box model“ is a set of rules that define how every web page on the
-Internet is rendered. CSS treats each element in your HTML document as a “box”
-with a bunch of different properties that determine where it appears on the
-page. So far, all of our web pages have just been a bunch of elements rendered
-one after another. The box model is our toolkit for customizing this default
-layout scheme.</p>
+          <p>
+            To get started, let’s create a new folder called
+            <code>css-box-model</code> and stick a new web page in it called
+            <code>boxes.html</code>. Add the following code:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 580px'><div class='diagram__padding' style='padding-bottom: 61.03448275862069%'><img class='diagram__image' alt='Diagram: CSS stylesheet broken down into two parts (text formatting and the box model)' src='css-html-and-the-box-model-9d82a2.png' width='580' height='354'/></div></div></figure>
-
-<p>A big part of your job as a web developer will be to apply rules from the
-CSS box model to turn a design mockup into a web page. As you work through this
-chapter, you might find yourself wondering why we have to learn all these rules
-instead of just uploading a giant static image of a web page (i.e., a mockup)
-to a web server and calling it a day.</p>
-
-<p>Indeed, this would make life a lot easier; however, if we didn’t separate
-out our content into HTML, search engines would have no way to infer the
-structure of our web pages, we couldn’t make our site <a
-href='../responsive-design/index.html'>responsive</a>, and there would be no
-way to add fancy animations or interactivity with JavaScript. That’s a big
-enough trade-off to make CSS a worthwhile cause.</p>
-
-<p>This chapter covers the core components of the CSS box model: padding,
-borders, margins, block boxes, and inline boxes. You can think of this as the
-“micro” view of CSS layouts, as it defines the individual behavior
-of boxes. In future chapters, we’ll learn more about how HTML structure
-and the CSS box model combine to form all sorts of complex page layouts.</p>
-
-</div></div>
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='setup'><span>Setup</span></h2></div>
-
-<p>To get started, let’s create a new folder called <code>css-box-model</code>
-and stick a new web page in it called <code>boxes.html</code>. Add the
-following code:</p>
-
-<pre class='highlight'><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
@@ -143,38 +301,78 @@ following code:</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
-<p>As you should remember from <a href='../hello-css/index.html'>Hello,
-  CSS</a>, this HTML file links to a CSS stylesheet stored in a file called
-<code>box-styles.css</code>. Go ahead and create this file, too (you can leave
-it empty for now).</p>
+          <p>
+            As you should remember from
+            <a href="../hello-css/index.html">Hello, CSS</a>, this HTML file
+            links to a CSS stylesheet stored in a file called
+            <code>box-styles.css</code>. Go ahead and create this file, too (you
+            can leave it empty for now).
+          </p>
 
-<p>Hopefully, you should be very familiar using Atom for these kinds of file
-and folder creation tasks. If not, be sure to review the <a
-href='../introduction/index.html#atom-text-editor'>Atom walkthrough</a> in the
-introductory chapter of this tutorial.</p>
+          <p>
+            Hopefully, you should be very familiar using Atom for these kinds of
+            file and folder creation tasks. If not, be sure to review the
+            <a href="../introduction/index.html#atom-text-editor"
+              >Atom walkthrough</a
+            >
+            in the introductory chapter of this tutorial.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2
+              class="subheading__heading"
+              id="block-elements-and-inline-elements"
+            >
+              <span
+                >Block Elements and<br class="subheading__title-br" />
+                Inline Elements</span
+              >
+            </h2>
+          </div>
 
+          <p>
+            Back in <em>Basic Web Pages</em>, we briefly touched on
+            <a href="../basic-web-pages/index.html#emphasis-italic-elements"
+              >how CSS uses “boxes”</a
+            >
+            to define the layout of a web page. Each HTML element rendered on
+            the screen is a box, and they come in two flavors: “block” boxes and
+            “inline“ boxes.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 414px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 46.3768115942029%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: comparison of block boxes with inline boxes"
+                  src="inline-vs-block-boxes-f3e662.png"
+                  width="414"
+                  height="192"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='subheading'><h2 class='subheading__heading' id='block-elements-and-inline-elements'><span>Block Elements and<br class='subheading__title-br'> Inline Elements</span></h2></div>
+          <p>
+            All the HTML elements that we’ve been working with have a default
+            type of box. For instance, <code>&lt;h1&gt;</code> and
+            <code>&lt;p&gt;</code> are block-level elements, while
+            <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> are inline
+            elements. Let’s get a better look at our boxes by adding the
+            following to <code>box-styles.css</code>:
+          </p>
 
-<p>Back in <em>Basic Web Pages</em>, we briefly touched on <a
-  href='../basic-web-pages/index.html#emphasis-italic-elements'>how CSS uses
-  “boxes”</a> to define the layout of a web page. Each HTML element
-rendered on the screen is a box, and they come in two flavors:
-“block” boxes and “inline“ boxes.</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 414px'><div class='diagram__padding' style='padding-bottom: 46.3768115942029%'><img class='diagram__image' alt='Diagram: comparison of block boxes with inline boxes' src='inline-vs-block-boxes-f3e662.png' width='414' height='192'/></div></div></figure>
-
-<p>All the HTML elements that we’ve been working with have a default type
-of box. For instance, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> are
-block-level elements, while <code>&lt;em&gt;</code> and
-<code>&lt;strong&gt;</code> are inline elements. Let’s get a better look
-at our boxes by adding the following to <code>box-styles.css</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DDE0E3</span>;    <span class="hljs-comment">/* Light gray */</span>
 }
 
@@ -183,145 +381,276 @@ at our boxes by adding the following to <code>box-styles.css</code>:</p>
 }
 </code></pre>
 
-<p>The <code>background-color</code> property only fills in the background of
-the selected box, so this will give us a clear view into the structure of the
-current sample page. Our headings and paragraphs should have gray backgrounds,
-while our emphasis and strong elements should be light blue.</p>
+          <p>
+            The <code>background-color</code> property only fills in the
+            background of the selected box, so this will give us a clear view
+            into the structure of the current sample page. Our headings and
+            paragraphs should have gray backgrounds, while our emphasis and
+            strong elements should be light blue.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 68.47058823529412%'><img class='diagram__image' alt='Web page highlighting block boxes in gray and inline boxes in blue' src='block-boxes-and-inline-boxes-7cfa0a.png' width='425' height='291'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 68.47058823529412%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page highlighting block boxes in gray and inline boxes in blue"
+                  src="block-boxes-and-inline-boxes-7cfa0a.png"
+                  width="425"
+                  height="291"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>This shows us a couple of very important behaviors associated with block and
-inline boxes:</p>
+          <p>
+            This shows us a couple of very important behaviors associated with
+            block and inline boxes:
+          </p>
 
+          <ul>
+            <li>
+              <p>
+                <strong>Block boxes</strong> always appear
+                <strong>below</strong> the previous block element. This is the
+                “natural” or “static” flow of an HTML document when it gets
+                rendered by a web browser.
+              </p>
+            </li>
 
-<ul>
+            <li>
+              <p>
+                The <strong>width of block boxes</strong> is set automatically
+                based on the width of its parent container. In this case, our
+                blocks are always the width of the browser window.
+              </p>
+            </li>
 
-  <li><p><strong>Block boxes</strong> always appear <strong>below</strong> the
-    previous block element. This is the “natural” or “static” flow of an HTML
-    document when it gets rendered by a web browser.</p></li>
-  
-  <li><p>The <strong>width of block boxes</strong> is set automatically based
-    on the width of its parent container. In this case, our blocks are always
-    the width of the browser window.</p></li>
+            <li>
+              <p>
+                The default <strong>height of block boxes</strong> is based on
+                the content it contains. When you narrow the browser window, the
+                <code>&lt;h1&gt;</code> gets split over two lines, and its
+                height adjusts accordingly.
+              </p>
+            </li>
 
-  <li><p>The default <strong>height of block boxes</strong> is based on the
-    content it contains. When you narrow the browser window, the
-    <code>&lt;h1&gt;</code> gets split over two lines, and its height adjusts
-  accordingly.</p></li>
-    
-  <li><p><strong>Inline boxes</strong> don’t affect <strong>vertical
-      spacing</strong>. They’re not for determining layout&mdash;they’re for
-    styling stuff <em>inside</em> of a block.</p></li>
-  
-  <li><p>The <strong>width of inline boxes</strong> is based on the content it
-    contains, not the width of the parent element.</p></li>
+            <li>
+              <p>
+                <strong>Inline boxes</strong> don’t affect
+                <strong>vertical spacing</strong>. They’re not for determining
+                layout&mdash;they’re for styling stuff <em>inside</em> of a
+                block.
+              </p>
+            </li>
 
-</ul>
+            <li>
+              <p>
+                The <strong>width of inline boxes</strong> is based on the
+                content it contains, not the width of the parent element.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="changing-box-behavior">
+              <span>Changing Box Behavior</span>
+            </h2>
+          </div>
 
-</div></div>
+          <p>
+            We can override the default box type of HTML elements with the CSS
+            <code>display </code> property. For example, if we wanted to make
+            our <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements
+            blocks instead of inline elements, we could update our rule in
+            <code>box-styles.css</code> like so:
+          </p>
 
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='changing-box-behavior'><span>Changing Box Behavior</span></h2></div>
-
-<p>We can override the default box type of HTML elements with the CSS
-<code>display </code> property. For example, if we wanted to make our
-<code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements blocks instead
-of inline elements, we could update our rule in
-<code>box-styles.css</code> like so:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;
   <span class="hljs-attribute">display</span>: block;
 }
 </code></pre>
 
-<p>Now, these elements act like our headings and paragraphs: they start on
-their own line, and they fill the entire width of the browser. This comes in
-handy when you’re trying to turn <code>&lt;a&gt;</code> elements into
-buttons or format <code>&lt;img/&gt;</code> elements (both of these are
-inline boxes by default).</p>
+          <p>
+            Now, these elements act like our headings and paragraphs: they start
+            on their own line, and they fill the entire width of the browser.
+            This comes in handy when you’re trying to turn
+            <code>&lt;a&gt;</code> elements into buttons or format
+            <code>&lt;img/&gt;</code> elements (both of these are inline boxes
+            by default).
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 68.47058823529412%'><img class='diagram__image' alt='Web page showing what happens when you turn inline boxes into block boxes with the CSS display property' src='turning-inline-into-block-boxes-772f4c.png' width='425' height='291'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 68.47058823529412%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing what happens when you turn inline boxes into block boxes with the CSS display property"
+                  src="turning-inline-into-block-boxes-772f4c.png"
+                  width="425"
+                  height="291"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>However, it’s almost never a good idea to turn <code>&lt;em&gt;</code>
-and <code>&lt;strong&gt;</code> into block elements, so let’s turn them
-back into inline boxes by changing their <code>display</code> property to
-<code>inline</code>, like so:</p>
+          <p>
+            However, it’s almost never a good idea to turn
+            <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> into block
+            elements, so let’s turn them back into inline boxes by changing
+            their <code>display</code> property to <code>inline</code>, like so:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;
   <span class="hljs-attribute">display</span>: inline;             <span class="hljs-comment">/* This is the default for em and strong */</span>
 }
 </code></pre>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2
+              class="subheading__heading"
+              id="content-padding-border-and-margin"
+            >
+              <span
+                >Content, Padding, Border,<br class="subheading__title-br" />
+                and Margin</span
+              >
+            </h2>
+          </div>
 
-</div></div>
+          <p>
+            The “CSS box model” is a set of rules that determine the dimensions
+            of every element in a web page. It gives each box (both inline and
+            block) four properties:
+          </p>
 
+          <ul>
+            <li>
+              <strong>Content</strong> &ndash; The text, image, or other media
+              content in the element.
+            </li>
 
-<div class='content'><div class='content__wrapper'>
+            <li>
+              <strong>Padding</strong> &ndash; The space between the box’s
+              content and its border.
+            </li>
 
-<div class='subheading'><h2 class='subheading__heading' id='content-padding-border-and-margin'><span>Content, Padding, Border,<br class='subheading__title-br'> and Margin</span></h2></div>
+            <li>
+              <strong>Border</strong> &ndash; The line between the box’s padding
+              and margin.
+            </li>
 
-<p>The “CSS box model” is a set of rules that determine the
-dimensions of every element in a web page. It gives each box (both inline and
-block) four properties:</p>
+            <li>
+              <strong>Margin</strong> &ndash; The space between the box and
+              surrounding boxes.
+            </li>
+          </ul>
 
-<ul>
+          <p>
+            Together, this is everything a browser needs to render an element’s
+            box. The content is what you author in an HTML document, and it’s
+            the only one that has any semantic value (which is
+            <a
+              href="../basic-web-pages/index.html#structure-versus-presentation"
+              >why it’s in the HTML</a
+            >). The rest of them are purely presentational, so they’re defined
+            by CSS rules.
+          </p>
 
-	<li><strong>Content</strong> &ndash; The text, image, or other media
-		content in the element.</li>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 485px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 79.38144329896907%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: content, padding, border, and margins making up the CSS box model"
+                  src="css-box-model-73a525.png"
+                  width="485"
+                  height="385"
+                />
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
 
-  <li><strong>Padding</strong> &ndash; The space between the box’s
-		content and its border.</li>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="padding">
+              <span>Padding</span>
+            </h2>
+          </div>
 
-  <li><strong>Border</strong> &ndash; The line between the box’s padding
-    and margin.</li>
-  
-  <li><strong>Margin</strong> &ndash; The space between the box and surrounding
-  boxes.</li>
+          <p>
+            Let’s start from the inside out. We’ve already been working with
+            content, so on to padding. The
+            <code>padding</code> property&hellip;you guessed it&hellip;defines
+            the padding for the selected element:
+          </p>
 
-</ul>
-
-<p>Together, this is everything a browser needs to render an element’s
-box. The content is what you author in an HTML document, and it’s the
-  only one that has any semantic value (which is <a
-    href='../basic-web-pages/index.html#structure-versus-presentation'>why
-    it’s in the HTML</a>). The rest of them are purely presentational, so
-  they’re defined by CSS rules. </p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 485px'><div class='diagram__padding' style='padding-bottom: 79.38144329896907%'><img class='diagram__image' alt='Diagram: content, padding, border, and margins making up the CSS box model' src='css-box-model-73a525.png' width='485' height='385'/></div></div></figure>
-
-</div></div>
-
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='padding'><span>Padding</span></h2></div>
-
-<p>Let’s start from the inside out. We’ve already been working with
-content, so on to padding. The <code>padding</code> property&hellip;you guessed
-it&hellip;defines the padding for the selected element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">h1</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">h1</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">50px</span>;
 }
 </code></pre>
 
-<p>This adds 50 pixels to <em>each side</em> of the <code>&lt;h1&gt;</code>
-heading. Notice how the background color expands to fill this space.
-That’s always the case for padding because it’s inside the
-border, and everything inside the border gets a background.</p>
+          <p>
+            This adds 50 pixels to <em>each side</em> of the
+            <code>&lt;h1&gt;</code> heading. Notice how the background color
+            expands to fill this space. That’s always the case for padding
+            because it’s inside the border, and everything inside the border
+            gets a background.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 68.47058823529412%'><img class='diagram__image' alt='Web page showing increase in &lt;h1&gt; padding (background size increases)' src='increasing-heading-padding-5a289d.png' width='425' height='291'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 68.47058823529412%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing increase in &lt;h1&gt; padding (background size increases)"
+                  src="increasing-heading-padding-5a289d.png"
+                  width="425"
+                  height="291"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Sometimes you’ll only want to style one side of an element. For that,
-CSS provides the following properties:</p>
+          <p>
+            Sometimes you’ll only want to style one side of an element. For
+            that, CSS provides the following properties:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">20px</span>;
   <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20px</span>;
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10px</span>;
@@ -329,192 +658,363 @@ CSS provides the following properties:</p>
 }
 </code></pre>
 
-<p>You can use any unit for the padding of an element, not just pixels. Again,
-<a href='../hello-css/index.html#units-of-measurement'><code>em</code>
-units</a> are particularly useful for making your margins scale with the base
-font size.</p>
+          <p>
+            You can use any unit for the padding of an element, not just pixels.
+            Again,
+            <a href="../hello-css/index.html#units-of-measurement"
+              ><code>em</code> units</a
+            >
+            are particularly useful for making your margins scale with the base
+            font size.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="shorthand-formats">
+              Shorthand Formats
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='shorthand-formats'>Shorthand Formats</h3></div>
+          <p>
+            Typing out all of these properties out can be tiresome, so CSS
+            provides an alternative “shorthand” form of the
+            <code>padding</code> property that lets you set the top/bottom and
+            left/right padding with only one line of CSS. When you provide
+            <em>two</em> values to the <code>padding</code> property, it’s
+            interpreted as the vertical and horizontal padding values,
+            respectively.
+          </p>
 
-<p>Typing out all of these properties out can be tiresome, so CSS provides an
-alternative “shorthand” form of the <code>padding</code> property
-that lets you set the top/bottom and left/right padding with only one line of
-CSS. When you provide <em>two</em> values to the <code>padding</code> property,
-it’s interpreted as the vertical and horizontal padding values,
-respectively.</p>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 485px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 92.78350515463917%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: CSS padding property with vertical and horizontal values highlighted"
+                  src="padding-shortform-two-values-a7ed4c.png"
+                  width="485"
+                  height="450"
+                />
+              </div>
+            </div>
+          </figure>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 485px'><div class='diagram__padding' style='padding-bottom: 92.78350515463917%'><img class='diagram__image' alt='Diagram: CSS padding property with vertical and horizontal values highlighted' src='padding-shortform-two-values-a7ed4c.png' width='485' height='450'/></div></div></figure>
+          <p>This means that our previous rule can be rewritten as:</p>
 
-<p>This means that our previous rule can be rewritten as:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;  <span class="hljs-comment">/* Vertical  Horizontal */</span>
 }
 </code></pre>
 
-<p>Alternatively, if you provide <em>four</em> values, you can set the padding
-for each side of an element individually. The values are interpreted clockwise,
-starting at the top:</p>
+          <p>
+            Alternatively, if you provide <em>four</em> values, you can set the
+            padding for each side of an element individually. The values are
+            interpreted clockwise, starting at the top:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 537px'><div class='diagram__padding' style='padding-bottom: 83.79888268156425%'><img class='diagram__image' alt='Diagram: CSS padding property with top, right, bottom, and left values highlighted' src='padding-shortform-four-values-93c021.png' width='537' height='450'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 537px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 83.79888268156425%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: CSS padding property with top, right, bottom, and left values highlighted"
+                  src="padding-shortform-four-values-93c021.png"
+                  width="537"
+                  height="450"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Let’s try this out by removing the <code>10px</code> right padding
-from the previous rule. This should give us 20 pixels on the top and bottom of
-each paragraph, 10 pixels on the left, but none on the right:</p>
+          <p>
+            Let’s try this out by removing the <code>10px</code> right padding
+            from the previous rule. This should give us 20 pixels on the top and
+            bottom of each paragraph, 10 pixels on the left, but none on the
+            right:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;  <span class="hljs-comment">/* Top  Right  Bottom  Left */</span>
 }
 </code></pre>
 
-<p>Whether or not you want to use shorthand forms or not is largely a matter of
-personal preference and team conventions. Some developers like the fact that
-the shorthand form is more condensed, while others think the long form is
-easier to understand at a glance (and thus easier to maintain). Regardless,
-you’ll likely encounter all of them at some point in your web development
-career.</p>
+          <p>
+            Whether or not you want to use shorthand forms or not is largely a
+            matter of personal preference and team conventions. Some developers
+            like the fact that the shorthand form is more condensed, while
+            others think the long form is easier to understand at a glance (and
+            thus easier to maintain). Regardless, you’ll likely encounter all of
+            them at some point in your web development career.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="borders">
+              <span>Borders</span>
+            </h2>
+          </div>
 
+          <p>
+            Continuing our journey outward from the center of the CSS box model,
+            we have the border: a line drawn around the content and padding of
+            an element. The <code>border</code> property requires a new syntax
+            that we’ve never seen before. First, we define the stroke width of
+            the border, then its style, followed by its color.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 485px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 92.78350515463917%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: CSS border property showing size, style, and color syntax"
+                  src="css-border-syntax-d8ba17.png"
+                  width="485"
+                  height="450"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='subheading'><h2 class='subheading__heading' id='borders'><span>Borders</span></h2></div>
+          <p>
+            Try adding a border around our <code>&lt;h1&gt;</code> heading by
+            updating the rule in <code>box-styles.css</code>:
+          </p>
 
-<p>Continuing our journey outward from the center of the CSS box model, we have
-the border: a line drawn around the content and padding of an element. The
-<code>border</code> property requires a new syntax that we’ve never seen
-before. First, we define the stroke width of the border, then its style,
-followed by its color.</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 485px'><div class='diagram__padding' style='padding-bottom: 92.78350515463917%'><img class='diagram__image' alt='Diagram: CSS border property showing size, style, and color syntax' src='css-border-syntax-d8ba17.png' width='485' height='450'/></div></div></figure>
-
-<p>Try adding a border around our <code>&lt;h1&gt;</code> heading by updating
-the rule in <code>box-styles.css</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">h1</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">h1</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">50px</span>;
   <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#5D6063</span>;
 }
 </code></pre>
 
-<p>This tells the browser to draw a thin gray line around our heading. Notice
-how the border bumps right up next to the padding with no space in between.
-And, if you shrink your browser enough for the heading to be split over two
-lines, both the padding and the border will still be there.</p>
+          <p>
+            This tells the browser to draw a thin gray line around our heading.
+            Notice how the border bumps right up next to the padding with no
+            space in between. And, if you shrink your browser enough for the
+            heading to be split over two lines, both the padding and the border
+            will still be there.
+          </p>
 
-<p>Drawing a border around our entire heading makes it look a little 1990s, so
-how about we limit it to the bottom of the heading? Like <code>padding</code>,
-there are <code>-top</code>, <code>-bottom</code>, <code>-left</code>, and
-<code>-right</code> variants for the <code>border</code> property:</p>
+          <p>
+            Drawing a border around our entire heading makes it look a little
+            1990s, so how about we limit it to the bottom of the heading? Like
+            <code>padding</code>, there are <code>-top</code>,
+            <code>-bottom</code>, <code>-left</code>, and
+            <code>-right</code> variants for the <code>border</code> property:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-tag">border-bottom</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#5D6063</span>;
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">border-bottom</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#5D6063</span>;
 </code></pre>
 
-<p>Borders are common design elements, but they’re also invaluable for
-debugging. When you’re not sure how a box is being rendered, add a
-<code>border: 1px solid red;</code> declaration to it. This will clearly show
-the box’s padding, margin, and overall dimensions with just a single line
-of CSS. After you figured out why your stuff is broken, simply delete the
-rule.</p>
+          <p>
+            Borders are common design elements, but they’re also invaluable for
+            debugging. When you’re not sure how a box is being rendered, add a
+            <code>border: 1px solid red;</code> declaration to it. This will
+            clearly show the box’s padding, margin, and overall dimensions with
+            just a single line of CSS. After you figured out why your stuff is
+            broken, simply delete the rule.
+          </p>
 
-<p>Please refer to the <a
-  href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-style'>Mozilla
-  Developer Network</a> for more information about border styles.</p>
+          <p>
+            Please refer to the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"
+              >Mozilla Developer Network</a
+            >
+            for more information about border styles.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="margins">
+              <span>Margins</span>
+            </h2>
+          </div>
 
+          <p>
+            Margins define the space outside of an element’s border. Or, rather,
+            the space between a box and its surrounding boxes. Let’s add some
+            space to the bottom of each <code>&lt;p&gt;</code> element:
+          </p>
 
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='margins'><span>Margins</span></h2></div>
-
-<p>Margins define the space outside of an element’s border. Or, rather,
-the space between a box and its surrounding boxes. Let’s add some space
-to the bottom of each <code>&lt;p&gt;</code> element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">50px</span>;          <span class="hljs-comment">/* Add this */</span>
 }
 </code></pre>
 
-<p>This demonstrates a side-specific variant of the <code>margin</code>
-property, but it also accepts the same <a href='index.html#shorthand-formats'>shorthand
-formats</a> as <code>padding</code>.</p>
+          <p>
+            This demonstrates a side-specific variant of the
+            <code>margin</code> property, but it also accepts the same
+            <a href="index.html#shorthand-formats">shorthand formats</a> as
+            <code>padding</code>.
+          </p>
 
-<p>Margins and padding can accomplish the same thing in a lot of situations,
-making it difficult to determine which one is the “right” choice. The most
-common reasons why you would pick one over the other are:</p>
+          <p>
+            Margins and padding can accomplish the same thing in a lot of
+            situations, making it difficult to determine which one is the
+            “right” choice. The most common reasons why you would pick one over
+            the other are:
+          </p>
 
-<ul>
-  <li>The padding of a box has a background, while margins are always
-    transparent.</li>
-  <li>Padding is included in the click area of an element, while margins
-    aren’t.</li>
-  <li>Margins collapse vertically, while padding doesn’t (we’ll
-    discuss this more in the next section).</li>
-</ul>
+          <ul>
+            <li>
+              The padding of a box has a background, while margins are always
+              transparent.
+            </li>
+            <li>
+              Padding is included in the click area of an element, while margins
+              aren’t.
+            </li>
+            <li>
+              Margins collapse vertically, while padding doesn’t (we’ll discuss
+              this more in the next section).
+            </li>
+          </ul>
 
-<p>If none of these help you decide whether to use <code>padding</code> over
-<code>margin</code>, then don’t fret about it&mdash;just pick one. In
-CSS, there’s often more than one way to solve your problem.</p>
+          <p>
+            If none of these help you decide whether to use
+            <code>padding</code> over <code>margin</code>, then don’t fret about
+            it&mdash;just pick one. In CSS, there’s often more than one way to
+            solve your problem.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="margins-on-inline-elements">
+              Margins on Inline Elements
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='margins-on-inline-elements'>Margins on Inline Elements</h3></div>
+          <p>
+            One of the starkest contrasts between block-level elements and
+            inline ones is their handling of margins. Inline boxes
+            <em>completely ignore</em> the top and bottom margins of an element.
+            For example, watch what happens when we add a big margin to our
+            <code>&lt;strong&gt;</code> element:
+          </p>
 
-<p>One of the starkest contrasts between block-level elements and inline ones
-is their handling of margins. Inline boxes <em>completely ignore</em> the top
-and bottom margins of an element. For example, watch what happens when we add a
-big margin to our <code>&lt;strong&gt;</code> element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">strong</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">strong</span> {
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">50px</span>;
 }
 </code></pre>
 
-<p>The horizontal margins display just like we’d expect, but
-this doesn’t alter the vertical space around our
-<code>&lt;strong&gt;</code> element one bit.</p>
+          <p>
+            The horizontal margins display just like we’d expect, but this
+            doesn’t alter the vertical space around our
+            <code>&lt;strong&gt;</code> element one bit.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 546px'><div class='diagram__padding' style='padding-bottom: 53.2967032967033%'><img class='diagram__image' alt='Web page demonstrating lack of vertical margins on inline boxes' src='margins-on-inline-elements-4c569c.png' width='546' height='291'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 546px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 53.2967032967033%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page demonstrating lack of vertical margins on inline boxes"
+                  src="margins-on-inline-elements-4c569c.png"
+                  width="546"
+                  height="291"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>If we change <code>margin</code> to <code>padding</code>, we’ll
-discover that this isn’t exactly the case for a box’s padding.
-It’ll display the blue background; however, it won’t affect the
-vertical layout of the surrounding boxes.</p>
+          <p>
+            If we change <code>margin</code> to <code>padding</code>, we’ll
+            discover that this isn’t exactly the case for a box’s padding. It’ll
+            display the blue background; however, it won’t affect the vertical
+            layout of the surrounding boxes.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 546px'><div class='diagram__padding' style='padding-bottom: 53.2967032967033%'><img class='diagram__image' alt='Web page demonstrating vertical padding on inline boxes' src='paddings-on-inline-elements-fb52d0.png' width='546' height='291'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 546px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 53.2967032967033%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page demonstrating vertical padding on inline boxes"
+                  src="paddings-on-inline-elements-fb52d0.png"
+                  width="546"
+                  height="291"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>The rationale behind this goes back to the fact that inline boxes format
-runs of text inside of a block, and thus have limited impact on the overall
-layout of a page. If you want to play with the vertical space of a page, you
-<em>must</em> be working with block-level elements (luckily, we already know
-how to <a href='index.html#changing-box-behavior'>change an element’s box
-  type</a></a>).</p>
+          <p>
+            The rationale behind this goes back to the fact that inline boxes
+            format runs of text inside of a block, and thus have limited impact
+            on the overall layout of a page. If you want to play with the
+            vertical space of a page, you <em>must</em> be working with
+            block-level elements (luckily, we already know how to
+            <a href="index.html#changing-box-behavior"
+              >change an element’s box type</a
+            >).
+          </p>
 
-<p>So, before you start banging your head against the wall trying to figure out
-why your top or bottom margin isn’t working, remember to check your
-<code>display</code> property. Trust us, this will happen to you
-eventually.</p>
+          <p>
+            So, before you start banging your head against the wall trying to
+            figure out why your top or bottom margin isn’t working, remember to
+            check your <code>display</code> property. Trust us, this will happen
+            to you eventually.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="vertical-margin-collapse">
+              <span>Vertical Margin Collapse</span>
+            </h2>
+          </div>
 
+          <p>
+            Another quirk of the CSS box model is the “vertical margin
+            collapse”. When you have two boxes with vertical margins sitting
+            right next to each other, they will collapse. Instead of adding the
+            margins together like you might expect, only the biggest one is
+            displayed.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            For example, let’s add a top margin of 25 pixels to our
+            <code>&lt;p&gt;</code> element:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='vertical-margin-collapse'><span>Vertical Margin Collapse</span></h2></div>
-
-<p>Another quirk of the CSS box model is the “vertical margin
-collapse”. When you have two boxes with vertical margins sitting right
-next to each other, they will collapse. Instead of adding the margins together
-like you might expect, only the biggest one is displayed.</p>
-
-<p>For example, let’s add a top margin of 25 pixels to our
-<code>&lt;p&gt;</code> element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">p</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">25px</span>;
@@ -522,24 +1022,49 @@ like you might expect, only the biggest one is displayed.</p>
 }
 </code></pre>
 
-<p>Each paragraph should have 50 pixels on the bottom, and 25 pixels on the
-top. That’s 75 pixels between our <code>&lt;p&gt;</code> elements, right?
-Wrong! There’s still only going to be <code>50px</code> between them
-because the smaller top margin collapses into the bigger bottom one.</p>
+          <p>
+            Each paragraph should have 50 pixels on the bottom, and 25 pixels on
+            the top. That’s 75 pixels between our
+            <code>&lt;p&gt;</code> elements, right? Wrong! There’s still only
+            going to be <code>50px</code> between them because the smaller top
+            margin collapses into the bigger bottom one.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 500px'><div class='diagram__padding' style='padding-bottom: 69.6%'><img class='diagram__image' alt='Diagram: comparison of an uncollapsed vertical margin with a collapsed vertical margin' src='vertical-margin-collapse-bba78e.png' width='500' height='348'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 500px">
+              <div class="diagram__padding" style="padding-bottom: 69.6%">
+                <img
+                  class="diagram__image"
+                  alt="Diagram: comparison of an uncollapsed vertical margin with a collapsed vertical margin"
+                  src="vertical-margin-collapse-bba78e.png"
+                  width="500"
+                  height="348"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>This behavior can be very useful when you’re working with a lot of
-different kinds of elements, and you want to define their layout as the
-<em>minimum</em> space between other elements.</p>
+          <p>
+            This behavior can be very useful when you’re working with a lot of
+            different kinds of elements, and you want to define their layout as
+            the <em>minimum</em> space between other elements.
+          </p>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='preventing-margin-collapse'>Preventing Margin Collapse</h3></div>
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="preventing-margin-collapse">
+              Preventing Margin Collapse
+            </h3>
+          </div>
 
-<p>It can also be really annoying. Sometimes you do want to prevent the margins
-from collapsing. All you need to do is put another invisible element in between
-them:</p>
+          <p>
+            It can also be really annoying. Sometimes you do want to prevent the
+            margins from collapsing. All you need to do is put another invisible
+            element in between them:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraphs are blocks, too. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>However<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; and &amp;lt;strong&amp;gt;
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraphs are blocks, too. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>However<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; and &amp;lt;strong&amp;gt;
 elements are not. They are <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>inline<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> elements.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'padding-top: 1px'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>  <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
@@ -548,65 +1073,107 @@ elements are not. They are <span class="hljs-tag">&lt;<span class="hljs-name">st
 do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
-<p>We’ll talk more about the <code>&lt;div&gt;</code> element in the next
-section. The important part here is that only <em>consecutive</em> elements can
-collapse into each other. Putting an element with non-zero height (hence the
-<code>padding-top</code>) between our paragraphs forces them to display both
-the <code>25px</code> top margin and the <code>50px</code> bottom margin.</p>
+          <p>
+            We’ll talk more about the <code>&lt;div&gt;</code> element in the
+            next section. The important part here is that only
+            <em>consecutive</em> elements can collapse into each other. Putting
+            an element with non-zero height (hence the <code>padding-top</code>)
+            between our paragraphs forces them to display both the
+            <code>25px</code> top margin and the <code>50px</code> bottom
+            margin.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 209px'><div class='diagram__padding' style='padding-bottom: 174.64114832535884%'><img class='diagram__image' alt='Diagram: inserting an empty &lt;div&gt; to force vertical margins to uncollapsed' src='preventing-margin-collapse-4b96ca.png' width='209' height='365'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 209px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 174.64114832535884%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: inserting an empty &lt;div&gt; to force vertical margins to uncollapsed"
+                  src="preventing-margin-collapse-4b96ca.png"
+                  width="209"
+                  height="365"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Remember that padding doesn’t ever collapse, so an alternative
-solution would be to use <code>padding</code> to space out our paragraphs
-instead of the <code>margin</code> property. However, this only works if
-you’re not using the padding for anything else (at the moment, we are, so
-let’s stick to the <code>&lt;div&gt;</code> option).</p>
+          <p>
+            Remember that padding doesn’t ever collapse, so an alternative
+            solution would be to use <code>padding</code> to space out our
+            paragraphs instead of the <code>margin</code> property. However,
+            this only works if you’re not using the padding for anything else
+            (at the moment, we are, so let’s stick to the
+            <code>&lt;div&gt;</code> option).
+          </p>
 
-<p>A third option to avoid margin collapse is to stick to a
-bottom-only or top-only margin convention. For instance, if all your elements
-<em>only</em> define a bottom margin, there’s no potential for them to
-collapse.</p>
+          <p>
+            A third option to avoid margin collapse is to stick to a bottom-only
+            or top-only margin convention. For instance, if all your elements
+            <em>only</em> define a bottom margin, there’s no potential for them
+            to collapse.
+          </p>
 
-<p>Finally, the <a href='../flexbox/index.html'>flexbox</a> layout scheme
-doesn’t have collapsing margins, so this isn’t really even an issue for modern
-websites.</p>
+          <p>
+            Finally, the <a href="../flexbox/index.html">flexbox</a> layout
+            scheme doesn’t have collapsing margins, so this isn’t really even an
+            issue for modern websites.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="generic-boxes">
+              <span>Generic Boxes</span>
+            </h2>
+          </div>
 
+          <p>
+            So far, every HTML element we’ve seen lends additional meaning to
+            the content it contains. Indeed, this is the whole point of HTML,
+            but there are many times when we need a generic box purely for the
+            sake of styling a web page. This is what
+            <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are for.
+          </p>
 
+          <p>
+            Both <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are
+            “container” elements that don’t have any affect on the semantic
+            structure of an HTML document. They do, however, provide a hook for
+            adding CSS styles to arbitrary sections of a web page. For example,
+            sometimes you need to add an invisible box to prevent a margin
+            collapse, or maybe you want to group the first few paragraphs of an
+            article into a synopsis with slightly different text formatting.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            We’ll use a lot of <code>&lt;div&gt;</code>’s throughout the rest of
+            this tutorial. For now, let’s create a simple button by adding the
+            following to the bottom of our <code>boxes.html</code> file:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='generic-boxes'><span>Generic Boxes</span></h2></div>
-
-<p>So far, every HTML element we’ve seen lends additional meaning to the
-content it contains. Indeed, this is the whole point of HTML, but there are
-many times when we need a generic box purely for the sake of styling a web
-page. This is what <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are
-for.</p>
-
-<p>Both <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are
-“container” elements that don’t have any affect on the
-semantic structure of an HTML document. They do, however, provide a hook for
-adding CSS styles to arbitrary sections of a web page. For example, sometimes
-you need to add an invisible box to prevent a margin collapse, or maybe you
-want to group the first few paragraphs of an article into a synopsis with
-slightly different text formatting.</p>
-
-<p>We’ll use a lot of <code>&lt;div&gt;</code>’s throughout the
-rest of this tutorial. For now, let’s create a simple button by adding
-the following to the bottom of our <code>boxes.html</code> file:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>And here are the associated styles that need to go into
-<code>box-styles.css</code>. Most of these should be familiar from the last
-  chapter, although we did throw in a new <a
-    href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius'><code>border-radius</code>
-    property</a>:</p>
+          <p>
+            And here are the associated styles that need to go into
+            <code>box-styles.css</code>. Most of these should be familiar from
+            the last chapter, although we did throw in a new
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
+              ><code>border-radius</code> property</a
+            >:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-tag">div</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">div</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
@@ -617,98 +1184,198 @@ the following to the bottom of our <code>boxes.html</code> file:</p>
 }
 </code></pre>
 
-<p>This will give us a big blue button that spans the entire width of the
-browser:</p>
+          <p>
+            This will give us a big blue button that spans the entire width of
+            the browser:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 94.11764705882352%'><img class='diagram__image' alt='Web page using &lt;div&gt; elements for buttons' src='generic-div-for-button-70dc27.png' width='425' height='400'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 94.11764705882352%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page using &lt;div&gt; elements for buttons"
+                  src="generic-div-for-button-70dc27.png"
+                  width="425"
+                  height="400"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Of course, these styles also apply to the invisible <code>&lt;div&gt;</code>
-we used to break the margin collapse in the previous section. Obviously, we
-  need a way to select individual <code>&lt;div&gt;</code>’s if
-  they’re to be of any practical use to us. That’s what <a
-    href='../css-selectors/index.html#class-selectors'>class selectors</a> are
-  for, which we’ll introduce in the next chapter. In lieu of those,
-  let’s just delete or comment out that invisible
-  <code>&lt;div&gt;</code>.</p>
+          <p>
+            Of course, these styles also apply to the invisible
+            <code>&lt;div&gt;</code> we used to break the margin collapse in the
+            previous section. Obviously, we need a way to select individual
+            <code>&lt;div&gt;</code>’s if they’re to be of any practical use to
+            us. That’s what
+            <a href="../css-selectors/index.html#class-selectors"
+              >class selectors</a
+            >
+            are for, which we’ll introduce in the next chapter. In lieu of
+            those, let’s just delete or comment out that invisible
+            <code>&lt;div&gt;</code>.
+          </p>
 
-<p>The only real difference between a <code>&lt;div&gt;</code> and a
-<code>&lt;span&gt;</code> is that the former is for block-level content while
-the latter is meant for inline content.</p>
+          <p>
+            The only real difference between a <code>&lt;div&gt;</code> and a
+            <code>&lt;span&gt;</code> is that the former is for block-level
+            content while the latter is meant for inline content.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="explicit-dimensions">
+              <span>Explicit Dimensions</span>
+            </h2>
+          </div>
 
+          <p>
+            So far, we’ve let our HTML elements define their dimensions
+            automatically. The paddings, borders, and margins we’ve been playing
+            with all wrap around whatever content happens to be inside the
+            element’s box. If you add more text to our
+            <code>&lt;em&gt;</code> element, everything will expand to
+            accommodate it:
+          </p>
 
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 85.6470588235294%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing an &lt;em&gt; element expanding as more content is added"
+                  src="auto-content-width-for-em-element-85d5d2.png"
+                  width="425"
+                  height="364"
+                />
+              </div>
+            </div>
+          </figure>
 
+          <p>
+            But, sometimes our desired layout calls for an explicit dimension,
+            like a sidebar that’s exactly 250 pixels wide. For this, CSS
+            provides the <code>width</code> and <code>height</code> properties.
+            These take precedence over the default size of a box’s content.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            Let’s give our button an explicit width by adding the following
+            property to <code>box-styles.css</code>:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='explicit-dimensions'><span>Explicit Dimensions</span></h2></div>
-
-<p>So far, we’ve let our HTML elements define their dimensions
-automatically. The paddings, borders, and margins we’ve been playing with
-all wrap around whatever content happens to be inside the element’s box.
-If you add more text to our <code>&lt;em&gt;</code> element, everything will
-expand to accommodate it:</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 85.6470588235294%'><img class='diagram__image' alt='Web page showing an &lt;em&gt; element expanding as more content is added' src='auto-content-width-for-em-element-85d5d2.png' width='425' height='364'/></div></div></figure>
-
-<p>But, sometimes our desired layout calls for an explicit dimension, like a
-sidebar that’s exactly 250 pixels wide. For this, CSS provides the
-<code>width</code> and <code>height</code> properties. These take precedence
-over the default size of a box’s content.</p>
-
-<p>Let’s give our button an explicit width by adding the following
-property to <code>box-styles.css</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">div</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">div</span> {
   <span class="hljs-comment">/* [Existing Declarations] */</span>
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
 }
 </code></pre>
 
-<p>Instead of being as wide as the browser window, our button is now 200
-pixels, and it hugs the left side of the page:</p>
+          <p>
+            Instead of being as wide as the browser window, our button is now
+            200 pixels, and it hugs the left side of the page:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 425px'><div class='diagram__padding' style='padding-bottom: 85.6470588235294%'><img class='diagram__image' alt='Web page showing an explicit CSS width property on a button' src='explicit-width-on-generic-div-78d595.png' width='425' height='364'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 425px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 85.6470588235294%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing an explicit CSS width property on a button"
+                  src="explicit-width-on-generic-div-78d595.png"
+                  width="425"
+                  height="364"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Also notice that if you make the button’s title longer, it will
-automatically wrap to the next line, and the element will expand vertically to
-accommodate the new content. You can change this default behavior with the
-<a
-  href='https://developer.mozilla.org/en-US/docs/Web/CSS/white-space'><code>white-space</code></a>
-and <a
-  href='https://developer.mozilla.org/en-US/docs/Web/CSS/overflow'><code>overflow</code></a>
-properties.</p>
+          <p>
+            Also notice that if you make the button’s title longer, it will
+            automatically wrap to the next line, and the element will expand
+            vertically to accommodate the new content. You can change this
+            default behavior with the
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space"
+              ><code>white-space</code></a
+            >
+            and
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+              ><code>overflow</code></a
+            >
+            properties.
+          </p>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="content-boxes-and-border-boxes">
+              <span>Content Boxes and Border Boxes</span>
+            </h2>
+          </div>
 
-</div></div>
+          <p>
+            The <code>width</code> and <code>height</code> properties only
+            define the size of a box’s <em>content</em>. Its padding and border
+            are both added <em>on top of</em> whatever explicit dimensions you
+            set. This explains why you’ll get an image that’s 244 pixels wide
+            when you take a screenshot of our button, despite the fact that it
+            has a <code>width:&nbsp;200px</code> declaration attached to it.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 396px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 118.18181818181819%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: content-box measurements adding padding and border to width of the element"
+                  src="box-sizing-content-box-09f48a.png"
+                  width="396"
+                  height="468"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='subheading'><h2 class='subheading__heading' id='content-boxes-and-border-boxes'><span>Content Boxes and Border Boxes</span></h2></div>
+          <p>
+            Needless to say, this can be a little counterintuitive when you’re
+            trying to lay out a page. Imagine trying to fill a
+            <code>600px</code> container with three boxes that are all
+            <code>width:&nbsp;200px</code>, but they don’t fit because they all
+            have a <code>1px</code> border (making their actual width
+            <code>202px</code>).
+          </p>
 
-<p>The <code>width</code> and <code>height</code> properties only define the
-size of a box’s <em>content</em>. Its padding and border are both added
-<em>on top of</em> whatever explicit dimensions you set. This explains why
-you’ll get an image that’s 244 pixels wide when you take a
-screenshot of our button, despite the fact that it has a
-<code>width:&nbsp;200px</code> declaration attached to it.</p>
+          <p>
+            Fortunately, CSS lets you change how the width of a box is
+            calculated via the <code>box-sizing</code> property. By default, it
+            has a value of <code>content-box</code>, which leads to the behavior
+            described above. Let’s see what happens when we change it to
+            <code>border-box</code>:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 396px'><div class='diagram__padding' style='padding-bottom: 118.18181818181819%'><img class='diagram__image' alt='Diagram: content-box measurements adding padding and border to width of the element' src='box-sizing-content-box-09f48a.png' width='396' height='468'/></div></div></figure>
-
-<p>Needless to say, this can be a little counterintuitive when you’re
-trying to lay out a page. Imagine trying to fill a <code>600px</code> container
-with three boxes that are all <code>width:&nbsp;200px</code>, but they don’t
-fit because they all have a <code>1px</code> border (making their actual width
-<code>202px</code>).</p>
-
-<p>Fortunately, CSS lets you change how the width of a box is calculated via
-the <code>box-sizing</code> property. By default, it has a value of
-<code>content-box</code>, which leads to the behavior described above.
-Let’s see what happens when we change it to <code>border-box</code>:</p>
-
-
-<pre class='highlight'><code><span class="hljs-selector-tag">div</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">div</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
@@ -722,58 +1389,97 @@ Let’s see what happens when we change it to <code>border-box</code>:</p>
 }
 </code></pre>
 
-<p>This forces the actual width of the box to be
-<code>200px</code>&mdash;including padding and borders. Of course, this means
-that the content width is now determined automatically:</p>
+          <p>
+            This forces the actual width of the box to be
+            <code>200px</code>&mdash;including padding and borders. Of course,
+            this means that the content width is now determined automatically:
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 396px'><div class='diagram__padding' style='padding-bottom: 118.18181818181819%'><img class='diagram__image' alt='Diagram: border-box measurements including padding and border with the width of the element' src='box-sizing-border-box-ace2be.png' width='396' height='468'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 396px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 118.18181818181819%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: border-box measurements including padding and border with the width of the element"
+                  src="box-sizing-border-box-ace2be.png"
+                  width="396"
+                  height="468"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>This is much more intuitive, and as a result, using <code>border-box</code>
-for all your boxes is considered a best practice among modern web
-developers.</p>
+          <p>
+            This is much more intuitive, and as a result, using
+            <code>border-box</code> for all your boxes is considered a best
+            practice among modern web developers.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="aligning-boxes">
+              <span>Aligning Boxes</span>
+            </h2>
+          </div>
 
+          <p>
+            Aligning boxes horizontally is a common task for web developers, and
+            the box model offers a lot of ways to do it. We already saw the
+            <a href="../hello-css/index.html#text-alignment"
+              ><code>text-align</code> property</a
+            >, which aligns the content and <em>inline</em> boxes inside of a
+            block-level element. Aligning <em>block</em> boxes is another story.
+          </p>
 
+          <p>
+            Try adding the following rule to our stylesheet. It will only align
+            the <em>content</em> inside of our block boxes&mdash;not the blocks
+            themselves. Our <code>&lt;div&gt;</code> button is still
+            left-aligned regardless of the <code>&lt;body&gt;</code>’s text
+            alignment:
+          </p>
 
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='aligning-boxes'><span>Aligning Boxes</span></h2></div>
-
-<p>Aligning boxes horizontally is a common task for web developers, and
-the box model offers a lot of ways to do it. We already saw the <a
-href='../hello-css/index.html#text-alignment'><code>text-align</code>
-property</a>, which aligns the content and <em>inline</em> boxes inside of a
-block-level element. Aligning <em>block</em> boxes is another story.</p>
-
-<p>Try adding the following rule to our stylesheet. It will only align the
-<em>content</em> inside of our block boxes&mdash;not the blocks themselves. Our
-<code>&lt;div&gt;</code> button is still left-aligned regardless of the
-<code>&lt;body&gt;</code>’s text alignment:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">body</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">text-align</span>: center;
 }
 </code></pre>
 
-<p>There are three methods for horizontally aligning block-level elements:
-“auto-margins” for center alignment, “floats” for left/right alignment, and
-“flexbox” for complete control over alignment. Yes, unfortunately block-level
-alignment is totally unrelated to the <code>text-align</code> property.</p>
+          <p>
+            There are three methods for horizontally aligning block-level
+            elements: “auto-margins” for center alignment, “floats” for
+            left/right alignment, and “flexbox” for complete control over
+            alignment. Yes, unfortunately block-level alignment is totally
+            unrelated to the <code>text-align</code> property.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="centering-with-auto-margins">
+              Centering With Auto-Margins
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='centering-with-auto-margins'>Centering With Auto-Margins</h3></div>
+          <p>
+            <a href="../floats/index.html">Floats</a> and
+            <a href="../flexbox/index.html">flexbox</a> are complicated topics
+            that we’ve devoted entire chapters to, but we do have the background
+            to deal with auto-margins right now. When you set the left and right
+            margin of a block-level element to <code>auto</code>, it will center
+            the block in its parent element.
+          </p>
 
-<p><a href='../floats/index.html'>Floats</a> and <a
-  href='../flexbox/index.html'>flexbox</a> are complicated topics that
-we’ve devoted entire chapters to, but we do have the background to deal
-with auto-margins right now. When you set the left and right margin of a
-block-level element to <code>auto</code>, it will center the block in its
-parent element.</p>
+          <p>For example, we can center our button with the following:</p>
 
-<p>For example, we can center our button with the following:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-tag">div</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">div</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4A90E2</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
@@ -786,204 +1492,339 @@ parent element.</p>
 }
 </code></pre>
 
-<p>Note that this only works on blocks that have an explicit width defined on
-them. Remove that <code>width:&nbsp;200px</code> line, and our button will be
-the full width of the browser, making “center alignment”
-meaningless.</p>
+          <p>
+            Note that this only works on blocks that have an explicit width
+            defined on them. Remove that <code>width:&nbsp;200px</code> line,
+            and our button will be the full width of the browser, making “center
+            alignment” meaningless.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="resetting-styles">
+              <span>Resetting Styles</span>
+            </h2>
+          </div>
 
+          <p>
+            Notice that white band around our page? That’s a default
+            margin/padding added by your browser. Different browsers have
+            different default styles for all of their HTML elements, making it
+            difficult to create consistent stylesheets.
+          </p>
 
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 580px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 51.55172413793103%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="One web page showing white border due to default margin/padding and another web page without the white border after a universal reset"
+                  src="resetting-box-sizing-and-margins-72ff64.png"
+                  width="580"
+                  height="299"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            It’s usually a good idea to override default styles to a predictable
+            value using the “universal” CSS selector (<code>*</code>). Try
+            adding this to the top of our <code>box-styles.css</code> file:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='resetting-styles'><span>Resetting Styles</span></h2></div>
-
-<p>Notice that white band around our page? That’s a default
-margin/padding added by your browser. Different browsers have different default
-styles for all of their HTML elements, making it difficult to create consistent
-stylesheets.</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 580px'><div class='diagram__padding' style='padding-bottom: 51.55172413793103%'><img class='diagram__image' alt='One web page showing white border due to default margin/padding and another web page without the white border after a universal reset' src='resetting-box-sizing-and-margins-72ff64.png' width='580' height='299'/></div></div></figure>
-
-<p>It’s usually a good idea to override default styles to a predictable
-value using the “universal” CSS selector (<code>*</code>). Try
-adding this to the top of our <code>box-styles.css</code> file:</p>
-
-<pre class='highlight'><code>* {
+          <pre class="highlight"><code>* {
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">box-sizing</span>: border-box;
 }
 </code></pre>
 
-<p>This selector matches every HTML element, effectively resetting the
-<code>margin</code> and <code>padding</code> properties for our web page. We
-also converted all our boxes to <code>border-box</code>, which, again, is a
-best practice.</p>
+          <p>
+            This selector matches every HTML element, effectively resetting the
+            <code>margin</code> and <code>padding</code> properties for our web
+            page. We also converted all our boxes to <code>border-box</code>,
+            which, again, is a best practice.
+          </p>
 
-<p>You’ll find a similar reset at the top of almost every global CSS
-stylesheet on the web. They can get a whole lot more complicated, but the three
-simple declarations shown above allow us to confidently tweak the CSS box
-model for our own purposes without worrying about unforeseen interactions with
-default browser styles.</p>
-
-</div></div>
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='summary'><span>Summary</span></h2></div>
-
-<p>We’ll learn more about the practical uses of the CSS box model as we
-get deeper into constructing complex web pages. For now, think of it as a new
-tool in your CSS toolbox. With a few key concepts from this chapter, you should
-feel much more equipped to convert a design mockup into a real-life web
-page:</p>
-
-<ul>
-  <li>Everything is a box.</li>
-  <li>Boxes can be inline or block-level.</li>
-  <li>Boxes have content, padding, borders, and margins.</li>
-  <li>They also have seemingly arbitrary rules about how they interact.</li>
-  <li>Mastering the CSS box model means you can lay out most web pages.</li>
-</ul>
-
-<p>Like the last chapter, the CSS properties we just covered might seem
-simple&mdash;and they sort of are. But, start looking at the websites you visit
-through the lens of the CSS box model, and you’ll see this stuff
-literally everywhere.</p>
-
-<p>Our exploration of generic boxes (<code>&lt;div&gt;</code> and
-<code>&lt;span&gt;</code>) was a little bit limited because we didn’t
-have a way to pluck out an individual HTML element from our web page.
-We’ll fix that in the next chapter with a more in-depth discussion of CSS
-selectors.</p>
-
-<div class='next-chapter'>
-  <a href='../css-selectors/index.html'>Next Chapter &gt;</a>
-</div>
-
-</div></div>
-
-<div class='chapter-sidebar'><div class='sidebar js-sidebar'><div class='sidebar__wrapper'><ul class='sidebar__list'><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#setup'>Setup</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#block-elements-and-inline-elements'>Block vs Inline</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#changing-box-behavior'>Changing Box Behavior</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#content-padding-border-and-margin'>The Box Model</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#padding'>Padding</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#borders'>Borders</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#margins'>Margins</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#vertical-margin-collapse'>Vertical Margin Collapse</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#generic-boxes'>Generic Boxes</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#explicit-dimensions'>Explicit Dimensions</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#content-boxes-and-border-boxes'>Content vs Border Boxes</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#aligning-boxes'>Aligning Boxes</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#resetting-styles'>Resetting Styles</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#summary'>Summary</a> </li></ul></div></div></div>
-
-
-
-
-  
-  <footer>
-
-    
-    <div class='about'>
-
-      <div class='about__wrapper'>
-        <div class='about__header'>
-          <div class='about__rule-before'></div>
-          <img class='about__logo' src='../../img/interneting-is-hard-logo-97b225.svg'
-               alt='Wi-fi signal with exclamation mark through it'>
-          <div class='about__rule-after'></div>
+          <p>
+            You’ll find a similar reset at the top of almost every global CSS
+            stylesheet on the web. They can get a whole lot more complicated,
+            but the three simple declarations shown above allow us to
+            confidently tweak the CSS box model for our own purposes without
+            worrying about unforeseen interactions with default browser styles.
+          </p>
         </div>
+      </div>
 
-        <div class='about__content'>
-          <div class='about__icons'>
-            <a href='https://twitter.com/internetinghard' target='_blank'><img
-               class='about__twitter' src='../../img/twitter-icon-29cd78.png'
-               alt='Twitter logo'></a>
-            <a href='https://www.facebook.com/Interneting-Is-Hard-120886695097813/' target='_blank'><img
-               class='about__facebook' src='../../img/facebook-icon-e6def5.png'
-               alt='Facebook logo'></a>
-            <a class='js-obfuscated-email__mailto'><img class='about__email'
-               src='../../img/email-icon-a4c505.png'
-               alt='Envelope icon'></a>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="summary">
+              <span>Summary</span>
+            </h2>
           </div>
 
-          <p class='about__description'><em>InternetingIsHard.com</em> is an
-          independent publisher of premium web development tutorials. All
-          content is authored and maintained by Oliver James. He loves hearing
-          from readers, so <a href='../../contact/index.html'>come say hello</a>!</p>
+          <p>
+            We’ll learn more about the practical uses of the CSS box model as we
+            get deeper into constructing complex web pages. For now, think of it
+            as a new tool in your CSS toolbox. With a few key concepts from this
+            chapter, you should feel much more equipped to convert a design
+            mockup into a real-life web page:
+          </p>
 
-        </div>
+          <ul>
+            <li>Everything is a box.</li>
+            <li>Boxes can be inline or block-level.</li>
+            <li>Boxes have content, padding, borders, and margins.</li>
+            <li>
+              They also have seemingly arbitrary rules about how they interact.
+            </li>
+            <li>
+              Mastering the CSS box model means you can lay out most web pages.
+            </li>
+          </ul>
 
-        <div class='about__mailing-list'>
-          <div class='about__mailing-list-description'>
-            More tutorials are coming. (Lots more.)<br/>
-            Enter your email <span
-              class='about__mailing-list-below'>below</span><span
-              class='about__mailing-list-above'>above</span>, and we’ll let you
-            know when they get here.
+          <p>
+            Like the last chapter, the CSS properties we just covered might seem
+            simple&mdash;and they sort of are. But, start looking at the
+            websites you visit through the lens of the CSS box model, and you’ll
+            see this stuff literally everywhere.
+          </p>
+
+          <p>
+            Our exploration of generic boxes (<code>&lt;div&gt;</code> and
+            <code>&lt;span&gt;</code>) was a little bit limited because we
+            didn’t have a way to pluck out an individual HTML element from our
+            web page. We’ll fix that in the next chapter with a more in-depth
+            discussion of CSS selectors.
+          </p>
+
+          <div class="next-chapter">
+            <a href="../css-selectors/index.html">Next Chapter &gt;</a>
           </div>
+        </div>
+      </div>
 
-          <form class='about__mailing-list-form js-about__mailing-list-form'
-                novalidate>
+      <div class="chapter-sidebar">
+        <div class="sidebar js-sidebar">
+          <div class="sidebar__wrapper">
+            <ul class="sidebar__list">
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#setup">Setup</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#block-elements-and-inline-elements"
+                  >Block vs Inline</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#changing-box-behavior"
+                  >Changing Box Behavior</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#content-padding-border-and-margin"
+                  >The Box Model</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#padding">Padding</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#borders">Borders</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#margins">Margins</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#vertical-margin-collapse"
+                  >Vertical Margin Collapse</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#generic-boxes"
+                  >Generic Boxes</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#explicit-dimensions"
+                  >Explicit Dimensions</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#content-boxes-and-border-boxes"
+                  >Content vs Border Boxes</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#aligning-boxes"
+                  >Aligning Boxes</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#resetting-styles"
+                  >Resetting Styles</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#summary">Summary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-            <div class='slide-animation'>
-              <div class='about__mailing-list-row js-about__mailing-list-row'>
-                <label for='about__mailing-list-email'
-                       class='about__mailing-list-email-label'>Email</label>
-                <input id='about__mailing-list-email'
-                       class='input-text input-text--small
-                              about__mailing-list-email js-about__mailing-list-email'
-                       type='email'
-                       placeholder='you@example.com'/>
+      <footer>
+        <div class="about">
+          <div class="about__wrapper">
+            <div class="about__header">
+              <div class="about__rule-before"></div>
+              <img
+                class="about__logo"
+                src="../../img/interneting-is-hard-logo-97b225.svg"
+                alt="Wi-fi signal with exclamation mark through it"
+              />
+              <div class="about__rule-after"></div>
+            </div>
 
-                <div class='cta-button about__mailing-list-button'>
-                  <button class='cta-button__link cta-button__link--small
+            <div class="about__content">
+              <div class="about__icons">
+                <a href="https://twitter.com/internetinghard" target="_blank"
+                  ><img
+                    class="about__twitter"
+                    src="../../img/twitter-icon-29cd78.png"
+                    alt="Twitter logo"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/Interneting-Is-Hard-120886695097813/"
+                  target="_blank"
+                  ><img
+                    class="about__facebook"
+                    src="../../img/facebook-icon-e6def5.png"
+                    alt="Facebook logo"
+                /></a>
+
+                <a class="js-obfuscated-email__mailto"
+                  ><img
+                    class="about__email"
+                    src="../../img/email-icon-a4c505.png"
+                    alt="Envelope icon"
+                /></a>
+              </div>
+
+              <p class="about__description">
+                <em>InternetingIsHard.com</em> is an independent publisher of
+                premium web development tutorials. All content is authored and
+                maintained by Oliver James. He loves hearing from readers, so
+                <a href="../../contact/index.html">come say hello</a>!
+              </p>
+            </div>
+
+            <div class="about__mailing-list">
+              <div class="about__mailing-list-description">
+                More tutorials are coming. (Lots more.)<br />
+                Enter your email
+                <span class="about__mailing-list-below">below</span
+                ><span class="about__mailing-list-above">above</span>, and we’ll
+                let you know when they get here.
+              </div>
+
+              <form
+                class="about__mailing-list-form js-about__mailing-list-form"
+                novalidate
+              >
+                <div class="slide-animation">
+                  <div
+                    class="about__mailing-list-row js-about__mailing-list-row"
+                  >
+                    <label
+                      for="about__mailing-list-email"
+                      class="about__mailing-list-email-label"
+                      >Email</label
+                    >
+                    <input
+                      id="about__mailing-list-email"
+                      class="input-text input-text--small
+                              about__mailing-list-email js-about__mailing-list-email"
+                      type="email"
+                      placeholder="you@example.com"
+                    />
+
+                    <div class="cta-button about__mailing-list-button">
+                      <button
+                        class="cta-button__link cta-button__link--small
                                  about__mailing-list-button-link
-                                 js-about__mailing-list-button-link'>Subscribe</button>
+                                 js-about__mailing-list-button-link"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="slide-animation slide-animation--hidden">
+                  <div
+                    class="input-status about__mailing-list-status
+                          js-about__mailing-list-status"
+                  >
+                    <span
+                      class="input-status__title js-about__mailing-list-status-title"
+                      >Error!</span
+                    >
+                    <span class="js-about__mailing-list-status-text"
+                      >Can’t sign up for a mailing list without an email
+                      address...</span
+                    >
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class='slide-animation slide-animation--hidden'>
-              <div class='input-status about__mailing-list-status
-                          js-about__mailing-list-status'>
-                <span class='input-status__title js-about__mailing-list-status-title'>Error!</span>
-                <span class='js-about__mailing-list-status-text'>Can’t sign up for a mailing
-                  list without an email address...</span>
-              </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer__copyright">
+            <div class="footer__item">
+              <span class="footer__copyright-symbol">©</span> 2017
+              <a href="../../index.html">InternetingIsHard.com</a>
             </div>
-
-          </form>
+          </div>
+          <div class="footer__links">
+            <div class="footer__item footer__item--auto">
+              <a href="../../contact/index.html">Contact</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/licensing/index.html">Licensing</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/privacy/index.html">Privacy</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/terms-of-service/index.html">Terms</a>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-    
-
-    <div class='footer'>
-      <div class='footer__copyright'>
-        <div class='footer__item'>
-          <span class='footer__copyright-symbol'>©</span> 2017
-          <a href='../../index.html'>InternetingIsHard.com</a>
-        </div>
-      </div>
-      <div class='footer__links'>
-        <div class='footer__item footer__item--auto'>
-          <a href='../../contact/index.html'>Contact</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/licensing/index.html'>Licensing</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/privacy/index.html'>Privacy</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/terms-of-service/index.html'>Terms</a>
-        </div>
-      </div>
+      </footer>
     </div>
 
-  </footer>
-
-  
-</div>
-
-
-<script src='https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js'></script>
-<script src='../../js/axios-3d1394.js'></script>
-<script src='../../js/validate-36917e.js'></script>
-<script src='../../js/global-466310.js'></script>
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js"></script>
+    <script src="../../js/axios-3d1394.js"></script>
+    <script src="../../js/validate-36917e.js"></script>
+    <script src="../../js/global-466310.js"></script>
+  </body>
 </html>

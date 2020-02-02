@@ -1,139 +1,320 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <title>HTML Forms Tutorial | HTML &amp; CSS Is Hard</title>
-	<meta charset='UTF-8' />
-	<meta name='viewport'
-		  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<link rel='stylesheet' href='../../css/styles-0c78e2.css' />
+<html lang="en">
+  <head>
+    <title>HTML Forms Tutorial | HTML &amp; CSS Is Hard</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../../css/styles-0c78e2.css" />
 
-  
-	<link rel='shortcut icon' href='../../img/favicons/favicon-204b2d.ico'>
-	<link rel='icon' sizes='16x16 32x32 64x64' href='../../img/favicons/favicon-204b2d.ico'>
-	<link rel='icon' type='image/png' sizes='196x196' href='../../img/favicons/favicon-192-a6e5b6.png'>
-	<link rel='icon' type='image/png' sizes='160x160' href='../../img/favicons/favicon-160-2e97e1.png'>
-	<link rel='icon' type='image/png' sizes='96x96' href='../../img/favicons/favicon-96-5bcf10.png'>
-	<link rel='icon' type='image/png' sizes='64x64' href='../../img/favicons/favicon-64-36b542.png'>
-	<link rel='icon' type='image/png' sizes='32x32' href='../../img/favicons/favicon-32-0ae869.png'>
-	<link rel='icon' type='image/png' sizes='16x16' href='../../img/favicons/favicon-16-653c3c.png'>
-	<link rel='apple-touch-icon' href='../../img/favicons/favicon-57-b21a49.png'>
-	<link rel='apple-touch-icon' sizes='114x114' href='../../img/favicons/favicon-114-271cbc.png'>
-	<link rel='apple-touch-icon' sizes='72x72' href='../../img/favicons/favicon-72-091952.png'>
-	<link rel='apple-touch-icon' sizes='144x144' href='../../img/favicons/favicon-144-4696d9.png'>
-	<link rel='apple-touch-icon' sizes='60x60' href='../../img/favicons/favicon-60-11c348.png'>
-	<link rel='apple-touch-icon' sizes='120x120' href='../../img/favicons/favicon-120-eb7cc9.png'>
-	<link rel='apple-touch-icon' sizes='76x76' href='../../img/favicons/favicon-76-65750a.png'>
-	<link rel='apple-touch-icon' sizes='152x152' href='../../img/favicons/favicon-152-bf36c7.png'>
-	<link rel='apple-touch-icon' sizes='180x180' href='../../img/favicons/favicon-180-ed255c.png'>
-	<meta name='msapplication-TileColor' content='#FFFFFF'>
-	<meta name='msapplication-TileImage' content='/img/favicons/favicon-144-4696d9.png'>
-	<meta name='msapplication-config' content='/img/favicons/browserconfig-8221df.xml'>
+    <link rel="shortcut icon" href="../../img/favicons/favicon-204b2d.ico" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="../../img/favicons/favicon-204b2d.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="../../img/favicons/favicon-192-a6e5b6.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="../../img/favicons/favicon-160-2e97e1.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../img/favicons/favicon-96-5bcf10.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../../img/favicons/favicon-64-36b542.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/favicons/favicon-32-0ae869.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/favicons/favicon-16-653c3c.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../img/favicons/favicon-57-b21a49.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../img/favicons/favicon-114-271cbc.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../img/favicons/favicon-72-091952.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../img/favicons/favicon-144-4696d9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../img/favicons/favicon-60-11c348.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../img/favicons/favicon-120-eb7cc9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../img/favicons/favicon-76-65750a.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../img/favicons/favicon-152-bf36c7.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/favicons/favicon-180-ed255c.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/favicons/favicon-144-4696d9.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="/img/favicons/browserconfig-8221df.xml"
+    />
 
-  
-  
-  <meta property='og:title' content='HTML Forms | HTML &amp; CSS Is Hard' />
-  <meta property='og:description' content='A friendly web development tutorial for capturing user input' />
-  <meta property='og:type' content='article' />
-  <meta property='og:url' content='/html-and-css/forms/' />
-  <meta property='og:image' itemprop='image' content='https://internetingishard.com/html-and-css/icons/social/html-forms-b6e015.png' />
+    <meta property="og:title" content="HTML Forms | HTML &amp; CSS Is Hard" />
+    <meta
+      property="og:description"
+      content="A friendly web development tutorial for capturing user input"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/html-and-css/forms/" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://internetingishard.com/html-and-css/icons/social/html-forms-b6e015.png"
+    />
 
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta name='twitter:site' content='@internetinghard' />
-  <meta name='twitter:title' content='HTML Forms | HTML &amp; CSS Is Hard' />
-  <meta name='twitter:description' content='A friendly web development tutorial for capturing user input' />
-  <meta name='twitter:image' content='https://internetingishard.com/html-and-css/icons/social/html-forms-b6e015.png'/>
-  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@internetinghard" />
+    <meta name="twitter:title" content="HTML Forms | HTML &amp; CSS Is Hard" />
+    <meta
+      name="twitter:description"
+      content="A friendly web development tutorial for capturing user input"
+    />
+    <meta
+      name="twitter:image"
+      content="https://internetingishard.com/html-and-css/icons/social/html-forms-b6e015.png"
+    />
 
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga("create", "UA-91393617-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__branding">
+        <div>
+          <a class="main-nav__logo-link" href="../../index.html"
+            ><img
+              class="main-nav__logo"
+              src="../../img/interneting-is-hard-logo-97b225.svg"
+              alt="Wifi signal with exclamation mark through it"
+          /></a>
+        </div>
+        <div>
+          <a class="main-nav__name" href="../../index.html"
+            >Interneting Is Hard</a
+          >
+        </div>
+      </div>
+      <div>
+        <a class="main-nav__html-css" href="../index.html">HTML &amp; CSS</a>
+      </div>
+    </nav>
 
-    ga('create', 'UA-91393617-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
+    <div class="page">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="heading">
+            <h1 class="heading__title">HTML Forms</h1>
+            <div class="heading__parenthesis-rule">
+              <div class="heading__rule-before"></div>
+              <div class="heading__parenthesis">
+                Nº 13. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+              </div>
+              <div class="heading__rule-after"></div>
+            </div>
+            <div class="heading__subtitle">
+              A friendly web development tutorial for capturing user input
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <div class="content">
+        <div class="content__wrapper content__wrapper--first">
+          <p>
+            HTML form elements let you collect input from your website’s
+            visitors. Mailing lists, contact forms, and blog post comments are
+            common examples for small websites, but in organizations that rely
+            on their website for revenue, forms are sacred and revered.
+          </p>
 
-<nav class='main-nav'>
-  <div class='main-nav__branding'>
-    <div><a class='main-nav__logo-link' href='../../index.html'><img class='main-nav__logo'
-                        src='../../img/interneting-is-hard-logo-97b225.svg'
-                        alt='Wifi signal with exclamation mark through it'></a></div>
-    <div>
-      <a class='main-nav__name' href='../../index.html'>Interneting Is Hard</a>
-    </div>
-  </div>
-  <div>
-    <a class='main-nav__html-css' href='../index.html'>HTML &amp; CSS</a>
-  </div>
-</nav>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 535px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 48.598130841121495%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Examples of text inputs, textareas, radio buttons, checkboxes, and other HTML form elements"
+                  src="html-form-elements-939709.png"
+                  width="535"
+                  height="260"
+                />
+              </div>
+            </div>
+          </figure>
 
+          <p>
+            Forms are the “money pages.” They’re how e-commerce sites sell their
+            products, how SaaS companies collect payment for their service, and
+            how non-profit groups raise money online. Many companies measure the
+            success of their website by the effectiveness of its forms because
+            they answer questions like “how many leads did our website send to
+            our sales team?” and “how many people signed up for our product last
+            week?” This often means that forms are subjected to endless A/B
+            tests and optimizations.
+          </p>
 
-<div class='page'>
-  
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 496px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 40.92741935483871%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: frontend form elements sending input to backend server for processing"
+                  src="form-frontend-and-backend-2a0f80.png"
+                  width="496"
+                  height="203"
+                />
+              </div>
+            </div>
+          </figure>
 
-<header class='page-header'><div class='page-header__wrapper'><div class='heading'><h1 class='heading__title'>HTML Forms</h1><div class='heading__parenthesis-rule'><div class='heading__rule-before'></div><div class='heading__parenthesis'>Nº 13. of <a href='../index.html'>HTML &amp; CSS Is Hard</a></div><div class='heading__rule-after'></div></div><div class='heading__subtitle'>A friendly web development tutorial for capturing user input</div></div></div></header>
+          <p>
+            There are two aspects of a functional HTML form: the frontend user
+            interface and the backend server. The former is the
+            <em>appearance</em> of the form (as defined by HTML and CSS), while
+            the latter is the code that processes it (storing data in a
+            database, sending an email, etc). We’ll be focusing entirely on the
+            frontend this chapter, leaving backend form processing for a future
+            tutorial.
+          </p>
+        </div>
+      </div>
 
-<div class='content'><div class='content__wrapper content__wrapper--first'>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+          </div>
 
-<p>HTML form elements let you collect input from your website’s visitors.
-Mailing lists, contact forms, and blog post comments are common examples for
-small websites, but in organizations that rely on their website for revenue,
-forms are sacred and revered.</p>
+          <p>
+            Unfortunately, there’s really no getting around that fact that
+            styling forms is <em>hard</em>. It’s always a good idea to have a
+            mockup representing the exact page you want to build before you
+            start coding it up, but this is particularly true for forms. So,
+            here’s the example we’ll be creating in this chapter:
+          </p>
 
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 600px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 123.50000000000001%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Mobile and desktop web page mockups with several form elements"
+                  src="responsive-form-mockup-963e65.png"
+                  width="600"
+                  height="741"
+                />
+              </div>
+            </div>
+          </figure>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 535px'><div class='diagram__padding' style='padding-bottom: 48.598130841121495%'><img class='diagram__image' alt='Examples of text inputs, textareas, radio buttons, checkboxes, and other HTML form elements' src='html-form-elements-939709.png' width='535' height='260'/></div></div></figure>
+          <p>
+            As you can see, this is a speaker submission form for a fake
+            conference. It hosts a pretty good selection of HTML forms elements:
+            various types of text fields, a group of radio buttons, a dropdown
+            menu, a checkbox, and a submit button.
+          </p>
 
+          <p>
+            Create a new
+            <a href="../introduction/index.html#atom-text-editor"
+              >Atom project</a
+            >
+            called <code>forms</code> and stick a new HTML file in it called
+            <code>speaker-submission.html</code>. For starters, let’s add the
+            markup for the header. (Hey look! It has
+            <a href="../semantic-html/index.html#headers">some semantic HTML</a
+            >!)
+          </p>
 
-<p>Forms are the “money pages.” They’re how e-commerce sites
-sell their products, how SaaS companies collect payment for their service, and
-how non-profit groups raise money online. Many companies measure the success of
-their website by the effectiveness of its forms because they answer questions
-like “how many leads did our website send to our sales team?” and
-“how many people signed up for our product last week?” This often
-means that forms are subjected to endless A/B tests and optimizations.</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 496px'><div class='diagram__padding' style='padding-bottom: 40.92741935483871%'><img class='diagram__image' alt='Diagram: frontend form elements sending input to backend server for processing' src='form-frontend-and-backend-2a0f80.png' width='496' height='203'/></div></div></figure>
-
-<p>There are two aspects of a functional HTML form: the frontend user interface
-and the backend server. The former is the <em>appearance</em> of the form (as
-defined by HTML and CSS), while the latter is the code that processes it
-(storing data in a database, sending an email, etc). We’ll be focusing
-entirely on the frontend this chapter, leaving backend form processing for a
-future tutorial.</p>
-
-
-
-</div></div>
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='setup'><span>Setup</span></h2></div>
-
-<p>Unfortunately, there’s really no getting around that fact that styling
-forms is <em>hard</em>. It’s always a good idea to have a mockup
-representing the exact page you want to build before you start coding it up,
-but this is particularly true for forms. So, here’s the example
-we’ll be creating in this chapter:</p>
-
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 123.50000000000001%'><img class='diagram__image' alt='Mobile and desktop web page mockups with several form elements' src='responsive-form-mockup-963e65.png' width='600' height='741'/></div></div></figure>
-
-<p>As you can see, this is a speaker submission form for a fake conference. It
-hosts a pretty good selection of HTML forms elements: various types of text
-fields, a group of radio buttons, a dropdown menu, a checkbox, and a submit button.</p>
-
-<p>Create a new <a href='../introduction/index.html#atom-text-editor'>Atom
-  project</a> called <code>forms</code> and stick a new HTML file in it called
-<code>speaker-submission.html</code>. For starters, let’s add the markup
-for the header. (Hey look! It has <a
-href='../semantic-html/index.html#headers'>some semantic HTML</a>!)</p>
-
-<pre class='highlight'><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
@@ -150,11 +331,14 @@ href='../semantic-html/index.html#headers'>some semantic HTML</a>!)</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
-<p>Next, create a <code>styles.css</code> file and add the following CSS. It
-uses a simple <a href='../flexbox/index.html'>flexbox</a> technique to center
-the header (and form) no matter how wide the browser window is:</p>
+          <p>
+            Next, create a <code>styles.css</code> file and add the following
+            CSS. It uses a simple
+            <a href="../flexbox/index.html">flexbox</a> technique to center the
+            header (and form) no matter how wide the browser window is:
+          </p>
 
-<pre class='highlight'><code>* {
+          <pre class="highlight"><code>* {
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">box-sizing</span>: border-box;
@@ -189,67 +373,115 @@ the header (and form) no matter how wide the browser window is:</p>
 }
 </code></pre>
 
-<p>Notice that we’re adhering to the <a
-  href='../responsive-design/index.html#mobile-first-development'>mobile-first
-  development</a> approach that we discussed in the <em>Responsive Design</em>
-chapter. These base CSS rules give us our mobile layout and provide a
-foundation for the desktop layout, too. We’ll create the media query for
-a fixed-width desktop layout later in the chapter.</p>
+          <p>
+            Notice that we’re adhering to the
+            <a href="../responsive-design/index.html#mobile-first-development"
+              >mobile-first development</a
+            >
+            approach that we discussed in the
+            <em>Responsive Design</em> chapter. These base CSS rules give us our
+            mobile layout and provide a foundation for the desktop layout, too.
+            We’ll create the media query for a fixed-width desktop layout later
+            in the chapter.
+          </p>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="html-forms">
+              <span>HTML Forms</span>
+            </h2>
+          </div>
 
-</div></div>
+          <p>
+            On to forms! Every HTML form begins with the aptly named
+            <code>&lt;form&gt;</code> element. It accepts a
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+              >number of attributes</a
+            >, but the most important ones are <code>action</code> and
+            <code>method</code>. Go ahead and add an empty form to our HTML
+            document, right under the <code>&lt;header&gt;</code>:
+          </p>
 
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='html-forms'><span>HTML Forms</span></h2></div>
-
-<p>On to forms! Every HTML form begins with the aptly named
-<code>&lt;form&gt;</code> element. It accepts a <a
-href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form'>number of
-attributes</a>, but the most important ones are <code>action</code> and
-<code>method</code>. Go ahead and add an empty form to our HTML document, right
-under the <code>&lt;header&gt;</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">''</span> <span class="hljs-attr">method</span>=<span class="hljs-string">'get'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'speaker-form'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">''</span> <span class="hljs-attr">method</span>=<span class="hljs-string">'get'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'speaker-form'</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
 </code></pre>
 
-<p>The <code>action</code> attribute defines the URL that processes the form.
-It’s where the input collected by the form is sent when the user clicks
-  the <strong>Submit</strong> button. This is typically a special URL defined
-  by your web server that knows how to process the data. Common backend
-  technologies for processing forms include <a
-    href='https://nodejs.org/en/'>Node.js</a>, <a
-    href='http://php.net/'>PHP</a>, and <a href='http://rubyonrails.org/'>Ruby
-  on Rails</a>, but again, we’ll be focusing on the frontend in this
-chapter.</p>
+          <p>
+            The <code>action</code> attribute defines the URL that processes the
+            form. It’s where the input collected by the form is sent when the
+            user clicks the <strong>Submit</strong> button. This is typically a
+            special URL defined by your web server that knows how to process the
+            data. Common backend technologies for processing forms include
+            <a href="https://nodejs.org/en/">Node.js</a>,
+            <a href="http://php.net/">PHP</a>, and
+            <a href="http://rubyonrails.org/">Ruby on Rails</a>, but again,
+            we’ll be focusing on the frontend in this chapter.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 464px'><div class='diagram__padding' style='padding-bottom: 53.44827586206896%'><img class='diagram__image' alt='Diagram: &lt;form&gt; action and method attributes sent to backend server' src='form-action-attribute-68258a.png' width='464' height='248'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 464px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 53.44827586206896%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: &lt;form&gt; action and method attributes sent to backend server"
+                  src="form-action-attribute-68258a.png"
+                  width="464"
+                  height="248"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>The <code>method</code> attribute can be either <a
-  href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST'><code>post</code></a>
-or <a
-  href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET'><code>get</code></a>,
-both of which define how the form is submitted to the backend server. This is
-largely dependent on how your web server wants to handle the form, but the
-general rule of thumb is to use <code>post</code> when you’re
-<em>changing</em> data on the server, reserving <code>get</code> for when
-you’re only <em>getting</em> data.</p>
+          <p>
+            The <code>method</code> attribute can be either
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"
+              ><code>post</code></a
+            >
+            or
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
+              ><code>get</code></a
+            >, both of which define how the form is submitted to the backend
+            server. This is largely dependent on how your web server wants to
+            handle the form, but the general rule of thumb is to use
+            <code>post</code> when you’re <em>changing</em> data on the server,
+            reserving <code>get</code> for when you’re only
+            <em>getting</em> data.
+          </p>
 
-<p>By leaving the <code>action</code> attribute blank, we’re telling the
-form to submit to the same URL. Combined with the <code>get</code> method, this
-will let us inspect the contents of the form.</p>
+          <p>
+            By leaving the <code>action</code> attribute blank, we’re telling
+            the form to submit to the same URL. Combined with the
+            <code>get</code> method, this will let us inspect the contents of
+            the form.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-forms">
+              Styling Forms
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-forms'>Styling Forms</h3></div>
+          <p>
+            Of course, we’re looking at an empty form right now, but that
+            doesn’t mean we can’t add some styles to it like we would a
+            container <code>&lt;div&gt;</code>. This will turn it into a box
+            that matches our <code>&lt;header&gt;</code> element:
+          </p>
 
-<p>Of course, we’re looking at an empty form right now, but that
-doesn’t mean we can’t add some styles to it like we would a
-container <code>&lt;div&gt;</code>. This will turn it into a box that matches
-our <code>&lt;header&gt;</code> element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.speaker-form</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.speaker-form</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F6F7F8</span>;
   <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#D6D9DC</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
@@ -259,66 +491,120 @@ our <code>&lt;header&gt;</code> element:</p>
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">40px</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="text-input-fields">
+              <span>Text Input Fields</span>
+            </h2>
+          </div>
 
+          <p>
+            To actually collect user input, we need a new tool: the
+            <code>&lt;input/&gt;</code> element. Insert the following into our
+            <code>&lt;form&gt;</code> to create a text field:
+          </p>
 
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='text-input-fields'><span>Text Input Fields</span></h2></div>
-
-<p>To actually collect user input, we need a new tool: the
-<code>&lt;input/&gt;</code> element. Insert the following into our
-<code>&lt;form&gt;</code> to create a text field:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">'full-name'</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'full-name'</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'full-name'</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'text'</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>First, we have a container <code>&lt;div&gt;</code> to help with styling.
-This is pretty common for separating input elements. Second, we have a
-<code>&lt;label&gt;</code>, which you can think of as another <a
-href='../semantic-html/index.html'>semantic HTML element</a>, like
-<code>&lt;article&gt;</code> or <code>&lt;figcaption&gt;</code>, but for form
-labels. A label’s <code>for</code> attribute must match the
-<code>id</code> attribute of its associated <code>&lt;input/&gt;</code>
-element.</p>
+          <p>
+            First, we have a container <code>&lt;div&gt;</code> to help with
+            styling. This is pretty common for separating input elements.
+            Second, we have a <code>&lt;label&gt;</code>, which you can think of
+            as another
+            <a href="../semantic-html/index.html">semantic HTML element</a>,
+            like <code>&lt;article&gt;</code> or
+            <code>&lt;figcaption&gt;</code>, but for form labels. A label’s
+            <code>for</code> attribute must match the <code>id</code> attribute
+            of its associated <code>&lt;input/&gt;</code> element.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 520px'><div class='diagram__padding' style='padding-bottom: 31.346153846153847%'><img class='diagram__image' alt='Diagram: for attribute of &lt;label&gt; pointing to id attribute of &lt;input&gt; element' src='label-element-for-attribute-313489.png' width='520' height='163'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 520px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 31.346153846153847%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: for attribute of &lt;label&gt; pointing to id attribute of &lt;input&gt; element"
+                  src="label-element-for-attribute-313489.png"
+                  width="520"
+                  height="163"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Third, the <code>&lt;input/&gt;</code> element creates a text field.
-It’s a little different from other elements we’ve encountered
-because it can dramatically change appearance depending on its
-<code>type</code> attribute, but it always creates some kind of interactive
-user input. We’ll see other values besides <code>text</code> throughout
-  the chapter. Remember that <a
-    href='../css-selectors/index.html#id-selectors'>ID selectors
-    are bad</a>&mdash;the <code>id</code> attribute here is <em>only</em> for
-  connecting it to a <code>&lt;label&gt;</code> element.</p>
+          <p>
+            Third, the <code>&lt;input/&gt;</code> element creates a text field.
+            It’s a little different from other elements we’ve encountered
+            because it can dramatically change appearance depending on its
+            <code>type</code> attribute, but it always creates some kind of
+            interactive user input. We’ll see other values besides
+            <code>text</code> throughout the chapter. Remember that
+            <a href="../css-selectors/index.html#id-selectors"
+              >ID selectors are bad</a
+            >&mdash;the <code>id</code> attribute here is <em>only</em> for
+            connecting it to a <code>&lt;label&gt;</code> element.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 556px'><div class='diagram__padding' style='padding-bottom: 30.935251798561154%'><img class='diagram__image' alt='Diagram: name attribute of &lt;input&gt; element sending variable to server' src='sending-input-variable-to-server-653369.png' width='556' height='172'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 556px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 30.935251798561154%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: name attribute of &lt;input&gt; element sending variable to server"
+                  src="sending-input-variable-to-server-653369.png"
+                  width="556"
+                  height="172"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>Conceptually, an <code>&lt;input/&gt;</code> element represents a
-“variable” that gets sent to the
-backend server. The <code>name</code> attribute defines the name of this
-variable, and the value is whatever the user entered into the text field. Note
-that you can pre-populate this value by adding a <code>value</code> attribute
-to an <code>&lt;input/&gt;</code> element.</p>
+          <p>
+            Conceptually, an <code>&lt;input/&gt;</code> element represents a
+            “variable” that gets sent to the backend server. The
+            <code>name</code> attribute defines the name of this variable, and
+            the value is whatever the user entered into the text field. Note
+            that you can pre-populate this value by adding a
+            <code>value</code> attribute to an
+            <code>&lt;input/&gt;</code> element.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-text-input-fields">
+              Styling Text Input Fields
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-text-input-fields'>Styling Text Input Fields</h3></div>
+          <p>
+            An <code>&lt;input/&gt;</code> element can be styled like any other
+            HTML element. Let’s add some CSS to <code>styles.css</code> to
+            pretty it up a bit. This makes use of all the concepts from the
+            <a href="../hello-css/index.html">Hello, CSS</a>,
+            <a href="https://internetingishard.com/html-and-css/css-box-model"
+              >Box Model</a
+            >, <a href="../css-selectors/index.html">CSS Selectors</a>, and
+            <a href="../flexbox/index.html">Flexbox</a> chapters:
+          </p>
 
-<p>An <code>&lt;input/&gt;</code> element can be styled like any other HTML
-element. Let’s add some CSS to <code>styles.css</code> to pretty it up a
-  bit. This makes use of all the concepts from the <a
-    href='../hello-css/index.html'>Hello, CSS</a>, <a
-    href='https://internetingishard.com/html-and-css/css-box-model'>Box Model</a>, <a
-  href='../css-selectors/index.html'>CSS Selectors</a>, and <a
-  href='../flexbox/index.html'>Flexbox</a> chapters:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">justify-content</span>: flex-start;
@@ -340,30 +626,45 @@ element. Let’s add some CSS to <code>styles.css</code> to pretty it up a
 }
 </code></pre>
 
-<p>The <code>input[type='text']</code> part is a new type of CSS selector
-called an “attribute selector”. It only matches
-<code>&lt;input/&gt;</code> elements that have a <code>type</code> attribute
-equal to <code>text</code>. This lets us specifically target text fields
-opposed to radio buttons, which are defined by the same HTML element
-  (<code>&lt;input&nbsp;type='radio'/&gt;</code>). You can read more about
-  attribute selectors at <a
-    href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>Mozilla
-    Developer Network</a>.</p>
+          <p>
+            The <code>input[type='text']</code> part is a new type of CSS
+            selector called an “attribute selector”. It only matches
+            <code>&lt;input/&gt;</code> elements that have a
+            <code>type</code> attribute equal to <code>text</code>. This lets us
+            specifically target text fields opposed to radio buttons, which are
+            defined by the same HTML element
+            (<code>&lt;input&nbsp;type='radio'/&gt;</code>). You can read more
+            about attribute selectors at
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+              >Mozilla Developer Network</a
+            >.
+          </p>
 
-<p>All of our styles are “namespaced” in a <code>.form-row</code>
-<a href='../css-selectors/index.html#descendant-selectors'>descendant
-selector</a>. Isolating <code>&lt;input/&gt;</code> and
-<code>&lt;label&gt;</code> styles like this makes it easier to create different
-kinds of forms. We’ll see why it’s convenient to avoid global
-<code>input[type='text']</code> and <code>label</code> selectors once we get to
-<a href='index.html#radio-buttons'>radio buttons</a>.</p>
+          <p>
+            All of our styles are “namespaced” in a <code>.form-row</code>
+            <a href="../css-selectors/index.html#descendant-selectors"
+              >descendant selector</a
+            >. Isolating <code>&lt;input/&gt;</code> and
+            <code>&lt;label&gt;</code> styles like this makes it easier to
+            create different kinds of forms. We’ll see why it’s convenient to
+            avoid global <code>input[type='text']</code> and
+            <code>label</code> selectors once we get to
+            <a href="index.html#radio-buttons">radio buttons</a>.
+          </p>
 
-<p>Finally, let’s tweak these base styles to create our desktop layout.
-Add the following <a
-href='../responsive-design/index.html#css-media-queries'>media query</a> to the
-end of our stylesheet.</p>
+          <p>
+            Finally, let’s tweak these base styles to create our desktop layout.
+            Add the following
+            <a href="../responsive-design/index.html#css-media-queries"
+              >media query</a
+            >
+            to the end of our stylesheet.
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-selector-class">.speaker-form-header</span>,
   <span class="hljs-selector-class">.speaker-form</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">600px</span>;
@@ -386,27 +687,54 @@ end of our stylesheet.</p>
 }
 </code></pre>
 
-<p>Check out that awesome use of the <a
-  href='../flexbox/index.html#flex-container-direction'><code>flex-direction</code> property</a> to
-make the <code>&lt;label&gt;</code> appear on top of its
-<code>&lt;input/&gt;</code> element in the mobile layout, but to the left of it
-in the desktop layout.</p>
+          <p>
+            Check out that awesome use of the
+            <a href="../flexbox/index.html#flex-container-direction"
+              ><code>flex-direction</code> property</a
+            >
+            to make the <code>&lt;label&gt;</code> appear on top of its
+            <code>&lt;input/&gt;</code> element in the mobile layout, but to the
+            left of it in the desktop layout.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 600px'><div class='diagram__padding' style='padding-bottom: 49.833333333333336%'><img class='diagram__image' alt='Web page showing single text field styled with CSS' src='styling-text-input-field-6e4ed3.png' width='600' height='299'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 600px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 49.833333333333336%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing single text field styled with CSS"
+                  src="styling-text-input-field-6e4ed3.png"
+                  width="600"
+                  height="299"
+                />
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="email-input-fields">
+              <span>Email Input Fields</span>
+            </h2>
+          </div>
 
+          <p>
+            The <code>&lt;input/&gt;</code> element’s
+            <code>type</code> attribute also lets you do basic input validation.
+            For example, let’s try adding another input element that
+            <em>only</em> accepts email addresses instead of arbitrary text
+            values:
+          </p>
 
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='email-input-fields'><span>Email Input Fields</span></h2></div>
-
-<p>The <code>&lt;input/&gt;</code> element’s <code>type</code> attribute
-also lets you do basic input validation. For example, let’s try adding
-another input element that <em>only</em> accepts email addresses instead of
-arbitrary text values:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">'email'</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'email'</span>
          <span class="hljs-attr">name</span>=<span class="hljs-string">'email'</span>
@@ -415,41 +743,76 @@ arbitrary text values:</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>This works exactly like the <code>type='text'</code> input, except it
-automatically checks that user entered an email address. In Firefox, you can
-try typing something that’s not an email address, then clicking outside
-of the field to make it lose focus and validate its input. It should turn red
-to show the user that it’s an incorrect value. Chrome and Safari
-don’t attempt to validate until user tries to submit the form, so
-we’ll see this in action later in this chapter.</p>
+          <p>
+            This works exactly like the <code>type='text'</code> input, except
+            it automatically checks that user entered an email address. In
+            Firefox, you can try typing something that’s not an email address,
+            then clicking outside of the field to make it lose focus and
+            validate its input. It should turn red to show the user that it’s an
+            incorrect value. Chrome and Safari don’t attempt to validate until
+            user tries to submit the form, so we’ll see this in action later in
+            this chapter.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 416px'><div class='diagram__padding' style='padding-bottom: 42.54807692307692%'><img class='diagram__image' alt='Web page showing invalid email field value highlighted with red border' src='firefox-invalid-email-input-f98cc1.png' width='416' height='177'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 416px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 42.54807692307692%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing invalid email field value highlighted with red border"
+                  src="firefox-invalid-email-input-f98cc1.png"
+                  width="416"
+                  height="177"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>This is more than just validation though. By telling browsers that
-we’re looking for an email address, they can provide a more intuitive
-user experience. For instance, when a smartphone browser sees this
-<code>type='email'</code> attribute, it gives the user a special email-specific
-keyboard with an easily-accessible <code>@</code> character.</p>
+          <p>
+            This is more than just validation though. By telling browsers that
+            we’re looking for an email address, they can provide a more
+            intuitive user experience. For instance, when a smartphone browser
+            sees this <code>type='email'</code> attribute, it gives the user a
+            special email-specific keyboard with an easily-accessible
+            <code>@</code> character.
+          </p>
 
-<p>Also notice the new <code>placeholder</code> attribute that lets you display
-some default text when the <code>&lt;input/&gt;</code> element is empty. This
-is a nice little UX technique to prompt the user to input their own value.</p>
+          <p>
+            Also notice the new <code>placeholder</code> attribute that lets you
+            display some default text when the
+            <code>&lt;input/&gt;</code> element is empty. This is a nice little
+            UX technique to prompt the user to input their own value.
+          </p>
 
-<p>There’s a bunch of other built-in validation options besides email
-addresses, which you can read about on MDN’s <a
-href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input'><code>&lt;input/&gt;</code>
-reference</a>. Of particular interest are the <code>required</code>,
-<code>minlength</code>, <code>maxlength</code>, and <code>pattern</code>
-attributes.</p>
+          <p>
+            There’s a bunch of other built-in validation options besides email
+            addresses, which you can read about on MDN’s
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+              ><code>&lt;input/&gt;</code> reference</a
+            >. Of particular interest are the <code>required</code>,
+            <code>minlength</code>, <code>maxlength</code>, and
+            <code>pattern</code> attributes.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-email-input-fields">
+              Styling Email Input Fields
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-email-input-fields'>Styling Email Input Fields</h3></div>
+          <p>
+            We want our email field to match our text field from the previous
+            section, so let’s add another attribute selector to the existing
+            <code>input[type='text']</code> rule, like so:
+          </p>
 
-<p>We want our email field to match our text field from the previous section,
-so let’s add another attribute selector to the existing
-<code>input[type='text']</code> rule, like so:</p>
-
-<pre class='highlight'><code><span class="hljs-comment">/* Change this rule */</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-comment">/* Change this rule */</span>
 <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='text']</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFFFFF</span>;
   <span class="hljs-comment">/* ... */</span>
@@ -463,19 +826,25 @@ so let’s add another attribute selector to the existing
 }
 </code></pre>
 
-<p>Again, we don’t want to use a plain old <code>input</code> type
-selector here because that would style <em>all</em> of our
-<code>&lt;input/&gt;</code> elements, including our upcoming radio buttons and
-checkbox. This is part of what makes styling forms tricky. Understanding the
-CSS to pluck out exactly the elements you want is a crucial skill.</p>
+          <p>
+            Again, we don’t want to use a plain old <code>input</code> type
+            selector here because that would style <em>all</em> of our
+            <code>&lt;input/&gt;</code> elements, including our upcoming radio
+            buttons and checkbox. This is part of what makes styling forms
+            tricky. Understanding the CSS to pluck out exactly the elements you
+            want is a crucial skill.
+          </p>
 
-<p>Let’s not forget about our desktop styles. Update the corresponding
-<code>input[type='text']</code> rule in our media query to match the following
-(note that we’re preparing for the next few
-sections with the <code>select</code>, and
-<code>textarea</code> selectors):</p>
+          <p>
+            Let’s not forget about our desktop styles. Update the corresponding
+            <code>input[type='text']</code> rule in our media query to match the
+            following (note that we’re preparing for the next few sections with
+            the <code>select</code>, and <code>textarea</code> selectors):
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='text']</span>,
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='email']</span>,    <span class="hljs-comment">/* Add */</span>
@@ -488,16 +857,22 @@ sections with the <code>select</code>, and
 }
 </code></pre>
 
-<p>Since we can now have a “right” and a “wrong” input
-value, we should probably convey that to users. The <code>:invalid</code> and
-<code>:valid</code> <a
-href='../css-selectors/index.html#pseudo-classes-for-links'>pseudo-classes</a>
-let us style these states independently. For example, maybe we want to render
-both the border and the text with a custom shade of red when the user entered
-an unacceptable value. Add the following rule to our stylesheet, outside of the
-media query:</p>
+          <p>
+            Since we can now have a “right” and a “wrong” input value, we should
+            probably convey that to users. The <code>:invalid</code> and
+            <code>:valid</code>
+            <a href="../css-selectors/index.html#pseudo-classes-for-links"
+              >pseudo-classes</a
+            >
+            let us style these states independently. For example, maybe we want
+            to render both the border and the text with a custom shade of red
+            when the user entered an unacceptable value. Add the following rule
+            to our stylesheet, outside of the media query:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='text']</span><span class="hljs-selector-pseudo">:invalid</span>,
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='text']</span><span class="hljs-selector-pseudo">:invalid</span>,
 <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type='email']</span><span class="hljs-selector-pseudo">:invalid</span> {
   <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#D55C5F</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#D55C5F</span>;
@@ -505,45 +880,85 @@ media query:</p>
 }
 </code></pre>
 
-<p>Until we include a submit button, you’ll only be able to see this in
-Firefox, but you get the idea. There’s a similar pseudo-class called
-<code>:focus</code> that selects the element the user is currently filling out.
-This gives you a lot of control over the appearance of your forms.</p>
+          <p>
+            Until we include a submit button, you’ll only be able to see this in
+            Firefox, but you get the idea. There’s a similar pseudo-class called
+            <code>:focus</code> that selects the element the user is currently
+            filling out. This gives you a lot of control over the appearance of
+            your forms.
+          </p>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="radio-buttons">
+              <span>Radio Buttons</span>
+            </h2>
+          </div>
 
+          <p>
+            Changing the <code>type</code> property of the
+            <code>&lt;input/&gt;</code> element to <code>radio</code> transforms
+            it into a radio button. Radio buttons are a little more complex to
+            work with than text fields because they always operate in groups,
+            allowing the user to choose one out of many predefined options.
+          </p>
 
-<div class='content'><div class='content__wrapper'>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 478px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 45.81589958158996%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: &lt;fieldset&gt; wrapping a &lt;legend&gt; and a series of radio buttons with associated &lt;label&gt; elements"
+                  src="radio-label-fieldset-legend-elements-0affe5.png"
+                  width="478"
+                  height="219"
+                />
+              </div>
+            </div>
+          </figure>
 
-<div class='subheading'><h2 class='subheading__heading' id='radio-buttons'><span>Radio Buttons</span></h2></div>
+          <p>
+            This means that we not only need a label for each
+            <code>&lt;input/&gt;</code> element, but also a way to group radio
+            buttons and label the entire group. This is what the
+            <code>&lt;fieldset&gt;</code> and
+            <code>&lt;legend&gt;</code> elements are for. Every radio button
+            group you create should:
+          </p>
 
-<p>Changing the <code>type</code> property of the <code>&lt;input/&gt;</code>
-element to <code>radio</code> transforms it into a radio button. Radio buttons
-are a little more complex to work with than text fields because they always
-operate in groups, allowing the user to choose one out of many predefined
-options.</p>
+          <ul>
+            <li>
+              Be wrapped in a <code>&lt;fieldset&gt;</code>, which is labeled
+              with a <code>&lt;legend&gt;</code>.
+            </li>
+            <li>
+              Associate a <code>&lt;label&gt;</code> element with each radio
+              button.
+            </li>
+            <li>
+              Use the same <code>name</code> attribute for each radio button in
+              the group.
+            </li>
+            <li>
+              Use different <code>value</code> attributes for each radio button.
+            </li>
+          </ul>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 478px'><div class='diagram__padding' style='padding-bottom: 45.81589958158996%'><img class='diagram__image' alt='Diagram: &lt;fieldset&gt; wrapping a &lt;legend&gt; and a series of radio buttons with associated &lt;label&gt; elements' src='radio-label-fieldset-legend-elements-0affe5.png' width='478' height='219'/></div></div></figure>
+          <p>
+            Our radio button example has all of these components. Add the
+            following to our <code>&lt;form&gt;</code> element underneath the
+            email field:
+          </p>
 
-<p>This means that we not only need a label for each
-<code>&lt;input/&gt;</code> element, but also a way to group radio buttons and
-label the entire group. This is what the <code>&lt;fieldset&gt;</code> and
-<code>&lt;legend&gt;</code> elements are for. Every radio button group you
-create should:</p>
-
-<ul>
-  <li>Be wrapped in a <code>&lt;fieldset&gt;</code>, which is labeled with a
-    <code>&lt;legend&gt;</code>.</li>
-  <li>Associate a <code>&lt;label&gt;</code> element with each radio button.</li>
-  <li>Use the same <code>name</code> attribute for each radio button in the
-    group.</li>
-  <li>Use different <code>value</code> attributes for each radio button.</li>
-</ul>
-
-<p>Our radio button example has all of these components. Add the following to
-our <code>&lt;form&gt;</code> element underneath the email field:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'legacy-form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'legacy-form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Type of Talk<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'talk-type-1'</span>
          <span class="hljs-attr">name</span>=<span class="hljs-string">'talk-type'</span>
@@ -559,46 +974,80 @@ our <code>&lt;form&gt;</code> element underneath the email field:</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 </code></pre>
 
-<p>Unlike text fields, the user can’t enter custom values into a radio
-button, which is why each one of them needs an explicit <code>value</code>
-attribute. This is the value that will get sent to the server when the user
-submits the form. It’s also very important that each radio button has the
-same <code>name</code> attribute, otherwise the form wouldn’t know they
-were part of the same group.</p>
+          <p>
+            Unlike text fields, the user can’t enter custom values into a radio
+            button, which is why each one of them needs an explicit
+            <code>value</code> attribute. This is the value that will get sent
+            to the server when the user submits the form. It’s also very
+            important that each radio button has the same
+            <code>name</code> attribute, otherwise the form wouldn’t know they
+            were part of the same group.
+          </p>
 
-<p>We also introduced a new attribute called <code>checked</code>. This is a
-“boolean attribute”, meaning that it never takes a value&mdash;it
-either exists or doesn’t exist on an <code>&lt;input/&gt;</code> element.
-If it does exist on either a radio button or a checkbox element, that element
-will be selected/checked by default.</p>
+          <p>
+            We also introduced a new attribute called <code>checked</code>. This
+            is a “boolean attribute”, meaning that it never takes a
+            value&mdash;it either exists or doesn’t exist on an
+            <code>&lt;input/&gt;</code> element. If it does exist on either a
+            radio button or a checkbox element, that element will be
+            selected/checked by default.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-radio-buttons">
+              Styling Radio Buttons
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-radio-buttons'>Styling Radio Buttons</h3></div>
+          <p>
+            We have a few things working against us with when it comes to
+            styling radio buttons. First, there’s simply more elements to worry
+            about. Second, the <code>&lt;fieldset&gt;</code> and
+            <code>&lt;legend&gt;</code> elements have rather ugly default
+            styles, and there’s not a whole lot of consistency in these defaults
+            across browsers. Third, at the time of this writing,
+            <code>&lt;fieldset&gt;</code> doesn’t support flexbox.
+          </p>
 
-<p>We have a few things working against us with when it comes to styling radio
-buttons. First, there’s simply more elements to worry about. Second, the
-<code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements have
-rather ugly default styles, and there’s not a whole lot of consistency in
-these defaults across browsers. Third, at the time of this writing,
-<code>&lt;fieldset&gt;</code> doesn’t support flexbox.</p>
+          <p>
+            But don’t fret! This is a good example of
+            <a href="../floats/index.html">floats</a> being a useful fallback
+            for legacy/troublesome elements. You’ll notice that we didn’t wrap
+            the radio buttons in our existing <code>.form-row</code> class,
+            opting instead for a new <code>.legacy-form-row</code> class. This
+            is because it’s going to be completely separate from our other
+            elements, using floats instead of flexbox.
+          </p>
 
-<p>But don’t fret! This is a good example of <a
-  href='../floats/index.html'>floats</a> being a useful fallback for
-legacy/troublesome elements. You’ll notice that we didn’t wrap the
-radio buttons in our existing <code>.form-row</code> class, opting instead for
-a new <code>.legacy-form-row</code> class. This is because it’s going to
-be completely separate from our other elements, using floats instead of
-flexbox.</p>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 418px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 97.60765550239235%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: mobile layout created with block box &lt;label&gt; versus desktop layout with label as floated left"
+                  src="radio-button-float-layout-df003b.png"
+                  width="418"
+                  height="408"
+                />
+              </div>
+            </div>
+          </figure>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 418px'><div class='diagram__padding' style='padding-bottom: 97.60765550239235%'><img class='diagram__image' alt='Diagram: mobile layout created with block box &lt;label&gt; versus desktop layout with label as floated left' src='radio-button-float-layout-df003b.png' width='418' height='408'/></div></div></figure>
+          <p>
+            Start with the mobile and tablet styles by adding the following
+            rules outside of our media query. We want to get rid of the default
+            <code>&lt;fieldset&gt;</code> and
+            <code>&lt;legend&gt;</code> styles, then float the radio buttons and
+            labels so they appear in one line underneath the
+            <code>&lt;legend&gt;</code>:
+          </p>
 
-<p>Start with the mobile and tablet styles by adding the following rules
-outside of our media query. We want to get rid of the default
-<code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> styles, then
-float the radio buttons and labels so they appear in one line underneath the
-<code>&lt;legend&gt;</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.legacy-form-row</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.legacy-form-row</span> {
   <span class="hljs-attribute">border</span>: none;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">40px</span>;
 }
@@ -623,13 +1072,18 @@ float the radio buttons and labels so they appear in one line underneath the
 }
 </code></pre>
 
-<p>For the desktop layout, we need to make the <code>&lt;legend&gt;</code> line
-up with the <code>&lt;label&gt;</code> elements in the previous section (hence
-the <code>width: 120px</code> line), and we need to float <em>everything</em>
-to the left so they appear on the same line. Update our media query to include
-the following:</p>
+          <p>
+            For the desktop layout, we need to make the
+            <code>&lt;legend&gt;</code> line up with the
+            <code>&lt;label&gt;</code> elements in the previous section (hence
+            the <code>width: 120px</code> line), and we need to float
+            <em>everything</em> to the left so they appear on the same line.
+            Update our media query to include the following:
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-selector-class">.legacy-form-row</span> {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
@@ -645,28 +1099,40 @@ the following:</p>
 }
 </code></pre>
 
-<p>As far as layouts go, this is a pretty good cross-browser solution. However,
-customizing the appearance of the actual button is another story. It’s
-possible by taking advantage of the <code>checked</code> attribute, but
-it’s a little bit complicated. We’ll leave you to Google
-“custom radio button CSS” and explore that rabbit hole on your
-own.</p>
+          <p>
+            As far as layouts go, this is a pretty good cross-browser solution.
+            However, customizing the appearance of the actual button is another
+            story. It’s possible by taking advantage of the
+            <code>checked</code> attribute, but it’s a little bit complicated.
+            We’ll leave you to Google “custom radio button CSS” and explore that
+            rabbit hole on your own.
+          </p>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="select-elements-dropdown-menus">
+              <span
+                >Select Elements
+                <span class="subheading__desktop-title-br"><br /></span
+                >(Dropdown Menus)</span
+              >
+            </h2>
+          </div>
 
+          <p>
+            Dropdown menus offer an alternative to radio buttons, as they let
+            the user select one out of many options. The
+            <code>&lt;select&gt;</code> element represents the dropdown menu,
+            and it contains a bunch of <code>&lt;option&gt;</code> elements that
+            represent each item.
+          </p>
 
-</div></div>
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='select-elements-dropdown-menus'><span>Select Elements <span  class='subheading__desktop-title-br'><br/></span>(Dropdown Menus)</span></h2></div>
-
-<p>Dropdown menus offer an alternative to radio buttons, as they let the user
-select one out of many options. The <code>&lt;select&gt;</code> element
-represents the dropdown menu, and it contains a bunch of
-<code>&lt;option&gt;</code> elements that represent each item.</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">'t-shirt'</span>&gt;</span>T-Shirt Size<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'t-shirt'</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'t-shirt'</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'xs'</span>&gt;</span>Extra Small<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
@@ -677,42 +1143,74 @@ represents the dropdown menu, and it contains a bunch of
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>Just like our radio button <code>&lt;input/&gt;</code> elements, we have
-<code>name</code> and <code>value</code> attributes that get passed to the
-backend server. But, instead of being defined on a single element,
-they’re spread across the <code>&lt;select&gt;</code> and
-<code>&lt;option&gt;</code> elements.</p>
+          <p>
+            Just like our radio button <code>&lt;input/&gt;</code> elements, we
+            have <code>name</code> and <code>value</code> attributes that get
+            passed to the backend server. But, instead of being defined on a
+            single element, they’re spread across the
+            <code>&lt;select&gt;</code> and
+            <code>&lt;option&gt;</code> elements.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-select-elements">
+              Styling Select Elements
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-select-elements'>Styling Select Elements</h3></div>
+          <p class="nudge-desktop--much-smaller">
+            And, also just like our radio buttons,
+            <code>&lt;select&gt;</code> elements are notoriously hard to style.
+            However, there’s a reason for this. Dropdowns are a complex piece of
+            interactivity, and their behavior changes significantly across
+            devices. For instance, on an iPhone, clicking a
+            <code>&lt;select&gt;</code> element brings up a native scrolling UI
+            component that makes it much easier to navigate the menu.
+          </p>
 
-<p class='nudge-desktop--much-smaller'>And, also just like our radio buttons,
-<code>&lt;select&gt;</code> elements are notoriously hard to style. However,
-there’s a reason for this. Dropdowns are a complex piece of interactivity, and
-their behavior changes significantly across devices. For instance, on an
-iPhone, clicking a <code>&lt;select&gt;</code> element brings up a native
-scrolling UI component that makes it much easier to navigate the menu.</p>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 244px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 103.68852459016394%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Screenshot showing three &lt;option&gt; elements in the scrolling &lt;select&gt; menu at the bottom of an iPhone screen"
+                  src="select-dropdown-in-iphone-a9968d.png"
+                  width="244"
+                  height="253"
+                />
+              </div>
+            </div>
+          </figure>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 244px'><div class='diagram__padding' style='padding-bottom: 103.68852459016394%'><img class='diagram__image' alt='Screenshot showing three &lt;option&gt; elements in the scrolling &lt;select&gt; menu at the bottom of an iPhone screen' src='select-dropdown-in-iphone-a9968d.png' width='244' height='253'/></div></div></figure>
+          <p>
+            It’s usually a good idea to let the browser/device determine the
+            best way to preset a <code>&lt;select&gt;</code> element, so we’ll
+            be keeping our CSS pretty simple. Unfortunately, even the simplest
+            things are surprisingly hard. For instance, try changing the font
+            size of our <code>&lt;select&gt;</code> element:
+          </p>
 
-<p>It’s usually a good idea to let the browser/device determine the best
-way to preset a <code>&lt;select&gt;</code> element, so we’ll be keeping
-our CSS pretty simple. Unfortunately, even the simplest things are surprisingly
-hard. For instance, try changing the font size of our
-<code>&lt;select&gt;</code> element:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">select</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">select</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;            <span class="hljs-comment">/* This won't work in Chrome or Safari */</span>
 }
 </code></pre>
 
-<p>This will work in Firefox, but not in Chrome or Safari! To sort of fix this,
-we can use a vendor-specific prefix for the <code>appearance</code>
-property:</p>
+          <p>
+            This will work in Firefox, but not in Chrome or Safari! To sort of
+            fix this, we can use a vendor-specific prefix for the
+            <code>appearance</code> property:
+          </p>
 
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">select</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">select</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;            <span class="hljs-comment">/* This won't work in Chrome or Safari */</span>
@@ -720,56 +1218,87 @@ property:</p>
 }
 </code></pre>
 
-<p>The <code>-webkit</code> prefix will <em>only</em> apply to Chrome and
-Safari (which are powered by the WebKit rendering engine), while Firefox will
-  remain unaffected. This is effectively a hack, and even MDN says <a
-    href='https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance'>not
-    to use this CSS property</a>.</p>
+          <p>
+            The <code>-webkit</code> prefix will <em>only</em> apply to Chrome
+            and Safari (which are powered by the WebKit rendering engine), while
+            Firefox will remain unaffected. This is effectively a hack, and even
+            MDN says
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance"
+              >not to use this CSS property</a
+            >.
+          </p>
 
-<p>Style difficulties like this are a serious consideration when building a
-form. If you need custom styles, you may be better off using radio buttons or
-  JavaScript UI widgets. <a
-    href='http://getbootstrap.com/javascript/#dropdowns'>Bootstrap
-    Dropdowns</a> and <a href='https://jqueryui.com/selectmenu/#default'>jQuery
-  Selectmenu’s</a> are common JavaScript solutions for customizing select
-menus. In any case, at least you now understand the problem. You can read more
-about <code>&lt;select&gt;</code> issues <a
-  href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_styling_for_HTML_forms#Dealing_with_the_select_nightmare'>here</a>.</p>
+          <p>
+            Style difficulties like this are a serious consideration when
+            building a form. If you need custom styles, you may be better off
+            using radio buttons or JavaScript UI widgets.
+            <a href="http://getbootstrap.com/javascript/#dropdowns"
+              >Bootstrap Dropdowns</a
+            >
+            and
+            <a href="https://jqueryui.com/selectmenu/#default"
+              >jQuery Selectmenu’s</a
+            >
+            are common JavaScript solutions for customizing select menus. In any
+            case, at least you now understand the problem. You can read more
+            about <code>&lt;select&gt;</code> issues
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Advanced_styling_for_HTML_forms#Dealing_with_the_select_nightmare"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
 
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="textareas">
+              <span>Textareas</span>
+            </h2>
+          </div>
 
+          <p>
+            The <code>&lt;textarea&gt;</code> element creates a multi-line text
+            field designed to collect large amounts of text from the user.
+            They’re suitable for things like biographies, essays, and comments.
+            Go ahead and add a <code>&lt;textarea&gt;</code> to our form, along
+            with a little piece of instructional text:
+          </p>
 
-</div></div>
-
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='textareas'><span>Textareas</span></h2></div>
-
-<p>The <code>&lt;textarea&gt;</code> element creates a multi-line text field
-designed to collect large amounts of text from the user. They’re suitable
-for things like biographies, essays, and comments. Go ahead and add a
-<code>&lt;textarea&gt;</code> to our form, along with a little piece of
-instructional text:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">'abstract'</span>&gt;</span>Abstract<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'abstract'</span> <span class="hljs-attr">name</span>=<span class="hljs-string">'abstract'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'instructions'</span>&gt;</span>Describe your talk in 500 words or less<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>Note that this isn’t self-closing like the <code>&lt;input/&gt;</code>
-element, so you always need a closing <code>&lt;/textarea&gt;</code> tag. If
-you want to add any default text, it needs to go <em>inside</em> the tags
-opposed to a <code>value</code> attribute.</p>
+          <p>
+            Note that this isn’t self-closing like the
+            <code>&lt;input/&gt;</code> element, so you always need a closing
+            <code>&lt;/textarea&gt;</code> tag. If you want to add any default
+            text, it needs to go <em>inside</em> the tags opposed to a
+            <code>value</code> attribute.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-textareas">
+              Styling Textareas
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-textareas'>Styling Textareas</h3></div>
+          <p>
+            Fortunately, styling textareas is pretty straightforward. Add the
+            following to our <code>styles.css</code> file (before the media
+            query):
+          </p>
 
-<p>Fortunately, styling textareas is pretty straightforward. Add the following
-to our <code>styles.css</code> file (before the media query):</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">textarea</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">textarea</span> {
   <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
 
@@ -789,39 +1318,55 @@ to our <code>styles.css</code> file (before the media query):</p>
 }
 </code></pre>
 
-<p>By default, many browsers let the user resize <code>&lt;textarea&gt;</code>
-elements to whatever dimensions they want. We disabled this here with the
-<code>resize</code> property.</p>
+          <p>
+            By default, many browsers let the user resize
+            <code>&lt;textarea&gt;</code>
+            elements to whatever dimensions they want. We disabled this here
+            with the
+            <code>resize</code> property.
+          </p>
 
-<p>We also need a little tweak in our desktop layout. The
-<code>.instructions</code> <code>&lt;div&gt;</code> needs to be underneath the
-<code>&lt;textarea&gt;</code>, so let’s nudge it left by the width of the
-<code>&lt;label&gt;</code> column. Add the following rule to the end of our
-media query:</p>
+          <p>
+            We also need a little tweak in our desktop layout. The
+            <code>.instructions</code> <code>&lt;div&gt;</code> needs to be
+            underneath the <code>&lt;textarea&gt;</code>, so let’s nudge it left
+            by the width of the <code>&lt;label&gt;</code> column. Add the
+            following rule to the end of our media query:
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-class">.instructions</span> {
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">120px</span>;
   }
 }
 </code></pre>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="checkboxes">
+              <span>Checkboxes</span>
+            </h2>
+          </div>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            Checkboxes are sort of like radio buttons, but instead of selecting
+            only one option, they let the user pick as many as they want. This
+            simplifies things, since the browser doesn’t need to know which
+            checkboxes are part of the same group. In other words, we don’t need
+            a <code>&lt;fieldset&gt;</code> wrapper or shared
+            <code>name</code> attributes. Add the following to the end of our
+            form:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='checkboxes'><span>Checkboxes</span></h2></div>
-
-<p>Checkboxes are sort of like radio buttons, but instead of selecting only one
-option, they let the user pick as many as they want. This simplifies things,
-since the browser doesn’t need to know which checkboxes are part of the
-same group. In other words, we don’t need a <code>&lt;fieldset&gt;</code>
-wrapper or shared <code>name</code> attributes. Add the following to the end of
-our form:</p>
-
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'checkbox-label'</span> <span class="hljs-attr">for</span>=<span class="hljs-string">'available'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'available'</span>
          <span class="hljs-attr">name</span>=<span class="hljs-string">'available'</span>
@@ -832,30 +1377,43 @@ our form:</p>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>The way we used <code>&lt;label&gt;</code> here was a little different than
-previous sections. Instead of being a separate element, the
-<code>&lt;label&gt;</code> wraps its corresponding <code>&lt;input/&gt;</code>
-element. This is perfectly legal, and it’ll make it easier to match our
-desired layout. It’s still a best practice to use the <code>for</code>
-attribute.</p>
+          <p>
+            The way we used <code>&lt;label&gt;</code> here was a little
+            different than previous sections. Instead of being a separate
+            element, the <code>&lt;label&gt;</code> wraps its corresponding
+            <code>&lt;input/&gt;</code> element. This is perfectly legal, and
+            it’ll make it easier to match our desired layout. It’s still a best
+            practice to use the <code>for</code> attribute.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-checkboxes">
+              Styling Checkboxes
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-checkboxes'>Styling Checkboxes</h3></div>
+          <p>
+            For the mobile layout, all we need to do is override the
+            <code>margin-bottom</code> that we put on the rest the
+            <code>&lt;label&gt;</code> elements. Add the following to
+            <code>styles.css</code>, outside of the media query:
+          </p>
 
-<p>For the mobile layout, all we need to do is override the
-<code>margin-bottom</code> that we put on the rest the
-<code>&lt;label&gt;</code> elements. Add the following to
-<code>styles.css</code>, outside of the media query:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-class">.checkbox-label</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-class">.checkbox-label</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
 }
 </code></pre>
 
-<p>And inside the media query, we have to take that 120-pixel label column into
-account:</p>
+          <p>
+            And inside the media query, we have to take that 120-pixel label
+            column into account:
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-class">.checkbox-label</span> {
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">120px</span>;
@@ -864,69 +1422,143 @@ account:</p>
 }
 </code></pre>
 
-<p>By wrapping both the checkbox and the label text, we’re able to use a
-<code>width: auto</code> to make the entire form field be on a single line
-(remember that the <code>auto</code> width makes the box match the size of its
-contents).</p>
+          <p>
+            By wrapping both the checkbox and the label text, we’re able to use
+            a <code>width: auto</code> to make the entire form field be on a
+            single line (remember that the <code>auto</code> width makes the box
+            match the size of its contents).
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 386px'><div class='diagram__padding' style='padding-bottom: 137.04663212435233%'><img class='diagram__image' alt='Web page with several HTML form elements, including a checkbox' src='adding-a-checkbox-8a0541.png' width='386' height='529'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 386px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 137.04663212435233%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with several HTML form elements, including a checkbox"
+                  src="adding-a-checkbox-8a0541.png"
+                  width="386"
+                  height="529"
+                />
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
 
-</div></div>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="submit-buttons">
+              <span>Submit Buttons</span>
+            </h2>
+          </div>
 
-<div class='content'><div class='content__wrapper'>
+          <p>
+            Finally, let’s finish off our form with a submit button. The
+            <code>&lt;button&gt;</code> element represents a button that will
+            submit its containing <code>&lt;form&gt;</code>:
+          </p>
 
-<div class='subheading'><h2 class='subheading__heading' id='submit-buttons'><span>Submit Buttons</span></h2></div>
-
-<p>Finally, let’s finish off our form with a submit button. The
-<code>&lt;button&gt;</code> element represents a button that will submit its
-containing <code>&lt;form&gt;</code>:</p>
-
-<pre class='highlight'><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'form-row'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-<p>Clicking the button tells the browser to validate all of the
-<code>&lt;input/&gt;</code> elements in the form and submit it to the
-<code>action</code> URL if there aren’t any validation problems. So, you
-should now be able to type in something that’s not an email address into
-our email field, click the <code>&lt;button&gt;</code>, and see an error
-message.</p>
+          <p>
+            Clicking the button tells the browser to validate all of the
+            <code>&lt;input/&gt;</code> elements in the form and submit it to
+            the <code>action</code> URL if there aren’t any validation problems.
+            So, you should now be able to type in something that’s not an email
+            address into our email field, click the <code>&lt;button&gt;</code>,
+            and see an error message.
+          </p>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 533px'><div class='diagram__padding' style='padding-bottom: 48.96810506566604%'><img class='diagram__image' alt='Screenshot showing invalid input error message for email field' src='chrome-invalid-email-input-3ae531.png' width='533' height='261'/></div></div></figure>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 533px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 48.96810506566604%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Screenshot showing invalid input error message for email field"
+                  src="chrome-invalid-email-input-3ae531.png"
+                  width="533"
+                  height="261"
+                />
+              </div>
+            </div>
+          </figure>
 
-<p>This also gives us a chance to see how the user’s input gets sent to
-the server. First, enter some values into all the <code>&lt;input/&gt;</code> fields,
-making sure the email address validates correctly. Then, click the button and
-inspect the resulting URL in your browser. You should see something like this:</p>
+          <p>
+            This also gives us a chance to see how the user’s input gets sent to
+            the server. First, enter some values into all the
+            <code>&lt;input/&gt;</code> fields, making sure the email address
+            validates correctly. Then, click the button and inspect the
+            resulting URL in your browser. You should see something like this:
+          </p>
 
-<pre class='highlight'><code>
+          <pre class="highlight"><code>
 speaker-submission.html?full-name=Rick&amp;email=rick%40internetingishard.com&amp;talk-type=workshop&amp;t-shirt=l&amp;abstract=Derp.&amp;available=is-available
 
 </code></pre>
 
-<p>Everything after the <code>?</code> represents the variables in our form.
-Each <code>&lt;input/&gt;</code>’s <code>name</code> attribute is
-followed by an equal sign, then its value, and each variable is separated by an
-<code>&amp;</code> character. If we had a backend server, it’d be pretty
-easy for it to pull out all this information, query a database (or whatever),
-and let us know whether the form submission was successful or not.</p>
+          <p>
+            Everything after the <code>?</code> represents the variables in our
+            form. Each <code>&lt;input/&gt;</code>’s <code>name</code> attribute
+            is followed by an equal sign, then its value, and each variable is
+            separated by an <code>&amp;</code> character. If we had a backend
+            server, it’d be pretty easy for it to pull out all this information,
+            query a database (or whatever), and let us know whether the form
+            submission was successful or not.
+          </p>
 
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="styling-buttons">
+              Styling Buttons
+            </h3>
+          </div>
 
-<div class='subsubheading content__subsubheading'><h3 class='subsubheading__heading' id='styling-buttons'>Styling Buttons</h3></div>
+          <p>
+            We had some experience styling buttons in the
+            <a href="../css-selectors/index.html#pseudo-classes-for-links"
+              >pseudo-classes section</a
+            >
+            of the <em>CSS Selectors</em> chapter. Back then, we were applying
+            these styles to an <code>&lt;a&gt;</code> element, but we can use
+            the same techniques on a <code>&lt;button&gt;</code>.
+          </p>
 
-<p>We had some experience styling buttons in the <a
-  href='../css-selectors/index.html#pseudo-classes-for-links'>pseudo-classes
-  section</a> of the <em>CSS Selectors</em> chapter. Back then, we were
-applying these styles to an <code>&lt;a&gt;</code> element, but we can use the same
-techniques on a <code>&lt;button&gt;</code>.</p>
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 406px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 38.669950738916256%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing the form’s submit button"
+                  src="styling-a-submit-button-7e80de.png"
+                  width="406"
+                  height="157"
+                />
+              </div>
+            </div>
+          </figure>
 
-<figure class='diagram'><div class='diagram__wrapper' style='max-width: 406px'><div class='diagram__padding' style='padding-bottom: 38.669950738916256%'><img class='diagram__image' alt='Web page showing the form’s submit button' src='styling-a-submit-button-7e80de.png' width='406' height='157'/></div></div></figure>
+          <p>
+            Clean up that ugly default <code>&lt;button&gt;</code> styling by
+            adding the following to our stylesheet:
+          </p>
 
-<p>Clean up that ugly default <code>&lt;button&gt;</code> styling by adding the
-following to our stylesheet:</p>
-
-<pre class='highlight'><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">button</span> {
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">button</span> {
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
 
@@ -949,190 +1581,287 @@ following to our stylesheet:</p>
 }
 </code></pre>
 
-<p>As with our checkbox, we need to take that <code>120px</code> label column
-into account, so include one more rule inside our media query:</p>
+          <p>
+            As with our checkbox, we need to take that <code>120px</code> label
+            column into account, so include one more rule inside our media
+            query:
+          </p>
 
-<pre class='highlight'><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
+          <pre
+            class="highlight"
+          ><code>@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">700px</span>) {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-selector-class">.form-row</span> <span class="hljs-selector-tag">button</span> {
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">120px</span>;
   }
 }
 </code></pre>
-
-</div></div>
-
-<div class='content'><div class='content__wrapper'>
-
-<div class='subheading'><h2 class='subheading__heading' id='summary'><span>Summary</span></h2></div>
-
-<p>In this chapter, we introduced the most common HTML form elements. We now
-have all these tools for collecting input from our website visitors:</p>
-
-<ul>
-  <li><code>&lt;input type='text'/&gt;</code></li>
-  <li><code>&lt;input type='email'/&gt;</code></li>
-  <li><code>&lt;input type='radio'/&gt;</code></li>
-  <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code></li>
-  <li><code>&lt;textarea&gt;</code></li>
-  <li><code>&lt;input type='checkbox'/&gt;</code></li>
-  <li><code>&lt;button&gt;</code></li>
-</ul>
-
-<p>You should be pretty comfortable with the HTML and CSS required to build
-beautiful forms, but actually making these forms functional requires some
-skills we don’t have yet. That stuff is out of scope for this tutorial,
-but it might help to have some context. Generally speaking, there are two ways
-to process forms:</p>
-
-<ul>
-  <li>Use the <code>action</code> attribute to send the form data to a backend
-    URL, which then redirects to a success or error page. We got a little
-    glimpse of this in the previous section, and it doesn’t require any
-  JavaScript.</li>
-  <li>Use AJAX queries to submit the form without leaving the page. Success or
-    error messages are displayed on the same page by manipulating the HTML with
-    JavaScript.</li>
-</ul>
-
-<p>Depending on how your organization is structured, form processing may not be
-part of your job role as a frontend web developer. If that’s the case,
-you’ll need to coordinate closely with a backend developer on your team
-to make sure the <code>&lt;form&gt;</code> submits the correct name-value
-pairs. Otherwise, it’ll be up to you to make sure the frontend and
-backend of your forms fit neatly together.</p>
-
-
-
-<p>Next, we have our final chapter in <a href='../index.html'><em>HTML &amp;
-    CSS Is Hard</em></a>. We’ll round out our frontend skills with a thorough
-discussion of web fonts and practical typographic principles that every web
-developer should know about.</p>
-
-<div class='next-chapter'>
-  <a href='../web-typography/index.html'>Next Chapter &gt;</a>
-</div>
-
-</div></div>
-
-
-<div class='chapter-sidebar'><div class='sidebar js-sidebar'><div class='sidebar__wrapper'><ul class='sidebar__list'><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#setup'>Setup</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#html-forms'>HTML Forms</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#text-input-fields'>Text Input Fields</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#email-input-fields'>Email Input Fields</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#radio-buttons'>Radio Buttons</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#select-elements-dropdown-menus'>Select Elements</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#textareas'>Textareas</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#checkboxes'>Checkboxes</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#submit-buttons'>Submit Buttons</a> </li><li class='sidebar__list-item'><a class='sidebar__link' href='index.html#summary'>Summary</a> </li></ul></div></div></div>
-
-
-
-  
-  <footer>
-
-    
-    <div class='about'>
-
-      <div class='about__wrapper'>
-        <div class='about__header'>
-          <div class='about__rule-before'></div>
-          <img class='about__logo' src='../../img/interneting-is-hard-logo-97b225.svg'
-               alt='Wi-fi signal with exclamation mark through it'>
-          <div class='about__rule-after'></div>
         </div>
+      </div>
 
-        <div class='about__content'>
-          <div class='about__icons'>
-            <a href='https://twitter.com/internetinghard' target='_blank'><img
-               class='about__twitter' src='../../img/twitter-icon-29cd78.png'
-               alt='Twitter logo'></a>
-            <a href='https://www.facebook.com/Interneting-Is-Hard-120886695097813/' target='_blank'><img
-               class='about__facebook' src='../../img/facebook-icon-e6def5.png'
-               alt='Facebook logo'></a>
-            <a class='js-obfuscated-email__mailto'><img class='about__email'
-               src='../../img/email-icon-a4c505.png'
-               alt='Envelope icon'></a>
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="summary">
+              <span>Summary</span>
+            </h2>
           </div>
 
-          <p class='about__description'><em>InternetingIsHard.com</em> is an
-          independent publisher of premium web development tutorials. All
-          content is authored and maintained by Oliver James. He loves hearing
-          from readers, so <a href='../../contact/index.html'>come say hello</a>!</p>
+          <p>
+            In this chapter, we introduced the most common HTML form elements.
+            We now have all these tools for collecting input from our website
+            visitors:
+          </p>
 
-        </div>
+          <ul>
+            <li><code>&lt;input type='text'/&gt;</code></li>
+            <li><code>&lt;input type='email'/&gt;</code></li>
+            <li><code>&lt;input type='radio'/&gt;</code></li>
+            <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code></li>
+            <li><code>&lt;textarea&gt;</code></li>
+            <li><code>&lt;input type='checkbox'/&gt;</code></li>
+            <li><code>&lt;button&gt;</code></li>
+          </ul>
 
-        <div class='about__mailing-list'>
-          <div class='about__mailing-list-description'>
-            More tutorials are coming. (Lots more.)<br/>
-            Enter your email <span
-              class='about__mailing-list-below'>below</span><span
-              class='about__mailing-list-above'>above</span>, and we’ll let you
-            know when they get here.
+          <p>
+            You should be pretty comfortable with the HTML and CSS required to
+            build beautiful forms, but actually making these forms functional
+            requires some skills we don’t have yet. That stuff is out of scope
+            for this tutorial, but it might help to have some context. Generally
+            speaking, there are two ways to process forms:
+          </p>
+
+          <ul>
+            <li>
+              Use the <code>action</code> attribute to send the form data to a
+              backend URL, which then redirects to a success or error page. We
+              got a little glimpse of this in the previous section, and it
+              doesn’t require any JavaScript.
+            </li>
+            <li>
+              Use AJAX queries to submit the form without leaving the page.
+              Success or error messages are displayed on the same page by
+              manipulating the HTML with JavaScript.
+            </li>
+          </ul>
+
+          <p>
+            Depending on how your organization is structured, form processing
+            may not be part of your job role as a frontend web developer. If
+            that’s the case, you’ll need to coordinate closely with a backend
+            developer on your team to make sure the
+            <code>&lt;form&gt;</code> submits the correct name-value pairs.
+            Otherwise, it’ll be up to you to make sure the frontend and backend
+            of your forms fit neatly together.
+          </p>
+
+          <p>
+            Next, we have our final chapter in
+            <a href="../index.html"><em>HTML &amp; CSS Is Hard</em></a
+            >. We’ll round out our frontend skills with a thorough discussion of
+            web fonts and practical typographic principles that every web
+            developer should know about.
+          </p>
+
+          <div class="next-chapter">
+            <a href="../web-typography/index.html">Next Chapter &gt;</a>
           </div>
+        </div>
+      </div>
 
-          <form class='about__mailing-list-form js-about__mailing-list-form'
-                novalidate>
+      <div class="chapter-sidebar">
+        <div class="sidebar js-sidebar">
+          <div class="sidebar__wrapper">
+            <ul class="sidebar__list">
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#setup">Setup</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#html-forms"
+                  >HTML Forms</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#text-input-fields"
+                  >Text Input Fields</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#email-input-fields"
+                  >Email Input Fields</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#radio-buttons"
+                  >Radio Buttons</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#select-elements-dropdown-menus"
+                  >Select Elements</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#textareas"
+                  >Textareas</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#checkboxes"
+                  >Checkboxes</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#submit-buttons"
+                  >Submit Buttons</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#summary">Summary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-            <div class='slide-animation'>
-              <div class='about__mailing-list-row js-about__mailing-list-row'>
-                <label for='about__mailing-list-email'
-                       class='about__mailing-list-email-label'>Email</label>
-                <input id='about__mailing-list-email'
-                       class='input-text input-text--small
-                              about__mailing-list-email js-about__mailing-list-email'
-                       type='email'
-                       placeholder='you@example.com'/>
+      <footer>
+        <div class="about">
+          <div class="about__wrapper">
+            <div class="about__header">
+              <div class="about__rule-before"></div>
+              <img
+                class="about__logo"
+                src="../../img/interneting-is-hard-logo-97b225.svg"
+                alt="Wi-fi signal with exclamation mark through it"
+              />
+              <div class="about__rule-after"></div>
+            </div>
 
-                <div class='cta-button about__mailing-list-button'>
-                  <button class='cta-button__link cta-button__link--small
+            <div class="about__content">
+              <div class="about__icons">
+                <a href="https://twitter.com/internetinghard" target="_blank"
+                  ><img
+                    class="about__twitter"
+                    src="../../img/twitter-icon-29cd78.png"
+                    alt="Twitter logo"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/Interneting-Is-Hard-120886695097813/"
+                  target="_blank"
+                  ><img
+                    class="about__facebook"
+                    src="../../img/facebook-icon-e6def5.png"
+                    alt="Facebook logo"
+                /></a>
+
+                <a class="js-obfuscated-email__mailto"
+                  ><img
+                    class="about__email"
+                    src="../../img/email-icon-a4c505.png"
+                    alt="Envelope icon"
+                /></a>
+              </div>
+
+              <p class="about__description">
+                <em>InternetingIsHard.com</em> is an independent publisher of
+                premium web development tutorials. All content is authored and
+                maintained by Oliver James. He loves hearing from readers, so
+                <a href="../../contact/index.html">come say hello</a>!
+              </p>
+            </div>
+
+            <div class="about__mailing-list">
+              <div class="about__mailing-list-description">
+                More tutorials are coming. (Lots more.)<br />
+                Enter your email
+                <span class="about__mailing-list-below">below</span
+                ><span class="about__mailing-list-above">above</span>, and we’ll
+                let you know when they get here.
+              </div>
+
+              <form
+                class="about__mailing-list-form js-about__mailing-list-form"
+                novalidate
+              >
+                <div class="slide-animation">
+                  <div
+                    class="about__mailing-list-row js-about__mailing-list-row"
+                  >
+                    <label
+                      for="about__mailing-list-email"
+                      class="about__mailing-list-email-label"
+                      >Email</label
+                    >
+                    <input
+                      id="about__mailing-list-email"
+                      class="input-text input-text--small
+                              about__mailing-list-email js-about__mailing-list-email"
+                      type="email"
+                      placeholder="you@example.com"
+                    />
+
+                    <div class="cta-button about__mailing-list-button">
+                      <button
+                        class="cta-button__link cta-button__link--small
                                  about__mailing-list-button-link
-                                 js-about__mailing-list-button-link'>Subscribe</button>
+                                 js-about__mailing-list-button-link"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="slide-animation slide-animation--hidden">
+                  <div
+                    class="input-status about__mailing-list-status
+                          js-about__mailing-list-status"
+                  >
+                    <span
+                      class="input-status__title js-about__mailing-list-status-title"
+                      >Error!</span
+                    >
+                    <span class="js-about__mailing-list-status-text"
+                      >Can’t sign up for a mailing list without an email
+                      address...</span
+                    >
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class='slide-animation slide-animation--hidden'>
-              <div class='input-status about__mailing-list-status
-                          js-about__mailing-list-status'>
-                <span class='input-status__title js-about__mailing-list-status-title'>Error!</span>
-                <span class='js-about__mailing-list-status-text'>Can’t sign up for a mailing
-                  list without an email address...</span>
-              </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer__copyright">
+            <div class="footer__item">
+              <span class="footer__copyright-symbol">©</span> 2017
+              <a href="../../index.html">InternetingIsHard.com</a>
             </div>
-
-          </form>
+          </div>
+          <div class="footer__links">
+            <div class="footer__item footer__item--auto">
+              <a href="../../contact/index.html">Contact</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/licensing/index.html">Licensing</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/privacy/index.html">Privacy</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/terms-of-service/index.html">Terms</a>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-    
-
-    <div class='footer'>
-      <div class='footer__copyright'>
-        <div class='footer__item'>
-          <span class='footer__copyright-symbol'>©</span> 2017
-          <a href='../../index.html'>InternetingIsHard.com</a>
-        </div>
-      </div>
-      <div class='footer__links'>
-        <div class='footer__item footer__item--auto'>
-          <a href='../../contact/index.html'>Contact</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/licensing/index.html'>Licensing</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/privacy/index.html'>Privacy</a>
-        </div>
-        <div class='footer__item'>
-          <a href='../../legal/terms-of-service/index.html'>Terms</a>
-        </div>
-      </div>
+      </footer>
     </div>
 
-  </footer>
-
-  
-</div>
-
-
-<script src='https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js'></script>
-<script src='../../js/axios-3d1394.js'></script>
-<script src='../../js/validate-36917e.js'></script>
-<script src='../../js/global-466310.js'></script>
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js"></script>
+    <script src="../../js/axios-3d1394.js"></script>
+    <script src="../../js/validate-36917e.js"></script>
+    <script src="../../js/global-466310.js"></script>
+  </body>
 </html>
