@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Floats Tutorial | HTML &amp; CSS Is Hard</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../../css/styles-0c78e2.css" />
+
+    <link rel="shortcut icon" href="../../img/favicons/favicon-204b2d.ico" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="../../img/favicons/favicon-204b2d.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="../../img/favicons/favicon-192-a6e5b6.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="../../img/favicons/favicon-160-2e97e1.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../img/favicons/favicon-96-5bcf10.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../../img/favicons/favicon-64-36b542.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/favicons/favicon-32-0ae869.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/favicons/favicon-16-653c3c.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../../img/favicons/favicon-57-b21a49.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../img/favicons/favicon-114-271cbc.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../img/favicons/favicon-72-091952.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../img/favicons/favicon-144-4696d9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../img/favicons/favicon-60-11c348.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../img/favicons/favicon-120-eb7cc9.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../img/favicons/favicon-76-65750a.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../img/favicons/favicon-152-bf36c7.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/favicons/favicon-180-ed255c.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/favicons/favicon-144-4696d9.png"
+    />
+    <meta
+      name="msapplication-config"
+      content="/img/favicons/browserconfig-8221df.xml"
+    />
+
+    <meta property="og:title" content="Floats | HTML &amp; CSS Is Hard" />
+    <meta
+      property="og:description"
+      content="An old-timey web dev tutorial (and a friendly intro to CSS layouts)"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/html-and-css/floats/" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://internetingishard.com/html-and-css/icons/social/floats-b814f6.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@internetinghard" />
+    <meta name="twitter:title" content="Floats | HTML &amp; CSS Is Hard" />
+    <meta
+      name="twitter:description"
+      content="An old-timey web dev tutorial (and a friendly intro to CSS layouts)"
+    />
+    <meta
+      name="twitter:image"
+      content="https://internetingishard.com/html-and-css/icons/social/floats-b814f6.png"
+    />
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-91393617-1", "auto");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__branding">
+        <div>
+          <a class="main-nav__logo-link" href="../../index.html"
+            ><img
+              class="main-nav__logo"
+              src="../../img/interneting-is-hard-logo-97b225.svg"
+              alt="Wifi signal with exclamation mark through it"
+          /></a>
+        </div>
+        <div>
+          <a class="main-nav__name" href="../../index.html"
+            >Interneting Is Hard</a
+          >
+        </div>
+      </div>
+      <div>
+        <a class="main-nav__html-css" href="../index.html">HTML &amp; CSS</a>
+      </div>
+    </nav>
+
+    <div class="page">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="heading">
+            <h1 class="heading__title">Floats</h1>
+            <div class="heading__parenthesis-rule">
+              <div class="heading__rule-before"></div>
+              <div class="heading__parenthesis">
+                Nº 7. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+              </div>
+              <div class="heading__rule-after"></div>
+            </div>
+            <div class="heading__subtitle">
+              An old-timey web dev tutorial (and a friendly intro to CSS
+              layouts)
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="content__wrapper content__wrapper--first">
+          <p>
+            Over the last few chapters, we’ve learned how to manipulate the size
+            of <a href="../css-box-model/index.html">boxes</a> and the space
+            around them, but for the most part, we were stuck with the default
+            vertical flow of the page. Block elements always appeared vertically
+            one after another, effectively limiting us to a single-column
+            layout.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 411px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 55.71776155717762%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: vertical arrow over column of boxes versus horizontal arrows over grid of boxes"
+                  src="vertical-vs-horizontal-stacking-064f76.png"
+                  width="411"
+                  height="229"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            “Floats” let you put block-level elements side-by-side instead of on
+            top of each other. This is a big deal. It lets us build all sorts of
+            layouts, including sidebars, multi-column pages, grids, and
+            magazine-style articles with text flowing around an image. This is
+            where we finally start creating real web pages.
+          </p>
+
+          <p>
+            Float-based layouts have mostly been replaced with
+            <a href="../flexbox/index.html">Flexbox</a> in modern websites. But,
+            that’s not to say this chapter isn’t worth reading. For over a
+            decade, floats served as the foundation for the majority of websites
+            on the Internet, which means you’ll definitely encounter them at
+            some point in your career.
+          </p>
+
+          <p>
+            Perhaps more importantly, the limited nature of floats makes them a
+            gentler introduction to CSS layouts than Flexbox. Instead of being
+            overwhelmed with all the possibilities of Flexbox, we’ll get a
+            chance to focus more on the <em>process</em> of building up a
+            sophisticated web page layout.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+          </div>
+
+          <p>
+            This chapter demonstrates CSS floats with a pretty simple sample
+            project. Instead of working with proper HTML content as we have been
+            in previous chapters, we’ll be styling a bunch of empty
+            <code>&lt;div&gt;</code> elements. We’ll end up with something that
+            looks like the following, which is a pretty big divergence from the
+            types of web pages we’ve been creating thus far.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 94.7780678851175%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with floated sidebar, floated image, and floated grid in footer"
+                  src="floats-final-example-e0e9f7.png"
+                  width="383"
+                  height="363"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            First, create a new folder called <code>floats</code>, then add a
+            new web page called <code>floats.html</code> with the following
+            markup:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Floats<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'sidebar'</span>&gt;</span>Sidebar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+          <p>
+            This gives us the basic structure for most websites on the Internet.
+            We have a place to put a navigation menu, a sidebar, the main
+            content of the page, and a footer. Think of all these as
+            <a href="../css-selectors/index.html#container-divs"
+              >container divs</a
+            >
+            that you can put your actual HTML content into.
+          </p>
+
+          <p>
+            You won’t see much when you open <code>floats.html</code> in a
+            browser because empty elements have zero height. We’ll fix this in
+            the next section.
+          </p>
+
+          <pre class="highlight"><code>* {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+}
+</code></pre>
+
+          <p>
+            Also be sure to create a <code>styles.css</code> stylesheet that
+            <a href="../css-box-model/index.html#resetting-styles"
+              >resets default box behavior</a
+            >, as shown above.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="default-html-layout-behavior">
+              <span>Default HTML Layout Behavior</span>
+            </h2>
+          </div>
+
+          <p>
+            Floats alter the default layout of a web page, so we should probably
+            start by reviewing what exactly that “default” behavior is. We
+            introduced this in
+            <a
+              href="../css-box-model/index.html#block-elements-and-inline-elements"
+              >block elements versus inline elements</a
+            >, but it’s about to become much more important.
+          </p>
+
+          <p>
+            We can get a better look at our example page by adding some
+            background colors and explicit heights to each of our
+            <code>&lt;div&gt;</code> elements. Add this to
+            <code>styles.css</code>:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.menu</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Medium blue */</span>
+}
+
+<span class="hljs-selector-class">.sidebar</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;    <span class="hljs-comment">/* Red */</span>
+}
+
+<span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;    <span class="hljs-comment">/* Yellow */</span>
+}
+
+<span class="hljs-selector-class">.footer</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;    <span class="hljs-comment">/* Light blue */</span>
+}
+</code></pre>
+
+          <p>
+            This gives us a nice rainbow, which isn’t what we’re looking for,
+            though it does demonstrate some useful concepts.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 105.74412532637076%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with four colored blocks appearing vertically one after another"
+                  src="default-css-layout-behavior-9b2b1f.png"
+                  width="383"
+                  height="405"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            The important part here is that each block-level element fills 100%
+            of its parent elements’s width (<code
+              >&lt;div class='page'&gt;</code
+            >
+            in this case), and they appear vertically one after another. Again,
+            we’re essentially limited to a single-column layout.
+          </p>
+
+          <p>
+            Typically, you’d want to let the height of these boxes be determined
+            automatically based on the content they contain; however, we’re more
+            concerned with controlling layouts this chapter, so we won’t be
+            dealing with much real content. This is why we need the
+            <a href="../css-box-model/index.html#explicit-dimensions"
+              >explicit <code>height</code> properties</a
+            >.
+          </p>
+
+          <p>
+            It’s worth taking a look at what happens when we shrink an element’s
+            width. Update our <code>.sidebar</code> rule to match the following:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.sidebar</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;                 <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;
+}
+</code></pre>
+
+          <p>
+            The sidebar element gets narrower, but the rest of the boxes stay in
+            the exact same position. All the blocks are still rendered
+            vertically one after another. This is the behavior we’ll be changing
+            with floats.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 66.57963446475196%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with red sidebar box on left of page with white background next to it"
+                  src="default-css-layout-behavior-explicit-width-97b8ac.png"
+                  width="383"
+                  height="255"
+                />
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="floating-an-element">
+              <span>Floating an Element</span>
+            </h2>
+          </div>
+
+          <p>
+            The CSS <code>float</code> property gives us control over the
+            <em>horizontal</em> position of an element. By “floating” the
+            sidebar to the left, we’re telling the browser to align it to the
+            left side of the page. Go ahead and float our sidebar with the
+            following line:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.sidebar</span> {
+  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;
+}
+</code></pre>
+
+          <p>
+            However, this doesn’t just <em>align</em> the sidebar&mdash;it also
+            tells surrounding elements that they can flow <em>around</em> the
+            sidebar instead of beginning underneath it. It’s as if the sidebar
+            is inside the <code>.content</code> block, so any HTML markup in
+            <code>.content</code> would wrap around the sidebar’s box. This
+            gives us a magazine-style layout:
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with red sidebar box floating on top of the following element"
+                  src="floated-sidebar-d926d5.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            You can also float elements right, as shown below (let’s keep our
+            sidebar floated left though). Or, if you’re overriding a float
+            declaration, you can cancel it with the <code>none</code> value.
+            These are the most common values for the
+            <code>float</code> property.
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-tag">float</span>: <span class="hljs-selector-tag">right</span>;  <span class="hljs-comment">/* Right-aligned */</span>
+<span class="hljs-selector-tag">float</span>: <span class="hljs-selector-tag">none</span>;   <span class="hljs-comment">/* Revert to default flow */</span>
+</code></pre>
+
+          <p>
+            We now have all the tools necessary to align block-level elements:
+            floats for left/right alignment and auto-margins for center
+            alignment. Remember that this only applies to <em>block</em> boxes.
+            Inline boxes are aligned with the <code>text-align</code> property,
+            as discussed in the
+            <a href="../css-box-model/index.html#aligning-boxes"
+              >previous chapter</a
+            >.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 536px">
+              <div class="diagram__padding" style="padding-bottom: 37.5%">
+                <img
+                  class="diagram__image"
+                  alt="Diagram: float left (box on left of container), auto margins (box in center of container), float right (box on right of container)"
+                  src="floats-and-auto-margin-for-alignment-536a81.png"
+                  width="536"
+                  height="201"
+                />
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="floating-inside-of-parents">
+              <span>Floating Inside of Parents</span>
+            </h2>
+          </div>
+
+          <p>
+            Floated boxes always align to the left or right of their parent
+            element. In our example, the sidebar’s parent is
+            <code>&lt;div class='page'&gt;</code>, which is as wide as the
+            browser window. This is why our sidebar floats to the far left of
+            the page.
+          </p>
+
+          <p>
+            Let’s change this by giving our page a fixed-width layout. Once
+            again, the auto-margin centering technique comes in handy. Add this
+            to <code>styles.css</code>:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.page</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+</code></pre>
+
+          <p>
+            Now, we can see that <code>.sidebar</code> floats to the left of the
+            <code>.page</code> container, opposed to the edge of the browser
+            window.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with colored boxes centered in the browser"
+                  src="floating-in-fixed-width-page-a9c965.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Positioning nested container divs like this is how you build up
+            sophisticated website layouts. Here, we started with
+            <code>.page</code> to center <em>everything</em>, then we
+            left-aligned a sidebar <em>inside</em> that centered page. Things
+            can get way more complex, but our simple example demonstrates the
+            universal truth of CSS layouts: everything is a box inside of a box
+            inside of another box.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="multiple-floats">
+              <span>Multiple Floats</span>
+            </h2>
+          </div>
+
+          <p>
+            Let’s examine our current magazine-style float a little bit more by
+            adding an explicit width to our <code>.content</code> block:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">650px</span>;                 <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;
+}
+</code></pre>
+
+          <p>
+            This clearly demonstrates that our sidebar is in fact
+            <em>inside</em> the <code>.content</code> block: if you take a
+            screenshot of them, you’ll have an image that’s 650 pixels wide
+            opposed to 850 pixels (our sidebar is 200 pixels wide).
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing left-floated red sidebar on top of statically positioned element"
+                  src="floating-inside-another-container-1cfd76.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            This kind of float behavior is nice for images (which we’ll see
+            <a href="index.html#floats-for-content">later on</a>), but for page
+            layout, we actually want the content block to be
+            <em>next to</em> the sidebar instead of flowing around it. For this,
+            we need to tell the content block to float left, too. Add one more
+            line to the <code>.content</code> rule:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">650px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;
+}
+</code></pre>
+
+          <p>
+            When you float multiple elements in the same direction, they’ll
+            stack horizontally, much like the default vertical layout algorithm,
+            except rotated 90 degrees. The above code causes our entire content
+            block to appear on the right of the sidebar instead of wrapping
+            around it.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing left-lfoated red sidebar next to left-floated element"
+                  src="two-floats-next-to-each-other-37f154.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            This gives us true control over the horizontal alignment of our
+            block boxes. Try playing with the <code>float</code> values for both
+            <code>.sidebar</code> and <code>.content</code>, and you’ll find
+            that we already have a couple of distinct layouts at our disposal:
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 580px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 34.6551724137931%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: the four potential combinations of left and right floats for two elements"
+                  src="float-layout-combinations-e52716.png"
+                  width="580"
+                  height="201"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Make sure both of them are floating left before moving on. That
+            takes care of the layout for the sidebar and content blocks, but it
+            unfortunately messed up our <code>.footer</code> element&hellip;
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="after-a-float">
+              <span>After a Float</span>
+            </h2>
+          </div>
+
+          <p>
+            You probably noticed that our footer shows up in the top right,
+            directly below <code>.menu</code>. That’s because floated boxes are
+            removed from the normal flow of the page. The height of our floated
+            elements don’t contribute to the vertical position of the footer, so
+            it simply sticks itself below the last element that
+            <em>wasn’t</em> floated.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with transparent boxes showing floated boxes on top of statically positioned footer"
+                  src="floats-outside-of-normal-flow-5dc559.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            We can see this more clearly by adding a red border around our
+            <code>.page</code> element:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.page</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;  <span class="hljs-comment">/* Add this */</span>
+}
+</code></pre>
+
+          <p>
+            Notice how the border is only around the <code>.menu</code> and
+            <code>.footer</code> elements. It’s as if the floated elements
+            weren’t even there. There are two ways to fix this: clearing a float
+            and hiding overflow.
+          </p>
+
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="clearing-floats">
+              Clearing Floats
+            </h3>
+          </div>
+
+          <p>
+            “Clearing” a float is when we tell a block to ignore any floats that
+            appear before it. Instead of flowing around the floated box, a
+            cleared element always appears after any floats. It’s like forcing a
+            box back into the default vertical flow of the page.
+          </p>
+
+          <p>
+            We can use the <code>clear</code> property to make our
+            <code>.footer</code> drop down to the bottom of the page:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.footer</span> {
+  <span class="hljs-attribute">clear</span>: both;            <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;
+}
+</code></pre>
+
+          <p>
+            Usually, you want to clear both left and right floats as we did
+            here, but you can choose to clear only one or the other with the
+            <code>left</code> or <code>right</code> values. Note that the red
+            border now wraps all the way around the footer, indicating that the
+            floated elements indeed count towards the height of the
+            <code>.page</code> container:
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing footer popping down to bottom of floated elements after being cleared"
+                  src="clearing-a-float-44a4d5.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Depending on the type of layout you’re trying to create, this is a
+            perfectly acceptable solution. We could stop here, but we’re going
+            to explore float behavior more by transforming our page into a
+            full-bleed layout that has background colors filling the entire
+            browser window.
+          </p>
+
+          <p>
+            Watch what happens when we take the menu and footer out of the
+            <code>.page</code> element. Change the
+            <code>&lt;body&gt;</code> element to match the following:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'sidebar'</span>&gt;</span>Sidebar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+
+          <p>
+            Since <code>.menu</code> and <code>.footer</code> are outside our
+            fixed-width <code>.page</code>, they’re the full width of the
+            window, which is exactly what we want for a full-bleed layout.
+            However, notice how <code>.page</code> has zero height again despite
+            the fact that the footer still clears the sidebar and content
+            blocks.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page highlighting the zero-height .page &lt;div&gt; with only floated elements in it"
+                  src="full-bleed-layout-broken-clear-58057f.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Once again, the only elements in <code>.page</code> are floated, so
+            they don’t count towards its height. In other words, moving the
+            footer outside of the <code>.page</code> container broke our
+            <code>clear</code> fix.
+          </p>
+
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="hiding-overflow">
+              Hiding Overflow
+            </h3>
+          </div>
+
+          <p>
+            Clearing floats only fixes the height issue when there’s an element
+            <em>inside</em> the container element that we can add a
+            <code>clear</code> property to. Now that our footer is outside
+            <code>.page</code>, we need a new way to make floated elements
+            contribute to the height of their container.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 407px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 54.791154791154796%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Diagram: clearing with child (clear: both on child element) versus clearing  with parent (overflow: hidden on parent)"
+                  src="methods-for-clearing-floats-6429d9.png"
+                  width="407"
+                  height="223"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            The solution is the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+              >CSS <code>overflow</code> property</a
+            >. By adding an <code>overflow: hidden</code> declaration to a
+            container div, we’re telling it to recognize the height of any
+            floated elements it contains. This is how we can add a background
+            color to our <code>.page</code> element and have it actually render:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.page</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">overflow</span>: hidden;             <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EAEDF0</span>;    <span class="hljs-comment">/* Add this */</span>
+}
+</code></pre>
+
+          <p>
+            You should now be able to see a light gray background in
+            <code>.page</code> instead of the default white. This isn’t full
+            bleed yet (we’ll address that in the next section). The important
+            part here is the behavior of <code>overflow: hidden</code>. Without
+            it, we wouldn’t be able to see the <code>.page</code> container’s
+            background because it would have zero height.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing gray background filling full height of .page &lt;div&gt;"
+                  src="full-bleed-layout-overflow-hidden-826f9e.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            To summarize, when you have an extra unfloated HTML element at the
+            bottom of a container div, use the <code>clear</code> solution.
+            Otherwise, add an <code>overflow: hidden</code> declaration to the
+            container element. The underlying idea for both options is that you
+            need a way to tell the browser to incorporate floats into the height
+            of their container element in order for their backgrounds to show
+            up.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="full-bleed-layouts">
+              <span>Full-Bleed Layouts</span>
+            </h2>
+          </div>
+
+          <p>
+            Next, we want to make our <code>.page</code> background fill the
+            entire browser window without changing the alignment of our sidebar
+            or content blocks. The problem is, our <code>.page</code> is busy
+            centering everything&mdash;we can’t use it for a full-bleed
+            background because centering requires an explicit
+            <code>width</code> property.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing gray background filling full height of .page &lt;div&gt;, all the way to the left and right edges"
+                  src="full-bleed-layout-with-container-85a6d1.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            It’s time for <em>another</em> container div. Putting a box around
+            <code>.page</code> lets it continue centering stuff while giving us
+            a place to define a <code>background-color</code> property. Change
+            our <code>&lt;body&gt;</code> element to match the following:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'container'</span>&gt;</span>                 <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'sidebar'</span>&gt;</span>Sidebar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>                                  <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+
+          <p>
+            Remember that the default block-rendering behavior is for elements
+            to fill the width of their container. So, we should be able to move
+            our <code>background-color</code> declaration to a
+            <code>.container</code> rule to get a full-bleed background:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.page</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-class">.container</span> {
+  <span class="hljs-attribute">overflow</span>: hidden;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EAEDF0</span>;
+}
+</code></pre>
+
+          <p>
+            As in the previous section, we still need the
+            <code>overflow: hidden</code> line to force the
+            <code>.container</code> to pay attention to the height of the
+            floated elements. Without it, we wouldn’t see our background color
+            because <code>.container</code> would have zero height.
+          </p>
+
+          <p>
+            This gives us three nested <code>&lt;div&gt;</code> elements just
+            for laying out our page: a <code>.container</code> wrapper for
+            full-bleed background color, a fixed-width <code>.page</code> for
+            centering everything, and finally left-aligned
+            <code>.sidebar</code> and <code>.content</code> blocks. This kind of
+            nesting and aligning is pretty typical of most website layouts.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="floats-for-equal-width-columns">
+              <span>Floats for Equal-Width Columns</span>
+            </h2>
+          </div>
+
+          <p>
+            So far, we’ve seen a sidebar layout, a fixed-width layout, and a
+            full-bleed layout. Floats can also be used to create multi-column
+            layouts. This works just like our <code>.sidebar</code> and
+            <code>.content</code> floats&mdash;we just have more of them.
+          </p>
+
+          <p>
+            Next we’re going to add three equal-width columns to our footer.
+            Update the <code>&lt;footer&gt;</code> element, like so:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+          <p>
+            We can style each of these columns just like we laid out the rest of
+            our page. Add a new rule to <code>styles.css</code>:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.column</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">31%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> <span class="hljs-number">1.15%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">160px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Medium blue */</span>
+}
+</code></pre>
+
+          <p>
+            This is the first time we’ve used percentage values instead of
+            explicit pixel values. Percentages in CSS are relative to the width
+            of the parent element. The result is three columns that
+            automatically resize to one-third of the browser window. Resize the
+            browser window, and you’ll see our columns grow and shrink
+            accordingly. This is the beginning of
+            <a href="../responsive-design/index.html">responsive design</a>.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 80.93994778067885%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with footer that has three equal-width child elements"
+                  src="floats-for-columns-8a52b0.png"
+                  width="383"
+                  height="310"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Anyhoo, let’s not lose sight of the central thesis of this chapter:
+            floats let us stack things horizontally instead of vertically. By
+            changing the widths of the elements we’re floating, we can get all
+            kinds of different layouts, from sidebars to multiple columns to
+            grids.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="floats-for-grids">
+              <span>Floats for Grids</span>
+            </h2>
+          </div>
+
+          <p>
+            Want a grid in the footer instead of 3 columns? No problem! When
+            there isn’t enough room to stack a floated element horizontally, it
+            pops down to the next line. All we need to do is add some more
+            <code>.column</code> elements:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+          <p>Voilà! A grid! Well, almost&hellip;</p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 97.12793733681463%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page with footer that has 3 colums and 2 rows of child elements"
+                  src="floats-for-grids-7ed8b0.png"
+                  width="383"
+                  height="372"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Our footer background is too short. Fortunately, we already know how
+            to fix that. Let’s replace the footer’s explicit height with another
+            <code>overflow: hidden</code> so it can accommodate any number of
+            grid items:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.footer</span> {
+  <span class="hljs-attribute">overflow</span>: hidden;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;
+}
+</code></pre>
+
+          <p>
+            You can use this same technique to make grids of any size. For
+            example, creating a photo gallery with a bunch of thumbnails is
+            simply a matter of putting the grid items in
+            <code>.page</code> instead of the footer and adding
+            <code>&lt;img/&gt;</code> elements to them. But, again, remember
+            that <a href="../flexbox/index.html">flexbox</a> is a more modern
+            way to create these kinds of layouts.
+          </p>
+
+          <div class="subsubheading content__subsubheading">
+            <h3
+              class="subsubheading__heading"
+              id="a-brief-note-on-naming-conventions"
+            >
+              A Brief Note on Naming Conventions
+            </h3>
+          </div>
+
+          <p>
+            The <code>.column</code> class name isn’t exactly accurate anymore.
+            This scenario is a good example of why we want to avoid
+            <a href="../css-selectors/index.html#class-naming-conventions"
+              >class names that refer to appearance</a
+            >. “Column” isn’t so great because the content it contains doesn’t
+            necessarily need to be rendered in multiple columns (e.g., for a
+            mobile layout, there would likely only be one column). A better name
+            would be something like <code>.footer-item</code>, but we’ll leave
+            that for you to fix.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="floats-for-content">
+              <span>Floats for Content</span>
+            </h2>
+          </div>
+
+          <p>
+            There’s two aspects to defining a web page layout. You have your
+            overall page structure, which we’ve been working on throughout this
+            entire chapter. This is stuff like where you sidebar goes, how big
+            your navigation menu is, etc. The other aspect of layouts is styling
+            the individual HTML components (your actual content) that go inside
+            this overarching page structure.
+          </p>
+
+          <p>
+            The process for the latter is the same, it’s just nested inside the
+            former. Let’s add some dummy content to our
+            <code>.content</code> element so we have something to play with:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'container'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'sidebar'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>
+      
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'?'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'article-image'</span>/&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Ad netus sagittis velit orci est non ut urna taciti metus donec magnis
+      hendrerit adipiscing mauris sit a proin ultrices nibh.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Enim suspendisse ac scelerisque nascetur vestibulum parturient sed mi a
+      dolor eu non adipiscing non neque scelerisque netus ullamcorper sed
+      parturient integer.Eros dui risus non sodales ullamcorper libero a dis
+      cubilia a orci iaculis cursus.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Egestas at aliquam a egestas accumsan cum elementum consectetur conubia
+      tristique eu et vitae condimentum in ante consectetur suscipit a a duis
+      vestibulum gravida morbi sagittis.Parturient scelerisque facilisis
+      ullamcorper a a pretium a nisl parturient semper senectus accumsan ipsum
+      mus scelerisque eget ridiculus.Accumsan dolor a.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Ligula taciti vel primis sit a tincidunt habitant parturient parturient
+      in parturient ante nulla consectetur sem.Facilisis parturient litora.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+          <p>
+            We’ve got an image and several paragraphs that we can style just
+            like our structural divs. For example, let’s create a magazine-style
+            layout by floating the image and letting the text flow around it.
+            Add a couple more rules to our stylesheet:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-class">.article-image</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+}
+</code></pre>
+
+          <p>
+            Notice how we have a float inside of a float, and everything works
+            just fine. Laying out a website is a recursive process: you build a
+            high-level structure to work in, then you fill it with your actual
+            content. More complex layouts may need another layer or two of
+            nesting, but the idea is the same.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 383px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 94.7780678851175%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing floated image with text content flowing around it"
+                  src="floats-final-example-e0e9f7.png"
+                  width="383"
+                  height="363"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <div class="subsubheading content__subsubheading">
+            <h3 class="subsubheading__heading" id="hiding-overflow-for-content">
+              Hiding Overflow (For Content)
+            </h3>
+          </div>
+
+          <p>
+            You’ll find examples of nested layouts all over the place. For our
+            final example, consider a basic user-comment thread. You have an
+            image that’s floated left with a heading and some text next to it:
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 283px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 49.82332155477032%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web page showing footer with icon and text next to it, not flowing around it due to overflow: hidden"
+                  src="overflow-hidden-for-content-735981.png"
+                  width="283"
+                  height="141"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            Let’s try creating this in our footer. In your favorite
+            <code>.column</code> element, add the following:
+          </p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'column'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'avatar'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'username'</span>&gt;</span>Bob Smith<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'comment'</span>&gt;</span>Aptent vel egestas vestibulum aliquam ullamcorper volutpat
+  ullamcorper pharetra hac posuere a rhoncus purus molestie torquent. Scelerisque
+  purus cursus dictum ornare a phasellus. A augue venenatis adipiscing.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+          <p>And the corresponding CSS rules:</p>
+
+          <pre
+            class="highlight"
+          ><code><span class="hljs-selector-class">.avatar</span> {
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;
+}
+
+<span class="hljs-selector-class">.username</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">30px</span>;
+}
+
+<span class="hljs-selector-class">.comment</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">overflow</span>: hidden;  <span class="hljs-comment">/* This is important */</span>
+}
+</code></pre>
+
+          <p>
+            This highlights another use case for our
+            <code>overflow: hidden</code> trick. Sticking it on our
+            <code>.comment</code> box made sure that the text “horizontally
+            cleared” (that’s not a technical term) the floated image. Without
+            it, the last line of the <code>.comment</code> text would hang
+            underneath the image.
+          </p>
+
+          <figure class="diagram">
+            <div class="diagram__wrapper" style="max-width: 580px">
+              <div
+                class="diagram__padding"
+                style="padding-bottom: 31.20689655172414%"
+              >
+                <img
+                  class="diagram__image"
+                  alt="Web pages showing with hidden overflow (text left-aligned) and without hidden overflow (text flowing around icon)"
+                  src="no-overflow-hidden-for-content-1cb097.png"
+                  width="580"
+                  height="181"
+                />
+              </div>
+            </div>
+          </figure>
+
+          <p>
+            In other words, <code>overflow: hidden</code> breaks the
+            magazine-style layout from the previous section, but in a very
+            useful way.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__wrapper">
+          <div class="subheading">
+            <h2 class="subheading__heading" id="summary">
+              <span>Summary</span>
+            </h2>
+          </div>
+
+          <p>
+            This chapter was our first encounter with realistic web page
+            layouts. We learned how to float divs to the left and right, how to
+            deal with content after a float, and how to combine floats with the
+            auto-margin centering technique from the
+            <a href="../css-box-model/index.html">CSS Box Model</a> chapter.
+            These are the tools we need to create sidebars, grids, an
+            magazine-style layouts.
+          </p>
+
+          <p>
+            It’s important not to lose sight of the developer’s role in the
+            website creation process. Your job as a web developer is to take a
+            beautifully designed mockup and turn it into the HTML and CSS that
+            browsers can display to your end users. Floats are a big leap
+            forward towards that end, but they’re also becoming obsolete in
+            favor of the flexbox layout scheme.
+          </p>
+
+          <p>
+            In the next chapter, we’ll learn even more ways to lay out complex
+            websites using flexbox. The CSS properties will be new, but the
+            <em>process</em> will be the same as it was in this chapter: we’ll
+            still be aligning boxes inside of other boxes, inside of other
+            boxes, and so on until we accomplish the desired layout.
+          </p>
+
+          <div class="next-chapter">
+            <a href="../flexbox/index.html">Next Chapter &gt;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chapter-sidebar">
+        <div class="sidebar js-sidebar">
+          <div class="sidebar__wrapper">
+            <ul class="sidebar__list">
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#setup">Setup</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#default-html-layout-behavior"
+                  >Default Layout Behavior</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#floating-an-element"
+                  >Floating an Element</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#floating-inside-of-parents"
+                  >Floating Inside of Parents</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#multiple-floats"
+                  >Multiple Floats</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#after-a-float"
+                  >After a Float</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#full-bleed-layouts"
+                  >Full-Bleed Layouts</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a
+                  class="sidebar__link"
+                  href="index.html#floats-for-equal-width-columns"
+                  >Equal-Width Columns</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#floats-for-grids"
+                  >Floats for Grids</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#floats-for-content"
+                  >Floats for Content</a
+                >
+              </li>
+              <li class="sidebar__list-item">
+                <a class="sidebar__link" href="index.html#summary">Summary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="about">
+          <div class="about__wrapper">
+            <div class="about__header">
+              <div class="about__rule-before"></div>
+              <img
+                class="about__logo"
+                src="../../img/interneting-is-hard-logo-97b225.svg"
+                alt="Wi-fi signal with exclamation mark through it"
+              />
+              <div class="about__rule-after"></div>
+            </div>
+
+            <div class="about__content">
+              <div class="about__icons">
+                <a href="https://twitter.com/internetinghard" target="_blank"
+                  ><img
+                    class="about__twitter"
+                    src="../../img/twitter-icon-29cd78.png"
+                    alt="Twitter logo"
+                /></a>
+
+                <a
+                  href="https://www.facebook.com/Interneting-Is-Hard-120886695097813/"
+                  target="_blank"
+                  ><img
+                    class="about__facebook"
+                    src="../../img/facebook-icon-e6def5.png"
+                    alt="Facebook logo"
+                /></a>
+
+                <a class="js-obfuscated-email__mailto"
+                  ><img
+                    class="about__email"
+                    src="../../img/email-icon-a4c505.png"
+                    alt="Envelope icon"
+                /></a>
+              </div>
+
+              <p class="about__description">
+                <em>InternetingIsHard.com</em> is an independent publisher of
+                premium web development tutorials. All content is authored and
+                maintained by Oliver James. He loves hearing from readers, so
+                <a href="../../contact/index.html">come say hello</a>!
+              </p>
+            </div>
+
+            <div class="about__mailing-list">
+              <div class="about__mailing-list-description">
+                More tutorials are coming. (Lots more.)<br />
+                Enter your email
+                <span class="about__mailing-list-below">below</span
+                ><span class="about__mailing-list-above">above</span>, and we’ll
+                let you know when they get here.
+              </div>
+
+              <form
+                class="about__mailing-list-form js-about__mailing-list-form"
+                novalidate
+              >
+                <div class="slide-animation">
+                  <div
+                    class="about__mailing-list-row js-about__mailing-list-row"
+                  >
+                    <label
+                      for="about__mailing-list-email"
+                      class="about__mailing-list-email-label"
+                      >Email</label
+                    >
+                    <input
+                      id="about__mailing-list-email"
+                      class="input-text input-text--small
+                              about__mailing-list-email js-about__mailing-list-email"
+                      type="email"
+                      placeholder="you@example.com"
+                    />
+
+                    <div class="cta-button about__mailing-list-button">
+                      <button
+                        class="cta-button__link cta-button__link--small
+                                 about__mailing-list-button-link
+                                 js-about__mailing-list-button-link"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-animation slide-animation--hidden">
+                  <div
+                    class="input-status about__mailing-list-status
+                          js-about__mailing-list-status"
+                  >
+                    <span
+                      class="input-status__title js-about__mailing-list-status-title"
+                      >Error!</span
+                    >
+                    <span class="js-about__mailing-list-status-text"
+                      >Can’t sign up for a mailing list without an email
+                      address...</span
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer__copyright">
+            <div class="footer__item">
+              <span class="footer__copyright-symbol">©</span> 2017
+              <a href="../../index.html">InternetingIsHard.com</a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div class="footer__item footer__item--auto">
+              <a href="../../contact/index.html">Contact</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/licensing/index.html">Licensing</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/privacy/index.html">Privacy</a>
+            </div>
+            <div class="footer__item">
+              <a href="../../legal/terms-of-service/index.html">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js"></script>
+    <script src="../../js/axios-3d1394.js"></script>
+    <script src="../../js/validate-36917e.js"></script>
+    <script src="../../js/global-466310.js"></script>
+  </body>
+</html>
