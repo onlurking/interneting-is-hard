@@ -200,12 +200,12 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            Over the last few chapters, we’ve learned how to manipulate the size
-            of <a href="../css-box-model/index.html">boxes</a> and the space
-            around them, but for the most part, we were stuck with the default
-            vertical flow of the page. Block elements always appeared vertically
-            one after another, effectively limiting us to a single-column
-            layout.
+            Nos últimos capítulos, aprendemos como manipular o tamanho das 
+            <a href="../css-box-model/index.html">caixas</a> e os espaços 
+            ao redor delas, mas na maioria das vezes, estamos presos no fluxo
+            vertical da página. Elementos de bloco sempre aparecem verticalmente
+            um depois do outro, nos limitando efetivamente em um layout de coluna simples.
+
           </p>
 
           <figure class="diagram">
@@ -226,28 +226,32 @@
           </figure>
 
           <p>
-            “Floats” let you put block-level elements side-by-side instead of on
-            top of each other. This is a big deal. It lets us build all sorts of
-            layouts, including sidebars, multi-column pages, grids, and
-            magazine-style articles with text flowing around an image. This is
-            where we finally start creating real web pages.
+            “Floats”, ou blocos flutuantes, permite que você coloque elementos 
+            de bloco lado a lado ao invés de um em cima do outro. Essa é a grande 
+            sacada. Assim podemos construir todo tipo de layout, incluindo menus 
+            laterais, páginas com múltiplas colunas, grades e estilo artigos de 
+            revistas com texto ao redor de imagens. Assim é como vamos finalmente 
+            começar a criar páginas web de verdade.
+            
           </p>
 
           <p>
-            Float-based layouts have mostly been replaced with
-            <a href="../flexbox/index.html">Flexbox</a> in modern websites. But,
-            that’s not to say this chapter isn’t worth reading. For over a
-            decade, floats served as the foundation for the majority of websites
-            on the Internet, which means you’ll definitely encounter them at
-            some point in your career.
+            Layouts flutuantes foram praticamente substituídos por 
+            <a href="../flexbox/index.html">Flexbox</a> em sites modernos. 
+            Mas, isso não significa que esse capítulo não vale a pena ser lido. 
+            Durante muito tempo, <em>floats</em> serviram como a fundação 
+            para a maioria dos websites na Internet, o que significa que você 
+            definitivamente vai encontrar isso em algum ponto da sua carreira.
+            
           </p>
 
           <p>
-            Perhaps more importantly, the limited nature of floats makes them a
-            gentler introduction to CSS layouts than Flexbox. Instead of being
-            overwhelmed with all the possibilities of Flexbox, we’ll get a
-            chance to focus more on the <em>process</em> of building up a
-            sophisticated web page layout.
+            Talvez o mais importante, a natureza limitada do floats faz dele 
+            uma introdução agradável para os layouts de CSS do que Flexbox. Ao 
+            invés de ficar sobrecarregado com todas as possibilidades do Flexbox, 
+            nós teremos a chance de focar mais no <em>processo</em> de construção de um 
+            layout sofisticado para uma página web.
+            
           </p>
         </div>
       </div>
@@ -255,16 +259,16 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração inicial</span></h2>
           </div>
 
           <p>
-            This chapter demonstrates CSS floats with a pretty simple sample
-            project. Instead of working with proper HTML content as we have been
-            in previous chapters, we’ll be styling a bunch of empty
-            <code>&lt;div&gt;</code> elements. We’ll end up with something that
-            looks like the following, which is a pretty big divergence from the
-            types of web pages we’ve been creating thus far.
+            Este capítulo vai demonstrar o CSS flutuante com um projeto de 
+            exemplo simples e bonito. Ao invés de trabalhar com o conteúdo HTML 
+            propriamente, como temos feitos anteriormente, vamos estilizar um monte 
+            de elementos <code>&lt;div&gt;</code> vazios. Vamos terminar com algo parecido como 
+            o exemplo abaixo, que tem uma grande diferença das páginas web que criamos até agora.
+
           </p>
 
           <figure class="diagram">
@@ -285,9 +289,8 @@
           </figure>
 
           <p>
-            First, create a new folder called <code>floats</code>, then add a
-            new web page called <code>floats.html</code> with the following
-            markup:
+            Primeiro, crie uma nova pasta chamada <code>floats</code>, depois adicione uma 
+            nova página web, chamada <code>floats.html</code> com o seguinte código HTML:
           </p>
 
           <pre
@@ -311,19 +314,19 @@
 </code></pre>
 
           <p>
-            This gives us the basic structure for most websites on the Internet.
-            We have a place to put a navigation menu, a sidebar, the main
-            content of the page, and a footer. Think of all these as
-            <a href="../css-selectors/index.html#container-divs"
-              >container divs</a
-            >
-            that you can put your actual HTML content into.
+            Isso vai nos fornecer a estrutura básica para a maioria das páginas 
+            web na Internet. Temos um lugar para colocar um menu de navegação, uma 
+            barra lateral, o conteúdo principal da página e um rodapé. Pense em tudo 
+            isso como <a href="../css-selectors/index.html#container-divs"
+            >contêineres divs</a> que você pode colocar o conteúdo da HTML neles.
+
           </p>
 
           <p>
-            You won’t see much when you open <code>floats.html</code> in a
-            browser because empty elements have zero height. We’ll fix this in
-            the next section.
+            Você não vai ver muito quando abrir o arquivo <code>floats.html</code> no 
+            navegador por que elementos vazios tem tamanho zero. Vamos corrigir isso 
+            na próxima seção.
+
           </p>
 
           <pre class="highlight"><code>* {
@@ -334,10 +337,10 @@
 </code></pre>
 
           <p>
-            Also be sure to create a <code>styles.css</code> stylesheet that
-            <a href="../css-box-model/index.html#resetting-styles"
-              >resets default box behavior</a
-            >, as shown above.
+            Crie também um arquivo <code>styles.css</code>, uma folha de estilos 
+            que <a href="../css-box-model/index.html#resetting-styles"
+            >redefine o comportamento da caixa padrão</a>, como mostrado acima.
+            
           </p>
         </div>
       </div>
@@ -346,25 +349,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="default-html-layout-behavior">
-              <span>Default HTML Layout Behavior</span>
+              <span>Comportamento padrão do layout HTML</span>
             </h2>
           </div>
 
           <p>
-            Floats alter the default layout of a web page, so we should probably
-            start by reviewing what exactly that “default” behavior is. We
-            introduced this in
-            <a
-              href="../css-box-model/index.html#block-elements-and-inline-elements"
-              >block elements versus inline elements</a
-            >, but it’s about to become much more important.
+            Floats altera o layout padrão de uma página web, então nós devemos 
+            iniciar provavelmente revisando o que exatamente é esse 
+            “comportamento padrão”. Nós introduzimos isso em <a
+            href="../css-box-model/index.html#block-elements-and-inline-elements"
+            >elementos de bloco 
+            versus elementos em linha</a> mas isso vai se tornar muito mais importante agora.
+            
           </p>
 
           <p>
-            We can get a better look at our example page by adding some
-            background colors and explicit heights to each of our
-            <code>&lt;div&gt;</code> elements. Add this to
-            <code>styles.css</code>:
+            Nós podemos ter uma visão melhor da nossa página de exemplo adicionando 
+            algumas cores de fundo e definir o tamanho de cada uma dos elementos 
+            <code>&lt;div&gt;</code>. Adicione isso ao arquivo <code>styles.css</code>:
           </p>
 
           <pre
@@ -391,8 +393,9 @@
 </code></pre>
 
           <p>
-            This gives us a nice rainbow, which isn’t what we’re looking for,
-            though it does demonstrate some useful concepts.
+            Isso vai gerar um belo arco-íris, que não é exatamente o que nós 
+            queremos, mas nos ajuda a demonstrar alguns conceitos importantes.
+
           </p>
 
           <figure class="diagram">
@@ -413,27 +416,27 @@
           </figure>
 
           <p>
-            The important part here is that each block-level element fills 100%
-            of its parent elements’s width (<code
-              >&lt;div class='page'&gt;</code
-            >
-            in this case), and they appear vertically one after another. Again,
-            we’re essentially limited to a single-column layout.
+            O importante aqui é que cada elemento de bloco preenche 100% do seu 
+            elemento pai (<code>&lt;div class='page'&gt;</code>, nesse caso), e 
+            aparecem verticalmente um após o outro. De novo, nós estamos 
+            essencialmente limitados a um layout de coluna simples.
+
           </p>
 
           <p>
-            Typically, you’d want to let the height of these boxes be determined
-            automatically based on the content they contain; however, we’re more
-            concerned with controlling layouts this chapter, so we won’t be
-            dealing with much real content. This is why we need the
-            <a href="../css-box-model/index.html#explicit-dimensions"
-              >explicit <code>height</code> properties</a
-            >.
+            Normalmente, você quer deixar que a altura dessas caixas sejam determinadas 
+            automaticamente baseada no conteúdo que elas contém; no entanto, estamos 
+            mais preocupados agora com o controle do layout, então não vamos lidar muito 
+            com um conteúdo real. Por isso nós vamos definir 
+            <a href="../css-box-model/index.html#explicit-dimensions">explicitamente a 
+              propriedade <code>height</code></a>.
+            
           </p>
 
           <p>
-            It’s worth taking a look at what happens when we shrink an element’s
-            width. Update our <code>.sidebar</code> rule to match the following:
+            Vale a pena dar uma olhada no que acontece quando diminuímos o tamanho de 
+            um elemento. Atualize a regra <code>.sidebar</code> para ficar da seguinte forma:
+            
           </p>
 
           <pre
@@ -446,10 +449,11 @@
 </code></pre>
 
           <p>
-            The sidebar element gets narrower, but the rest of the boxes stay in
-            the exact same position. All the blocks are still rendered
-            vertically one after another. This is the behavior we’ll be changing
-            with floats.
+            O elemento da barra lateral (sidebar) ficou estreito, mas o resto 
+            das caixas se manteve na mesma posição. Todos os blocos ainda estão 
+            sendo renderizados verticalmente um depois do outro. Esse é o 
+            comportamento que vamos alterar com o floats.
+            
           </p>
 
           <figure class="diagram">
@@ -475,16 +479,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="floating-an-element">
-              <span>Floating an Element</span>
+              <span>Colocando um elemento flutuante</span>
             </h2>
           </div>
 
           <p>
-            The CSS <code>float</code> property gives us control over the
-            <em>horizontal</em> position of an element. By “floating” the
-            sidebar to the left, we’re telling the browser to align it to the
-            left side of the page. Go ahead and float our sidebar with the
-            following line:
+            A propriedade <code>float</code> da CSS nos permite controlar 
+            a posição <em>horizontal</em> de um elemento. Ao colocar o 
+            sidebar para “flutuar” na esquerda, estamos falando para o navegador 
+            para alinhá-lo no lado esquerdo da página. Vá em frente e 
+            flutue nosso <em>sidebar</em> com a seguinte linha:
+            
           </p>
 
           <pre
@@ -498,12 +503,13 @@
 </code></pre>
 
           <p>
-            However, this doesn’t just <em>align</em> the sidebar&mdash;it also
-            tells surrounding elements that they can flow <em>around</em> the
-            sidebar instead of beginning underneath it. It’s as if the sidebar
-            is inside the <code>.content</code> block, so any HTML markup in
-            <code>.content</code> would wrap around the sidebar’s box. This
-            gives us a magazine-style layout:
+            No entanto, isso não faz somente o <em>sidebar</em> se <em>alinhar</em> 
+            a esquerda&mdash;isso também diz para os elementos no entorno que eles 
+            podem fluir <em>ao redor</em> do <em>sidebar</em> ao invés de começar abaixo dele. É como 
+            se o <em>sidebar</em> estivesse dentro do bloco <code>.content</code>, então qualquer marcação 
+            HTML dentro de <code>.content</code> será embrulhado na caixa do <em>sidebar</em>. Isso nos 
+            dá um layout estilo revista:
+            
           </p>
 
           <figure class="diagram">
@@ -524,11 +530,12 @@
           </figure>
 
           <p>
-            You can also float elements right, as shown below (let’s keep our
-            sidebar floated left though). Or, if you’re overriding a float
-            declaration, you can cancel it with the <code>none</code> value.
-            These are the most common values for the
-            <code>float</code> property.
+            Você também pode colocar elementos flutuantes na direita, como 
+            mostramos abaixo (no entanto vamos deixar nosso sidebar flutuando 
+            na esquerda). Ou, se você estiver sobrescrevendo uma declaração 
+            você pode cancelar com o valor <code>none</code>. Esses são os valores mais 
+            utilizados para a propriedade <code>float</code>.
+            
           </p>
 
           <pre
@@ -538,14 +545,13 @@
 </code></pre>
 
           <p>
-            We now have all the tools necessary to align block-level elements:
-            floats for left/right alignment and auto-margins for center
-            alignment. Remember that this only applies to <em>block</em> boxes.
-            Inline boxes are aligned with the <code>text-align</code> property,
-            as discussed in the
-            <a href="../css-box-model/index.html#aligning-boxes"
-              >previous chapter</a
-            >.
+            Agora nós temos todas as ferramentas necessárias para alinhar um 
+            elemento de bloco: <code>float</code> para alinhamento a esquerda/direita e 
+            <code>auto-margins</code> para alinhamento centralizado. Lembre-se que isso só 
+            se aplicar a caixas de <em>bloco</em>. Caixas em linha são alinhadas com 
+            a propriedade <code>text-align</code>, como discutido no 
+            <a href="../css-box-model/index.html#aligning-boxes">capítulo anterior</a>.
+            
           </p>
 
           <figure class="diagram">
@@ -568,22 +574,25 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="floating-inside-of-parents">
-              <span>Floating Inside of Parents</span>
+              <span>Flutuando dentro dos pais</span>
             </h2>
           </div>
 
           <p>
-            Floated boxes always align to the left or right of their parent
-            element. In our example, the sidebar’s parent is
-            <code>&lt;div class='page'&gt;</code>, which is as wide as the
-            browser window. This is why our sidebar floats to the far left of
-            the page.
+            Caixas flutuantes sempre se alinharão à esquerda ou à direita 
+            dos seus elementos pais. No nosso exemplo, o pai do sidebar 
+            é <code>&lt;div class='page'&gt;</code>, que é tão grande 
+            quanto a janela do navegador. Por isso nosso sidebar flutua 
+            na extrema esquerda da página.
+            
           </p>
 
           <p>
-            Let’s change this by giving our page a fixed-width layout. Once
-            again, the auto-margin centering technique comes in handy. Add this
-            to <code>styles.css</code>:
+            Vamos mudar isso definindo uma largura fixa no layout. Mais uma vez, 
+            a técnica de centralizar com margem automática vem a calhar. Adicione 
+            isso ao <code>styles.css</code>:
+
+            
           </p>
 
           <pre
@@ -595,9 +604,10 @@
 </code></pre>
 
           <p>
-            Now, we can see that <code>.sidebar</code> floats to the left of the
-            <code>.page</code> container, opposed to the edge of the browser
-            window.
+            Agora, podemos ver que o <code>.sidebar</code> flutua no lado 
+            esquerdo do container <code>.page</code>, oposto a borda da janela 
+            do navegador.
+            
           </p>
 
           <figure class="diagram">
@@ -618,13 +628,14 @@
           </figure>
 
           <p>
-            Positioning nested container divs like this is how you build up
-            sophisticated website layouts. Here, we started with
-            <code>.page</code> to center <em>everything</em>, then we
-            left-aligned a sidebar <em>inside</em> that centered page. Things
-            can get way more complex, but our simple example demonstrates the
-            universal truth of CSS layouts: everything is a box inside of a box
-            inside of another box.
+            Posicionar containers divs aninhados como esse é a forma de você 
+            desenvolver layouts sofisticados para sua página web. Aqui, começamos 
+            com <code>.page</code> centralizando <em>qualquer coisa</em>, depois alinhamos 
+            a esquerda uma barra lateral <em>dentro</em> daquela página centralizada. As 
+            coisas podem ficar cada vez mais complexas, mas nosso exemplo demonstra a 
+            verdade universal sobre layouts CSS: tudo é uma caixa dentro de uma 
+            caixa dentro de outra caixa.
+            
           </p>
         </div>
       </div>
@@ -633,13 +644,13 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="multiple-floats">
-              <span>Multiple Floats</span>
+              <span>Múltiplos flutuantes</span>
             </h2>
           </div>
 
           <p>
-            Let’s examine our current magazine-style float a little bit more by
-            adding an explicit width to our <code>.content</code> block:
+            Vamos examinar nosso estilo revista flutuante um pouco mais adicionando 
+            uma largura explícita ao nosso bloco <code>.content</code>:
           </p>
 
           <pre
@@ -652,10 +663,11 @@
 </code></pre>
 
           <p>
-            This clearly demonstrates that our sidebar is in fact
-            <em>inside</em> the <code>.content</code> block: if you take a
-            screenshot of them, you’ll have an image that’s 650 pixels wide
-            opposed to 850 pixels (our sidebar is 200 pixels wide).
+            Isso vai demonstrar claramente que nossa barra lateral
+            está de fato <em>dentro</em> do bloco <code>.content</code>: 
+            se você capturar a tela, terá uma imagem com 650px de largura, 
+            diferente dos 850px (nossa barra lateral tem 200px a mais).
+            
           </p>
 
           <figure class="diagram">
@@ -676,12 +688,13 @@
           </figure>
 
           <p>
-            This kind of float behavior is nice for images (which we’ll see
-            <a href="index.html#floats-for-content">later on</a>), but for page
-            layout, we actually want the content block to be
-            <em>next to</em> the sidebar instead of flowing around it. For this,
-            we need to tell the content block to float left, too. Add one more
-            line to the <code>.content</code> rule:
+            Este tipo de comportamento flutuante é muito bom para imagens, (que nós 
+            veremos <a href="index.html#floats-for-content">mais além</a>), mas para 
+            o layout da página, nós queremos que o bloco do conteúdo <em>esteja próximo</em> 
+            a barra lateral ao invés de flutuando ao seu redor. Para isso, nós 
+            precisamos dizer ao bloco do conteúdo para flutuar a esquerda também. 
+            Adicione mais uma linha a regra <code>.content</code>:
+
           </p>
 
           <pre
@@ -695,11 +708,12 @@
 </code></pre>
 
           <p>
-            When you float multiple elements in the same direction, they’ll
-            stack horizontally, much like the default vertical layout algorithm,
-            except rotated 90 degrees. The above code causes our entire content
-            block to appear on the right of the sidebar instead of wrapping
-            around it.
+            Quando você coloca múltiplos elementos flutuantes na mesma direção, 
+            eles irão se espalhar horizontalmente, muito parecido com o layout 
+            de algoritmo vertical, exceto que está rotacionado 90 graus. O código 
+            acima faz com nosso bloco de conteúdo inteiro apareça à direita da 
+            barra lateral ao invés de empacotá-lo.
+            
           </p>
 
           <figure class="diagram">
@@ -720,10 +734,12 @@
           </figure>
 
           <p>
-            This gives us true control over the horizontal alignment of our
-            block boxes. Try playing with the <code>float</code> values for both
-            <code>.sidebar</code> and <code>.content</code>, and you’ll find
-            that we already have a couple of distinct layouts at our disposal:
+            Isso nos dá um controle real sobre o alinhamento horizontal dos 
+            nossos blocos de caixas. Tente brincar com os valores da 
+            propriedade <code>float</code> tanto no <code>.sidebar</code> quanto no 
+            <code>.content</code>, e você vai ver que nós já temos alguns 
+            layouts distintos a nosso dispor:
+            
           </p>
 
           <figure class="diagram">
@@ -744,9 +760,10 @@
           </figure>
 
           <p>
-            Make sure both of them are floating left before moving on. That
-            takes care of the layout for the sidebar and content blocks, but it
-            unfortunately messed up our <code>.footer</code> element&hellip;
+            Garanta que ambos estejam flutuando à esquerda antes de movê-los.
+            Isso cuida do layout para o bloco da barra lateral e de conteúdo,
+            mas pode cagar com nosso código no elemento <code>.footer</code>&hellip;
+            
           </p>
         </div>
       </div>
@@ -755,17 +772,19 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="after-a-float">
-              <span>After a Float</span>
+              <span>Depois de um flutuante</span>
             </h2>
           </div>
 
           <p>
-            You probably noticed that our footer shows up in the top right,
-            directly below <code>.menu</code>. That’s because floated boxes are
-            removed from the normal flow of the page. The height of our floated
-            elements don’t contribute to the vertical position of the footer, so
-            it simply sticks itself below the last element that
-            <em>wasn’t</em> floated.
+            Você provavelmente já percebeu que nosso rodapé apareceu no 
+            canto superior direito, logo abaixo do .<code>.menu</code>. 
+            Isso aconteceu porque as caixas flutuantes são removidas do 
+            fluxo normal da página. A altura dos nossos elementos flutuantes 
+            não contribuem para o posicionamento vertical do rodapé, então 
+            ele simplesmente se pôs abaixo do último elemento que 
+            <em>não está flutuando</em>.
+
           </p>
 
           <figure class="diagram">
@@ -786,8 +805,9 @@
           </figure>
 
           <p>
-            We can see this more clearly by adding a red border around our
-            <code>.page</code> element:
+            Podemos ver isso mais claramente adicionando uma borda 
+            ao redor do nosso elemento <code>.page</code>:
+            
           </p>
 
           <pre
@@ -800,28 +820,32 @@
 </code></pre>
 
           <p>
-            Notice how the border is only around the <code>.menu</code> and
-            <code>.footer</code> elements. It’s as if the floated elements
-            weren’t even there. There are two ways to fix this: clearing a float
-            and hiding overflow.
+            Perceba como a borda está somente ao redor dos elementos <code>.menu</code> 
+            e  <code>.footer</code>. É como se os elementos flutuantes não estivessem 
+            lá. Tem duas formas de corrigir isso: limpando a flutuação e escondendo 
+            os excessos.
+            
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="clearing-floats">
-              Clearing Floats
+              Limpando a flutuação
             </h3>
           </div>
 
           <p>
-            “Clearing” a float is when we tell a block to ignore any floats that
-            appear before it. Instead of flowing around the floated box, a
-            cleared element always appears after any floats. It’s like forcing a
-            box back into the default vertical flow of the page.
+            “Limpar” um flutuação é quando nós dizemos para um bloco ignorar 
+            qualquer flutuação que apareça antes dele. Ao invés de fluir ao 
+            redor de uma caixa flutuante, um elemento limpo sempre aparecerá 
+            depois de qualquer flutuação. É como forçar uma caixa voltar ao 
+            fluxo vertical padrão de uma página.
+            
           </p>
 
           <p>
-            We can use the <code>clear</code> property to make our
-            <code>.footer</code> drop down to the bottom of the page:
+            Podemos utilizar a propriedade <code>clear</code> para fazer 
+            o <code>.footer</code> ir para baixo na página:
+            
           </p>
 
           <pre
@@ -834,12 +858,13 @@
 </code></pre>
 
           <p>
-            Usually, you want to clear both left and right floats as we did
-            here, but you can choose to clear only one or the other with the
-            <code>left</code> or <code>right</code> values. Note that the red
-            border now wraps all the way around the footer, indicating that the
-            floated elements indeed count towards the height of the
-            <code>.page</code> container:
+            Normalmente, você vai querer limpar também os elementos flutuantes 
+            à esquerda e à direita, como fizemos aqui, mas você pode escolher 
+            limpar somente um ou o outro lado com os valores <code>left</code> 
+            ou <code>right</code>. Note que a borda vermelha agora encapsula 
+            tudo ao redor do rodapé, indicando que os elementos flutuantes 
+            realmente contam para a altura do container <code>.page</code>: 
+
           </p>
 
           <figure class="diagram">
@@ -860,17 +885,19 @@
           </figure>
 
           <p>
-            Depending on the type of layout you’re trying to create, this is a
-            perfectly acceptable solution. We could stop here, but we’re going
-            to explore float behavior more by transforming our page into a
-            full-bleed layout that has background colors filling the entire
-            browser window.
+            Dependendo do tipo do layout que você está tentando criar, essa 
+            é uma perfeitamente aceitável. Nós poderíamos parar por aqui, mas 
+            vamos explorar um pouco mais do comportamento da flutuação transformando 
+            nossa página em um layout <em>full-bleed</em>, que tem cores de fundo 
+            preenchendo toda a janela do navegador.
+
           </p>
 
           <p>
-            Watch what happens when we take the menu and footer out of the
-            <code>.page</code> element. Change the
-            <code>&lt;body&gt;</code> element to match the following:
+            Veja o que acontece quando nós tiramos o menu e o rodapé do 
+            elemento <code>.page</code>. Mude o elemento <code>&lt;body&gt;</code> 
+            para ficar como está abaixo:
+
           </p>
 
           <pre
@@ -888,12 +915,13 @@
 </code></pre>
 
           <p>
-            Since <code>.menu</code> and <code>.footer</code> are outside our
-            fixed-width <code>.page</code>, they’re the full width of the
-            window, which is exactly what we want for a full-bleed layout.
-            However, notice how <code>.page</code> has zero height again despite
-            the fact that the footer still clears the sidebar and content
-            blocks.
+            Uma vez que o <code>.menu</code> e o <code>.footer</code> estão 
+            fora da nossa largura fixa da <code>.page</code>, eles usam o 
+            tamanho total da largura da janela, que é exatamente o que 
+            queremos para um layout <em>full-bleed</em>. No entanto, perceba 
+            como a <code>.page</code> tem zero de altura de novo, apesar do 
+            fato de que o rodapé limpa a barra lateral e o bloco de conteúdo.
+
           </p>
 
           <figure class="diagram">
@@ -914,24 +942,26 @@
           </figure>
 
           <p>
-            Once again, the only elements in <code>.page</code> are floated, so
-            they don’t count towards its height. In other words, moving the
-            footer outside of the <code>.page</code> container broke our
-            <code>clear</code> fix.
+            Mais uma vez, somente os elementos dentro de <code>.page</code> 
+            são flutuantes, então eles não contam para a altura. Em outras 
+            palavras, mover o rodapé para fora do container <code>.page</code>, 
+            quebra nossa correção de <code>clear</code>.
+
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="hiding-overflow">
-              Hiding Overflow
+              Escondendo o estouro
             </h3>
           </div>
 
           <p>
-            Clearing floats only fixes the height issue when there’s an element
-            <em>inside</em> the container element that we can add a
-            <code>clear</code> property to. Now that our footer is outside
-            <code>.page</code>, we need a new way to make floated elements
-            contribute to the height of their container.
+            Limpar a flutuação só corrige o problema da altura quando tem um 
+            elemento <em>dentro</em> do elemento container que nós podemos 
+            adicionar a propriedade <code>clear</code>. Agora que nosso rodapé 
+            está fora do container <code>.page</code>, precisamos de uma outra 
+            forma de fazer elementos flutuantes caber dentro da altura do container.
+
           </p>
 
           <figure class="diagram">
@@ -952,13 +982,13 @@
           </figure>
 
           <p>
-            The solution is the
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
-              >CSS <code>overflow</code> property</a
-            >. By adding an <code>overflow: hidden</code> declaration to a
-            container div, we’re telling it to recognize the height of any
-            floated elements it contains. This is how we can add a background
-            color to our <code>.page</code> element and have it actually render:
+            A solução é a propriedade <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+            >CSS <code>overflow</code></a>. Ao adicionar uma declaração 
+            <code>overflow: hidden</code> a um conteiner div, estamos dizendo para 
+            reconhecer a altura de qualquer elemento flutuante. Assim conseguimos 
+            adicionar uma cor de fundo para nosso elemento <code>.page</code>, veja 
+            como fica:
+
           </p>
 
           <pre
@@ -972,12 +1002,14 @@
 </code></pre>
 
           <p>
-            You should now be able to see a light gray background in
-            <code>.page</code> instead of the default white. This isn’t full
-            bleed yet (we’ll address that in the next section). The important
-            part here is the behavior of <code>overflow: hidden</code>. Without
-            it, we wouldn’t be able to see the <code>.page</code> container’s
-            background because it would have zero height.
+            Você poderá ver agora um cinza claro como cor de fundo na 
+            nossa <code>.page</code>, ao invés do branco padrão. Isso 
+            ainda não é um <em>full-bleed</em> (já vamos ver isso na 
+            próxima seção). O importante aqui é o comportamento do
+            <code>overflow: hidden</code>. Sem ele não poderíamos ver 
+            a cor de fundo do container <code>.page</code> porque ele teria 
+            zero de altura.
+            
           </p>
 
           <figure class="diagram">
@@ -998,13 +1030,13 @@
           </figure>
 
           <p>
-            To summarize, when you have an extra unfloated HTML element at the
-            bottom of a container div, use the <code>clear</code> solution.
-            Otherwise, add an <code>overflow: hidden</code> declaration to the
-            container element. The underlying idea for both options is that you
-            need a way to tell the browser to incorporate floats into the height
-            of their container element in order for their backgrounds to show
-            up.
+            Para resumir, quando você tem elementos HTML que não são flutuantes 
+            no parte mais baixa de uma container div, use a solução <code>clear</code>. 
+            Se não, adicione uma declaração <code>overflow: hidden</code> ao elemento 
+            do container. A ideia por trás de ambas as opções é que você precisa de 
+            uma forma de dizer ao navegador que ele deve incorporar a flutuação dentro 
+            da altura dos elementos contêineres de forma que a cor de fundo apareça.
+
           </p>
         </div>
       </div>
