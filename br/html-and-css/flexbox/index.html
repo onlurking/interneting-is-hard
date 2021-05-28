@@ -402,8 +402,8 @@
           </div>
 
           <p>
-            A Flexbox usa dois tipos de caixas que nunca vimos antes: containers flex 
-            e itens flex. O trabalho de um container flex é agrupar um conjunto de 
+            A Flexbox usa dois tipos de caixas que nunca vimos antes: conteiners flex 
+            e itens flex. O trabalho de um conteiner flex é agrupar um conjunto de 
             itens flex juntos e definir como eles serão posicionados.
           </p>
 
@@ -425,9 +425,9 @@
           </figure>
 
           <p>
-            Todo elemento HTML que é um filho direto de um container flex é um 
+            Todo elemento HTML que é um filho direto de um conteiner flex é um 
             "item". Itens flex podem ser manipulados individualmente, mas para 
-            a maior parte, é responsabilidade do container determinar o layout.
+            a maior parte, é responsabilidade do conteiner determinar o layout.
             O objetivo principal dos itens flex são deixar seus conteiner saberem 
             quantas coisas precisam ser posicionadas.
           </p>
@@ -435,8 +435,8 @@
           <p>
             Assim como layouts baseados em floats, projetar páginas web complexas 
             com a flexbox é sobre aninhamento de caixas. Você alinha um monte de 
-            itens flex dentro de um container, e, por sua vez, esses itens podem 
-            ser utilizados como um container flex para seus próprios itens. Enquanto 
+            itens flex dentro de um conteiner, e, por sua vez, esses itens podem 
+            ser utilizados como um conteiner flex para seus próprios itens. Enquanto 
             você trabalha com esses exemplos nesse capítulo, lembre-ve que o objetivo
             fundamental de projetar uma página não mudou: continuamos movendo 
             um monte de caixas aninhadas de um lado para o outro.
@@ -448,13 +448,13 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-containers">
-              <span>Containeres Flex</span>
+              <span>Conteineres Flex</span>
             </h2>
           </div>
 
           <p>
             O primeiro passo para utilizar a flexbox é transformar um dos nossos
-            elementos HTML em um container flex. Faremos isso com a propriedade 
+            elementos HTML em um conteiner flex. Faremos isso com a propriedade 
             <code>display</code>, que já deve ser familiar do capítulo 
             <a href="../css-box-model/index.html#changing-box-behavior"
               >Modelo de Caixa CSS</a
@@ -465,7 +465,7 @@
 
           <p>
             Adicione a seguinte linha de código a nossa regra <code>.menu-container</code>
-            para transformar ele em um container flex:
+            para transformar ele em um conteiner flex:
           </p>
 
           <pre
@@ -477,13 +477,13 @@
 </code></pre>
 
           <p>
-            This <em>enables</em> the flexbox layout mode&mdash;without it, the
-            browser would ignore all the flexbox properties that we’re about to
-            introduce. Explicitly defining flex containers means that you can
-            mix and match flexbox with other layout models (e.g., floats and
-            everything we’re going to learn in
-            <a href="../advanced-positioning/index.html">Advanced Positioning</a
-            >).
+            Isso <em>habilita</em> o modo layout flexbox&mdash;sem isso, o navegador 
+            irá ignorar todas as propriedades da flexbox que estamos prestes a introduzir.
+            Definir explicitamente um conteiner flex significa que você pode combinar 
+            a flexbox com outros modelos de layout (ex. floats e tudo que nós vamos 
+            aprender em 
+            <a href="../advanced-positioning/index.html">Posicionamento Avançado</a
+              >).
           </p>
 
           <figure class="diagram">
@@ -504,9 +504,9 @@
           </figure>
 
           <p>
-            Great! We have a flex container with one flex item in it. However,
-            our page will look exactly like it did before because we haven’t
-            told the container how to display its item.
+            Ótimo! Nós já temos um conteiner flex com um item flex dentro dele. 
+            No entanto nossa página não tem nada de diferente, por que não dissemos 
+            ao conteiner como mostrar seus itens.
           </p>
         </div>
       </div>
@@ -515,15 +515,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="aligning-a-flex-item">
-              <span>Aligning a Flex Item</span>
+              <span>Alinhando um Item Flex</span>
             </h2>
           </div>
 
           <p>
-            After you’ve got a flex container, your next job is to define the
-            horizontal alignment of its items. That’s what the
-            <code>justify-content</code> property is for. We can use it to
-            center our <code>.menu</code>, like so:
+            Depois que fizemos um conteiner flex, seu próximo trabalho é definir o 
+            alinhamento horizontal dos seus itens. É pra isso que a propriedade 
+            <code>justify-content</code> é usada. Nós podemos centralizar nosso 
+            <code>.menu</code>, assim:
           </p>
 
           <pre
@@ -536,14 +536,14 @@
 </code></pre>
 
           <p>
-            This has the same effect as adding a
-            <code>margin: 0 auto</code> declaration to the
-            <code>.menu</code> element. But, notice how we did this by adding a
-            property to the <em>parent</em> element (the flex container) instead
-            of directly to the element we wanted to center (the flex item).
-            Manipulating items through their containers like this is a common
-            theme in flexbox, and it’s a bit of a divergence from how we’ve been
-            positioning boxes thus far.
+            Isso terá o mesmo efeito como quando adicionamos a declaração 
+            <code>margin: 0 auto</code> ao elemento <code>.menu</code>. Mas, 
+            note como fizemos isso adicionando uma propriedade ao elemento 
+            <em>pai</em> (do item flex) ao invés de fazer diretamente ao 
+            elemento que nós queremos centralizar (no caso o item flex).
+            Manipular itens através dos seus conteineres, como fizemos agora,
+            é um tema comum em flexbox, e é um pouco diferente de como estávamos 
+            fazendo com as caixas até o momento.
           </p>
 
           <figure class="diagram">
@@ -563,7 +563,7 @@
             </div>
           </figure>
 
-          <p>Other values for <code>justify-content</code> are shown below:</p>
+          <p>Outros valores para <code>justify-content</code> podem ser vistos abaixo:</p>
 
           <ul>
             <li><code>center</code></li>
@@ -574,12 +574,11 @@
           </ul>
 
           <p>
-            Try changing <code>justify-content</code> to
-            <code>flex-start</code> and <code>flex-end</code>. This should align
-            the menu to the left and right side of the browser window,
-            respectively. Be sure to change it back to
-            <code>center</code> before moving on. The last two options are only
-            useful when you have multiple flex items in a container.
+            Tente mudar <code>justify-content</code> para <code>flex-start</code> 
+            e <code>flex-end</code>. Isso deve alinhar o menu a esquerda e direita 
+            da janela do navegador, respectivamente. Garanta que você mudou de volta 
+            para o <code>center</code> antes de continuar. As duas últimas opções
+            são úteis somente quando temos múltiplos itens flex em um conteiner.
           </p>
         </div>
       </div>
@@ -591,16 +590,17 @@
               class="subheading__heading"
               id="distributing-multiple-flex-items"
             >
-              <span>Distributing Multiple Flex Items</span>
+              <span>Distribuindo Múltiplos Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            “Big deal,” you might be saying: we can do left/right alignment with
-            floats and centering with auto-margins. True. Flexbox doesn’t show
-            its real strength until we have more than one item in a container.
-            The <code>justify-content</code> property also lets you distribute
-            items equally inside a container.
+            “Grande coisa..”, você deve estar pensando: nós podemos fazer 
+            alinhamento à esquerda/direita com float e centralizar com o 
+            <code>auto-margins</code>. Verdade! A Flexbox não mostra seu real 
+            potencial até que nós tenhamos mais que um item em um container. A 
+            propriedade <code>justify-content</code> também permite que você 
+            distribua os itens igualmente em um conteiner.
           </p>
 
           <figure class="diagram">
@@ -620,7 +620,7 @@
             </div>
           </figure>
 
-          <p>Change our <code>.menu</code> rule to match the following:</p>
+          <p>Mude nossa regra <code>.menu</code> para ficar como abaixo:</p>
 
           <pre
             class="highlight"
@@ -633,9 +633,9 @@
 </code></pre>
 
           <p>
-            This turns our <code>.menu</code> into a nested flex container, and
-            the <code>space-around</code> value spreads its items out across its
-            entire width. You should see something like this:
+            Isso vai transformar nosso <code>.menu</code> em um conteiner flex 
+            aninhado, e o valor <code>space-around</code> espalhará seus itens 
+            pelo espaço da largura. Você deve ver algo como isso:
           </p>
 
           <figure class="diagram">
@@ -656,11 +656,11 @@
           </figure>
 
           <p>
-            The flex container automatically distributes extra horizontal space
-            to either side of each item. The <code>space-between</code> value is
-            similar, but it only adds that extra space <em>between</em> items.
-            This is what we actually want for our example page, so go ahead and
-            update the <code>justify-content</code> line:
+            O conteiner flex distribuirá automaticamente o espaço horizontal extra 
+            para cara lado de cada item. O valor <code>space-between</code> é 
+            similar, mas só adiciona esse espaço extra <em>entre</em> os itens.
+            Isso é o que queremos para nossa página de exemplo, então vamos lá 
+            e adicione a linha <code>justify-content</code>:
           </p>
 
           <pre
@@ -669,10 +669,10 @@
 </code></pre>
 
           <p>
-            Of course, you can also use <code>center</code>,
-            <code>flex-start</code>, <code>flex-end</code> here if you want to
-            push all the items to one side or another, but let’s leave it as
-            <code>space-between</code>.
+            É claro, você também pode usar <code>center</code>, 
+            <code>flex-start</code>, <code>flex-end</code> aqui se você quiser 
+            empurrar todos os itens de um lado para outro, mas vamos deixar 
+            assim com <code>space-between</code>.
           </p>
         </div>
       </div>
@@ -681,17 +681,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="grouping-flex-items">
-              <span>Grouping Flex Items</span>
+              <span>Agrupando Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            Flex containers only know how to position elements that are one
-            level deep (i.e., their child elements). They don’t care one bit
-            about what’s inside their flex items. This means that grouping flex
-            items is another weapon in your layout-creation arsenal. Wrapping a
-            bunch of items in an extra <code>&lt;div&gt;</code> results in a
-            totally different web page.
+            Conteineres flex só sabem como posicionar os elemento que estão um 
+            nível abaixo (ex. seus elementos filhos). Eles não se importam nenhum 
+            pouco com o que tem dentro dos seus itens flex. Isso significa que 
+            agrupar itens flex é outra arma no nosso arsenal de criação de layout.
+            Empacotar um monte de itens em um <code>&lt;div&gt;</code> extra resulta 
+            em um página diferente totalmente diferente.
           </p>
 
           <figure class="diagram">
@@ -712,10 +712,10 @@
           </figure>
 
           <p>
-            For example, let’s say you want both the
-            <strong>Sign Up</strong> and <strong>Login</strong> links to be on
-            the right side of the page, as in the screenshot below. All we need
-            to do is stick them in another <code>&lt;div&gt;</code>:
+            Por exemplo, vamos dizer que você quer que ambos os links para 
+            <strong>Sign Up</strong> e <strong>Login</strong> fiquem no lado 
+            direito da página, como na imagem abaixo. Tudo que precisamos fazer 
+            é colocá-los em outro <code>&lt;div&gt;</code>:
           </p>
 
           <pre
@@ -730,10 +730,10 @@
 </code></pre>
 
           <p>
-            Instead of having three items, our <code>.menu</code> flex container
-            now has only two (<code>.date</code> and <code>.links</code>). Under
-            the existing <code>space-between</code> behavior, they’ll snap to
-            the left and right side of the page.
+            Ao invés de ter três itens, nosso conteiner flex <code>.menu</code> 
+            agora tem somente dois (<code>.date</code> e <code>.links</code>). 
+            Sobre o comportamento existente do <code>space-between</code>, eles 
+            se ajustarão ao lado esquerdo e direito da página.
           </p>
 
           <figure class="diagram">
@@ -754,10 +754,10 @@
           </figure>
 
           <p>
-            But, now we need to lay out the <code>.links</code> element because
-            it’s using the default block layout mode. The solution: more nested
-            flex containers! Add a new rule to our <code>styles.css</code> file
-            that turns the <code>.links</code> element into a flex container:
+            Mas, agora nós precisamos ajustar o elemento <code>.links</code> por 
+            que ele está usando o modo de bloco padrão. A solução: mais conteineres 
+            flex aninhados! Adicione uma nova regra ao nosso arquivo <code>styles.css</code>
+            que transformará o elemento <code>.links</code> em um conteiner flex:
           </p>
 
           <pre
@@ -774,15 +774,14 @@
 </code></pre>
 
           <p>
-            This will put our links right where we want them. Notice that
-            margins still work just like they did in the
-            <a href="../css-box-model/index.html">CSS Box Model</a>. And, as
-            with the normal box model, auto margins have a special meaning in
-            flexbox (we’ll leave that for the
-            <a href="index.html#flex-items-and-auto-margins"
-              >end of the chapter</a
-            >
-            though).
+            Isso colocará nossos links na direita onde queremos. Note que a 
+            margem continua funcionando como feito no 
+            <a href="../css-box-model/index.html">Modelo de Caixa CSS</a>. E, 
+            como um modelo de caixas normal, <code>auto-margins</code> tem um 
+            significado especial dentro da flexbox (no entanto vamos deixar isso 
+            para <a href="index.html#flex-items-and-auto-margins"
+              >o final do capítulo</a
+            >).
           </p>
 
           <figure class="diagram">
@@ -803,8 +802,8 @@
           </figure>
 
           <p>
-            We won’t need those white borders anymore, so you can go ahead and
-            delete them if you like.
+            Não mais precisamos dessas bordas brancas, então você pode apagá-las
+            se você quiser.
           </p>
         </div>
       </div>
@@ -813,14 +812,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="cross-axis-vertical-alignment">
-              <span>Cross-Axis (Vertical) Alignment</span>
+              <span>Alinhamento Eixo Cruzado (Vertical)</span>
             </h2>
           </div>
 
           <p>
-            So far, we’ve been manipulating horizontal alignment, but flex
-            containers can also define the vertical alignment of their items.
-            This is something that’s simply not possible with floats.
+            Até agora, estivemos manipulando o alinhamento horizontal, mas 
+            conteineres flex também podem definir o alinhamento vertical para 
+            seus itens. Isso é algo que simplesmente não é possível com floats.
           </p>
 
           <figure class="diagram">
@@ -841,9 +840,10 @@
           </figure>
 
           <p>
-            To explore this, we need to add a header underneath our menu. Add
-            the following markup to <code>flexbox.html</code> after the
-            <code>.menu-container</code> element:
+            Para explorar isso, vamos precisar adicionar um cabeçalho embaixo 
+            do nosso menu. Adicione a seguinte marcação ao nosso 
+            <code>flexbox.html</code> depois do elemento 
+            <code>.menu-container</code>:
           </p>
 
           <pre
@@ -858,8 +858,8 @@
 </code></pre>
 
           <p>
-            Next, add some base styles to get it aligned with our
-            <code>.menu</code> element:
+            Agora, adicione uma estilização básica para fazer o alinhamento 
+            com nosso elemento <code>.menu</code>:
           </p>
 
           <pre
@@ -880,12 +880,12 @@
 </code></pre>
 
           <p>
-            This should all be familiar; however, the scenario is a little bit
-            different than our menu. Since <code>.header</code> has an explicit
-            height, items can be positioned vertically inside of it. The
-            official specification calls this “cross-axis” alignment (we’ll see
-            why in a moment), but for our purposes it might as well be called
-            “vertical” alignment.
+            Isso deve ser bem familiar; no entanto, o cenário é um pouco diferente 
+            do nosso menu. Uma vez que <code>.header</code> tem uma altura explícita, 
+            os itens podem ser posicionados verticalmente dentro dela. A especificação 
+            oficial chama isso de alinhamento de “eixo cruzado”&dash;<em>cross-axis</em> 
+            (já vamos ver por que daqui a pouco), mas para nosso propósito ele pode 
+            ser chamado de alinhamento “vertical”.
           </p>
 
           <figure class="diagram">
@@ -906,9 +906,9 @@
           </figure>
 
           <p>
-            Vertical alignment is defined by adding an
-            <code>align-items</code> property to a flex container. Make our
-            example page match the above screenshot with the following line:
+            Alinhamento vertical é definido adicionando uma propriedade 
+            <code>align-items</code> em um conteiner flex. Vamos fazer nossa 
+            página de exemplo parecer como a imagem acima com a linha abaixo:
           </p>
 
           <pre
@@ -920,8 +920,8 @@
 </code></pre>
 
           <p>
-            The available options for <code>align-items</code> is similar to
-            <code>justify-content</code>:
+            As opções disponíveis para <code>align-items</code> são similares 
+            a <code>justify-content</code>:
           </p>
 
           <ul>
@@ -947,16 +947,15 @@
           </figure>
 
           <p>
-            Most of these are pretty straightforward. The
-            <code>stretch</code> option is worth a taking a minute to play with
-            because it lets you display the background of each element. Let’s
-            take a brief look by adding the following to
-            <code>styles.css</code>:
+            A maioria deles é bastante simples. A opção <code>strech</code> 
+            vale a pena brincar um pouco por que ela nos permite mostrar o 
+            fundo de cada elemento. Vamos dar uma olhada nela adicionando 
+            o seguinte código ao nosso <code>styles.css</code>:
           </p>
 
           <pre class="highlight"><code>.header {
   <span class="hljs-comment">/* ... */</span>
-  align-items: stretch;    <span class="hljs-comment">/* Change this */</span>
+  align-items: stretch;    <span class="hljs-comment">/* Mude isso */</span>
 }
 
 .social,
