@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <title>Flexbox Tutorial | HTML &amp; CSS Is Hard</title>
     <meta charset="UTF-8" />
@@ -199,11 +199,11 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            The “Flexible Box” or “Flexbox” layout mode offers an alternative to
-            <a href="../floats/index.html">Floats</a> for defining the overall
-            appearance of a web page. Whereas floats only let us horizontally
-            position our boxes, flexbox gives us <em>complete</em> control over
-            the alignment, direction, order, and size of our boxes.
+            O modo de layout "Caixa Flexível" ou "Flexbox" oferece uma alternativa aos 
+            <a href="../floats/index.html">Floats</a> para definir a aparência geral
+            de uma página web. Uma vez que <em>floats</em> só nos permite modificar
+            o posicionamento horizontal das nossas caixas, flexbox nos dá um controle
+            total sobre o alinhamento, direção, ordem e tamanho das nossas caixas.
           </p>
 
           <figure class="diagram">
@@ -224,33 +224,35 @@
           </figure>
 
           <p>
-            The web is currently undergoing a major transition, so a little
-            discussion around the state of the industry is warranted. For the
-            last decade or so, floats were the sole option for laying out a
-            complex web page. As a result, they’re well supported even in legacy
-            browsers, and developers have used them to build millions of web
-            pages. This means you’ll inevitably run into floats during your web
-            development career (so the previous chapter wasn’t a total waste).
+            A web está passando por uma grande mudança, então uma pequena discussão 
+            sobre o status do mercado é necessário. Nos últimos anos, <em>floats</em> era 
+            a opção mais usada para desenvolver a aparência de uma página web complexa. 
+            Como resultado, esses layouts tinham bom suporte até menos em navegadores
+            antigos, e os desenvolvedores tem usado para construir milhões de páginas
+            web. Isso significa, que inevitavelmente você irá se deparar com <em>floats</em>
+            em algum momento da sua carreira de desenvolvedor web (por isso que o capítulo
+            anterior não foi um completo desperdício).
           </p>
 
           <p>
-            However, floats were originally intended for the magazine-style
-            layouts that we covered in
+            No entanto, <em>floats</em> tinham originalmente a intenção de serem 
+            utilizados nos layouts estilo revista que nós cobrimos na seção
             <a href="../floats/index.html#floats-for-content"
-              >Floats for Content</a
-            >. Despite what we saw last chapter, the kinds of layouts you can
-            create with floats are actually somewhat limited. Even a simple
-            sidebar layout is, technically speaking, a little bit of a hack.
-            Flexbox was invented to break out of these limitations.
+              >Conteúdos flutuantes</a
+            >. Apesar do que vimos no último capítulo, os tipos de layouts que você 
+            pode criar com <em>floats</em> são atualmente meio limitados. Até mesmo 
+            um simples layout com uma barra lateral é, tecnicamente falando, um 
+            pequeno hack. Flexbox foi inventado para acabar com essas limitações.
           </p>
 
           <p>
-            We’re finally at a point where browser support has hit critical mass
-            and developers can start building full websites with flexbox. Our
-            recommendation is to use flexbox to lay out your web pages as much
-            as possible, reserving floats for when you need text to flow
-            <em>around</em> a box (i.e., a magazine-style layout) or when you
-            need to support legacy web browsers.
+            Nós finalmente alcançamos um ponto onde o suporte dos navegadores 
+            atingiu um massa crítica e os desenvolvedores podem começar a 
+            construir páginas web completas com flexbox. Nossa recomendação é 
+            de usar o flexbox para projetar suas páginas web tanto quanto for 
+            possível, reservando floats par quando você precisar do texto fluindo 
+            <em>ao redor</em> de uma caixa (ex. um layout estilo revista) ou 
+            quando você precisar de suporte nos navegadores antigos.
           </p>
 
           <figure class="diagram">
@@ -271,9 +273,9 @@
           </figure>
 
           <p>
-            In this chapter, we’ll explore the entire flexbox layout model step
-            by step. You should walk away comfortable building virtually any
-            layout a web designer could ever give you.
+            Neste capítulo, nós vamos explorar todo o modelo de layout flexbox 
+            passo a passo. Você se sentirá confortável para construir virtualmente 
+            qualquer layout que um web designer poderia oferecer.
           </p>
         </div>
       </div>
@@ -285,9 +287,9 @@
           </div>
 
           <p>
-            The example for this chapter is relatively simple, but it clearly
-            demonstrates all of the important flexbox properties. We’ll wind up
-            with something that looks like this:
+            O exemplo deste capítulo é relativamente simples, mas irá demonstrar 
+            de forma clara toda a importância das propriedades do flexbox. Nós 
+            vamos começar com algo que pareça como isso:
           </p>
 
           <figure class="diagram">
@@ -308,14 +310,13 @@
           </figure>
 
           <p>
-            For starters, we need an empty HTML document that contains nothing
-            but a menu bar. Make a new
+            Para começar, nós vamos precisar de um documento HTML vazio que não 
+            tenha nada além de um barra de menu. Crie um  
             <a href="../introduction/index.html#atom-text-editor"
-              >Atom project</a
-            >
-            called <code>flexbox</code> to house all the example files for this
-            chapter. Then, create <code>flexbox.html</code> and add the
-            following markup:
+              >novo projeto no Atom</a
+            > chamado <code>flexbox</code> para registrar todos os arquivos 
+            de exemplos que iremos criar nesse capítulo. Depois, crie um arquivo 
+            <code>flexbox.html</code> e adicione o seguinte código a seguir:
           </p>
 
           <pre
@@ -340,11 +341,11 @@
 </code></pre>
 
           <p>
-            Next, we need to create the corresponding
-            <code>styles.css</code> stylesheet. This won’t look like much: just
-            a full-width blue menu bar with a white-bordered box in it. Note
-            that we’ll be using flexbox instead of our traditional auto-margin
-            technique to center the menu.
+            Agora, precisamos criar uma folha de estilo correspondente, 
+            <code>styles.css</code>. Isso não vai parecer muito, além de uma 
+            barra de menu espandida com uma caixa com borda branca. Perceba 
+            que nós estamos utilizando flexbox ao invés da nossa tradicional 
+            técnica do auto-margim para centralizar o menu.
           </p>
 
           <pre class="highlight"><code>* {
@@ -366,12 +367,11 @@
 </code></pre>
 
           <p>
-            Finally,
-            <a href="flexbox-images-449705.zip">download some images</a> for use
-            by our example web page. Unzip them into the
-            <code>flexbox</code> project, keeping the parent
-            <code>images</code> directory. Your project should look like this
-            before moving on:
+            E finalmente, 
+            <a href="flexbox-images-449705.zip">baixe algumas imagens</a> para utilizar
+            na nossa página web de exemplo. Descompacte essas imagens dentro da pasta 
+            do projeto <code>flexbox</code>, mantendo a pasta pai <code>images</code>. 
+            Seu projeto deve estar parecendo como a imagem abaixo, antes de seguir:
           </p>
 
           <figure class="diagram">
@@ -397,15 +397,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flexbox-overview">
-              <span>Flexbox Overview</span>
+              <span>Visão geral da Flexbox</span>
             </h2>
           </div>
 
           <p>
-            Flexbox uses two types of boxes that we’ve never seen before: “flex
-            containers” and “flex items”. The job of a flex container is to
-            group a bunch of flex items together and define how they’re
-            positioned.
+            A Flexbox usa dois tipos de caixas que nunca vimos antes: containers flex 
+            e itens flex. O trabalho de um container flex é agrupar um conjunto de 
+            itens flex juntos e definir como eles serão posicionados.
           </p>
 
           <figure class="diagram">
@@ -426,21 +425,21 @@
           </figure>
 
           <p>
-            Every HTML element that’s a direct child of a flex container is an
-            “item”. Flex items can be manipulated individually, but for the most
-            part, it’s up to the container to determine their layout. The main
-            purpose of flex items are to let their container know how many
-            things it needs to position.
+            Todo elemento HTML que é um filho direto de um container flex é um 
+            "item". Itens flex podem ser manipulados individualmente, mas para 
+            a maior parte, é responsabilidade do container determinar o layout.
+            O objetivo principal dos itens flex são deixar seus conteiner saberem 
+            quantas coisas precisam ser posicionadas.
           </p>
 
           <p>
-            As with float-based layouts, defining complex web pages with flexbox
-            is all about nesting boxes. You align a bunch of flex items inside a
-            container, and, in turn, those items can serve as flex containers
-            for their own items. As you work through the examples in this
-            chapter, remember that the fundamental task of laying out a page
-            hasn’t changed: we’re still just moving a bunch of nested boxes
-            around.
+            Assim como layouts baseados em floats, projetar páginas web complexas 
+            com a flexbox é sobre aninhamento de caixas. Você alinha um monte de 
+            itens flex dentro de um container, e, por sua vez, esses itens podem 
+            ser utilizados como um container flex para seus próprios itens. Enquanto 
+            você trabalha com esses exemplos nesse capítulo, lembre-ve que o objetivo
+            fundamental de projetar uma página não mudou: continuamos movendo 
+            um monte de caixas aninhadas de um lado para o outro.
           </p>
         </div>
       </div>
@@ -449,25 +448,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-containers">
-              <span>Flex Containers</span>
+              <span>Containeres Flex</span>
             </h2>
           </div>
 
           <p>
-            The first step in using flexbox is to turn one of our HTML elements
-            into a flex container. We do this with the
-            <code>display</code> property, which should be familiar from the
+            O primeiro passo para utilizar a flexbox é transformar um dos nossos
+            elementos HTML em um container flex. Faremos isso com a propriedade 
+            <code>display</code>, que já deve ser familiar do capítulo 
             <a href="../css-box-model/index.html#changing-box-behavior"
-              >CSS Box Model</a
-            >
-            chapter. By giving it a value of <code>flex</code>, we’re telling
-            the browser that everything in the box should be rendered with
-            flexbox instead of the default box model.
+              >Modelo de Caixa CSS</a
+            >. Ao dar um valor de <code>flex</code>, nós estamos dizendo para o 
+            navegador que tudo na caixa deve ser renderizado com a flexbox ao invés 
+            do modelo de caixa padrão.
           </p>
 
           <p>
-            Add the following line to our <code>.menu-container</code> rule to
-            turn it into a flex container:
+            Adicione a seguinte linha de código a nossa regra <code>.menu-container</code>
+            para transformar ele em um container flex:
           </p>
 
           <pre
