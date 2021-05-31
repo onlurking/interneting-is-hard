@@ -985,16 +985,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="wrapping-flex-items">
-              <span>Wrapping Flex Items</span>
+              <span>Encapsulando Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            Flexbox is a more powerful alternative to
-            <a href="../floats/index.html#floats-for-grids">float-based grids</a
-            >. Not only can it render items as a grid&mdash;it can change their
-            alignment, direction, order, and size, too. To create a grid, we
-            need the <code>flex-wrap</code> property.
+            Flexbox é uma alternativa mais poderosa que 
+            <a href="../floats/index.html#floats-for-grids">grades baseadas em floats</a
+              >. Ela não somente renderiza os itens como uma grade&mdash;ela pode mudar 
+              seu alinhamento, direção, ordem e tamanho também. Para criar uma grade, 
+              precisamos usar a propriedade <code>flex-wrap</code>.
           </p>
 
           <figure class="diagram">
@@ -1015,10 +1015,9 @@
           </figure>
 
           <p>
-            Add a row of photos to <code>flexbox.html</code> so that we have
-            something to work with. This should go inside of
-            <code>&lt;body&gt;</code>, under the
-            <code>.header-container</code> element:
+            Adicione uma linha de fotos ao nosso <code>flexbox.html</code> para 
+            que tenhamos algo com que trabalhar. As fotos devem estar dentro de 
+            <code>&lt;body;&gt;</code>, no elemento <code>.header-container</code>:
           </p>
 
           <pre
@@ -1039,8 +1038,7 @@
 </code></pre>
 
           <p>
-            Again, the corresponding CSS should be familiar from previous
-            sections:
+            De novo, a CSS correspondente já deve ser familiar da seção anterior:
           </p>
 
           <pre
@@ -1064,9 +1062,9 @@
 </code></pre>
 
           <p>
-            This should work as expected, but watch what happens when we add
-            more items than can fit into the flex container. Insert an extra two
-            photos into the <code>.photo-grid</code>:
+            Isso deve funcionar como esperado, mas preste atenção no que acontece 
+            quando adicionamos mais itens do que cabem dentro do container flex. 
+            Insira umas duas fotos a mais no código <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1079,7 +1077,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-          <p>By default, they flow off the edge of the page:</p>
+          <p>Por padrão, elas ultrapassam o limite da página:</p>
 
           <figure class="diagram">
             <div class="diagram__wrapper" style="max-width: 470px">
@@ -1099,11 +1097,11 @@
           </figure>
 
           <p>
-            If you’re trying to build a hero banner that lets the user
-            horizontally scroll through a bunch of photos, this might be desired
-            behavior, but that’s not what we want. Adding the following
-            <code>flex-wrap</code> property forces items that don’t fit to get
-            bumped down to the next row:
+            Se você estiver tentando construir um <em>hero banner</em> que deixa 
+            o usuário rolar horizontalmente através de um monte de fotos, esse deve 
+            ser o comportamento esperado, mas não é o que nós queremos agora. 
+            Adicionando a propriedade <code>flex-wrap</code> força os itens que 
+            não couberem naquela linha pularem para próxima:
           </p>
 
           <pre
@@ -1115,11 +1113,12 @@
 </code></pre>
 
           <p>
-            Now, our flex items behave much like floated boxes, except flexbox
-            gives us more control over how “extra” items are aligned in the
-            final row via the <code>justify-content</code> property. For
-            example, the last line is currently left-aligned. Try centering it
-            by updating our <code>.photo-grid</code> rule, like so:
+            Agora, nossos itens flex se comportam muito como caixas flutuantes, 
+            exceto que a flexbox nos dá muito mais controle sobre como os itens 
+            “extra” são alinhados na última linha através da propriedade 
+            <code>justify-content</code>. Por exemplo, a última linha está 
+            alinhada à esquerda. Tente centralizar modificando nossa regra 
+            <code>.photo-grid</code>, assim:
           </p>
 
           <pre
@@ -1133,7 +1132,7 @@
 </code></pre>
 
           <p>
-            Achieving this with float-based layouts is ridiculously complicated.
+            Alcançar isso com em um layout baseado e float é extremamente complicado.
           </p>
 
           <figure class="diagram">
@@ -1159,16 +1158,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-container-direction">
-              <span>Flex Container Direction</span>
+              <span>Direcionando Containeres Flex</span>
             </h2>
           </div>
 
           <p>
-            “Direction” refers to whether a container renders its items
-            horizontally or vertically. So far, all the containers we’ve seen
-            use the default horizontal direction, which means items are drawn
-            one after another in the same row before popping down to the next
-            column when they run out of space.
+            A “Direção” indica se um conteiner irá renderizar seus itens horizontalmente 
+            ou verticalmente. Até agora, todos os conteineres que vimos tem utilizado 
+            o padrão de direção horizontal, o que significa que os itens são desenhados 
+            um após o outro na mesma linha antes de pular para a próxima coluna quando 
+            ficam sem espaço.
           </p>
 
           <figure class="diagram">
@@ -1189,10 +1188,10 @@
           </figure>
 
           <p>
-            One of the most amazing things about flexbox is its ability to
-            transform rows into columns using only a single line of CSS. Try
-            adding the following <code>flex-direction</code> declaration to our
-            <code>.photo-grid</code> rule:
+            Uma das coisas mais incríveis sobre a flexbox é sua habilidade de 
+            transformar linhas em colunas utilizando uma única linha de CSS. 
+            Tente adicionar a seguinte declaração <code>flex-direction</code> 
+            a nossa regra <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1204,9 +1203,8 @@
 </code></pre>
 
           <p>
-            This changes the direction of the container from the default
-            <code>row</code> value. Instead of a grid, our page now has a single
-            vertical column:
+            Isso muda a direção do conteiner do valor padrão de <code>linha</code>. 
+            Ao invés de uma grade, nossa página agora tem uma simples coluna vertical:
           </p>
 
           <figure class="diagram">
@@ -1227,28 +1225,28 @@
           </figure>
 
           <p>
-            A key tenant of responsive design is presenting the same HTML markup
-            to both mobile and desktop users. This presents a bit of a problem,
-            as most mobile layouts are a single column, while most desktop
-            layouts stack elements horizontally. You can imagine how useful
-            <code>flex-direction</code> is going to become once we start
-            building
-            <a href="../responsive-design/index.html">responsive layouts</a>.
+            Um ponto importante de design responsivo é apresentar a mesma marcação 
+            HTML para ambos os usuários de dispositivos móveis quanto de desktop. 
+            Isso pode ser um problema, como muitos dos layouts móveis são uma simples 
+            coluna, enquanto a maioria dos layouts desktop empilham elementos 
+            horizontalmente. Você pode imaginar como será útil a propriedade 
+            <code>flex-direction</code> assim que começarmos a construir 
+            <a href="../responsive-design/index.html">layouts responsivos</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="alignment-considerations">
-              Alignment Considerations
+              Considerações sobre Alinhamento
             </h3>
           </div>
 
           <p>
-            Notice that the column is hugging the left side of its flex
-            container despite our
-            <code>justify-content: center;</code> declaration. When you rotate
-            the direction of a container, you also rotate the direction of the
-            <code>justify-content</code> property. It now refers to the
-            container’s vertical alignment&mdash;not its horizontal alignment.
+            Note que a coluna está abraçando o lado esquerdo do conteiner flex 
+            mesmo usando a declaração <code>justify-content: center;</code>. 
+            Quando você rotaciona a direção de um conteiner, também pode rotacionar 
+            a direção da propriedade <code>justify-content</code>. Ela agora se 
+            refere ao alinhamento vertical do conteiner&mdash;não ao seu alinhamento 
+            horizontal.
           </p>
 
           <figure class="diagram">
@@ -1269,8 +1267,9 @@
           </figure>
 
           <p>
-            To horizontally center our column, we need to define an
-            <code>align-items</code> property on our <code>.photo-grid</code>:
+            Para centralizar horizontalmente nossa coluna, precisamos definir 
+            uma propriedade <code>align-items</code> no nosso código 
+            <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1288,16 +1287,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-container-order">
-              <span>Flex Container Order</span>
+              <span>Ordenação do Conteiner Flex</span>
             </h2>
           </div>
 
           <p>
-            Up until now, there’s been a tight correlation between the order of
-            our HTML elements and the way boxes are rendered in a web page. With
-            either floats or the flexbox techniques we’ve seen so far, the only
-            way we could make a box appear before or after another one is to
-            move around the underlying HTML markup. That’s about to change.
+            Até agora, nós tínhamos uma correlação entre a ordem dos nossos elementos 
+            HTML e a forma como a caixa é renderizada em uma página web. Seja com 
+            floats como com as técnicas da flexbox nós vimos que até agora, a única 
+            forma de que podemos fazer que uma caixa apareça antes ou depois de outra 
+            é movendo ela através da HTML. Isso vai mudar.
           </p>
 
           <figure class="diagram">
@@ -1315,11 +1314,11 @@
           </figure>
 
           <p>
-            The <code>flex-direction</code> property also offers you control
-            over the order in which items appear via the
-            <code>row-reverse</code> and <code>column-reverse</code> properties.
-            To see this in action, let’s transform our column back into a grid,
-            but this time around we’ll reverse the order of everything:
+            A propriedade <code>flex-direction</code> também oferece um controle 
+            sobre a ordem com que os itens aparecem, através das propriedades  
+            <code>row-reverse</code> e <code>column-reverse</code>. Para ver 
+            isso em ação, vamos transformar nossa coluna de volta em uma grade, 
+            mas dessa vez vamos reverter a ordem de tudo:
           </p>
 
           <pre
@@ -1335,14 +1334,13 @@
 </code></pre>
 
           <p>
-            Both rows are now rendered right-to-left instead of left-to-right.
-            But, notice how this only swaps the order on a per-row basis: the
-            first row doesn’t start at 5, it starts at 3. This is useful
-            behavior for a lot of common design patterns (<code
-              >column-reverse</code
-            >
-            in particular opens up a lot of doors for mobile layouts). We’ll
-            learn how to get even more granular in the next section.
+            Ambas as linhas agora estão renderizadas da direita para esquerda 
+            ao invés do contrário. Mas, note como isso só muda a ordem em uma 
+            linha: a primeira linha não começa em 5, mas sim em 3. Esse é um 
+            comportamento útil para vários padrões de design comuns 
+            (o <code>column-reverse</code> particularmente nos dá várias opções 
+            quando usado em layouts para dispositivos móveis). Vamos aprender 
+            como ter mais granularidade no controle na próxima seção.
           </p>
 
           <figure class="diagram">
@@ -1363,16 +1361,16 @@
           </figure>
 
           <p>
-            Reordering elements from inside a stylesheet is a big deal. Before
-            flexbox, web developers had to resort to JavaScript hacks to
-            accomplish this kind of thing. However, don’t abuse your newfound
-            abilities. As we discussed in the very first chapter of this
-            tutorial, you should always
+            Reordenar elementos a partir de um folha de estilo é bastante coisa. 
+            Antes da flexbox, desenvolvedores web tinham que recorrer a hacks em 
+            JavaScript para alcançar esses tipos de coisas. No entanto, não abuse 
+            das suas novas habilidades. Como já discutimos nos primeiros capítulos 
+            desse tutorial, você deve sempre  
             <a
               href="../basic-web-pages/index.html#structure-versus-presentation"
-              >separate content from presentation</a
-            >. Changing the order like this is purely presentational&mdash;your
-            HTML should still make sense without these styles applied to it.
+              >separar o conteúdo da apresentação</a
+            >. Mudar a ordem assim é puramente apresentação&mdash;seu HTML deve 
+            fazer sentido mesmo sem esses estilos aplicados a ele.
           </p>
         </div>
       </div>
@@ -1381,15 +1379,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-item-order">
-              <span>Flex Item Order</span>
+              <span>Ordenando de Item Flex</span>
             </h2>
           </div>
 
           <p>
-            This entire chapter has been about positioning flex items
-            <em>through their parent containers</em>, but it’s also possible to
-            manipulate individual items. The rest of this chapter is going to
-            shift focus away from flex containers onto the items they contain.
+            Esse capítulo inteiro foi sobre posicionamento de itens flex <em>através 
+              dos seus conteineres pais</em>, mas também é possível manipular itens 
+              individualmente. O resto desse capítulo vai mudar o foco dos conteineres 
+              flex para os itens que eles contém.
           </p>
 
           <figure class="diagram">
@@ -1410,18 +1408,18 @@
           </figure>
 
           <p>
-            Adding an <code>order</code> property to a flex item defines its
-            order in the container without affecting surrounding items. Its
-            default value is <code>0</code>, and increasing or decreasing it
-            from there moves the item to the right or left, respectively.<?p>
+            Adicionando uma propriedade <code>order</code> em um item flex define 
+            sua ordem no conteiner sem afetar os itens ao redor dele. Seu valor 
+            padrão é <code>0</code>, e ao aumentar ou diminuir move o item para 
+            a direita ou para a esquerda, respectivamente.
           </p>
 
           <p>
-            This can be used, for example, to swap order of the
-            <code>.first-item</code> and <code>.last-item</code> elements in our
-            grid. We should also change the <code>row-reverse</code> value from
-            the previous section back to <code>row</code> because it’ll make our
-            edits a little easier to see:
+            Isso pode ser utilizado, por exemplo, para trocar a ordem dos elementos 
+            <code>.first-item</code> e <code>.last-item</code> na sua grade. Também 
+            devemos mudar o valor de <code>row-reverse</code> da seção anterior de 
+            volta para <code>row</code> pois irá fazer com que nossas edições se 
+            tornem um pouco mais fácil de ver:
           </p>
 
           <pre
@@ -1442,11 +1440,10 @@
 </code></pre>
 
           <p>
-            Unlike setting <code>row-reverse</code> and
-            <code>column-reverse</code> on a flex container,
-            <code>order</code> works across row/column boundaries. The above
-            snippet will switch our first and last items, even though they
-            appear on different rows.
+            Diferentemente de <code>row-reverse</code> e <code>column-reverse</code>
+            em um conteiner flex, <code>order</code> funciona além dos limites da 
+            linha/coluna. O trecho acima irá trocar nosso primeiro item com o último, 
+            mesmo que ele apareça em uma linha diferente.
           </p>
         </div>
       </div>
@@ -1460,12 +1457,12 @@
           </div>
 
           <p>
-            We can do the same thing with vertical alignment. What if we want
-            that <strong>Subscribe</strong> link and those social icons to go at
-            the bottom of the header instead of the center? Align them
-            individually! This is where the <code>align-self</code> property
-            comes in. Adding this to a flex item overrides the
-            <code>align-items</code> value from its container:
+            Podemos fazer a mesma coisa com o alinhamento vertical. E se quiséssemos 
+            que aquela ligação <strong>Assinar</strong> e os ícones de media social 
+            fossem para a parte mais baixa do cabeçalho ao invés do centro? Alinhe-os 
+            individualmente! É assim que a propriedade <code>align-self</code> funciona.
+            Adicionando isso a um item flex sobreescreve o valor de 
+            <code>align-items</code> do seu conteiner:
           </p>
 
           <pre
@@ -1478,8 +1475,8 @@
 </code></pre>
 
           <p>
-            This should send them to the bottom of the <code>.header</code>.
-            Note that margins (padding, too) work just like you’d expect.
+            Isso deve enviar eles para a parte mais baixa do <code>.header</code>. 
+            Note que as margens (preenchimento, também) funcionam como esperado.
           </p>
 
           <figure class="diagram">
@@ -1500,8 +1497,9 @@
           </figure>
 
           <p>
-            You can align elements in other ways using the same values as the
-            <code>align-items</code> property, listed below for convenience.
+            Você pode alinhar elementos de outras formas utilizando os mesmos valores 
+            assim como a propriedade <code>align-items</code>, listadas abaixo 
+            por conveniência.
           </p>
 
           <ul>
