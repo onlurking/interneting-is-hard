@@ -1516,25 +1516,26 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flexible-items">
-              <span>Flexible Items</span>
+              <span>Itens Flexiveis</span>
             </h2>
           </div>
 
           <p>
-            All our examples have revolved around items with fixed- or
-            content-defined-widths. This has let us focus on the positioning
-            aspects of flexbox, but it also means we’ve been ignoring its
-            eponymous “flexible box” nature. Flex items are <em>flexible</em>:
-            they can shrink and stretch to match the width of their containers.
+            Todos os nossos exemplos giraram em todos de itens fixos ou 
+            com tamanhos de conteúdos fixos. Isso nos permitiu focar nos 
+            aspectos do posicionamento usando flexbox, mas também significa 
+            que nós temos ignorado literalmente a natureza de “caixa flexível”. 
+            Itens Flex são <em>flexíveis</em>: eles podem diminiur ou esticar 
+            para caber no tamanho dos seus conteineres.
           </p>
 
           <p>
-            The <code>flex</code> property defines the width of individual items
-            in a flex container. Or, more accurately, it allows them to have
-            flexible widths. It works as a weight that tells the flex container
-            how to distribute extra space to each item. For example, an item
-            with a <code>flex</code> value of <code>2</code> will grow twice as
-            fast as items with the default value of <code>1</code>.
+            A propriedade <code>flex</code> define a largura dos itens individualmente
+            em um conteiner flex. Ou, mais precisamente, permite que ele tenham 
+            tamanhos flexíveis. Isso funciona como um peso que diz ao conteiner flex 
+            como distribuir o espaço extra de cada item. Por exemplo, um item com um 
+            valor <code>flex</code> de <code>2</code> vai aumentar duas vezes o seu 
+            tamanho do que itens com o valor padrão <code>1</code>.
           </p>
 
           <figure class="diagram">
@@ -1555,8 +1556,8 @@
           </figure>
 
           <p>
-            First, we need a footer to experiment with. Stick this after the
-            <code>.photo-grid-container</code> element:
+            Primeiro nós precisamos de um rodapé, para experimentar isso. Cola isso 
+            depois do nosso elemento <code>.photo-grid-container</code>:
           </p>
 
           <pre
@@ -1568,7 +1569,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-          <p>Then, some CSS:</p>
+          <p>E depois, algum CSS:</p>
 
           <pre
             class="highlight"
@@ -1586,9 +1587,9 @@
 </code></pre>
 
           <p>
-            That <code>flex: 1;</code> line tells the items to stretch to match
-            the width of <code>.footer</code>. Since they all have the same
-            weight, they’ll stretch equally:
+            Aquela linha <code>flex: 1;</code> vai dizer para o item para esticar
+            até caber na largura do <code>.footer</code>. Uma vez que todos eles 
+            tem o mesmo peso, todos vão esticar igualmente:
           </p>
 
           <figure class="diagram">
@@ -1609,9 +1610,9 @@
           </figure>
 
           <p>
-            Increasing the weight of one of the items makes it grow faster than
-            the others. For example, we can make the third item grow twice as
-            fast as the other two with the following rule:
+            Aumentando o peso de um dos itens vai fazer ele aumentar mais rápido 
+            que os outros. Por exemplo, podemos fazer o terceiro item aumentar 
+            duas vezes mais rápido do que os outros dois com a seguinte regra:
           </p>
 
           <pre
@@ -1622,24 +1623,24 @@
 </code></pre>
 
           <p>
-            Compare this to the <code>justify-content</code> property, which
-            distributes extra space <em>between</em> items. This is similar, but
-            now we’re distributing that space into the items themselves. The
-            result is full control over how flex items fit into their
-            containers.
+            Compare isso com a propriedade <code>justify-content</code>, que 
+            distribui o espaço extra <em>entre</em> os itens. Isso é similar, 
+            mas agora estamos distribuindo aquele espaço dentro dos próprios itens. 
+            O resultado é um controle total sobre como os itens flex se posicionam 
+            dentro do seu próprio conteiner.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="static-item-widths">
-              Static Item Widths
+              Itens com Largura Estáticas
             </h3>
           </div>
 
           <p>
-            We can even mix-and-match flexible boxes with fixed-width ones.
-            <code>flex: initial</code> falls back to the item’s explicit
-            <code>width</code> property. This lets us combine static and
-            flexible boxes in complex ways.
+            Podemos até misturar caixas flexíveis com outra de largura fixa. 
+            <code>flex: initial</code> volta a propriedade <code>width</code> 
+            explicita do item. Isso permite combinar caixas estáticas com 
+            flexíveis de formas mais elaboradas.
           </p>
 
           <figure class="diagram">
@@ -1660,10 +1661,10 @@
           </figure>
 
           <p>
-            We’re going to make our footer behave like the above diagram. The
-            center item is flexible, but the ones on either side are always the
-            same size. All we need to do is add the following rule to our
-            stylesheet:
+            Nós vamos fazer um rodapé que se comporta como o diagrama acima. O 
+            item central é flexível, mas os outros ao redor tem sempre o mesmo 
+            tamanho. Tudo que precisamos fazer é adicionar a seguinte linha a 
+            nossa folha de estilo:
           </p>
 
           <pre
@@ -1677,13 +1678,13 @@
 </code></pre>
 
           <p>
-            Without that <code>flex: initial;</code> line, the
-            <code>flex: 1;</code> declaration would be inherited from the
-            <code>.footer-item</code> rule, causing the
-            <code>width</code> properties to be ignored.
-            <code>initial</code> fixes this, and we get a flexible layout that
-            also contains fixed-width items. When you resize the browser window,
-            you’ll see that only the middle box in the footer gets resized.
+            Sem essa linha <code>flex: initial;</code>, a declaração de 
+            <code>flex: 1;</code> deve ser herdada da regra <code>.footer-item</code> 
+            fazendo com que a propriedade <code>width</code> seja ignorada.
+            <code>initial</code> fixa isso, e assim temos um layout flexível 
+            que também contém itens com largura fixa. Quando redimensionamos a 
+            janela do navegador, você verá que somente a caixa do meio do rodapé 
+            será redimensionada.
           </p>
 
           <figure class="diagram">
@@ -1704,11 +1705,11 @@
           </figure>
 
           <p>
-            This is a pretty common layout, and not just in footers, either. For
-            instance, many websites have a fixed-width sidebar (or multiple
-            sidebars) and a flexible content block containing the main text of
-            the page. This is basically a taller version of the footer we just
-            created.
+            Esse é um layout bem comum, e não só para rodapés. Atualmente muitas 
+            páginas web tem barras laterais com largura fixa (ou múltiplas barras) 
+            e um bloco de conteúdo flexível contendo o texto principal da página. 
+            Isso é basicamente uma versão maior do que acabamos de fazer com nosso 
+            rodapé.
           </p>
         </div>
       </div>
@@ -1717,24 +1718,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-items-and-auto-margins">
-              <span>Flex Items and Auto-Margins</span>
+              <span>Itens Flex e Auto-Margins</span>
             </h2>
           </div>
 
           <p>
-            Auto-margins in flexbox are special. They can be used as an
-            alternative to an
+            Margens automáticas <em>auto-margins</em> na flexbox são especiais. 
+            Elas podem ser utilizadas como uma alternativa a 
             <a href="index.html#grouping-flex-items"
-              >extra <code>&lt;div&gt;</code></a
+              ><code>&lt;div&gt; extra</code></a
             >
-            when trying to align a group of items to the left/right of a
-            container. Think of auto-margins as a “divider” for flex items in
-            the same container.
+            quando precisamos alinhas um grupo de items para a esquerda/direita 
+            de um conteiner. Pense em auto-margins como um “divisor” para itens 
+            flex no mesmo conteiner.
           </p>
 
           <p>
-            Let’s take a look by flattening our items in <code>.menu</code> so
-            that it matches the following:
+            Vamos dar uma olhada nivelando nossos itens no <code>.menu</code> 
+            para que ele fique como o seguinte:
           </p>
 
           <pre
@@ -1749,10 +1750,10 @@
 </code></pre>
 
           <p>
-            Reloading the page should make the items spread out equally through
-            our menu, just like at the beginning of the chapter. We can
-            replicate the desired layout by sticking an auto-margin between the
-            items we want to separate, like so:
+            Ao atualizar a página ela deve fazer com que os itens se distribuam de 
+            forma igual no nosso menu, como fizemos no começo do capítulo. Podemos 
+            replicar o layout desejado colocando um <code>auto-margin</code> entre 
+            os itens que desejamos separar, assim:
           </p>
 
           <pre
@@ -1763,13 +1764,13 @@
 </code></pre>
 
           <p>
-            Auto-margins eat up <em>all</em> the extra space in a flex
-            container, so instead of distributing items equally, this moves the
-            <code>.signup</code> and any following items (<code>.login</code>)
-            to the right side of the container. This will give you the exact
-            same layout we had before, but without that extra nested
-            <code>&lt;div&gt;</code> to group them. Sometimes, it’s nice to keep
-            your HTML flatter.
+            <em>Auto-margin</em> irá consumir <em>todo o espaço extra</em> em 
+            um conteiner flex, então ao invés de distribuir os itens igualmente, 
+            ela move o <code>.signup</code> e qualquer item seguinte 
+            (<code>.login</code>) para o lado direito do conteiner. Isso te 
+            dará exatamente o mesmo layout que tínhamos antes, mas sem aquela 
+            <code>&lt;div&gt;</code> extra aninhada para agrupa-los. É bom
+            deixar sua HTML bonito.
           </p>
         </div>
       </div>
@@ -1778,77 +1779,74 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            Flexbox gave us a ton of amazing new tools for laying out a web
-            page. Compare these techniques to what we were able to do with
+            Flexbox nos dá um tonelada de novas e incríveis ferramentas para 
+            desenvolver o layout de uma página web. Compare essas técnicas 
+            com o que podíamos fazer com 
             <a href="https://internetingishard.com/html-and-css/floats"
               >floats</a
-            >, and it should be pretty clear that flexbox is a cleaner option
-            for laying out modern websites:
+            >, e deve ficar bem claro que a flexbox é uma opção mais limpa 
+            para o desenvolver layouts modernos para páginas web:
           </p>
 
           <ul>
-            <li>Use <code>display: flex;</code> to create a flex container.</li>
+            <li>Use <code>display: flex;</code> para criar um conteiner flex.</li>
             <li>
-              Use <code>justify-content</code> to define the horizontal
-              alignment of items.
+              Use <code>justify-content</code> para definir o alinhamento horizontal 
+              dos itens.
             </li>
             <li>
-              Use <code>align-items</code> to define the vertical alignment of
-              items.
+              Use <code>align-items</code> para definir o alinhamento vertical dos itens.
             </li>
             <li>
-              Use <code>flex-direction</code> if you need columns instead of
-              rows.
+              Use <code>flex-direction</code> se você precisar de colunas ao invés de linhas.
             </li>
             <li>
-              Use the <code>row-reverse</code> or
-              <code>column-reverse</code> values to flip item order.
+              Use os valores de <code>row-reverse</code> ou <code>column-reverse</code> 
+              para mudar a ordem do item.
             </li>
             <li>
-              Use <code>order</code> to customize the order of individual
-              elements.
+              Use <code>order</code> para customizar a ordem de elementos individuais.
             </li>
             <li>
-              Use <code>align-self</code> to vertically align individual items.
+              Use <code>align-self</code> para verticalmente alinhar itens individuais.
             </li>
             <li>
-              Use <code>flex</code> to create flexible boxes that can stretch
-              and shrink.
+              Use <code>flex</code> para criar caixas flexíveis que podem encolher ou aumentar.
             </li>
           </ul>
 
           <p>
-            Remember that these flexbox properties are just a language that lets
-            you tell browsers how to arrange a bunch of HTML elements. The hard
-            part isn’t actually writing the HTML and CSS code, it’s figuring
-            out, conceptually (on a piece of paper), the behavior of all the
-            necessary boxes to create a given layout.
+            Lembre-se que essas propriedades flexbox são somente uma linguagem que 
+            deixa você dizer ao navegador como organizar esse monte de elementos HTML. 
+            A parte difícil não é escrever o código HTML e CSS, é descobrir, 
+            conceitualmente (em um pedaço de papel), o comportamente de todas as 
+            caixas necessárias para criar um determinado layout.
           </p>
 
           <p>
-            When a designer hands you a mockup to implement, your first task is
-            to draw a bunch of boxes on it and determine how they’re supposed to
-            stack, stretch, and shrink to achieve the desired design. Once
-            you’ve got that done, it should be pretty easy to code it up using
-            these new flexbox techniques.
+            Quando um desinger te entrega um mockup para implementar, sua primeira
+            tarefa é desenhar um monte de caixas dentro uma das outras e determinar 
+            como elas supostamente devem ser organizadas, aumentar e diminuir para 
+            alcançar o design desejado. Uma vez que você tenha conseguido isso, deve 
+            ser bem fácil codificar usando as novas técnicas da flexbox.
           </p>
 
           <p>
-            The flexbox layout mode should be used for most of your web pages,
-            but there are some things it’s not-so-good at, like gently tweaking
-            element positions and preventing them from interacting with the rest
-            of the page. After covering these kinds of advanced positioning
-            techniques in the next chapter, you’ll be an HTML and CSS
-            positioning expert.
+            O modo de layout da flexbox deve ser utilizado para suas páginas web, 
+            mas para algumas coisas elas não são boas, como gentilmente ajustar 
+            os posicionamentos dos elementos e previni-los de interagir com o 
+            resto da página. Depois de estudarmos essas técnicas de posicionamento 
+            avançados no próximo capítulo, você será um mestre na arte do 
+            posicionamento da HTML e CSS.
           </p>
 
           <div class="next-chapter">
-            <a href="../advanced-positioning/index.html">Next Chapter &gt;</a>
+            <a href="../advanced-positioning/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
