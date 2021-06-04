@@ -168,7 +168,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer front é difícil</a
           >
         </div>
       </div>
@@ -185,13 +185,13 @@
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 7. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 7. do <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              An old-timey web dev tutorial (and a friendly intro to CSS
-              layouts)
+              Um tutorial de dev web antigo (e uma introdução amigável para 
+              layouts CSS)
             </div>
           </div>
         </div>
@@ -326,7 +326,6 @@
             Você não vai ver muito quando abrir o arquivo <code>floats.html</code> no 
             navegador por que elementos vazios tem tamanho zero. Vamos corrigir isso 
             na próxima seção.
-
           </p>
 
           <pre class="highlight"><code>* {
@@ -359,8 +358,8 @@
             “comportamento padrão”. Nós introduzimos isso em <a
             href="../css-box-model/index.html#block-elements-and-inline-elements"
             >elementos de bloco 
-            versus elementos em linha</a> mas isso vai se tornar muito mais importante agora.
-            
+            versus elementos de linha</a> mas isso vai se tornar muito mais 
+            importante agora.
           </p>
 
           <p>
@@ -373,29 +372,28 @@
             class="highlight"
           ><code><span class="hljs-selector-class">.menu</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Medium blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Azul */</span>
 }
 
 <span class="hljs-selector-class">.sidebar</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;    <span class="hljs-comment">/* Red */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;    <span class="hljs-comment">/* Vermelho */</span>
 }
 
 <span class="hljs-selector-class">.content</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;    <span class="hljs-comment">/* Yellow */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;    <span class="hljs-comment">/* Amarelo */</span>
 }
 
 <span class="hljs-selector-class">.footer</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;    <span class="hljs-comment">/* Light blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;    <span class="hljs-comment">/* Azul claro */</span>
 }
 </code></pre>
 
           <p>
             Isso vai gerar um belo arco-íris, que não é exatamente o que nós 
-            queremos, mas nos ajuda a demonstrar alguns conceitos importantes.
-
+            queremos, mas nos ajudará a demonstrar alguns conceitos importantes.
           </p>
 
           <figure class="diagram">
@@ -442,17 +440,17 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.sidebar</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;                 <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;                 <span class="hljs-comment">/* Adicione isto */</span>
   <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;
 }
 </code></pre>
 
           <p>
-            O elemento da barra lateral (sidebar) ficou estreito, mas o resto 
+            O elemento da barra lateral (<em>sidebar</em>) ficou estreito, mas o resto 
             das caixas se manteve na mesma posição. Todos os blocos ainda estão 
             sendo renderizados verticalmente um depois do outro. Esse é o 
-            comportamento que vamos alterar com o floats.
+            comportamento que vamos alterar com o <code>float</code>.
             
           </p>
 
@@ -486,7 +484,7 @@
           <p>
             A propriedade <code>float</code> da CSS nos permite controlar 
             a posição <em>horizontal</em> de um elemento. Ao colocar o 
-            sidebar para “flutuar” na esquerda, estamos falando para o navegador 
+            <em>sidebar</em> para “flutuar” na esquerda, estamos falando para o navegador 
             para alinhá-lo no lado esquerdo da página. Vá em frente e 
             flutue nosso <em>sidebar</em> com a seguinte linha:
             
@@ -495,7 +493,7 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.sidebar</span> {
-  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Adicione isto */</span>
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>;
@@ -656,7 +654,7 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.content</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">650px</span>;                 <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">650px</span>;                 <span class="hljs-comment">/* Adicione isto */</span>
   <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;
 }
@@ -700,7 +698,7 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.content</span> {
-  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">float</span>: left;                  <span class="hljs-comment">/* Adicione isto */</span>
   <span class="hljs-attribute">width</span>: <span class="hljs-number">650px</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;
@@ -815,7 +813,7 @@
           ><code><span class="hljs-selector-class">.page</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;  <span class="hljs-comment">/* Adicione isto */</span>
 }
 </code></pre>
 
@@ -851,7 +849,7 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.footer</span> {
-  <span class="hljs-attribute">clear</span>: both;            <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">clear</span>: both;            <span class="hljs-comment">/* Adicione isto */</span>
   <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D6E9FE</span>;
 }
@@ -996,8 +994,8 @@
           ><code><span class="hljs-selector-class">.page</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-  <span class="hljs-attribute">overflow</span>: hidden;             <span class="hljs-comment">/* Add this */</span>
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EAEDF0</span>;    <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">overflow</span>: hidden;             <span class="hljs-comment">/* Adicione isto */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EAEDF0</span>;    <span class="hljs-comment">/* Adicione isto */</span>
 }
 </code></pre>
 
@@ -1090,12 +1088,12 @@
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'container'</span>&gt;</span>                 <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'container'</span>&gt;</span>                 <span class="hljs-comment">&lt;!-- Adicione isto --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'sidebar'</span>&gt;</span>Sidebar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>                                  <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>                                  <span class="hljs-comment">&lt;!-- Adicione isto --&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'footer'</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -1648,7 +1646,7 @@
               <img
                 class="about__logo"
                 src="../../img/interneting-is-hard-logo-97b225.svg"
-                alt="Wi-fi signal with exclamation mark through it"
+                alt="Ícone do sinal Wi-Fi com um ponto de exclamação no meio"
               />
               <div class="about__rule-after"></div>
             </div>
@@ -1659,7 +1657,7 @@
                   ><img
                     class="about__twitter"
                     src="../../img/twitter-icon-29cd78.png"
-                    alt="Twitter logo"
+                    alt="Logotipo do Twitter"
                 /></a>
 
                 <a
@@ -1668,32 +1666,32 @@
                   ><img
                     class="about__facebook"
                     src="../../img/facebook-icon-e6def5.png"
-                    alt="Facebook logo"
+                    alt="Logotipo do Facebook"
                 /></a>
 
                 <a class="js-obfuscated-email__mailto"
                   ><img
                     class="about__email"
                     src="../../img/email-icon-a4c505.png"
-                    alt="Envelope icon"
+                    alt="Ícone de Envelope de carta"
                 /></a>
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutorials. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir dos leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1707,14 +1705,14 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
                       class="input-text input-text--small
                               about__mailing-list-email js-about__mailing-list-email"
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="seunome@exemplo.com"
                     />
 
                     <div class="cta-button about__mailing-list-button">
@@ -1723,7 +1721,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1735,11 +1733,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1757,16 +1755,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
