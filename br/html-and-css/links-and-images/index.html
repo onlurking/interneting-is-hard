@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>Links and Images Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Links e Imagens | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -107,11 +107,11 @@
 
     <meta
       property="og:title"
-      content="Links and Images | HTML &amp; CSS Is Hard"
+      content="Links e Imagens | HTML &amp; CSS é Difícil"
     />
     <meta
       property="og:description"
-      content="A friendly HTML tutorial about connecting web pages to each other"
+      content="Um tutorial amigável sobre conectar páginas web umas as outras"
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="/html-and-css/links-and-images/" />
@@ -125,11 +125,11 @@
     <meta name="twitter:site" content="@internetinghard" />
     <meta
       name="twitter:title"
-      content="Links and Images | HTML &amp; CSS Is Hard"
+      content="Links e Imagens | HTML &amp; CSS é Difícil"
     />
     <meta
       name="twitter:description"
-      content="A friendly HTML tutorial about connecting web pages to each other"
+      content="Um tutorial amigável sobre conectar páginas web umas as outras"
     />
     <meta
       name="twitter:image"
@@ -169,12 +169,12 @@
             ><img
               class="main-nav__logo"
               src="../../img/interneting-is-hard-logo-97b225.svg"
-              alt="Wifi signal with exclamation mark through it"
+              alt="Ícone do sinal de Wi-Fi com ponto de exclamação nele"
           /></a>
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -187,16 +187,16 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">Links and Images</h1>
+            <h1 class="heading__title">Links e Imagens</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 3. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 3. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly HTML tutorial about connecting web pages to each other
+              Um tutorial amigável sobre conectar páginas web umas as outras
             </div>
           </div>
         </div>
@@ -205,6 +205,11 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
+            No <a href="../basic-web-pages/index.html">capítulo anterior</a> 
+            cobrimos alguns elementos da HTML bem importantes, mas nós só 
+            construímos uma única página web. Os links e imagens são 
+            fundamentalmente diferentes daqueles elementos porque eles 
+            tratam de recursos (imagens e outras páginas web) externos.
             The
             <a href="../basic-web-pages/index.html">previous chapter</a> covered
             some very important HTML elements, but we were only dealing with a
@@ -222,7 +227,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Diagram: image pointing to &lt;img&gt; element in a web page and HTML link pointing from web page to another web page"
+                  alt="Diagrama: imagem apontando para elemento &lt;img&gt; em uma página web e ligação HTML apontando de uma página para outra"
                   src="links-and-images-6820c7.png"
                   width="511"
                   height="230"
@@ -232,18 +237,19 @@
           </figure>
 
           <p>
-            To use links and images, we’ll also need to learn about another
-            component of the HTML syntax: attributes. Attributes will open up a
-            whole new world of possibilities for our web pages.
+            Para usar links e imagens, também precisamos aprender sobre outro 
+            componente da sintaxe da HTML: os atributos. Os atributos vão 
+            apresentar um mundo completamente novo de possibilidade para 
+            as nossas páginas web.
           </p>
 
           <p>
-            In this chapter, we’ll create a simple website composed of several
-            HTML documents and image files. It may be entitled
-            <em>Links and Images</em>, but the central theme of this chapter is
-            actually around file and folder organization. As we start working
-            with multiple files, we’ll discover the importance of being an
-            organized web developer.
+            Neste capítulo, vamos criar uma página web composta de várias outras 
+            páginas em HTML com documentos e arquivos de imagens. Vamos chamar 
+            de <em>Links e Imagens</em>, mas o tema central deste capítulo gira em torno 
+            da organização de pastas e arquivos que compõem uma página web. Assim 
+            que começarmos a trabalhar com vários arquivos, vamos descobrir a 
+            importância de ser um desenvolvedor web organizado.
           </p>
         </div>
       </div>
@@ -251,14 +257,15 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            This chapter is all about linking web pages together, so we’ll need
-            to create some new HTML files before we code anything up. We’ll be
-            working with three separate web pages this chapter, along with a few
-            image files of various formats:
+            Este capítulo é todo sobre a ligação entre páginas web, desta forma 
+            vamos precisar criar alguns arquivos HTML antes de iniciar o 
+            desenvolvimento de qualquer coisa. Vamos trabalhar com três páginas 
+            web separadas neste capítulo, juntamente com alguns arquivos de 
+            imagem em diferentes formatos:
           </p>
 
           <figure class="diagram">
@@ -266,7 +273,7 @@
               <div class="diagram__padding" style="padding-bottom: 61.875%">
                 <img
                   class="diagram__image"
-                  alt="Diagram: the 7 project files for this project (3 HTML files, 4 image files)"
+                  alt="Diagrama: os 7 arquivos para este projeto (3 arquivos HTML, 4 arquivos de  imagens)"
                   src="links-and-images-example-7ab70f.png"
                   width="480"
                   height="297"
@@ -276,23 +283,22 @@
           </figure>
 
           <p>
-            To get started, create a new folder called
-            <code>links-and-images</code> to store all our files. You should be
-            able to do this in Atom using the same process we followed in the
-            <a href="../introduction/index.html#atom-text-editor"
-              >Introduction</a
-            >
-            chapter.
+            Para começar, vamos criar uma nova pasta chamada 
+            <code>links-and-images</code> para armazenar todos os nossos 
+            arquivos. Você consegue fazer isso pelo Atom usando o mesmo 
+            processo que utilizamos para criar a pasta e o arquivo no 
+            capítulo anterior, <a href="../introduction/index.html#atom-text-editor"
+            >Introduction</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="links-page">Links Page</h3>
+            <h3 class="subsubheading__heading" id="links-page">Página Links</h3>
           </div>
 
           <p>
-            Next, add a new file to that folder called
-            <code>links.html</code> and insert the following HTML template. This
-            should be familiar to you from the previous chapter.
+            Depois de criar uma nova pasta, vamos criar um arquivo chamado 
+            <code>links.html</code> dentro dela e usaremos o seguinte código HTML.
+            Isso já deve ser familiar para você do capítulo anterior.
           </p>
 
           <pre
@@ -309,11 +315,11 @@
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="images-page">Images Page</h3>
+            <h3 class="subsubheading__heading" id="images-page">Página Imagens</h3>
           </div>
 
           <p>
-            In the same folder, create another file called
+            Na mesma pasta, crie outro arquivo chamado 
             <code>images.html</code>:
           </p>
 
@@ -322,10 +328,10 @@
           ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Images<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Imagens<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Images<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Imagens<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
@@ -335,9 +341,10 @@
           </div>
 
           <p>
-            Our last page will help us demonstrate relative links. Create a new
-            folder in <code>links-and-images</code> called <code>misc</code>,
-            then add a new file called <code>extras.html</code>:
+            Nossa última página nos ajudará a demonstrar ligações relativas. Crie 
+            uma nova página em <code>links-and-images</code> chamada 
+            <code>misc</code>, e então adicione um novo arquivo chamado 
+            <code>extras.html</code>:
           </p>
 
           <pre
@@ -354,25 +361,26 @@
 </code></pre>
 
           <p>
-            Note that you can create a new folder in Atom by right-clicking the
-            file browser pane and selecting <strong>New Folder</strong> in the
-            contextual menu. Life is better when you never need to leave your
-            text editor.
+            Você pode criar um nova pasta no Atom clicando com o botão direito 
+            no painel do navegador de arquivos e selecionar <strong>Nova 
+              pasta</strong> no menu de contexto. A vida fica melhor quando 
+              você não precisa deixar seu editor de texto para abrir o gerenciador 
+              de arquivos.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="image-downloads">
-              Image Downloads
+              Baixar as Imagens
             </h3>
           </div>
 
           <p>
-            We’ll be embedding images in our <code>images.html</code> file, so
-            be sure to download these
-            <a href="images-4149f7.zip">example mochi images</a>, too. Unzip
-            them in your <code>links-and-images</code> folder, keeping the
-            parent <code>images</code> folder from the ZIP file. Your project
-            should now look like this:
+            Iremos inserir chamadas das imagens no nosso arquivo 
+            <code>images.html</code>, então tenha certeza de que baixou essas 
+            também <a href="images-4149f7.zip">imagens de mochi de exemplo</a>. 
+            Descompacte-as na sua pasta <code>links-and-images</code>, mantenha 
+            a pasta <code>images</code> do arquivo compactado. Seu projeto deve 
+            parecer como a seguir:
           </p>
 
           <figure class="diagram">
@@ -383,7 +391,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Screenshot: Atom’s file browser after creating the example files"
+                  alt="Captura de tela: Navegador de arquivos do Atom depois de criar os arquivos de exemplo"
                   src="example-files-b21613.png"
                   width="241"
                   height="316"
@@ -398,29 +406,29 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="anchors">
-              <span>Anchors</span>
+              <span>Âncoras</span>
             </h2>
           </div>
 
           <p>
-            Links are created with the <code>&lt;a&gt;</code> element, which
-            stands for “anchor”. It works just like all the elements in the
-            previous chapter: when you wrap some text in
-            <code>&lt;a&gt;</code> tags, it alters the meaning of that content.
-            Let’s take a look by adding the following paragraph to the
-            <code>&lt;body&gt;</code> element of <code>links.html</code>:
+            Links são criadas com o elemento <code>&lt;a&gt;</code>, que 
+            significa “âncora”. Funciona como todos os outros elementos 
+            do capítulo anterior: quando delimita algum texto na etiqueta 
+            (tag) <code>&lt;a&gt;</code>, ele muda o significado do conteúdo. 
+            Vamos dar uma olhada adicionando no seguinte parágrafo do 
+            elemento <code>&lt;body&gt;</code> do <code>links.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This example is about links and <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>images<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este exemplo é sobre links e <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>imagens<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you load the page in a web browser, you’ll notice that the
-            <code>&lt;a&gt;</code> element doesn’t look like a link at all. Yes,
-            unfortunately, the <code>&lt;a&gt;</code> element on its own doesn’t
-            do much of anything.
+            Se você carregar a página no navegador irá notar que o elemento 
+            <code>&lt;a&gt;</code> não parece como um link, afinal. Sim, 
+            infelizmente, o elemento <code>&lt;a&gt;</code>sozinho não faz 
+            muita coisa.
           </p>
         </div>
       </div>
@@ -428,13 +436,13 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="links"><span>Links</span></h2>
+            <h2 class="subheading__heading" id="links"><span>Ligações</span></h2>
           </div>
 
           <p>
-            In the same way that an element adds meaning to the content it
-            contains, an HTML “attribute” adds meaning to the element it’s
-            attached to.
+            Da mesma forma que um elemento adiciona significado a conteúdo 
+            que o contém, um atributo HTML adiciona significado ao elemento 
+            ligado a ele.
           </p>
 
           <figure class="diagram">
@@ -445,7 +453,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Diagram: HTML attribute attached to an HTML element, which is attached to raw content"
+                  alt="Diagrama: Atributo HTML  junto a um elemento HTML, que é definido ao conteúdo puro"
                   src="html-attributes-6f5690.png"
                   width="279"
                   height="293"
@@ -455,35 +463,32 @@
           </figure>
 
           <p>
-            Different elements allow different attributes, and you can refer to
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >MDN</a
-            >
-            for details about which elements accept which attributes. Right now,
-            we’re concerned with the <code>href</code> attribute because it
-            determines where the user goes when they click an
-            <code>&lt;a&gt;</code> element. Update your link to match the
+            Elementos diferentes permitem o uso de diferentes atributos, e você 
+            pode verificar na <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+            >MDN</a> para detalhes sobre quais elementos aceitam quais atributos. 
+            Neste momento, estamos preocupados com o atributo <code>href</code> 
+            porque ele determina para onde o usuário vai quando ele clicar em 
+            um elemento <code>&lt;a&gt;</code>. Atualize seu link para parecer 
+            como o seguinte:</code> element. Update your link to match the
             following:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This example is about links and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'images.html'</span>&gt;</span>images<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este exemplo é sobre links e <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'images.html'</span>&gt;</span>imagens<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Notice how attributes live inside the <em>opening</em> tag. The
-            attribute name comes first, then an equal sign, then the “value” of
-            the attribute in either single or double quotation marks. This
-            syntax distinguishes attributes from content (which goes between the
-            tags).
+            Note como os atributos estão dentro da etiqueta de <em>abertura</em>. O 
+            nome do atributo vem primeiro, depois um sinal de igual, e entre aspas 
+            simples o “valor” do atributo. Essa sintaxe distingue atributos de 
+            conteúdos (que vão entre as etiquetas).
           </p>
 
           <p class="nudge-desktop--smaller">
-            The extra bit of information provided by the
-            <code>href</code> attribute tells the browser that this
-            <code>&lt;a&gt;</code> element is in fact a link, and it should
-            render the content in its default blue text:
+            O parte da informação provida pelo atributos <code>href</code> diz ao 
+            navegador que esse elemento <code>&lt;a&gt;</code> é na verdade um link, e 
+            deve renderizar o conteúdo em seu texto padrão azul:
           </p>
 
           <figure class="diagram">
@@ -494,7 +499,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Web page with a blue &lt;a href&gt; link in it"
+                  alt="Página web com um link &lt;a href&gt; azul nele"
                   src="html-link-href-element-61348e.png"
                   width="404"
                   height="187"
@@ -512,18 +517,19 @@
               class="subheading__heading"
               id="absolute-relative-and-root-relative-links"
             >
-              <span>Absolute, Relative, and Root-Relative Links</span>
+              <span>Ligações Absolutas, Relativas, e Raiz-Relativa</span>
             </h2>
           </div>
 
           <p>
-            Now that we’re working with links, we need to understand how a
-            website is structured. For our purposes, a website is just a
-            collection of HTML files organized into folders. To refer to those
-            files from inside of another file, the Internet uses “uniform
-            resource locators” (URLs). Depending on what you’re referring to,
-            URLs can take different forms. The three types of URLs we’ll be
-            dealing with are highlighted below:
+            Agora que estamos trabalhando com ligações, precisamos entender 
+            como uma página web é estruturada. Para os nossos propósitos, uma 
+            página web é um amontoado de arquivos HTML organizados em pastas. 
+            Para referenciar esses arquivos dentro de outros arquivos, a 
+            Internet utiliza os “Localizadores de Recursos Uniformes” (URLs). 
+            Dependendo do que você está se referindo, as URLs podem assumir 
+            diferentes formas. Os três tipos de URLs quais iremos trabalhar 
+            estão listados abaixo:
           </p>
 
           <figure class="diagram">
@@ -544,10 +550,11 @@
           </figure>
 
           <p>
-            Absolute, relative, and root-relative links refer to the value of
-            the <code>href</code> attribute. The next few sections will explain
-            how and when to use each of them. But first, let’s add the following
-            content to our <code>links.html</code> file:
+            Ligações absolutas, relativas, e raiz-relativas se referem aos 
+            valores que o atributo <code>href</code> pode conter. As próximas 
+            seções irão explicar como e quando devemos usar cada um deles. 
+            Mas primeiro, vamos adicionar o conteúdo a seguir ao nosso 
+            arquivo <code>links.html</code>:
           </p>
 
           <pre
@@ -561,15 +568,16 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="absolute-links">
-              Absolute Links
+              Ligações Absolutas
             </h3>
           </div>
 
           <p>
-            “Absolute” links are the most detailed way you can refer to a web
-            resource. They start with the “scheme” (typically
-            <code>http://</code> or <code>https://</code>), followed by the
-            domain name of the website, then the path of the target web page.
+            Ligações “absolutas” são a forma mais detalhada que você pode usar 
+            para se referir a um recurso na web. Elas começam com o “esquema” 
+            (scheme) (tipicamente <code>http://</code> ou <code>https://</code>), 
+            seguidos pelo nome do domínio da página web, e por fim o caminho 
+            do alvo na página.
           </p>
 
           <figure class="diagram">
@@ -590,23 +598,24 @@
           </figure>
 
           <p>
-            For example, try creating a link to the Mozilla Developer Network’s
-            HTML element reference:
+            Por exemplo, tente criar um link de referência para o elemento 
+            HTML da Mozilla Developer Network:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Absolute links, like to
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Links absolutos, como o da
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://developer.mozilla.org/en-US/docs/Web/HTML'</span>&gt;</span>Mozilla
-    Developer Network<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, which is a very good resource for web
-    developers.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    Developer Network<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, que é uma boa referência para desenvolvedores web.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            It’s possible to use absolute links to refer to pages in your own
-            website, but hard-coding your domain name everywhere can make for
-            some tricky situations. It’s usually a better idea to reserve
-            absolute links only for directing users to a different website.
+            É possível utilizar ligações absolutas para referenciar páginas 
+            no seu próprio site, mas usar o nome do domínio em todos os lugares 
+            pode trazer problemas em algumas situações. Usualmente utilizamos 
+            ligações absolutas quando queremos redirecionar o usuário para uma 
+            página web diferente, fora do seu domínio.
           </p>
 
           <figure class="diagram">
@@ -628,34 +637,35 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="relative-links">
-              Relative Links
+              Ligações Relativas
             </h3>
           </div>
 
           <p class="nudge-desktop--smaller">
-            “Relative” links point to another file in your website from the
-            vantage point of the file you’re editing. It’s implied that the
-            scheme and domain name are the same as the current page, so the only
-            thing you need to supply is the path.
+            Ligações “relativas” apontam para outro arquivo dentro da sua página 
+            web com a vantagem de apontar para o arquivo que você está editando. 
+            Está implícito que o esquema e o nome de domínio são os mesmos como 
+            os da página atual, então a única coisa que você precisa é providenciar 
+            o caminho.
           </p>
 
           <p>
-            Here’s how we can link to our <code>extras.html</code> file from
-            inside of <code>links.html</code>:
+            Aqui está como nós podemos ligar nosso arquivo <code>extras.html</code> 
+            de dentro de <code>links.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Relative links, like to our <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>extras
-    page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ligações relativas, como na nossa <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>página extras
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            In this case, the <code>href</code> attribute represents the file
-            path to <code>extras.html</code> from the
-            <code>links.html</code> file. Since <code>extras.html</code> isn’t
-            in the same folder as <code>links.html</code>, we need to include
-            the <code>misc</code> folder in the URL.
+            Neste caso, o atributo <code>href</code> representa o caminho do 
+            arquivo <code>extras.html</code> a partir do arquivo 
+            <code>links.html</code>. Como o <code>extras.html</code> não está 
+            na mesma pasta de <code>links.html</code>, precisamos incluir a 
+            pasta <code>misc</code> na URL.
           </p>
 
           <figure class="diagram">
@@ -676,9 +686,10 @@
           </figure>
 
           <p>
-            Each folder and file in a path is separated by a forward slash
-            (<code>/</code>). So, if we were trying to get to a file that was
-            <em>two</em> folders deep, we’d need a URL like this:
+            Cada pasta e arquivo no caminho é separado por uma barra 
+            (<code>/</code>). Então, se quisermos tentar acessar um arquivo 
+            que está <em>duas</em> pastas abaixo da arquitetura de pastas, 
+            precisamos de um caminho na URL como esse:
           </p>
 
           <pre class="highlight"><code>misc/other-folder/extras.html
@@ -686,17 +697,18 @@
 
           <div class="subsubsubheading content__subsubsubheading">
             <h4 class="subsubsubheading__heading" id="parent-folders">
-              Parent Folders
+              Pastas mães
             </h4>
           </div>
 
           <p>
-            That works for referring to files that are in the same folder or a
-            deeper folder. What about linking to pages that are in a directory
-            <em>above</em> the current file? Let’s try creating relative links
-            to <code>links.html</code> and <code>images.html</code> from within
-            our <code>extras.html</code> file. Add this to
-            <code>extras.html</code>:
+            Isso funciona para referências a arquivos que estão na mesma pasta 
+            ou em níveis abaixo da pasta mãe de onde o arquivo original está. E 
+            como fazemos ligações com páginas que estão em níveis de diretório 
+            <em>acima</em> do arquivo original? Vamos tentar criar ligações 
+            relativas de <code>links.html</code> e <code>images.html</code> a 
+            partir do nosso arquivo <code>extras.html</code>. Adicione isso 
+            ao <code>extras.html</code>:
           </p>
 
           <pre
@@ -707,14 +719,14 @@
 </code></pre>
 
           <p>
-            When you click either of those links in a web browser, it will
-            complain that the page doesn’t exist. Examining the address bar,
-            you’ll discover that the browser is trying to load
-            <code>misc/links.html</code> and
-            <code>misc/images.html</code>&mdash;it’s looking in the wrong
-            folder! That’s because our links are <em>relative</em> to the
-            location of <code>extras.html</code>, which lives in the
-            <code>misc</code> folder.
+            Quando você clica em qualquer uma dessas ligações em um navegador 
+            web, ele vai reclamar que a página não existe. Examinando bem a 
+            barra de navegação, você irá descobrir que o navegador está 
+            tentando acessar <code>misc/links.html</code> e 
+            <code>misc/links.html</code>&mdash; ele está olhando na pasta 
+            errada! Isso acontece porque nossas ligações são <em>relativas</em> 
+            a localização do arquivo <code>extras.html</code>, que está na 
+            pasta <code>misc</code>.
           </p>
 
           <figure class="diagram">
@@ -735,8 +747,11 @@
           </figure>
 
           <p>
-            To fix this, we need the <code>..</code> syntax. Two consecutive
-            dots in a file path represent a pointer to the parent directory:
+            Para corrigir isso, precisamos usar a sintaxe de dois pontos 
+            consecutivos (<code>..</code>) no caminho de um arquivo que 
+            representa o apontamento para uma pasta mãe, ou seja, uma 
+            pasta acima da posição do arquivo original que está sendo 
+            editado:
           </p>
 
           <pre
@@ -747,9 +762,9 @@
 </code></pre>
 
           <p>
-            This is like saying, “I know <code>extras.html</code> is in the
-            <code>misc</code> folder. Go up a folder and look for
-            <code>links.html</code> and <code>images.html</code> in there.”
+            Isso é como dizer “Eu sei que o <code>extras.html</code> está 
+            na pasta <code>misc</code>. Suba um nível nas pastas e procure 
+            por <code>links.html</code> e <code>images.html</code> lá.”
           </p>
 
           <figure class="diagram">
@@ -770,42 +785,44 @@
           </figure>
 
           <p class="nudge-desktop--smaller">
-            To navigate up through multiple directories, use multiple
-            <code>..</code> references, like so:
+            Para navegador em múltiplos níveis acima, use múltiplas 
+            referências com os <code>..</code>, como a seguir:
           </p>
 
           <pre class="highlight"><code>../../elsewhere.html
 </code></pre>
 
           <p>
-            Relative links are nice because they let you move around entire
-            folders without having to update all the <code>href</code>’s on your
-            <code>&lt;a&gt;</code> elements, but they can get a little confusing
-            when all your links start with a bunch of dots. They’re best for
-            referring to resources in the same folder or in a standalone section
-            of your website.
+            Ligações relativas são bacanas, porque elas permitem que você se 
+            mova entre as diferentes pastas sem que seja necessário atualizar 
+            todos os atributos <code>href</code> nos elementos <code>&lt;a&gt;</code> 
+            das suas páginas, mas eles podem ser um pouco confusos quando 
+            todas as ligações começam com muitos pontos. Elas são boas para 
+            referenciar recursos na mesma pasta ou em uma seção específica 
+            da sua página web.
           </p>
 
           <p>
-            For example, all the images in
-            <a href="../index.html"><em>HTML &amp; CSS Is Hard</em></a> are
-            loaded with relative URLs (we’ll learn how to do images a moment).
-            This allows us to rename any of our chapter slugs without having to
-            update all our image paths.
+            Por exemplo, todas as imagens de <a href="../index.html"><em>HTML 
+              &amp; CSS é Difícil</em></a> são carregadas com ligações relativas 
+              (já vamos aprender a como usar imagens). Isso nos permite renomear 
+              qualquer um dos nossos capítulos sem precisar atualizar todos os 
+              caminhos das imagens.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="root-relative-links">
-              Root-Relative Links
+              Ligações Raiz-Relativa
             </h3>
           </div>
 
           <p>
-            “Root-relative” links are similar to the previous section, but
-            instead of being relative to the current page, they’re relative to
-            the “root” of the entire website. For instance, if your website is
-            hosted on <code>our-site.com</code>, all root-relative URLs will be
-            relative to <code>our-site.com</code>.
+            Ligações “raiz-relativa” são similares as ligações relativas da 
+            seção anterior, mas ao invés de serem relativas a página atual, 
+            elas são relativas a base da página web, ou seja, normalmente 
+            do index.html. Exemplo, se sua página web está hospedada no domínio 
+            <code>our-site.com</code>, todas as URLs raiz-relativas serão relativas 
+            a <code>our-site.com</code>.
 
             <figure class="diagram">
               <div class="diagram__wrapper" style="max-width: 580px">
@@ -826,40 +843,42 @@
           </p>
 
           <p>
-            Unfortunately, there is one caveat to our discussion of
-            root-relative links: this entire tutorial uses local HTML files
-            instead of a website hosted on a web server. This means we won’t be
-            able to experiment with root-relative links. But, if we did have a
-            real server, the link to our home page would look like this:
+            Infelizmente, tem um problema nessa nossa discussão de ligações 
+            raiz-relativa: tudo que iremos fazer nesse momento utiliza 
+            arquivos HTML locais ao invés de páginas web hospedadas em um 
+            servidor web. Isso significa que nós não conseguiremos 
+            experimentar ligações de raiz-relativa. Mas, se nós tivéssemos 
+            um servidor real, a ligação para a nossa página se pareceria 
+            como isso:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- This won't work for our local HTML files --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Isso não irá funcionar para nossos arquivos HTML locais --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Root-relative links, like to the <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'/'</span>&gt;</span>home page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> of our website,
     but those aren't useful to us right now.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            The only difference between a root-relative link and a relative one
-            is that the former <em>starts</em> with a forward slash. That
-            initial forward slash represents the root of your site. You can add
-            more folders and files to the path after that initial slash, just
-            like relative links. The following path will work correctly no
-            matter where the current page is located (even in
-            <code>misc/extras.html</code>):
+            A única diferença entre uma ligação raiz-relativa e uma ligação 
+            relativa é que a referência <em>inicia</em> com uma barra. Essa 
+            barra inicial representa a raiz da nossa página web. Você pode 
+            adicionar mais pastas e arquivos ao caminho depois dessa barra 
+            inicial, assim como ligações relativas. O caminho a seguir irá 
+            funcionar corretamente não importa onde a atual página estiver 
+            localizada (mesmo se estivesse em <code>misc/extras.html</code>):
           </p>
 
           <pre class="highlight"><code>/images.html
 </code></pre>
 
           <p>
-            Root-relative links are some of the most useful kinds of links.
-            They’re explicit enough to avoid the potential confusion of relative
-            links, but they’re not overly explicit like absolute links. You’ll
-            see a lot of them throughout your web development career, especially
-            in larger websites where it’s hard to keep track of relative
-            references.
+            Ligações raiz-relativa são os tipos de ligações mais úteis. Elas 
+            são explícitas o suficiente para evitar uma potencial confusão de 
+            ligações relativas, mas não são tão explícitas quando ligações 
+            absolutas. Você verá muitas delas na sua carreira de desenvolvedor 
+            web, especialmente em grandes páginas web onde é difícil manter a 
+            localização de referências relativas.
           </p>
         </div>
       </div>
@@ -873,21 +892,22 @@
           </div>
 
           <p>
-            Attributes alter the meaning of HTML elements, and sometimes you
-            need to modify more than one aspect of an element. For example,
-            <code>&lt;a&gt;</code> elements also accept a
-            <code>target</code> attribute that defines where to display the page
-            when the user clicks the link. By default, most browsers replace the
-            current page with the new one. We can use the
-            <code>target</code> attribute to ask the browser to open a link in a
-            new window/tab.
+            Atributos alteram o significado de elementos HTML, e algumas vezes 
+            você precisa modificar mais de um aspecto de um elemento. Por 
+            exemplo, elementos <code>&lt;a&gt;</code> também aceitam o 
+            atributo <code>target</code> que define onde a página será 
+            exibida quando um usuário clicar sobre a ligação. Por padrão, 
+            a maioria dos navegadores carregam a página destino na mesma 
+            janela da página atual. Nós podemos utilizar o atributo 
+            <code>target</code> para pedir que o navegador abra a ligação 
+            em uma nova janela/aba.
           </p>
 
           <p>
-            Try changing our absolute link in <code>links.html</code> to match
-            the following. Notice how the second attribute looks just like the
-            first, but they’re separated from each other by a space (or a
-            newline):
+            Tente alterar nossa ligação absoluta no arquivo <code>links.html</code> 
+            para ficar como o seguinte. Preste atenção em como o segundo 
+            atributo se parece como o primeiro, mas eles são separados um 
+            do outro por um espaço (ou uma nova linha):
           </p>
 
           <pre
@@ -899,6 +919,14 @@
 </code></pre>
 
           <p>
+            O atributo <code>target</code> tem alguns valores já pré-definidos 
+            que tem um significado especial para os navegadores, mas o mais 
+            comum é o <code>_blank</code>, que representa uma nova aba ou 
+            janela. Você pode ler mais sobre na <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+            >MDN</a
+          >.
+
             The <code>target</code> attribute has a few pre-defined values that
             carry special meaning for web browsers, but the most common one is
             <code>_blank</code>, which specifies a new tab or window. You can
@@ -915,45 +943,48 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="naming-conventions">
-              <span>Naming Conventions</span>
+              <span>Convenção de Nomes</span>
             </h2>
           </div>
 
           <p>
-            You’ll notice that none of our files or folders have spaces in their
-            names. That’s on purpose. Spaces in URLs require special handling
-            and should be avoided at all costs. To see what we’re talking about,
-            try creating a new file in our <code>links-and-images</code> project
-            called <code>spaces are bad.html</code>. Add a little bit of text to
-            it, then open it in Google Chrome or Safari (Firefox cheats and
-            preserves the spaces).
+            Você deve ter notado que nenhum dos nossos arquivos ou pastas tem 
+            espaços no seus nomes. Isso é de propósito. Espaços em URLs 
+            requerem de um tratamento especial e devem ser evitados a todo 
+            custo. Para ver o que estamos falando, tente criar um novo arquivo 
+            na pasta <code>links-and-images</code> do projeto, chamada 
+            <code>spaces are bad.html</code>. Adicione um pequeno texto a ela, 
+            depois abra-o em seu navegador de preferência (o Firefox 
+            trapaceia e preserva o espaço).
           </p>
 
           <pre class="highlight"><code>links-and-images/spaces%20are%20bad.html
 </code></pre>
 
           <p>
-            In the address bar, you’ll see that all our spaces have been
-            replaced with <code>%20</code>, as shown above. Spaces aren’t
-            allowed in URLs, and that’s the special encoding used to represent
-            them. Instead of a space, you should always use a hyphen, as we’ve
-            been doing throughout this tutorial. It’s also a good idea to use
-            all lowercase characters for consistency.
+            Na barra de endereço, você verá que os espaços foram substituídos 
+            por <code>%20</code>, como mostrado acima. Espaços não são 
+            permitidos em URLs, e essa é a codificação especial utilizada 
+            para representá-los. Ao invés de espaço, você deve sempre utilizar 
+            um hífen, como temos feito em todo esse tutorial. É também uma 
+            boa ideia sempre usar caracteres em  minúsculo, para manter a 
+            consistência.
           </p>
 
           <p>
-            Notice how there’s a direct connection between our file/folder names
-            and the URL for the web page they represent. The names of our
-            folders and files determine the slugs for our web pages. They’re
-            visible to the user, which means you should put in as much effort
-            into naming your files as you put into creating the content they
-            contain.
+            Note como tem uma conexão direta entre os nomes de pastas/arquivos 
+            e a URL para a página que ela representa. Os nomes das nossas pastas 
+            e arquivos determinam o caminho para nossa página web. Eles são 
+            visíveis para o usuário, o que significa que você deve se esforçar 
+            para nomear seus arquivos assim como você se esforça para criar o 
+            conteúdo que o contém.
           </p>
 
           <p>
-            These naming conventions apply to <em>all</em> of the files in your
-            site&mdash;not just HTML files. CSS files, JavaScript files, and
-            images should avoid spaces and have consistent capitalization, too.
+            Essas convenções de nomes são aplicadas a <em>todos</em> os arquivos 
+            na sua página&mdash;não só nos arquivos HTML. Arquivos CSS, de 
+            JavaScript, e imagens devem evitar espaços e devem manter 
+            consistências na sua capitalização, ou seja, uso de maiúsculas.
           </p>
         </div>
       </div>
@@ -961,7 +992,7 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="images"><span>Images</span></h2>
+            <h2 class="subheading__heading" id="images"><span>Imagens</span></h2>
           </div>
 
           <p>
