@@ -645,31 +645,31 @@
           </div>
 
           <p>
-            Whenever you surround a piece of text with HTML tags, you’re adding
-            new meaning to that text. Wrapping content in
-            <code>&lt;ul&gt;</code> tags tells a browser that whatever is inside
-            should be rendered as an “unordered list”. To denote individual
-            items in that list, you wrap them in <code>&lt;li&gt;</code> tags,
-            like so:
+            Onde quer que tenha um pedaço de texto com etiquetas HTML, você 
+            estará adicionando novo significado àquele texto. Empacotar o conteúdo 
+            em uma etiqueta <code>&lt;ul&gt;</code> vai dizer para o navegador 
+            que o que quer que esteja dentro deve ser renderizado como uma 
+            “lista não-ordenada”. Para mostrar ítens nessa lista, você deve 
+            empacotá-los em etiquetas <code>&lt;li&gt;</code>, como essas:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Lists<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is how you make an unordered list:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>É assim que você cria listas não-ordenadas:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Add a "ul" element (it stands for unordered list)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Add each item in its own "li" element<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>They don't need to be in any particular order<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Adiciona um elemento "ul" (isso significa lista não-ordenada)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Adiciona cada item em seu próprio elemento "li"<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Eles não precisam estar em uma ordem<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 
           <p>
-            After adding this markup to the <code>&lt;body&gt;</code> element
-            (underneath the existing content), you should see a bulleted list
-            with a dedicated bullet for each <code>&lt;li&gt;</code> element:
+            Depois de adicionar essa marcação ao elemento <code>&lt;body&gt;</code> 
+            (abaixo do conteúdo já existente), você deve ver uma lista com 
+            bolinhas, com uma bolinha para cada elemento <code>&lt;li&gt;</code>:
           </p>
 
           <figure class="diagram">
@@ -680,7 +680,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Web page showing a &lt;ul&gt; with &lt;li&gt; elements inside of it"
+                  alt="Página web mostrando um &lt;ul&gt; com elementos &lt;li&gt; dentro dele"
                   src="html-unordered-lists-f45526.png"
                   width="516"
                   height="263"
@@ -690,47 +690,45 @@
           </figure>
 
           <p>
-            The HTML specification defines strict rules about what elements can
-            go inside other elements. In this case,
-            <code>&lt;ul&gt;</code> elements should only contain
-            <code>&lt;li&gt;</code> elements, which means you should never ever
-            write something like this:
+            A especificação HTML define regras bem restritas sobre quais elementos 
+            podem ser usados dentro de outros elementos. Nesse caso, o elemento 
+            <code>&lt;ul&gt;</code> só deve conter elementos <code>&lt;li&gt;</code> 
+            o que significa que você nunca deve escrever algo como isso:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- (This is bad!) --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- (Isso está errado!) --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Add a "ul" element (it stands for unordered list)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Adiciona um elemento "ul" (isso significa lista não-ordenada)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 
           <p>
-            Instead, you should wrap that paragraph with
-            <code>&lt;li&gt;</code> tags:
+            Ao invés disso, você deve empacotar aquele parágrafo com 
+            etiquetas <code>&lt;li&gt;</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- (Do this instead) --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- (Isso está certo.) --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Add a "ul" element (it stands for unordered list)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Adiciona um elemento "ul" (isso significa lista não-ordenada)<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 
           <p>
-            How do we know that <code>&lt;ul&gt;</code> only accepts
-            <code>&lt;li&gt;</code> elements and that
-            <code>&lt;li&gt;</code> allows nested paragraphs? Because the
+            Como nós sabemos que <code>&lt;ul&gt;</code> só aceita elementos 
+            <code>&lt;li&gt;</code> e que o <code>&lt;li&gt;</code>
+            permite parágrafos aninhados? Por que a 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
               >Mozilla Developer Network</a
-            >
-            (MDN) says so. MDN is a superb HTML element reference. We’ll try to
-            cover as much as we can about how to use basic HTML elements in this
-            tutorial, but whenever you’re not sure about a particular element,
-            do a quick Google search for
-            <strong>“MDN &lt;some-element&gt;”</strong>.
+            > (MDN), diz isso. A MDN é uma referência das braba! Vamos tentar 
+            cobrir o máximos que pudermos sobre como usar o básico dos elementos 
+            HTML neste tutorial, mas sempre que você não tiver certeza sobre um 
+            elemento em particular, faça uma pesquisa rápida no Google assim 
+            <strong>“MDN &lt;algum-elemento&gt;”</strong>.
           </p>
         </div>
       </div>
@@ -739,39 +737,38 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="ordered-lists">
-              <span>Ordered Lists</span>
+              <span>Listas Ordenadas</span>
             </h2>
           </div>
 
           <p>
-            With an unordered list, rearranging the
-            <code>&lt;li&gt;</code> elements shouldn’t change the meaning of the
-            list. If the sequence of list items does matter, you should use an
-            “ordered list” instead. To create an ordered list, simply change the
-            parent <code>&lt;ul&gt;</code> element to <code>&lt;ol&gt;</code>.
-            Append the following content to the <strong>Lists</strong> section
-            of <code>basics.html</code>:
+            COm uma lista não-ordenada, rearranjar os elementos 
+            <code>&lt;li&gt;</code>, não deve mudar o significado da lista. 
+            Se a sequência da lista dos itens importa, você deve usar uma 
+            “lista ordenada”. Para criar uma lista ordenada, simplesmente 
+            mude o elemento principal <code>&lt;ul&gt;</code> para 
+            <code>&lt;ol&gt;</code>. Coloque o seguinte conteúdo a seção de 
+            <strong>Listas</strong> do <code>basics.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is what an ordered list looks like:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Assim que uma lista ordenada se parece:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Notice the new "ol" element wrapping everything<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>But, the list item elements are the same<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Also note how the numbers increment on their own<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>You should be noticing things is this precise order, because this is
-      an ordered list<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Note o novo elemento "ol" empacotando tudo<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Mas, a lista de itens são os mesmos<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Também perceba como os números se incrementam<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Você deve estar percebendo alguma coisa nessa ordem precisa, isso por que isso é uma lista ordenada<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
 </code></pre>
 
           <p>
-            When you reload the page in your browser, you’ll notice that the
-            browser automatically incremented the count for each
-            <code>&lt;li&gt;</code> element. In
-            <a href="../hello-css/index.html">Hello, CSS</a>, we’ll learn how to
-            change what type of numbers get displayed.
+            Quando você atualizar a página no seu navegador, você irá perceber que 
+            o navegador vai automaticamente incrementar o número para cara elemento 
+            <code>&lt;li&gt;</code>. No 
+            <a href="../hello-css/index.html">Olá, CSS</a>, vamos aprender como mudar 
+            o tipos de número que é apresentado.
           </p>
 
           <figure class="diagram">
@@ -782,7 +779,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Web page showing a &lt;ol&gt; with &lt;li&gt; elements inside of it"
+                  alt="Página web mostrando um elemento &lt;ol&gt; com elementos &lt;li&gt; dentro dele"
                   src="html-ordered-lists-120411.png"
                   width="516"
                   height="388"
@@ -792,18 +789,18 @@
           </figure>
 
           <p>
-            The difference between an unordered list and an ordered list might
-            seem silly, but it really does have significance to web browsers,
-            search engines, and, of course, human readers. It’s also easier than
-            manually numbering each list item.
+            A diferença entre uma lista não-ordenada e uma ordenada pode parecer 
+            bem bobinha, mas isso realmente tem diferença para um navegador, 
+            mecanismos de buscas, e é claro, humanos. Isso também é mais fácil 
+            do que numerar manualmente cada item da lista.
           </p>
 
           <p>
-            Step-by-step procedures like recipes, instructions, and even tables
-            of contents are good candidates for ordered lists, while
-            <code>&lt;ul&gt;</code> lists are better for representing item
-            inventories, product features, pro/con comparisons, and navigational
-            menus.
+            Procedimentos passo a passo como receitas, instruções, e até mesmo 
+            tables com conteúdos são bons candidatos para listas ordenadas, 
+            enquanto lista <code>&lt;ul&gt;</code> são melhores para 
+            representar itens de inventários, funcionalidades de produtos, 
+            comparações pró/contra e menus de navegação.
           </p>
         </div>
       </div>
@@ -812,17 +809,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="emphasis-italic-elements">
-              <span>Emphasis (Italic) Elements</span>
+              <span>Elementos de Ênfase (Italico)</span>
             </h2>
           </div>
 
           <p>
-            So far, we’ve only been working with “block-level elements” (also
-            called “flow content”). The other major type of content is “inline
-            elements” or “phrasing content”, which are treated a little bit
-            differently. Block-level elements are always drawn on a new line,
-            while inline elements can affect sections of text anywhere within a
-            line.
+            Até agora, nós só trabalhamos com “elemento a nível de bloco” 
+            (também chamados “conteúdo de fluxo”). O outro grande tipo de 
+            conteúdo são os “elementos de linha” ou “conteúdo de fraseado”, 
+            que são tratados de uma forma um pouco diferente. Elementos de 
+            bloco são sempre desenhados em uma nova linha, enquanto elementos 
+            de linha podem afetar seções do texto em qualquer parte da linha.
           </p>
 
           <figure class="diagram">
@@ -833,7 +830,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Diagram: comparison of block elements (wrapping several inline elements) with inline elements (inside of a block element)"
+                  alt="Diagrama: comparação de um elemento de bloco (empacotando uma série de elementos de linha) com um elemento de linha (dentro de um elemento de bloco)"
                   src="inline-vs-block-elements-44860e.png"
                   width="414"
                   height="192"
@@ -843,28 +840,29 @@
           </figure>
 
           <p>
-            For instance, <code>&lt;p&gt;</code> is a block-level element, while
-            <code>&lt;em&gt;</code> is an inline element that affects a span of
-            text <em>inside</em> of a paragraph. It stands for “emphasis”, and
-            it’s typically displayed as italicized text. Try adding a new
-            section demonstrating emphasized text to our example web page:
+            Por exemplo, o <code>&lt;p&gt;</code> é um elemento de nível de bloco, 
+            enquanto <code>&lt;em&gt;</code> é um elemento de linha que afeta uma 
+            parte do texto <em>dentro</em> de um parágrafo. Ele significa “ênfase”, 
+            e é normalmente mostrado como um texto em itálico. Tente adicionar uma 
+            nova seção para demonstrar texto com ênfase a nossa página de exemplo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Inline Elements<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Elementos de linha<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Sometimes<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, you need to draw attention to a particular word or
-phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Algumas vezes<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, você precisa enfatizar uma palavra em particular ou
+frase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            The part wrapped in <code>&lt;em&gt;</code> tags should render as
-            italics, as shown below. Notice how only part of a line has been
-            affected, which is characteristic of inline elements. In the
-            <a href="../css-box-model/index.html">CSS Box Model</a> chapter,
-            we’ll discover how inline and block elements can have a dramatic
-            impact on the layout of a page.
+            A parte empacotada na etiqueta <code>&lt;em&gt;</code> deve ser 
+            apresentada como itálico, como mostrado abaixo. Note como somente 
+            algumas partes da linha foram afetadas, o que é uma característica 
+            de elementos de linha. No capítulo 
+            <a href="../css-box-model/index.html">Modelo de Caixa CSS</a>, 
+            vamos descobri como elementos de linha e de bloco podem gerar   
+            um grande impacto no layout de uma página.
           </p>
 
           <figure class="diagram">
@@ -875,7 +873,7 @@ phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
               >
                 <img
                   class="diagram__image"
-                  alt="Web page highlighting the italic text created with an &lt;em&gt; element"
+                  alt="Página web realçando o texto em itálico criado com o elemento &lt;em&gt;"
                   src="html-emphasis-element-87be03.png"
                   width="464"
                   height="263"
@@ -885,16 +883,17 @@ phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Just in case it hasn’t sunk in yet, it’s <em>really</em> important
-            that you properly nest your HTML elements. It’s easier to mess up
-            the order of tags when you’re using multiple inline elements, so
-            make sure to double-check that your markup never looks like this:
+            Apenar para garantir, é <em>muito</em> importante que você aninhe 
+            os elementos HTML de forma apropriada. É fácil bagunçar a ordem 
+            das etiquetas quando você está usando vários elementos de linha, 
+            então para ter certeza sempre faça uma verificação para que a 
+            marcação nunca se pareça como isso:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- (Again, don't ever do this) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is some <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>emphasized text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- (De novo, nunca faça isso) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este é um texto qualquer <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>com ênfase<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>
 </code></pre>
         </div>
       </div>
@@ -903,23 +902,23 @@ phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="strong-bold-elements">
-              <span>Strong (Bold) Elements</span>
+              <span>Elemento Strong (Negrito)</span>
             </h2>
           </div>
 
           <p>
-            If you want to be more emphatic than an <code>&lt;em&gt;</code> tag,
-            you can use <code>&lt;strong&gt;</code>. It’s an inline element just
-            like <code>&lt;em&gt;</code>, and looks like this:
+            Se você quer ser mais enfático que um etiqueta <code>&lt;em&gt;</code>, 
+            você pode sempre usar o <code>&lt;strong&gt;</code>. Ele é um elemento 
+            de linha, assim como o <code>&lt;em&gt;</code>, e se parece como isso:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Other times you need to <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>strong<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>ly emphasize the importance
-of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Outras vezes você precisa de uma ênfase mais <span class="hljs-tag">&lt;<span class="hljs-name">forte</span>&gt;</span>strong<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> para demonstrar a importância
+de uma palavra ou uma frase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
-          <p>It should be rendered in bold text, like so:</p>
+          <p>Ele deve ser renderizado como um negrito, como mostrado abaixo:</p>
 
           <figure class="diagram">
             <div class="diagram__wrapper" style="max-width: 492px">
@@ -929,7 +928,7 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
               >
                 <img
                   class="diagram__image"
-                  alt="Web page highlighting the bold text created with a &lt;strong&gt; element"
+                  alt="Página web realçando o texto em negrito criado usando um elemento &lt;strong&gt;"
                   src="html-strong-element-d3135f.png"
                   width="492"
                   height="263"
@@ -939,22 +938,22 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
           </figure>
 
           <p>
-            To draw even more attention your a span of text, you can nest a
-            <code>&lt;strong&gt;</code> element in an
-            <code>&lt;em&gt;</code> element (or vice versa). This will give you
-            text that is both strong and emphasized:
+            Para dar ainda mais atenção em uma parte do texto, você pode usar 
+            o elemento <code>&lt;strong&gt;</code> dentro de um elemento 
+            <code>&lt;em&gt;</code> (ou vice-versa). Isso vai mostrar um texto 
+            que é tanto negrito quanto itálico:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>And sometimes you need to shout!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>E às vezes você precisa gritar!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            As the example text suggests, this is effectively the typographic
-            equivalent of shouting. Have a read through the
-            <a href="../web-typography/index.html">Web Typography</a> chapter
-            before going too crazy with the bold and italic fonts.
+            Como o texto de exemplo sugere, isso é tipograficamente o equivalente 
+            a gritar. Dê uma olhada no capítulo <a href="../web-typography/index.html"
+            >Tipografia para Web</a> antes de ficar maluco com fontes em negrito e 
+            itálico.
           </p>
 
           <figure class="diagram">
@@ -965,7 +964,7 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
               >
                 <img
                   class="diagram__image"
-                  alt="Web page highlighting the bold italic text created with a &lt;strong&gt; element wrapped in an &lt;em&gt; element"
+                  alt="Página web realçando o texto em negrito e itálico criado com um elemento &lt;strong&gt; dentro de um elemento &lt;em&gt;"
                   src="html-strong-emphasis-element-5b0eb2.png"
                   width="537"
                   height="263"
@@ -980,18 +979,18 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="structure-versus-presentation">
-              <span>Structure Versus Presentation</span>
+              <span>Estrutura Versus Apresentação</span>
             </h2>
           </div>
 
           <p>
-            You might be wondering why we’re using the terms “emphasis” and
-            “strong” instead of “italic” and “bold”. That brings us to an
-            important distinction between HTML and CSS. HTML markup should
-            provide <em>semantic</em> information about your content&mdash;not
-            <em>presentational</em> information. In other words, HTML should
-            define the structure of your document, leaving its appearance to
-            CSS.
+            Você deve estar se perguntando porque estamos usando as palavras 
+            ênfase e “forte” ao invés de “italico” e “negrito”. Isso nos traz 
+            uma importante distinção que fazemos quando se trata de HTML e CSS. 
+            A marcação HTML deve representar a informação <em>semântica</em> 
+            sobre seu conteúdo&mdash;não a <em>apresentação</em> da informação. 
+            Em outras palavras, a HTML deve definir a estrutura do seu documento 
+            deixando sua aparência para a CSS.
           </p>
 
           <figure class="diagram">
@@ -1012,25 +1011,26 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
           </figure>
 
           <p>
-            The pseudo-obsolete <code>&lt;b&gt;</code> and
-            <code>&lt;i&gt;</code> elements are classic examples of this. They
-            used to stand for “bold” and “italic”, respectively, but HTML5
-            attempted to create a clear separation between a document’s
-            structure and its presentation. Thus, <code>&lt;i&gt;</code> was
-            replaced with <code>&lt;em&gt;</code>, since emphasized text can be
-            displayed in all sorts of ways aside from being italicized (e.g., in
-            a different font, a different color, or a bigger size). Same for
-            <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code>.
+            Os elementos pseudo-obsoletos <code>&lt;b&gt;</code> e
+            <code>&lt;i&gt;</code> são exemplos clássicos disso. Eles são 
+            utilizados com o objetivo de demonstrar o “negrito” e “italico”, 
+            respectivamente, mas a HTML5 tenta criar uma separação bem clara 
+            entre a estrutura de um documento e sua apresentação. Além disso, 
+            <code>&lt;i&gt;</code> foi substituído por <code>&lt;em&gt;</code>, 
+            uma vez que texto com ênfase podem ser apresentados em todo tipo 
+            de formas além de itálico (ex. em uma fornte diferente uma 
+            cor diferente, ou até mesmo um tamanho diferente). O mesmo acontece 
+            com <code>&lt;b&gt;</code> e <code>&lt;strong&gt;</code>.
           </p>
 
           <p>
-            As we’ll discover in
+            Como vamos descobrir no 
             <a href="../hello-css/index.html#font-weight-and-style"
-              >Hello, CSS</a
-            >, we can alter the browser’s default rendering of the
-            <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> elements.
-            This furthers the point that we shouldn’t call it out as italicized
-            or bold text in the HTML&mdash;that’s something for CSS to decide.
+            >Olá, CSS</a>, nós podemos alterar a apresentação padrão 
+            dos elementos <code>&lt;strong&gt;</code> e 
+            <code>&lt;em&gt;</code> no navegador. Isso mostra ainda mais 
+            por que não podemos chamar de itálico ou negrito na HTML&mdash;
+            isso é algo que a CSS deve decidir.
           </p>
         </div>
       </div>
@@ -1039,42 +1039,44 @@ of a word or phrase.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="empty-html-elements">
-              <span>Empty HTML Elements</span>
+              <span>Elementos Vazios da HTML</span>
             </h2>
           </div>
 
           <p>
-            The HTML tags we’ve encountered so far either wrap text content
-            (e.g., <code>&lt;p&gt;</code>) or other HTML elements (e.g.,
-            <code>&lt;ol&gt;</code>). That’s not the case for all HTML elements.
-            Some of them can be “empty“ or “self-closing”. Line breaks and
-            horizontal rules are the most common empty elements you’ll find.
+            As etiquetas HTML utilizamos até agora embrulham uma parte do 
+            conteúdo de texto (ex.  <code>&lt;p&gt;</code>) ou outros 
+            elementos HTML (ex. <code>&lt;ol&gt;</code>). Esse não é o caso 
+            para todos os elementos HTML. Alguns deles podem ser “vazios” ou 
+            com “auto-fechamento”. Quebra de linhas e linhas horizontais são 
+            os elementos mais comuns que você irá encontrar com esse comportamento.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="line-breaks">Line Breaks</h3>
+            <h3 class="subsubheading__heading" id="line-breaks">Quebra de Linhas</h3>
           </div>
 
           <p>
-            HTML condenses consecutive spaces, tabs, or newlines (together known
-            as “whitespace”) into a single space. To see what we’re talking
-            about, add the following section to our
-            <code>basics.html</code> file:
+            A HTML condensa espaços consecutivos, tabs, ou novas linhas (também 
+            conhecidos como “espaços”) em um único espaço. Para ver sobre o que 
+            estamos falando, adicione a seguinte seção ao nosso arquivo 
+            <code>basics.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Empty Elements<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Elementos Vazios<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Thanks for reading! Interneting should be getting easier now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Obrigado por ler! Fazer front deve estar ficando mais fácil agora.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Regards,
-The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Saudações,
+O Autor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            The newline after <code>Regards</code> in the above snippet will be
-            transformed into a space instead of displaying as a line break:
+            A nova linha depois de <code>Saudações</code> no trecho de código 
+            acima será transformado em um espaço ao invés de ser mostrado 
+            em uma nova linha:
           </p>
 
           <figure class="diagram">
@@ -1085,7 +1087,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
               >
                 <img
                   class="diagram__image"
-                  alt="Web page showing a plaintext line break collapsing into a space in the rendered page"
+                  alt="Página web mostrando uma quebra de linha em texto puro se transformando em um espaço renderizado na página"
                   src="html-collapsing-whitespace-c4012d.png"
                   width="410"
                   height="263"
@@ -1095,28 +1097,30 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
           </figure>
 
           <p>
-            This behavior may seem counter intuitive, but web developers often
-            set their text editor to limit line length to around 80 characters.
-            As a programmer, it’s easier to manage code this way, but having
-            each of the newlines show up in the rendered page would severely
-            mess up the intended page layout.
+            Este comportamento pode parecer contra-intuitivo, mas os desenvolvedores 
+            web normalmente configuram seus editores de texto para limitar o 
+            tamanho da linha em 80 caracteres. Como programador, é fácil gerenciar 
+            o código para ficar assim, mas se tiver uma nova linha na página 
+            para cada nova linha que adicionamos no documento HTML isso ia 
+            deixar o layout da página totalmente bagunçado.
           </p>
 
           <p>
-            To tell the browser that we want a hard line break, we need to use
-            an explicit <code>&lt;br/&gt;</code> element, like this:
+            Para dizer ao navegador que nós queremos uma nova linha, precisamos 
+            usar um elemento <code>&lt;br/&gt;</code> de forma explicita, dessa 
+            forma:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Regards,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
-The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Saudações,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+O Autor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            The <code>&lt;br/&gt;</code> element is useful anywhere text
-            formatting matters. Haiku, music lyrics, and signatures are just a
-            few examples where it might come in handy.
+            O elemento <code>&lt;br/&gt;</code> é útil em qualquer parte do 
+            texto. Haiky, letras de músicas, e assinaturas são somente alguns 
+            dos exemplos onde podemos utilizar.
           </p>
 
           <figure class="diagram">
@@ -1127,7 +1131,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
               >
                 <img
                   class="diagram__image"
-                  alt="Web page highlighting an actual line break with the &lt;br/&gt; element"
+                  alt="Página web realçando um quebra de linha com o elemento &lt;br/&gt;"
                   src="html-line-break-element-f40443.png"
                   width="410"
                   height="263"
@@ -1137,62 +1141,62 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
           </figure>
 
           <p>
-            However, be very careful not to abuse the
-            <code>&lt;br/&gt;</code> tag. Each one you use should still convey
-            <em>meaning</em>&mdash;you shouldn’t use it to, say, add a bunch of
-            space between paragraphs:
+            No entanto, tome bastante cuidado para não abusar da etiqueta 
+            <code>&lt;br/&gt;</code>. Toda vez que você usa deve manter 
+            o <em>significado</em>&mdash;você não deve usá-lo, vamos dizer, 
+            adicionar um monte de espaços entre parágrafos:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- (You will be shunned for this) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This paragraph needs some space below it...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- (Você deve evitar isso) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esse parágrafo precisa de algum espaço abaixo dele...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>So, I added some hard line breaks.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Então, eu adicionei algumas quebras de linhas.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            As discussed in the previous section, this kind of presentational
-            information should be defined in your CSS instead of your HTML.
+            Como discutido na seção anterior, esse tipo de apresentação da 
+            informação deve ser definida na sua folha de estilos CSS e não 
+            na HTML.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="horizontal-rules">
-              Horizontal Rules
+              Linhas Horizontais
             </h3>
           </div>
 
           <p>
-            The <code>&lt;hr/&gt;</code> element is a “horizontal rule”, which
-            represents a thematic break. The transition from one scene of a
-            story into the next or between the end of a letter and a postscript
-            are good examples of when a horizontal rule may be appropriate. For
-            instance:
+            O elemento <code>&lt;hr/&gt;</code> é um a “linha horizontal”, que 
+            representa uma quebra de linha temática. A transição de uma cena 
+            da história para outra, ou entre o fim de uma carta e um texto 
+            <em>pos-scriptum</em> são bons exemplos de quando é apropriado 
+            usar uma linha horizontal. Para demonstração:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Empty Elements<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Elementos Vazios<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Thanks for reading! Interneting should be getting easier now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Obrigado por ler! Fazer front deve estar ficando mais fácil agora.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Regards,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
-The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Saudações,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+O Autor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>/&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>P.S. This page might look like crap, but we'll fix that with some CSS
-soon.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>P.S. Essa página está bem feia, mas nós vamos corrigir isso com algum CSS, em breve.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            One of the themes for this chapter has been the separation of
-            content (HTML) from presentation (CSS), and
-            <code>&lt;hr/&gt;</code> is no different. Like
-            <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code>, it has a
-            default appearance (a horizontal line), but once we start working
-            with CSS, we’ll be able to render it as more space between sections,
-            a decorative accent character, or pretty much anything else we want.
+            Um dos temas para este capítulo foi a separação do conteúdo (HTML) 
+            e sua apresentação (CSS), e a <code>&lt;hr/&gt;</code> não é 
+            diferente. Assim como o <code>&lt;em&gt;</code> e 
+            <code>&lt;strong&gt;</code>, ele tem uma aparência padrão 
+            (uma linha horizontal), mas uma vez que comerçarmos a trabalhar 
+            com CSS, poderemos modificar sua apresentação como uma separação 
+            entre seções, uma decoração, ou qualquer coisa que quisermos.
           </p>
 
           <figure class="diagram">
@@ -1203,7 +1207,7 @@ soon.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
               >
                 <img
                   class="diagram__image"
-                  alt="Web page demonstrating an &lt;hr/&gt; element"
+                  alt="Página web demonstrando um elemento &lt;hr/&gt;"
                   src="html-horizontal-rule-element-49f526.png"
                   width="474"
                   height="285"
@@ -1213,47 +1217,47 @@ soon.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Like <code>&lt;br/&gt;</code>, <code>&lt;hr/&gt;</code> should carry
-            meaning&mdash;don’t use it when you just want to display a line for
-            the sake of aesthetics. For that, you’ll want to use the CSS
-            <code>border</code> property, which we’ll discuss in a few chapters.
+            Como <code>&lt;br/&gt;</code>, <code>&lt;hr/&gt;</code> deve representar 
+            um significado&mdash;não uso quando você só quiser mostrar uma linha 
+            por uma questão estética. Para isso você deve usar a propriedade 
+            <code>border</code>, que nós discutiremos em alguns capítulos.
           </p>
 
           <p>
-            Another way to think about the <code>&lt;hr/&gt;</code> element is
-            that it carries <em>less</em> significance than the separation
-            created by a new heading element, but <em>more</em> significance
-            than a new paragraph.
+            Outra forma de pensar no elemento <code>&lt;hr/&gt;</code> é que 
+            ele carrega <em>menos</em> significancia que uma separação criada 
+            por um novo elemento de cabeçalho, mas é <em>mais</em> significativo 
+            que um novo parágrafo.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="optional-trailing-slash">
-              Optional Trailing Slash
+              Barra Final Opcional
             </h3>
           </div>
 
           <p>
-            The trailing slash (<code>/</code>) in all empty HTML elements is
-            entirely optional. The above snippet could also be marked up like
-            this (note the lack of <code>/</code> in the
-            <code>&lt;br&gt;</code> and <code>&lt;hr&gt;</code> tags):
+            A barra final (<code>/</code>) em todos os elementos 
+            vazios é um item opcional. O trecho acima pode ser marcado também 
+            assim (note a falta da <code>/</code> nas etiquetas 
+            <code>&lt;br&gt;</code> e <code>&lt;hr&gt;</code>):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Regards,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Saudações,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+O Autor<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
 </code></pre>
 
           <p>
-            It doesn’t really make a difference which convention you choose, but
-            pick one and stick to it for the sake of consistency. In this
-            tutorial, we’ll be including the trailing <code>/</code> character
-            because it clearly shows that it’s a self-closing element. This will
-            help prevent your eyes from searching for the closing tag elsewhere
-            in the document.
+            Não faz diferença qual a convenção você escolher usar, mas escolha 
+            uma e use sempre para manter a consistência. Nesse tutorial, nós 
+            vamos incluir o caracter barra <code>/</code> para indicar de forma 
+            clara que aquele é um elemento com auto-fechamento. Isso irá ajudar 
+            ao seu olho a evitar ficar buscando para etiquetas sendo fechadas 
+            em qualquer ponto do documento.
           </p>
         </div>
       </div>
@@ -1262,26 +1266,26 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            This chapter may have seemed like an endless list of HTML elements,
-            and, well, it basically was. HTML is pretty simple when it comes
-            right down to it. Web pages are made up of HTML elements, each
-            element adds a different meaning to the text it contains, and
-            elements can be nested inside of each other.
+            Este capítulo pode parecer uma lista interminável de elementos HTML, 
+            e, bem, basicamente é. A HTMl é muito simples quando se trata disso. 
+            Páginas web são feitas de elementos HTML, cada elemento adiciona 
+            um significado diferente ao texto, e elementos podem ser aninhados 
+            um dentro do outro.
           </p>
 
           <p>
-            What we did in this chapter is always the first step in the web
-            development process&mdash;you need to define <em>what</em> you want
-            to say (HTML) before defining <em>how</em> you want to say it (CSS).
-            Hopefully, the <code>basics.html</code> file we created in this
-            chapter will serve as a useful quick-reference of core HTML
-            elements. If you ever happen to misplace it, here’s what it should
-            look like:
+            O que fizemos nesse capítulo é sempre o primeiro passo no processo 
+            de desenvolvimento web&mdash;você precisa definir <em>o que</em> 
+            você quer dizer (HTML antes de definir <em>como</em> você quer 
+            dizer (CSS). Ainda bem que o arquivo <code>basics.html</code> 
+            que nós criamos nesse capítulo vai servir como um referência 
+            rápida para principais elementos da HTML. Se acontecer de você  
+            perdê-lo, é assim que ele deve parecer:
           </p>
 
           <figure class="diagram">
@@ -1292,7 +1296,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
               >
                 <img
                   class="diagram__image"
-                  alt="Web page showing &lt;title&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ol&gt;, and other basic HTML elements"
+                  alt="Página web mostrando &lt;title&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ol&gt;, e outros elementos básicos da HTML"
                   src="basic-web-pages-f786d5.png"
                   width="541"
                   height="836"
@@ -1302,29 +1306,28 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
           </figure>
 
           <p>
-            We talked about how writing HTML is sort of like manipulating
-            content in a WYSIWYG document editor. HTML is obviously a much more
-            manual process, but the trade off is its incredible flexibility. You
-            can display it in a web page, a mobile device, a tablet, or a
-            printed piece of paper, each with different layouts. You can even
-            re-style multiple documents just by changing a single line of CSS.
-            Microsoft Word doesn’t come close to the potential of HTML and CSS
-            as a content medium.
+            Nós conversamos sobre como escrever HTML é parecido em escrever 
+            um documento em um editor WYSIWYG. A HTML é obviamente um processo 
+            muito manual, mas vantagem é sua incrível flexilibidade. Você pode 
+            mostrar em uma página web, um dispositível móvel, um tablet, ou 
+            em um pedaço de papel impresso, cada um com um layout diferente. 
+            Você pode ainda re-estilizar diferentes documentos só mudando uma 
+            única linha da CSS. O Microsoft Word não chega nem perto do 
+            potencial da HTML e CSS como uma mídia de conteúdo.
           </p>
 
           <p>
-            In the next chapter, we’ll round out our HTML education with the
-            remaining elements that you’ll encounter on a daily basis: links and
-            images. For the more obscure elements, we’ll leave you to explore
-            MDN’s
+            No próximo capítulo, vamos melhorar nosso conhecimento da HTML 
+            com os elementos remanescentes que você pode encontrar em uma 
+            base diária: âncoras e imagens. Para mais elementos obscuros, 
+            deixamos a MDN para explorar por si só a
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >HTML Element Reference</a
-            >
-            on your own.
+              >Referência de Elementos HTML</a
+            >.
           </p>
 
           <div class="next-chapter">
-            <a href="../links-and-images/index.html">Next Chapter &gt;</a>
+            <a href="../links-and-images/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1334,64 +1337,65 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#structure-of-a-web-page"
-                  >Structure of a Web Page</a
+                  >Estrutura de uma Página</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#page-titles"
-                  >Page Titles</a
+                  >Títulos das Páginas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#paragraphs"
-                  >Paragraphs</a
+                  >Parágrafos</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#headings">Headings</a>
+                <a class="sidebar__link" href="index.html#headings"
+                  >Cabeçalhos</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#unordered-lists"
-                  >Unordered Lists</a
+                  >Listas Não-Ordenadas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#ordered-lists"
-                  >Ordered Lists</a
+                  >Listas Ordenadas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#emphasis-italic-elements"
-                  >Emphasis Elements</a
+                  >Elementos de Ênfase</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#strong-bold-elements"
-                  >Strong Elements</a
+                  >Elementos Fortes</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#structure-versus-presentation"
-                  >Structure vs Presentation</a
+                  >Estrutura vs Apresentação</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#empty-html-elements"
-                  >Empty HTML Elements</a
+                  >Elementos Vazios da HTML</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1406,7 +1410,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
               <img
                 class="about__logo"
                 src="../../img/interneting-is-hard-logo-97b225.svg"
-                alt="Wi-fi signal with exclamation mark through it"
+                alt="Ícone do sinal Wi-Fi com um ponto de exclamação no meio"
               />
               <div class="about__rule-after"></div>
             </div>
@@ -1417,7 +1421,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
                   ><img
                     class="about__twitter"
                     src="../../img/twitter-icon-29cd78.png"
-                    alt="Twitter logo"
+                    alt="Logo do Twitter"
                 /></a>
 
                 <a
@@ -1426,32 +1430,32 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
                   ><img
                     class="about__facebook"
                     src="../../img/facebook-icon-e6def5.png"
-                    alt="Facebook logo"
+                    alt="Logo do Facebook"
                 /></a>
 
                 <a class="js-obfuscated-email__mailto"
                   ><img
                     class="about__email"
                     src="../../img/email-icon-a4c505.png"
-                    alt="Envelope icon"
+                    alt="Ícone de Envelope de carta"
                 /></a>
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutoriais. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir os leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1465,14 +1469,14 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
                       class="input-text input-text--small
                               about__mailing-list-email js-about__mailing-list-email"
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="seunome@exemplo.com"
                     />
 
                     <div class="cta-button about__mailing-list-button">
@@ -1481,7 +1485,7 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1493,11 +1497,11 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1515,16 +1519,16 @@ The Authors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</spa
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licença</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
