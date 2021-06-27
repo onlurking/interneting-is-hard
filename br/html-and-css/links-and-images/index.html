@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Tutorial Links e Imagens | HTML &amp; CSS é Difícil</title>
+    <title>Tutorial Âncoras e Imagens | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -337,7 +337,7 @@
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="extras-page">Extras Page</h3>
+            <h3 class="subsubheading__heading" id="extras-page">Páginas Extras</h3>
           </div>
 
           <p>
@@ -887,7 +887,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="link-targets">
-              <span>Link Targets</span>
+              <span>Alvos de Ligações</span>
             </h2>
           </div>
 
@@ -996,45 +996,43 @@
           </div>
 
           <p>
-            Unlike all the HTML elements we’ve encountered so far, image content
-            is defined <em>outside</em> of the web page that renders it.
-            Fortunately for us, we already have a way to refer to external
-            resources from within an HTML document: absolute, relative, and
-            root-relative URLs.
+            Diferentemente de todos os elementos HTML que encontramos até 
+            agora, as imagens são conteúdos definidos <em>fora</em> da página web 
+            que a renderiza. Felizmente para nós, já temos uma forma de 
+            referenciar conteúdos externos ao nosso documento HTML: URLs 
+            absoluta, relativa e raiz-relativa.
           </p>
 
           <p>
-            Images are included in web pages with the
-            <code>&lt;img/&gt;</code> tag and its <code>src</code> attribute,
-            which points to the image file you want to display. Notice how it’s
-            an
-            <a href="../basic-web-pages/index.html#empty-html-elements"
-              >empty element</a
-            >
-            like <code>&lt;br/&gt;</code> and <code>&lt;hr/&gt;</code> from the
-            previous chapter. (Don’t add this to our project just yet. We’ll
-            deal with concrete examples in the next section.)
+            Imagens são incluídas nas páginas web através do elemento 
+            <code>&lt;img/&gt;</code> e seu atributo <code>src</code>, 
+            que apontam para um arquivo de imagem que você deseja apresentar. 
+            Note que ele é um <a href="../basic-web-pages/index.html#empty-html-elements"
+            >elemento vazio</a>, 
+            assim como <code>&lt;br/&gt;</code> e <code>&lt;hr/&gt;</code> 
+            do capítulo anterior (Não adicione isso ao nosso projeto ainda. Vamos 
+            tratar primeiro de exemplos concretos na próxima seção).
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'some-photo.jpg'</span>/&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'alguma-imagem.jpg'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            Retina displays and mobile devices make image handling a little bit
-            more complicated than a plain old <code>&lt;img/&gt;</code> tag.
-            We’ll leave these complexities for the
-            <a href="../responsive-images/index.html">Responsive Images</a>
-            chapter of this tutorial. Also be sure to check out the
-            <code>&lt;figure&gt;</code> and
-            <code>&lt;figcaption&gt;</code> element in the
-            <a href="../semantic-html/index.html">Semantic HTML</a> chapter.
+            Telas do tipo FullHD e de dispositivos móveis fazem o tratamento 
+            de imagens um pouco mais complicado do que a velha e boa 
+            etiqueta <code>&lt;img/&gt;</code>. Nós vamos deixar essas 
+            complexidades para o capítulo de 
+            <a href="../responsive-images/index.html">Imagens Responsivas</a> 
+            desse tutorial. Tenha certeza de verificar os elementos 
+            <code>&lt;figure&gt;</code> e
+            <code>&lt;figcaption&gt;</code> no capítulo de 
+            <a href="../semantic-html/index.html">Semântica HTML</a>.
           </p>
 
           <p>
-            For now, let’s focus on the many image formats floating around the
-            Internet.
+            Nesse momento, vamos focar nos vários formatos de imagens que temos na Internet.
           </p>
         </div>
       </div>
@@ -1043,15 +1041,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="image-formats">
-              <span>Image Formats</span>
+              <span>Formatos de Imagens</span>
             </h2>
           </div>
 
           <p>
-            There’s four main image formats in use on the web, and they were all
-            designed to do different things. Understanding their intended
-            purpose goes a long way towards improving the quality of your web
-            pages.
+            Existem 4 principais formatos de imagens em uso na web, e todos 
+            são desenvolvidos para coisas diferentes. Entender seus 
+            propósitos ajuda a melhorar a qualidade de páginas web.
           </p>
 
           <figure class="diagram">
@@ -1069,22 +1066,23 @@
           </figure>
 
           <p>
-            The next few sections will walk through ideal use cases for each of
-            these image formats. Make sure you’ve unzipped these
-            <a href="images-4149f7.zip">mochi images</a> into your
-            <code>links-and-images</code> project before moving on.
+            Nas próximas seções vamos caminhar através dos casos de usos para 
+            cada tipo de formato de imagens. Garanta que você descompactou 
+            essas <a href="images-4149f7.zip">imagens de mochi</a> na sua 
+            pasta <code>links-and-images</code> do projeto antes de seguir adiante.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="jpg-images">JPG Images</h3>
+            <h3 class="subsubheading__heading" id="jpg-images">Imagens JPG</h3>
           </div>
 
           <p>
-            JPG images are designed for handling large color palettes without
-            exorbitantly increasing file size. This makes them great for photos
-            and images with lots of gradients in them. On the other hand, JPGs
-            don’t allow for transparent pixels, which you can see in the white
-            edges of the image below if you look real close:
+            Imagens JPG foram desenvolvidas para tratar uma grande paleta de 
+            cores sem aumentar muito o tamanho do arquivo. Isto torna esse 
+            tipo de imagem perfeita para fotografias e imagens com uma grande 
+            quantidade de gradientes nelas. Mas em outros casos, JPGs não 
+            permitem pixels transparentes, que você pode ver na borda branca 
+            da imagem abaixo se você prestar bastante atenção:
           </p>
 
           <figure class="diagram">
@@ -1102,36 +1100,37 @@
           </figure>
 
           <p>
-            Embed this <code>mochi.jpg</code> image in our
-            <code>images.html</code> page with the following snippet (this also
-            includes a bit of navigation to our other pages):
+            Insira essa imagem <code>mochi.jpg</code> na nossa página 
+            <code>images.html</code> com o trecho de código abaixo (isso 
+            também irá incluir um pouco de navegação para as nossas 
+            outras páginas):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This page covers common image formats, but you may also be looking for <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-   <span class="hljs-attr">href</span>=<span class="hljs-string">'links.html'</span>&gt;</span>links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>useful
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esta página trata dos formatos comuns de imagens utilizadas na Web, mas você também pode estar procurando por <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+   <span class="hljs-attr">href</span>=<span class="hljs-string">'links.html'</span>&gt;</span>links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> e <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>
    extras<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>JPGs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>JPG images are good for photos.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Imagens JPG são boas para fotos.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="gif-images">GIF Images</h3>
+            <h3 class="subsubheading__heading" id="gif-images">Imagens GIF</h3>
           </div>
 
           <p>
-            GIFs are the go-to option for simple animations, but the trade off
-            is that they’re somewhat limited in terms of color
-            palette&mdash;never use them for photos. Transparent pixels are a
-            binary option for GIFs, meaning you can’t have semi-opaque pixels.
-            This can make it difficult to get high levels of detail on a
-            transparent background. For this reason, it’s usually better to use
-            PNG images if you don’t need animation.
+            GIFs são boas opções para simples animações, mas a troca é que 
+            são limitadas de alguma forma em termos de cores&mdash;nunca use-os 
+            para fotos. Pixels transparentes são opções binárias para GIFs, 
+            isso significa que você não pode ter pixels opacos. Isso torna 
+            difícil obter altos níveis de detalhamento em fundos transparentes. 
+            Por essa razão, é normalmente uma opção melhor usar imagens PNG se 
+            você não precisar de animação.
           </p>
 
           <figure class="diagram">
@@ -1149,30 +1148,29 @@
           </figure>
 
           <p>
-            You can add this little guy to our <code>images.html</code> file
-            with the following:
+            Você pode adicionar esse carinha ao nosso arquivo images.html com o trecho de código abaixo:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>GIFs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>GIFs are good for animations.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>GIFs são bons para animações.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="png-images">PNG Images</h3>
+            <h3 class="subsubheading__heading" id="png-images">Imagens PNG</h3>
           </div>
 
           <p>
-            PNGs are great for anything that’s not a photo or animated. For
-            photos, a PNG file of the same quality (as perceived the human eye)
-            would generally be bigger than an equivalent JPG file. However, they
-            do deal with opacity just fine, and they don’t have color palette
-            limitations. This makes them an excellent fit for icons, technical
-            diagrams, logos, etc.
+            PNGs são ótimas para qualquer coisa que não seja uma foto ou 
+            animação. Para fotografias, um arquivo PNG com a mesma qualidade 
+            (perceptível ao olho humano) geralmente será muito maior que um 
+            arquivo JPG equivalente . No entanto, elas trabalham bem com 
+            opacidade, e não tem limitações de paletas de cor. Isso torna 
+            elas perfeitas para ícones, diagramas técnicos, logotipos, etc.
           </p>
 
           <figure class="diagram">
@@ -1189,29 +1187,29 @@
             </div>
           </figure>
 
-          <p>Let’s add this PNG image to our example project as well:</p>
+          <p>Vamos adicionar essa imagem PNG ao nosso projeto exemplo:</p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>PNGs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>PNGs are good for diagrams and icons.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>PNGs são bons para diagramas e ícones.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="svg-images">SVG Images</h3>
+            <h3 class="subsubheading__heading" id="svg-images">Imagens SVG</h3>
           </div>
 
           <p>
-            Unlike the pixel-based image formats above, SVG is a vector-based
-            graphics format, meaning it can scale up or down to
-            <em>any</em> dimension without loss of quality. This property makes
-            SVG images a wonderful tool for
-            <a href="../responsive-design/index.html">responsive design</a>.
-            They’re good for pretty much all the same use cases as PNGs, and you
-            should use them whenever you can.
+            Diferente das imagens baseadas em pixel, apresentadas 
+            anteriormente, o SVG é um formato gráfico baseado em vetor, isso 
+            significa que você pode redimensionar para <em>qualquer</em> tamanho 
+            sem perder qualidade. Essa propriedade torna a imagem SVG perfeita 
+            para um <a href="../responsive-design/index.html">design responsivo</a>. 
+            Elas são boas opções para praticamente todos os casos onde são usadas 
+            PNGs, e você deve utilizá-las em qualquer situação que você possa.
           </p>
 
           <figure class="diagram">
@@ -1232,16 +1230,17 @@
           </figure>
 
           <p>
-            These 300×300 pixel images were originally 100×100 pixels, but
-            scaling them up clearly shows the difference between them. Notice
-            the crisp, clean lines on the left SVG image, while the PNG image on
-            the right is now very pixelated.
+            Essas imagens com dimensões de 300x300 pixels, são imagens com 
+            dimensões de 100x100 originalmente, mas ao dimensionar elas se 
+            diferenciam muito entre si. Note as linhas nítidas e limpas da 
+            imagem SVG à esquerda, enquanto a imagem PNG na direita está 
+            agora muito pixelada.
           </p>
 
           <p>
-            Despite being a vector format, SVGs can be used exactly like their
-            raster counterparts. Go ahead and add the <code>mochi.svg</code> to
-            our <code>images.html</code> page:
+            Mesmo sendo um formato de vetor, as imagens SVGs podem ser 
+            utilizadas exatamente como suas concorrentes. Vamos lá, 
+            adicione <code>mochi.svg</code> na nossa página <code>images.html</code>:
           </p>
 
           <pre
@@ -1254,14 +1253,15 @@
 </code></pre>
 
           <p>
-            There is one potential issue with SVGs: for them to display
-            consistently across browsers, you need to convert any text fields to
-            outlines using your image editor (e.g., Abode Illustrator or
-            <a href="https://www.sketchapp.com/">Sketch</a>). If your images
-            contain a lot of text (like the fancy screenshots in this tutorial),
-            this can have a big impact on file size. For this reason,
-            <a href="../../index.html"><em>InternetingIsHard.com</em></a> uses
-            PNGs instead of SVGs, even though SVGs are so awesome.
+            Tem um problema em potencial com o SVG: para que eles sejam 
+            apresentados consistentemente em todos os navegadores, você 
+            precisa converter qualquer campo de texto para contornos 
+            usando um editor de imagem (ex. Adobe Illustrator ou 
+            <a href="https://www.sketchapp.com/">Sketch</a>). Se suas 
+            imagens contém muito texto (como as capturas de telas chiques 
+            deste tutorial), isso pode ter um grande impacto no tamanho 
+            do arquivo. Por essa razão iremos usar PNGs ao invés de 
+            SVGs, mesmo sabendo que SVGs são os melhores!
           </p>
         </div>
       </div>
@@ -1270,15 +1270,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="image-dimensions">
-              <span>Image Dimensions</span>
+              <span>Dimensões de Imagens</span>
             </h2>
           </div>
 
           <p>
-            By default, the <code>&lt;img/&gt;</code> element uses the inherit
-            dimensions of its image file. Our JPG, GIF, and PNG images are
-            actually 150&times;150 pixels, while our SVG mochi is only
-            75&times;75 pixels.
+            Por padrão, o elemento <code>&lt;img/&gt;</code> usa as dimensões 
+            herdadas do arquivo de imagem. Os arquivos JPG, PNG, e GIF usados 
+            nesse tutorial tem atualmente 150&times;150 pixels, enquanto nosso 
+            mochi SVG tem somente 75&times;75 pixels.
           </p>
 
           <figure class="diagram">
@@ -1299,43 +1299,44 @@
           </figure>
 
           <p>
-            As we’ll discuss further in
-            <a href="../responsive-images/index.html">Responsive Images</a>,
-            pixel-based image formats need to be twice as big as you want them
-            to appear on retina displays. To get our pixel-based images down to
-            the intended size (75&times;75), we can use the
-            <code>&lt;img/&gt;</code> element’s <code>width</code> attribute. In
-            <code>images.html</code>, update all of our pixel-based images to
-            match the following:
+            Como veremos adiante em <a href="../responsive-images/index.html">Imagens 
+              Responsivas</a>, formatos de imagens baseados em pixel precisam ser 
+              duas vezes maiores se você quiser que elas apareçam em monitores 
+              do tipo retina. Para deixar nossas imagens baseadas em pixel com o 
+              tamanho pretendido (75&times;75) nós podemos usar o atributo 
+              <code>width</code> do elemento <code>&lt;img/&gt;</code>. No arquivo 
+              <code>images.html</code>, atualize todas as nossas imagens baseadas 
+              em pixel para serem como descrito abaixo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- In JPGs section --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Na seção de JPGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In GIFs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de GIFs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In PNGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de PNGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            The <code>width</code> attribute sets an explicit dimension for the
-            image. There’s a corresponding <code>height</code> attribute, as
-            well. Setting only one of them will cause the image to scale
-            proportionally, while defining both will stretch the image.
-            Dimension values are specified in pixels, and you should never
-            include a unit (e.g., <code>width='75px'</code> would be incorrect).
+            O atributo <code>width</code> define uma dimensão explícita para 
+            a imagem. Existe um atributo <code>height</code> correspondente. 
+            Definindo somente um deles vai fazer com que a imagem seja 
+            dimensionada de forma proporcional, enquanto se definirmos os dois 
+            fará com que a imagem seja esticada. Os valores de dimensões são 
+            especificados em pixel, e você nunca deve incluir a unidade (ex. 
+            <code>width='75px'</code>, não faça isso!).
           </p>
 
           <p>
-            The <code>width</code> and <code>height</code> attributes can be
-            useful, but it’s usually better to set image dimensions with CSS so
-            you can alter them with media queries. We’ll discuss this in more
-            detail once we get to
-            <a href="../responsive-design/index.html">responsive design</a>.
+            O atributo <code>width</code> e <code>height</code> podem ser úteis, 
+            mas é sempre melhor definir a dimensão da imagem através da CSS assim 
+            você pode alterá-las através de requisições de mídia. Nós discutiremos 
+            melhor isso quando chegarmos a <a href="../responsive-design/index.html"
+            >design responsivo</a>.
           </p>
         </div>
       </div>
@@ -1344,43 +1345,44 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="text-alternatives">
-              <span>Text Alternatives</span>
+              <span>Textos Alternativos</span>
             </h2>
           </div>
 
           <p>
-            Adding <code>alt</code> attributes to your
-            <code>&lt;img/&gt;</code> elements is a best practice. It defines a
-            “text alternative” to the image being displayed. This has an impact
-            on both search engines and users with text-only browsers (e.g.,
-            people that use text-to-speech software due to a vision impairment).
+            Adicionar o atributo <code>alt</code> ao elemento 
+            <code>&lt;img/&gt;</code> é uma boa prática. Isso define 
+            um “texto alternativo” à imagem exibida. Isso tem um 
+            impacto em mecanismos de pesquisa e para usuários que 
+            usam navegadores que exibem somente texto (ex. pessoas 
+            que usam softwares leitores de tela devido a deficiência visual).
           </p>
 
           <p>
-            Update all our images to include descriptive
-            <code>alt</code> attributes:
+            Atualize todas as suas imagens para incluir uma descrição através 
+            do atributo <code>alt</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- In JPGs section --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Na seção de JPGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball in a bubble'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In GIFs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de GIFs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A dancing mochi ball'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In PNGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de PNGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In SVGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de SVGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.svg'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball with Bézier handles'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            For more examples of how to use the <code>alt</code> attribute,
-            please refer to the ridiculously detailed
+            Para mais exemplo de como utilizar o atributo <code>alt</code>, 
+            por favor veja a ridiculamente detalhada 
             <a href="https://www.w3.org/TR/html5/embedded-content-0.html#alt"
-              >official specification</a
+              >especificação oficial</a
             >.
           </p>
         </div>
@@ -1390,66 +1392,66 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="more-html-attributes">
-              <span>More HTML Attributes</span>
+              <span>Mais Atributos HTML</span>
             </h2>
           </div>
 
           <p>
-            Now that we’re (hopefully) more than comfortable with the HTML
-            attribute syntax, we can add a couple of finishing touches to our
-            HTML boilerplate code. Every web page you create should define the
-            language it’s written in and its character set.
+            Agora que já estamos mais confortáveis com a sintaxe de 
+            atributos HTML, podemos adicionar alguns toques finais ao 
+            nosso caldeirão de código HTML. Toda página web que você 
+            criar deve definir o idioma qual foi escrito e seu conjunto 
+            de caracteres.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="document-language">
-              Document Language
+              Idioma do Documento
             </h3>
           </div>
 
           <p>
-            A web page’s default language is defined by the
-            <code>lang</code> attribute on the top-level
-            <code>&lt;html&gt;</code> element. Our document is in English, so
-            we’ll use the <code>en</code> country code as the attribute value
-            (do this for <em>all</em> of the pages we created):
+            O idioma padrão de uma página web é definido pelo atributo 
+            <code>lang</code>, no nível mais alto do elemento 
+            <code>&lt;html&gt;</code>. Nosso documento é em Português 
+            do Brasil, então nós usaremos o código de país <code>pt-br</code> 
+            como valor do atributo (sempre faça isso para <em>todas</em> 
+            as páginas que você criar):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'pt-BR'</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you’re not sure what the country code for your language is, you
-            can look it up
-            <a
-              href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
-              >here</a
-            >
-            under the <strong>Subtag</strong> field.
+            Se você não tiver certeza de qual o código de país deve utilizar para 
+            o seu idioma, ou se for fazer uma página para outro idioma, você pode 
+            olhar o campo da Subtag <a
+            href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+            >aqui</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="character-sets">
-              Character Sets
+              Conjunto de Caracteres
             </h3>
           </div>
 
           <p>
-            A “character set” is kind of like a digital alphabet for your
-            browser. It’s different from the language of your document in that
-            it only affects how the letters themselves are rendered, not the
-            language of the content. Let’s copy and paste some international
-            characters into our <code>misc/extras.html</code> web page and see
-            what happens.
+            Um “conjunto de caracteres” é como um alfabeto, só que digital, 
+            para o seu navegador. Isso é diferente do idioma definido no seu 
+            documento, de forma que ele só afeta como as letras são 
+            renderizadas, e exibidas na tela, não o idioma do conteúdo. Vamos 
+            copiar e colar alguns caracteres internacionais para dentro da 
+            nossa página web <code>misc/extras.html</code> e ver o que acontece.
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Character Sets<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Conjunto de Caracteres<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You can use UTF-8 to count in Turkish:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Você pode usar UTF-8 para contar em Turco:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>bir<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -1461,9 +1463,10 @@
 </code></pre>
 
           <p>
-            When you view this in a browser, you’ll see some weird stuff where
-            the <code>ü</code>, <code>ç</code>, <code>ö</code>, and
-            <code>ş</code> characters should be:
+            Quando você atualizar o navegador para visualizar a página, 
+            você verá algumas coisas muito estranhas no lugar dos 
+            caracteres <code>ü</code>, <code>ç</code>, <code>ö</code>, e
+            <code>ş</code>, devem aparecer como:
           </p>
 
           <figure class="diagram">
@@ -1484,11 +1487,11 @@
           </figure>
 
           <p>
-            That’s because the default character set for most browsers doesn’t
-            accommodate these “special” characters. To fix this, specify a UTF-8
-            character encoding by adding a <code>&lt;meta&gt;</code> element
-            with a <code>charset</code> attribute to the
-            <code>&lt;head&gt;</code> of our <code>misc/extras.html</code> file:
+            Isso acontece porque o conjunto de caracteres padrões a serem exibidos 
+            nos navegador não suporta esses caracteres “especiais”. Para corrigir 
+            isso, vamos usar a codificação de caracteres UTF-8, adicionando um 
+            elemento <code>&lt;meta&gt;</code> com o atributo <code>charset</code> ao 
+            <code>&lt;head&gt;</code> do nosso arquivo <code>misc/extras.html</code>:
           </p>
 
           <pre
@@ -1497,10 +1500,10 @@
 </code></pre>
 
           <p>
-            The special characters should now render correctly. These days,
-            UTF-8 is sort of like a universal alphabet for the Internet. Every
-            web page you create should have this line in its
-            <code>&lt;head&gt;</code>.
+            Os caracteres especiais agora devem ser exibidos corretamente. 
+            Atualmente, o UTF-8 é algo que se tornou o alfabeto universal 
+            para a Internet. Toda página que você criar deve conter essa 
+            linha no seu <code>&lt;head&gt;</code>.
           </p>
         </div>
       </div>
@@ -1509,70 +1512,71 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="html-entities">
-              <span>HTML Entities</span>
+              <span>Entidades HTML</span>
             </h2>
           </div>
 
           <p>
-            Ok, so this last section doesn’t actually have anything to do with
-            links or images, but we do need to discuss one more thing before
-            switching gears into CSS. An “HTML entity” is a special character
-            that can’t be represented as plain text in an HTML document. This
-            typically either means it’s a reserved character in HTML or you
-            don’t have a key on your keyboard for it.
+            Certo, essa última seção não tem nada a ver com âncoras ou 
+            imagens, mas nós precisamos discutir uma última coisa antes de 
+            iniciar as engrenagens da CSS. Uma “entidade HTML” é um caracter 
+            especial que não pode ser representado como um texto puro e um 
+            documento HTML. Isso tipicamente significa que é uma palavra 
+            reservada, no nosso caso um caractere reservado, ou que você 
+            não tem uma tecla para esse caracter no seu teclado.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="reserved-characters">
-              Reserved Characters
+              Caracteres Reservados
             </h3>
           </div>
 
           <p>
-            The <code>&lt;</code>, <code>&gt;</code>, and
-            <code>&amp;</code> characters are called “reserved characters”
-            because they aren’t allowed to be inserted into an HTML document
-            without being encoded. This is because they mean something in the
-            HTML syntax: <code>&lt;</code> begins a new tag,
-            <code>&gt;</code> ends a tag, and, as we’re about to learn,
-            <code>&amp;</code> sets off an HTML entity.
+            Os caracteres <code>&lt;</code>, <code>&gt;</code>, e
+            <code>&amp;</code> são chamados de “caracteres reservados” porque 
+            eles não são permitidos dentro de um documento HTML sem que seja 
+            codificado. Isso porque eles significam alguma coisa na sintaxe 
+            HTML: o <code>&lt;</code> inicia uma etiqueta, o <code>&gt;</code> 
+            fecha uma etiqueta, e como vamos aprender, o <code>&amp;</code> 
+            define uma entidade HTML.
           </p>
 
-          <p>In <code>misc/extras.html</code>, add the following:</p>
+          <p>No <code>misc/extras.html</code>, adicione o seguinte:</p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HTML Entities<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are three reserved characters in HTML: &amp;lt; &amp;gt; and &amp;amp;. You
-   should always use HTML entities for these three characters.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Entidades HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Existem três caracaterese reservados na HTML: &amp;lt; &amp;gt; e &amp;amp;. Você
+   deve sempre usar entidades HTML para esses três caracteres.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Entities always begin with an ampersand (<code>&amp;</code>) and end
-            with a semicolon (<code>;</code>). In between, you put a special
-            code that your browser will interpret as a symbol. In this case, it
-            interprets <code>lt</code>, <code>gt</code>, and <code>amp</code> as
-            less-than, greater-than, and ampersand symbols, respectively.
+            Entidades sempre iniciam com um e-comercial (<code>&amp;</code>) e 
+            terminam com um ponto-vírgula (<code>;</code>). Entre eles você 
+            consegue colocar um código especial que seu navegador irá 
+            interpretar como um símbolo. Neste caso, irá representar 
+            <code>lt</code>, <code>gt</code>, e <code>amp</code> como 
+            o sinal de menor, sinal de maior, e e-comercial, respectivamente.
           </p>
 
           <p>
-            There’s a crap-ton of HTML entities. We’ll leave you to explore
+            Tem um monte de entidades HTML. Vou deixar para que você explore a 
             <a href="https://dev.w3.org/html5/html-author/charref"
-              >most of them</a
-            >
-            on your own.
+              >maioria deles</a
+            > por si só.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="quotes">Quotes</h3>
+            <h3 class="subsubheading__heading" id="quotes">Aspas</h3>
           </div>
 
           <p>
-            Curly quotes are by no means necessary, but if you care about
-            <a href="../web-typography/index.html">typography</a> they’ll be
-            some of the most common HTML entities you’ll use. There’s four
-            different kinds of curly quotes (opening and closing single and
-            double quotes):
+            Aspas são sem dúvidas necessárias, mas se você se importa com 
+            <a href="../web-typography/index.html">tipografia</a> elas serão 
+            algumas das entidades mais comuns utilizadas na HTML. Existem 
+            quatro tipos diferentes de aspas (aspas de abertura e 
+            fechamento simples e aspas duplas):
           </p>
 
           <ul>
@@ -1583,34 +1587,36 @@
           </ul>
 
           <p>
-            You can use them in place of <code>'</code> and
-            <code>"</code> straight quotes, like so:
+            Você pode usá-los no lugar de <code>'</code> e <code>"</code>, 
+            como mostrado abaixo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you&amp;rsquo;re into &amp;ldquo;web typography,&amp;rdquo; you&amp;rsquo;ll also find
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>(Neste caso vou deixar o texto em inglês para mostrar o resultado) 
+            If you&amp;rsquo;re into &amp;ldquo;web typography,&amp;rdquo; you&amp;rsquo;ll also find
    yourself using curly quotes quite a bit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
+            Diferente de  diretas, 
             Unlike straight quotes, these curly quote entities should hug the
             text.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="utf-8-and-html-entities">
-              UTF-8 and HTML Entities
+              Entidades HTML e UTF-8
             </h3>
           </div>
 
           <p>
-            In the olden days of the web, HTML files weren’t allowed to have
-            special characters in them, making entities much more useful. But,
-            since we’re now using a UTF-8 character set, we should be able to
-            insert any character directly into the HTML document. This makes
-            entities primarily useful as reserved characters or for convenience
-            when authoring straight HTML.
+            Nos primórdios da Web, os arquivos HTML não podiam ter caracteres 
+            especiais, tornando as entidades muito mais úteis. Mas, desde que 
+            começamos a usar o conjunto de caracter UTF-8, podemos inserir 
+            qualquer caracter diretamente dentro do documento HTML. Com isso 
+            as entidades se tornam úteis primeiramente como caracteres reservados 
+            ou para conveniência quando está criando HTML direto.
           </p>
         </div>
       </div>
@@ -1619,24 +1625,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            A website is basically just a bunch of HTML, image, and (as we’ll
-            learn about shortly) CSS files linked together. You should start
-            thinking of a website as a beautiful way for users to navigate the
-            folders and files we create as part of the web development process.
-            With that perspective, it should be clear than maintaining a
-            well-organized file system is a critical aspect of creating a
-            website.
+            Uma página web é basicamente um monte de HTML, imagens e (como 
+            aprendemos um pouco) arquivos CSS ligados em conjunto. Você deve 
+            iniciar pensando uma página como uma forma bonita para usuários 
+            navegarem por pastas e arquivos que criamos como parte do nosso 
+            processo de desenvolvimento web. Por essa perspectiva, deve ser 
+            mais claro que manter um sistema de arquivo bem organizado é um 
+            aspecto tão crítico quanto criar uma página web.
           </p>
 
           <p>
-            We also learned about a few important attributes (<code>lang</code>
-            and <code>charset</code>) that give us the basic template you should
-            use as the beginning of every web page you ever create:
+            Também aprendemos sobre alguns atributos importantes (<code>lang</code>
+            e <code>charset</code>) que nos dão o layout básica que você deve usar 
+            no começo de toda página web que você criar:
           </p>
 
           <pre
@@ -1645,25 +1651,26 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Some Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Alguma Página Web<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Some Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- Rest of the page content --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Alguma Página Web<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- O resto do conteúdo da página vai aqui --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            However, we’re still missing one really big piece: CSS. In the next
-            chapter, we’ll discover more HTML elements and attributes that will
-            let us attach CSS styles to our entire website. The ability to work
-            with multiple files and link them to each other in intelligent ways
-            will become even more important than it was in this chapter.
+            No entanto, ainda precisamos de uma parte muito importante: CSS. No 
+            próximo capítulo, vamos descobrir mais elementos e atributos HTML 
+            para juntar uma folha de estilo CSS para nossa página inteira. A 
+            habilidade de trabalhar com diversos arquivos e conectá-los de 
+            formas inteligentes será ainda mais importante do que foi mostrado 
+            nesse capítulo.
           </p>
 
           <div class="next-chapter">
-            <a href="../hello-css/index.html">Next Chapter &gt;</a>
+            <a href="../hello-css/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1673,61 +1680,61 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#anchors">Anchors</a>
+                <a class="sidebar__link" href="index.html#anchors">Âncoras</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#links">Links</a>
+                <a class="sidebar__link" href="index.html#links">Ligações</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#absolute-relative-and-root-relative-links"
-                  >Types of Links</a
+                  >Tipos de Ligações</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#link-targets"
-                  >Link Targets</a
+                  >Alvos de Ligações</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#naming-conventions"
-                  >Naming Conventions</a
+                  >Convenção de Nomes</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#images">Images</a>
+                <a class="sidebar__link" href="index.html#images">Imagens</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#image-formats"
-                  >Image Formats</a
+                  >Formatos de Imagens</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#image-dimensions"
-                  >Image Dimensions</a
+                  >Dimensões de Imagens</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#text-alternatives"
-                  >Text Alternatives</a
+                  >Textos Alternativoss</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#more-html-attributes"
-                  >More HTML Attributes</a
+                  >Mais Atributos HTML</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#html-entities"
-                  >HTML Entities</a
+                  >Entidades HTML</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1742,7 +1749,7 @@
               <img
                 class="about__logo"
                 src="../../img/interneting-is-hard-logo-97b225.svg"
-                alt="Wi-fi signal with exclamation mark through it"
+                alt="Ícone do sinal Wi-Fi com um ponto de exclamação no meio"
               />
               <div class="about__rule-after"></div>
             </div>
@@ -1753,7 +1760,7 @@
                   ><img
                     class="about__twitter"
                     src="../../img/twitter-icon-29cd78.png"
-                    alt="Twitter logo"
+                    alt="Logo do Twitter"
                 /></a>
 
                 <a
@@ -1762,32 +1769,32 @@
                   ><img
                     class="about__facebook"
                     src="../../img/facebook-icon-e6def5.png"
-                    alt="Facebook logo"
+                    alt="Logo do Facebook"
                 /></a>
 
                 <a class="js-obfuscated-email__mailto"
                   ><img
                     class="about__email"
                     src="../../img/email-icon-a4c505.png"
-                    alt="Envelope icon"
+                    alt="Ícone de Envelope de carta"
                 /></a>
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutoriais. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir os leitores, então
+                <a href="../../contact/index.html">venha dizer oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1801,14 +1808,14 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
                       class="input-text input-text--small
                               about__mailing-list-email js-about__mailing-list-email"
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="seunome@exemplo.com"
                     />
 
                     <div class="cta-button about__mailing-list-button">
@@ -1817,7 +1824,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1829,11 +1836,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1851,16 +1858,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
