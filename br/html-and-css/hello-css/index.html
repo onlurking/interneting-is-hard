@@ -806,40 +806,38 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="list-styles">
-              <span>List Styles</span>
+              <span>Estilos de Listas</span>
             </h2>
           </div>
 
           <p>
-            The <code>list-style-type</code> property lets you alter the bullet
-            icon used for <code>&lt;li&gt;</code> elements. You’ll typically
-            want to define it on the parent <code>&lt;ul&gt;</code> or
-            <code>&lt;ol&gt;</code> element:
+            A propriedade <code>list-style-type</code> permite que você altere 
+            o marcado usado para o elemento <code>&lt;li&gt;</code>. Você vai 
+            querer definí-lo no elemento pai <code>&lt;ul&gt;</code> ou
+            <code>&lt;ol&gt;</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">ul</span> {
-  <span class="hljs-attribute">list-style-type</span>: circle;
+  <span class="hljs-attribute">list-style-type</span>: círculo;
 }
 
 <span class="hljs-selector-tag">ol</span> {
-  <span class="hljs-attribute">list-style-type</span>: lower-roman;
+  <span class="hljs-attribute">list-style-type</span>: número romano minúsculo;
 }
 </code></pre>
 
           <p>
-            You can find other common values in the
-            <code>hello-css.html</code> example page. Of particular interest is
-            <code>none</code>, which is commonly used when marking up menu
-            navigation with a <code>&lt;ul&gt;</code> list. The
-            <code>none</code> value allows the menu’s list items to be styled
-            more like buttons. In the
+            Você pode encontrar outros valores comuns na página de exemplo 
+            <code>hello-css.html</code>. Um marcador bem particular é o 
+            <code>none</code>, que é normalmente utilizado quando queremos 
+            construir um menu de navegação com uma lista <code>&lt;ul&gt;</code>. 
+            O valor <code>none</code> permite que a lista de itens do menu 
+            seja estilizado como botões. No capítulo 
             <a href="../advanced-positioning/index.html"
-              >Advanced Positioning</a
-            >
-            chapter, we’ll actually use this technique to create the navigation
-            menu shown below.
+            >Advanced Positioning</a>, vamos usar essa técnica para criar o 
+            menu de navegação como mostrado abaixo.
           </p>
 
           <figure class="diagram">
@@ -860,31 +858,31 @@
           </figure>
 
           <p>
-            This is good example of the separation of content from presentation.
-            A navigation menu <em>is</em> an unordered list, but it also makes
-            sense to display them as buttons instead of a typical bulleted list.
-            Intelligently designed HTML allows search engines to infer the
-            structure of our content, while CSS lets us display it to humans in
-            beautiful ways.
+            Esse é um ótimo exemplo de separação de conteúdo na apresentação. 
+            Um menu de navegação <em>é</em> uma lista não-ordenada, mas também 
+            faz sentido mostrá-la como um botão ao invés de uma típica lista 
+            de marcadores. Design inteligentes da HTML permitem que mecanismos 
+            de buscas infiram sobre a estrutura do nosso conteúdo, enquanto a 
+            CSS faz com que nós mostremos para os humanos de uma forma mais 
+            bonita.
           </p>
 
           <p>
-            You can even create custom bullets for
-            <code>&lt;li&gt;</code> elements with the
-            <code>list-style-image</code> property (see MDN
+            Você pode até criar marcadores customizados para o elemento 
+            <code>&lt;li&gt;</code> com a propriedade 
+            <code>list-style-type</code> (veja a MDN
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image"
-              >for details</a
+              >para mais detalhes</a
             >).
           </p>
 
           <p>
-            Defining the color of your text and the appearance of your bullets
-            might seem trivial, and it kind of is. But, look at the bigger
-            picture: this is about gaining <em>complete</em> control over the
-            appearance of an HTML document. Alone, a single CSS property is
-            silly. Put them all together, and you’re able to create a totally
-            customized web page.
+            Definir a cor do texto e a aparência dos marcadores pode parecer 
+            trivial, e é mesmo. Mas, vislumbre o todo: isso é sobre ter o 
+            controle <em>completo</em> sobre a aparência de um documento HTML. 
+            Sozinha, uma propriedade CSS é nada. Ao juntar todas elas, você 
+            será capaz de criar uma página web totalmente customizada.
           </p>
         </div>
       </div>
@@ -893,17 +891,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="reusable-stylesheets">
-              <span>Reusable Stylesheets</span>
+              <span>Folhas de Estilos Reutilizáveis</span>
             </h2>
           </div>
 
           <p>
-            So, we just defined some basic styles for one of our web pages. It
-            would be really convenient if we could reuse them on our other page,
-            too. For this, all we need to do is add the same
-            <code>&lt;link/&gt;</code> element to any other pages we want to
-            style. Try adding the following line to the
-            <code>&lt;head&gt;</code> of <code>dummy.html</code>:
+            Então, definimos alguns estilos básicos par uma das nossas páginas 
+            web. Seria muito conveniente se pudéssemos reutilizá-la em outras 
+            páginas, também. Para isso, tudo que precisamos fazer é adicionar 
+            o mesmo elemento <code>&lt;link/&gt;</code> a qualquer outra página 
+            que quisérmos estilizar. Tente adicionando a seguinte linha no 
+            <code>&lt;head&gt;</code> da <code>dummy.html</code>:
           </p>
 
           <pre
@@ -912,11 +910,12 @@
 </code></pre>
 
           <p>
-            Now, our <code>dummy.html</code> pages should match our
-            <code>hello-css.html</code> styles. Whenever we change a style in
-            <code>styles.css</code>, those changes will automatically be
-            reflected in both of our web pages. This is how you get a consistent
-            look and feel across an entire website.
+            Agora, nossa página <code>dummy.html</code> deve se parecer 
+            como nosso estilo da página <code>hello-css.html</code>. 
+            Onde quer que mudemos as regras no <code>styles.css</style></code> 
+            essas mudanças vão automaticamente refletir em ambas as páginas 
+            web. Dessa forma você tem consistência na aparência entre todas 
+            as páginas web.
           </p>
 
           <figure class="diagram">
@@ -937,16 +936,15 @@
           </figure>
 
           <p>
-            You’ll almost always have at least one stylesheet that’s applied to
-            the entire site. It’s usually a good idea to use
+            Você quase sempre terá pelo menos uma folha de estilo aplicada 
+            a todas as páginas. É sempre uma boa ideia utilizar caminhos 
             <a href="../links-and-images/index.html#root-relative-links"
-              >root-relative paths</a
-            >
-            when linking global stylesheets to avoid problems in nested pages.
-            For example, <code>some-folder/page.html</code> would need to use
-            <code>../styles.css</code> to reference our
-            <code>styles.css</code> file, and this can get real confusing real
-            quick.
+              >raiz-relativas</a> quando vincular folhas de estilos globais 
+            para evitar problemas em páginas aninhadas. Por exemplo, 
+            <code>alguma-pasta/pagina.html</code> precisará usar 
+            <code>../styles.css</code> para referenciar nosso arquivo 
+            <code>styles.css</code>, e isso pode ficar muito 
+            confuso rapidamente.
           </p>
         </div>
       </div>
@@ -955,29 +953,29 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="more-text-styles">
-              <span>More Text Styles</span>
+              <span>Mais Estilos no Texto</span>
             </h2>
           </div>
 
           <p>
-            There’s a whole bunch of different CSS properties that we’ll be
-            introducing over the course of this tutorial, but for now, let’s
-            finish up with some of the most common ways to format text.
+            Existem várias propriedades CSS diferentes que introduziremos 
+            durante o desenvolvimento desse tutorial, mas por agora, 
+            vamos finalizar com algumas das formas mais comuns de formatar 
+            um texto.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="underlines">Underlines</h3>
+            <h3 class="subsubheading__heading" id="underlines">Sublinhados</h3>
           </div>
 
           <p>
-            The <code>text-decoration</code> property determines whether text is
-            underlined or not. By setting it to <code>none</code>, we can remove
-            the default underline from all of our links. We’ll discuss link
-            styles in-depth
+            A propriedade <code>text-decoration</code> determinar se um texto 
+            terá sublinhado ou não. Ao configurar com <code>none</code>, nós 
+            conseguimos remover o sublinhado padrão para todos as nossas âncoras. 
+            Vamos discutir sobre estilos de âncoras com detalhes 
             <a
               href="https://internetingishard.com/html-and-css/css-selectors#pseudo-classes-for-links"
-              >later on</a
-            >.
+              >mais tarde</a>.
           </p>
 
           <pre
@@ -988,32 +986,30 @@
 </code></pre>
 
           <p>
-            The other common value for <code>text-decoration</code> is
-            <code>line-through</code> to strike out “deleted” text. But,
-            remember that <em>meaning</em> should always be conveyed through
-            HTML&mdash;not CSS. It’s better to use the
+            O outro valor comum para <code>text-decoration</code> é 
+            <code>line-through</code> que irá riscar o texto “apagado”. 
+            Mas lembre-se que o <em>significado</em> deve sempre ser 
+            dado pela HTML&mdash;não a CSS. Por isso é melhor usar os elementos 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins"
               ><code>&lt;ins&gt;</code></a
-            >
-            and
+            > e 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"
               ><code>&lt;del&gt;</code></a
-            >
-            elements instead of adding a <code>line-through</code> style to,
-            say, an ordinary <code>&lt;p&gt;</code> element.
+            > ao invés de adicionar um estilo <code>line-through</code>, digamos, 
+            a um elemento <code>&lt;p&gt;</code> qualquer.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="text-alignment">
-              Text Alignment
+              Alinhamento de Texto
             </h3>
           </div>
 
           <p>
-            The aptly named <code>text-align</code> property defines the
-            alignment of the text in an HTML element.
+            A propriedade chamada, tão apropriada, <code>text-align</code>, 
+            define o alinhamento do texto em um elemento HTML.
           </p>
 
           <pre
@@ -1024,9 +1020,9 @@
 </code></pre>
 
           <p>
-            Other accepted values are <code>right</code>, <code>center</code>,
-            or <code>justify</code>, but notice how it always aligns to the
-            entire page:
+            Outros valores aceitos são <code>right</code>, <code>center</code>,
+            ou <code>justify</code>, mas note como ele sempre alinha a página
+            inteira:
           </p>
 
           <figure class="diagram">
@@ -1047,47 +1043,47 @@
           </figure>
 
           <p>
-            This isn’t what you want for most websites. We’ll learn why this is
-            the case in the
-            <a href="../css-box-model/index.html">next chapter</a> when we start
-            talking about CSS boxes.
+            Isso não é o que você quer para a maioria das páginas. Vamos aprender 
+            sobre esse caso no <a href="../css-box-model/index.html">próximo 
+            capítulo</a> quando começarmos a falar sobre caixas CSS.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="font-weight-and-styles">
-              Font Weight and Styles
+              Peso e Estilo das Fontes
             </h3>
           </div>
 
           <p>
-            The <code>font-weight</code> property defines the “boldness” of the
-            text in an element, and the <code>font-style</code> property
-            indicates whether it’s italicized or not.
+            A propriedade <code>font-weight</code> define a força do texto em 
+            um elemento, e a propriedade <code>font-style</code> indica se é 
+            itálico ou não.
           </p>
 
           <p>
-            Let’s say we don’t want our headings to be bold. Update our heading
-            font rule in <code>styles.css</code> to match the following:
+            Vamos dizer que não queremos nossos cabeçalhos sejam em negrito. 
+            Atualize a regra sobre a fonte do cabeçalho no <code>styles.css</code> 
+            para ficar como o seguinte:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
   <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Helvetica"</span>, <span class="hljs-string">"Arial"</span>, sans-serif;
-  <span class="hljs-attribute">font-weight</span>: normal;                              <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">font-weight</span>: normal;                              <span class="hljs-comment">/* Adicione isto */</span>
 }
 </code></pre>
 
           <p>
-            These properties clearly demonstrate the separation of content
-            (HTML) from presentation (CSS). The following rules swap the
-            appearance of the <code>&lt;em&gt;</code> and
-            <code>&lt;strong&gt;</code> elements:
+            Essas propriedades demonstram claramente a separação do conteúdo 
+            (HTML) da apresentação (CSS). A regra seguinte muda a aparência 
+            dos elementos <code>&lt;em&gt;</code> e
+            <code>&lt;strong&gt;</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">/* (You probably shouldn't do this) */</span>
+          ><code><span class="hljs-comment">/* (Você provavelmente não deveria fazer isso) */</span>
 <span class="hljs-selector-tag">em</span> {
   <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">font-style</span>: normal;
@@ -1100,10 +1096,10 @@
 </code></pre>
 
           <p>
-            We don’t suggest doing this for real websites though. Font weights
-            and styles will, however, become a lot more important once we start
-            playing with custom fonts in the
-            <a href="../web-typography/index.html">Web Typography</a> chapter.
+            Não sugerimos fazer isso para páginas web reais. O peso das fontes 
+            e seus estilos irão se tornar muito mais importantes quando começarmos 
+            a usar com fontes customizadas no capítulo 
+            <a href="../web-typography/index.html">Tipografia Web</a>.
           </p>
         </div>
       </div>
@@ -1112,7 +1108,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="the-cascade">
-              <span>The Cascade</span>
+              <span>A Cascata</span>
             </h2>
           </div>
 
@@ -1161,31 +1157,33 @@
           </figure>
 
           <p>
-            We made an effort to get you started down the right path with
-            external stylesheets. It’s important to understand page-specific and
-            inline styles because you’ll most definitely encounter them in the
-            wild, but external stylesheets are by far the best place to define
-            the appearance of your website.
+            Estamos fazendo um esforço para que você começe no caminho certo 
+            com folhas de estilos externas. É importante entender estilos de páginas 
+            específicas e estilos de linha porque você definitivamente 
+            <em>irá</em> encontrá-las na selva da web, mas folhas de estilos 
+            externas são de longe a melhor forma de definir a aparência da 
+            sua página web.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="page-specific-styles">
-              Page-Specific Styles
+              Estilos de Páginas Específicas
             </h3>
           </div>
 
           <p>
-            The <code>&lt;style&gt;</code> element is used to add page-specific
-            CSS rules to individual HTML documents. The
-            <code>&lt;style&gt;</code> element always lives in the
-            <code>&lt;head&gt;</code> of a web page, which makes sense because
-            it’s metadata, not actual content.
+            O elemento <code>&lt;style&gt;</code> é utilizado para adicionar 
+            regras CSS para páginas específicas em documentos HTML 
+            individualmente. O elemento <code>&lt;style&gt;</code> sempre 
+            será utilizado dentro do <code>&lt;head&gt;</code> de uma página 
+            web, o que faz sentido porque ele é um metadado, não um 
+            conteúdo em si.
           </p>
 
           <p>
-            As an example, let’s apply some styles to our
-            <code>dummy.html</code> page by updating its
-            <code>&lt;head&gt;</code> element to this:
+            Como um exemplo, vamos aplicar alguns estilos a nossa 
+            página <code>dummy.html</code> atualizando seu elemento 
+            <code>&lt;head&gt;</code> com isso:
           </p>
 
           <pre
@@ -1196,17 +1194,18 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
     <span class="hljs-selector-tag">body</span> {
-      <span class="hljs-attribute">color</span>: <span class="hljs-number">#0000FF</span>;    <span class="hljs-comment">/* Blue */</span>
+      <span class="hljs-attribute">color</span>: <span class="hljs-number">#0000FF</span>;    <span class="hljs-comment">/* Azul */</span>
     }
   </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
 
           <p>
-            These apply <em>only</em> to <code>dummy.html</code>. Our
-            <code>hello-css.html</code> page won’t be affected. If you did it
-            right, you should see bright blue text when you load
-            <code>dummy.html</code> in a browser.
+            Isso será aplicado <em>somente</em> na página 
+            <code>dummy.html</code>. Nossa página <code>hello-css.html</code> 
+            não será afetada. Se você fez certo, deve estar vendo um texto 
+            com azul bem brilhante quando você carregar a página 
+            <code>dummy.html</code> no navegador.
           </p>
 
           <figure class="diagram">
