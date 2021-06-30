@@ -328,7 +328,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Modelo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Essa é uma página fictícia que nos ajudará a demonstrar a reutilização da  
-     folha de estilo CSS. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'hello-css.html'</span>&gt;</span>Go back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+     folha de estilo CSS. <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'hello-css.html'</span>&gt;</span>Voltar<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quer tentar riscar um <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>ligação obsoleta<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>? Essa 
        é sua chance!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -1113,30 +1113,31 @@
           </div>
 
           <p>
-            The “cascading” part of CSS is due to the fact that rules cascade
-            down from multiple sources. So far, we’ve only seen one place where
-            CSS can be defined: external <code>.css</code> files. However,
-            external stylesheets are just one of many places you can put your
-            CSS code.
+            A parte do “cascateamento” da CSS é devido ao fato que as regras 
+            são aplicadas como cascatas de diferentes arquivos. Até agora, 
+            nós só vimos um lugar onde a CSS pode ser definida: um arquivo 
+            externo <code>.css</code>. No entanto, folhas de estilos externas 
+            são só um dos vários lugares onde você pode colocar código CSS.
           </p>
 
-          <p>The CSS hierarchy for every web page looks like this:</p>
+          <p>A hierarquia CSS para toda página web é parecida com isso:</p>
 
           <ul>
-            <li>The browser’s default stylesheet</li>
-            <li>User-defined stylesheets</li>
-            <li>External stylesheets (that’s us)</li>
-            <li>Page-specific styles (that’s also us)</li>
-            <li>Inline styles (that could be us, but it never should be)</li>
+            <li>A folha de estilo padrão do navegador</li>
+            <li>Folha de estilo definida pelo usuário</li>
+            <li>Folha de estilo externa (essa é <em>nóis</em>)</li>
+            <li>Estilo específico da página (essa também é <em>nóis</em>)</li>
+            <li>Estilo em linha (esse também podemos fazer, mas nunca deve ser feito)</li>
           </ul>
 
           <p>
-            This is ordered from least to most precedence, which means styles
-            defined in each subsequent step <em>override</em> previous ones. For
-            example, inline styles will always make the browser ignore its
-            default styles. The next few sections focus on the last two options
-            because that’s what we have control over as web developers (in
-            addition to the external styles we’ve already been working with).
+            Essa hierarquia está ordenada da menor para a maior precedência, ou 
+            seja, estilos definidos em cada passo subsequente <em>sobreescreve</em> 
+            o anterior. Por exemplo, estilos em linha sempre farão com que o 
+            navegador ignore seu estilo padrão. As próximas seções vão focar nas 
+            duas últimas opções porque é onde nós temos controle enquanto 
+            desenvolvedores web (além da folha de estilo externa que é o que 
+            já estamos trabalhando).
           </p>
 
           <figure class="diagram">
@@ -1158,8 +1159,8 @@
 
           <p>
             Estamos fazendo um esforço para que você começe no caminho certo 
-            com folhas de estilos externas. É importante entender estilos de páginas 
-            específicas e estilos de linha porque você definitivamente 
+            com folhas de estilos externas. É importante entender estilos 
+            específicos de páginas e estilos em linha porque você definitivamente 
             <em>irá</em> encontrá-las na selva da web, mas folhas de estilos 
             externas são de longe a melhor forma de definir a aparência da 
             sua página web.
@@ -1226,13 +1227,15 @@
           </figure>
 
           <p>
-            Anything you would put in our <code>styles.css</code> file can live
-            in this <code>&lt;style&gt;</code> element. It uses the exact same
-            CSS syntax as an external stylesheet, but everything here will
-            override rules in our <code>styles.css</code> file. In this case,
-            we’re telling the browser to ignore the <code>color</code> property
-            we defined for <code>&lt;body&gt;</code> in our external stylesheet
-            and use <code>#0000FF</code> instead.
+            Qualquer coisa que você coloque no arquivo <code>styles.css</code> 
+            podem ser postos no elemento <code>&lt;style&gt;</code>. Ele usa 
+            exatamente a mesma sintaxe CSS como na folha de estilo externa, 
+            mas tudo que for posto aqui irá sobreescrever nosso arquivo 
+            <code>styles.css</code>. Nesse caso, estamos dizendo para o navegador 
+            ignorar a propriedade <code>color</code> que definimos no 
+            <code>&lt;body&gt;</code> da nossa folha de estilo externa e usar 
+            ao invés disso o <code>#0000FF</code> que definimos dentro do 
+            <code>.html</code>.
           </p>
 
           <figure class="diagram">
@@ -1253,13 +1256,13 @@
           </figure>
 
           <p>
-            The problem with page-specific styles is that they’re incredibly
-            difficult to maintain. As shown in the above diagram, when you want
-            to apply these styles to another page, you have to copy-and-paste
-            them into <em>that</em> document’s <code>&lt;head&gt;</code>. Trying
-            to track down redundant CSS rules in multiple
-            <code>.html</code> files is much harder than editing a single
-            <code>.css</code> file.
+            O problema com os estilos específicos de página é que eles são 
+            incrivelmente difíceis de manter. Como mostrado no diagrama acima, 
+            quando você quer aplicar esses estilos em outras páginas você 
+            terá que copiar e colar essas regras <em>dentro</em> do 
+            <code>&lt;head&gt;</code> do documento em questão. Tentar identificar 
+            regras CSS redundantes em diferentes arquivos <code>.html</code> é 
+            muito mais difícil do que editar um único arquivo <code>.css</code>.
           </p>
 
           <figure class="diagram">
@@ -1280,40 +1283,42 @@
           </figure>
 
           <p>
-            Page-specific styles occasionally come in handy when you’re in a
-            rush, but it’s almost always better to store all your CSS in
-            external stylesheets opposed to <code>&lt;style&gt;</code> elements.
+            Estilos específicos de páginas ocasionalmente vem bem a calhar quando 
+            você está com pressa, mas é quase sempre melhor armazenar todas as 
+            suas regras CSS em uma folha de estilos externa do que usar o elemento 
+            <code>&lt;style&gt;</code>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="inline-styles">
-              Inline Styles
+              Estilo em linha
             </h3>
           </div>
 
           <p>
-            You can also stick CSS rules in the <code>style</code> attribute of
-            an HTML element. In <code>dummy.html</code>, we have a link that
-            doesn’t actually go anywhere. Let’s make it red via an inline style
-            so we remember it’s a dead link:
+            Você também pode colocar uma regra CSS no atributo <code>style</code> 
+            do elemento HTML. Na página <code>dummy.html</code>, nós temos uma 
+            âncora que não vai pra lugar nenhum.. Vamos fazer ela ficar vermelha 
+            usando um estilo em linha para lembrar que aquela âncora está quebrada:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Want to try crossing out an <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>
-   <span class="hljs-attr">style</span>=<span class="hljs-string">'color: #990000; text-decoration: line-through;'</span>&gt;</span>obsolete link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>?
-   This is your chance!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Quer tentar riscar uma <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>
+   <span class="hljs-attr">style</span>=<span class="hljs-string">'color: #990000; text-decoration: line-through;'</span>&gt;</span>ligação obsoleta<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>?
+   Essa é sua chance!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Like page-specific styles, this is the same CSS syntax we’ve been
-            working with. However, since it’s in an attribute, it needs to be
-            condensed to a single line. Inline styles are the most specific way
-            to define CSS. The <code>color</code> and
-            <code>text-decoration</code> properties we defined here trump
-            <em>everything</em>. Even if we went back and added a
-            <code>text-decoration: none</code> to our
-            <code>&lt;style&gt;</code> element, it wouldn’t have any effect.
+            Como um estilo específico de página, essa é a mesma sintaxe que 
+            utilizamos até agora. No entanto, uma vez que ela é um atributo, 
+            ela precisa ser condensada em uma linha. Estilos em linha são a 
+            forma mais específica de definir uma CSS. As propriedades 
+            <code>color</code> e <code>text-decoration</code> que definimos 
+            aqui superam <em>tudo</em>. Mesmo que a gente quisesse voltar e 
+            adicionar a regra <code>text-decoration: none</code> no nosso 
+            elemento <code>&lt;style&gt;</code> lá no <code>&lt;head&gt;</code>,
+            não teria efeito nenhum.
           </p>
 
           <figure class="diagram">
@@ -1334,45 +1339,47 @@
           </figure>
 
           <p>
-            Inline styles should be avoided at all costs because they make it
-            impossible to alter styles from an external stylesheet. If you ever
-            wanted to re-style your website down the road, you can’t just change
-            a few rules in your global <code>styles.css</code> file&mdash;you’d
-            have to go through every single page and update every single HTML
-            element that has a <code>style</code> attribute. It’s horrifying.
+            Estilos em linha devem ser evitados a todo custo porque eles tornam 
+            impossível alterar um estilo através de folhas de estilos externas. 
+            Se você quiser reestilizar sua página web depois de um tempo, 
+            você não vai poder mudar as regras no seu arquivo global 
+            <code>styles.css</code>&mdash;terá que ir em cada página e atualizar 
+            cada elemento HTML que tiver um atributo <code>style</code>. Isso é 
+            extramente improdutivo.
           </p>
 
           <p>
-            That said, there will be many times when you need to apply styles to
-            only a specific HTML element. For this, you should always use CSS
-            classes instead of inline styles. We’ll explore classes in the
-            <a href="../css-selectors/index.html">CSS Selectors</a> chapter.
+            Dito isto, muitas vezes você precisará aplicar estilos em um elemento 
+            HTML específico. Para isso, você deve sempre utilizar classes CSS 
+            ao invés de estilos em linha. Vamos explorar classes no capítulo de 
+            <a href="../css-selectors/index.html">Seletores CSS</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="multiple-stylesheets">
-              Multiple Stylesheets
+              Multiplas Folhas de Estilo
             </h3>
           </div>
 
           <p>
-            CSS rules can be spread across several external stylesheets by
-            adding multiple <code>&lt;link/&gt;</code> elements to the same
-            page. A common use case is to separate out styles for different
-            sections of your site. This lets you selectively apply consistent
-            styles to distinct categories of web pages.
+            Regras CSS podem estar espalhadas em diferentes folhas de estilos 
+            externas simplemente adicionando múltiplas entradas do elemento 
+            <code>&lt;link/&gt;</code> a mesma página. Uma forma de fazer 
+            é separar diferentes folhas de estilo para diferentes seções 
+            da página. Isso permite que você aplique seletivamente estilos 
+            mais consistentes para categorias distintas da página web.
           </p>
 
           <p>
-            For instance, if we had a bunch of product pages that looked
-            entirely different than our blog, we could use the following. (We
-            don’t actually have these stylesheets defined, so don’t bother
-            adding them to our example project.)
+            Por exemplo, se temos um monte de páginas de produtos que são 
+            totalmente diferente do nosso blog, podemos fazer o seguinte. 
+            (Nós não temos atualmente essa folha de estilos definida, então 
+            não se incomode em adicionar ao nosso projeto de exemplo.)
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- All product pages have this --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Todas as páginas de produtos tem isso --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'product.css'</span>/&gt;</span>
@@ -1381,7 +1388,7 @@
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- While all blog posts have this --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Enquanto todas as páginas do blog tem isso --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'blog.css'</span>/&gt;</span>
@@ -1389,14 +1396,15 @@
 </code></pre>
 
           <p>
-            The order of the <code>&lt;link/&gt;</code> elements matters.
-            Stylesheets that come later will override styles in earlier ones.
-            Typically, you’ll put your “base” or “default” styles in a global
-            stylesheet (<code>styles.css</code>) and supplement them with
-            section-specific stylesheets (<code>product.css</code> and
-            <code>blog.css</code>). This allows you to organize CSS rules into
-            manageable files while avoiding the perils of page-specific and
-            inline styles.
+            A ordem dos elementos <code>&lt;link/&gt;</code> importam. 
+            Folhas de estilo que vem depois sobreescrevem os estilos das 
+            folhas anteriores. O mais fácil e correto é você colocar 
+            as estilizações “bases” ou “padrões” em uma folha de estilos 
+            global (<code>style.css</code>) e suplementar com folhas 
+            de estilo específicas por seções (<code>product.css</code> e 
+            <code>blog.css</code>). Isso vai permitir que você organize 
+            as regras CSS em arquivos facilmente gerenciáveis enquanto evita 
+            os perigos de estilos específicos de página e estilos em linha.
           </p>
         </div>
       </div>
@@ -1405,18 +1413,19 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            We talked a lot about separating content from presentation in this
-            chapter. This not only allows us to reuse the same CSS stylesheet in
-            multiple HTML documents, but also lets us conditionally apply
-            <em>different</em> CSS rules to the <em>same</em> HTML content,
-            depending on whether the user is on a mobile phone, tablet, or
-            desktop computer. This latter part is called
-            <a href="../responsive-design/index.html">Responsive Design</a>.
+            Conversamos um monte sobre separar os conteúdos da apresentação 
+            neste capítulo. Isso não somente permite que reutilizemos a mesma 
+            folha de estilos em diferentes documentos HTML, mas também permite 
+            que apliquemos condicionalmente <em>diferentes</em> regras CSS ao 
+            <em>mesmo</em> conteúdo HTML, dependendo se o usuário estiver em 
+            um <em>smartphone</em>, tablet ou um computador. Essa parte é 
+            chamada de <a href="../responsive-design/index.html">Design 
+              Responsivo</a>.
           </p>
 
           <figure class="diagram">
@@ -1437,27 +1446,28 @@
           </figure>
 
           <p>
-            As a web developer, you’ll (hopefully) be given a polished design to
-            work off of. Your job is to turn that mockup into a real web page
-            leveraging your knowledge of CSS. As we mentioned earlier, setting
-            individual CSS properties is actually quite simple. The hard part is
-            combining the overwhelming number of built-in properties to create
-            exactly what your web designer asked for&mdash;and do it quickly.
+            Como um desenvolvedor web, você irá (com sorte) receber um design 
+            bem sofisticado para trabalhar. Seu trabalho é tornar aquele modelo 
+            em uma página real, aproveitando de todo seu conhecimento em CSS. 
+            Como mencionado anteriormente, configurar propriedades CSS 
+            individualmente é muito simples. A parte difícil é combinar a incrível 
+            quantidade de propriedades nativas para criar exatamente o que o 
+            designer web pediu para você fazer&mdash;e o mais rápido possível!
           </p>
 
           <p>
-            This chapter focused mostly on text formatting, but the Cascading
-            Style Sheet language can do a whole lot more. In the next chapter,
-            we’ll start exploring how CSS defines the layout of our web pages.
-            On a final note, remember that you can always refer to
+            Este capítulo focou mais na formatação de texto, mas a linguagem 
+            de Folhas de Estilo em Cascata (CSS) pode fazer muito mais do que 
+            isso! No próximo capítulo, vamos começar a explorar como a CSS 
+            define o leiaoute das nossas páginas web. Um último comentário 
+            lembre que você pode sempre consultar a 
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
-              >MDN’s CSS Reference</a
-            >
-            when you’re not sure how a particular property works.
+              >Referência da MDN sobre CSS</a> quando você não tiver certeza 
+              sobre como uma propriedade funciona.
           </p>
 
           <div class="next-chapter">
-            <a href="../css-box-model/index.html">Next Chapter &gt;</a>
+            <a href="../css-box-model/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1467,73 +1477,73 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#css-stylesheets"
-                  >CSS Stylesheets</a
+                  >Folha de Estilo CSS</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#linking-a-css-stylesheet"
-                  >Linking a Stylesheet</a
+                  >Vinculando uma CSS</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#css-comments"
-                  >CSS Comments</a
+                  >Comentários em CSS</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#setting-multiple-properties"
-                  >Multiple Properties</a
+                  >Multiplas Propriedades</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#selecting-different-elements"
-                  >Different Elements</a
+                  >Elementos Diferentes</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#units-of-measurement"
-                  >Units of Measurement</a
+                  >Unidades de Medida</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#selecting-multiple-elements"
-                  >Multiple Selectors</a
+                  >Múltiplos Seletores</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#list-styles"
-                  >List Styles</a
+                  >Estilos de Listas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#reusable-stylesheets"
-                  >Reusable Stylesheets</a
+                  >Reutilizando CSS</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#more-text-styles"
-                  >More Text Styles</a
+                  >Mais Estilos no Texto</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#the-cascade"
-                  >The Cascade</a
+                  >A Cascata</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
