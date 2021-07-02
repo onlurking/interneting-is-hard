@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSS Box Model Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Modelo de Caixa CSS | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -111,7 +111,7 @@
     />
     <meta
       property="og:description"
-      content="A friendly introduction to padding, borders, and margins"
+      content="Uma introdução amigável à preenchimentos, bordas e margens"
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="/html-and-css/css-box-model/" />
@@ -125,11 +125,11 @@
     <meta name="twitter:site" content="@internetinghard" />
     <meta
       name="twitter:title"
-      content="CSS Box Model | HTML &amp; CSS Is Hard"
+      content="Modelo de Caixa CSS | HTML &amp; CSS é Difícil"
     />
     <meta
       name="twitter:description"
-      content="A friendly introduction to padding, borders, and margins"
+      content="Uma introdução amigável à preenchimentos, bordas e margens"
     />
     <meta
       name="twitter:image"
@@ -174,7 +174,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -187,16 +187,16 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">CSS Box Model</h1>
+            <h1 class="heading__title">Modelo de Caixa CSS</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 5. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 5. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              Uma introdução amigável a espaçamentos, bordas e margens
+              Uma introdução amigável a preenchimentos, bordas e margens
             </div>
           </div>
         </div>
@@ -208,17 +208,18 @@
             No
             <a href="../hello-css/index.html">capítulo anterior</a> introduzimos
             o básico de formatação de texto usando propriedades da CSS, mas isso é
-            somente um dos aspectos da estilização de páginas. Definir o <em>leioute</em>
+            somente um dos aspectos da estilização de páginas. Definir o <em>leiaute</em>
             de uma página web é um troço totalmente diferente. Esse capítulo é sobre isso.
           </p>
 
           <p>
-            The “CSS box model“ is a set of rules that define how every web page
-            on the Internet is rendered. CSS treats each element in your HTML
-            document as a “box” with a bunch of different properties that
-            determine where it appears on the page. So far, all of our web pages
-            have just been a bunch of elements rendered one after another. The
-            box model is our toolkit for customizing this default layout scheme.
+            O “Modelo de Caixa CSS” é um conjunto de regras que definem como 
+            toda a página será renderizada na Web. A CSS trata cada elemento 
+            na HTML como uma “caixa”, com um monte de propriedades diferentes 
+            que determinam onde ela aparecerá na tela. Assim, todas as nossas 
+            páginas web tem só um monte de elementos renderizados um depois 
+            do outro. O modelo de caixa é nossa caixa de ferramentas para 
+            customizar esse esquema padrão de apresentação.
           </p>
 
           <figure class="diagram">
@@ -239,31 +240,35 @@
           </figure>
 
           <p>
-            A big part of your job as a web developer will be to apply rules
-            from the CSS box model to turn a design mockup into a web page. As
-            you work through this chapter, you might find yourself wondering why
-            we have to learn all these rules instead of just uploading a giant
-            static image of a web page (i.e., a mockup) to a web server and
-            calling it a day.
+            Uma grande parte do seu trabalho como desenvolvedor web será 
+            aplicar as regras do modelo de caixa CSS para transformar um 
+            design modelo em uma página web. Enquanto você trabalha nesse 
+            capítulo, você vai se perguntar porque aprender todas essas 
+            regras ao invés de só carregar uma imagem estática gigante de 
+            uma página web (ex. um modelo) em um servidor web e acabar com 
+            o problema?
           </p>
 
           <p>
-            Indeed, this would make life a lot easier; however, if we didn’t
-            separate out our content into HTML, search engines would have no way
-            to infer the structure of our web pages, we couldn’t make our site
-            <a href="../responsive-design/index.html">responsive</a>, and there
-            would be no way to add fancy animations or interactivity with
-            JavaScript. That’s a big enough trade-off to make CSS a worthwhile
-            cause.
+            De fato, isso tornaria nossa vida muito fácil; porém, se não 
+            pudermos separar nosso conteúdo dentro da HTML, mecanismos de 
+            pesquisa não teriam uma forma de inferir sobre a estrutura da 
+            nossa página web, não poderíamos tornar nossa página 
+            <a href="../responsive-design/index.html">responsiva</a>, e 
+            não teria forma de colocar animações super legais ou interatividade 
+            com o JavaScript. Esse é uma grande troca para fazer a CSS valer 
+            a pena.
           </p>
 
           <p>
-            This chapter covers the core components of the CSS box model:
-            padding, borders, margins, block boxes, and inline boxes. You can
-            think of this as the “micro” view of CSS layouts, as it defines the
-            individual behavior of boxes. In future chapters, we’ll learn more
-            about how HTML structure and the CSS box model combine to form all
-            sorts of complex page layouts.
+            Este capítulo vai cobrir os principais componentes do 
+            modelo de caixa CSS: preenchimento (<em>padding</em>), bordas, 
+            margens, caixas de bloco, e caixas em linha. Você pode pensar 
+            nisso como uma visão “micro” dos leiautes CSS, como elas 
+            definem o comportamento individual das caixas. Em capítulos 
+            futuros, vamos aprender mais sobre como a estrutura HTML e o 
+            modelo de caixas CSS combinam para formar todos os tipos 
+            complexos de leiaute de páginas. 
           </p>
         </div>
       </div>
@@ -271,13 +276,13 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            To get started, let’s create a new folder called
-            <code>css-box-model</code> and stick a new web page in it called
-            <code>boxes.html</code>. Add the following code:
+            Pra começar, vamos criar agora uma nova pasta chamada 
+            <code>css-box-model</code> e um novo arquivo dentro dela 
+            chamado <code>boxes.html</code>. Adicione o seguinte código:
           </p>
 
           <pre
@@ -286,36 +291,35 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Boxes Are Easy!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Caixas são Fáceis!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'box-styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Headings Are Block Elements<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Cabeçalhos são Elementos de Bloco<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraphs are blocks, too. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>However<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; and &amp;lt;strong&amp;gt;
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Parágrafos são blocos também! <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>However<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; and &amp;lt;strong&amp;gt;
        elements are not. They are <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>inline<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> elements.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Block elements define the flow of the HTML document, while inline elements
-       do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Elementos de bloco definem o fluxo do documento HTML, enquanto elementos em linha
+       não.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            As you should remember from
-            <a href="../hello-css/index.html">Hello, CSS</a>, this HTML file
-            links to a CSS stylesheet stored in a file called
-            <code>box-styles.css</code>. Go ahead and create this file, too (you
-            can leave it empty for now).
+            Como você deve lembrar do capítulo <a href="../hello-css/index.html"
+            >Olá, CSS</a>, esse arquivo HTML está vinculado a uma folha de estilos 
+            CSS que está armazenada em um arquivo chamado <code>box-styles.css</code>. 
+            Vamos lá, crie esse arquivo também (você pode deixar ele em branco por 
+            enquanto).
           </p>
 
           <p>
-            Hopefully, you should be very familiar using Atom for these kinds of
-            file and folder creation tasks. If not, be sure to review the
+            Ainda bem que você já está familiarizado com o Atom para criar 
+            esses arquivos e pastas. Se não, dê uma olhada no 
             <a href="../introduction/index.html#atom-text-editor"
-              >Atom walkthrough</a
-            >
-            in the introductory chapter of this tutorial.
+              >passo a passo do Atom</a> no capítulo de introdução 
+            desse tutorial.
           </p>
         </div>
       </div>
@@ -328,20 +332,19 @@
               id="block-elements-and-inline-elements"
             >
               <span
-                >Block Elements and<br class="subheading__title-br" />
-                Inline Elements</span
+                >Elementos de Bloco e <br class="subheading__title-br" />
+                Elementos em Linha</span
               >
             </h2>
           </div>
 
           <p>
-            Back in <em>Basic Web Pages</em>, we briefly touched on
-            <a href="../basic-web-pages/index.html#emphasis-italic-elements"
-              >how CSS uses “boxes”</a
-            >
-            to define the layout of a web page. Each HTML element rendered on
-            the screen is a box, and they come in two flavors: “block” boxes and
-            “inline“ boxes.
+            Voltando nas <em>Páginas Web Básicas</em>, nós introduzimos 
+            brevemente <a href="../basic-web-pages/index.html#emphasis-italic-elements"
+            >como usar “caixas” CSS</a
+          > para definição do leiaute de uma página web. Cada elemento HTML 
+          é apresentado na tela é uma caixa, e elas vem em dois sabores: caixas de 
+          “bloco” e caixas em “linha“.
           </p>
 
           <figure class="diagram">
@@ -362,31 +365,31 @@
           </figure>
 
           <p>
-            All the HTML elements that we’ve been working with have a default
-            type of box. For instance, <code>&lt;h1&gt;</code> and
-            <code>&lt;p&gt;</code> are block-level elements, while
-            <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> are inline
-            elements. Let’s get a better look at our boxes by adding the
-            following to <code>box-styles.css</code>:
+            Todos os elementos que trabalhamos até o momento usam um tipo de 
+            caixa padrão. Por exemplo, <code>&lt;h1&gt;</code> e 
+            <code>&lt;p&gt;</code> são elementos de nível de bloco, enquanto 
+            <code>&lt;em&gt;</code> e <code>&lt;strong&gt;</code> são elementos 
+            de linha. Vamos dar uma olhada melhor nessas caixas adicionando 
+            uma cor de fundo no <code>box-styles.css</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">p</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DDE0E3</span>;    <span class="hljs-comment">/* Light gray */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#DDE0E3</span>;    <span class="hljs-comment">/* Cinza claro */</span>
 }
 
 <span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Light blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;    <span class="hljs-comment">/* Azul claro */</span>
 }
 </code></pre>
 
           <p>
-            The <code>background-color</code> property only fills in the
-            background of the selected box, so this will give us a clear view
-            into the structure of the current sample page. Our headings and
-            paragraphs should have gray backgrounds, while our emphasis and
-            strong elements should be light blue.
+            A propriedade <code>background-color</code> só preencheu o 
+            fundo da caixa selecionada, então isso vai nos dar uma visão 
+            mais clara sobre a estrutura da página de exemplo. Nossos 
+            cabeçalhos e parágrafos devem estar com um fundo cinza, enquanto 
+            os elementos de ênfase e o forte, devem estar com um azul claro.
           </p>
 
           <figure class="diagram">
@@ -407,8 +410,8 @@
           </figure>
 
           <p>
-            This shows us a couple of very important behaviors associated with
-            block and inline boxes:
+            Esse exemplo nos mostra alguns comportamentos importantes associados 
+            às caixas de blocos e em linha:
           </p>
 
           <ul>
