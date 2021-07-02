@@ -417,43 +417,43 @@
           <ul>
             <li>
               <p>
-                <strong>Block boxes</strong> always appear
-                <strong>below</strong> the previous block element. This is the
-                “natural” or “static” flow of an HTML document when it gets
-                rendered by a web browser.
+                <strong>Caixas de bloco</strong> sempre aparecem 
+                <strong>abaixo</strong> do elemento de bloco anterior. Isso 
+                é o fluxo “natural” ou “estático” de um documento HTML 
+                quando ele é renderizado por um navegador web.
               </p>
             </li>
 
             <li>
               <p>
-                The <strong>width of block boxes</strong> is set automatically
-                based on the width of its parent container. In this case, our
-                blocks are always the width of the browser window.
+                A <strong>largura das caixas de bloco</strong> é configurada 
+                automaticamente baseado na largura do seu conteiner pai. Nesse 
+                caso, nosso bloco são sempre a largura da janela do navegador.
               </p>
             </li>
 
             <li>
               <p>
-                The default <strong>height of block boxes</strong> is based on
-                the content it contains. When you narrow the browser window, the
-                <code>&lt;h1&gt;</code> gets split over two lines, and its
-                height adjusts accordingly.
+                A <strong>altura das caixas de bloco</strong> padrão é baseada 
+                no conteúdo que ela contém. Quando você diminui muito a janela 
+                do navegador, o <code>&lt;h1&gt;</code> fica dividida em duas 
+                linhas, e sua altura é ajustada de acordo.
               </p>
             </li>
 
             <li>
               <p>
-                <strong>Inline boxes</strong> don’t affect
-                <strong>vertical spacing</strong>. They’re not for determining
-                layout&mdash;they’re for styling stuff <em>inside</em> of a
-                block.
+                <strong>Caixas em linha</strong> não afetam o  
+                <strong>espaçamento vertical</strong>. Eles não são usadas 
+                para determinada o leiaute&mdash;eles são para estilizar as 
+                coisas <em>dentro</em> do bloco.
               </p>
             </li>
 
             <li>
               <p>
-                The <strong>width of inline boxes</strong> is based on the
-                content it contains, not the width of the parent element.
+                A <strong>largura da caixa em linha</strong> é baseada no 
+                conteúdo que ela contém, não na largura do elemento pai.
               </p>
             </li>
           </ul>
@@ -464,16 +464,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="changing-box-behavior">
-              <span>Changing Box Behavior</span>
+              <span>Mundando o Comportamento da Caixa</span>
             </h2>
           </div>
 
           <p>
-            We can override the default box type of HTML elements with the CSS
-            <code>display </code> property. For example, if we wanted to make
-            our <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements
-            blocks instead of inline elements, we could update our rule in
-            <code>box-styles.css</code> like so:
+            Nós podemos substituir o tipo de caixa padrão dos elementos HTML 
+            com a propriedade <code>display</code> da CSS. Por exemplo, se 
+            nós quiséssemos mudar nossos elementos <code>&lt;em&gt;</code> e 
+            <code>&lt;strong&gt;</code> para elementos de bloco ao invés de 
+            elementos de linha, precisamos atualizar nossa regra no arquivo 
+            <code>box-styles.css</code> para o seguinte:
           </p>
 
           <pre
@@ -485,12 +486,12 @@
 </code></pre>
 
           <p>
-            Now, these elements act like our headings and paragraphs: they start
-            on their own line, and they fill the entire width of the browser.
-            This comes in handy when you’re trying to turn
-            <code>&lt;a&gt;</code> elements into buttons or format
-            <code>&lt;img/&gt;</code> elements (both of these are inline boxes
-            by default).
+            Agora, esses elementos agem como nosso cabeçalho e o parágrafo: eles 
+            começam na sua própria linha, e preenchem a largura total da janela 
+            do navegador. Isso é interessante quando você quiser transformar 
+            elementos como o <code>&lt;a&gt;</code> em botões ou formatar o 
+            elemento <code>&lt;img/&gt;</code> (ambos são caixas em linha 
+            por padrão).
           </p>
 
           <figure class="diagram">
@@ -511,17 +512,18 @@
           </figure>
 
           <p>
-            However, it’s almost never a good idea to turn
-            <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> into block
-            elements, so let’s turn them back into inline boxes by changing
-            their <code>display</code> property to <code>inline</code>, like so:
+            No entanto, é quase sempre uma péssima ideia mudar o comportamento 
+            do <code>&lt;em&gt;</code> e do <code>&lt;strong&gt;</code> para 
+            elementos de bloco, então vamos retornar a nossa configuração 
+            padrão e mudar a propriedade <code>display</code> para <code>inline</code>, 
+            como era antes:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">em</span>, <span class="hljs-selector-tag">strong</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>;
-  <span class="hljs-attribute">display</span>: inline;             <span class="hljs-comment">/* This is the default for em and strong */</span>
+  <span class="hljs-attribute">display</span>: inline;             <span class="hljs-comment">/* Esse é o padrão para em e strong */</span>
 }
 </code></pre>
         </div>
@@ -535,49 +537,49 @@
               id="content-padding-border-and-margin"
             >
               <span
-                >Content, Padding, Border,<br class="subheading__title-br" />
-                and Margin</span
+                >Conteúdo, Preenchimento, Borda,<br class="subheading__title-br" />
+                e Margem</span
               >
             </h2>
           </div>
 
           <p>
-            The “CSS box model” is a set of rules that determine the dimensions
-            of every element in a web page. It gives each box (both inline and
-            block) four properties:
+            O “modelo de caixa CSS” é um conjunto de regras que determinam as 
+            dimensões de todos os elementos em uma página web. Ele dá para cada 
+            caixa (tanto de linha quando de bloco) quatro propriedades:
           </p>
 
           <ul>
             <li>
-              <strong>Content</strong> &ndash; The text, image, or other media
-              content in the element.
+              <strong>Conteúdo</strong> &ndash; O texto, a imagem ou qualquer 
+              outra conteúdo de mídia no elemento.
             </li>
 
             <li>
-              <strong>Padding</strong> &ndash; The space between the box’s
-              content and its border.
+              <strong>Preenchimento</strong> &ndash; O espaço entre o conteúdo 
+              da caixa e sua borda.
             </li>
 
             <li>
-              <strong>Border</strong> &ndash; The line between the box’s padding
-              and margin.
+              <strong>Borda</strong> &ndash; A linha entre o preenchimento da 
+              caixa e a margem.
             </li>
 
             <li>
-              <strong>Margin</strong> &ndash; The space between the box and
-              surrounding boxes.
+              <strong>Margem</strong> &ndash; O espaço entre a caixa e as outras 
+              caixas em volta.
             </li>
           </ul>
 
           <p>
-            Together, this is everything a browser needs to render an element’s
-            box. The content is what you author in an HTML document, and it’s
-            the only one that has any semantic value (which is
-            <a
-              href="../basic-web-pages/index.html#structure-versus-presentation"
-              >why it’s in the HTML</a
-            >). The rest of them are purely presentational, so they’re defined
-            by CSS rules.
+            Juntas, isso é tudo que um navegador precisa para mostrar os 
+            elementos de uma caixa. O conteúdo é o que você coloca em um 
+            documento HTML, e são as únicas coisas que tem algum significado 
+            semântico (que é o <a
+            href="../basic-web-pages/index.html#structure-versus-presentation"
+            >por quê está em um HTML</a
+          >. O resto é puramente apresentação, por isso são definidas através 
+          de regras CSS.
           </p>
 
           <figure class="diagram">
@@ -603,15 +605,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="padding">
-              <span>Padding</span>
+              <span>Preenchimento</span>
             </h2>
           </div>
 
           <p>
-            Let’s start from the inside out. We’ve already been working with
-            content, so on to padding. The
-            <code>padding</code> property&hellip;you guessed it&hellip;defines
-            the padding for the selected element:
+            Vamos começar de dentro pra fora. Já trabalhamos com o conteúdo, 
+            então vamos continuar com o preenchimento. A propriedade 
+            <code>padding</code>&hellip;você adivinhou&hellip;define o 
+            preenchimento do elemento selecionado:
           </p>
 
           <pre
@@ -622,11 +624,11 @@
 </code></pre>
 
           <p>
-            This adds 50 pixels to <em>each side</em> of the
-            <code>&lt;h1&gt;</code> heading. Notice how the background color
-            expands to fill this space. That’s always the case for padding
-            because it’s inside the border, and everything inside the border
-            gets a background.
+            A linha acima vai adicionar 50 pixels para <em>cada lado</em> do 
+            cabeçalho <code>&lt;h1&gt;</code>. Note como a cor de fundo se 
+            expande para preencher o espaço. Isso é o que sempre acontece 
+            quando mexemos no preenchimento por que ele está dentro da borda, 
+            e tudo dentro da borda tem um fundo.
           </p>
 
           <figure class="diagram">
@@ -647,8 +649,8 @@
           </figure>
 
           <p>
-            Sometimes you’ll only want to style one side of an element. For
-            that, CSS provides the following properties:
+            Mas às vezes a gente só quer mexer em um dos lados do elemento. 
+            Para isso, a CSS permite que usemos as seguintes propriedades:
           </p>
 
           <pre
@@ -662,29 +664,27 @@
 </code></pre>
 
           <p>
-            You can use any unit for the padding of an element, not just pixels.
-            Again,
-            <a href="../hello-css/index.html#units-of-measurement"
-              ><code>em</code> units</a
-            >
-            are particularly useful for making your margins scale with the base
-            font size.
+            Você pode usar qualquer unidade para o preenchimento de um elemento, 
+            não só pixels. De novo, <a href="../hello-css/index.html#units-of-measurement"
+            ><code>em</code> unidades</a
+          > são particularmente úteis para deixar sua margem escalar com base no 
+          tamanho da fonte.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="shorthand-formats">
-              Shorthand Formats
+              Formatos Abreviados
             </h3>
           </div>
 
           <p>
-            Typing out all of these properties out can be tiresome, so CSS
-            provides an alternative “shorthand” form of the
-            <code>padding</code> property that lets you set the top/bottom and
-            left/right padding with only one line of CSS. When you provide
-            <em>two</em> values to the <code>padding</code> property, it’s
-            interpreted as the vertical and horizontal padding values,
-            respectively.
+            Digitar todas essas propriedades pode ser cansativo, por isso 
+            a CSS tem uma alternativa, um formato abreviado da propriedade 
+            <code>padding</code> que nos permite configurar o preenchimento 
+            superior/inferior e da esquerda/direita com uma única linha da 
+            CSS. Quando você dá <em>dois</em> valores para a propriedade 
+            <code>padding</code>, ela interpreta como valores de preenchimento 
+            vertical e horizontal, respectivamente.
           </p>
 
           <figure class="diagram">
@@ -704,7 +704,7 @@
             </div>
           </figure>
 
-          <p>This means that our previous rule can be rewritten as:</p>
+          <p>Isso significa que nossa regra anterior pode ser reescrita assim:</p>
 
           <pre
             class="highlight"
@@ -714,9 +714,10 @@
 </code></pre>
 
           <p>
-            Alternatively, if you provide <em>four</em> values, you can set the
-            padding for each side of an element individually. The values are
-            interpreted clockwise, starting at the top:
+            Outra alternativa, se você definir <em>quatro</em> valores, você 
+            irá configurar o preenchimento para cada lado do elemento 
+            individualmente. Os valores são interpretados em sentido horário, 
+            começando pela parte de cima:
           </p>
 
           <figure class="diagram">
@@ -737,10 +738,10 @@
           </figure>
 
           <p>
-            Let’s try this out by removing the <code>10px</code> right padding
-            from the previous rule. This should give us 20 pixels on the top and
-            bottom of each paragraph, 10 pixels on the left, but none on the
-            right:
+            Vamos tentar remover o preenchimento direito de <code>10px</code> 
+            da regra anterior. Isso deve nos mostrar 20 pixels na parte superior 
+            e inferior de cada parágrafo, e 10 pixels no lado esquerdo, mas 
+            nada no lado direito:
           </p>
 
           <pre
