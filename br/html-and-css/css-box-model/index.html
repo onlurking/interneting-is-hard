@@ -747,17 +747,18 @@
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">p</span> {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;  <span class="hljs-comment">/* Top  Right  Bottom  Left */</span>
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;  <span class="hljs-comment">/* Superior Direita Inferior Esquerda */</span>
 }
 </code></pre>
 
           <p>
-            Whether or not you want to use shorthand forms or not is largely a
-            matter of personal preference and team conventions. Some developers
-            like the fact that the shorthand form is more condensed, while
-            others think the long form is easier to understand at a glance (and
-            thus easier to maintain). Regardless, you’ll likely encounter all of
-            them at some point in your web development career.
+            Independente se você usar ou não formatos abreviados, é 
+            em grande parte uma preferência pessoal ou convenção entre a equipe. 
+            Alguns desenvolvedores gostam do fato de as abreviaturas serem mais 
+            concisas, enquanto outros acham que o formato explícito é mais 
+            fácil de entender quando fizer uma leitura rápida do código (e é mais 
+            fácil de manter). Tanto faz, você irá encontrar todos esses formatos 
+            em algum ponto da sua carreira de desenvovedor web.
           </p>
         </div>
       </div>
@@ -766,16 +767,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="borders">
-              <span>Borders</span>
+              <span>Bordas</span>
             </h2>
           </div>
 
           <p>
-            Continuing our journey outward from the center of the CSS box model,
-            we have the border: a line drawn around the content and padding of
-            an element. The <code>border</code> property requires a new syntax
-            that we’ve never seen before. First, we define the stroke width of
-            the border, then its style, followed by its color.
+            Continuando nossa jornada para a parte externa a partir do centro 
+            do modelo de caixa CSS, temos a borda: uma linha desenhada no 
+            contorno do conteúdo e do preenchimento de um elemento. No caso da 
+            <code>borda</code> temos uma nova sintaxe que nunca foi apresentada, 
+            primeiro nós definimos a largura da borda, depois o estilo e por 
+            último sua cor.
           </p>
 
           <figure class="diagram">
@@ -796,8 +798,9 @@
           </figure>
 
           <p>
-            Try adding a border around our <code>&lt;h1&gt;</code> heading by
-            updating the rule in <code>box-styles.css</code>:
+            Tente adicionar uma borda no entorno do nosso cabeçalho 
+            <code>&lt;h1&gt;</code> atualizando a regra no arquivo 
+            <code>box-styles.css</code>:
           </p>
 
           <pre
@@ -809,19 +812,19 @@
 </code></pre>
 
           <p>
-            This tells the browser to draw a thin gray line around our heading.
-            Notice how the border bumps right up next to the padding with no
-            space in between. And, if you shrink your browser enough for the
-            heading to be split over two lines, both the padding and the border
-            will still be there.
+            Isso vai dizer ao navegador par desenhar uma linha bem fina em cinza 
+            em volta do cabeçalho. Perceba como a borda salta para a direita 
+            próximo do preenchimento sem espaço entre eles. E, se você diminuir 
+            a janela do seu navegador o suficiente para o cabeçalho se dividir 
+            em duas linhas, verá que o preenchimento e a borda continuarão iguais.
           </p>
 
           <p>
-            Drawing a border around our entire heading makes it look a little
-            1990s, so how about we limit it to the bottom of the heading? Like
-            <code>padding</code>, there are <code>-top</code>,
-            <code>-bottom</code>, <code>-left</code>, and
-            <code>-right</code> variants for the <code>border</code> property:
+            Desenhar uma borda ao redor do nosso cabeçalho faz página parecer 
+            uma página dos anos 90, então que tal nós limitarmos a parte 
+            superior do cabeçalho? Assim como o preenchimento, a propriedade 
+            <code>border</code>> também tem as variações <code>-top</code>,
+            <code>-bottom</code>, <code>-left</code>, e <code>-right</code>:
           </p>
 
           <pre
@@ -830,21 +833,20 @@
 </code></pre>
 
           <p>
-            Borders are common design elements, but they’re also invaluable for
-            debugging. When you’re not sure how a box is being rendered, add a
-            <code>border: 1px solid red;</code> declaration to it. This will
-            clearly show the box’s padding, margin, and overall dimensions with
-            just a single line of CSS. After you figured out why your stuff is
-            broken, simply delete the rule.
+            As bordas são elementos muito comuns, mas também não tem valor para 
+            depuração. Quando você não tem certeza como uma caixa está sendo 
+            apresentada, adicione uma declaração <code>border: 1px solid red;</code> 
+            a regra. Isso irá mostrar o preencheimento e a margem da caixa, e 
+            sua dimensão, com uma simples linha da CSS. Depois que você visualizar 
+            porque seu leiaute está quebrado, é só apagar a linha.
           </p>
 
           <p>
-            Please refer to the
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"
-              >Mozilla Developer Network</a
-            >
-            for more information about border styles.
+            Se quiser saber mais sobre os estilos que podemos aplicar à bordas, 
+            dá uma olhada na página da <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"
+            >MDN sobre estilos de bordas</a
+          >
           </p>
         </div>
       </div>
@@ -853,7 +855,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="margins">
-              <span>Margins</span>
+              <span>Margens</span>
             </h2>
           </div>
 
@@ -867,7 +869,7 @@
             class="highlight"
           ><code><span class="hljs-selector-tag">p</span> {
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">10px</span>;
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">50px</span>;          <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">50px</span>;          <span class="hljs-comment">/* Adicione isso */</span>
 }
 </code></pre>
 
