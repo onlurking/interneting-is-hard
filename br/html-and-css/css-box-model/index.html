@@ -860,9 +860,10 @@
           </div>
 
           <p>
-            Margins define the space outside of an element’s border. Or, rather,
-            the space between a box and its surrounding boxes. Let’s add some
-            space to the bottom of each <code>&lt;p&gt;</code> element:
+            As margens definem os espaços de fora da borda de um elemento. Ou 
+            melhor, o espaço entre a caixa e as caixas ao redor. Vamos 
+            adicionar um elemento algum espaço para cada elemento 
+            <code>&lt;p&gt;</code>:
           </p>
 
           <pre
@@ -874,53 +875,53 @@
 </code></pre>
 
           <p>
-            This demonstrates a side-specific variant of the
-            <code>margin</code> property, but it also accepts the same
-            <a href="index.html#shorthand-formats">shorthand formats</a> as
-            <code>padding</code>.
+            Isso demonstra uma variação específica da propriedade 
+            <code>margin</code>, mas também aceita os mesmos 
+            <a href="index.html#shorthand-formats">formatos abreviados</a> 
+            como no <code>padding</code>.
           </p>
 
           <p>
-            Margins and padding can accomplish the same thing in a lot of
-            situations, making it difficult to determine which one is the
-            “right” choice. The most common reasons why you would pick one over
-            the other are:
+            Margens e preenchimentos podem alcançar a mesma coisa em 
+            diferentes situações, tornando difícil determinar qual deles 
+            é o jeito “certo” de fazer. As razões mais comum de você escolher 
+            um ao invés de outro são:
           </p>
 
           <ul>
             <li>
-              The padding of a box has a background, while margins are always
-              transparent.
+              O preenchimento de uma caixa tem um fundo, enquanto as margens 
+              são sempre transparente.
             </li>
             <li>
-              Padding is included in the click area of an element, while margins
-              aren’t.
+              O preenchimento está incluso na área do clique de um elemento, 
+              enquanto margens não estão.
             </li>
             <li>
-              Margins collapse vertically, while padding doesn’t (we’ll discuss
-              this more in the next section).
+              As margens colapsam verticalmente, enquanto preenchimentos não 
+              (vamos discutir mais sobre isso na próxima seção).
             </li>
           </ul>
 
           <p>
-            If none of these help you decide whether to use
-            <code>padding</code> over <code>margin</code>, then don’t fret about
-            it&mdash;just pick one. In CSS, there’s often more than one way to
-            solve your problem.
+            Se nenhum dessas te ajudar a decidir se usa <code>padding</code> ao 
+            invés de <code>margin</code>, não se preocupe sobre isso&mdash;só 
+            escolha um. Em CSS, existem mais de uma forma de resolver seus 
+            problemas.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="margins-on-inline-elements">
-              Margins on Inline Elements
+              Margens em Elemento de Linha
             </h3>
           </div>
 
           <p>
-            One of the starkest contrasts between block-level elements and
-            inline ones is their handling of margins. Inline boxes
-            <em>completely ignore</em> the top and bottom margins of an element.
-            For example, watch what happens when we add a big margin to our
-            <code>&lt;strong&gt;</code> element:
+            Um dos contrastes entre elementos de blocos e elementos de linha é que 
+            um manipula as margens. Caixas de elementos de linha <em>ignoram 
+            completamente</em> as margens superior e inferior. Por exemplo, veja 
+            o que acontece quando adicionamos uma margem grande ao elemento 
+            <code>&lt;strong&gt;</code>:
           </p>
 
           <pre
@@ -931,9 +932,9 @@
 </code></pre>
 
           <p>
-            The horizontal margins display just like we’d expect, but this
-            doesn’t alter the vertical space around our
-            <code>&lt;strong&gt;</code> element one bit.
+            A margem horizontal é apresentada como esperada, mas isso não 
+            altera <em>um bit</em> do espaço vertical ao redor do nosso 
+            elemento <code>&lt;strong&gt;</code>
           </p>
 
           <figure class="diagram">
@@ -954,10 +955,11 @@
           </figure>
 
           <p>
-            If we change <code>margin</code> to <code>padding</code>, we’ll
-            discover that this isn’t exactly the case for a box’s padding. It’ll
-            display the blue background; however, it won’t affect the vertical
-            layout of the surrounding boxes.
+            Agora se mudarmos de <code>margem</code> para 
+            <code>preenchimento</code>, vamos descobrir que isso não é 
+            exatamente o caso de um preenchimento de caixa. Irá mostrar 
+            o fundo azul; no entanto, não irá afetar o leiaoute vertical ao 
+            redor das caixas.
           </p>
 
           <figure class="diagram">
@@ -978,21 +980,21 @@
           </figure>
 
           <p>
-            The rationale behind this goes back to the fact that inline boxes
-            format runs of text inside of a block, and thus have limited impact
-            on the overall layout of a page. If you want to play with the
-            vertical space of a page, you <em>must</em> be working with
-            block-level elements (luckily, we already know how to
+            A justificativa por trás disso remonta ao fato de que o formato de 
+            caixas de linha é composto por texto dentro de um bloco e, portanto, 
+            têm impacto limitado no leiaute geral de uma página. Se você quiser 
+            brincar com os espaços verticais de uma página, você <em>deve</em> 
+            trabalhar com elementos de bloco (por sorte, nós já sabemos como 
             <a href="index.html#changing-box-behavior"
-              >change an element’s box type</a
-            >).
+            >mudar um tipo de caixa de elemento</a
+          >).
           </p>
 
           <p>
-            So, before you start banging your head against the wall trying to
-            figure out why your top or bottom margin isn’t working, remember to
-            check your <code>display</code> property. Trust us, this will happen
-            to you eventually.
+            Então, antes de você começar a bater sua cabeça na parede tentando 
+            descobrir porque sua margem superior ou inferior não está funcionando, 
+            lembre de verificar a propriedade <code>display</code>. Confia, isso 
+            irá eventualmente acontecer com você.
           </p>
         </div>
       </div>
@@ -1001,21 +1003,21 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="vertical-margin-collapse">
-              <span>Vertical Margin Collapse</span>
+              <span>Margem Vertical Agrupada</span>
             </h2>
           </div>
 
           <p>
-            Another quirk of the CSS box model is the “vertical margin
-            collapse”. When you have two boxes with vertical margins sitting
-            right next to each other, they will collapse. Instead of adding the
-            margins together like you might expect, only the biggest one is
-            displayed.
+            Outra peculiaridade do modelo de caixa CSS é a “margem vertical 
+            agrupada”. Quando temos duas caixas com margens verticais próximas 
+            uma da outra, elas vão se agrupar (ficar uma sobre a outra). Ao 
+            invés de apresentar as margens juntas como esperado, somente a 
+            maior é apresentada.
           </p>
 
           <p>
-            For example, let’s add a top margin of 25 pixels to our
-            <code>&lt;p&gt;</code> element:
+            Por exemplo, vamos adicionar uma margem superior de 25 pixels
+            ao nosso elemento <code>&lt;p&gt;</code>:
           </p>
 
           <pre
@@ -1029,11 +1031,11 @@
 </code></pre>
 
           <p>
-            Each paragraph should have 50 pixels on the bottom, and 25 pixels on
-            the top. That’s 75 pixels between our
-            <code>&lt;p&gt;</code> elements, right? Wrong! There’s still only
-            going to be <code>50px</code> between them because the smaller top
-            margin collapses into the bigger bottom one.
+            Cada parágrafo deve ter 50 pixels na parte de inferior e 25 pixels 
+            na parte de superior. Isso deveria ter 75 pixels entre os elementos 
+            <code>&lt;p&gt;</code>, certo? Errado! Teremos somente 50 pixels 
+            entre eles porque a margem superior vai se agrupar com o maior 
+            inferior. 
           </p>
 
           <figure class="diagram">
@@ -1051,42 +1053,42 @@
           </figure>
 
           <p>
-            This behavior can be very useful when you’re working with a lot of
-            different kinds of elements, and you want to define their layout as
-            the <em>minimum</em> space between other elements.
+            Esse comportamento pode ser muito útil quando você está trabalhando 
+            com diferentes tipos de elementos, e você quer definir seu leiaoute 
+            como o espaço <em>mínimo</em> entre outros elementos.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="preventing-margin-collapse">
-              Preventing Margin Collapse
+              Prevenindo Agrupamento de Margens
             </h3>
           </div>
 
           <p>
-            It can also be really annoying. Sometimes you do want to prevent the
-            margins from collapsing. All you need to do is put another invisible
-            element in between them:
+            Isso pode ser realmente muito chato. Algumas vezes você quer prevenir 
+            a margem de se agruparem. Tudo que você precisa para fazer isso é só 
+            colocar outro elemento invisível entre elas:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraphs are blocks, too. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>However<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; and &amp;lt;strong&amp;gt;
-elements are not. They are <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>inline<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> elements.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Parágrafos são blocos, também. <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>No entanto<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>, &amp;lt;em&amp;gt; e &amp;lt;strong&amp;gt;
+elementos não. Eles são <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>elementos<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> de linha.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'padding-top: 1px'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>  <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'padding-top: 1px'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>  <span class="hljs-comment">&lt;!-- Adicione isso --&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Block elements define the flow of the HTML document, while inline elements
-do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Elementos de bloco definem o fluxo do documento HTML, enquanto elementos de linha não 
+são.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            We’ll talk more about the <code>&lt;div&gt;</code> element in the
-            next section. The important part here is that only
-            <em>consecutive</em> elements can collapse into each other. Putting
-            an element with non-zero height (hence the <code>padding-top</code>)
-            between our paragraphs forces them to display both the
-            <code>25px</code> top margin and the <code>50px</code> bottom
-            margin.
+            Vamos conversar mais sobre o elemento <code>&lt;div&gt;</code> na 
+            próxima seção. A parte importante aqui é que somente os elementos 
+            <em>consecutivos</em> podem ser agrupados um dentro do outro. 
+            Definir um elemento com altura com algum valor (daí o 
+            <code>padding-top</code>) entre nossos parágrafos força-os a mostrar 
+            a margem superior com <code>25px</code> e a margem inferior 
+            <code>50px</code>.
           </p>
 
           <figure class="diagram">
@@ -1107,25 +1109,25 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Remember that padding doesn’t ever collapse, so an alternative
-            solution would be to use <code>padding</code> to space out our
-            paragraphs instead of the <code>margin</code> property. However,
-            this only works if you’re not using the padding for anything else
-            (at the moment, we are, so let’s stick to the
-            <code>&lt;div&gt;</code> option).
+            Lembre-se que o preenchimento nunca vai agrupar, então uma solução 
+            alternativa seria utilizar o <code>padding</code> para aumentar o 
+            espaço dos parágrafos ao invés da propriedade <code>margin</code>. 
+            No entanto, isso só funcionar se você não utilizar o preenchimento 
+            para qualquer outra coisa (no momento, nós estamos, então vamos 
+            por usar o <code>&lt;div&gt;</code> como opção).
           </p>
 
           <p>
-            A third option to avoid margin collapse is to stick to a bottom-only
-            or top-only margin convention. For instance, if all your elements
-            <em>only</em> define a bottom margin, there’s no potential for them
-            to collapse.
+            Uma terceira opção para evitar o agrupamento das margens é para usar 
+            uma convenção de margem somente superior ou somente inferior. Por 
+            exemplo, se todos os seus elementos <em>somente</em> definem uma 
+            margem inferior, não tem potencial para eles agruparem.
           </p>
 
           <p>
-            Finally, the <a href="../flexbox/index.html">flexbox</a> layout
-            scheme doesn’t have collapsing margins, so this isn’t really even an
-            issue for modern websites.
+            Finalmente, o esquema de leiaute <a href="../flexbox/index.html">
+              flexbox</a> não tem margens agrupando, então essa não é realmente 
+            um problema para páginas modernas.
           </p>
         </div>
       </div>
@@ -1134,47 +1136,49 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="generic-boxes">
-              <span>Generic Boxes</span>
+              <span>Caixas Genéricas</span>
             </h2>
           </div>
 
           <p>
-            So far, every HTML element we’ve seen lends additional meaning to
-            the content it contains. Indeed, this is the whole point of HTML,
-            but there are many times when we need a generic box purely for the
-            sake of styling a web page. This is what
-            <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are for.
+            Até agora, todo elemento HTML que vimos empresta algum significado 
+            adicional para o conteúdo que ele contém. De fato, esse é o ponto 
+            principal da HTML, mas muitas vezes quando precisamos de uma caixa 
+            genérica somente para o caso de estilizar uma página web. É para 
+            isso que o <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> 
+            são utilizados.
           </p>
 
           <p>
-            Both <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are
-            “container” elements that don’t have any affect on the semantic
-            structure of an HTML document. They do, however, provide a hook for
-            adding CSS styles to arbitrary sections of a web page. For example,
-            sometimes you need to add an invisible box to prevent a margin
-            collapse, or maybe you want to group the first few paragraphs of an
-            article into a synopsis with slightly different text formatting.
+            Ambos, <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> são 
+            elementos “conteiner” que não tem nenhum efeito semântico na 
+            estrutura de um documento HTML. Ele fazem, no entanto, uma forma 
+            de gancho para adicionar estilos CSS para uma seção arbitrária 
+            de uma página web. Por exemplo, algumas vezes você precisa 
+            adicionar uma caixa invisível para prevenir que margens se agrupem, 
+            ou talvez você queira estilizar os primeiros parágrafos de um 
+            artigo como uma sinopse com uma formatação diferentes no texto.
           </p>
 
           <p>
-            We’ll use a lot of <code>&lt;div&gt;</code>’s throughout the rest of
-            this tutorial. For now, let’s create a simple button by adding the
-            following to the bottom of our <code>boxes.html</code> file:
+            Vamos utilizar muitas <code>&lt;div&gt;</code> durante o resto desse 
+            tutorial. Mas agora, vamos criar um simples botão adicionando o 
+            trecho abaixo para o botão no nosso arquivo <code>boxes.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Botão<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            And here are the associated styles that need to go into
-            <code>box-styles.css</code>. Most of these should be familiar from
-            the last chapter, although we did throw in a new
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
-              ><code>border-radius</code> property</a
-            >:
+            E aqui segue o estilo associado que é necessário e vai dentro do 
+            <code>box-styles.css</code>. A maior parte disso deve já deve ser 
+            familiar, do último capítulo, no entanto vamos adicionar uma 
+            nova propriedade <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"
+            ><code>border-radius</code></a
+          >:
           </p>
 
           <pre
@@ -1191,8 +1195,8 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            This will give us a big blue button that spans the entire width of
-            the browser:
+            Isso vai nos dar um grande botão azul que ocupará toda a largura 
+            do navegador:
           </p>
 
           <figure class="diagram">
@@ -1213,23 +1217,23 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Of course, these styles also apply to the invisible
-            <code>&lt;div&gt;</code> we used to break the margin collapse in the
-            previous section. Obviously, we need a way to select individual
-            <code>&lt;div&gt;</code>’s if they’re to be of any practical use to
-            us. That’s what
+            É claro, essa estilização também será aplicada à <code>&lt;div&gt;</code> 
+            invisível que usamos para quebrar o agrupamento de margem na seção 
+            anterior. Obviamente que vamos precisar de uma forma para selecionar 
+            de forma individual a <code>&lt;div&gt;</code> para que ela tenha 
+            algum uso prático para nós. Para isso vamos usar 
             <a href="../css-selectors/index.html#class-selectors"
-              >class selectors</a
-            >
-            are for, which we’ll introduce in the next chapter. In lieu of
-            those, let’s just delete or comment out that invisible
-            <code>&lt;div&gt;</code>.
+              >seletores de classes</a
+            >, que iremos introduzir no próximo capítulo. No lugar desses, 
+            vamos só excluir ou comentar aquela <code>&lt;div&gt;</code> 
+            invisível.
           </p>
 
           <p>
-            The only real difference between a <code>&lt;div&gt;</code> and a
-            <code>&lt;span&gt;</code> is that the former is for block-level
-            content while the latter is meant for inline content.
+            A única diferença real entre uma <code>&lt;div&gt;</code> e um
+            <code>&lt;span&gt;</code> é que a primeira é para conteúdos a 
+            nível de bloco, enquanto o segundo é para conteúdo a nível de 
+            linha.
           </p>
         </div>
       </div>
@@ -1238,17 +1242,17 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="explicit-dimensions">
-              <span>Explicit Dimensions</span>
+              <span>Dimensões Explicitas</span>
             </h2>
           </div>
 
           <p>
-            So far, we’ve let our HTML elements define their dimensions
-            automatically. The paddings, borders, and margins we’ve been playing
-            with all wrap around whatever content happens to be inside the
-            element’s box. If you add more text to our
-            <code>&lt;em&gt;</code> element, everything will expand to
-            accommodate it:
+            Até agora, deixamos que nossos elementos HTML definissem suas 
+            próprias dimensões, de forma automática. Os preenchimentos, 
+            bordas e margens que usamos estão envolvendo todo o conteúdo 
+            que estão dentro da caixa do elemento. Se você adicionar mais 
+            texto ao nosso elemento <code>&lt;em&gt;</code>, tudo irá se 
+            expandir para acomodá-lo:
           </p>
 
           <figure class="diagram">
@@ -1269,28 +1273,30 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            But, sometimes our desired layout calls for an explicit dimension,
-            like a sidebar that’s exactly 250 pixels wide. For this, CSS
-            provides the <code>width</code> and <code>height</code> properties.
-            These take precedence over the default size of a box’s content.
+            Mas, algumas vezes desejamos que os leiautes tenham uma dimensão 
+            explícia, como uma barra lateral que tem uma largura exata de 
+            250 pixels. Para isso, a CSS disponibilizar as propriedades 
+            <code>width</code> e <code>height</code>. Elas tem precedência 
+            sobre o tamanho padrão do conteúdo da caixa.
           </p>
 
           <p>
-            Let’s give our button an explicit width by adding the following
-            property to <code>box-styles.css</code>:
+            Vamos dar ao nosso botão uma largura explícita adicionando a 
+            a propriedade ao <code>box-styles.css</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">div</span> {
-  <span class="hljs-comment">/* [Existing Declarations] */</span>
+  <span class="hljs-comment">/* [Declarações anteriores..] */</span>
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
 }
 </code></pre>
 
           <p>
-            Instead of being as wide as the browser window, our button is now
-            200 pixels, and it hugs the left side of the page:
+            Ao invés de ocupar todo o tamanho da janela do navegador, nosso 
+            botão tem agora 200 pixels, e está posicionado no lado esquerdo 
+            da nossa página:
           </p>
 
           <figure class="diagram">
@@ -1311,19 +1317,19 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Also notice that if you make the button’s title longer, it will
-            automatically wrap to the next line, and the element will expand
-            vertically to accommodate the new content. You can change this
-            default behavior with the
+            Também perceba que se você deixaar o título do botão um pouco 
+            maior, ele vai quebrar o texto automaticamente para a próxima 
+            linha, e o elemento irá expandir verticalmente para acomodar 
+            o conteúdo. Você pode mudar esse comportamento adicionando as 
+            seguintes propriedades 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space"
               ><code>white-space</code></a
             >
-            and
+            e
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
               ><code>overflow</code></a
-            >
-            properties.
+            >.
           </p>
         </div>
       </div>
@@ -1332,17 +1338,18 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="content-boxes-and-border-boxes">
-              <span>Content Boxes and Border Boxes</span>
+              <span>Caixas de Conteúdo e Caixas de Borda</span>
             </h2>
           </div>
 
           <p>
-            The <code>width</code> and <code>height</code> properties only
-            define the size of a box’s <em>content</em>. Its padding and border
-            are both added <em>on top of</em> whatever explicit dimensions you
-            set. This explains why you’ll get an image that’s 244 pixels wide
-            when you take a screenshot of our button, despite the fact that it
-            has a <code>width:&nbsp;200px</code> declaration attached to it.
+            As propriedades <code>width</code> e <code>height</code> só 
+            definem o tamanho do conteúdo da caixa. Seus preenchimentos 
+            e bordas são adicionar <em>sobre</em> qualquer dimensão explícita 
+            que você defina. Isso explica por que você tem uma imagem de 244 
+            pixels quando você tira captura de tela do nosso botão, mesmo que 
+            ele tenha sido declarado um tamanho de 
+            <code>width:&nbsp;200px</code>.
           </p>
 
           <figure class="diagram">
@@ -1363,20 +1370,20 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            Needless to say, this can be a little counterintuitive when you’re
-            trying to lay out a page. Imagine trying to fill a
-            <code>600px</code> container with three boxes that are all
-            <code>width:&nbsp;200px</code>, but they don’t fit because they all
-            have a <code>1px</code> border (making their actual width
-            <code>202px</code>).
+            É necessário dizer, isso pode ser um pouco contraintuitivo quando 
+            você tá tentando desenhar uma página. Imagine se você quiser 
+            preencher um conteiner de <code>600px</code> com três caixas 
+            iguais com <code>width:&nbsp;200px</code>, mas elas não encaixam 
+            porque todas tem uma borda de <code>1px</code> (fazendo seu 
+            tamanho real ficar com <code>202px</code>).
           </p>
 
           <p>
-            Fortunately, CSS lets you change how the width of a box is
-            calculated via the <code>box-sizing</code> property. By default, it
-            has a value of <code>content-box</code>, which leads to the behavior
-            described above. Let’s see what happens when we change it to
-            <code>border-box</code>:
+            Felizmente, a CSS deixa você mudar como a largura de uma caixa 
+            é calculado usando a propriedade <code>box-sizing</code>. Por 
+            padrão, ela tem o valor da <code>content-box</code>, que leva ao 
+            comportamento descrito anteriormente. Vamos ver o que acontece 
+            quando mudamos para <code>border-box</code>:
           </p>
 
           <pre
@@ -1391,14 +1398,15 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
   
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">box-sizing</span>: border-box;  <span class="hljs-comment">/* Adicione isto */</span>
 }
 </code></pre>
 
           <p>
-            This forces the actual width of the box to be
-            <code>200px</code>&mdash;including padding and borders. Of course,
-            this means that the content width is now determined automatically:
+            Isso força que a largura atual da caixa seja 
+            <code>200px</code>&mdash;incluindo o preenchimento e a borda. 
+            É claro, isso significa que agora a largura do conteúdo é 
+            determinado de forma automática:
           </p>
 
           <figure class="diagram">
@@ -1419,9 +1427,9 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            This is much more intuitive, and as a result, using
-            <code>border-box</code> for all your boxes is considered a best
-            practice among modern web developers.
+            Isso é muito mais intuitivo, e como resultado, utilizar a 
+            <code>border-box</code> para todas as caixas é considerado 
+            a melhor prática entre os desenvolvedores web modernos.
           </p>
         </div>
       </div>
@@ -1430,25 +1438,25 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="aligning-boxes">
-              <span>Aligning Boxes</span>
+              <span>Alinhando Caixas</span>
             </h2>
           </div>
 
           <p>
-            Aligning boxes horizontally is a common task for web developers, and
-            the box model offers a lot of ways to do it. We already saw the
-            <a href="../hello-css/index.html#text-alignment"
-              ><code>text-align</code> property</a
-            >, which aligns the content and <em>inline</em> boxes inside of a
-            block-level element. Aligning <em>block</em> boxes is another story.
+            O alinhamento de caixas horizontalmente é uma tarefa bem comum para 
+            desenvolvedores web, e o modelo de caixa oferece várias formas de 
+            fazer isso. Já vimos a <a href="../hello-css/index.html#text-alignment"
+            >propriedade <code>text-align</code></a>, que alinha o conteúdo e 
+            caixas de linha dentro de um elemento de nível de bloco. Alinhar 
+            caixas de bloco é ooooutra história...
           </p>
 
           <p>
-            Try adding the following rule to our stylesheet. It will only align
-            the <em>content</em> inside of our block boxes&mdash;not the blocks
-            themselves. Our <code>&lt;div&gt;</code> button is still
-            left-aligned regardless of the <code>&lt;body&gt;</code>’s text
-            alignment:
+            Tente adicionar a regra abaixo a nossa folha de estilo. Isso só irá 
+            alinhar o <em>conteúdo</em> dentro da nossa caixa de blocos&mdash;não 
+            o bloco em si. Nossa <code>&lt;div&gt;</code> do botão continuará 
+            alinhado à esquerda independente do alinhamento do texto no 
+            <code>&lt;body&gt;</code>:
           </p>
 
           <pre
@@ -1459,29 +1467,31 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            There are three methods for horizontally aligning block-level
-            elements: “auto-margins” for center alignment, “floats” for
-            left/right alignment, and “flexbox” for complete control over
-            alignment. Yes, unfortunately block-level alignment is totally
-            unrelated to the <code>text-align</code> property.
+            Existem três métodos para alinhamentos horizontais de 
+            elementos de nível de bloco: “auto-margins” para alinhar 
+            no centro, “floats” para alinhar à esquerda/direita, e 
+            “flexbox” para um controle completo sobre o alinhamento. 
+            Sim, infelizmente o alinhamento de nível de bloco é 
+            totalmente desrelacionado a propriedade <code>text-align</code>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="centering-with-auto-margins">
-              Centering With Auto-Margins
+              Centralizando Com Auto-Margins
             </h3>
           </div>
 
           <p>
-            <a href="../floats/index.html">Floats</a> and
-            <a href="../flexbox/index.html">flexbox</a> are complicated topics
-            that we’ve devoted entire chapters to, but we do have the background
-            to deal with auto-margins right now. When you set the left and right
-            margin of a block-level element to <code>auto</code>, it will center
-            the block in its parent element.
+            <a href="../floats/index.html">Floats</a> e
+            <a href="../flexbox/index.html">flexbox</a> são tópicos complicados 
+            que iremos reservar um capítulo inteiro para isso, mas nós temos 
+            os subsídios para lidar com o <code>auto-margins</code> agora. 
+            Quando você define a margem esquerda ou direita par um elemento de 
+            bloco com o <code>auto</code>, ele irá centralizar o bloco e seus 
+            elementos.
           </p>
 
-          <p>For example, we can center our button with the following:</p>
+          <p>Por exemplo, podemos centralizar nosso botão com o seguinte código:</p>
 
           <pre
             class="highlight"
@@ -1499,10 +1509,10 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Note that this only works on blocks that have an explicit width
-            defined on them. Remove that <code>width:&nbsp;200px</code> line,
-            and our button will be the full width of the browser, making “center
-            alignment” meaningless.
+            Note que isso só funcionar em bloco que tem uma largura explícita 
+            definida. Se remover aquela linha <code>width:&nbsp;200px</code> 
+            nosso botão irá ocupar de novo toda a largura da janela do navegador 
+            fazendo o “alinhamento centralizado” algo sem sentido.
           </p>
         </div>
       </div>
@@ -1511,15 +1521,16 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="resetting-styles">
-              <span>Resetting Styles</span>
+              <span>Redefinindo Estilos</span>
             </h2>
           </div>
 
           <p>
-            Notice that white band around our page? That’s a default
-            margin/padding added by your browser. Different browsers have
-            different default styles for all of their HTML elements, making it
-            difficult to create consistent stylesheets.
+            Sabe aquela borda branca ao redor da nossa página? Ela é 
+            uma margem/preenchimento padrão adicionada pelo seu 
+            navegador. Navegadores diferentes tem padrões de estilos 
+            diferentes para cada um dos seus elementos HTML, tornando 
+            difícil criar folhas de estilos consistentes.
           </p>
 
           <figure class="diagram">
@@ -1540,9 +1551,10 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           </figure>
 
           <p>
-            It’s usually a good idea to override default styles to a predictable
-            value using the “universal” CSS selector (<code>*</code>). Try
-            adding this to the top of our <code>box-styles.css</code> file:
+            Normalmente é uma boa ideia sobreescrever estilos padrões para um 
+            valor previsível usando o seletor CSS “universal” (<code>*</code>).
+            Tente adicionar isso na primeira linha do nosso arquivo 
+            <code>box-styles.css</code>:
           </p>
 
           <pre class="highlight"><code>* {
@@ -1553,18 +1565,19 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            This selector matches every HTML element, effectively resetting the
-            <code>margin</code> and <code>padding</code> properties for our web
-            page. We also converted all our boxes to <code>border-box</code>,
-            which, again, is a best practice.
+            Esse seletor casa com todo elemento HTML, redefinindo efetivamente 
+            as propriedades <code>margin</code> e <code>padding</code> para 
+            a nossa página. Também convertemos todas as nossas caixas para 
+            <code>border-box</code>, o que é, de novo, uma boa prática.
           </p>
 
           <p>
-            You’ll find a similar reset at the top of almost every global CSS
-            stylesheet on the web. They can get a whole lot more complicated,
-            but the three simple declarations shown above allow us to
-            confidently tweak the CSS box model for our own purposes without
-            worrying about unforeseen interactions with default browser styles.
+            Você encontrará uma redefinição na primeira linha de quase todas 
+            as folhas de estilos CSS na Web. Elas podem ser muito mais 
+            complicadas, mas as três declarações mais simples mostradas abaixo 
+            nos permitem ajustar com confiança o modelo de caixa CSS para os 
+            nossos propósitos sem se preocupar sobre interações imprevistas 
+            com os estilos padrões do navegador.
           </p>
         </div>
       </div>
@@ -1573,47 +1586,50 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            We’ll learn more about the practical uses of the CSS box model as we
-            get deeper into constructing complex web pages. For now, think of it
-            as a new tool in your CSS toolbox. With a few key concepts from this
-            chapter, you should feel much more equipped to convert a design
-            mockup into a real-life web page:
+            Vamos aprender mais sobre o uso prático do modelo de caixa CSS enquanto 
+            nos aprofundamos na complexa construção de páginas web. Por enquanto, 
+            pense nisso como uma nova ferramenta na sua caixa de ferramentas. 
+            Com alguns conceitos chave apresentados nesse capítulo, você vai 
+            se sentir muito mais habilitado para converter uma imagem modelo 
+            em uma página web real:
           </p>
 
           <ul>
-            <li>Everything is a box.</li>
-            <li>Boxes can be inline or block-level.</li>
-            <li>Boxes have content, padding, borders, and margins.</li>
+            <li>Tudo é uma caixa.</li>
+            <li>Caixas podem ser de linha ou de bloco.</li>
+            <li>Caixas tem conteúdo, preenchimento, bordas e margens.</li>
             <li>
-              They also have seemingly arbitrary rules about how they interact.
+              Elas também tem regras aparentemente arbitrárias de como interagir.
             </li>
             <li>
-              Mastering the CSS box model means you can lay out most web pages.
+              Dominando o modelo de caixas CSS você já pode projetar páginas web.
             </li>
           </ul>
 
           <p>
-            Like the last chapter, the CSS properties we just covered might seem
-            simple&mdash;and they sort of are. But, start looking at the
-            websites you visit through the lens of the CSS box model, and you’ll
-            see this stuff literally everywhere.
+            Assim como no nosso último capítulo, as propriedades CSS que 
+            cobrimos agora, podem parecer simples&mdash;e elas meio que são. 
+            Mas, comece a olhar as páginas que você visita através das lentes 
+            do modelo de caixa CSS, e você verá essas coisas literalmente em 
+            todos os lugares.
           </p>
 
           <p>
-            Our exploration of generic boxes (<code>&lt;div&gt;</code> and
-            <code>&lt;span&gt;</code>) was a little bit limited because we
-            didn’t have a way to pluck out an individual HTML element from our
-            web page. We’ll fix that in the next chapter with a more in-depth
-            discussion of CSS selectors.
+            Nossa explicação sobre caixas genéricas 
+            (<code>&lt;div&gt;</code> e <code>&lt;span&gt;</code>) 
+            foi um pouco limitada por que não tínhamos ainda um 
+            jeito de descolar um elemento HTML da nossa página 
+            web. Vamos corrigir isso no próximo capítulo com 
+            uma discussão mais profunda sobre seletores CSS.
           </p>
 
           <div class="next-chapter">
-            <a href="../css-selectors/index.html">Next Chapter &gt;</a>
+            <a href="../css-selectors/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1623,72 +1639,72 @@ do not.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#block-elements-and-inline-elements"
-                  >Block vs Inline</a
+                  >Bloco vs Linha</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#changing-box-behavior"
-                  >Changing Box Behavior</a
+                  >Mudando a Caixa</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#content-padding-border-and-margin"
-                  >The Box Model</a
+                  >O Modelo de Caixa</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#padding">Padding</a>
+                <a class="sidebar__link" href="index.html#padding">Preenchimento</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#borders">Borders</a>
+                <a class="sidebar__link" href="index.html#borders">Bordas</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#margins">Margins</a>
+                <a class="sidebar__link" href="index.html#margins">Margens</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#vertical-margin-collapse"
-                  >Vertical Margin Collapse</a
+                  >Margem Agrupaga</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#generic-boxes"
-                  >Generic Boxes</a
+                  >Caixas Genéricas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#explicit-dimensions"
-                  >Explicit Dimensions</a
+                  >Dimensões Explícitas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#content-boxes-and-border-boxes"
-                  >Content vs Border Boxes</a
+                  >Conteúdo vs Bordas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#aligning-boxes"
-                  >Aligning Boxes</a
+                  >Alinhando Caixas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#resetting-styles"
-                  >Resetting Styles</a
+                  >Redefinindo Estilos</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
