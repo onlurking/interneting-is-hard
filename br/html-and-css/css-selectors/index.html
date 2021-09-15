@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>CSS Selectors Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Seletores CSS | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -174,7 +174,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -191,12 +191,12 @@
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 6. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 6. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly web development tutorial for plucking out HTML elements
+              Uma introdução amigável para seleção de elementos HTML
             </div>
           </div>
         </div>
@@ -205,14 +205,13 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            Way back in the
-            <a href="../links-and-images/index.html">Links and Images</a>
-            chapter, we learned how to connect an HTML document to other files
-            in our project. “CSS selectors” are similar, except instead of
-            navigating between whole files, they let us map a single CSS rule to
-            a specific HTML element. This makes it possible to
-            <em>selectively</em> style individual elements while ignoring
-            others.
+            Voltando no capítulo de <a href="../links-and-images/index.html">
+              Links and Images</a> nós aprendemos a concatenar um documento HTML 
+            a outros arquivos no nosso projeto. Os “seletores CSS” são bem 
+            parecidos, exceto que ao invés de navegar entre arquivos, eles 
+            mapeiam regras CSS para um elemento HTML específico. Isso torna 
+            possível estilizar <em>seletivamente</em> elementos enquanto 
+            ignoramos outros.
           </p>
 
           <figure class="diagram">
@@ -233,19 +232,19 @@
           </figure>
 
           <p>
-            Unless you want every section of your website to look exactly the
-            same, this is a crucial bit of functionality for us. It’s how we say
-            things like “I want this paragraph to be blue and that other
-            paragraph to be yellow.” Until now, we’ve only been able to turn
-            <em>all</em> our paragraphs blue (or yellow).
+            A menos que você queira que toda seção da sua página se pareça 
+            exatamente igual, isso é uma funcionalidade muito interessante. É 
+            uma forma de dizer, “eu quero que esse parágrafo seja azul, e 
+            aquele outro seja amarelo”. Até agora, <em>todos</em> os nossos 
+            parágrafos tinham somente uma cor (ou era azul ou amarelo).
           </p>
 
           <p>
-            The only CSS selector we’ve seen so far is called the “type
-            selector”, which targets all the matching elements on a page. In
-            this chapter, we’ll explore more granular ways to style a web page
-            with class selectors, descendant selectors, pseudo-classes, and ID
-            selectors.
+            O único seletor CSS que vimos até o momento é chamado de “seletor 
+            de tipo”, que casa com todos os elementos na página. Vamos ver 
+            agora como explorar outras formas de estilizar uma página com 
+            classes de seletores, seletores descendentes, pseudo-classes e 
+            ID seletores.
           </p>
         </div>
       </div>
@@ -253,14 +252,14 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            We’ll only need one HTML file and a CSS stylesheet for our example
-            this chapter. Create a new folder called
-            <code>css-selectors</code> and new web page called
-            <code>selectors.html</code> with the following markup:
+            Vamos precisar somente de um arquivo HTML e uma folha de estilo 
+            CSS para nosso exemplo nesse capítulo. Crie uma nova pasta chamada 
+            <code>css-selectors</code> e uma nova página chamada 
+            <code>selectors.html</code> com o conteúdo abaixo:
           </p>
 
           <pre
@@ -269,41 +268,38 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>CSS Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Seletores CSS<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CSS Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Seletores CSS<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>CSS selectors let you <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>select<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> individual HTML elements in an HTML
-       document. This is <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>super<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> useful.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Seletores CSS deixam você <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>selecionar<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> elementos HTML individuais em um documento 
+       HTML. Isso é <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>muito<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> útil.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes are ridiculously important, since they allow you to select
-       arbitrary boxes in your web pages.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes são ridiculamente importantes, uma vez que eles permitem você selecionar
+       caixas arbitrárias na sua página web.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’ll also be talking about links in this example, so here’s
-       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Interneting Is Hard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> for us to
-       style.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Também iremos falar sobre âncoras nesse exemplo, então aqui está 
+       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Fazer Front é Difícil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> para 
+       estilizar.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            Go ahead and create that <code>styles.css</code> stylesheet in the
-            same folder, too. This gives us everything we need to explore CSS
-            selectors.
+            Vá em frente e crie também uma folha de estilos <code>styles.css</code> 
+            na mesma pasta. Isso vai permitir que nós exploremos os seletores CSS.
           </p>
 
           <p>
-            If you’re just diving into this tutorial series, be sure to have a
-            quick read through the
-            <a href="../introduction/index.html#atom-text-editor"
-              >Introduction</a
-            >
-            to get set up with the Atom text editor.
+            Se você estiver começando nessa série de turoriais, dê uma lida rápida 
+            na <a href="../introduction/index.html#atom-text-editor"
+            >Introdução</a
+          > para ver como usar o editor de texto Atom.
           </p>
         </div>
       </div>
@@ -312,7 +308,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="class-selectors">
-              <span>Class Selectors</span>
+              <span>Seletores de Classe Selectors</span>
             </h2>
           </div>
 
