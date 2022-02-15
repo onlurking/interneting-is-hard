@@ -188,12 +188,12 @@
         <div class="page-header__wrapper">
           <div class="heading">
             <h1 class="heading__title heading__title--advanced-positioning">
-              Advanced Positioning
+              Posicionamento Avançado
             </h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 9. of <a href="../index.html">HTML &amp; CSS é Difícil</a>
+                Nº 9. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
@@ -270,8 +270,8 @@
             <a href="../introduction/index.html#atom-text-editor"
               >projeto Atom</a
             >
-            chamado <code>posicionamento-avancado</code> e um novo arquivo chamado
-            <code>esquemas.html</code> com o seguinte cógigo:
+            chamado <code>advanced-positioning</code> e um novo arquivo chamado
+            <code>schemes.html</code> com o seguinte cógigo:
           </p>
 
           <pre
@@ -338,8 +338,8 @@
 
           <p>
             Essa página depende de algumas <a href="images-89bc45.zip">imagens</a> para
-            deixar nosso exemplo um pouco mais caro. Mantenha a pasta das 
-            <code>imagens</code> pai no seu projeto ao descompactar os arquivos
+            deixar nosso exemplo um pouco mais claro. Mantenha a pasta pai das 
+            <code>images</code> no seu projeto ao descompactar os arquivos
             para o seu projeto, como mostrado acima.
             Assegure-se de criar um 
             <code>styles.css</code> e preenchê-lo com a base necessária de estilos,
@@ -376,12 +376,12 @@
 </code></pre>
 
           <p>
-            Nothing new here, just some familiar
-            <a href="../flexbox/index.html">flexbox</a> techniques to create a
-            grid of items. The only weird thing is the explicit
-            <code>height</code> on the <code>&lt;body&gt;</code> element, which
-            will let us scroll up and down the page to demonstration different
-            positioning behaviors.
+            Nada novo aqui, apenas algumas técnicas familiares de
+            <a href="../flexbox/index.html">flexbox</a> para criar uma grade
+            de itens.  A única coisa estranha é a
+            <code>height</code> explícita no elemento <code>&lt;body&gt;</code>, 
+            que nos permitirá rolar a página para demonstrar diferentes
+            comportamentos de posicionamento.
           </p>
 
           <figure class="diagram">
@@ -404,17 +404,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="positioned-elements">
-              <span>Positioned Elements</span>
+              <span>Elementos Posicionais</span>
             </h2>
           </div>
 
           <p>
-            The CSS <code>position</code> property lets you alter the
-            positioning scheme of a particular element. Its default value, as
-            you might imagine, is <code>static</code>. When an element’s
-            <code>position</code> property <em>doesn’t</em> have a value of
-            <code>static</code>, it’s called a “positioned element”. Positioned
-            elements are what this entire chapter is about.
+            A propriedade <code>position</code> do CSS permite-lhe alterar o
+            esquema de posicionamento de um elemento particular. Seu valor
+            padrão, como você pode imaginar, é <code>static</code>. Quando a
+            propriedade <code>position</code> de um elemento <em>não</em> tem o
+            valor <code>static</code>, é chamado de "elemento posicionado".
+            Elementos posicionados são o tema desse capítulo inteiro.
           </p>
 
           <figure class="diagram">
@@ -435,10 +435,11 @@
           </figure>
 
           <p>
-            It’s possible to mix-and-match different positioning schemes. Again,
-            most of your web page should be statically positioned, but it’s
-            common to find relatively and absolutely positioned elements inside
-            of other elements that are part of the normal flow of the page.
+            É possível misturar e combinar diferentes esquemas de
+            posicionamento. Novamente, a maior parte da sua página web deve
+            ser estáticamente posicionada, mas é comum encontrar elementos
+            relativamente e absolutamente posicionados dentro de outros
+            elementos que são parte do fluxo normal da página.
           </p>
         </div>
       </div>
@@ -447,15 +448,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="relative-positioning">
-              <span>Relative Positioning</span>
+              <span>Posicionamento Relativo</span>
             </h2>
           </div>
 
           <p>
-            “Relative positioning” moves elements around <em>relative</em> to
-            where they would normally appear in the static flow of the page.
-            This is useful for nudging boxes around when the default flow is
-            just a little bit off.
+            O “posicionamento relativo” move os elementos ao redor de forma
+            <em>relativa</em> à onde apareceriam normalmente no fluxo
+            estático da página. Isso é útil para empurrar caixas ao redor
+            quando o fluxo padrão está um pouco fora.
           </p>
 
           <figure class="diagram">
@@ -476,9 +477,10 @@
           </figure>
 
           <p>
-            Let’s turn the <code>.item-relative</code> element in
-            <code>schemes.html</code> into a relatively positioned element. Add
-            the following rule to <code>styles.css</code>:
+            Vamos transformar o elemento <code>.item-relative</code> no
+            <code>schemes.html</code> em um elemento relativamente
+            posicionado. Adicione a seguinte regra ao
+            <code>styles.css</code>:
           </p>
 
           <pre
@@ -491,11 +493,10 @@
 </code></pre>
 
           <p>
-            The <code>position: relative;</code> line makes it a positioned
-            element, and the <code>top</code> and <code>left</code> properties
-            let you define how far it’s offset from its static position. This is
-            sort of like setting an (<em>x</em>, <em>y</em>) coordinate for the
-            element.
+            A linha <code>position: relative;</code> faz dele um elemento
+            posicionado, e as propriedades <code>top</code> e <code>left</code>
+            permitem-lhe definir o quão deslocado ele fica de sua posição estática.
+            É quase como definir uma coordenada (<em>x</em>, <em>y</em>) para o elemento.
           </p>
 
           <figure class="diagram">
