@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Advanced Positioning Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial de Posicionamento Avançado | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -174,7 +174,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -193,13 +193,12 @@
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 9. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 9. of <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly tutorial about static, relative, absolute, and fixed
-              positioning
+              Um tutorial amigável sobre posicionamento estático, relativo, absoluto e fixo
             </div>
           </div>
         </div>
@@ -208,13 +207,12 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            “Static positioning” refers to the normal flow of the page that
-            we’ve been working with up ’til this point. The
-            <a href="../css-box-model/index.html">CSS Box Model</a>,
-            <a href="../floats/index.html">floats</a>, and
-            <a href="../flexbox/index.html">flexbox</a> layout schemes all
-            operate in this “static” flow, but that’s not the only positioning
-            scheme available in CSS.
+            “Posicionamento estático” refere-se ao fluxo padrão da página que
+            estivemos trabalhando até o momento. Os esquemas de layout
+            <a href="../css-box-model/index.html">Modelo de Caixa CSS</a>,
+            <a href="../floats/index.html">floats</a>, e
+            <a href="../flexbox/index.html">flexbox</a> operam nesse fluxo "estático", mas esse não é o único
+            esquema de posicionamento disponível no CSS.
           </p>
 
           <figure class="diagram">
@@ -235,27 +233,28 @@
           </figure>
 
           <p>
-            The other three types of positioning are “relative”, “absolute”, and
-            “fixed”. Each of them let you manually position elements using
-            specific coordinates, opposed to the more semantic options in
-            flexbox and floats. Instead of saying “Stick this box in the center
-            of its container,” advanced positioning lets you say things like
-            “Put that box 20 pixels above and 50 pixels to the right of its
-            parent’s origin.”
+            Os outros três tipos de posicionamento são "relativo", "absoluto", e
+            "fixo". Cada um deles permite que você manualmente posicione elementos utilizando 
+            coordenadas específicas, ao contrário das opções mais semanticas dos 
+            flexbox e floats. Ao invés de dizer "Coloque essa caixa no centro do seu 
+            container", o posicionamento avançado permite-lha dizer coisas como
+            "Coloque aquela caixa 20 píxeis acima e 50 píxeis à direita da origem 
+            de seu elemento pai"
           </p>
 
           <p>
-            The vast majority of elements on a web page should be laid out
-            according to the static flow of the page. These other positioning
-            schemes come into play when you want to do more advanced things like
-            tweak the position of a particular element or animate a UI component
-            without messing up the surrounding elements.
+            A grande maioria dos elementos em uma página web deveriam ser
+            dispostos de acordo com o fluxo estático da página. Estes outros
+            esquemas de posicionamento entram em jogo quando você quer fazer
+            coisas mais avançadas como ajustar a posição de um elemento particular
+            ou animar um componente da interface do usuário sem bagunçar os
+            elementos ao redor.
           </p>
 
           <p>
-            This chapter is split into two parts. We’ll start by examining
-            relative, absolute, and fixed positioning in isolation, then we’ll
-            apply everything we learned to a fancy dropdown menu.
+            Este capítulo é dividido em duas partes. Começaremos examinando
+            posicionamento relativo, absoluto e fixo isoladamente, e então
+            aplicaremos tudo que aprendemos em um bonito dropdown menu.
           </p>
         </div>
       </div>
@@ -267,12 +266,12 @@
           </div>
 
           <p>
-            Start by creating a new
+            Comece criando um novo
             <a href="../introduction/index.html#atom-text-editor"
-              >Atom project</a
+              >projeto Atom</a
             >
-            called <code>advanced-positioning</code> and a new file called
-            <code>schemes.html</code> with the following markup:
+            chamado <code>posicionamento-avancado</code> e um novo arquivo chamado
+            <code>esquemas.html</code> com o seguinte cógigo:
           </p>
 
           <pre
@@ -315,9 +314,9 @@
 </code></pre>
 
           <p>
-            We’ve got three examples to work with, all with the exact same HTML
-            structure. Changing the positioning behavior inside each one will
-            have dramatically different effects.
+            Nós temos três exemplos para trabalhar, todos com exatamente a mesma
+            estrutura html. Alterar o comportamento de posicionamento dentro de
+            cada um tem efeitos dramaticamente diferentes.
           </p>
 
           <figure class="diagram">
@@ -338,12 +337,13 @@
           </figure>
 
           <p>
-            This page relies on some <a href="images-89bc45.zip">images</a> to
-            make our example a little bit clearer. Keep the parent
-            <code>images</code> folder when unzipping the files into your
-            project, as show above. Be sure to create
-            <code>styles.css</code> and populate it with the necessary base
-            styles, as well:
+            Essa página depende de algumas <a href="images-89bc45.zip">imagens</a> para
+            deixar nosso exemplo um pouco mais caro. Mantenha a pasta das 
+            <code>imagens</code> pai no seu projeto ao descompactar os arquivos
+            para o seu projeto, como mostrado acima.
+            Assegure-se de criar um 
+            <code>styles.css</code> e preenchê-lo com a base necessária de estilos,
+            assim como:
           </p>
 
           <pre class="highlight"><code>* {
