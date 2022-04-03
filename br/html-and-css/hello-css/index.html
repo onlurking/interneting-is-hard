@@ -236,8 +236,8 @@
             A CSS provê o vocabulário que diz ao navegador coisas como, “eu 
             quero que o meu cabeçalho seja muito grande e minha barra lateral 
             apareça no lado esquerdo do conteúdo principal.” A HTML não tem a 
-            terminologia para fazer esses tipos de decisões no leiaute&mdash;
-            tudo que ela pode falar é “isso é um cabeçalho e isso é uma 
+            terminologia para fazer esses tipos de decisões no leiaute&mdash;tudo 
+            que ela pode falar é “isso é um cabeçalho e isso é uma 
             barra lateral.”
           </p>
 
@@ -365,8 +365,8 @@
             Uma “regra” CSS sempre inicia com um “seletor” que define a qual 
             elemento HTML será aplicado. Nesse caso, vamos tentar estilizar 
             o elemento <code>&lt;body&gt;</code>. Depois do seletor, temos o 
-            “bloco de declaração” denmtro de um par de chaves. Qualquer 
-            “propiedade” que vamos configurar vai afetar o elemento 
+            “bloco de declaração” dentro de um par de chaves. Qualquer 
+            “propiedade” que configurarmos vai afetar o elemento 
             <code>&lt;body&gt;</code>.
           </p>
 
@@ -459,17 +459,17 @@
             vincula ao <em>metadata</em> que está definido fora do 
             documento atual. Note que ele é um 
             <a href="../basic-web-pages/index.html#empty-html-elements"
-              >elemento vazio</a> então não precisamos de um etiqueta 
+              >elemento vazio</a> então não precisamos de uma etiqueta 
               de fechamento.
           </p>
 
           <p>
             O atributo <code>rel</code> é responsável pelo relacionamento 
-            entre o recurso (CSS) e o documento HTML. O valor mais comum 
+            entre o recurso (CSS) e o documento (HTML). O valor mais comum 
             utilizado é o <code>stylesheet</code>, mas aqui temos 
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types"
-              >algumas outras opções</a>outros exemplos. O atributo <code>href</code>
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Link_types"
+              >algumas outras opções</a>. O atributo <code>href</code>
             funciona como no capítulo anterior, ele só precisa apontar para um 
             arquivo <code>.css</code> ao invés de outra página web. O valor para o 
             <code>href</code> pode ser uma ligação 
@@ -499,7 +499,7 @@
             Perceba que não tem um vínculo <em>direto</em> entre o navegador 
             e nossa folha de estilo. É apenas através da marcação HTML que ele 
             pode encontrá-la. Imagens, CSS e até mesmo o JavaScript, todos 
-            dependem de páginas HTML para colar todos juntos, tornando a HTML 
+            dependem de páginas HTML para todos fiquem juntos, tornando a HTML 
             o coração da maioria das páginas web.
           </p>
         </div>
@@ -626,13 +626,13 @@
 
           <p>
             Muitas propriedades CSS precisam de uma unidade de medida. Existem
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"
-              >muitas unidades</a> disponíveis, mas as mais comum que você 
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/length"
+              >muitas unidades</a> disponíveis, mas as mais comuns que você 
             irá encontrar são <code>px</code> (pixel) e <code>em</code> 
             (pronuncia-se como a letra <em>m</em>). O primeiro é o que 
             você chama intuitivamente de pixel, independente do usuário 
-            ter ou não um monitor FullHD, e o segundo é o elemento usado 
-            no tamanho da fonte.
+            ter ou não um monitor <em>FullHD</em>, e o segundo é o elemento 
+            usado no tamanho da fonte.
           </p>
 
           <figure class="diagram">
@@ -680,8 +680,9 @@
             <code>18px</code>, então vamos dizer que nosso elemento 
             <code>&lt;h1&gt;</code> deve ter duas vezes o tamanho e o nosso  
             <code>&lt;h2&gt;</code> deve ser 1.6 maior. Se nós (ou o usuário) 
-            quiser fazer a fonte base maior ou menor, a unidade <code>em</code> 
-            irá permitir que toda nossa página tenha a escala de acordo.
+            quisermos fazer a fonte base maior ou menor, a unidade 
+            <code>em</code> irá permitir que toda nossa página tenha a escala 
+            de acordo.
           </p>
         </div>
       </div>
@@ -834,7 +835,7 @@
             O valor <code>none</code> permite que a lista de itens do menu 
             seja estilizado como botões. No capítulo 
             <a href="../advanced-positioning/index.html"
-            >Advanced Positioning</a>, vamos usar essa técnica para criar o 
+            >Posicionamento Avançado</a>, vamos usar essa técnica para criar o 
             menu de navegação como mostrado abaixo.
           </p>
 
@@ -859,7 +860,7 @@
             Esse é um ótimo exemplo de separação de conteúdo na apresentação. 
             Um menu de navegação <em>é</em> uma lista não-ordenada, mas também 
             faz sentido mostrá-la como um botão ao invés de uma típica lista 
-            de marcadores. Design inteligentes da HTML permitem que mecanismos 
+            de marcadores. Designs inteligentes da HTML permitem que mecanismos 
             de buscas infiram sobre a estrutura do nosso conteúdo, enquanto a 
             CSS faz com que nós mostremos para os humanos de uma forma mais 
             bonita.
@@ -870,7 +871,7 @@
             <code>&lt;li&gt;</code> com a propriedade 
             <code>list-style-type</code> (veja a MDN
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/list-style-image"
               >para mais detalhes</a
             >).
           </p>
@@ -894,9 +895,9 @@
           </div>
 
           <p>
-            Então, definimos alguns estilos básicos par uma das nossas páginas 
+            Então, definimos alguns estilos básicos para uma das nossas páginas 
             web. Seria muito conveniente se pudéssemos reutilizá-la em outras 
-            páginas, também. Para isso, tudo que precisamos fazer é adicionar 
+            páginas também. Para isso, tudo que precisamos fazer é adicionar 
             o mesmo elemento <code>&lt;link/&gt;</code> a qualquer outra página 
             que quisérmos estilizar. Tente adicionando a seguinte linha no 
             <code>&lt;head&gt;</code> da <code>dummy.html</code>:
@@ -967,10 +968,10 @@
           </div>
 
           <p>
-            A propriedade <code>text-decoration</code> determinar se um texto 
+            A propriedade <code>text-decoration</code> determina se um texto 
             terá sublinhado ou não. Ao configurar com <code>none</code>, nós 
-            conseguimos remover o sublinhado padrão para todos as nossas âncoras. 
-            Vamos discutir sobre estilos de âncoras com detalhes 
+            conseguimos remover o sublinhado padrão para todos os nossos links. 
+            Vamos discutir sobre estilos de links com detalhes 
             <a
               href="https://internetingishard.com/html-and-css/css-selectors#pseudo-classes-for-links"
               >mais tarde</a>.
@@ -989,11 +990,11 @@
             Mas lembre-se que o <em>significado</em> deve sempre ser 
             dado pela HTML&mdash;não a CSS. Por isso é melhor usar os elementos 
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ins"
               ><code>&lt;ins&gt;</code></a
             > e 
             <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del"
               ><code>&lt;del&gt;</code></a
             > ao invés de adicionar um estilo <code>line-through</code>, digamos, 
             a um elemento <code>&lt;p&gt;</code> qualquer.
@@ -1295,9 +1296,9 @@
 
           <p>
             Você também pode colocar uma regra CSS no atributo <code>style</code> 
-            do elemento HTML. Na página <code>dummy.html</code>, nós temos uma 
-            âncora que não vai pra lugar nenhum.. Vamos fazer ela ficar vermelha 
-            usando um estilo em linha para lembrar que aquela âncora está quebrada:
+            do elemento HTML. Na página <code>dummy.html</code>, nós temos um 
+            link que vai pra lugar nenhum.. Vamos fazer ele ficar vermelho 
+            usando um estilo em linha para lembrar que aquele link está quebrado:
           </p>
 
           <pre
@@ -1421,8 +1422,8 @@
             folha de estilos em diferentes documentos HTML, mas também permite 
             que apliquemos condicionalmente <em>diferentes</em> regras CSS ao 
             <em>mesmo</em> conteúdo HTML, dependendo se o usuário estiver em 
-            um <em>smartphone</em>, tablet ou um computador. Essa parte é 
-            chamada de <a href="../responsive-design/index.html">Design 
+            um <em>smartphone</em>, <em>tablet</em> ou um computador. Essa 
+            parte é chamada de <a href="../responsive-design/index.html">Design 
               Responsivo</a>.
           </p>
 
@@ -1457,9 +1458,9 @@
             Este capítulo focou mais na formatação de texto, mas a linguagem 
             de Folhas de Estilo em Cascata (CSS) pode fazer muito mais do que 
             isso! No próximo capítulo, vamos começar a explorar como a CSS 
-            define o leiaoute das nossas páginas web. Um último comentário 
+            define o leiaute das nossas páginas web. Um último comentário, 
             lembre que você pode sempre consultar a 
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference"
               >Referência da MDN sobre CSS</a> quando você não tiver certeza 
               sobre como uma propriedade funciona.
           </p>
