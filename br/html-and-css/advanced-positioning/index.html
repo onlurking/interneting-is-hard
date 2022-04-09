@@ -207,12 +207,13 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            “Posicionamento estático” refere-se ao fluxo padrão da página que
+            O “posicionamento estático” refere-se ao fluxo padrão da página que
             estivemos trabalhando até o momento. Os esquemas de layout
             <a href="../css-box-model/index.html">Modelo de Caixa CSS</a>,
-            <a href="../floats/index.html">floats</a>, e
-            <a href="../flexbox/index.html">flexbox</a> operam nesse fluxo "estático", mas esse não é o único
-            esquema de posicionamento disponível no CSS.
+            <a href="../floats/index.html">Floats</a>, e
+            <a href="../flexbox/index.html">Flexbox</a> operam nesse fluxo 
+            "estático", mas esse não é o único esquema de posicionamento 
+            disponível no CSS.
           </p>
 
           <figure class="diagram">
@@ -233,13 +234,13 @@
           </figure>
 
           <p>
-            Os outros três tipos de posicionamento são "relativo", "absoluto", e
-            "fixo". Cada um deles permite que você manualmente posicione elementos utilizando 
-            coordenadas específicas, ao contrário das opções mais semanticas dos 
-            flexbox e floats. Ao invés de dizer "Coloque essa caixa no centro do seu 
-            container", o posicionamento avançado permite-lha dizer coisas como
-            "Coloque aquela caixa 20 píxeis acima e 50 píxeis à direita da origem 
-            de seu elemento pai"
+            Os outros três tipos de posicionamento são “relativo”, “absoluto”, e
+            “fixo”. Cada um deles permite que você posicione manualmente 
+            elementos utilizando coordenadas específicas, ao contrário das 
+            opções semânticas do flexbox e floats. Ao invés de dizer “Coloque 
+            essa caixa no centro do seu contêiner”, o posicionamento avançado 
+            permite dizer coisas como “Coloque aquela caixa 20 píxels acima e 
+            50 pixels à direita da origem de seu elemento pai.”
           </p>
 
           <p>
@@ -254,7 +255,7 @@
           <p>
             Este capítulo é dividido em duas partes. Começaremos examinando
             posicionamento relativo, absoluto e fixo isoladamente, e então
-            aplicaremos tudo que aprendemos em um bonito dropdown menu.
+            aplicaremos tudo que aprendemos em um bonito menu dropdown.
           </p>
         </div>
       </div>
@@ -268,7 +269,7 @@
           <p>
             Comece criando um novo
             <a href="../introduction/index.html#atom-text-editor"
-              >projeto Atom</a
+              >projeto no Atom</a
             >
             chamado <code>advanced-positioning</code> e um novo arquivo chamado
             <code>schemes.html</code> com o seguinte cógigo:
@@ -280,7 +281,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Positioning Is Easy!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Pposicionamento é Fácil!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -315,7 +316,7 @@
 
           <p>
             Nós temos três exemplos para trabalhar, todos com exatamente a mesma
-            estrutura html. Alterar o comportamento de posicionamento dentro de
+            estrutura HTML. Alterar o comportamento de posicionamento dentro de
             cada um tem efeitos dramaticamente diferentes.
           </p>
 
@@ -340,10 +341,9 @@
             Essa página depende de algumas <a href="images-89bc45.zip">imagens</a> para
             deixar nosso exemplo um pouco mais claro. Mantenha a pasta pai das 
             <code>images</code> no seu projeto ao descompactar os arquivos
-            para o seu projeto, como mostrado acima.
-            Assegure-se de criar um 
-            <code>styles.css</code> e preenchê-lo com a base necessária de estilos,
-            assim como:
+            para o seu projeto, como mostrado acima. Assegure-se de criar um 
+            <code>styles.css</code> e preenchê-lo com a base necessária de 
+            estilos, assim como:
           </p>
 
           <pre class="highlight"><code>* {
@@ -376,12 +376,12 @@
 </code></pre>
 
           <p>
-            Nada novo aqui, apenas algumas técnicas familiares de
+            Nada novo aqui, apenas algumas técnicas já conhecidas de
             <a href="../flexbox/index.html">flexbox</a> para criar uma grade
-            de itens.  A única coisa estranha é a
-            <code>height</code> explícita no elemento <code>&lt;body&gt;</code>, 
-            que nos permitirá rolar a página para demonstrar diferentes
-            comportamentos de posicionamento.
+            de itens.  A única coisa estranha é a propriedade <code>height</code> 
+            explícita no elemento <code>&lt;body&gt;</code>, que nos permitirá 
+            rolar a página para demonstrar diferentes comportamentos de 
+            posicionamento.
           </p>
 
           <figure class="diagram">
@@ -409,10 +409,10 @@
           </div>
 
           <p>
-            A propriedade <code>position</code> do CSS permite-lhe alterar o
+            A propriedade <code>position</code> do CSS permite alterar o
             esquema de posicionamento de um elemento particular. Seu valor
             padrão, como você pode imaginar, é <code>static</code>. Quando a
-            propriedade <code>position</code> de um elemento <em>não</em> tem o
+            propriedade <code>position</code> de um elemento <em>não tem</em> o
             valor <code>static</code>, é chamado de "elemento posicionado".
             Elementos posicionados são o tema desse capítulo inteiro.
           </p>
@@ -437,7 +437,7 @@
           <p>
             É possível misturar e combinar diferentes esquemas de
             posicionamento. Novamente, a maior parte da sua página web deve
-            ser estáticamente posicionada, mas é comum encontrar elementos
+            ser estaticamente posicionada, mas é comum encontrar elementos
             relativamente e absolutamente posicionados dentro de outros
             elementos que são parte do fluxo normal da página.
           </p>
@@ -455,8 +455,8 @@
           <p>
             O “posicionamento relativo” move os elementos ao redor de forma
             <em>relativa</em> à onde apareceriam normalmente no fluxo
-            estático da página. Isso é útil para empurrar caixas ao redor
-            quando o fluxo padrão está um pouco fora.
+            estático da página. Isso é útil quando precisamos empurrar caixas 
+            ao redor do fluxo padrão quando ele está um pouco fora do lugar.
           </p>
 
           <figure class="diagram">
@@ -478,8 +478,8 @@
 
           <p>
             Vamos transformar o elemento <code>.item-relative</code> no
-            <code>schemes.html</code> em um elemento relativamente
-            posicionado. Adicione a seguinte regra ao
+            <code>schemes.html</code> em um elemento posicionado 
+            relativamente. Adicione a seguinte regra ao
             <code>styles.css</code>:
           </p>
 
@@ -495,8 +495,9 @@
           <p>
             A linha <code>position: relative;</code> faz dele um elemento
             posicionado, e as propriedades <code>top</code> e <code>left</code>
-            permitem-lhe definir o quão deslocado ele fica de sua posição estática.
-            É quase como definir uma coordenada (<em>x</em>, <em>y</em>) para o elemento.
+            permitem definir o quanto ele fica deslocado de sua posição estática.
+            É quase como definir uma coordenada (<em>x</em>, <em>y</em>) para o 
+            elemento.
           </p>
 
           <figure class="diagram">
@@ -514,20 +515,21 @@
           </figure>
 
           <p>
-            Relative positioning works similarly to margins, with one very
-            important difference: neither the surrounding elements or parent
-            element are affected by the <code>top</code> and
-            <code>left</code> values. Everything else renders as if
-            <code>.item-relative</code> was in its original position. Think of
-            the offsets as being applied <em>after</em> the browser finishes
-            laying out the page.
+            Posicionamento relativo funciona de forma similar às margens, com 
+            uma diferença bem importante: nenhum dos elementos ao redor ou os 
+            elementos pais são afetados pelos valores de <code>top</code> e 
+            <code>left</code>. Todo o resto vai ser renderizado como se o 
+            <code>.item-relative</code> estivesse na sua posição original. 
+            Imagine que o deslocamento está sendo aplicado <em>depois</em> que 
+            o navegador terminou de carregar a página.
           </p>
 
           <p>
-            The <code>top</code> and <code>left</code> properties measure from
-            the original box’s top and left edges, respectively. We can offset
-            relative to the other edges with the <code>bottom</code> and
-            <code>right</code> properties.
+            As medidas das propriedades <code>top</code> e <code>left</code> da
+            são aplicadas a partir da direção direita e esquerda da caixa 
+            original, respectivamente. Podemos também fazer o deslocamento 
+            relativo com relação aos lados das propriedades <code>bottom</code> e 
+            <code>right</code>.
           </p>
 
           <figure class="diagram">
@@ -548,8 +550,8 @@
           </figure>
 
           <p>
-            For example, the following will nudge the box in the opposite
-            direction:
+            Por exemplo, o código a seguir vai arrastar a caixa na direção 
+            oposta:
           </p>
 
           <pre
@@ -562,10 +564,10 @@
 </code></pre>
 
           <p>
-            Note that these properties accept negative values, which means
-            there’s two ways to specify the same offset. We could just as easily
-            used <code>top: -30px;</code> in place of the
-            <code>bottom: 30px;</code> declaration above.
+            Essas propriedades também aceitam valores negativos, o que 
+            significa que existem duas formas de especificar o mesmo 
+            deslocamento. Podemos utilizar <code>top: -30px;</code> no 
+            lugar de <code>bottom: 30px;</code> na declaração anterior.
           </p>
         </div>
       </div>
@@ -574,16 +576,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="absolute-positioning">
-              <span>Absolute Positioning</span>
+              <span>Posicionamento absoluto</span>
             </h2>
           </div>
 
           <p>
-            “Absolute positioning” is just like relative positioning, but the
-            offset is relative to the entire browser window instead of the
-            original position of the element. Since there’s no longer any
-            relationship with the static flow of the page, consider this the
-            most manual way to lay out an element.
+            “Posicionamento absoluto” é quase igual ao posicionamento relativo, 
+            exceto que o deslocamento relativo é aplicado em relação 
+            a janela do navegador, ao invés da posição original do elemento.
+            Já que não tem mais nenhuma relação com o fluxo estático da página,
+            considere isso como a forma mais manual de posicionar um elemento.
           </p>
 
           <figure class="diagram">
@@ -604,7 +606,8 @@
           </figure>
 
           <p>
-            Let’s take a look by adding the following rule to our stylesheet:
+            Vamos dar uma olhada em como fica adicionando a seguinte regra na 
+            nossa folha:
           </p>
 
           <pre
@@ -617,10 +620,11 @@
 </code></pre>
 
           <p>
-            Our HTML structure is the exact same as the previous example, but
-            this will stick the purple image in the top-left corner of the
-            browser window. You can also try setting a <code>bottom</code> or
-            <code>right</code> value to get a clearer idea of what’s going on.
+            Nossa estrutura HTML é exatamente igual ao exemplo anterior, no 
+            entanto isso fará com que imagem roxa fique posicionada no canto 
+            superior-esquerdo da janela do navegador. Você também pode tentar 
+            definir um valor <code>bottom</code> ou <code>right</code> para 
+            ter uma ideia melhor do que está acontecendo.
           </p>
 
           <figure class="diagram">
@@ -641,30 +645,30 @@
           </figure>
 
           <p>
-            The other interesting effect of <code>absolute</code> is that it
-            completely removes an element from the normal flow of the page. This
-            is easier to see with left-aligned elements, so let’s temporarily
-            change the <code>justify-content</code> property in our
-            <code>.example</code> rule:
+            O outro efeito interessante do posicionamento <code>absoluto</code> 
+            é que ele remove completamente um elemento do fluxo normal da 
+            página. Isso é fácil de ver com os elementos alinhados à esquerda, 
+            então vamos mudar temporariamente a propriedade 
+            <code>justify-content</code> na nossa regra <code>.example</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.example</span> {
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">justify-content</span>: flex-start;  <span class="hljs-comment">/* Update this */</span>
+  <span class="hljs-attribute">justify-content</span>: flex-start;  <span class="hljs-comment">/* Mude isso */</span>
   <span class="hljs-comment">/* ... */</span>
 }
 </code></pre>
 
           <p>
-            In our relative positioning example (the first row), there’s still a
-            space where the positioned element used to be, but with absolute
-            positioning, that space has vanished. It’s as if
-            <code>.item-absolute</code> doesn’t even exist to its parent and
-            surrounding elements. Be sure to change the
-            <code>justify-content</code> back to
-            <code>space-around</code> before moving on.
+            No nosso exemplo de posicionamento relativo (a primeira linha), 
+            ainda tem um espaço onde o elemento posicionado costumava ficar, 
+            mas com o posicionamento absoluto, esse espaço some! É como se o 
+            <code>.item-absolute</code> nunca tivesse existido para o seu 
+            elemento pai e os elementos ao redor dele. Mude novamente a 
+            propriedade <code>justify-content</code> para <code>space-around</code>
+            antes de continuar.
           </p>
 
           <figure class="diagram">
@@ -685,11 +689,11 @@
           </figure>
 
           <p>
-            This behavior isn’t really all that useful most of the time because
-            it would mean <em>everything</em> on your page needs to be
-            absolutely positioned&mdash;otherwise we’d get unpredictable
-            overlaps of static elements with absolute elements. So, why does
-            <code>absolute</code> even exist?
+            Este comportamento não é tão útil na maioria das vezes por que isso 
+            que significa que <em>tudo</em> na nossa página precisa estar 
+            com um posicionamento absoluto&mdash;sendo assim, teríamos 
+            sobreposições de elementos estáticos sobre elementos absolutos. 
+            Então, por que a propriedade <code>absolute</code> existe?
           </p>
 
           <div class="subsubheading content__subsubheading">
@@ -697,15 +701,15 @@
               class="subsubheading__heading"
               id="relatively-absolute-positioning"
             >
-              (Relatively) Absolute Positioning
+              Posicionamento (relativamente) absoluto
             </h3>
           </div>
 
           <p>
-            Absolute positioning becomes much more practical when it’s relative
-            to some other element that <em>is</em> in the static flow of the
-            page. Fortunately, there’s a way to change the coordinate system of
-            an absolutely positioned element.
+            Posicionamento absoluto é muito prático quando ele é relativo a 
+            algum outro elemento que <em>está</em> no fluxo estático da página. 
+            Felizmente, existe uma forma de mudar as coordenadas do sistema de 
+            um elemento de posicionamento absoluto.
           </p>
 
           <figure class="diagram">
@@ -726,12 +730,13 @@
           </figure>
 
           <p>
-            Coordinates for absolute elements are always relative to the closest
-            container that is a positioned element. It only falls back to being
-            relative to the browser when none of its ancestors are positioned.
-            So, if we change <code>.item-absolute</code>’s parent element to be
-            relatively positioned, it should appear in the top-left corner of
-            <em>that</em> element instead of the browser window.
+            Coordenadas para elementos absolutos são sempre relativas ao 
+            posicionamento do elemento contêiner mais próximo, que é um elemento 
+            posicionado. Só volta a ser relativo ao navegador quando nenhum dos 
+            seus predecessores são posicionados. Então, se mudarmos o elemento 
+            pai de <code>.item-absolute</code> para posicionamento relativo, ele 
+            deve aparecer no canto superior-esquerdo <em>daquele</em> elemento 
+            ao invés da janela do navegador.
           </p>
 
           <pre
@@ -742,12 +747,12 @@
 </code></pre>
 
           <p>
-            The <code>.absolute</code> div is laid out with the normal flow of
-            the page, and we can manually move around our
-            <code>.item-absolute</code> wherever we need to. This is great,
-            because if we want to alter the normal flow of the container, say,
-            for a mobile layout, any absolutely positioned elements will
-            automatically move with it.
+            A <em>div</em> <code>.absolute</code> está posta no fluxo normal da 
+            página, e nós podemos movê-la manualmente ao redor do 
+            <code>.item-absolute</code> da forma como quisermos. Isso é ótimo, 
+            porque se quisermos alterar o fluxo normal do contêiner, vamos dizer 
+            para um layout <em>mobile</em>, qualquer elemento com posicionamento 
+            absoluto irá se mover automativamente.
           </p>
 
           <figure class="diagram">
@@ -765,11 +770,11 @@
           </figure>
 
           <p>
-            Notice how we didn’t specify any offset coordinates for
-            <code>.absolute</code>. We’re using relative positioning for the
-            sole purpose of letting our absolute element hook back into the
-            normal flow of the page. This is how we safely combine absolute
-            positioning with static positioning.
+            Perceba que nós não especificamos nenhuma coordenada de deslocamento 
+            para a classe <code>.absolute</code>. Estamos utilizando 
+            posicionamento relativo com um único propósito de deixar nosso 
+            elemento absoluto encaixar de novo no fluxo normal da página. É 
+            assim que combinamos posicionamento absoluto com estático.
           </p>
         </div>
       </div>
@@ -778,16 +783,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="fixed-positioning">
-              <span>Fixed Positioning</span>
+              <span>Posicionamento fixo</span>
             </h2>
           </div>
 
           <p>
-            “Fixed positioning” has a lot in common with absolute positioning:
-            it’s very manual, the element is removed from the normal flow of the
-            page, and the coordinate system is relative to the entire browser
-            window. The key difference is that fixed elements don’t scroll with
-            the rest of the page.
+            “Posicionamento fixo” tem muito em comum com posicionamento 
+            absoluto: é bem manual, o elemento é tirado do fluxo normal da 
+            página, e o sistema de coordenadas é relativo a toda a janela do 
+            navegador. E diferença é que elementos fixos não rolam junto com o 
+            resto da página.
           </p>
 
           <figure class="diagram">
@@ -807,7 +812,8 @@
             </div>
           </figure>
 
-          <p>Go ahead and update our third example to use fixed positioning:</p>
+          <p>Vamos lá, vamos mudar nosso terceiro exemplo para utilizar 
+            posicionamento fixo:</p>
 
           <pre
             class="highlight"
@@ -819,15 +825,16 @@
 </code></pre>
 
           <p>
-            This will place the red image in the bottom-right corner of the
-            screen. Try scrolling the page, and you’ll discover that it doesn’t
-            move with the rest of the elements on the page, while the absolutely
-            positioned purple image does.
+            Isso irá colocar a imagem vermelha no canto inferior-direito da 
+            janela. Tente rolar a página, e você irá descobrir que ele não se 
+            move com o resto dos elementos da página, enquanto a imagem roxa 
+            com o posicionamento absoluto sim.
           </p>
 
           <p>
-            This lets you create navigation bars that always stay on the screen,
-            as well as those annoying pop-up banners that never go away.
+            Isso irá permitir que você crie barras de navegação que sempre 
+            estarão apresentadas na janela como aqueles baners chatíssimos que 
+            nunca somem.
           </p>
         </div>
       </div>
@@ -839,25 +846,25 @@
               class="subheading__heading"
               id="positioned-elements-for-animation"
             >
-              <span>Positioned Elements for Animation</span>
+              <span>Posicionamento de elementos para animações</span>
             </h2>
           </div>
 
           <p>
-            This is a little out of scope, since this tutorial is about HTML and
-            CSS, not JavaScript. However, animation is one of the primary use
-            cases for relative and absolute positioning, so let’s take a little
-            peek into the future by animating one of our elements.
+            Isso está um pouco fora do escopo, já que esse tutorial é sobre HTML 
+            e CSS, não JavaScript. No entanto, animações são um dos primeiros 
+            usos para posicionamento relativo e absoluto, então vamos dar uma 
+            olhadinha nisso para animar um dos nosso elementos.
           </p>
 
           <p>
-            These advanced positioning schemes allow JavaScript to move elements
-            around while avoiding any kind of interaction with surrounding
-            elements. For instance, try copying-and-pasting the following into
-            <code>schemes.html</code> after the third
-            <code>.container</code> element. The
-            <code>&lt;script&gt;</code> element should be the last thing inside
-            of <code>&lt;body&gt;</code>.
+            Esses esquemas avanaçados de posicionamento permitem que o 
+            JavaScript movimente os elementos pela página enquanto evitamos 
+            qualquer tipo de interação com os elementos ao redor. Por exemplo, 
+            vamos copiar e colar o código abaixo no nosso 
+            <code>schemes.html</code> depois do terceiro elemento 
+            <code>.container</code>. O elemento <code>&lt;script&gt;</code> deve 
+            ser a última coisa dentro do <code>&lt;body&gt;</code>.
           </p>
 
           <pre
@@ -879,10 +886,11 @@
 </code></pre>
 
           <p>
-            This JavaScript code creates a simple animation that continually
-            updates the <code>left</code> property of the
-            <code>.item-relative</code>. When you reload the page, you should
-            see the blue image float to the right edge of its container.
+            Esse código em JavaScript cria uma animação simples que fica 
+            atualizando a propriedade <code>left</code> do 
+            <code>.item-relative</code>. Quando você atualizar a página,
+            deve ver a imagem em azul flutuando para o canto direito do 
+            contêiner.
           </p>
 
           <figure class="diagram">
@@ -900,12 +908,12 @@
           </figure>
 
           <p>
-            This is a pretty rudimentary example, but you can hopefully see how
-            it’s applicable to fancy UI animations. If you were to try to
-            achieve the same effect by manipulating the <code>margin</code> or
-            <code>padding</code> properties, you would inadvertently move the
-            statically positioned boxes and/or the containing
-            <code>.example</code> element, too.
+            Esse é um exemplo bem rudimentar, mas com sorte verá como é 
+            aplicável para animações bonitinhas. Se você tentasse alcançar o 
+            mesmo efeito manipulando as propriedades de <em>margem</em> ou 
+            o <em>preenchimento</em>, você poderia mover sem querer as 
+            caixas posicionadas estaticamente e/ou também o elemento 
+            <code>.exemple</code>.
           </p>
         </div>
       </div>
@@ -914,17 +922,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="positioned-elements-for-menus">
-              <span>Positioned Elements for Menus</span>
+              <span>Elementos posicionados para menus</span>
             </h2>
           </div>
 
           <p>
-            So, those are all the techniques. Let’s do something
-            <em>advanced</em> with them! The rest of this chapter applies our
-            newfound skills towards a fancy navigation menu with an interactive
-            dropdown for one of its links. We’ll be building
-            <a href="example/menu.html" target="_blank">this page</a> entirely
-            from scratch.
+            Certo, essas são todas as técnicas. Vamos fazer alguma coisa 
+            <em>avançado</em> com elas! O resto desse capítulo é para aplicar 
+            nossas novas habilidades criando um menu bem lindão de navegação 
+            com uma interação de rolagem para os links. Vamos contruir 
+            <a href="example/menu.html" target="_blank">essa página</a> desde 
+            o começo.
           </p>
 
           <figure class="diagram">
@@ -945,21 +953,20 @@
           </figure>
 
           <p>
-            Fixed positioning will let us make the menu stick to the top of the
-            page, and relative positioning will give us an anchor for the
-            absolutely positioned dropdown. We’ll also get a chance to talk
-            about navigation menu best practices and see some practical
-            applications of the
+            Posicionamento fixos vão permitir que o menu fique na parte superior 
+            da página, e o posicionamento relativo vai nos dar uma âncora para 
+            o posicionamento absoluto da rolagem (<em>dropdown</em>). Também 
+            falaremos sobre as melhores práticas para menu de navegação e ver 
+            alguns usos práticos para 
             <a href="../css-selectors/index.html#pseudo-classes-for-links"
               >pseudo-classes</a
-            >
-            we talked about in <em>CSS Selectors</em>.
+            >, falamos sobre iso em <em>Seletores CSS</em>.
           </p>
 
           <p>
-            For starters, we need a new web page called
-            <code>menu.html</code> that has a header and a simple top-level
-            menu:
+            Para começar vamos precisar de uma página nova, chamada 
+            <code>menu.html</code> que tem um cabeçalho e um menu na parte 
+            superior:
           </p>
 
           <pre
@@ -968,7 +975,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Awesome!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Fantárdigo!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'menu.css'</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -976,10 +983,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'header'</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'logo'</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/awesome-logo.svg'</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'dropdown'</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Features ▾<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'dropdown'</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Funcionalidades ▾<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Subscribe<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Assinar<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Sobre<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -988,6 +995,15 @@
 </code></pre>
 
           <p>
+            Menus de navegação devem ser quase sempre marcados como uma 
+            lista <code>&lt;ul&gt;</code> ao invés de um monte de elementos 
+            <code>&lt;div&gt;</code>. Essas semânticas tornam a navegação na 
+            sua página muito mais acessível para mecanismos de busca. Perceba 
+            também como estamos preparando nosso menu <em>dropdown</em> 
+            adicionando um atributo <code>class</code> no primeiro ítem 
+            <code>&lt;li&gt;</code> da lista. O <code>&lt;span&gt;</code> 
+            irá permitir diferenciar o rótulo 
+
             Navigation menus should almost always be marked up as a
             <code>&lt;ul&gt;</code> list instead of a bunch of
             <code>&lt;div&gt;</code> elements. These semantics make your site’s
