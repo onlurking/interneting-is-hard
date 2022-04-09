@@ -603,7 +603,7 @@
 
           <p>
             Agora, podemos ver que o <code>.sidebar</code> flutua no lado 
-            esquerdo do container <code>.page</code>, oposto a borda da janela 
+            esquerdo do contêiner <code>.page</code>, oposto a borda da janela 
             do navegador.
             
           </p>
@@ -626,7 +626,7 @@
           </figure>
 
           <p>
-            Posicionar containers divs aninhados como esse é a forma de você 
+            Posicionar contêineres <code>divs</code> aninhados como esse é a forma de você 
             desenvolver layouts sofisticados para sua página web. Aqui, começamos 
             com <code>.page</code> centralizando <em>qualquer coisa</em>, depois alinhamos 
             a esquerda uma barra lateral <em>dentro</em> daquela página centralizada. As 
@@ -821,7 +821,7 @@
             Perceba como a borda está somente ao redor dos elementos <code>.menu</code> 
             e  <code>.footer</code>. É como se os elementos flutuantes não estivessem 
             lá. Tem duas formas de corrigir isso: limpando a flutuação e escondendo 
-            os excessos.
+            os excessos (<em>overflow</em>).
             
           </p>
 
@@ -832,7 +832,7 @@
           </div>
 
           <p>
-            “Limpar” um flutuação é quando nós dizemos para um bloco ignorar 
+            “Limpar” um <em>float</em> é quando nós dizemos para um bloco ignorar 
             qualquer flutuação que apareça antes dele. Ao invés de fluir ao 
             redor de uma caixa flutuante, um elemento limpo sempre aparecerá 
             depois de qualquer flutuação. É como forçar uma caixa voltar ao 
@@ -861,7 +861,7 @@
             limpar somente um ou o outro lado com os valores <code>left</code> 
             ou <code>right</code>. Note que a borda vermelha agora encapsula 
             tudo ao redor do rodapé, indicando que os elementos flutuantes 
-            realmente contam para a altura do container <code>.page</code>: 
+            realmente contam para a altura do contêiner <code>.page</code>: 
 
           </p>
 
@@ -942,7 +942,7 @@
           <p>
             Mais uma vez, somente os elementos dentro de <code>.page</code> 
             são flutuantes, então eles não contam para a altura. Em outras 
-            palavras, mover o rodapé para fora do container <code>.page</code>, 
+            palavras, mover o rodapé para fora do contêiner <code>.page</code>, 
             quebra nossa correção de <code>clear</code>.
 
           </p>
@@ -955,10 +955,10 @@
 
           <p>
             Limpar a flutuação só corrige o problema da altura quando tem um 
-            elemento <em>dentro</em> do elemento container que nós podemos 
+            elemento <em>dentro</em> do elemento contêiner que nós podemos 
             adicionar a propriedade <code>clear</code>. Agora que nosso rodapé 
-            está fora do container <code>.page</code>, precisamos de uma outra 
-            forma de fazer elementos flutuantes caber dentro da altura do container.
+            está fora do contêiner <code>.page</code>, precisamos de uma outra 
+            forma de fazer elementos flutuantes caber dentro da altura do contêiner.
 
           </p>
 
@@ -982,7 +982,7 @@
           <p>
             A solução é a propriedade <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
             >CSS <code>overflow</code></a>. Ao adicionar uma declaração 
-            <code>overflow: hidden</code> a um conteiner div, estamos dizendo para 
+            <code>overflow: hidden</code> a um conteiner <code>div</code>, estamos dizendo para 
             reconhecer a altura de qualquer elemento flutuante. Assim conseguimos 
             adicionar uma cor de fundo para nosso elemento <code>.page</code>, veja 
             como fica:
@@ -1005,7 +1005,7 @@
             ainda não é um <em>full-bleed</em> (já vamos ver isso na 
             próxima seção). O importante aqui é o comportamento do
             <code>overflow: hidden</code>. Sem ele não poderíamos ver 
-            a cor de fundo do container <code>.page</code> porque ele teria 
+            a cor de fundo do contêiner <code>.page</code> porque ele teria 
             zero de altura.
             
           </p>
@@ -1029,9 +1029,9 @@
 
           <p>
             Para resumir, quando você tem elementos HTML que não são flutuantes 
-            no parte mais baixa de uma container div, use a solução <code>clear</code>. 
+            no parte mais baixa de uma contêiner <code>div</code>, use a solução <code>clear</code>. 
             Se não, adicione uma declaração <code>overflow: hidden</code> ao elemento 
-            do container. A ideia por trás de ambas as opções é que você precisa de 
+            do contêiner. A ideia por trás de ambas as opções é que você precisa de 
             uma forma de dizer ao navegador que ele deve incorporar a flutuação dentro 
             da altura dos elementos contêineres de forma que a cor de fundo apareça.
 
@@ -1075,9 +1075,9 @@
           </figure>
 
           <p>
-            É hora de <em>outro</em> container div entrar na jogada. Colocando 
-            uma caixa ao redor de <code>.page</code> permite continuar centralizando 
-            as coisas enquanto temos um lugar para definir a propriedade 
+            É hora de <em>outro</em> contêiner <code>div</code>> entrar na jogada. 
+            Colocando uma caixa ao redor de <code>.page</code> permite continuar 
+            centralizando as coisas enquanto temos um lugar para definir a propriedade 
             <code>background-color</code>. Mude nosso <code>&lt;body&gt;</code> para 
             ficar como o que está abaixo:
 
@@ -1101,7 +1101,7 @@
 
           <p>
             Lembre que o comportamento padrão da renderização de bloco é que os 
-            elementos preencham a largura do seu container. Então, assim poderemos 
+            elementos preencham a largura do seu contêiner. Então, assim poderemos 
             mover nossa declaração de <code>background-color</code> para uma regra 
             <code>.container</code> e assim ter uma cor de fundo <em>full-bleed</em> 
             (sem bordas).
@@ -1577,61 +1577,61 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#default-html-layout-behavior"
-                  >Default Layout Behavior</a
+                  >Comportamento padrão do layout</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#floating-an-element"
-                  >Floating an Element</a
+                  >Elemento flutuante</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#floating-inside-of-parents"
-                  >Floating Inside of Parents</a
+                  >Flutuando dentro dos pais</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#multiple-floats"
-                  >Multiple Floats</a
+                  >Floats em todo o lugar</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#after-a-float"
-                  >After a Float</a
+                  >Depois do floatAfter a Float</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#full-bleed-layouts"
-                  >Full-Bleed Layouts</a
+                  >Layouts Full-Bleed</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#floats-for-equal-width-columns"
-                  >Equal-Width Columns</a
+                  >Colunas distribuídas horizontalmente</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#floats-for-grids"
-                  >Floats for Grids</a
+                  >Grades de floats</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#floats-for-content"
-                  >Floats for Content</a
+                  >Conteúdos flutuantes</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
