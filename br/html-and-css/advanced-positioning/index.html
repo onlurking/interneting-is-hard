@@ -1002,22 +1002,13 @@
             também como estamos preparando nosso menu <em>dropdown</em> 
             adicionando um atributo <code>class</code> no primeiro ítem 
             <code>&lt;li&gt;</code> da lista. O <code>&lt;span&gt;</code> 
-            irá permitir diferenciar o rótulo 
-
-            Navigation menus should almost always be marked up as a
-            <code>&lt;ul&gt;</code> list instead of a bunch of
-            <code>&lt;div&gt;</code> elements. These semantics make your site’s
-            navigation much more accessible to search engines. Also notice how
-            we’re preparing for our dropdown menu by adding a
-            <code>class</code> attribute to the first <code>&lt;li&gt;</code> in
-            the list. That <code>&lt;span&gt;</code> will allow us to
-            differentiate the label from the submenu it reveals.
+            irá permitir diferenciar o rótulo revelado no submenu.
           </p>
 
           <p>
-            Next, we need a new stylesheet called <code>menu.css</code> that
-            makes our <code>.header</code> look a little bit more like a header,
-            among other things:
+            Próximo, precisamos de uma nova folha de estilo chamada 
+            <code>menu.css</code> que fará nosso <code>.header</code> parecer 
+            um pouco mais como um cabeçalho de verdade, entre outras coisas:
           </p>
 
           <pre class="highlight"><code>* {
@@ -1054,10 +1045,9 @@
 </code></pre>
 
           <p>
-            This should all be familiar, but note the
-            <code>fixed</code> position of the <code>.header</code>, which keeps
-            our navigation menu on top of any content that would go into the
-            page.
+            Isso tudo deve ser familiar pra você, mas note o posicionamento 
+            <code>fixed</code> do <code>.header</code>, que irá manter nosso 
+            menu de navegação sobre qualquer conteúdo que tivermos na página.
           </p>
 
           <figure class="diagram">
@@ -1080,20 +1070,23 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="inline-menu-items">
-              <span>Inline Menu Items</span>
+              <span>Itens de menu em linha</span>
             </h2>
           </div>
 
           <p>
+            Apesar da marcação como uma lista não ordenada, o menu de navegação 
+            da maioria das páginas web não se parece como uma lista. Podemos 
+            arrumar isso transformando a lista de itens em 
             Despite being marked up as unordered lists, the navigation menus for
             most websites don’t actually look like a list. We can fix this by
             making the list items
             <a
               href="../css-box-model/index.html#block-elements-and-inline-elements"
-              >inline boxes</a
+              >caixas em linha</a
             >
-            instead of block boxes via the <code>display</code> property. Add
-            the following to <code>menu.css</code>:
+            ao invés de caixas em bloco, através da propriedade <code>display. 
+            Adicione o código abaixo no <code>menu.css</code>:
           </p>
 
           <pre
@@ -1113,23 +1106,22 @@
 </code></pre>
 
           <p>
-            We have to use
+            Precisamos utilizar 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors"
-              >child selectors</a
-            >
-            here instead of
+              >seletores filhos</a
+            > aqui ao invés de 
             <a href="../css-selectors/index.html#descendant-selectors"
-              >descendant selectors</a
+              >seletores descendentes</a
             >
-            because we only want to select <code>&lt;li&gt;</code> elements that
-            are directly inside the <code>.menu</code>. This will become
-            important once we add our submenu, which has its own
-            <code>&lt;li&gt;</code> elements that we don’t want to style with
-            this rule. This snippet also adds margins to all the list items, but
-            removes it from the final <code>&lt;li&gt;</code> using the
-            <code>:last-of-type</code> pseudo-class. This is a pretty common
-            technique for creating margins <em>between</em> items.
+            porque nós só queremos selecionar o elemento 
+            <code>&lt;li&gt;</code> que está dentro do <code>.menu</code>. Isso 
+            se faz importante uma vez que adicionamos nosso submenu, que tem seu 
+            próprio elemento <code>&lt;li&gt;</code> que não queremos estilizar 
+            com essa regra. Este trecho também adiciona margens em todos os 
+            nossos itens, mas é remove do último <code>&lt;li&gt;</code> ao 
+            utilizar a pseudo-classe <code>:last-of-type</code>. Essa é uma 
+            técnica bem comum para criar margens <em>entre</em> os itens.
           </p>
 
           <figure class="diagram">
@@ -1160,43 +1152,45 @@
           </div>
 
           <p>
-            Our submenu is going to look just like the top-level menu, except
-            the whole thing will be nested inside a list item. Change the
-            <code>.menu</code> element to match the following, ensuring that the
-            entire <code>.features-menu</code> list is wrapped in the first
-            <code>&lt;li&gt;</code> of the <code>.menu</code> element.
+            Nosso submenu está se parecendo como o nosso menu, exceto por 
+            todas as coisas que estão aninhadas dentro da lista de item. 
+            Altere o elemento <code>.menu</code> para casar com o que está 
+            abaixo, garantindo que a lista <code>.features-menu</code> esteja 
+            encapsulada no primeiro <code>&lt;li&gt;</code> do elemento 
+            <code>.menu</code>.
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'dropdown'</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Features &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'features-menu'</span>&gt;</span>           <span class="hljs-comment">&lt;!-- Start of submenu --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'dropdown'</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Funcionalidades &amp;#9662;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'features-menu'</span>&gt;</span>           <span class="hljs-comment">&lt;!-- Início do submenu --&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Harder<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Better<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Faster<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Stronger<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>                                <span class="hljs-comment">&lt;!-- End of submenu --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>                                <span class="hljs-comment">&lt;!-- Fim do submenu --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>          <span class="hljs-comment">&lt;!-- These are the same --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Subscribe<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>          <span class="hljs-comment">&lt;!-- Isso continua o mesmo --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Assinar<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#'</span>&gt;</span>Sobre<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 
           <p>
-            This provides a lot of crucial information for search engines. It
-            allows Google to see that all these new items are associated with
-            the <strong>Features</strong> label and that they form an isolated
-            section of our website. You should always mark up complex navigation
-            menus with this kind of structure.
+            Isso irá providenciar muitas informações para mecanismos de 
+            pesquisa. Permite que o Google veja que todos esses novos itens 
+            estão associados com um rótulo <strong>Funcionalidades</strong> e 
+            que ele s formam uma seção isolada da nossa página web. Você deve 
+            sempre marcar menus de navegação complexos como esse com esse 
+            tipo de estrutura.
           </p>
 
           <p>
-            As for the CSS, we’ll deal with the interactive dropdown part later.
-            Right now, let’s just get our submenu looking the way we want it to.
-            Add some simple styles so we can see the box we’re trying to
-            position:
+            Quanto a CSS, vamos lidar com a interatividade da parte da rolagem 
+            depois. Agora vamos só fazer o submenu se parecer do jeito que 
+            queremos. Adicione um estilo simples para que possamos ver a caixa 
+            que estamos tentando posicionar:
           </p>
 
           <pre
@@ -1223,11 +1217,11 @@
 </code></pre>
 
           <p>
-            The submenu itself is styled correctly, but it’s showing up in the
-            wrong place and severely messing up the rest of our top-level menu
-            items. This should be expected because it’s still statically
-            positioned, which means it still interacts with its parent and
-            surrounding elements.
+            O submenu em si já está corretamente estilizado, mas está sendo 
+            apresentado no lugar errado, e está modificando todo o resto do 
+            nosso menu. Isso deveria ser esperado porque ele ainda está 
+            posicionado estaticamente, o que significa que ainda está se 
+            comportando como seu pai e os elementos ao redor dele.
           </p>
 
           <figure class="diagram">
@@ -1245,8 +1239,8 @@
           </figure>
 
           <p>
-            To create our desired layout, we need to call on our new CSS
-            positioning skills.
+            Para criar o layout desejado, precisamos chamar nossas novas 
+            habilidades de posicionamento com CSS.
           </p>
         </div>
       </div>
@@ -1255,7 +1249,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="relatively-absolute-submenus">
-              <span>(Relatively) Absolute Submenus</span>
+              <span>Submenus (relativamente) absolutos</span>
             </h2>
           </div>
 
