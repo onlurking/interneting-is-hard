@@ -728,29 +728,29 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="tablet-layout">
-              <span>Tablet Layout</span>
+              <span>Layout para Tablet</span>
             </h2>
           </div>
 
           <p>
-            On to the tablet layout. The only difference between the mobile and
-            tablet mockups is that the <strong>Sign Up</strong> and
-            <strong>Feature</strong> sections form a 2&times;2 grid instead of a
-            single column.
+            Sobre o layout para <em>tablet</em>. A única diferença entre os 
+            modelos para dispositivos móveis e <em>tablet</em> é que as seções 
+            <strong>Sign Up</strong> e <strong>Feature</strong> formam uma 
+            grade 2&times;2 ao invés de uma coluna simples.
           </p>
 
           <p>
-            Flexbox makes this real easy. Simply adjust the widths of the flex
-            items to be half the screen and <code>flex-wrap</code> will take
-            care of the rest. Of course, we only want this behavior to apply to
-            tablet-sized screens, so it needs to go into an
-            <code>@media</code> rule. Replace the existing
-            <code>/* Tablet Styles */</code> media query with the following:
+            Flexbox torna isso realmente muito fácil. Só ajustar as larguras 
+            dos itens flex para ser a metade da tela e o <code>flex-wrap</code> 
+            vai tomar conta do resto. Claro, só queremos que esse comportamento 
+            seja aplicado a telas de <em>tablets</em>, então isso precisa estar 
+            dentro de uma regra <code>@media</code>. Altere a <em>media query</em> 
+            em <code>/* Estilo para Tablet */</code> para o seguite:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">/* Tablet Styles */</span>
+          ><code><span class="hljs-comment">/* Estilo para Tablet */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">401px</span>) and (max-width: <span class="hljs-number">960px</span>) {
   <span class="hljs-selector-class">.sign-up</span>,
   <span class="hljs-selector-class">.feature-1</span>,
@@ -762,9 +762,9 @@
 </code></pre>
 
           <p>
-            To see these changes, make sure your browser window is between 400
-            pixels and 960 pixels wide, then scroll down to the bottom of the
-            page. You should see a colorful grid:
+            Para visualizar estas mudanças, garanta que a janela do seu navegador 
+            tem uma largura entre 400 pixels e 960 pixel, depois role até fim da 
+            página para ver uma grade bem colorida:
           </p>
 
           <figure class="diagram">
@@ -785,11 +785,11 @@
           </figure>
 
           <p>
-            Again, it doesn’t matter what the exact width of the screen is: this
-            layout will fluidly respond to any width in the media query’s range.
-            Our mobile layout is also fluid, so we now have a website that looks
-            beautiful (if a bit empty) in every device smaller than
-            <code>960px</code> wide.
+            De novo, não importa qual é a largura exata que a tela tem: essa é a 
+            reposta fluída do layout para qualquer largura no intervalo da 
+            <em>media query</em>. Nosso layout para dispositivos móveis também é 
+            fluído, então agora temos uma página web muito bonita (mesmo meio vazia)
+            em todos os dispositivos com largura menores que <code>960px</code>.
           </p>
         </div>
       </div>
@@ -798,24 +798,25 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="desktop-layout">
-              <span>Desktop Layout</span>
+              <span>Layout para Desktop</span>
             </h2>
           </div>
 
           <p>
-            And that’s where our desktop layout comes in. We don’t want our web
-            page to expand endlessly, so we’re going to give it a fixed width
-            and
+            E é agora que nosso layout para desktop aparece. Não queremos que 
+            nossa página web se expanda sem fim, então vamos definir uma 
+            largura fixa e
             <a href="../css-box-model/index.html#aligning-boxes"
-              >center it with auto-margins</a
-            >. As with tablet styles, this needs to go into a media query.
-            Replace the existing <code>/* Desktop Styles */</code> media query
-            with the following:
+              >centralizar com o <code>auto-margins</code></a
+            >. Assim como no estilo para <em>tablet</em>, isso precisa estar 
+            definido dentro da <em>media query</em>. Substitua <em>media query</em>
+            do <code>/* Estilo para Desktop */</code> que já existe, para 
+            o que está abaixo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">/* Desktop Styles */</span>
+          ><code><span class="hljs-comment">/* Estilo para Desktop */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">961px</span>) {
   <span class="hljs-selector-class">.page</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">960px</span>;
@@ -833,12 +834,12 @@
 </code></pre>
 
           <p>
-            This gives us the correct widths for everything, and we have more
-            real estate to play with, so we made the header a little taller,
-            too. Almost there, but our desktop layout calls for some reordering:
-            the <strong>Sign Up</strong> and <strong>Content</strong> boxes
-            should appear <em>underneath</em> all the
-            <strong>Feature</strong> sections.
+            Isso nos dará a largura correta para tudo, e ainda teremos espaço
+            suficiente para brincar, então faremos o cabeçalho um pouco mais 
+            alto. Quase lá, mas nosso layout para desktop precisa de uns 
+            ajustes: as caixas do <strong>Sign up</strong> e 
+            <strong>Content</strong> devem aparecer abaixo da seção 
+            <strong>Feature</strong>.
           </p>
 
           <figure class="diagram">
@@ -859,13 +860,14 @@
           </figure>
 
           <p>
-            This is where flexbox really shines. Trying to create this
-            combination of mobile and desktop layouts would be very difficult
-            with <a href="../floats/index.html">floats</a>. With flexbox’s
+            É aqui que o flexbox vai realmente brilhar. Tentar criar 
+            essa combinação de layouts para todos esses tamanhos de telas 
+            diferentes seria extramamente difícil com o 
+            <a href="../floats/index.html">floats</a>. Com a propriedade 
             <a href="../flexbox/index.html#flex-item-order"
-              ><code>order</code> property</a
-            >, it’s just a few lines of CSS. Append these rules to the desktop
-            media query:
+              >propriedade <code>order</code></a
+            > do flexbox, só precisamos de algumas linhas de CSS. Adicione 
+            essas regras à <em>media query</em> do desktop:
           </p>
 
           <pre
@@ -880,19 +882,20 @@
 </code></pre>
 
           <p>
-            Ta da! A responsive website! Not bad for less than a hundred lines
-            of CSS. More importantly, we didn’t have to alter a single line of
-            HTML to accommodate our mobile, tablet, and desktop layouts.
+            Tcharam!! Uma página responsiva! Nada mal para pouco mais de cem 
+            linhas de CSS. O mais importante, não precisamos mudar uma linha 
+            sequer da HTML para contemplar os três layouts.
           </p>
 
           <p>
-            This was just one example of laying out a responsive site. You can
-            use these exact same techniques to implement all sorts of other
-            designs. Start with the base styles that apply to your entire site,
-            then tweak them for various device widths by selectively applying
-            CSS rules with <code>@media</code>. You could even add another media
-            query to, say, create a dedicated layout for ultra-widescreen
-            monitors.
+            Esse foi só um exemplo da construção de uma página responsiva. 
+            Agora você pode usar essas mesmas técnicas para implementar todo 
+            tipo de designs. Comece com uma estilização básica que irá ser 
+            aplicada a toda página, depois vá alterando-a para várias 
+            larguras de dispositivos e seletivamente aplicando regras CSS 
+            com a <code>@media</code>. Você pode até mesmo adicionar outras 
+            <em>media query</em> para, vamos dizer, criar um layout para 
+            monitores <em>ultra-widescreen</em>.
           </p>
         </div>
       </div>
@@ -901,7 +904,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="disabling-viewport-zooming">
-              <span>Disabling Viewport Zooming</span>
+              <span>Desabilitando o zoom da janela</span>
             </h2>
           </div>
 
