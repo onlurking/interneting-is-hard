@@ -191,7 +191,7 @@
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 10. of <a href="../index.html">HTML &amp; CSS é Difícil</a>
+                Nº 10. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
@@ -273,38 +273,38 @@
           </div>
 
           <p>
-            Create a
+            Crie um 
             <a href="../introduction/index.html#atom-text-editor"
-              >new project</a
+              >novo projeto</a
             >
-            called <code>responsive-design</code> and a new file called
-            <code>responsive.html</code>. It’s the emptiest web page that we’ve
-            seen in awhile, but it’ll help us demonstrate something very
-            important in the next section:
+            chamado <code>responsive-design</code> e um arquivo novo chamado 
+            <code>responsive.html</code>. É a nossa página web vazia, que já 
+            estamos acostumado, mas que irá nos ajudar a demonstrar algo bem 
+            importante na próxima seção:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'pt-br'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Responsive Design<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Design Responsivo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- There's nothing here! --&gt;</span>
+    <span class="hljs-comment">&lt;!-- Não tem nada aqui! --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            You’ll also need to
-            <a href="images-e9877a.zip">download some images</a> for later in
-            the chapter. Unzip everything into the same folder as
-            <code>responsive.html</code>, keeping the parent
-            <code>images</code> folder. Your project should look like this
-            before moving on:
+            Você também precisará fazer o 
+            <a href="images-e9877a.zip">download de algumas imagens</a> para 
+            usar mais tarde no capítulo. Descompacte tudo na mesma pasta do 
+            arquivo <code>responsive.html</code>, mantendo a pasta pai 
+            <code>images</code>. Seu projeto deve estar parecendo como 
+            esse da figura abaixo:
           </p>
 
           <figure class="diagram">
@@ -330,15 +330,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="css-media-queries">
-              <span>CSS Media Queries</span>
+              <span>Media queries CSS</span>
             </h2>
           </div>
 
           <p>
-            We’ll start small by simply updating the background color on the
-            <code>&lt;body&gt;</code> element based on the device width. This is
-            a good way to make sure our media queries are actually working
-            before getting into complicated layouts.
+            Vamos começar pequeno, modificando a cor de fundo do elemento 
+            <code>&lt;body&gt;</code> baseado na largura do dispositivo. Esta 
+            é uma boa forma de garantir que nossas <em>media queries</em> estão 
+            funcionando antes de o layout ficar mais complicado.
           </p>
 
           <figure class="diagram">
@@ -359,9 +359,9 @@
           </figure>
 
           <p>
-            Let’s differentiate between narrow, medium, and wide layouts by
-            creating a new <code>styles.css</code> stylesheet and adding the
-            following:
+            Vamos diferenciar entre um layout estreito, médio e largo criando 
+            uma nova folha de estilo <code>styles.css</code> e adicionando o 
+            seguinte:
           </p>
 
           <pre class="highlight"><code>* {
@@ -370,42 +370,41 @@
   <span class="hljs-attribute">box-sizing</span>: border-box;
 }
 
-<span class="hljs-comment">/* Mobile Styles */</span>
+<span class="hljs-comment">/* Estilo para Mobile */</span>
 @<span class="hljs-keyword">media</span> only screen and (max-width: <span class="hljs-number">400px</span>) {
   <span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>; <span class="hljs-comment">/* Red */</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F09A9D</span>; <span class="hljs-comment">/* Vermelho */</span>
   }
 }
 
-<span class="hljs-comment">/* Tablet Styles */</span>
+<span class="hljs-comment">/* Estilo para Tablet */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">401px</span>) and (max-width: <span class="hljs-number">960px</span>) {
   <span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>; <span class="hljs-comment">/* Yellow */</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>; <span class="hljs-comment">/* Amarelo */</span>
   }
 }
 
-<span class="hljs-comment">/* Desktop Styles */</span>
+<span class="hljs-comment">/* Estilo par Desktop */</span>
 @<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">961px</span>) {
   <span class="hljs-selector-tag">body</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>; <span class="hljs-comment">/* Blue */</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#B2D6FF</span>; <span class="hljs-comment">/* Azul */</span>
   }
 }
 </code></pre>
 
           <p>
-            When you resize your browser, you should see three different
-            background colors: blue when it’s greater than
-            <code>960px</code> wide, yellow when it’s between
-            <code>401px</code> and <code>960px</code>, and red when it’s less
-            than <code>400px</code>.
+            Quando você redimensionar seu navegador, você deve ver três cores 
+            de fundos diferentes: azul quando for maior que <code>960px</code>, 
+            amarelo quando tiver entre <code>401px</code> e <code>960px</code>,
+            e vermelho quando for menor que <code>400px</code>.
           </p>
 
           <p>
-            Media queries always begin with the <code>@media</code> “at-rule”
-            followed by some kind of conditional statement, and then some curly
-            braces. Inside the curly braces, you put a bunch of ordinary CSS
-            rules. The browser only pays attention to those rules if the
-            condition is met.
+            A regra” das <em>Media queries</em> sempre iniciarão com 
+            <code>@media</code> seguida de algum tipo de estado condicional, e 
+            depois as chaves. Dentro das chaves, você vai colocar todo tipo de 
+            regra CSS. O navegador só vai respeitar aquelas regras se a condição 
+            for satisfeita.
           </p>
 
           <figure class="diagram">
@@ -426,23 +425,22 @@
           </figure>
 
           <p>
-            The <code>only screen</code> “media type” means that the contained
-            styles should only be applied to devices with screens (opposed to
-            printed documents, like when you hit <strong>Cmd+P</strong> in a
-            browser). The <code>min-width</code> and
-            <code>max-width</code> parts are called “media features”, and they
-            specify the device dimensions you’re targeting.
+            O “tipo de mídia” <code>only screen</code> significa que o estilo 
+            só deve ser aplicado aos dispositivos com telas (o oposto de 
+            documentos impressos, como quando você pressiona <strong>Ctrl+P</strong>)
+            em um navegador). As partes <code>min-width</code> e 
+            <code>max-width</code> são o que chamamos de “funções de mídia”, e 
+            elas especificam as dimensões do dispositivo que você está mirando.
           </p>
 
           <p>
-            The above media queries are by far the most common ones you’ll
-            encounter, but there are a lot of
+            As <em>media queries</em> acima são de longe as mais comuns 
+            utilizadas hoje em dia, mas existem muitas 
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media"
-              >other conditions</a
-            >
-            you can check for, including whether the device is in portrait or
-            landscape mode, the resolution of its screen, and whether it has a
-            mouse or not.
+              >outras condições</a
+            > que você pode utilizar, incluindo se o dispositivo está em modo 
+            retrato ou paisagem, a resolução da tela, e se ela tem um <em>mouse</em> 
+            ou não.
           </p>
         </div>
       </div>
@@ -451,15 +449,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="a-few-notes-on-design">
-              <span>A Few Notes on Design</span>
+              <span>Algumas coisas sobre Design</span>
             </h2>
           </div>
 
           <p>
-            Ok, so <code>@media</code> is how we define different layouts for
-            specific device widths, but what layouts are we actually trying to
-            implement? The example web page for this chapter is going to look
-            something like this:
+            Beleza, então é com <code>@media</code> que definimos diferentes 
+            layouts para larguras específicas de dispositivos, mas que tipos 
+            de layouts estamoss tentando implementar? A página web de exemplo 
+            para este capítulo deve se parecer com algo como isso:
           </p>
 
           <figure class="diagram">
@@ -480,41 +478,39 @@
           </figure>
 
           <p>
-            In the real world, it’s up to your web designer to supply you with
-            these kinds of mockups. Your job as a developer is to implement the
-            individual layouts using media queries to separate out the various
-            CSS rules that apply to each one.
+            No mundo real, é responsabilidade do seu <em>web designer</em> 
+            providenciar para você esses modelos. Seu trabalho como desenvolvedor 
+            é implementar os layouts utilizando <em>media queries</em> para 
+            separar as diferentes regras CSS que se aplicam a cada tipo.
           </p>
 
           <p>
-            There’s a few
+            Existem alguns 
             <a
               href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/?hl=en"
-              >well defined patterns</a
-            >
-            for how a desktop layout collapses into a mobile layout (we’re using
-            “layout shifter”). A lot of these decisions are in the realm of
-            design, which is outside the scope of this code-oriented tutorial;
-            however, there are two concepts that you must understand as a
-            developer:
+              >padrões já bem definidos</a
+            > de como um layout para desktop deve ser transformado em um layout 
+            para <em>mobile</em> (estamos utilizando “<em>layout shifter</em>”). 
+            Muitas dessas decisções estão sob o domínio do design, que está fora 
+            do objetivo desses tutoriais orientados ao código; no entanto, 
+            existem dois conceitos que você <strong>deve</strong> entender como 
+            desenvolvedor:
           </p>
 
           <ul>
             <li>
-              A “fluid” layout is one that stretches and shrinks to fill the
-              width of the screen, just like the
-              <a href="../flexbox/index.html#flexible-items">flexible boxes</a>
-              we covered a few chapters ago.
+              Um layout “fluido” é aquele que se alarga e encolhe para caber 
+              na largura da tela, assim como as 
+              <a href="../flexbox/index.html#flexible-items">caixas flex</a>
+              que cobrimos alguns capítulos atrás.
             </li>
             <li>
-              A “fixed-width” layout is the opposite: it has the same width
-              regardless of the screen dimensions (we created one of these in
-              the
-              <a
+              Um layout “largura-fixa” é o oposto: ele tem a mesma largura 
+              independente da dimensão da tela (criamos um desses no capítulo 
+              de <a
                 href="https://internetingishard.com/html-and-css/css-selectors#container-divs"
-                >CSS Selectors</a
-              >
-              chapter).
+                >Seletores CSS</a
+              >).
             </li>
           </ul>
 
@@ -536,8 +532,8 @@
           </figure>
 
           <p>
-            In our example web page, the mobile and tablet versions are fluid,
-            and the desktop version is fixed-width.
+            Na nossa página de exemplo, as versões para <em>mobile</em> e 
+            <em>tablet</em> são fluídas e a versão <em>desktop</em> é de largura-fixa.
           </p>
 
           <div class="subsubheading content__subsubheading">
