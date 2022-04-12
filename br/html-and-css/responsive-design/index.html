@@ -501,7 +501,7 @@
             <li>
               Um layout “fluido” é aquele que se alarga e encolhe para caber 
               na largura da tela, assim como as 
-              <a href="../flexbox/index.html#flexible-items">caixas flex</a>
+              <a href="../flexbox/index.html#flexible-items">caixas flexíveis</a>
               que cobrimos alguns capítulos atrás.
             </li>
             <li>
@@ -538,38 +538,40 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="choosing-breakpoints">
-              Choosing Breakpoints
+              Escolhendo como redimensionar
             </h3>
           </div>
 
           <p>
-            Most of those
+            A maioria desses 
             <a
               href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/?hl=en"
-              >responsive design patterns</a
+              >padrões de designs responsivos</a
             >
-            have similar behavior, using fluid layouts for mobile/tablet devices
-            and fixed-width layouts for wider screens. There’s a reason for
-            this.
+            tem um comportamento similar, usam layouts fluídos para 
+            <em>mobile</em>/<em>tablet</em> e de largura-fixa para 
+            telas maiores. Existe uma razão para isso.
           </p>
 
           <p>
-            Fluid layouts let us target a <em>range</em> of screen widths
-            instead of specific mobile devices. This is very important for web
-            designers. When they set out to create a mobile layout, they aren’t
-            trying to make something that looks good on an iPhone 6s, Galaxy S7,
-            or iPad mini&mdash;they’re designing a fluid layout that looks good
-            <em>anywhere</em> between 300 pixels and 500 pixels (or whatever).
+            Layouts fluídos nos permitem alcançar um grande números de 
+            telas com larguras diferentes, ao contrário de telas de dispositivos 
+            móveis específicos. Isso é muito importante para <em>web designer</em>. 
+            Quando eles iniciam a criação de um layout, não estão tentando fazer 
+            alguma coisa que fique bom em um iPhone 6s, Galaxy S7, ou em um Ipad
+            mini&mdash;estão criando um layout fluído que vai ficar bom 
+            <em>em qualquer lugar</em> entre 300 pixels e 500 pixels (ou como 
+            quiser).
           </p>
 
           <p>
-            In other words, the exact pixel values for the
-            <code>min-width</code> and <code>max-width</code> parameters in a
-            media query (collectively known as the “breakpoints” for a
-            responsive website) don’t actually matter. Our website doesn’t care
-            about the specific device the user is on. All it needs to know is
-            that it should display a layout that looks pretty at 400 pixels wide
-            (or whatever).
+            Em outras palavras, os valores exatos em pixel para os parâmetros 
+            <code>min-width</code> e <code>max-width</code> em um <em>media 
+              query</em> (são conhecidos como pontos de redimensionamento
+            para uma página responsiva) não importam muito. Nossa página não 
+            se importam com qual dispositivo o usuário está utilizando. Tudo 
+            que ele precisa saber é se aquilo deveria parecer um layout que 
+            fica bem em uma tela mais larga que 400 pixels (ou qual quiser).
           </p>
         </div>
       </div>
@@ -578,23 +580,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="mobile-first-development">
-              <span>Mobile-First Development</span>
+              <span>Desenvolvimento para dispositivos móveis</span>
             </h2>
           </div>
 
           <p>
-            Let’s dive right into implementing the above screenshots. It’s
-            always a good idea to start with the mobile layout and work your way
-            up to the desktop version. Desktop layouts are typically more
-            complex than their mobile counterparts, and this “mobile-first”
-            approach maximizes the amount of CSS that you can reuse across your
-            layouts.
+            Vamos mergulhar na implementação da imagens acima. É sempre uma boa 
+            ideia começar com o desenvolvimento para dispositivos móveis e 
+            depois na versão para desktop. Layouts para desktops são normalmente 
+            mais complexos que os para dispositivos móveis, e essa abordagem 
+            “dispositivos-móveis-primeiro” maximiza a quantidade de CSS que você 
+            poderá reutilizar entre os layouts.
           </p>
 
           <p>
-            First, we need to fill in <code>responsive.html</code>’s
-            <code>&lt;body&gt;</code> element with some empty boxes. Each box
-            has an image in it so we can tell them apart a little bit easier.
+            Primeiro, precisamos completar o elemento <code>&lt;body&gt;</code> 
+            do <code>responsive.html</code> com algumas caixas vazias. Cada 
+            caixa tem uma imagem dentro dela assim conseguimos diferenciá-las 
+            mais facilmente.
           </p>
 
           <pre
@@ -623,14 +626,13 @@
 </code></pre>
 
           <p>
-            And here’s our base styles, which should apply to
-            <em>all</em> layouts (mobile, tablet, and desktop). Make sure to add
-            these above the <code>@media</code> rules we created earlier and
-            below the
+            E aqui está nossa estilização base, que deve ser aplicada a 
+            <em>todos</em> os layouts (<em>smartphones</em>, <em>tablet</em> e 
+            desktop). Tenha certeza de adicionar isso acima das regras 
+            <code>@media</code> que criamos mais cedo e abaixo da regra de 
             <a href="../css-box-model/index.html#resetting-styles"
-              >universal selector</a
-            >
-            rule that resets our margins and padding:
+              >seletor universal</a
+            > que reconfigura nossas margens e preenchimento:
           </p>
 
           <pre
@@ -680,15 +682,15 @@
 </code></pre>
 
           <p>
-            If you make the browser window narrow, you'll see that this gives us
-            our entire mobile layout. Pretty easy, huh? No media queries
-            required. That’s why it’s called “mobile-first”&mdash;the mobile
-            version doesn’t require any special handling. Also notice that
-            <a href="../flexbox/index.html#wrapping-flex-items"
-              ><code>flex-wrap</code> property</a
-            >
-            in the containing <code>.page</code> div. This will make it very
-            easy to implement our tablet and desktop layouts.
+            Se você diminuir a largura da janela do navegador, verá o nosso 
+            layout para dispositivos móveis, ou seja, bem estreito. Bem fácil, 
+            não? Sem necessidade de <em>media queries</em>. Isso é o que 
+            chamamos de “dispositivos-móveis-primeiro”&mdash;a versão para 
+            dispositivos móveis não precisa de nenhum tratamento especial. Note 
+            também a <a href="../flexbox/index.html#wrapping-flex-items"
+            >propriedade <code>flex-wrap</code></a
+            > na <code>div .page</code>. Assim fica muito mais fácil de 
+            implementar os layouts para <em>tablet</em> e desktop.
           </p>
 
           <figure class="diagram">
@@ -709,14 +711,15 @@
           </figure>
 
           <p>
-            By keeping these base styles outside of the media queries, we’re
-            able to override and add on to them as we implement our specific
-            layouts. This is really convenient when, for instance, your designer
-            wants to tweak the color scheme for the entire website. Instead of
-            tracking down redundant <code>background-color</code> declarations
-            in several <code>@media</code> rules, you only have to update it
-            here. That change automatically applies to the mobile, tablet, and
-            desktop layouts.
+            Se mantermos esse estilo base fora das <em>media queries</em>, 
+            será possível sobreescrever e adicionar a ela, assim que precisar  
+            implementar os diferentes layouts. Isso é muito conveniente quando, 
+            por exemplo, o designer quiser ajustar o esquema de cores para toda 
+            a página web. Ao invés de rastrear todas as possíveis redundâncias 
+            de declarações <code>background-color</code> em diferentes regras 
+            <code>@media</code>, você só precisa alterá-la aqui. Essa mudança 
+            se aplica automaticamente aos diferentes layouts que tivermos 
+            disponível.
           </p>
         </div>
       </div>
