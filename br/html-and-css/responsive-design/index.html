@@ -909,11 +909,11 @@
           </div>
 
           <p>
-            We’ve got one final task for making a responsive web page. Before
-            responsive design was a thing, mobile devices only had a desktop
-            layout to work with. To cope with this, they zoomed out to fit the
-            entire desktop layout into the width of the screen, letting the user
-            interact with it by zooming in when necessary.
+            Temos uma última tarefa para fazer uma página web responsiva. Antes
+            da criação do design responsivo, dispositivos móveis tinham somente
+            o layout desktop para trabalhar. Para lidar com isso, eles tiravam 
+            o zoom para que o layout desktop coubesse no tamanho da tela, 
+            permitindo que o usuário interagisse com o zoom quando necessário.
           </p>
 
           <figure class="diagram">
@@ -934,14 +934,14 @@
           </figure>
 
           <p>
-            This default behavior will prevent mobile devices from using our
-            mobile layout, which is obviously very terrible. To disable it, add
-            the following element to the <code>&lt;head&gt;</code> of our
-            document. Just like
+            Esse comportamento padrão irá prevenir que dispositivos móveis 
+            utilizem o layout adequado, ou seja, o de dispositivos móveis, e 
+            isso é terrível. Para desabilitar isso, adicione o elemento abaixo
+            ao <code>&lt;head&gt;</code> do nosso documento HTML. Como o 
             <a href="../links-and-images/index.html#more-html-attributes"
               ><code>&lt;meta charset='UTF-8'/&gt;</code></a
-            >, this is a critical element that should be on every single web
-            page you create:
+            >, esse é um elemento crítico que deve estar em toda página 
+            web que você criar:
           </p>
 
           <pre
@@ -951,13 +951,15 @@
 </code></pre>
 
           <p>
-            To see this in action, we’ll need to <em>simulate</em> a mobile
-            device in our desktop browser. This is a little advanced for where
-            we’re at right now, but we can give it a shot. Open up
-            <code>responsive.html</code> in Google Chrome, then hit
-            <strong>View&nbsp;&gt; Developer &gt; Developer&nbsp;Tools</strong>
-            in the menu bar. Then, to simulate a mobile device, click the
-            <strong>Toggle Device Toolbar</strong> icon, highlighted below.
+            Para ver isso em ação, vamos precisar <em>simular</em> um 
+            dispositivo móvel no nosso navegador. Isso é um pouco avançado 
+            demais no ponto onde estamos agora, mas podemos tentar. Abra o 
+            <code>responsive.html</code> no Mozilla Firefox ou no Google 
+            Chrome, e pressione <strong>F12</strong> ele irá exibir as
+            <strong>Ferramentas de desenvolvedor</strong>. Depois, para 
+            simular um dispositivo móvel, clique no ícone de <strong>Modo 
+              de design responsivo
+            </strong>, como na figura a seguir.
           </p>
 
           <figure class="diagram">
@@ -978,20 +980,20 @@
           </figure>
 
           <p>
-            You should see the zoom-disabled version of the above diagram in
-            your browser, since it’s now pretending to be a mobile device.
-            (We’ll save the in-depth discussion of Chrome dev tools for a future
-            tutorial.)
+            Você deve estar vendo a versão com o zoom desabilitado do diagrama 
+            acima no seu navegador, já que agora ele está se comportando como 
+            um dispositivo móvel. (Vamos deixar a discussão sobre as ferramentas 
+            de desenvolvimento para um tutorial futuro.)
           </p>
 
           <p>
-            Alternatively, if you’re reading this chapter on a smartphone, you
-            can navigate to the live
-            <a href="example/default-viewport-zoom/responsive.html">before</a>
-            and
-            <a href="example/disabled-viewport-zoom/responsive.html">after</a>
-            versions of our example project to experience the effect of our
-            <code>viewport</code> changes.
+            Outra opção é, se você estiver lendo este capítulo em um 
+            <em>smartphone</em>, você pode navegar para a versão  
+            <a href="example/default-viewport-zoom/responsive.html">antes</a> 
+            e 
+            <a href="example/disabled-viewport-zoom/responsive.html">depois</a> 
+            do nosso projeto para ver as mudanças que o <code>viewport</code> 
+            faz.
           </p>
         </div>
       </div>
@@ -1000,41 +1002,44 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>REsumo</span>
             </h2>
           </div>
 
           <p>
-            Believe it or not, that’s actually all you need to know to create
-            responsive websites. If we boil it down, we’re really only concerned
-            with three things:
+            Acredite ou não, atualmente isso é tudo que você precisa saber 
+            para criar páginas web responsivas. Se precisássemos resumir, só 
+            estamos preocupados com três coisas:
           </p>
 
           <ul>
             <li>
-              The responsive <em>design</em> (the mockups for each layout)
+              O <em>design</em> responsivo (o modelo de cada layout)
             </li>
-            <li>CSS rules for implementing each of those layouts</li>
-            <li>Media queries for conditionally applying those CSS rules</li>
+            <li>As regras CSS para implementar cada um desses layouts</li>
+            <li>As <em>media queries</em> para aplicação condicional dessas regras CSS</li>
           </ul>
 
           <p>
-            We started this chapter by learning about the difference between
-            fluid layouts and fixed-width layouts. Then, we went on to create a
-            mobile-first stylesheet that used media queries to build tablet and
-            desktop layouts on top of a shared set of base styles. Finally, we
-            disabled the default viewport zoom behavior of mobile browsers.
+            Começamos esse capítulo aprendendo sobre as diferenças entre 
+            layouts fluídos e de largura-fixa. Depois, criamos uma folha de 
+            estilo para uma abordagem dispositivos-móveis-primeiro que 
+            utilizou <em>media queries</em> para construir layouts para 
+            <em>tablets</em> e desktop sob um estilo base. E finalmente, 
+            desabilitamos o comportamento padrão de zoom da janela para 
+            navegadores de dispositivos móveis.
           </p>
 
           <p>
-            So, that was the easy part of responsive design. In the next
-            chapter, we’ll discover the hard part: images. Presenting different
-            CSS to specific devices isn’t too bad, but optimizing images for
-            those devices requires a bit more planning.
+            Então, essa foi a parte fácil de design responsivo. No próximo 
+            capítulo, vamos descobrir a parte difícil: imagens. Apresentar 
+            diferentes CSS para dispositivos específicos não é tão ruim, 
+            mas otimizar as imagens para esses dispositivos é preciso 
+            um pouco mais de planejamento.
           </p>
 
           <div class="next-chapter">
-            <a href="../responsive-images/index.html">Next Chapter &gt;</a>
+            <a href="../responsive-images/index.html">Próximo capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1044,44 +1049,44 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#css-media-queries"
-                  >CSS Media Queries</a
+                  >Media Queries CSS </a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#a-few-notes-on-design"
-                  >A Few Notes On Design</a
+                  >Algumas coisas sobre design</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#mobile-first-development"
-                  >Mobile-First Development</a
+                  >Desenvolvendo para dispositivos móveis</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#tablet-layout"
-                  >Tablet Layout</a
+                  >Layout para Tablet</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#desktop-layout"
-                  >Desktop Layout</a
+                  >Layout para Desktop</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#disabling-viewport-zooming"
-                  >Disabling Viewport Zooming</a
+                  >Desabilitando o zoom da janela</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1128,20 +1133,20 @@
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutoriais. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir os leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, ae nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1155,7 +1160,7 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
@@ -1171,7 +1176,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1183,11 +1188,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1205,16 +1210,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
