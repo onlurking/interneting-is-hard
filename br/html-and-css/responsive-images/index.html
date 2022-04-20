@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <title>Responsive Images Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Imagens Responsivas | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -174,7 +174,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -187,17 +187,17 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">Responsive Images</h1>
+            <h1 class="heading__title">Imagens Responsivas</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 11. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 11. of <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              Responsive images are hard. Like, actually hard. But don’t be
-              scared.
+              Imagens responsivas são difíceis. Tipo, muito difícil. Mas não 
+              se assuste.
             </div>
           </div>
         </div>
@@ -206,12 +206,13 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p class="nudge-desktop--smaller">
-            In <a href="../responsive-design/index.html">Responsive Design</a>,
-            we learned how to use media queries to create separate mobile,
-            tablet, and desktop layouts. Now, we’re going to add images to the
-            mix. Just as media queries let us conditionally present different
-            CSS rules, we want to display different images based on the user’s
-            device.
+            Em <a href="../responsive-design/index.html">Design Responsivo</a>,
+            aprendemos como utilizar <em>media queries</em> para criar layouts
+            separados para dispositivos móveis e desktop. Agora, vamos adicionar
+            imagens na página. Adicionar <em>media queries</em> só permitem
+            apresentar diferentes regras CSS de forma condicional, queremos 
+            mostrar diferentes imagens baseado em dispositivos diferentes dos 
+            usuários.
           </p>
 
           <figure class="diagram">
@@ -232,24 +233,25 @@
           </figure>
 
           <p>
-            The problem is, images have inherent dimensions. We can’t stretch a
-            photo that’s 500&times;250 pixels to anything beyond 500 pixels wide
-            because it’ll get pixelated. Retina displays and mobile devices
-            complicate things even more. To make our images responsive, we now
-            have to take three things into consideration:
+            O problema é, o tamanho fixo das imagens. Não podemos ampliar uma
+            imagem que tem 500&times;250 pixels para nada mais largo que 500 pixels
+            porque a imagem ficará borrada (<em>pixelada</em>). Dispositivos móveis 
+            e as telas Retina complicam as coisas ainda mais. Para fazer nossas 
+            imagens responsivas, precisamos levar em consideração três coisas
+            a partir de agora:
           </p>
 
           <ul>
-            <li>The device’s dimensions</li>
-            <li>The image’s dimensions</li>
-            <li>The device’s screen resolution</li>
+            <li>A dimensão dos dispositivos</li>
+            <li>As dimensões das imagens</li>
+            <li>A resolução da tela do dispositivo</li>
           </ul>
 
           <p>
-            This will be more difficult than media queries, which were only
-            concerned with device width. But don’t worry, there are standard
-            ways to solve all these problems, and we’ll walk you through them
-            one step at a time.
+            Isso será mais difícil que <em>media queries</em>, que só se
+            preocupava com a largura do dispositivo. Mas não se desespere, 
+            existem formas padrões de resolver todos esses problemas, e 
+            nós iremos ver todas essas formas, um passo de cada vez.
           </p>
         </div>
       </div>
@@ -257,17 +259,18 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            To experiment with responsive images, we need a responsive website
-            to work with. This chapter will be building off of the example web
-            page we put together in the
-            <a href="../responsive-design/index.html">previous chapter</a>.
-            We’ll be adding two images to the page so it looks like the
-            following. This might seem simple, but these images will change
-            depending on the user’s device (which is <em>really</em> cool).
+            Para experimentar as imagens responsivas, precisamos primeiro de uma
+            página resposiva para trabalhar. Este capítulo utilizará o exemplo
+            de página web que criamos no 
+            <a href="../responsive-design/index.html">capítulo anterior</a>.
+            Vamos adicionar duas imagems a página, para que ela fique como o
+            exemplo abaixo. Isso pode parecer simples, mas essas imagens irão
+            mudar de acordo com o dispositivo do usuário (e <em>isso é muito 
+              legal</em>).
           </p>
 
           <figure class="diagram">
@@ -288,22 +291,21 @@
           </figure>
 
           <p>
-            If you’re continuing from the last chapter, you simply need to
+            Se você continuar do último capítulo, só precisa fazer o 
             <a href="responsive-images-5e8a2c.zip"
-              >download these image assets</a
-            >
-            and add them to your project’s <code>images/</code> folder.
+              >download dessas imagens</a
+            > e adicionar ao seu projeto na pasta <code>images/</code>.
           </p>
 
           <p>
-            If you’re just joining us, go ahead and download the
-            <a href="example-7be588.zip">complete example project</a>, unzip it,
-            and open it up with Atom. If you’re not familiar with the Atom text
-            editor, be sure to take a read through the
+            Se você está chegando agora aqui e não tem a página desenvolvida 
+            do capítulo anterior, é só fazer o download do 
+            <a href="example-7be588.zip">projeto completo de exemplo</a>, 
+            descompactar e abrir no seu editor favorito. Caso deseje, temos 
+            um tutorial completo de como utilizar o Atom, confira na 
             <a href="../introduction/index.html#atom-text-editor"
-              >introduction</a
-            >
-            of this tutorial series.
+              >introdução</a
+            > como instalar e configurá-lo, no começo dessa série de tutoriais.
           </p>
 
           <figure class="diagram">
