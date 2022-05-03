@@ -298,14 +298,14 @@
           </p>
 
           <p>
-            Se você está chegando agora aqui e não tem a página desenvolvida 
-            do capítulo anterior, é só fazer o download do 
+            Caso esteja chegando agora aqui e não tem a página desenvolvida 
+            no capítulo anterior, é só fazer o download do 
             <a href="example-7be588.zip">projeto completo de exemplo</a>, 
             descompactar e abrir no seu editor favorito. Caso deseje, temos 
             um tutorial completo de como utilizar o Atom, confira na 
             <a href="../introduction/index.html#atom-text-editor"
               >introdução</a
-            > como instalar e configurá-lo, no começo dessa série de tutoriais.
+            > como instalar e configurá-lo.
           </p>
 
           <figure class="diagram">
@@ -326,12 +326,12 @@
           </figure>
 
           <p>
-            In either case, your project files should look like this before
-            moving on. Notice how we have multiple copies of our PNG and JPG
-            images (e.g., <code>illustration-big.png</code> and
-            <code>illustration-small.png</code>). We’ll be letting the browser
-            pick which one of these it should load depending on the device’s
-            size and screen resolution.
+            Em qualquer um dos casos, os arquivos do seu projeto deverão se
+            parecer como a imagem abaixo. Perceba como temos múltiplas cópias
+            das nossas imagems PNG e JPG (ex., <code>illustration-big.png</code> 
+            e <code>illustration-small.png</code>). Vamos fazer com que o 
+            navegador escolha qual dessas deve carregar dependendo do 
+            tamanho do dispositivo e resolução da tela.
           </p>
         </div>
       </div>
@@ -340,16 +340,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="retina-screens">
-              <span>Retina Screens</span>
+              <span>Telas Retina</span>
             </h2>
           </div>
 
           <p>
-            This is our first time worrying about retina devices, so let’s talk
-            a little bit about screen resolution. Retina screens have twice as
-            many pixels per inch than standard-resolution screens. That is to
-            say, each retina pixel is the equivalent of 4 standard pixels. This
-            has a big impact on how images are displayed in a web browser.
+            Esta é primeira vez que vamos tratar sobre telas retina, então 
+            vamos falar um pouco sobre a resolução de tela. As telas retina
+            tem duas vezes mais a quantidade de pixel por polegada que a 
+            maioria das telas de resolução padrão. Isso significa que, cada 
+            pixel retina é equivalente a 4 pixels padrão. Isso tem um grande
+            impacto em como as imagens são apresentadas em um navegador web.
           </p>
 
           <figure class="diagram">
@@ -367,10 +368,11 @@
           </figure>
 
           <p>
-            To render correctly on a retina device, an image needs to be twice
-            as big as its final display dimensions. For example, if you want to
-            add a 500&times;250 pixel image to the page, the corresponding image
-            file needs to be 1000&times;500 pixels.
+            Para a renderização acontecer corretamente em um tela retina, uma 
+            imagem precisa ser duas vezes maior que as dimensões da tela que 
+            será apresentada. Por exemplo, se você quiser adicionar uma imagem 
+            a página com 500&times;250 pixel, a imagem correspondente, precisa 
+            ser de 1000&times;500 pixels.
           </p>
 
           <figure class="diagram">
@@ -391,17 +393,18 @@
           </figure>
 
           <p>
-            This is actually a bit of a simplification&mdash;not all retina
-            screens are created equal. For instance, the iPhone 6 Plus has
-            <em>three times</em> as many pixels per inch as a standard screen.
-            This tutorial focuses on the 2x use case, but the same techniques
-            apply to 3x retina screens as well.
+            Isso na verdade é uma simplificação&mdash;nem todas as telas retina
+            são criadas de forma idêntica. Por exemplo, o iPhone 6 Plus tem 
+            <em>três vezes</em> mais pixel por polegadas do que uma tela padrão.
+            Este tutorial vai focar no caso de usar o dobro do tamanho, mas as
+            mesmas técnicas se aplicam as telas retinas com 3x o tamanho, também.
           </p>
 
           <p>
-            What’s more, standard displays and smaller devices don’t need all
-            those extra pixels in high-resolution images, and sending that much
-            unnecessary data usually results in a bad user experience.
+            O que mais, telas padrões e dispositivos menores não precisam de 
+            todos esses pixels extras em imagens de alta resolução, e enviar 
+            todo esse dado desnecessário normalmente resulta em uma má 
+            experiência para o usuário.
           </p>
         </div>
       </div>
@@ -410,18 +413,19 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="responsive-svg-images">
-              <span>Responsive SVG Images</span>
+              <span>Imagens SVG Responsivas</span>
             </h2>
           </div>
 
           <p>
-            The easiest way to solve all these problems is with
+            A forma mais fácil de resolver todos esses problemas é com 
             <a href="../links-and-images/index.html#svg-images">SVG images</a>.
-            They “just work.” Since they’re vector-based, SVGs avoid the screen
-            resolution problems that we’ll see in the next section. Let’s take a
-            look by adding an illustration to our
-            <code>responsive.html</code> page. Replace the existing image in the
-            <code>.content</code> div so that it matches the following:
+            Elas “simplesmente funcionam”. Uma vez que elas sejam baseadas em 
+            vetores, SVG evitam os problemas de resolução de tela que veremos 
+            na próxima seção. Vamos dar uma olhada adicionando uma ilustração a
+            nossa páginas <code>responsive.html</code>. Substitua a imagem que 
+            já existe na div <code>.content</code> para o que estamos utilizando
+            e fique igual abaixo:
           </p>
 
           <pre
