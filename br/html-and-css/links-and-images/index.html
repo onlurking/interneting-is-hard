@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>Links and Images Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Âncoras e Imagens | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -107,11 +107,11 @@
 
     <meta
       property="og:title"
-      content="Links and Images | HTML &amp; CSS Is Hard"
+      content="Links e Imagens | HTML &amp; CSS é Difícil"
     />
     <meta
       property="og:description"
-      content="A friendly HTML tutorial about connecting web pages to each other"
+      content="Um tutorial amigável sobre conectar páginas web umas as outras"
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="/html-and-css/links-and-images/" />
@@ -125,11 +125,11 @@
     <meta name="twitter:site" content="@internetinghard" />
     <meta
       name="twitter:title"
-      content="Links and Images | HTML &amp; CSS Is Hard"
+      content="Links e Imagens | HTML &amp; CSS é Difícil"
     />
     <meta
       name="twitter:description"
-      content="A friendly HTML tutorial about connecting web pages to each other"
+      content="Um tutorial amigável sobre conectar páginas web umas as outras"
     />
     <meta
       name="twitter:image"
@@ -169,12 +169,12 @@
             ><img
               class="main-nav__logo"
               src="../../img/interneting-is-hard-logo-97b225.svg"
-              alt="Wifi signal with exclamation mark through it"
+              alt="Ícone do sinal de Wi-Fi com ponto de exclamação nele"
           /></a>
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -187,16 +187,16 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">Links and Images</h1>
+            <h1 class="heading__title">Âncoras e Imagens</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 3. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 3. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly HTML tutorial about connecting web pages to each other
+              Um tutorial amigável sobre conectar páginas web umas as outras
             </div>
           </div>
         </div>
@@ -205,13 +205,11 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            The
-            <a href="../basic-web-pages/index.html">previous chapter</a> covered
-            some very important HTML elements, but we were only dealing with a
-            single web page. Links and images are fundamentally different from
-            those elements in that they deal with <em>external</em> resources.
-            Links point the user to a different HTML document, and images pull
-            another resource into the page.
+            No <a href="../basic-web-pages/index.html">capítulo anterior</a> 
+            cobrimos alguns elementos da HTML bem importantes, mas nós só 
+            construímos uma única página web. Os links e imagens são 
+            fundamentalmente diferentes daqueles elementos porque eles 
+            tratam de recursos (imagens e outras páginas web) externos.
           </p>
 
           <figure class="diagram">
@@ -222,7 +220,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Diagram: image pointing to &lt;img&gt; element in a web page and HTML link pointing from web page to another web page"
+                  alt="Diagrama: imagem apontando para elemento &lt;img&gt; em uma página web e ligação HTML apontando de uma página para outra"
                   src="links-and-images-6820c7.png"
                   width="511"
                   height="230"
@@ -232,18 +230,19 @@
           </figure>
 
           <p>
-            To use links and images, we’ll also need to learn about another
-            component of the HTML syntax: attributes. Attributes will open up a
-            whole new world of possibilities for our web pages.
+            Para usar links e imagens, também precisamos aprender sobre outro 
+            componente da sintaxe da HTML: os atributos. Os atributos vão 
+            apresentar um mundo completamente novo de possibilidade para 
+            as nossas páginas web.
           </p>
 
           <p>
-            In this chapter, we’ll create a simple website composed of several
-            HTML documents and image files. It may be entitled
-            <em>Links and Images</em>, but the central theme of this chapter is
-            actually around file and folder organization. As we start working
-            with multiple files, we’ll discover the importance of being an
-            organized web developer.
+            Neste capítulo, vamos criar uma página web composta de várias outras 
+            páginas em HTML com documentos e arquivos de imagens. Vamos chamar 
+            de <em>Links e Imagens</em>, mas o tema central deste capítulo gira em torno 
+            da organização de pastas e arquivos que compõem uma página web. Assim 
+            que começarmos a trabalhar com vários arquivos, vamos descobrir a 
+            importância de ser um desenvolvedor web organizado.
           </p>
         </div>
       </div>
@@ -251,14 +250,15 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            This chapter is all about linking web pages together, so we’ll need
-            to create some new HTML files before we code anything up. We’ll be
-            working with three separate web pages this chapter, along with a few
-            image files of various formats:
+            Este capítulo é todo sobre a ligação entre páginas web, desta forma 
+            vamos precisar criar alguns arquivos HTML antes de iniciar o 
+            desenvolvimento de qualquer coisa. Vamos trabalhar com três páginas 
+            web separadas neste capítulo, juntamente com alguns arquivos de 
+            imagem em diferentes formatos:
           </p>
 
           <figure class="diagram">
@@ -266,7 +266,7 @@
               <div class="diagram__padding" style="padding-bottom: 61.875%">
                 <img
                   class="diagram__image"
-                  alt="Diagram: the 7 project files for this project (3 HTML files, 4 image files)"
+                  alt="Diagrama: os 7 arquivos para este projeto (3 arquivos HTML, 4 arquivos de  imagens)"
                   src="links-and-images-example-7ab70f.png"
                   width="480"
                   height="297"
@@ -276,23 +276,22 @@
           </figure>
 
           <p>
-            To get started, create a new folder called
-            <code>links-and-images</code> to store all our files. You should be
-            able to do this in Atom using the same process we followed in the
-            <a href="../introduction/index.html#atom-text-editor"
-              >Introduction</a
-            >
-            chapter.
+            Para começar, vamos criar uma nova pasta chamada 
+            <code>links-and-images</code> para armazenar todos os nossos 
+            arquivos. Você consegue fazer isso pelo Atom usando o mesmo 
+            processo que utilizamos para criar a pasta e o arquivo no 
+            capítulo anterior, <a href="../introduction/index.html#atom-text-editor"
+            >Introduction</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="links-page">Links Page</h3>
+            <h3 class="subsubheading__heading" id="links-page">Página Links</h3>
           </div>
 
           <p>
-            Next, add a new file to that folder called
-            <code>links.html</code> and insert the following HTML template. This
-            should be familiar to you from the previous chapter.
+            Depois de criar uma nova pasta, vamos criar um arquivo chamado 
+            <code>links.html</code> dentro dela e usaremos o seguinte código HTML.
+            Isso já deve ser familiar para você do capítulo anterior.
           </p>
 
           <pre
@@ -309,11 +308,11 @@
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="images-page">Images Page</h3>
+            <h3 class="subsubheading__heading" id="images-page">Página Imagens</h3>
           </div>
 
           <p>
-            In the same folder, create another file called
+            Na mesma pasta, crie outro arquivo chamado 
             <code>images.html</code>:
           </p>
 
@@ -322,22 +321,23 @@
           ><code><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Images<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Imagens<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Images<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Imagens<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="extras-page">Extras Page</h3>
+            <h3 class="subsubheading__heading" id="extras-page">Páginas Extras</h3>
           </div>
 
           <p>
-            Our last page will help us demonstrate relative links. Create a new
-            folder in <code>links-and-images</code> called <code>misc</code>,
-            then add a new file called <code>extras.html</code>:
+            Nossa última página nos ajudará a demonstrar ligações relativas. Crie 
+            uma nova página em <code>links-and-images</code> chamada 
+            <code>misc</code>, e então adicione um novo arquivo chamado 
+            <code>extras.html</code>:
           </p>
 
           <pre
@@ -354,25 +354,26 @@
 </code></pre>
 
           <p>
-            Note that you can create a new folder in Atom by right-clicking the
-            file browser pane and selecting <strong>New Folder</strong> in the
-            contextual menu. Life is better when you never need to leave your
-            text editor.
+            Você pode criar um nova pasta no Atom clicando com o botão direito 
+            no painel do navegador de arquivos e selecionar <strong>Nova 
+              pasta</strong> no menu de contexto. A vida fica melhor quando 
+              você não precisa deixar seu editor de texto para abrir o gerenciador 
+              de arquivos.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="image-downloads">
-              Image Downloads
+              Baixar as Imagens
             </h3>
           </div>
 
           <p>
-            We’ll be embedding images in our <code>images.html</code> file, so
-            be sure to download these
-            <a href="images-4149f7.zip">example mochi images</a>, too. Unzip
-            them in your <code>links-and-images</code> folder, keeping the
-            parent <code>images</code> folder from the ZIP file. Your project
-            should now look like this:
+            Iremos inserir chamadas das imagens no nosso arquivo 
+            <code>images.html</code>, então tenha certeza de que baixou essas 
+            também <a href="images-4149f7.zip">imagens de mochi de exemplo</a>. 
+            Descompacte-as na sua pasta <code>links-and-images</code>, mantenha 
+            a pasta <code>images</code> do arquivo compactado. Seu projeto deve 
+            parecer como a seguir:
           </p>
 
           <figure class="diagram">
@@ -383,7 +384,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Screenshot: Atom’s file browser after creating the example files"
+                  alt="Captura de tela: Navegador de arquivos do Atom depois de criar os arquivos de exemplo"
                   src="example-files-b21613.png"
                   width="241"
                   height="316"
@@ -398,29 +399,29 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="anchors">
-              <span>Anchors</span>
+              <span>Âncoras</span>
             </h2>
           </div>
 
           <p>
-            Links are created with the <code>&lt;a&gt;</code> element, which
-            stands for “anchor”. It works just like all the elements in the
-            previous chapter: when you wrap some text in
-            <code>&lt;a&gt;</code> tags, it alters the meaning of that content.
-            Let’s take a look by adding the following paragraph to the
-            <code>&lt;body&gt;</code> element of <code>links.html</code>:
+            Links são criadas com o elemento <code>&lt;a&gt;</code>, que 
+            significa “âncora”. Funciona como todos os outros elementos 
+            do capítulo anterior: quando delimita algum texto na etiqueta 
+            (tag) <code>&lt;a&gt;</code>, ele muda o significado do conteúdo. 
+            Vamos dar uma olhada adicionando no seguinte parágrafo do 
+            elemento <code>&lt;body&gt;</code> do <code>links.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This example is about links and <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>images<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este exemplo é sobre links e <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>imagens<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you load the page in a web browser, you’ll notice that the
-            <code>&lt;a&gt;</code> element doesn’t look like a link at all. Yes,
-            unfortunately, the <code>&lt;a&gt;</code> element on its own doesn’t
-            do much of anything.
+            Se você carregar a página no navegador irá notar que o elemento 
+            <code>&lt;a&gt;</code> não parece como um link, afinal. Sim, 
+            infelizmente, o elemento <code>&lt;a&gt;</code>sozinho não faz 
+            muita coisa.
           </p>
         </div>
       </div>
@@ -428,13 +429,13 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="links"><span>Links</span></h2>
+            <h2 class="subheading__heading" id="links"><span>Ligações</span></h2>
           </div>
 
           <p>
-            In the same way that an element adds meaning to the content it
-            contains, an HTML “attribute” adds meaning to the element it’s
-            attached to.
+            Da mesma forma que um elemento adiciona significado a conteúdo 
+            que o contém, um atributo HTML adiciona significado ao elemento 
+            ligado a ele.
           </p>
 
           <figure class="diagram">
@@ -445,7 +446,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Diagram: HTML attribute attached to an HTML element, which is attached to raw content"
+                  alt="Diagrama: Atributo HTML  junto a um elemento HTML, que é definido ao conteúdo puro"
                   src="html-attributes-6f5690.png"
                   width="279"
                   height="293"
@@ -455,35 +456,32 @@
           </figure>
 
           <p>
-            Different elements allow different attributes, and you can refer to
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >MDN</a
-            >
-            for details about which elements accept which attributes. Right now,
-            we’re concerned with the <code>href</code> attribute because it
-            determines where the user goes when they click an
-            <code>&lt;a&gt;</code> element. Update your link to match the
+            Elementos diferentes permitem o uso de diferentes atributos, e você 
+            pode verificar na <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+            >MDN</a> para detalhes sobre quais elementos aceitam quais atributos. 
+            Neste momento, estamos preocupados com o atributo <code>href</code> 
+            porque ele determina para onde o usuário vai quando ele clicar em 
+            um elemento <code>&lt;a&gt;</code>. Atualize seu link para parecer 
+            como o seguinte:</code> element. Update your link to match the
             following:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This example is about links and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'images.html'</span>&gt;</span>images<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Este exemplo é sobre links e <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'images.html'</span>&gt;</span>imagens<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Notice how attributes live inside the <em>opening</em> tag. The
-            attribute name comes first, then an equal sign, then the “value” of
-            the attribute in either single or double quotation marks. This
-            syntax distinguishes attributes from content (which goes between the
-            tags).
+            Note como os atributos estão dentro da etiqueta de <em>abertura</em>. O 
+            nome do atributo vem primeiro, depois um sinal de igual, e entre aspas 
+            simples o “valor” do atributo. Essa sintaxe distingue atributos de 
+            conteúdos (que vão entre as etiquetas).
           </p>
 
           <p class="nudge-desktop--smaller">
-            The extra bit of information provided by the
-            <code>href</code> attribute tells the browser that this
-            <code>&lt;a&gt;</code> element is in fact a link, and it should
-            render the content in its default blue text:
+            O parte da informação provida pelo atributos <code>href</code> diz ao 
+            navegador que esse elemento <code>&lt;a&gt;</code> é na verdade um link, e 
+            deve renderizar o conteúdo em seu texto padrão azul:
           </p>
 
           <figure class="diagram">
@@ -494,7 +492,7 @@
               >
                 <img
                   class="diagram__image"
-                  alt="Web page with a blue &lt;a href&gt; link in it"
+                  alt="Página web com um link &lt;a href&gt; azul nele"
                   src="html-link-href-element-61348e.png"
                   width="404"
                   height="187"
@@ -512,18 +510,19 @@
               class="subheading__heading"
               id="absolute-relative-and-root-relative-links"
             >
-              <span>Absolute, Relative, and Root-Relative Links</span>
+              <span>Ligações Absolutas, Relativas, e Raiz-Relativa</span>
             </h2>
           </div>
 
           <p>
-            Now that we’re working with links, we need to understand how a
-            website is structured. For our purposes, a website is just a
-            collection of HTML files organized into folders. To refer to those
-            files from inside of another file, the Internet uses “uniform
-            resource locators” (URLs). Depending on what you’re referring to,
-            URLs can take different forms. The three types of URLs we’ll be
-            dealing with are highlighted below:
+            Agora que estamos trabalhando com ligações, precisamos entender 
+            como uma página web é estruturada. Para os nossos propósitos, uma 
+            página web é um amontoado de arquivos HTML organizados em pastas. 
+            Para referenciar esses arquivos dentro de outros arquivos, a 
+            Internet utiliza os “Localizadores de Recursos Uniformes” (URLs). 
+            Dependendo do que você está se referindo, as URLs podem assumir 
+            diferentes formas. Os três tipos de URLs quais iremos trabalhar 
+            estão listados abaixo:
           </p>
 
           <figure class="diagram">
@@ -544,10 +543,11 @@
           </figure>
 
           <p>
-            Absolute, relative, and root-relative links refer to the value of
-            the <code>href</code> attribute. The next few sections will explain
-            how and when to use each of them. But first, let’s add the following
-            content to our <code>links.html</code> file:
+            Ligações absolutas, relativas, e raiz-relativas se referem aos 
+            valores que o atributo <code>href</code> pode conter. As próximas 
+            seções irão explicar como e quando devemos usar cada um deles. 
+            Mas primeiro, vamos adicionar o conteúdo a seguir ao nosso 
+            arquivo <code>links.html</code>:
           </p>
 
           <pre
@@ -561,15 +561,16 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="absolute-links">
-              Absolute Links
+              Ligações Absolutas
             </h3>
           </div>
 
           <p>
-            “Absolute” links are the most detailed way you can refer to a web
-            resource. They start with the “scheme” (typically
-            <code>http://</code> or <code>https://</code>), followed by the
-            domain name of the website, then the path of the target web page.
+            Ligações “absolutas” são a forma mais detalhada que você pode usar 
+            para se referir a um recurso na web. Elas começam com o “esquema” 
+            (scheme) (tipicamente <code>http://</code> ou <code>https://</code>), 
+            seguidos pelo nome do domínio da página web, e por fim o caminho 
+            do alvo na página.
           </p>
 
           <figure class="diagram">
@@ -590,23 +591,24 @@
           </figure>
 
           <p>
-            For example, try creating a link to the Mozilla Developer Network’s
-            HTML element reference:
+            Por exemplo, tente criar um link de referência para o elemento 
+            HTML da Mozilla Developer Network:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Absolute links, like to
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Links absolutos, como o da
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://developer.mozilla.org/en-US/docs/Web/HTML'</span>&gt;</span>Mozilla
-    Developer Network<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, which is a very good resource for web
-    developers.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    Developer Network<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, que é uma boa referência para desenvolvedores web.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            It’s possible to use absolute links to refer to pages in your own
-            website, but hard-coding your domain name everywhere can make for
-            some tricky situations. It’s usually a better idea to reserve
-            absolute links only for directing users to a different website.
+            É possível utilizar ligações absolutas para referenciar páginas 
+            no seu próprio site, mas usar o nome do domínio em todos os lugares 
+            pode trazer problemas em algumas situações. Usualmente utilizamos 
+            ligações absolutas quando queremos redirecionar o usuário para uma 
+            página web diferente, fora do seu domínio.
           </p>
 
           <figure class="diagram">
@@ -628,34 +630,35 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="relative-links">
-              Relative Links
+              Ligações Relativas
             </h3>
           </div>
 
           <p class="nudge-desktop--smaller">
-            “Relative” links point to another file in your website from the
-            vantage point of the file you’re editing. It’s implied that the
-            scheme and domain name are the same as the current page, so the only
-            thing you need to supply is the path.
+            Ligações “relativas” apontam para outro arquivo dentro da sua página 
+            web com a vantagem de apontar para o arquivo que você está editando. 
+            Está implícito que o esquema e o nome de domínio são os mesmos como 
+            os da página atual, então a única coisa que você precisa é providenciar 
+            o caminho.
           </p>
 
           <p>
-            Here’s how we can link to our <code>extras.html</code> file from
-            inside of <code>links.html</code>:
+            Aqui está como nós podemos ligar nosso arquivo <code>extras.html</code> 
+            de dentro de <code>links.html</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Relative links, like to our <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>extras
-    page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ligações relativas, como na nossa <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>página extras
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            In this case, the <code>href</code> attribute represents the file
-            path to <code>extras.html</code> from the
-            <code>links.html</code> file. Since <code>extras.html</code> isn’t
-            in the same folder as <code>links.html</code>, we need to include
-            the <code>misc</code> folder in the URL.
+            Neste caso, o atributo <code>href</code> representa o caminho do 
+            arquivo <code>extras.html</code> a partir do arquivo 
+            <code>links.html</code>. Como o <code>extras.html</code> não está 
+            na mesma pasta de <code>links.html</code>, precisamos incluir a 
+            pasta <code>misc</code> na URL.
           </p>
 
           <figure class="diagram">
@@ -676,9 +679,10 @@
           </figure>
 
           <p>
-            Each folder and file in a path is separated by a forward slash
-            (<code>/</code>). So, if we were trying to get to a file that was
-            <em>two</em> folders deep, we’d need a URL like this:
+            Cada pasta e arquivo no caminho é separado por uma barra 
+            (<code>/</code>). Então, se quisermos tentar acessar um arquivo 
+            que está <em>duas</em> pastas abaixo da arquitetura de pastas, 
+            precisamos de um caminho na URL como esse:
           </p>
 
           <pre class="highlight"><code>misc/other-folder/extras.html
@@ -686,17 +690,18 @@
 
           <div class="subsubsubheading content__subsubsubheading">
             <h4 class="subsubsubheading__heading" id="parent-folders">
-              Parent Folders
+              Pastas mães
             </h4>
           </div>
 
           <p>
-            That works for referring to files that are in the same folder or a
-            deeper folder. What about linking to pages that are in a directory
-            <em>above</em> the current file? Let’s try creating relative links
-            to <code>links.html</code> and <code>images.html</code> from within
-            our <code>extras.html</code> file. Add this to
-            <code>extras.html</code>:
+            Isso funciona para referências a arquivos que estão na mesma pasta 
+            ou em níveis abaixo da pasta mãe de onde o arquivo original está. E 
+            como fazemos ligações com páginas que estão em níveis de diretório 
+            <em>acima</em> do arquivo original? Vamos tentar criar ligações 
+            relativas de <code>links.html</code> e <code>images.html</code> a 
+            partir do nosso arquivo <code>extras.html</code>. Adicione isso 
+            ao <code>extras.html</code>:
           </p>
 
           <pre
@@ -707,14 +712,14 @@
 </code></pre>
 
           <p>
-            When you click either of those links in a web browser, it will
-            complain that the page doesn’t exist. Examining the address bar,
-            you’ll discover that the browser is trying to load
-            <code>misc/links.html</code> and
-            <code>misc/images.html</code>&mdash;it’s looking in the wrong
-            folder! That’s because our links are <em>relative</em> to the
-            location of <code>extras.html</code>, which lives in the
-            <code>misc</code> folder.
+            Quando você clica em qualquer uma dessas ligações em um navegador 
+            web, ele vai reclamar que a página não existe. Examinando bem a 
+            barra de navegação, você irá descobrir que o navegador está 
+            tentando acessar <code>misc/links.html</code> e 
+            <code>misc/links.html</code>&mdash; ele está olhando na pasta 
+            errada! Isso acontece porque nossas ligações são <em>relativas</em> 
+            a localização do arquivo <code>extras.html</code>, que está na 
+            pasta <code>misc</code>.
           </p>
 
           <figure class="diagram">
@@ -735,8 +740,11 @@
           </figure>
 
           <p>
-            To fix this, we need the <code>..</code> syntax. Two consecutive
-            dots in a file path represent a pointer to the parent directory:
+            Para corrigir isso, precisamos usar a sintaxe de dois pontos 
+            consecutivos (<code>..</code>) no caminho de um arquivo que 
+            representa o apontamento para uma pasta mãe, ou seja, uma 
+            pasta acima da posição do arquivo original que está sendo 
+            editado:
           </p>
 
           <pre
@@ -747,9 +755,9 @@
 </code></pre>
 
           <p>
-            This is like saying, “I know <code>extras.html</code> is in the
-            <code>misc</code> folder. Go up a folder and look for
-            <code>links.html</code> and <code>images.html</code> in there.”
+            Isso é como dizer “Eu sei que o <code>extras.html</code> está 
+            na pasta <code>misc</code>. Suba um nível nas pastas e procure 
+            por <code>links.html</code> e <code>images.html</code> lá.”
           </p>
 
           <figure class="diagram">
@@ -770,42 +778,44 @@
           </figure>
 
           <p class="nudge-desktop--smaller">
-            To navigate up through multiple directories, use multiple
-            <code>..</code> references, like so:
+            Para navegador em múltiplos níveis acima, use múltiplas 
+            referências com os <code>..</code>, como a seguir:
           </p>
 
           <pre class="highlight"><code>../../elsewhere.html
 </code></pre>
 
           <p>
-            Relative links are nice because they let you move around entire
-            folders without having to update all the <code>href</code>’s on your
-            <code>&lt;a&gt;</code> elements, but they can get a little confusing
-            when all your links start with a bunch of dots. They’re best for
-            referring to resources in the same folder or in a standalone section
-            of your website.
+            Ligações relativas são bacanas, porque elas permitem que você se 
+            mova entre as diferentes pastas sem que seja necessário atualizar 
+            todos os atributos <code>href</code> nos elementos <code>&lt;a&gt;</code> 
+            das suas páginas, mas eles podem ser um pouco confusos quando 
+            todas as ligações começam com muitos pontos. Elas são boas para 
+            referenciar recursos na mesma pasta ou em uma seção específica 
+            da sua página web.
           </p>
 
           <p>
-            For example, all the images in
-            <a href="../index.html"><em>HTML &amp; CSS Is Hard</em></a> are
-            loaded with relative URLs (we’ll learn how to do images a moment).
-            This allows us to rename any of our chapter slugs without having to
-            update all our image paths.
+            Por exemplo, todas as imagens de <a href="../index.html"><em>HTML 
+              &amp; CSS é Difícil</em></a> são carregadas com ligações relativas 
+              (já vamos aprender a como usar imagens). Isso nos permite renomear 
+              qualquer um dos nossos capítulos sem precisar atualizar todos os 
+              caminhos das imagens.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="root-relative-links">
-              Root-Relative Links
+              Ligações Raiz-Relativa
             </h3>
           </div>
 
           <p>
-            “Root-relative” links are similar to the previous section, but
-            instead of being relative to the current page, they’re relative to
-            the “root” of the entire website. For instance, if your website is
-            hosted on <code>our-site.com</code>, all root-relative URLs will be
-            relative to <code>our-site.com</code>.
+            Ligações “raiz-relativa” são similares as ligações relativas da 
+            seção anterior, mas ao invés de serem relativas a página atual, 
+            elas são relativas a base da página web, ou seja, normalmente 
+            do index.html. Exemplo, se sua página web está hospedada no domínio 
+            <code>our-site.com</code>, todas as URLs raiz-relativas serão relativas 
+            a <code>our-site.com</code>.
 
             <figure class="diagram">
               <div class="diagram__wrapper" style="max-width: 580px">
@@ -826,40 +836,42 @@
           </p>
 
           <p>
-            Unfortunately, there is one caveat to our discussion of
-            root-relative links: this entire tutorial uses local HTML files
-            instead of a website hosted on a web server. This means we won’t be
-            able to experiment with root-relative links. But, if we did have a
-            real server, the link to our home page would look like this:
+            Infelizmente, tem um problema nessa nossa discussão de ligações 
+            raiz-relativa: tudo que iremos fazer nesse momento utiliza 
+            arquivos HTML locais ao invés de páginas web hospedadas em um 
+            servidor web. Isso significa que nós não conseguiremos 
+            experimentar ligações de raiz-relativa. Mas, se nós tivéssemos 
+            um servidor real, a ligação para a nossa página se pareceria 
+            como isso:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- This won't work for our local HTML files --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Isso não irá funcionar para nossos arquivos HTML locais --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Root-relative links, like to the <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'/'</span>&gt;</span>home page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> of our website,
     but those aren't useful to us right now.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 
           <p>
-            The only difference between a root-relative link and a relative one
-            is that the former <em>starts</em> with a forward slash. That
-            initial forward slash represents the root of your site. You can add
-            more folders and files to the path after that initial slash, just
-            like relative links. The following path will work correctly no
-            matter where the current page is located (even in
-            <code>misc/extras.html</code>):
+            A única diferença entre uma ligação raiz-relativa e uma ligação 
+            relativa é que a referência <em>inicia</em> com uma barra. Essa 
+            barra inicial representa a raiz da nossa página web. Você pode 
+            adicionar mais pastas e arquivos ao caminho depois dessa barra 
+            inicial, assim como ligações relativas. O caminho a seguir irá 
+            funcionar corretamente não importa onde a atual página estiver 
+            localizada (mesmo se estivesse em <code>misc/extras.html</code>):
           </p>
 
           <pre class="highlight"><code>/images.html
 </code></pre>
 
           <p>
-            Root-relative links are some of the most useful kinds of links.
-            They’re explicit enough to avoid the potential confusion of relative
-            links, but they’re not overly explicit like absolute links. You’ll
-            see a lot of them throughout your web development career, especially
-            in larger websites where it’s hard to keep track of relative
-            references.
+            Ligações raiz-relativa são os tipos de ligações mais úteis. Elas 
+            são explícitas o suficiente para evitar uma potencial confusão de 
+            ligações relativas, mas não são tão explícitas quando ligações 
+            absolutas. Você verá muitas delas na sua carreira de desenvolvedor 
+            web, especialmente em grandes páginas web onde é difícil manter a 
+            localização de referências relativas.
           </p>
         </div>
       </div>
@@ -868,26 +880,27 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="link-targets">
-              <span>Link Targets</span>
+              <span>Alvos de Ligações</span>
             </h2>
           </div>
 
           <p>
-            Attributes alter the meaning of HTML elements, and sometimes you
-            need to modify more than one aspect of an element. For example,
-            <code>&lt;a&gt;</code> elements also accept a
-            <code>target</code> attribute that defines where to display the page
-            when the user clicks the link. By default, most browsers replace the
-            current page with the new one. We can use the
-            <code>target</code> attribute to ask the browser to open a link in a
-            new window/tab.
+            Atributos alteram o significado de elementos HTML, e algumas vezes 
+            você precisa modificar mais de um aspecto de um elemento. Por 
+            exemplo, elementos <code>&lt;a&gt;</code> também aceitam o 
+            atributo <code>target</code> que define onde a página será 
+            exibida quando um usuário clicar sobre a ligação. Por padrão, 
+            a maioria dos navegadores carregam a página destino na mesma 
+            janela da página atual. Nós podemos utilizar o atributo 
+            <code>target</code> para pedir que o navegador abra a ligação 
+            em uma nova janela/aba.
           </p>
 
           <p>
-            Try changing our absolute link in <code>links.html</code> to match
-            the following. Notice how the second attribute looks just like the
-            first, but they’re separated from each other by a space (or a
-            newline):
+            Tente alterar nossa ligação absoluta no arquivo <code>links.html</code> 
+            para ficar como o seguinte. Preste atenção em como o segundo 
+            atributo se parece como o primeiro, mas eles são separados um 
+            do outro por um espaço (ou uma nova linha):
           </p>
 
           <pre
@@ -899,6 +912,14 @@
 </code></pre>
 
           <p>
+            O atributo <code>target</code> tem alguns valores já pré-definidos 
+            que tem um significado especial para os navegadores, mas o mais 
+            comum é o <code>_blank</code>, que representa uma nova aba ou 
+            janela. Você pode ler mais sobre na <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+            >MDN</a
+          >.
+
             The <code>target</code> attribute has a few pre-defined values that
             carry special meaning for web browsers, but the most common one is
             <code>_blank</code>, which specifies a new tab or window. You can
@@ -915,45 +936,48 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="naming-conventions">
-              <span>Naming Conventions</span>
+              <span>Convenção de Nomes</span>
             </h2>
           </div>
 
           <p>
-            You’ll notice that none of our files or folders have spaces in their
-            names. That’s on purpose. Spaces in URLs require special handling
-            and should be avoided at all costs. To see what we’re talking about,
-            try creating a new file in our <code>links-and-images</code> project
-            called <code>spaces are bad.html</code>. Add a little bit of text to
-            it, then open it in Google Chrome or Safari (Firefox cheats and
-            preserves the spaces).
+            Você deve ter notado que nenhum dos nossos arquivos ou pastas tem 
+            espaços no seus nomes. Isso é de propósito. Espaços em URLs 
+            requerem de um tratamento especial e devem ser evitados a todo 
+            custo. Para ver o que estamos falando, tente criar um novo arquivo 
+            na pasta <code>links-and-images</code> do projeto, chamada 
+            <code>spaces are bad.html</code>. Adicione um pequeno texto a ela, 
+            depois abra-o em seu navegador de preferência (o Firefox 
+            trapaceia e preserva o espaço).
           </p>
 
           <pre class="highlight"><code>links-and-images/spaces%20are%20bad.html
 </code></pre>
 
           <p>
-            In the address bar, you’ll see that all our spaces have been
-            replaced with <code>%20</code>, as shown above. Spaces aren’t
-            allowed in URLs, and that’s the special encoding used to represent
-            them. Instead of a space, you should always use a hyphen, as we’ve
-            been doing throughout this tutorial. It’s also a good idea to use
-            all lowercase characters for consistency.
+            Na barra de endereço, você verá que os espaços foram substituídos 
+            por <code>%20</code>, como mostrado acima. Espaços não são 
+            permitidos em URLs, e essa é a codificação especial utilizada 
+            para representá-los. Ao invés de espaço, você deve sempre utilizar 
+            um hífen, como temos feito em todo esse tutorial. É também uma 
+            boa ideia sempre usar caracteres em  minúsculo, para manter a 
+            consistência.
           </p>
 
           <p>
-            Notice how there’s a direct connection between our file/folder names
-            and the URL for the web page they represent. The names of our
-            folders and files determine the slugs for our web pages. They’re
-            visible to the user, which means you should put in as much effort
-            into naming your files as you put into creating the content they
-            contain.
+            Note como tem uma conexão direta entre os nomes de pastas/arquivos 
+            e a URL para a página que ela representa. Os nomes das nossas pastas 
+            e arquivos determinam o caminho para nossa página web. Eles são 
+            visíveis para o usuário, o que significa que você deve se esforçar 
+            para nomear seus arquivos assim como você se esforça para criar o 
+            conteúdo que o contém.
           </p>
 
           <p>
-            These naming conventions apply to <em>all</em> of the files in your
-            site&mdash;not just HTML files. CSS files, JavaScript files, and
-            images should avoid spaces and have consistent capitalization, too.
+            Essas convenções de nomes são aplicadas a <em>todos</em> os arquivos 
+            na sua página&mdash;não só nos arquivos HTML. Arquivos CSS, de 
+            JavaScript, e imagens devem evitar espaços e devem manter 
+            consistências na sua capitalização, ou seja, uso de maiúsculas.
           </p>
         </div>
       </div>
@@ -961,49 +985,47 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="images"><span>Images</span></h2>
+            <h2 class="subheading__heading" id="images"><span>Imagens</span></h2>
           </div>
 
           <p>
-            Unlike all the HTML elements we’ve encountered so far, image content
-            is defined <em>outside</em> of the web page that renders it.
-            Fortunately for us, we already have a way to refer to external
-            resources from within an HTML document: absolute, relative, and
-            root-relative URLs.
+            Diferentemente de todos os elementos HTML que encontramos até 
+            agora, as imagens são conteúdos definidos <em>fora</em> da página web 
+            que a renderiza. Felizmente para nós, já temos uma forma de 
+            referenciar conteúdos externos ao nosso documento HTML: URLs 
+            absoluta, relativa e raiz-relativa.
           </p>
 
           <p>
-            Images are included in web pages with the
-            <code>&lt;img/&gt;</code> tag and its <code>src</code> attribute,
-            which points to the image file you want to display. Notice how it’s
-            an
-            <a href="../basic-web-pages/index.html#empty-html-elements"
-              >empty element</a
-            >
-            like <code>&lt;br/&gt;</code> and <code>&lt;hr/&gt;</code> from the
-            previous chapter. (Don’t add this to our project just yet. We’ll
-            deal with concrete examples in the next section.)
+            Imagens são incluídas nas páginas web através do elemento 
+            <code>&lt;img/&gt;</code> e seu atributo <code>src</code>, 
+            que apontam para um arquivo de imagem que você deseja apresentar. 
+            Note que ele é um <a href="../basic-web-pages/index.html#empty-html-elements"
+            >elemento vazio</a>, 
+            assim como <code>&lt;br/&gt;</code> e <code>&lt;hr/&gt;</code> 
+            do capítulo anterior (Não adicione isso ao nosso projeto ainda. Vamos 
+            tratar primeiro de exemplos concretos na próxima seção).
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'some-photo.jpg'</span>/&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'alguma-imagem.jpg'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            Retina displays and mobile devices make image handling a little bit
-            more complicated than a plain old <code>&lt;img/&gt;</code> tag.
-            We’ll leave these complexities for the
-            <a href="../responsive-images/index.html">Responsive Images</a>
-            chapter of this tutorial. Also be sure to check out the
-            <code>&lt;figure&gt;</code> and
-            <code>&lt;figcaption&gt;</code> element in the
-            <a href="../semantic-html/index.html">Semantic HTML</a> chapter.
+            Telas do tipo FullHD e de dispositivos móveis fazem o tratamento 
+            de imagens um pouco mais complicado do que a velha e boa 
+            etiqueta <code>&lt;img/&gt;</code>. Nós vamos deixar essas 
+            complexidades para o capítulo de 
+            <a href="../responsive-images/index.html">Imagens Responsivas</a> 
+            desse tutorial. Tenha certeza de verificar os elementos 
+            <code>&lt;figure&gt;</code> e
+            <code>&lt;figcaption&gt;</code> no capítulo de 
+            <a href="../semantic-html/index.html">Semântica HTML</a>.
           </p>
 
           <p>
-            For now, let’s focus on the many image formats floating around the
-            Internet.
+            Nesse momento, vamos focar nos vários formatos de imagens que temos na Internet.
           </p>
         </div>
       </div>
@@ -1012,15 +1034,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="image-formats">
-              <span>Image Formats</span>
+              <span>Formatos de Imagens</span>
             </h2>
           </div>
 
           <p>
-            There’s four main image formats in use on the web, and they were all
-            designed to do different things. Understanding their intended
-            purpose goes a long way towards improving the quality of your web
-            pages.
+            Existem 4 principais formatos de imagens em uso na web, e todos 
+            são desenvolvidos para coisas diferentes. Entender seus 
+            propósitos ajuda a melhorar a qualidade de páginas web.
           </p>
 
           <figure class="diagram">
@@ -1038,22 +1059,23 @@
           </figure>
 
           <p>
-            The next few sections will walk through ideal use cases for each of
-            these image formats. Make sure you’ve unzipped these
-            <a href="images-4149f7.zip">mochi images</a> into your
-            <code>links-and-images</code> project before moving on.
+            Nas próximas seções vamos caminhar através dos casos de usos para 
+            cada tipo de formato de imagens. Garanta que você descompactou 
+            essas <a href="images-4149f7.zip">imagens de mochi</a> na sua 
+            pasta <code>links-and-images</code> do projeto antes de seguir adiante.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="jpg-images">JPG Images</h3>
+            <h3 class="subsubheading__heading" id="jpg-images">Imagens JPG</h3>
           </div>
 
           <p>
-            JPG images are designed for handling large color palettes without
-            exorbitantly increasing file size. This makes them great for photos
-            and images with lots of gradients in them. On the other hand, JPGs
-            don’t allow for transparent pixels, which you can see in the white
-            edges of the image below if you look real close:
+            Imagens JPG foram desenvolvidas para tratar uma grande paleta de 
+            cores sem aumentar muito o tamanho do arquivo. Isto torna esse 
+            tipo de imagem perfeita para fotografias e imagens com uma grande 
+            quantidade de gradientes nelas. Mas em outros casos, JPGs não 
+            permitem pixels transparentes, que você pode ver na borda branca 
+            da imagem abaixo se você prestar bastante atenção:
           </p>
 
           <figure class="diagram">
@@ -1071,36 +1093,37 @@
           </figure>
 
           <p>
-            Embed this <code>mochi.jpg</code> image in our
-            <code>images.html</code> page with the following snippet (this also
-            includes a bit of navigation to our other pages):
+            Insira essa imagem <code>mochi.jpg</code> na nossa página 
+            <code>images.html</code> com o trecho de código abaixo (isso 
+            também irá incluir um pouco de navegação para as nossas 
+            outras páginas):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This page covers common image formats, but you may also be looking for <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-   <span class="hljs-attr">href</span>=<span class="hljs-string">'links.html'</span>&gt;</span>links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>useful
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esta página trata dos formatos comuns de imagens utilizadas na Web, mas você também pode estar procurando por <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+   <span class="hljs-attr">href</span>=<span class="hljs-string">'links.html'</span>&gt;</span>links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> e <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'misc/extras.html'</span>&gt;</span>
    extras<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>JPGs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>JPG images are good for photos.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Imagens JPG são boas para fotos.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="gif-images">GIF Images</h3>
+            <h3 class="subsubheading__heading" id="gif-images">Imagens GIF</h3>
           </div>
 
           <p>
-            GIFs are the go-to option for simple animations, but the trade off
-            is that they’re somewhat limited in terms of color
-            palette&mdash;never use them for photos. Transparent pixels are a
-            binary option for GIFs, meaning you can’t have semi-opaque pixels.
-            This can make it difficult to get high levels of detail on a
-            transparent background. For this reason, it’s usually better to use
-            PNG images if you don’t need animation.
+            GIFs são boas opções para simples animações, mas a troca é que 
+            são limitadas de alguma forma em termos de cores&mdash;nunca use-os 
+            para fotos. Pixels transparentes são opções binárias para GIFs, 
+            isso significa que você não pode ter pixels opacos. Isso torna 
+            difícil obter altos níveis de detalhamento em fundos transparentes. 
+            Por essa razão, é normalmente uma opção melhor usar imagens PNG se 
+            você não precisar de animação.
           </p>
 
           <figure class="diagram">
@@ -1118,30 +1141,29 @@
           </figure>
 
           <p>
-            You can add this little guy to our <code>images.html</code> file
-            with the following:
+            Você pode adicionar esse carinha ao nosso arquivo images.html com o trecho de código abaixo:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>GIFs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>GIFs are good for animations.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>GIFs são bons para animações.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="png-images">PNG Images</h3>
+            <h3 class="subsubheading__heading" id="png-images">Imagens PNG</h3>
           </div>
 
           <p>
-            PNGs are great for anything that’s not a photo or animated. For
-            photos, a PNG file of the same quality (as perceived the human eye)
-            would generally be bigger than an equivalent JPG file. However, they
-            do deal with opacity just fine, and they don’t have color palette
-            limitations. This makes them an excellent fit for icons, technical
-            diagrams, logos, etc.
+            PNGs são ótimas para qualquer coisa que não seja uma foto ou 
+            animação. Para fotografias, um arquivo PNG com a mesma qualidade 
+            (perceptível ao olho humano) geralmente será muito maior que um 
+            arquivo JPG equivalente . No entanto, elas trabalham bem com 
+            opacidade, e não tem limitações de paletas de cor. Isso torna 
+            elas perfeitas para ícones, diagramas técnicos, logotipos, etc.
           </p>
 
           <figure class="diagram">
@@ -1158,29 +1180,29 @@
             </div>
           </figure>
 
-          <p>Let’s add this PNG image to our example project as well:</p>
+          <p>Vamos adicionar essa imagem PNG ao nosso projeto exemplo:</p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>PNGs<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>PNGs are good for diagrams and icons.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>PNGs são bons para diagramas e ícones.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span>/&gt;</span>
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="svg-images">SVG Images</h3>
+            <h3 class="subsubheading__heading" id="svg-images">Imagens SVG</h3>
           </div>
 
           <p>
-            Unlike the pixel-based image formats above, SVG is a vector-based
-            graphics format, meaning it can scale up or down to
-            <em>any</em> dimension without loss of quality. This property makes
-            SVG images a wonderful tool for
-            <a href="../responsive-design/index.html">responsive design</a>.
-            They’re good for pretty much all the same use cases as PNGs, and you
-            should use them whenever you can.
+            Diferente das imagens baseadas em pixel, apresentadas 
+            anteriormente, o SVG é um formato gráfico baseado em vetor, isso 
+            significa que você pode redimensionar para <em>qualquer</em> tamanho 
+            sem perder qualidade. Essa propriedade torna a imagem SVG perfeita 
+            para um <a href="../responsive-design/index.html">design responsivo</a>. 
+            Elas são boas opções para praticamente todos os casos onde são usadas 
+            PNGs, e você deve utilizá-las em qualquer situação que você possa.
           </p>
 
           <figure class="diagram">
@@ -1201,16 +1223,17 @@
           </figure>
 
           <p>
-            These 300×300 pixel images were originally 100×100 pixels, but
-            scaling them up clearly shows the difference between them. Notice
-            the crisp, clean lines on the left SVG image, while the PNG image on
-            the right is now very pixelated.
+            Essas imagens com dimensões de 300x300 pixels, são imagens com 
+            dimensões de 100x100 originalmente, mas ao dimensionar elas se 
+            diferenciam muito entre si. Note as linhas nítidas e limpas da 
+            imagem SVG à esquerda, enquanto a imagem PNG na direita está 
+            agora muito pixelada.
           </p>
 
           <p>
-            Despite being a vector format, SVGs can be used exactly like their
-            raster counterparts. Go ahead and add the <code>mochi.svg</code> to
-            our <code>images.html</code> page:
+            Mesmo sendo um formato de vetor, as imagens SVGs podem ser 
+            utilizadas exatamente como suas concorrentes. Vamos lá, 
+            adicione <code>mochi.svg</code> na nossa página <code>images.html</code>:
           </p>
 
           <pre
@@ -1223,14 +1246,15 @@
 </code></pre>
 
           <p>
-            There is one potential issue with SVGs: for them to display
-            consistently across browsers, you need to convert any text fields to
-            outlines using your image editor (e.g., Abode Illustrator or
-            <a href="https://www.sketchapp.com/">Sketch</a>). If your images
-            contain a lot of text (like the fancy screenshots in this tutorial),
-            this can have a big impact on file size. For this reason,
-            <a href="../../index.html"><em>InternetingIsHard.com</em></a> uses
-            PNGs instead of SVGs, even though SVGs are so awesome.
+            Tem um problema em potencial com o SVG: para que eles sejam 
+            apresentados consistentemente em todos os navegadores, você 
+            precisa converter qualquer campo de texto para contornos 
+            usando um editor de imagem (ex. Adobe Illustrator ou 
+            <a href="https://www.sketchapp.com/">Sketch</a>). Se suas 
+            imagens contém muito texto (como as capturas de telas chiques 
+            deste tutorial), isso pode ter um grande impacto no tamanho 
+            do arquivo. Por essa razão iremos usar PNGs ao invés de 
+            SVGs, mesmo sabendo que SVGs são os melhores!
           </p>
         </div>
       </div>
@@ -1239,15 +1263,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="image-dimensions">
-              <span>Image Dimensions</span>
+              <span>Dimensões de Imagens</span>
             </h2>
           </div>
 
           <p>
-            By default, the <code>&lt;img/&gt;</code> element uses the inherit
-            dimensions of its image file. Our JPG, GIF, and PNG images are
-            actually 150&times;150 pixels, while our SVG mochi is only
-            75&times;75 pixels.
+            Por padrão, o elemento <code>&lt;img/&gt;</code> usa as dimensões 
+            herdadas do arquivo de imagem. Os arquivos JPG, PNG, e GIF usados 
+            nesse tutorial tem atualmente 150&times;150 pixels, enquanto nosso 
+            mochi SVG tem somente 75&times;75 pixels.
           </p>
 
           <figure class="diagram">
@@ -1268,43 +1292,44 @@
           </figure>
 
           <p>
-            As we’ll discuss further in
-            <a href="../responsive-images/index.html">Responsive Images</a>,
-            pixel-based image formats need to be twice as big as you want them
-            to appear on retina displays. To get our pixel-based images down to
-            the intended size (75&times;75), we can use the
-            <code>&lt;img/&gt;</code> element’s <code>width</code> attribute. In
-            <code>images.html</code>, update all of our pixel-based images to
-            match the following:
+            Como veremos adiante em <a href="../responsive-images/index.html">Imagens 
+              Responsivas</a>, formatos de imagens baseados em pixel precisam ser 
+              duas vezes maiores se você quiser que elas apareçam em monitores 
+              do tipo retina. Para deixar nossas imagens baseadas em pixel com o 
+              tamanho pretendido (75&times;75) nós podemos usar o atributo 
+              <code>width</code> do elemento <code>&lt;img/&gt;</code>. No arquivo 
+              <code>images.html</code>, atualize todas as nossas imagens baseadas 
+              em pixel para serem como descrito abaixo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- In JPGs section --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Na seção de JPGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In GIFs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de GIFs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In PNGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de PNGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            The <code>width</code> attribute sets an explicit dimension for the
-            image. There’s a corresponding <code>height</code> attribute, as
-            well. Setting only one of them will cause the image to scale
-            proportionally, while defining both will stretch the image.
-            Dimension values are specified in pixels, and you should never
-            include a unit (e.g., <code>width='75px'</code> would be incorrect).
+            O atributo <code>width</code> define uma dimensão explícita para 
+            a imagem. Existe um atributo <code>height</code> correspondente. 
+            Definindo somente um deles vai fazer com que a imagem seja 
+            dimensionada de forma proporcional, enquanto se definirmos os dois 
+            fará com que a imagem seja esticada. Os valores de dimensões são 
+            especificados em pixel, e você nunca deve incluir a unidade (ex. 
+            <code>width='75px'</code>, não faça isso!).
           </p>
 
           <p>
-            The <code>width</code> and <code>height</code> attributes can be
-            useful, but it’s usually better to set image dimensions with CSS so
-            you can alter them with media queries. We’ll discuss this in more
-            detail once we get to
-            <a href="../responsive-design/index.html">responsive design</a>.
+            O atributo <code>width</code> e <code>height</code> podem ser úteis, 
+            mas é sempre melhor definir a dimensão da imagem através da CSS assim 
+            você pode alterá-las através de requisições de mídia. Nós discutiremos 
+            melhor isso quando chegarmos a <a href="../responsive-design/index.html"
+            >design responsivo</a>.
           </p>
         </div>
       </div>
@@ -1313,43 +1338,44 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="text-alternatives">
-              <span>Text Alternatives</span>
+              <span>Textos Alternativos</span>
             </h2>
           </div>
 
           <p>
-            Adding <code>alt</code> attributes to your
-            <code>&lt;img/&gt;</code> elements is a best practice. It defines a
-            “text alternative” to the image being displayed. This has an impact
-            on both search engines and users with text-only browsers (e.g.,
-            people that use text-to-speech software due to a vision impairment).
+            Adicionar o atributo <code>alt</code> ao elemento 
+            <code>&lt;img/&gt;</code> é uma boa prática. Isso define 
+            um “texto alternativo” à imagem exibida. Isso tem um 
+            impacto em mecanismos de pesquisa e para usuários que 
+            usam navegadores que exibem somente texto (ex. pessoas 
+            que usam softwares leitores de tela devido a deficiência visual).
           </p>
 
           <p>
-            Update all our images to include descriptive
-            <code>alt</code> attributes:
+            Atualize todas as suas imagens para incluir uma descrição através 
+            do atributo <code>alt</code>:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- In JPGs section --&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Na seção de JPGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.jpg'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball in a bubble'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In GIFs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de GIFs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.gif'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A dancing mochi ball'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In PNGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de PNGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.png'</span> <span class="hljs-attr">width</span>=<span class="hljs-string">'75'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball'</span>/&gt;</span>
 
-<span class="hljs-comment">&lt;!-- In SVGs section --&gt;</span>
+<span class="hljs-comment">&lt;!-- Na seção de SVGs --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'images/mochi.svg'</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">'A mochi ball with Bézier handles'</span>/&gt;</span>
 </code></pre>
 
           <p>
-            For more examples of how to use the <code>alt</code> attribute,
-            please refer to the ridiculously detailed
+            Para mais exemplo de como utilizar o atributo <code>alt</code>, 
+            por favor veja a ridiculamente detalhada 
             <a href="https://www.w3.org/TR/html5/embedded-content-0.html#alt"
-              >official specification</a
+              >especificação oficial</a
             >.
           </p>
         </div>
@@ -1359,66 +1385,66 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="more-html-attributes">
-              <span>More HTML Attributes</span>
+              <span>Mais Atributos HTML</span>
             </h2>
           </div>
 
           <p>
-            Now that we’re (hopefully) more than comfortable with the HTML
-            attribute syntax, we can add a couple of finishing touches to our
-            HTML boilerplate code. Every web page you create should define the
-            language it’s written in and its character set.
+            Agora que já estamos mais confortáveis com a sintaxe de 
+            atributos HTML, podemos adicionar alguns toques finais ao 
+            nosso caldeirão de código HTML. Toda página web que você 
+            criar deve definir o idioma qual foi escrito e seu conjunto 
+            de caracteres.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="document-language">
-              Document Language
+              Idioma do Documento
             </h3>
           </div>
 
           <p>
-            A web page’s default language is defined by the
-            <code>lang</code> attribute on the top-level
-            <code>&lt;html&gt;</code> element. Our document is in English, so
-            we’ll use the <code>en</code> country code as the attribute value
-            (do this for <em>all</em> of the pages we created):
+            O idioma padrão de uma página web é definido pelo atributo 
+            <code>lang</code>, no nível mais alto do elemento 
+            <code>&lt;html&gt;</code>. Nosso documento é em Português 
+            do Brasil, então nós usaremos o código de país <code>pt-br</code> 
+            como valor do atributo (sempre faça isso para <em>todas</em> 
+            as páginas que você criar):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'pt-BR'</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you’re not sure what the country code for your language is, you
-            can look it up
-            <a
-              href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
-              >here</a
-            >
-            under the <strong>Subtag</strong> field.
+            Se você não tiver certeza de qual o código de país deve utilizar para 
+            o seu idioma, ou se for fazer uma página para outro idioma, você pode 
+            olhar o campo da Subtag <a
+            href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+            >aqui</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="character-sets">
-              Character Sets
+              Conjunto de Caracteres
             </h3>
           </div>
 
           <p>
-            A “character set” is kind of like a digital alphabet for your
-            browser. It’s different from the language of your document in that
-            it only affects how the letters themselves are rendered, not the
-            language of the content. Let’s copy and paste some international
-            characters into our <code>misc/extras.html</code> web page and see
-            what happens.
+            Um “conjunto de caracteres” é como um alfabeto, só que digital, 
+            para o seu navegador. Isso é diferente do idioma definido no seu 
+            documento, de forma que ele só afeta como as letras são 
+            renderizadas, e exibidas na tela, não o idioma do conteúdo. Vamos 
+            copiar e colar alguns caracteres internacionais para dentro da 
+            nossa página web <code>misc/extras.html</code> e ver o que acontece.
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Character Sets<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Conjunto de Caracteres<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You can use UTF-8 to count in Turkish:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Você pode usar UTF-8 para contar em Turco:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>bir<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -1430,9 +1456,10 @@
 </code></pre>
 
           <p>
-            When you view this in a browser, you’ll see some weird stuff where
-            the <code>ü</code>, <code>ç</code>, <code>ö</code>, and
-            <code>ş</code> characters should be:
+            Quando você atualizar o navegador para visualizar a página, 
+            você verá algumas coisas muito estranhas no lugar dos 
+            caracteres <code>ü</code>, <code>ç</code>, <code>ö</code>, e
+            <code>ş</code>, devem aparecer como:
           </p>
 
           <figure class="diagram">
@@ -1453,11 +1480,11 @@
           </figure>
 
           <p>
-            That’s because the default character set for most browsers doesn’t
-            accommodate these “special” characters. To fix this, specify a UTF-8
-            character encoding by adding a <code>&lt;meta&gt;</code> element
-            with a <code>charset</code> attribute to the
-            <code>&lt;head&gt;</code> of our <code>misc/extras.html</code> file:
+            Isso acontece porque o conjunto de caracteres padrões a serem exibidos 
+            nos navegador não suporta esses caracteres “especiais”. Para corrigir 
+            isso, vamos usar a codificação de caracteres UTF-8, adicionando um 
+            elemento <code>&lt;meta&gt;</code> com o atributo <code>charset</code> ao 
+            <code>&lt;head&gt;</code> do nosso arquivo <code>misc/extras.html</code>:
           </p>
 
           <pre
@@ -1466,10 +1493,10 @@
 </code></pre>
 
           <p>
-            The special characters should now render correctly. These days,
-            UTF-8 is sort of like a universal alphabet for the Internet. Every
-            web page you create should have this line in its
-            <code>&lt;head&gt;</code>.
+            Os caracteres especiais agora devem ser exibidos corretamente. 
+            Atualmente, o UTF-8 é algo que se tornou o alfabeto universal 
+            para a Internet. Toda página que você criar deve conter essa 
+            linha no seu <code>&lt;head&gt;</code>.
           </p>
         </div>
       </div>
@@ -1478,70 +1505,71 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="html-entities">
-              <span>HTML Entities</span>
+              <span>Entidades HTML</span>
             </h2>
           </div>
 
           <p>
-            Ok, so this last section doesn’t actually have anything to do with
-            links or images, but we do need to discuss one more thing before
-            switching gears into CSS. An “HTML entity” is a special character
-            that can’t be represented as plain text in an HTML document. This
-            typically either means it’s a reserved character in HTML or you
-            don’t have a key on your keyboard for it.
+            Certo, essa última seção não tem nada a ver com âncoras ou 
+            imagens, mas nós precisamos discutir uma última coisa antes de 
+            iniciar as engrenagens da CSS. Uma “entidade HTML” é um caracter 
+            especial que não pode ser representado como um texto puro e um 
+            documento HTML. Isso tipicamente significa que é uma palavra 
+            reservada, no nosso caso um caractere reservado, ou que você 
+            não tem uma tecla para esse caracter no seu teclado.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="reserved-characters">
-              Reserved Characters
+              Caracteres Reservados
             </h3>
           </div>
 
           <p>
-            The <code>&lt;</code>, <code>&gt;</code>, and
-            <code>&amp;</code> characters are called “reserved characters”
-            because they aren’t allowed to be inserted into an HTML document
-            without being encoded. This is because they mean something in the
-            HTML syntax: <code>&lt;</code> begins a new tag,
-            <code>&gt;</code> ends a tag, and, as we’re about to learn,
-            <code>&amp;</code> sets off an HTML entity.
+            Os caracteres <code>&lt;</code>, <code>&gt;</code>, e
+            <code>&amp;</code> são chamados de “caracteres reservados” porque 
+            eles não são permitidos dentro de um documento HTML sem que seja 
+            codificado. Isso porque eles significam alguma coisa na sintaxe 
+            HTML: o <code>&lt;</code> inicia uma etiqueta, o <code>&gt;</code> 
+            fecha uma etiqueta, e como vamos aprender, o <code>&amp;</code> 
+            define uma entidade HTML.
           </p>
 
-          <p>In <code>misc/extras.html</code>, add the following:</p>
+          <p>No <code>misc/extras.html</code>, adicione o seguinte:</p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HTML Entities<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are three reserved characters in HTML: &amp;lt; &amp;gt; and &amp;amp;. You
-   should always use HTML entities for these three characters.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Entidades HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Existem três caracaterese reservados na HTML: &amp;lt; &amp;gt; e &amp;amp;. Você
+   deve sempre usar entidades HTML para esses três caracteres.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Entities always begin with an ampersand (<code>&amp;</code>) and end
-            with a semicolon (<code>;</code>). In between, you put a special
-            code that your browser will interpret as a symbol. In this case, it
-            interprets <code>lt</code>, <code>gt</code>, and <code>amp</code> as
-            less-than, greater-than, and ampersand symbols, respectively.
+            Entidades sempre iniciam com um e-comercial (<code>&amp;</code>) e 
+            terminam com um ponto-vírgula (<code>;</code>). Entre eles você 
+            consegue colocar um código especial que seu navegador irá 
+            interpretar como um símbolo. Neste caso, irá representar 
+            <code>lt</code>, <code>gt</code>, e <code>amp</code> como 
+            o sinal de menor, sinal de maior, e e-comercial, respectivamente.
           </p>
 
           <p>
-            There’s a crap-ton of HTML entities. We’ll leave you to explore
+            Tem um monte de entidades HTML. Vou deixar para que você explore a 
             <a href="https://dev.w3.org/html5/html-author/charref"
-              >most of them</a
-            >
-            on your own.
+              >maioria deles</a
+            > por si só.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="quotes">Quotes</h3>
+            <h3 class="subsubheading__heading" id="quotes">Aspas</h3>
           </div>
 
           <p>
-            Curly quotes are by no means necessary, but if you care about
-            <a href="../web-typography/index.html">typography</a> they’ll be
-            some of the most common HTML entities you’ll use. There’s four
-            different kinds of curly quotes (opening and closing single and
-            double quotes):
+            Aspas são sem dúvidas necessárias, mas se você se importa com 
+            <a href="../web-typography/index.html">tipografia</a> elas serão 
+            algumas das entidades mais comuns utilizadas na HTML. Existem 
+            quatro tipos diferentes de aspas (aspas de abertura e 
+            fechamento simples e aspas duplas):
           </p>
 
           <ul>
@@ -1552,34 +1580,35 @@
           </ul>
 
           <p>
-            You can use them in place of <code>'</code> and
-            <code>"</code> straight quotes, like so:
+            Você pode usá-los no lugar de <code>'</code> simples e 
+            <code>"</code> duplas, como mostrado abaixo (neste caso 
+            vou deixar o texto em inglês para mostrar o resultado):
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you&amp;rsquo;re into &amp;ldquo;web typography,&amp;rdquo; you&amp;rsquo;ll also find
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> If you&amp;rsquo;re into &amp;ldquo;web typography,&amp;rdquo; you&amp;rsquo;ll also find
    yourself using curly quotes quite a bit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
           <p>
-            Unlike straight quotes, these curly quote entities should hug the
-            text.
+            Diferente das aspas simples, essas entidades de aspas duplas 
+            devem envolver o texto.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="utf-8-and-html-entities">
-              UTF-8 and HTML Entities
+              Entidades HTML e UTF-8
             </h3>
           </div>
 
           <p>
-            In the olden days of the web, HTML files weren’t allowed to have
-            special characters in them, making entities much more useful. But,
-            since we’re now using a UTF-8 character set, we should be able to
-            insert any character directly into the HTML document. This makes
-            entities primarily useful as reserved characters or for convenience
-            when authoring straight HTML.
+            Nos primórdios da Web, os arquivos HTML não podiam ter caracteres 
+            especiais, tornando as entidades muito mais úteis. Mas, desde que 
+            começamos a usar o conjunto de caracter UTF-8, podemos inserir 
+            qualquer caracter diretamente dentro do documento HTML. Com isso 
+            as entidades se tornam úteis primeiramente como caracteres reservados 
+            ou para conveniência quando está criando HTML direto.
           </p>
         </div>
       </div>
@@ -1588,24 +1617,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            A website is basically just a bunch of HTML, image, and (as we’ll
-            learn about shortly) CSS files linked together. You should start
-            thinking of a website as a beautiful way for users to navigate the
-            folders and files we create as part of the web development process.
-            With that perspective, it should be clear than maintaining a
-            well-organized file system is a critical aspect of creating a
-            website.
+            Uma página web é basicamente um monte de HTML, imagens e (como 
+            aprendemos um pouco) arquivos CSS ligados em conjunto. Você deve 
+            iniciar pensando uma página como uma forma bonita para usuários 
+            navegarem por pastas e arquivos que criamos como parte do nosso 
+            processo de desenvolvimento web. Por essa perspectiva, deve ser 
+            mais claro que manter um sistema de arquivo bem organizado é um 
+            aspecto tão crítico quanto criar uma página web.
           </p>
 
           <p>
-            We also learned about a few important attributes (<code>lang</code>
-            and <code>charset</code>) that give us the basic template you should
-            use as the beginning of every web page you ever create:
+            Também aprendemos sobre alguns atributos importantes (<code>lang</code>
+            e <code>charset</code>) que nos dão o leioute básico que você deve usar 
+            no começo de toda página web que você criar:
           </p>
 
           <pre
@@ -1614,25 +1643,26 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Some Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Alguma Página Web<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Some Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-comment">&lt;!-- Rest of the page content --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Alguma Página Web<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- O resto do conteúdo da página vai aqui --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            However, we’re still missing one really big piece: CSS. In the next
-            chapter, we’ll discover more HTML elements and attributes that will
-            let us attach CSS styles to our entire website. The ability to work
-            with multiple files and link them to each other in intelligent ways
-            will become even more important than it was in this chapter.
+            No entanto, ainda precisamos de uma parte muito importante: CSS. No 
+            próximo capítulo, vamos descobrir mais elementos e atributos HTML 
+            para juntar uma folha de estilo CSS para nossa página inteira. A 
+            habilidade de trabalhar com diversos arquivos e conectá-los de 
+            formas inteligentes será ainda mais importante do que foi mostrado 
+            nesse capítulo.
           </p>
 
           <div class="next-chapter">
-            <a href="../hello-css/index.html">Next Chapter &gt;</a>
+            <a href="../hello-css/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1642,61 +1672,61 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#anchors">Anchors</a>
+                <a class="sidebar__link" href="index.html#anchors">Âncoras</a>
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#links">Links</a>
+                <a class="sidebar__link" href="index.html#links">Ligações</a>
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#absolute-relative-and-root-relative-links"
-                  >Types of Links</a
+                  >Tipos de Ligações</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#link-targets"
-                  >Link Targets</a
+                  >Alvos de Ligações</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#naming-conventions"
-                  >Naming Conventions</a
+                  >Convenção de Nomes</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#images">Images</a>
+                <a class="sidebar__link" href="index.html#images">Imagens</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#image-formats"
-                  >Image Formats</a
+                  >Formatos de Imagens</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#image-dimensions"
-                  >Image Dimensions</a
+                  >Dimensões de Imagens</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#text-alternatives"
-                  >Text Alternatives</a
+                  >Textos Alternativoss</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#more-html-attributes"
-                  >More HTML Attributes</a
+                  >Mais Atributos HTML</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#html-entities"
-                  >HTML Entities</a
+                  >Entidades HTML</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1711,7 +1741,7 @@
               <img
                 class="about__logo"
                 src="../../img/interneting-is-hard-logo-97b225.svg"
-                alt="Wi-fi signal with exclamation mark through it"
+                alt="Ícone do sinal Wi-Fi com um ponto de exclamação no meio"
               />
               <div class="about__rule-after"></div>
             </div>
@@ -1722,7 +1752,7 @@
                   ><img
                     class="about__twitter"
                     src="../../img/twitter-icon-29cd78.png"
-                    alt="Twitter logo"
+                    alt="Logo do Twitter"
                 /></a>
 
                 <a
@@ -1731,32 +1761,32 @@
                   ><img
                     class="about__facebook"
                     src="../../img/facebook-icon-e6def5.png"
-                    alt="Facebook logo"
+                    alt="Logo do Facebook"
                 /></a>
 
                 <a class="js-obfuscated-email__mailto"
                   ><img
                     class="about__email"
                     src="../../img/email-icon-a4c505.png"
-                    alt="Envelope icon"
+                    alt="Ícone de Envelope de carta"
                 /></a>
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutoriais. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir os leitores, então
+                <a href="../../contact/index.html">venha dizer oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1770,14 +1800,14 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
                       class="input-text input-text--small
                               about__mailing-list-email js-about__mailing-list-email"
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="seunome@exemplo.com"
                     />
 
                     <div class="cta-button about__mailing-list-button">
@@ -1786,7 +1816,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1798,11 +1828,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1820,16 +1850,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>

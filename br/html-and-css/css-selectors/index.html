@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title>CSS Selectors Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Seletores CSS | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -174,7 +174,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -187,16 +187,16 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">CSS Selectors</h1>
+            <h1 class="heading__title">Seletores CSS</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 6. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 6. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly web development tutorial for plucking out HTML elements
+              Uma introdução amigável para seleção de elementos HTML
             </div>
           </div>
         </div>
@@ -205,14 +205,13 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            Way back in the
-            <a href="../links-and-images/index.html">Links and Images</a>
-            chapter, we learned how to connect an HTML document to other files
-            in our project. “CSS selectors” are similar, except instead of
-            navigating between whole files, they let us map a single CSS rule to
-            a specific HTML element. This makes it possible to
-            <em>selectively</em> style individual elements while ignoring
-            others.
+            Voltando no capítulo de <a href="../links-and-images/index.html">
+              Links e Imagens</a> nós aprendemos a concatenar um documento HTML 
+            a outros arquivos no nosso projeto. Os “seletores CSS” são bem 
+            parecidos, exceto que ao invés de navegar entre arquivos, eles 
+            mapeiam regras CSS para um elemento HTML específico. Isso torna 
+            possível estilizar <em>seletivamente</em> elementos enquanto 
+            ignoramos outros.
           </p>
 
           <figure class="diagram">
@@ -233,19 +232,19 @@
           </figure>
 
           <p>
-            Unless you want every section of your website to look exactly the
-            same, this is a crucial bit of functionality for us. It’s how we say
-            things like “I want this paragraph to be blue and that other
-            paragraph to be yellow.” Until now, we’ve only been able to turn
-            <em>all</em> our paragraphs blue (or yellow).
+            A menos que você queira que toda seção da sua página se pareça 
+            exatamente igual, isso é uma funcionalidade muito interessante. É 
+            uma forma de dizer, “eu quero que esse parágrafo seja azul, e 
+            aquele outro seja amarelo”. Até agora, <em>todos</em> os nossos 
+            parágrafos tinham somente uma cor (ou era azul ou amarelo).
           </p>
 
           <p>
-            The only CSS selector we’ve seen so far is called the “type
-            selector”, which targets all the matching elements on a page. In
-            this chapter, we’ll explore more granular ways to style a web page
-            with class selectors, descendant selectors, pseudo-classes, and ID
-            selectors.
+            O único seletor CSS que vimos até o momento é chamado de “seletor 
+            de tipo”, que casa com todos os elementos na página. Vamos ver 
+            agora como explorar outras formas de estilizar uma página com 
+            classes de seletores, seletores descendentes, pseudo-classes e 
+            ID seletores.
           </p>
         </div>
       </div>
@@ -253,14 +252,14 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            We’ll only need one HTML file and a CSS stylesheet for our example
-            this chapter. Create a new folder called
-            <code>css-selectors</code> and new web page called
-            <code>selectors.html</code> with the following markup:
+            Vamos precisar somente de um arquivo HTML e uma folha de estilo 
+            CSS para nosso exemplo nesse capítulo. Crie uma nova pasta chamada 
+            <code>css-selectors</code> e uma nova página chamada 
+            <code>selectors.html</code> com o conteúdo abaixo:
           </p>
 
           <pre
@@ -269,41 +268,38 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>CSS Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Seletores CSS<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CSS Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Seletores CSS<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>CSS selectors let you <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>select<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> individual HTML elements in an HTML
-       document. This is <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>super<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> useful.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Seletores CSS deixam você <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>selecionar<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> elementos HTML individuais em um documento 
+       HTML. Isso é <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>muito<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> útil.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes are ridiculously important, since they allow you to select
-       arbitrary boxes in your web pages.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes são ridiculamente importantes, uma vez que eles permitem você selecionar
+       caixas arbitrárias na sua página web.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’ll also be talking about links in this example, so here’s
-       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Interneting Is Hard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> for us to
-       style.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Também iremos falar sobre âncoras nesse exemplo, então aqui está 
+       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Fazer Front é Difícil<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> para 
+       estilizar.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
           <p>
-            Go ahead and create that <code>styles.css</code> stylesheet in the
-            same folder, too. This gives us everything we need to explore CSS
-            selectors.
+            Vá em frente e crie também uma folha de estilos <code>styles.css</code> 
+            na mesma pasta. Isso vai permitir que nós exploremos os seletores CSS.
           </p>
 
           <p>
-            If you’re just diving into this tutorial series, be sure to have a
-            quick read through the
-            <a href="../introduction/index.html#atom-text-editor"
-              >Introduction</a
-            >
-            to get set up with the Atom text editor.
+            Se você estiver começando nessa série de tutoriais, dê uma lida rápida 
+            na <a href="../introduction/index.html#atom-text-editor"
+            >Introdução</a
+          > para ver como usar o editor de texto Atom.
           </p>
         </div>
       </div>
@@ -312,26 +308,23 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="class-selectors">
-              <span>Class Selectors</span>
+              <span>Seletores de Classe</span>
             </h2>
           </div>
 
-          <p>
-            “Class selectors” let you apply CSS styles to a specific HTML
-            element. They let you differentiate between HTML elements of the
-            same type, like when we had two <code>&lt;div&gt;</code> elements in
-            the
-            <a href="../css-box-model/index.html#generic-boxes"
-              >previous chapter</a
-            >, but only wanted to style one of them. Class selectors require two
-            things:
+          <p>Os “seletores de classe” permitem que você aplique estilos CSS em 
+          um elemento HTML específico. Elas permitem que você diferencie 
+          entre elementos HTML do mesmo tipo, como quando temos dois 
+          elementos <code>&lt;div&gt;</code> no 
+          <a href="../css-box-model/index.html#generic-boxes"
+          >capítulo anterior</a>, mas só queremos estilizar um deles. Para isso 
+          as classes de seletores precisam de duas coisa:
           </p>
 
           <ul>
-            <li>
-              A <code>class</code> attribute on the HTML element in question.
-            </li>
-            <li>A matching CSS class selector in your stylesheet.</li>
+            <li>Um atributo <code>classe</code> no elemento HTML que queremos 
+              modificar.</li>
+            <li>Uma classe seletora na folha de estilo CSS.</li>
           </ul>
 
           <figure class="diagram">
@@ -352,38 +345,37 @@
           </figure>
 
           <p>
-            We can use a class selector to style the first paragraph of our
-            example page differently than the rest of them. This could be, for
-            instance, the synopsis of a newspaper article. First, let’s add a
-            <code>class</code> attribute to the desired paragraph:
+            Podemos usar um seletor de classe para estilizar o primeiro 
+            parágrafo da nossa página de exemplo diferentemente do resto dela. 
+            Isso pode ser, por exemplo, a sinopse de um artigo de um jornal. 
+            Primeiro, vamos adicionar um atributo classe ao parágrafo desejado:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'synopsis'</span>&gt;</span>CSS selectors let you <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>select<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> individual HTML
-   elements in an HTML document. This is <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>super<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> useful.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'synopsis'</span>&gt;</span>Seletores CSS permitem que você <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>selecione<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> elementos individuais em um documento HTML
+          Isto é <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>muito<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> útil.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
 
-          <p>
-            Now, we can pluck out that
-            <code>&lt;p class='synopsis'&gt;</code> element in our CSS with the
-            following (add this to <code>styles.css</code>):
+          <p>Agora nós podemos colocar esse 
+            <code>&lt;p class='synopsis'&gt;</code> no nosso CSS com o seguinte 
+            (adicione isso ao <code>styles.css</code>):
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.synopsis</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#7E8184</span>;        <span class="hljs-comment">/* Light gray */</span>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#7E8184</span>;        <span class="hljs-comment">/* Cinza claro */</span>
   <span class="hljs-attribute">font-style</span>: italic;
 }
 </code></pre>
 
           <p>
-            This rule is <em>only</em> applied to elements with the
-            corresponding <code>class</code> attribute. Notice the dot
-            (<code>.</code>) prefixing the class name. This distinguishes class
-            selectors from the type selectors that we’ve been working with
-            before this chapter.
+            Esta regra <em>só</em> será aplicada ao elemento com a 
+            <code>class</code> do atributo correspondente. E note no ponto 
+            (<code>.</code>) prefixando o nome da classe. Isso vai distinguir 
+            o seletor de classe dos outros seletores que trabalhamos 
+            anteriormente.
           </p>
 
           <figure class="diagram">
@@ -405,27 +397,28 @@
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="class-naming-conventions">
-              Class Naming Conventions
+              Convenção na nomenclatura de Classe
             </h3>
           </div>
 
           <p>
-            The value of the HTML <code>class</code> attribute can be (almost)
-            anything you want as long as it matches the selector in your CSS.
-            The standard naming convention for classes is to use all lowercase
-            and hyphens for spaces, just like file and folder names.
+            A <code>classe</code> de atributos pode ser utilizada para (qualquer) 
+            coisa, desde que ela case com um seletor na CSS. Como convenção, 
+            use sempre minúsculas e hífens para espaços, como usados nos nomes 
+            de arquivos e pastas.
           </p>
 
           <p>
-            Adding a <code>class</code> attribute doesn’t alter the semantic
-            meaning of your HTML document at all&mdash;it’s purely for hooking
-            into your CSS stylesheet. However, it’s still usually a good idea to
-            avoid naming classes based on their appearance. If we chose to name
-            our class <code>.italic</code>, we wouldn’t be able to do much
-            besides make it italic in our CSS without leading to a confusing
-            situation. Using something semantic like
-            <code>.synopsis</code> gives us more freedom for our CSS to
-            customize how that synopsis is displayed.
+            Adicionar um atributo de <code>classe</code> não altera o 
+            significado da semântica do seu documento HTML no 
+            final&mdash;é somente para ligar com sua folha de estilo CSS.
+            No entanto, continua sendo uma boa ideia evitar nomear as classes 
+            baseado na sua aparência. Se escolhermos nomear nossa classe como 
+            <code>.italic</code>, não poderíamos fazer muito além de tornar-la 
+            em itálico na nossa CSS sem confundir com o itálico da HTML. 
+            Utilizar algo mais semântico como <code>.synopsis</code> que nos 
+            dá mais liberdade para nossa CSS customizar como aquela sinopse é 
+            apresentada.
           </p>
         </div>
       </div>
@@ -434,18 +427,18 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="more-useful-divs">
-              <span>More Useful Divs</span>
+              <span>Divs mais úteis</span>
             </h2>
           </div>
 
           <p>
-            The <code>class</code> attribute isn’t limited to
-            <code>&lt;p&gt;</code> elements&mdash;it can be defined on
-            <em>any</em> HTML element. So, armed with CSS class selectors, our
-            generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> boxes
-            from the previous chapter become much, much more useful. We can use
-            them to style both individual elements as well as arbitrary sections
-            of our web page.
+            A <code>classe</code> de atributos não é limitada ao elemento 
+            <code>&lt;p&gt;</code>&mdash;ela pode ser definida em 
+            <em>qualquer</em> elemento HTML. Assim, agora armado com nosso 
+            seletores de classe CSS, nossa <code>&lt;div&gt;</code> genérica 
+            e caixa <code>&lt;span&gt;</code> do capítulo anterior pode se 
+            tornar muito mais útil. Nós podemos estilizar ambos os elementos 
+            individualmente assim como seções arbitrárias da nossa página web.
           </p>
 
           <figure class="diagram">
@@ -466,21 +459,21 @@
           </figure>
 
           <p>
-            Let’s start with individual elements by recreating our button from
-            the previous chapter. This time, we’ll use a class instead of a
-            <code>div</code> selector. Add the following to
-            <code>styles.css</code>:
+            Vamos começar com um único elemento, recriando nosso botão do 
+            capítulo anterior. Dessa vez vamos utilizar uma classe ao invés 
+            do seletor <code>div</code>. Primeiro adicione o seguinte código 
+            ao arquivo <code>styles.css</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.button</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;    <span class="hljs-comment">/* Blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;    <span class="hljs-comment">/* Azul */</span>
   <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
   <span class="hljs-attribute">text-align</span>: center;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#5D6063</span>;    <span class="hljs-comment">/* Dark gray */</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-number">#5D6063</span>;    <span class="hljs-comment">/* Cinza escuro */</span>
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
 
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
@@ -489,20 +482,20 @@
 </code></pre>
 
           <p>
-            Of course, we need a corresponding <code>class</code> attribute for
-            this to work. Change the <code>&lt;div&gt;</code> in
-            <code>selectors.html</code> to match the following:
+            E claro, nós precisamos criar uma <code>classe</code> de atributo 
+            correspondente. Mude o <code>&lt;div&gt;</code> na nossa página 
+            <code>selectors.html</code> para ficar como:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            Unlike the previous chapter that styled <em>all</em> the
-            <code>&lt;div&gt;</code> elements, this lets us use it for other
-            things besides buttons.
+            Diferente do capítulo anterior que estilizou <em>todas</em> as 
+            <code>&lt;div&gt;</code>, isso permite que nós utilizemos para 
+            outras coisas além de botões.
           </p>
         </div>
       </div>
@@ -511,17 +504,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="container-divs">
-              <span>Container Divs</span>
+              <span>Conteineres Divs</span>
             </h2>
           </div>
 
           <p>
-            Remember that <code>&lt;div&gt;</code> doesn’t alter the semantic
-            structure of a page. This makes it a great tool for defining the
-            <em>presentational</em> structure of a web page. By wrapping other
-            HTML elements in <code>&lt;div&gt;</code> tags, we can organize our
-            site into larger layout-oriented chunks without messing up how
-            search engines view our content.
+            Lembrem-se que a <code>&lt;div&gt;</code> não muda a semântica da 
+            estrutura da página. Isso a torna uma ferramenta poderosa para 
+            definir uma estrutura de <em>apresentação</em> da página. Ao 
+            envolver os da HTML em elementos <code>&lt;div&gt;</code> podemos 
+            organizar nosso site em layout orientados sem cagar em como 
+            mecanismos de pesquisa veem o conteúdo.
           </p>
 
           <figure class="diagram">
@@ -542,37 +535,34 @@
           </figure>
 
           <p>
-            For example, let’s try to create a fixed-width layout using the
-            <a href="../css-box-model/index.html#aligning-boxes"
-              >auto-margin technique</a
-            >
-            that we learned in the previous chapter. First, wrap our entire
-            document in a generic <code>&lt;div&gt;</code> and give it a unique
-            class:
+            Por exemplo, vamos criar um <em>layout</em> com largura fixa, 
+            utilizando a <a href="../css-box-model/index.html#aligning-boxes"
+            >técnica de margem automática</a> que aprendemos no capítulo 
+            passado. Primeiro, encapsule todo o documento em uma 
+            <code>&lt;div&gt;</code> genérica e lhe dê uma única classe:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>  <span class="hljs-comment">&lt;!-- Add this --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CSS Selectors<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'page'</span>&gt;</span>  <span class="hljs-comment">&lt;!-- Adicione isto --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Seletores CSS<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>  <span class="hljs-attr">class</span>=<span class="hljs-string">'synopsis'</span>&gt;</span>CSS selectors let you <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>select<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> individual HTML
-    elements in an HTML document. This is <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>super<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> useful.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>  <span class="hljs-attr">class</span>=<span class="hljs-string">'synopsis'</span>&gt;</span>Seletores CSS selectors permitem que você <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>selecione<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> um elemento individual em um documento HTML. Isto é <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>muito<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> útil.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes are ridiculously important, since they allow you to select
-    arbitrary boxes in your web pages.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Classes são extremamente importantes, uma 
+    vez que elas permitem selecionar caixas arbitrárias na sua página web.
+    .<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’ll also be talking about links in this example, so here’s
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Interneting Is Hard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> for us to
-    style.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Também falaremos sobre os links neste exemplo, então aqui temos um 
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'https://internetingishard.com'</span>&gt;</span>Interneting Is Hard<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> para estilizar.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>  <span class="hljs-comment">&lt;!-- And this --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>  <span class="hljs-comment">&lt;!-- E isto --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
 
-          <p>Then, add the following to <code>styles.css</code>:</p>
+          <p>Depois adicione o seguinte ao <code>styles.css</code>:</p>
 
           <pre
             class="highlight"
@@ -583,11 +573,12 @@
 </code></pre>
 
           <p>
-            No matter how you resize the browser window, our web page will
-            always be 600 pixels wide and centered in the available space. Note
-            that this was the exact same way we centered our button, but now
-            we’re doing it to multiple elements at the same time by nesting them
-            in a generic container.
+            Não interessa o quanto você vai aumentar ou diminuir a janela do 
+            navegador, nossa página sempre vai ter 600 pixels de comprimento 
+            e centralizada no espaço disponível. A gente fez o mesmo quando 
+            centralizamos nosso botão, mas agora estamos fazendo isso com 
+            múltiplos elementos ao mesmo tempo, ao agrupá-los em um contêiner 
+            genérico.
           </p>
 
           <figure class="diagram">
@@ -608,13 +599,14 @@
           </figure>
 
           <p>
-            This is how layouts are defined in more complex web pages. For
-            instance, if our page had a sidebar, we would nest all the sidebar
-            elements in <em>another</em> <code>&lt;div&gt;</code> with a
-            <code>.sidebar</code> class. We’ll see this in action in the
-            <a href="../floats/index.html">next chapter</a>. For now, the key
-            takeaway is that without class selectors to differentiate our
-            <code>&lt;div&gt;</code> elements, none of this would be possible.
+            É assim que layouts são definidos em páginas mais complexas. Por 
+            agora, se nossa página tivesse uma barra lateral, nós poderíamos 
+            aninhar todo o elemento da barra lateral em <em>outra</em> 
+            <code>&lt;div&gt;</code> com uma classe <code>.sidebar</code>. 
+            Vamos ver isso no <a href="../floats/index.html">próximo 
+              capítulo</a>. No momento, a chave é que sem uma classe de 
+            seletores para diferenciar nossos elementos 
+            <code>&lt;div&gt;</code> nada disso seria possível.
           </p>
         </div>
       </div>
@@ -623,30 +615,31 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="reusing-class-styles">
-              <span>Reusing Class Styles</span>
+              <span>Reutilizando Classes</span>
             </h2>
           </div>
 
           <p>
-            The same class can be applied to multiple elements in a single HTML
-            document. This means that we can now reuse arbitrary CSS
-            declarations wherever we want. To create another button, all we have
-            to do is add another HTML element with the same class:
+            A mesma classe pode ser aplicada a diferentes elementos em um único 
+            documento HTML. Isso quer dizer que agora podemos reutilizar 
+            declarações arbitrárias da CSS onde quisermos. Para criar um outro 
+            botão, tudo que temos que fazer é adicionar outro elemento HTML com 
+            a mesma classe:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            This gives us a second button that looks just like the first
-            one&mdash;without writing a single line of CSS! Organizing similar
-            graphical elements into reusable CSS rules like this makes life much
-            easier as a web developer. If we ever wanted to, say, change the
-            button color, we would only have to do it in one place and all our
-            buttons would automatically update.
+            Isso vai apresentar outro botão exatamente como o primeiro&mdash;
+            sem escrever uma única linha de CSS! Organizar elementos gráficos 
+            similares dentro de regras CSS reutilizáveis como essa torna nossa 
+            vida muito mais fácil como desenvolvedor web. Se nós quisermos, 
+            vamos dizer, mudar a cor do botão, só precisamos fazer isso em um 
+            lugar e todos os botões vão ser atualizados automaticamente.
           </p>
 
           <figure class="diagram">
@@ -672,16 +665,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="modifying-class-styles">
-              <span>Modifying Class Styles</span>
+              <span>Modificando Estilos de Classes</span>
             </h2>
           </div>
 
           <p>
-            What if we want to alter our second button a little bit?
-            Fortunately, we can apply multiple classes to the <em>same</em> HTML
-            element, too. The styles from each class will be applied to the
-            element, giving us the opportunity to both reuse styles from
-            <code>.button</code> and override some of them with a new class.
+            E se quiséssemos alterar um pouco nosso segundo botão? Felizmente, 
+            podemos aplicar múltiplas classes ao <em>mesmo</em> elemento HTML. 
+            A estilização de cada classe será aplicado ao elemento, nos dando a 
+            oportunidade de reutilizar ambos os estilos de <code>.button</code> 
+            e sobrescrever alguns deles com uma nova classe.
           </p>
 
           <figure class="diagram">
@@ -702,84 +695,87 @@
           </figure>
 
           <p>
-            Go ahead and add another class to our second button with the
-            following markup. Notice how multiple classes live in the same
-            <code>class</code> attribute, separated by spaces:
+            Vamos lá, vamos adicionar outra classe para o nosso segundo botão 
+            com a seguinte marcação. Note como múltiplas classes convivem na 
+            mesma <code>classe</code> de atributo separa por espaços:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            This element now has two separate classes, and we can use either of
-            them to style it. This opens up some options. Styles shared by both
-            buttons can live in the <code>.button</code> class (as they already
-            do), and styles specific to the second button reside in the
-            <code>.call-to-action</code> class (be sure to add this
-            <em>after</em> the <code>.button</code> rule):
+            Esse elemento agora tem duas classes separadas, e agora podemos 
+            utilizar qualquer um dos estilos no botão. Isso nos dá algumas 
+            possibilidades. Estilos compartilhados por ambos os botões podem 
+            ser declarados na classe <code>.button</code> (como já são), e 
+            estilos específicos ao segundo botão residirão na classe 
+            <code>.call-to-action</code> (tenha certeza de adicionar isso 
+            <em>depois</em> da regra <code>.button</code>!):
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.call-to-action</span> {
   <span class="hljs-attribute">font-style</span>: italic;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;    <span class="hljs-comment">/* Yellow */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;    <span class="hljs-comment">/* Amarelo */</span>
 }
 </code></pre>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="order-matters">
-              Order Matters
+              A Ordem Importa
             </h3>
           </div>
 
           <p>
-            There’s a couple of important things going on with our second button
-            now:
+            Tem algumas coisas importantes acontecendo com nosso segundo botão 
+            agora:
           </p>
 
           <ul>
             <li>
-              It’s adding a <em>new</em> <code>font-style</code> declaration to
-              the original <code>.button</code> rule.
+              Estamos adicionando uma <em>nova</em> declaração de 
+              <code>font-style</code> a regra <code>.button</code> original.
             </li>
             <li>
-              It’s <em>overriding</em> an existing
-              <code>background-color</code> style from <code>.button</code>.
+              Estamos <em>sobrescrevendo</em> um estilo de 
+              <code>background-color</code> existente em <code>.button</code>.
             </li>
           </ul>
 
           <p>
-            Overriding occurs because of the order of
-            <code>.call-to-action</code> and <code>.button</code> in our
-            stylesheet. When there’s two conflicting properties in a CSS file,
-            the last one is always the one that gets applied. So, if you moved
-            <code>.call-to-action</code> to the top of <code>styles.css</code>,
-            <code>.button</code> would have the final word on the value of
-            <code>background-color</code>, and it would remain blue.
+            A substituição ocorre por causa da ordem entre 
+            <code>.call-to-action</code> e <code>.button</code> na nossa folha 
+            de estilo. Quando há duas propriedades conflitantes em um arquivo 
+            CSS, a última é sempre a que é aplicada. Então, se você mover 
+            <code>.call-to-action</code> para o topo do arquivo 
+            <code>styles.css</code> a regra <code>.button</code> será aplicada 
+            e vai predominar sua propriedade de <code>background-color</code>, 
+            mantendo o botão azul.
           </p>
 
           <p>
-            This means that the order of the <code>class</code> attribute in our
-            HTML element has no effect on override behavior. Multiple classes on
-            a single element are applied “equally” (for lack of a better term),
-            so the precedence is determined solely by the order of the rules in
-            <code>styles.css</code>. In other words, the following elements are
-            effectively equivalent:
+            Isso significa que a ordem da <code>classe</code> de atributo no 
+            nosso elemento HTML não tem efeito de alterar o comportamento. 
+            Múltiplas classes em um único elemento são aplicadas de forma 
+            “igualitária” (na falta de um termo melhor), então a precedência é 
+            determinada somente pela ordem da regra no <code>styles.css</code>. 
+            Em outras palavras, as seguintes declarações dos elementos são 
+            equivalentes:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- These result in the same rendered page --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'call-to-action button'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Essa renderização é na mesma página --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'call-to-action button'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            This does, however, get more complicated when CSS specificity is
-            involved, which we’ll discuss at the end of this chapter.
+            Isso fica mais complicado, no entanto, quando temos prioridades na 
+            CSS, vamos ver isso um pouco mais pra frente ainda hoje.
           </p>
         </div>
       </div>
@@ -788,23 +784,23 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="descendant-selectors">
-              <span>Descendant Selectors</span>
+              <span>Seletores Descendentes</span>
             </h2>
           </div>
 
           <p>
-            You may have noticed that the <code>&lt;em&gt;</code> in our first
-            paragraph is no longer distinguishable from its surround text, since
-            our <code>.synopsis</code> rule made everything italic.
+            Você deve ter notado que o <code>&lt;em&gt;</code> no nosso primeiro 
+            parágrafo não é mais distinguível no texto, uma vez que a regra de 
+            <code>.synopsis</code> tornou tudo um grande itálico.
           </p>
 
           <p>
-            To alter that <code>&lt;em&gt;</code> element, we could add another
-            class directly to it, but that won’t result in very maintainable
-            code. We want to treat <code>.synopsis</code> as its own independent
-            component that we can style entirely from CSS (i.e., without
-            requiring alterations to our HTML just for the sake of styling
-            something.)
+            Para alterar aquele elemento <code>&lt;em&gt;</code>, nós podemos 
+            adicionar outra classe diretamente nele, mas isso não vai gerar um 
+            código muito fácil de manter. Queremos tratar a classe 
+            <code>.synopsis</code> como é, com sua independência de componente 
+            que não podemos estilizar inteiramente na CSS (e.x sem realizar 
+            alterações na nossa HTML somente para estilizar alguma coisa).
           </p>
 
           <figure class="diagram">
@@ -825,10 +821,11 @@
           </figure>
 
           <p>
-            This is what “descendant selectors” are for. They let you target
-            only those elements that are <em>inside</em> of another element. For
-            example, we can pull out that <code>&lt;em&gt;</code> in the
-            <code>.synopsis</code> paragraph with the following:
+            É que são os “seletores descendentes". Eles deixam que você 
+            segmente somente aqueles elementos que estão <em>dentro</em> de 
+            outro elemento. Por exemplo, nós podemos tirar aquele 
+            <code>&lt;em&gt;</code> no parágrafo <code>.synopsis</code> com o 
+            seguinte código:
           </p>
 
           <pre
@@ -839,11 +836,11 @@
 </code></pre>
 
           <p>
-            Adding this rule to <code>styles.css</code> will make the
-            <code>&lt;em&gt;</code> display as upright (roman) characters, thus
-            differentiating it from the italics we put on the entire
-            <code>&lt;p&gt;</code> text. The rest of the
-            <code>&lt;em&gt;</code> elements on the page will be unaffected.
+            Ao adicionar essa regra no <code>styles.css</code> fará com que o 
+            <code>&lt;em&gt;</code> se apresente como um caracter (romano), no 
+            entanto diferenciando ele do itálico que nós colocamos no texto 
+            <code>&lt;p&gt;</code> inteiro. O resto do elemento 
+            <code>&lt;em&gt;</code> na página será sem efeito.
           </p>
 
           <figure class="diagram">
@@ -864,74 +861,73 @@
           </figure>
 
           <p>
-            Descendant selectors aren’t limited to class selectors&mdash;you can
-            combine any other group of selectors this way. For instance, if we
-            wanted to select only <code>&lt;em&gt;</code> elements inside of
-            headings, we might use something like this:
+            Seletores descendentes não são limitados aos seletores de 
+            classe&mdash;você pode combinar qualquer outro grupo de seletores 
+            dessa forma. Por enquanto, se nós quisermos selecionar somente os 
+            elementos <code>&lt;em&gt;</code> dentro do cabeçalho (hs), nós 
+            devemos utilizar algo como:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">em</span> {
-  <span class="hljs-comment">/* Some other styles */</span>
+  <span class="hljs-comment">/* Algum outro estilo */</span>
 }
 </code></pre>
 
           <p>
-            Again, the goal of this chapter is to let you apply styles to
-            exactly the element you want. Descendant selectors are a great tool
-            towards this end. You may also want to check out the related “child
-            selector”
+            De novo, o objetivo desse capítulo é deixá-lo aplicar estilos 
+            exatamente ao elemento que quiser. Seletores descendentes são 
+            ótimas ferramentas para esse fim. Se você quiser verificar os 
+            seletores herdados (ou <em>child selectors</em>)  
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors"
-              >over at MDN</a
-            >
-            if you’ve still got room in your toolbox.
+              >dê uma olhada na MDN</a
+            > se você ainda tiver espaço na sua caixa de ferramentas.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="dont-overdo-it">
-              Don’t Overdo It
+              Não Exagere
             </h3>
           </div>
 
           <p>
-            You can nest descendant selectors as deep as you want, but don’t get
-            carried away. Life gets confusing and terrible when you start
-            writing rules that look like this:
+            Você pode aninhar seletores descendentes com quantos níveis você 
+            quiser, mas não exagere. O trabalho vai ficar confuso e terrível 
+            quando você começar a escrever regras que se parecem como essa:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">/* Try to avoid this */</span>
+          ><code><span class="hljs-comment">/* Tente evitar fazer isso */</span>
 <span class="hljs-selector-class">.article</span> <span class="hljs-selector-tag">h2</span> <span class="hljs-selector-class">.subheading</span> <span class="hljs-selector-tag">em</span> {
-  <span class="hljs-comment">/* Special styles */</span>
+  <span class="hljs-comment">/* Estilos especiais */</span>
 }
 </code></pre>
 
           <p>
-            This isn’t the least bit reusable because it matches
-            <em>only</em> the following HTML structure:
+            Isso é menos utilizado por que casa <em>somente</em> com a seguinte 
+            estrutura HTML:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'article'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'.subheading'</span>&gt;</span>This is <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>really<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> special text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'.subheading'</span>&gt;</span>Esse é <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>realmente<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> um texto especial<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you ever wanted to apply these styles to an
-            <code>&lt;h2&gt;</code> heading that’s not wrapped in
-            <code>&lt;div class='article'&gt;</code>
-            tags, you’re kind of screwed. Same deal if you want to apply them to
-            an
-            <code>&lt;h3&gt;</code> heading anywhere on the page. This kind of
-            CSS also leads to a
-            <a href="index.html#css-specificity">specificity</a> nightmare.
+            Se você quiser aplicar este estilo para um cabeçalho 
+            <code>&lt;h2&gt;</code> que não está encapsulado no 
+            <code>&lt;div class='article'&gt;</code>, você vai estragar isso. 
+            Mesmo tratamento se você quiser aplicá-la para um 
+            <code>&lt;h3&gt;</code> em qualquer lugar da página. Esse tipo de 
+            CSS também se torna em um pesadelo de 
+            <a href="index.html#css-specificity">prioridades</a>.
           </p>
         </div>
       </div>
@@ -940,23 +936,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="pseudo-classes-for-links">
-              <span>Pseudo-Classes for Links</span>
+              <span>Pseudo-Classes para Links</span>
             </h2>
           </div>
 
           <p>
-            So far, all the CSS selectors we’ve seen map directly to a piece of
-            HTML markup that we wrote. However, there’s more going on in a
-            rendered web page than just our HTML content. There’s “stateful”
-            information about what the user is doing (opposed to the content
-            we’ve authored).
+            Até agora, todos os seletores CSS que vimos mapeamos diretamente 
+            em um pedaço de marcação HTML que escrevemos. No entanto, tem 
+            muito mais coisa acontecendo em uma página web renderizada do que 
+            nosso conteúdo HTML. Tem um “estado” da informação sobre o que nossos usuários estão fazendo (o oposto ao conteúdo que nós 
+            escrevemos).
           </p>
 
           <p>
-            The classic example is a link. As a web developer, you create an
-            <code>&lt;a href&gt;</code> element. After the browser renders it,
-            the user can interact with that link. They can hover over it, click
-            it, and visit the URL.
+            O clássico exemplo é uma ligação (link). Como um desenvolvedor 
+            web, você criou um elemento <code>&lt;a href&gt;</code> em algum 
+            momento. Depois que o navegador renderizar isso, o usuário pode 
+            interagir com aquela ligação. Ele pode passar o mouse sobre ele, 
+            clicá-lo e visitar o endereço URL.
           </p>
 
           <figure class="diagram">
@@ -974,49 +971,51 @@
           </figure>
 
           <p>
-            CSS “pseudo-classes” provide a mechanism for hooking into this kind
-            of temporary user information. At any given time, an
-            <code>&lt;a href&gt;</code> element can be in a number of different
-            states, and you can use pseudo-classes to style each one of them
-            individually. Think of them as class selectors that you don’t have
-            to write on your own because they’re built into the browser.
+            As pseudo-classes da CSS provém um mecanismo para agregar esse 
+            tipo de informação temporária do usuário. A qualquer momento, um 
+            elemento <code>&lt;a href&gt;</code> pode estar em um número 
+            diferente de estado, e você pode usar pseudo-classes para estilizar 
+            cada um deles individualmente. Pense neles como seletores de 
+            classes que você não tem que escrever porque elas são construídas 
+            no navegador.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="basic-link-styles">
-              Basic Link Styles
+              Estilo Básico de Links
             </h3>
           </div>
 
           <p>
-            Pseudo-classes begin with a colon followed by the name of the
-            desired class. The most common link pseudo-classes are as follows:
+            Pseudo-classes começam com dois pontos ( : ) seguidos do nome 
+            desejado da classe. O mais comum para pseudo-classes de ligações 
+            são:
           </p>
 
           <ul>
             <li>
-              <code>:link</code> &ndash; A link the user has never visited.
+              <code>:link</code> &ndash; para links que nunca foram visitados.
             </li>
             <li>
-              <code>:visited</code> &ndash; A link the user has visited before.
+              <code>:visited</code> &ndash; para links que o usuário visitou 
+              anteriormente.
             </li>
             <li>
-              <code>:hover</code> &ndash; A link with the user’s mouse over it.
+              <code>:hover</code> &ndash; um link que o usuário passa o mouse 
+              por cima.
             </li>
             <li>
-              <code>:active</code> &ndash; A link that’s being pressed down by a
-              mouse (or finger).
+              <code>:active</code> &ndash; um link que foi clicado pelo mouse 
+              (ou dedo).
             </li>
           </ul>
 
           <p>
-            Let’s take a look at all of these by adding the following rules to
-            our CSS stylesheet (also note our use of
+            Vamos dar uma olhada em todos esses casos adicionando as regras CSS abaixo para nossa folha de estilo (note também o uso de 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
-              >keyword colors</a
-            >
-            instead of our usual hex codes):
+              >nome de cores</a
+            > ao invés do usual código hexas):
           </p>
 
           <pre
@@ -1038,26 +1037,27 @@
 </code></pre>
 
           <p>
-            If you’ve never been to the
-            <a href="../../index.html">InternetingIsHard.com</a> home page, you
-            should see a blue link. Otherwise, you’ll see a purple link. When
-            you hover over the link, it will turn aqua, and when you push down
-            on it, it’ll turn red.
+            Se você nunca visitou o endereço 
+            <a href="../../index.html">InternetingIsHard.com</a>, deve estar 
+            vendo um link em azul. Se não, você verá um link em púrpura. 
+            Quando passar o mouse por cima do link, vai ver  um tom de azul 
+            água e quando clicar nele, verá vermelho.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="visited-hover-state">
-              Visited Hover State
+              Estado de Link Pré-clique
             </h3>
           </div>
 
           <p>
-            The above snippet is just fine for most websites, but take a closer
-            look at the <code>a:visited</code> behavior by changing the
-            <code>href</code> attribute to a URL that you’ve been to before. Our
-            <code>a:hover</code> style is applied to both visited and unvisited
-            links. We can refine our links even more by stringing pseudo-classes
-            together. Add this below the previous snippet:
+            O código anterior é perfeito para a maioria dos sites. mas vamos 
+            dar uma olhada com atenção no comportamento do 
+            <code>a:visited</code> mudando o atributo <code>href</code> para 
+            um URL que você já visitou antes. A regra do estilo 
+            <code>a:hover</code> será aplicado para ambos, links visitados e 
+            não visitados. Nós podemos refinar nossos links ainda mais, ao 
+            juntar as pseudo-classes. Adicione isso ao código anterior:
           </p>
 
           <pre
@@ -1068,25 +1068,28 @@
 </code></pre>
 
           <p>
-            This creates a dedicated hover style for visited links. Hovering
-            over an unvisited link changes it to aqua, while hovering over a
-            visited link will turn it orange. Fantastic! Except for the fact
-            that this breaks our <code>a:active</code> style due to some
-            complicated CSS internals that you’ll never want to read about. When
-            you click down, our link won’t turn red anymore.
+            Isso vai criar um estilo diferenciado para links visitados e quando 
+            passarmos o mouse por cima. A interação de passar o mouse sobre um 
+            link não visitado muda a cor para azul claro, enquanto ao passar o 
+            mouse por um link visitado irá mudar para laranja. Fantástico! 
+            Exceto pelo fato de que isso vai quebrar nossa regra 
+            <code>a:active</code> de estilização para algumas coisas internas 
+            da CSS que são complicadas e que você vai desejar nunca ter lido. 
+            Ao clicar, nosso link não vai ficar mais vermelho.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="visited-active-state">
-              Visited Active State
+              Estado de Link Visitado
             </h3>
           </div>
 
           <p>
-            We can fix that with <code>a:visited:active</code>. Add the
-            following to the end of our stylesheet. Note that, as with our
-            <code>.call-to-action</code> class, the order in which these are
-            defined in <code>styles.css</code> matters:
+            Podemos corrigir isso com um <code>a:visited:active</code>. 
+            Adicionando o seguinte código ao fim da nossa folha de estilo. 
+            Note que, assim como nossa classe <code>.call-to-action</code>, a 
+            ordem como isso é definida no nosso arquivo <code>styles.css</code> 
+            importa:
           </p>
 
           <pre
@@ -1097,10 +1100,8 @@
 </code></pre>
 
           <p>
-            These last two sections let you style visited links entirely
-            separately from unvisited ones. It’s a nice option to have, but
-            again, you’re welcome to stop at basic link styles if that’s all you
-            need.
+            Estas duas últimas seções vão permitir que você modifique o 
+            comportamento dos links visitados e dos não visitados. Se você não quiser modificar o estilo de links, o básico que nós já vimos é o suficiente.
           </p>
         </div>
       </div>
@@ -1109,16 +1110,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="pseudo-classes-for-buttons">
-              <span>Pseudo-Classes for Buttons</span>
+              <span>Pseudo-Classes para Botões</span>
             </h2>
           </div>
 
           <p>
-            Pseudo-classes aren’t just for styling text links&mdash;they can be
-            applied to any kind of selector (not just type selectors). Instead
-            of styling <code>a:link</code> and friends, we’ll be modifying our
-            <code>.button</code> class with pseudo-classes in this section. This
-            will let us create buttons that actually go somewhere.
+            Pseudo-classes não são somente para estilização de textos, e 
+            links&mdash;também podem ser aplicados a qualquer seletor (não 
+            somente aos seletores de tipos). Ao invés de estilizar um 
+            <code>a:link</code> e seus amigos, vamos modificar nossa classe 
+            <code>.button</code> com pseudo-classes. Isso vai permitir que criemos botões que vão para qualquer lugar.
           </p>
 
           <div class="subsubheading content__subsubheading">
@@ -1126,31 +1127,29 @@
               class="subsubheading__heading"
               id="link-elements-not-div-elements"
             >
-              Link Elements, Not Div Elements
+              Elementos Link, Não Elementos Div
             </h3>
           </div>
 
           <p>
-            First, we need change our buttons to be
-            <code>&lt;a href&gt;</code> elements instead of generic
-            <code>&lt;div&gt;</code> elements, as shown below:
+            Primeiro, precisamos modificar nosso botão para ser um elemento 
+            <code>&lt;a href&gt;</code> ao invés de ser um elemento 
+            <code>&lt;div&gt;</code> genérico, como mostramos abaixo:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Button One<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Botão Um<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button call-to-action'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you reload this in your browser, you’ll see that we lost some of
-            our styles even though we’re using the same classes. This is because
-            <code>&lt;a&gt;</code> is an
-            <a
-              href="../css-box-model/index.html#block-elements-and-inline-elements"
-              >inline element</a
-            >
-            by default and also has a default <code>color</code> value.
+            Ao atualizar a página, você verá que perdemos o estilo do nosso 
+            botão, mesmo utilizando a mesma classe. Isso ocorre porque o 
+            <code>&lt;a&gt;</code> é um <a
+            href="../css-box-model/index.html#block-elements-and-inline-elements"
+            >elemento de linha</a
+          >, e tem  um valor de <code>color</code> padrão.
           </p>
 
           <figure class="diagram">
@@ -1171,32 +1170,29 @@
           </figure>
 
           <p>
-            We need to change it to a block element and remove some of the
-            default link styling.
+            Precisamos mudar para um elemento do tipo <code>block</code> e 
+            remover algumas das estilizações de link padrão.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="button-styles">
-              Button Styles
+              Estilos de Botões
             </h3>
           </div>
 
           <p>
-            Let’s start with <code>:link</code> and
-            <code>:visited</code> variants. We’re using a similar pattern as in
-            the previous section, but since these are buttons, we want to keep
-            both the unvisited and visited color the same. Change the existing
-            <code>.button</code> rules to match the following:
+            Vamos começar com as variações de <code>:link</code> e 
+            <code>:visited</code>. Estamos utilizando um padrão similar ao que usamos na seção anterior, mas como esses são botões, queremos manter a cor de visitado e não visitado. Mudando a regra existente de <code>.button</code> para casar com o seguinte:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:link</span>,                 <span class="hljs-comment">/* Change this */</span>
-<span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:visited</span> {             <span class="hljs-comment">/* Change this */</span>
-  <span class="hljs-attribute">display</span>: block;             <span class="hljs-comment">/* Add this */</span>
-  <span class="hljs-attribute">text-decoration</span>: none;      <span class="hljs-comment">/* Add this */</span>
+          ><code><span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:link</span>,                 <span class="hljs-comment">/* Mude isto */</span>
+<span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:visited</span> {             <span class="hljs-comment">/* Mude isto */</span>
+  <span class="hljs-attribute">display</span>: block;             <span class="hljs-comment">/* Adicione isto */</span>
+  <span class="hljs-attribute">text-decoration</span>: none;      <span class="hljs-comment">/* Adicione isto */</span>
 
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;                <span class="hljs-comment">/* The rest is the same */</span>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;                <span class="hljs-comment">/* O resto continua o mesmo */</span>
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
@@ -1210,13 +1206,12 @@
 </code></pre>
 
           <p>
-            Notice the new <code>:link</code> and
-            <code>:visited</code> pseudo-classes in the selector. Without it,
-            our <code>color</code> would not override the browser’s default
-            <code>a:link</code> style.
-            <a href="index.html#css-specificity">CSS specificity</a> explains
-            why this is the case in greater detail. Next, let’s do the hover
-            states:
+            veja que criamos uma nova pseudo-classe para o seletor 
+            <code>:link</code> e <code>:visited</code>. Sem isso, nossa cor 
+            não pode sobrescrever o padrão de estilo <code>a:link</code>. A 
+            <a href="index.html#css-specificity">prioridades na CSS</a> 
+            explica o por quê disso em detalhes. Próximo, vamos tratar os 
+            estados ao passar o mouse sobre o link (pré-clique):
           </p>
 
           <pre
@@ -1224,14 +1219,15 @@
           ><code><span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:hover</span>,
 <span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:visited</span><span class="hljs-selector-pseudo">:hover</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#76AEED</span>;  <span class="hljs-comment">/* Light blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#76AEED</span>;  <span class="hljs-comment">/* Azul claro */</span>
 }
 </code></pre>
 
           <p>
-            Both our buttons will be a lighter blue on hover. Finally, let’s
-            make it a little darker when the user presses the mouse down with
-            the <code>:active</code> pseudo-class:
+            Ambos os botões vão ficar com azul claro no estado de passar o 
+            mouse sobre o link. Finalmente vamos fazer isso ficar um pouco mais 
+            escuro quando o usuário pressionar com o mouse, usando a 
+            pseudo-classe <code>:active</code>:
           </p>
 
           <pre
@@ -1239,36 +1235,36 @@
           ><code><span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:active</span>,
 <span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:visited</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#FFF</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;  <span class="hljs-comment">/* Blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;  <span class="hljs-comment">/* Azul */</span>
 }
 </code></pre>
 
           <p>
-            The great part about this is that all the styles we just defined are
-            entirely reusable. Stick a <code>.button</code> class on
-            <em>any</em> HTML element, and you’ll turn it into an interactive
-            button.
+            A melhor parte disso é que toda essa estilização definida até agora 
+            é reutilizável. Defina uma classe <code>.button</code> 
+            em <em>qualquer</em> elemento HTML e você tornará ela um botão 
+            interativo.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="the-other-button">
-              The Other Button
+              O Outro Botão
             </h3>
           </div>
 
           <p>
-            Now, what about that second button? It’s supposed to have a yellow
-            background, but we broke it with the code from the previous section.
-            Our <code>.button:link</code> selector was more “specific” than our
-            current <code>.call-to-action</code> rule, so it took precedence.
-            Again, we’ll explore this further at the end of the chapter.
+            E agora, o que fazemos com nosso outro botão? É esperado que tenha 
+            um fundo amarelo, mas nós quebramos nosso código na seção anterior. 
+            Nosso seletor <code>.button:link</code> foi mais específico que 
+            nossa regra atual <code>.call-to-action</code>, então ele teve 
+            precedência. De novo, vamos explorar isso até o final do nosso 
+            capítulo.
           </p>
 
           <p>
-            For now, let’s fix it by applying some pseudo-classes to our
-            <code>.call-to-action</code> rule. Replace the existing rule with
-            the following (make sure this appears <em>after</em> the new
-            <code>.button</code> styles from the previous section):
+            Por enquanto, vamos corrigir nossa regra 
+            <code>.call-to-action</code> aplicando uma pseudo-classe nela. 
+            Substitua a regra existente pela seguinte (tenha certeza que isso vai aparecer <em>DEPOIS</em> do novo estilo <code>.button</code>):
           </p>
 
           <pre
@@ -1276,26 +1272,27 @@
           ><code><span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:link</span>,
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:visited</span> {
   <span class="hljs-attribute">font-style</span>: italic;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;     <span class="hljs-comment">/* Yellow */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;     <span class="hljs-comment">/* Amarelo */</span>
 }
 
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:hover</span>,
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:visited</span><span class="hljs-selector-pseudo">:hover</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;     <span class="hljs-comment">/* Light yellow */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5CF8E</span>;     <span class="hljs-comment">/* Amarelo claro */</span>
 }
 
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:active</span>,
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:visited</span><span class="hljs-selector-pseudo">:active</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;     <span class="hljs-comment">/* Yellow */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EEB75A</span>;     <span class="hljs-comment">/* Amarelo */</span>
 }
 </code></pre>
 
           <p>
-            Since we only added the <code>.call-to-action</code> class to our
-            second button, that’s the only one that’ll turn yellow. Of course,
-            we still need the <code>.button</code> class on both
-            <code>&lt;a&gt;</code> elements because it defines shared styles
-            like the padding, border radius, and font weight.
+            Uma vez que nós só adicionamos uma classe 
+            <code>.call-to-action</code> ao nosso segundo botão, esse será o 
+            único que se tornará amarelo. Claro, ainda precisamos da classe 
+            <code>.button</code> em ambos os elementos <code>&lt;a&gt;</code>
+            por que isso define o compartilhamento de estilo como o preenchimento (padding), curvatura (radius) da borda e o tamanho 
+            da fonte.
           </p>
         </div>
       </div>
@@ -1304,26 +1301,27 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="pseudo-classes-for-structure">
-              <span>Pseudo-Classes For Structure</span>
+              <span>Pseudo-Classes para Estruturas</span>
             </h2>
           </div>
 
           <p>
-            Link states are just one aspect of pseudo-classes. There’s also a
+            Os estados dos links são somente um dos aspectos de pseudo-classes 
+            (ou onde podemos utilizar). Temos 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
-              >bunch of other pseudo-classes</a
-            >
-            that provide extra information about an element’s surroundings. For
-            example, the <code>:last-of-type</code> pseudo-class selects the
-            final element of a particular type in its parent element. This gives
-            us an alternative to class selectors for selecting specific
-            elements.
+              >muitas outras pseudo-classes</a
+            > que disponibilizam informações extras sobre um elemento. Por 
+            exemplo, a pseudo-classe <code>:last-of-type</code> seleciona o 
+            último elemento de um tipo particular dos elementos pais. Isso nos 
+            dá uma alternativa para seletores de classe para selecionar um 
+            elemento específico.
           </p>
 
           <p>
-            For instance, we could use <code>:last-of-type</code> to add some
-            space after the last paragraph of our example page:
+            No momento, podemos utilizar o <code>:last-of-type</code> para 
+            adicionar um espaço extra depois do último parágrafo, na nossa 
+            página de exemplo:
           </p>
 
           <pre
@@ -1334,9 +1332,9 @@
 </code></pre>
 
           <p>
-            This avoids selecting the first two <code>&lt;p&gt;</code> elements
-            <em>without</em> requiring a new <code>class</code> attribute on the
-            last paragraph:
+            Isso vai evitar selecionar os dois primeiros elementos 
+            <code>&lt;p&gt;</code> sem necessitar de uma nova 
+            <code>class</code> de atributo para o último parágrafo:
           </p>
 
           <figure class="diagram">
@@ -1357,10 +1355,9 @@
           </figure>
 
           <p>
-            We could even use a <code>:first-of-type</code> pseudo-class in
-            place of our <code>.synopsis</code> class. Replacing the existing
-            <code>.synopsis</code> rule with the following snippet should result
-            in the exact same page.
+            Podemos utilizar uma pseudo-classe <code>:first-of-type</code> no 
+            lugar da nossas classe <code>.synopsis</code>. Substituindo a regra 
+            <code>.synopsis</code> existente com o seguinte trecho, vamos ter a mesma página.
           </p>
 
           <pre
@@ -1372,36 +1369,30 @@
 </code></pre>
 
           <p>
-            There’s pros and cons to using this method over plain old classes.
-            For instance, this <em>only</em> works if our synopsis is a
-            <code>&lt;p&gt;</code> element. If we ever wanted to create a
-            multi-paragraph synopsis by wrapping a bunch of
-            <code>&lt;p&gt;</code> elements in a
-            <code>&lt;div class='synopsis'&gt;</code>, we’d have to rewrite our
-            CSS accordingly. On the other hand, the pseudo-class method lets us
-            style specific elements without having to alter the HTML at all.
-            This gives us a very clean separation of content from presentation.
+            Existem prós e contras ao utilizar esse método ao invés de classes. Isso <em>só</em> funciona se nossas <code>.synopsis</code> for um 
+            elemento <code>&lt;p&gt;</code>. Se quiséssemos criar uma sinopse 
+            com multi-parágrafos encapsulando um monte de elementos 
+            <code>&lt;p&gt;</code> em uma 
+            <code>&lt;div class='synopsis'&gt;</code>, teríamos que reescrever toda nossa CSS. Por outro lado, o método das pseudo-classes nos permite estilizar elementos especificos sem ter que alterar toda a HTML. Isso nos dá uma visão clara de conteúdo e apresentação.
           </p>
 
           <div class="subsubheading content__subsubheading">
-            <h3 class="subsubheading__heading" id="caveats">Caveats</h3>
+            <h3 class="subsubheading__heading" id="caveats">Considerações</h3>
           </div>
 
           <p>
-            Ok, so actually the pseudo-class method is a little more
-            complicated. They’re still a useful tool&mdash;as long as you know
-            their ins-and-outs. The <code>:first-of-type</code> and
-            <code>:last-of-type</code> selectors only operate inside their
-            parent element. That is to say, <code>p:first-of-type</code> selects
-            the first <code>&lt;p&gt;</code> in <em>every</em> container
-            element.
+            Certo, o método de pseudo-classe é um pouco mais complicado. Mas 
+            elas ainda são úteis&mdash;uma vez que você saiba os prós e contras. Os seletores <code>:first-of-type</code> e 
+            <code>:last-of-type</code> funcionam dentro do seu elemento pai. 
+            Dito isso, <code>p:first-of-type</code> seleciona o primeiro 
+            <code>&lt;p&gt;</code> em todo contêiner de elemento.
           </p>
 
           <p>
-            We have a single generic <code>&lt;div&gt;</code> wrapping our
-            content (<code>.page</code>), so this isn’t a problem for us.
-            However, consider what happens when we add this to the bottom of our
-            <code>.page</code> element:
+            Temos uma <code>&lt;div&gt;</code> genérica que encapsula nosso 
+            conteúdo (<code>.page</code>) então isso não será um problema pra 
+            gente. No entanto, considere o que acontece quando adicionamos ao 
+            final do nosso elemento <code>.page</code>:
           </p>
 
           <pre
@@ -1413,23 +1404,22 @@
 </code></pre>
 
           <p>
-            We won’t be able to make a real sidebar until the
-            <a href="../floats/index.html">next chapter</a>, but this does
-            highlight the complications of pseudo-classes for structure. The
-            first <code>&lt;p&gt;</code> element here will also match
-            <code>p:first-of-type</code> because the pseudo-class’s scope is
-            limited to the parent element.
+            Ainda não vamos fazer um menu lateral até o 
+            <a href="../floats/index.html">próxima capítulo</a>, mas isso 
+            mostra alguns problemas que podemos ter ao usar pseudo-classes para 
+            estruturas. O primeiro elemento <code>&lt;p&gt;</code> também irá 
+            casar com o <code>p:first-of-type</code> porque o escopo da 
+            pseudo-classe é limitada ao elemento pai.
           </p>
 
           <p>
-            If you wanted to avoid the sidebar paragraphs and select only the
-            first <code>&lt;p&gt;</code> in our
-            <code>&lt;div class='page'&gt;</code>, you would need to limit its
-            scope using a
+            Se você quiser evitar o parágrafo do menu lateral e selecionar 
+            somente o primeiro <code>&lt;p&gt;</code> na nossa 
+            <code>&lt;div class='page'&gt;</code> você precisa limitar o escopo usando 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors"
-              >child selector</a
-            >, like so:
+              >seletores filho</a
+            >, como esse:
           </p>
 
           <pre
@@ -1441,12 +1431,12 @@
 </code></pre>
 
           <p>
-            All of this is yet another example of how there are many ways to do
-            the same thing in the wonderful world of HTML and CSS. Different
-            developers adhere to different schools of thought. Some like the
-            semantic nature of pseudo-classes, while others go to the far
-            extreme with explicit <code>class</code> attributes on
-            <em>every</em> HTML element.
+            Tudo isso são só exemplos de como existem muitas formas de fazer 
+            alguma coisa no mundo <em>maravilindo</em> da HTML e CSS. 
+            Diferentes desenvolvedores seguem diferentes escolas de 
+            pensamentos. Alguns como da natureza semântica das pseudo-classes, 
+            enquanto outros vão ao extremo com <code>classes</code> explícitas 
+            de atributos <em>em cada</em> elemento HTML.
           </p>
         </div>
       </div>
@@ -1455,49 +1445,48 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="id-selectors">
-              <span>ID Selectors</span>
+              <span>Seletores de ID</span>
             </h2>
           </div>
 
           <p>
-            “ID selectors” are a more stringent alternative to class selectors.
-            They work pretty much the same way, except you can only have
-            <em>one</em> element with the same ID per page, which means you
-            can’t reuse styles at all. Instead of a
-            <code>class</code> attribute, they require an
-            <code>id</code> attribute on whatever HTML element you’re trying to
-            select. Try adding one to our second button:
+            “Seletores de ID” são uma alternativa mais rigorosa para classes 
+            de seletores. Eles trabalham mais ou menos da mesma forma, exceto 
+            que você só pode ter <em>um</em> elemento com o mesmo ID por página, 
+            o que significa que você não pode reutilizar os estilos. Ao invés 
+            de <code>classes</code> de atributos, ele precisam de um 
+            <code>id</code> de atributo em qualquer elemento HTML que você 
+            queira selecionar. Tente adicionar isso ao segundo segundo botão:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'button-2'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          ><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'button-2'</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'button'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'nowhere.html'</span>&gt;</span>Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 
           <p>
-            The corresponding CSS selector must begin with a hash sign
-            (<code>#</code>) opposed to a dot. Adding the following to
-            <code>styles.css</code> will change the text color of our yellow
-            button:
+            O seletor CSS correspondente deve começar com um sinal de cerquilha 
+            (<code>#</code>), o oposto do ponto (<code>.</code>). Adicionando o 
+            seguinte trecho ao <code>styles.css</code> irá mudar a cor do texto do 
+            nosso botão amarelo:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-id">#button-2</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#5D6063</span>;  <span class="hljs-comment">/* Dark gray */</span>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#5D6063</span>;  <span class="hljs-comment">/* Cinza escuro */</span>
 }
 </code></pre>
 
           <p>
-            The problem is, if we wanted to share this style with another
-            button, we’d have to give it another unique
-            <code>id</code> attribute. Pretty soon, our CSS would start to look
-            pretty gnarly:
+            O problema é, se nós quisermos compartilhar esse estilo com outro 
+            botão, precisamos definir outro <code>id</code> único ao atributo. 
+            E logo nossa CSS vai parecer como essa bestialidade:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">/* (This is painful to maintain) */</span>
+          ><code><span class="hljs-comment">/* (Isto é muito complicado de se manter) */</span>
 <span class="hljs-selector-id">#button-2</span>,
 <span class="hljs-selector-id">#button-3</span>,
 <span class="hljs-selector-id">#checkout-button</span>,
@@ -1507,24 +1496,24 @@
 </code></pre>
 
           <p>
-            For this reason, ID selectors are generally frowned upon. Use class
-            selectors instead.
+            Por esse motivo, Seletores de ID são geralmente desencorajados. Use 
+            Seletores por Classe!
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="url-fragments">
-              URL Fragments
+              Fragmentos de URL
             </h3>
           </div>
 
           <p>
-            <code>id</code> attributes need to be unique because they serve as
-            the target for “URL fragments”, which we sort of glossed over in our
-            <a
-              href="../links-and-images/index.html#absolute-relative-and-root-relative-links"
-              >discussion of URLs</a
-            >. Fragments are how you point the user to a specific part of a web
-            page. They look like an ID selector stuck on the end of a URL.
+            Os <code>id</code> de atributos precisam ser únicos porque eles 
+            servem como alvos para “fragmentos de URL”, que nós cobrimos na 
+            nossa <a 
+            href="../links-and-images/index.html#absolute-relative-and-root-relative-links"
+            >discussão sobre URLs</a>. São através dos fragmentos que você 
+            aponta o usuário para uma parte específica da nossa página web. 
+            Eles parecem como um seletor de id, preso no fim de uma URL.
           </p>
 
           <figure class="diagram">
@@ -1545,26 +1534,27 @@
           </figure>
 
           <p>
-            For example, if we wanted to point the user to our second button, we
-            could use the following. Note that we can omit the URL entirely if
-            we’re linking to a different section on the same page:
+            Por exemplo, se quisermos apontar o usuário para nosso segundo 
+            botão, podemos utilizar a seguinte chamada. Note que podemos omitir 
+            inteiramente a URL se estivermos fazendo uma ligação para uma seção 
+            diferente na mesma página:
           </p>
 
           <pre
             class="highlight"
-          ><code><span class="hljs-comment">&lt;!-- From the same page --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#button-2'</span>&gt;</span>Go to Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          ><code><span class="hljs-comment">&lt;!-- Da mesma página --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'#button-2'</span>&gt;</span>Vá para o Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
-<span class="hljs-comment">&lt;!-- From a different page --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'selectors.html#button-2'</span>&gt;</span>Go to Button Two<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- De uma página diferente --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'selectors.html#button-2'</span>&gt;</span>Vá para o Botão Dois<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 
           <p>
-            If you add the first option to our <code>selectors.html</code> page
-            and click it, you’ll see the URL in the browser change. To actually
-            see it jump down to the second button, you’ll need to add some more
-            dummy content to the page or make the window height very short, as
-            the browser will limit scrolling to the visible page.
+            Se adicionarmos a primeira opção para nossa página 
+            <code>selectors.html</code> e clicarmos nele, você verá a URL no 
+            navegador mudar. Para pular para o segundo botão você precisará 
+            adicionar mais algum conteúdo na página para ver o comportamento, ou 
+            não veremos nada.
           </p>
 
           <figure class="diagram">
@@ -1585,12 +1575,12 @@
           </figure>
 
           <p>
-            This overlapping functionality is more reason to avoid ID selectors.
-            They create a dependency between your website’s URLs and your CSS
-            styles. Imagine using a bunch of <code>id</code> attributes on your
-            headings as both URL fragments and ID selectors. If you forgot to
-            update your stylesheet every time you edited the URL of a section,
-            you would actually break your website.
+            Essa é mais uma razão para evitar usar seletores de ID. Eles criam 
+            uma dependência entre sua URL e sua folha de estilo CSS. Imagine 
+            usar um monte de <code>id</code> de atributos no seu cabeçalho 
+            assim como fragmentos de URL e id de seletores. Se você esquecer de 
+            atualizar sua folha de estilo toda vez que editar sua seção de 
+            URL, você vai eventualmente quebrar sua página.
           </p>
         </div>
       </div>
@@ -1599,16 +1589,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="css-specificity">
-              <span>CSS Specificity</span>
+              <span>Prioridades na CSS</span>
             </h2>
           </div>
 
           <p>
-            Earlier in this chapter, we talked about how
-            <a href="index.html#modifying-class-styles">order matters</a> when
-            it comes to CSS rules in an external stylesheet. All else being
-            equal, rules are applied from top-to-bottom. This allowed us to
-            override rules in a predictable manner.
+            Mais cedo falamos sobre a 
+            <a href="index.html#modifying-class-styles">importância da ordem</a> 
+            quando se trata de regras de CSS em uma folha de estilo externa. 
+            Todo o resto continua igual, regras são aplicadas de cima a baixo. 
+            Isso permite que sobrescrevamos regras de uma maneira previsível.
           </p>
 
           <figure class="diagram">
@@ -1629,50 +1619,51 @@
           </figure>
 
           <p>
-            Unfortunately, not all CSS selectors are created equal. “CSS
-            specificity” is the weight given to different categories of
-            selectors. This means that certain selectors will
-            <em>always</em> override other ones, regardless of where they appear
-            in the stylesheet.
+            Infelizmente nem todos os seletores CSS são criados iguais 
+            “Prioridades na CSS” são pesos dados para diferentes categorias 
+            de seletores. Isso significa que certos seletores <em>sempre</em> 
+            irão sobrescrever outros, independentemente de onde eles apareçam 
+            na folha de estilo.
           </p>
 
           <p>
-            Let’s start by seeing where this <em>doesn’t</em> break. If you add
-            the following after our existing <code>.call-to-action</code> rules,
-            it will override the previous <code>background-color</code>. If you
-            stick it at the top of the file, it’ll get overridden later on, so
-            our button won’t turn red. This is expected behavior.
+            Vamos começar vendo onde isso <em>não quebra</em>. Se você adicionar 
+            o código abaixo depois da nossa regra <code>.call-to-action</code>, 
+            ele irá sobrescrever a regra <code>background-color</code> anterior. 
+            Se você colocar no topo do arquivo, ele será sobrescrito depois, 
+            então nosso botão não vai ficar vermelho. Este é o comportamento 
+            esperado.
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:link</span>,
 <span class="hljs-selector-class">.call-to-action</span><span class="hljs-selector-pseudo">:visited</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D55C5F</span>;    <span class="hljs-comment">/* Red */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D55C5F</span>;    <span class="hljs-comment">/* Vermelho */</span>
 }
 </code></pre>
 
           <p>
-            Now, watch what happens when we try to do the same thing with an ID
-            selector. First, be sure to delete the previous snippet, then try
-            adding this <em>before</em> our existing
-            <code>.call-to-action</code> rules:
+            Agora, veja o que acontece quando nós tentamos fazer a mesma coisa 
+            com um seletor de ID. Primeiro, vamos ter certeza de apagar o trecho 
+            de código anterior, então tente adicionar isso <em>antes</em> da nossa 
+            regra <code>.call-to-action</code> existente:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-id">#button-2</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D55C5F</span>;    <span class="hljs-comment">/* Red */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D55C5F</span>;    <span class="hljs-comment">/* Vermelho */</span>
 }
 </code></pre>
 
           <p>
-            ID selectors have higher specificity than class selectors, so this
-            <em>will</em> turn our second button red even though we try to set
-            the <code>background-color</code> with
-            <code>.call-to-action:link</code> later in our stylesheet. The whole
-            “order matters” concept only works when all your rules have the same
-            specificity.
+            Seletores de ID tem uma prioridade maior que seletores por 
+            classe, então isso <em>vai</em> transformar nosso segundo botão vermelho 
+            mesmo se nós tentarmos definir o <code>background-color</code> com 
+            o <code>.call-to-action:link</code> depois na nossa folha de estilo. 
+            O conceito de toda “ordem importa” só funciona quando todas as 
+            nossas regras tem a mesma prioridade.
           </p>
 
           <figure class="diagram">
@@ -1693,8 +1684,8 @@
           </figure>
 
           <p>
-            The specificity of selectors we’ve seen in this chapter are show
-            below, from greatest to least:
+            A prioridade dos seletores que nós vimos agora é mostrada abaixo 
+            do maior para o menor:
           </p>
 
           <ul>
@@ -1710,18 +1701,19 @@
           </ul>
 
           <p>
-            This can get very confusing. It’s such a big problem that an entire
-            methodology called “<a href="http://getbem.com/introduction/">BEM</a
-            >” has evolved. BEM attempts to make CSS rules more reusable by
-            making <em>everything</em> a class selector. This completely
-            eliminates the potential for specificity issues.
+            Isso pode ser bem confuso. É como um grande problema tratado em uma 
+            metodologia chamada “<a href="http://getbem.com/introduction/">BEM</a
+              >”. A BEM tenta fazer que as regras da CSS sejam mais 
+            reutilizáveis fazendo com que <em>tudo</em> seja uma classe de 
+            seletores. Isso elimina completamente o potencial de problemas 
+            específicos.
           </p>
 
           <p>
-            BEM is outside the scope of this tutorial. The takeaway here is that
-            CSS rules are not necessarily applied in sequential order, but you
-            should try to make the browser do so by writing CSS that uses the
-            same specificity.
+            Não vamos tratar a metodologia BEM, só mostrei para demonstrar que 
+            as regras da CSS não são necessariamente aplicadas em sequência, mas 
+            você deve tentar fazer o navegador seguí-la escrevendo regras CSS 
+            que utilizem a mesma prioridade.
           </p>
         </div>
       </div>
@@ -1730,55 +1722,58 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            In this chapter, we got some hands-on experience with class
-            selectors, descendant selectors, pseudo-classes, link styling, and
-            ID selectors. The goal of all this was to be able to target a
-            specific HTML element from your CSS. Class selectors are by far the
-            most versatile and come with the least amount of drawbacks. As a
-            result, they’ll become part of your daily life as a web developer.
+            Neste capítulo, demonstramos com a mão na massa como usar seletores 
+            por classe, seletores descendentes, pseudo-classes, estilização de 
+            ligações, e seletores de ID. O objetivo disso tudo é mostrar como 
+            manipulamos um elemento específico da HTML através da CSS. Seletores 
+            por classe são de longe os mais versáteis e apresentam poucas 
+            desvantagens. Como resultado, eles irão se tornar parte do seu dia a 
+            dia como desenvolvedor.
           </p>
 
           <p>
-            Like it or not, things got a lot more complicated this chapter.
-            We’re now able to make our CSS interact with an HTML document in
-            half a dozen different ways. Furthermore, over the next few
-            chapters, we’ll begin to see a dependency between our HTML’s
-            structure and the layout of a web page. With all this interplay
-            between CSS and HTML, it can be hard to know where to start building
-            a new web page.
+            Gostando ou não, as coisas ficaram mais complicadas neste capítulo. 
+            Mas agora nós sabemos como fazer nossa CSS interagir com o documento 
+            HTML e diferentes formas. Além disso, nos próximos capítulos, vamos 
+            reparar uma dependência entre a estrutura da HTML o layout da página 
+            web. Com toda essa interação entre CSS e HTML, pode ser difícil saber 
+            onde começar a construir uma nova página web.
           </p>
 
           <p>
-            The
+            A
             <a
               href="../basic-web-pages/index.html#structure-versus-presentation"
-              >separation of content from presentation</a
+              >separação do conteúdo da apresentação</a
             >
-            helps guide this process. You need content before you can present
-            it, so your first step is usually to mark up your raw content with
-            HTML tags. Once that’s prepared, you’re ready to add
-            <code>class</code> attributes to your elements and style them
-            one-by-one. When you discover a need for some extra structure to
-            create a desired layout (e.g., turn a group of elements into a
-            sidebar), that’s when you start wrapping your content in container
-            <code>&lt;div&gt;</code>’s.
+            vai ajudar a guiar o processo. Você precisa primeiro do conteúdo 
+            para depois apresentá-lo! Então o primeiro passo é realizar as 
+            marcações no conteúdo bruto com as tags HTML. Uma vez que você já 
+            providenciou isso, você estará pronto para adicionar atributos de 
+            <code>class</code> aos seus elementos e estilizá-los, um a um. 
+            Quando você perceber a necessidade de uma estrutura adicional para 
+            criar um layout desejado (ex. transformar um grupo de elementos 
+            em um barra lateral), é assim que começamos a criar conteúdos 
+            encapsulados em <code>&lt;div&gt;</code>.
           </p>
 
           <p>
-            This chapter covered almost all the CSS selectors that power real
-            websites. We’ve got the tools we need to dive much deeper into
-            complex CSS layouts. In the next installment of
-            <a href="../index.html"><em>HTML and CSS Is Hard</em></a
-            >, we’ll learn how to create columns and sidebars using CSS floats.
+            Este capítulo cobriu quase todos os seletores CSS que transformam 
+            os sites do nosso dia a dia. Agora temos as ferramentas necessárias 
+            para nos aprofundar muito mais no complexo mundo dos layouts CSS. 
+            Na próxima parte do 
+            <a href="../index.html"><em>Fazer Front é Difícil</em></a
+              > vamos aprender como criar colunas e barras laterais utilizando 
+              a CSS <em>Floats</em>
           </p>
 
           <div class="next-chapter">
-            <a href="../floats/index.html">Next Chapter &gt;</a>
+            <a href="../floats/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1788,73 +1783,73 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#class-selectors"
-                  >Class Selectors</a
+                  >Seletores por Classe</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#more-useful-divs"
-                  >More Useful Divs</a
+                  >Divs Mais Úteis</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#container-divs"
-                  >Container Divs</a
+                  >Contêineres de Divs</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#reusing-class-styles"
-                  >Reusing Class Styles</a
+                  >Reutilizando Classes</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#modifying-class-styles"
-                  >Modifying Class Styles</a
+                  >Modificando Classes</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#descendant-selectors"
-                  >Descendant Selectors</a
+                  >Seletores Descendentes</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#pseudo-classes-for-links"
-                  >Link Pseudo-Classes</a
+                  >Pseudo-classes para Links</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#pseudo-classes-for-buttons"
-                  >Button Pseudo-Classes</a
+                  >Pseudo-classes para Botões</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#pseudo-classes-for-structure"
-                  >Structural Pseudo-Classes</a
+                  >Pseudo-classes para Estruturas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#id-selectors"
-                  >ID Selectors</a
+                  >Seletores de ID</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#css-specificity"
-                  >CSS Specificity</a
+                  >Prioridades CSS</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1901,20 +1896,20 @@
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutorials. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir dos leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1928,7 +1923,7 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
@@ -1944,7 +1939,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -1956,11 +1951,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -1978,16 +1973,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>

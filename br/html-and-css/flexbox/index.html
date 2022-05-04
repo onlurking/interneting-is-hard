@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <title>Flexbox Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Flexbox | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -168,7 +168,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -185,12 +185,12 @@
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 8. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 8. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly tutorial for modern CSS layouts
+              Um tutorial amigável para layouts CSS modernos
             </div>
           </div>
         </div>
@@ -199,11 +199,11 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            The “Flexible Box” or “Flexbox” layout mode offers an alternative to
-            <a href="../floats/index.html">Floats</a> for defining the overall
-            appearance of a web page. Whereas floats only let us horizontally
-            position our boxes, flexbox gives us <em>complete</em> control over
-            the alignment, direction, order, and size of our boxes.
+            O modo de layout "Caixa Flexível" ou "Flexbox" oferece uma alternativa aos 
+            <a href="../floats/index.html">Floats</a> para definir a aparência geral
+            de uma página web. Uma vez que <em>floats</em> só nos permite modificar
+            o posicionamento horizontal das nossas caixas, flexbox nos dá um controle
+            total sobre o alinhamento, direção, ordem e tamanho das nossas caixas.
           </p>
 
           <figure class="diagram">
@@ -224,33 +224,35 @@
           </figure>
 
           <p>
-            The web is currently undergoing a major transition, so a little
-            discussion around the state of the industry is warranted. For the
-            last decade or so, floats were the sole option for laying out a
-            complex web page. As a result, they’re well supported even in legacy
-            browsers, and developers have used them to build millions of web
-            pages. This means you’ll inevitably run into floats during your web
-            development career (so the previous chapter wasn’t a total waste).
+            A web está passando por uma grande mudança, então uma pequena discussão 
+            sobre o status do mercado é necessário. Nos últimos anos, <em>floats</em> era 
+            a opção mais usada para desenvolver a aparência de uma página web complexa. 
+            Como resultado, esses layouts tinham bom suporte até menos em navegadores
+            antigos, e os desenvolvedores tem usado para construir milhões de páginas
+            web. Isso significa, que inevitavelmente você irá se deparar com <em>floats</em>
+            em algum momento da sua carreira de desenvolvedor web (por isso que o capítulo
+            anterior não foi um completo desperdício).
           </p>
 
           <p>
-            However, floats were originally intended for the magazine-style
-            layouts that we covered in
+            No entanto, <em>floats</em> tinham originalmente a intenção de serem 
+            utilizados nos layouts estilo revista que nós cobrimos na seção
             <a href="../floats/index.html#floats-for-content"
-              >Floats for Content</a
-            >. Despite what we saw last chapter, the kinds of layouts you can
-            create with floats are actually somewhat limited. Even a simple
-            sidebar layout is, technically speaking, a little bit of a hack.
-            Flexbox was invented to break out of these limitations.
+              >Conteúdos flutuantes</a
+            >. Apesar do que vimos no último capítulo, os tipos de layouts que você 
+            pode criar com <em>floats</em> são atualmente meio limitados. Até mesmo 
+            um simples layout com uma barra lateral é, tecnicamente falando, um 
+            pequeno hack. Flexbox foi inventado para acabar com essas limitações.
           </p>
 
           <p>
-            We’re finally at a point where browser support has hit critical mass
-            and developers can start building full websites with flexbox. Our
-            recommendation is to use flexbox to lay out your web pages as much
-            as possible, reserving floats for when you need text to flow
-            <em>around</em> a box (i.e., a magazine-style layout) or when you
-            need to support legacy web browsers.
+            Nós finalmente alcançamos um ponto onde o suporte dos navegadores 
+            atingiu um massa crítica e os desenvolvedores podem começar a 
+            construir páginas web completas com flexbox. Nossa recomendação é 
+            de usar o flexbox para projetar suas páginas web tanto quanto for 
+            possível, reservando floats par quando você precisar do texto fluindo 
+            <em>ao redor</em> de uma caixa (ex. um layout estilo revista) ou 
+            quando você precisar de suporte nos navegadores antigos.
           </p>
 
           <figure class="diagram">
@@ -271,9 +273,9 @@
           </figure>
 
           <p>
-            In this chapter, we’ll explore the entire flexbox layout model step
-            by step. You should walk away comfortable building virtually any
-            layout a web designer could ever give you.
+            Neste capítulo, nós vamos explorar todo o modelo de layout flexbox 
+            passo a passo. Você se sentirá confortável para construir virtualmente 
+            qualquer layout que um web designer poderia oferecer.
           </p>
         </div>
       </div>
@@ -281,13 +283,13 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
           <p>
-            The example for this chapter is relatively simple, but it clearly
-            demonstrates all of the important flexbox properties. We’ll wind up
-            with something that looks like this:
+            O exemplo deste capítulo é relativamente simples, mas irá demonstrar 
+            de forma clara toda a importância das propriedades do flexbox. Nós 
+            vamos começar com algo que pareça como isso:
           </p>
 
           <figure class="diagram">
@@ -308,14 +310,13 @@
           </figure>
 
           <p>
-            For starters, we need an empty HTML document that contains nothing
-            but a menu bar. Make a new
+            Para começar, nós vamos precisar de um documento HTML vazio que não 
+            tenha nada além de um barra de menu. Crie um  
             <a href="../introduction/index.html#atom-text-editor"
-              >Atom project</a
-            >
-            called <code>flexbox</code> to house all the example files for this
-            chapter. Then, create <code>flexbox.html</code> and add the
-            following markup:
+              >novo projeto no Atom</a
+            > chamado <code>flexbox</code> para registrar todos os arquivos 
+            de exemplos que iremos criar nesse capítulo. Depois, crie um arquivo 
+            <code>flexbox.html</code> e adicione o seguinte código a seguir:
           </p>
 
           <pre
@@ -324,15 +325,15 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">'en'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">'UTF-8'</span>/&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Some Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Uma página web<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">'stylesheet'</span> <span class="hljs-attr">href</span>=<span class="hljs-string">'styles.css'</span>/&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu-container'</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'date'</span>&gt;</span>Aug 14, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'signup'</span>&gt;</span>Sign Up<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'login'</span>&gt;</span>Login<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'date'</span>&gt;</span>Ago 14, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'signup'</span>&gt;</span>Assinar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'login'</span>&gt;</span>Entrar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -340,11 +341,11 @@
 </code></pre>
 
           <p>
-            Next, we need to create the corresponding
-            <code>styles.css</code> stylesheet. This won’t look like much: just
-            a full-width blue menu bar with a white-bordered box in it. Note
-            that we’ll be using flexbox instead of our traditional auto-margin
-            technique to center the menu.
+            Agora, precisamos criar uma folha de estilo correspondente, 
+            <code>styles.css</code>. Isso não vai parecer muito, além de uma 
+            barra de menu espandida com uma caixa com borda branca. Perceba 
+            que nós estamos utilizando flexbox ao invés da nossa tradicional 
+            técnica do auto-margim para centralizar o menu.
           </p>
 
           <pre class="highlight"><code>* {
@@ -355,23 +356,22 @@
 
 <span class="hljs-selector-class">.menu-container</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;  <span class="hljs-comment">/* Blue */</span>
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#5995DA</span>;  <span class="hljs-comment">/* Azul */</span>
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-selector-class">.menu</span> {
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#fff</span>;  <span class="hljs-comment">/* For debugging */</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#fff</span>;  <span class="hljs-comment">/* Para depurar */</span>
   <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
 }
 </code></pre>
 
           <p>
-            Finally,
-            <a href="flexbox-images-449705.zip">download some images</a> for use
-            by our example web page. Unzip them into the
-            <code>flexbox</code> project, keeping the parent
-            <code>images</code> directory. Your project should look like this
-            before moving on:
+            E finalmente, 
+            <a href="flexbox-images-449705.zip">baixe algumas imagens</a> para utilizar
+            na nossa página web de exemplo. Descompacte essas imagens dentro da pasta 
+            do projeto <code>flexbox</code>, mantendo a pasta pai <code>images</code>. 
+            Seu projeto deve estar parecendo como a imagem abaixo, antes de seguir:
           </p>
 
           <figure class="diagram">
@@ -397,15 +397,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flexbox-overview">
-              <span>Flexbox Overview</span>
+              <span>Visão geral da Flexbox</span>
             </h2>
           </div>
 
           <p>
-            Flexbox uses two types of boxes that we’ve never seen before: “flex
-            containers” and “flex items”. The job of a flex container is to
-            group a bunch of flex items together and define how they’re
-            positioned.
+            A Flexbox usa dois tipos de caixas que nunca vimos antes: contêineres flex 
+            e itens flex. O trabalho de um contêiner flex é agrupar um conjunto de 
+            itens flex juntos e definir como eles serão posicionados.
           </p>
 
           <figure class="diagram">
@@ -426,21 +425,21 @@
           </figure>
 
           <p>
-            Every HTML element that’s a direct child of a flex container is an
-            “item”. Flex items can be manipulated individually, but for the most
-            part, it’s up to the container to determine their layout. The main
-            purpose of flex items are to let their container know how many
-            things it needs to position.
+            Todo elemento HTML que é um filho direto de um contêiner flex é um 
+            "item". Itens flex podem ser manipulados individualmente, mas para 
+            a maior parte, é responsabilidade do contêiner determinar o layout.
+            O objetivo principal dos itens flex são deixar seus conteiner saberem 
+            quantas coisas precisam ser posicionadas.
           </p>
 
           <p>
-            As with float-based layouts, defining complex web pages with flexbox
-            is all about nesting boxes. You align a bunch of flex items inside a
-            container, and, in turn, those items can serve as flex containers
-            for their own items. As you work through the examples in this
-            chapter, remember that the fundamental task of laying out a page
-            hasn’t changed: we’re still just moving a bunch of nested boxes
-            around.
+            Assim como layouts baseados em floats, projetar páginas web complexas 
+            com a flexbox é sobre aninhamento de caixas. Você alinha um monte de 
+            itens flex dentro de um conteiner, e, por sua vez, esses itens podem 
+            ser utilizados como um conteiner flex para seus próprios itens. Enquanto 
+            você trabalha com esses exemplos nesse capítulo, lembre-se que o objetivo
+            fundamental de projetar uma página não mudou: continuamos movendo 
+            um monte de caixas aninhadas de um lado para o outro.
           </p>
         </div>
       </div>
@@ -449,25 +448,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-containers">
-              <span>Flex Containers</span>
+              <span>Contêineres Flex</span>
             </h2>
           </div>
 
           <p>
-            The first step in using flexbox is to turn one of our HTML elements
-            into a flex container. We do this with the
-            <code>display</code> property, which should be familiar from the
+            O primeiro passo para utilizar a flexbox é transformar um dos nossos
+            elementos HTML em um conteiner flex. Faremos isso com a propriedade 
+            <code>display</code>, que já deve ser familiar do capítulo 
             <a href="../css-box-model/index.html#changing-box-behavior"
-              >CSS Box Model</a
-            >
-            chapter. By giving it a value of <code>flex</code>, we’re telling
-            the browser that everything in the box should be rendered with
-            flexbox instead of the default box model.
+              >Modelo de Caixa CSS</a
+            >. Ao dar um valor de <code>flex</code>, nós estamos dizendo para o 
+            navegador que tudo na caixa deve ser renderizado com a flexbox ao invés 
+            do modelo de caixa padrão.
           </p>
 
           <p>
-            Add the following line to our <code>.menu-container</code> rule to
-            turn it into a flex container:
+            Adicione a seguinte linha de código a nossa regra <code>.menu-container</code>
+            para transformar ele em um conteiner flex:
           </p>
 
           <pre
@@ -479,13 +477,13 @@
 </code></pre>
 
           <p>
-            This <em>enables</em> the flexbox layout mode&mdash;without it, the
-            browser would ignore all the flexbox properties that we’re about to
-            introduce. Explicitly defining flex containers means that you can
-            mix and match flexbox with other layout models (e.g., floats and
-            everything we’re going to learn in
-            <a href="../advanced-positioning/index.html">Advanced Positioning</a
-            >).
+            Isso <em>habilita</em> o modo layout flexbox&mdash;sem isso, o navegador 
+            irá ignorar todas as propriedades da flexbox que estamos prestes a introduzir.
+            Definir explicitamente um conteiner flex significa que você pode combinar 
+            a flexbox com outros modelos de layout (ex. floats e tudo que nós vamos 
+            aprender em 
+            <a href="../advanced-positioning/index.html">Posicionamento Avançado</a
+              >).
           </p>
 
           <figure class="diagram">
@@ -506,9 +504,9 @@
           </figure>
 
           <p>
-            Great! We have a flex container with one flex item in it. However,
-            our page will look exactly like it did before because we haven’t
-            told the container how to display its item.
+            Ótimo! Nós já temos um conteiner flex com um item flex dentro dele. 
+            No entanto nossa página não tem nada de diferente, por que não dissemos 
+            ao conteiner como mostrar seus itens.
           </p>
         </div>
       </div>
@@ -517,15 +515,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="aligning-a-flex-item">
-              <span>Aligning a Flex Item</span>
+              <span>Alinhando um Item Flex</span>
             </h2>
           </div>
 
           <p>
-            After you’ve got a flex container, your next job is to define the
-            horizontal alignment of its items. That’s what the
-            <code>justify-content</code> property is for. We can use it to
-            center our <code>.menu</code>, like so:
+            Depois que fizemos um conteiner flex, seu próximo trabalho é definir o 
+            alinhamento horizontal dos seus itens. É pra isso que a propriedade 
+            <code>justify-content</code> é usada. Nós podemos centralizar nosso 
+            <code>.menu</code>, assim:
           </p>
 
           <pre
@@ -533,19 +531,19 @@
           ><code><span class="hljs-selector-class">.menu-container</span> {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">justify-content</span>: center;    <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">justify-content</span>: center;    <span class="hljs-comment">/* Adicione isso */</span>
 }
 </code></pre>
 
           <p>
-            This has the same effect as adding a
-            <code>margin: 0 auto</code> declaration to the
-            <code>.menu</code> element. But, notice how we did this by adding a
-            property to the <em>parent</em> element (the flex container) instead
-            of directly to the element we wanted to center (the flex item).
-            Manipulating items through their containers like this is a common
-            theme in flexbox, and it’s a bit of a divergence from how we’ve been
-            positioning boxes thus far.
+            Isso terá o mesmo efeito como quando adicionamos a declaração 
+            <code>margin: 0 auto</code> ao elemento <code>.menu</code>. Mas, 
+            note como fizemos isso adicionando uma propriedade ao elemento 
+            <em>pai</em> (do item flex) ao invés de fazer diretamente ao 
+            elemento que nós queremos centralizar (no caso o item flex).
+            Manipular itens através dos seus conteineres, como fizemos agora,
+            é um tema comum em flexbox, e é um pouco diferente de como estávamos 
+            fazendo com as caixas até o momento.
           </p>
 
           <figure class="diagram">
@@ -565,7 +563,7 @@
             </div>
           </figure>
 
-          <p>Other values for <code>justify-content</code> are shown below:</p>
+          <p>Outros valores para <code>justify-content</code> podem ser vistos abaixo:</p>
 
           <ul>
             <li><code>center</code></li>
@@ -576,12 +574,11 @@
           </ul>
 
           <p>
-            Try changing <code>justify-content</code> to
-            <code>flex-start</code> and <code>flex-end</code>. This should align
-            the menu to the left and right side of the browser window,
-            respectively. Be sure to change it back to
-            <code>center</code> before moving on. The last two options are only
-            useful when you have multiple flex items in a container.
+            Tente mudar <code>justify-content</code> para <code>flex-start</code> 
+            e <code>flex-end</code>. Isso deve alinhar o menu a esquerda e direita 
+            da janela do navegador, respectivamente. Garanta que você mudou de volta 
+            para o <code>center</code> antes de continuar. As duas últimas opções
+            são úteis somente quando temos múltiplos itens flex em um conteiner.
           </p>
         </div>
       </div>
@@ -593,16 +590,17 @@
               class="subheading__heading"
               id="distributing-multiple-flex-items"
             >
-              <span>Distributing Multiple Flex Items</span>
+              <span>Distribuindo Múltiplos Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            “Big deal,” you might be saying: we can do left/right alignment with
-            floats and centering with auto-margins. True. Flexbox doesn’t show
-            its real strength until we have more than one item in a container.
-            The <code>justify-content</code> property also lets you distribute
-            items equally inside a container.
+            “Grande coisa..”, você deve estar pensando: nós podemos fazer 
+            alinhamento à esquerda/direita com float e centralizar com o 
+            <code>auto-margins</code>. Verdade! A Flexbox não mostra seu real 
+            potencial até que nós tenhamos mais que um item em um container. A 
+            propriedade <code>justify-content</code> também permite que você 
+            distribua os itens igualmente em um conteiner.
           </p>
 
           <figure class="diagram">
@@ -622,7 +620,7 @@
             </div>
           </figure>
 
-          <p>Change our <code>.menu</code> rule to match the following:</p>
+          <p>Mude nossa regra <code>.menu</code> para ficar como abaixo:</p>
 
           <pre
             class="highlight"
@@ -635,9 +633,9 @@
 </code></pre>
 
           <p>
-            This turns our <code>.menu</code> into a nested flex container, and
-            the <code>space-around</code> value spreads its items out across its
-            entire width. You should see something like this:
+            Isso vai transformar nosso <code>.menu</code> em um conteiner flex 
+            aninhado, e o valor <code>space-around</code> espalhará seus itens 
+            pelo espaço da largura. Você deve ver algo como isso:
           </p>
 
           <figure class="diagram">
@@ -658,11 +656,11 @@
           </figure>
 
           <p>
-            The flex container automatically distributes extra horizontal space
-            to either side of each item. The <code>space-between</code> value is
-            similar, but it only adds that extra space <em>between</em> items.
-            This is what we actually want for our example page, so go ahead and
-            update the <code>justify-content</code> line:
+            O conteiner flex distribuirá automaticamente o espaço horizontal extra 
+            para cara lado de cada item. O valor <code>space-between</code> é 
+            similar, mas só adiciona esse espaço extra <em>entre</em> os itens.
+            Isso é o que queremos para nossa página de exemplo, então vamos lá 
+            e adicione a linha <code>justify-content</code>:
           </p>
 
           <pre
@@ -671,10 +669,10 @@
 </code></pre>
 
           <p>
-            Of course, you can also use <code>center</code>,
-            <code>flex-start</code>, <code>flex-end</code> here if you want to
-            push all the items to one side or another, but let’s leave it as
-            <code>space-between</code>.
+            É claro, você também pode usar <code>center</code>, 
+            <code>flex-start</code>, <code>flex-end</code> aqui se você quiser 
+            empurrar todos os itens de um lado para outro, mas vamos deixar 
+            assim com <code>space-between</code>.
           </p>
         </div>
       </div>
@@ -683,17 +681,17 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="grouping-flex-items">
-              <span>Grouping Flex Items</span>
+              <span>Agrupando Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            Flex containers only know how to position elements that are one
-            level deep (i.e., their child elements). They don’t care one bit
-            about what’s inside their flex items. This means that grouping flex
-            items is another weapon in your layout-creation arsenal. Wrapping a
-            bunch of items in an extra <code>&lt;div&gt;</code> results in a
-            totally different web page.
+            Conteineres flex só sabem como posicionar os elemento que estão um 
+            nível abaixo (ex. seus elementos filhos). Eles não se importam nenhum 
+            pouco com o que tem dentro dos seus itens flex. Isso significa que 
+            agrupar itens flex é outra arma no nosso arsenal de criação de layout.
+            Empacotar um monte de itens em um <code>&lt;div&gt;</code> extra resulta 
+            em um página diferente totalmente diferente.
           </p>
 
           <figure class="diagram">
@@ -714,28 +712,28 @@
           </figure>
 
           <p>
-            For example, let’s say you want both the
-            <strong>Sign Up</strong> and <strong>Login</strong> links to be on
-            the right side of the page, as in the screenshot below. All we need
-            to do is stick them in another <code>&lt;div&gt;</code>:
+            Por exemplo, vamos dizer que você quer que ambos os links para 
+            <strong>Sign Up</strong> e <strong>Login</strong> fiquem no lado 
+            direito da página, como na imagem abaixo. Tudo que precisamos fazer 
+            é colocá-los em outro <code>&lt;div&gt;</code>:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'menu'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'date'</span>&gt;</span>Aug 14, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'date'</span>&gt;</span>Ago 14, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'links'</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'signup'</span>&gt;</span>Sign Up<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>      <span class="hljs-comment">&lt;!-- This is nested now --&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'login'</span>&gt;</span>Login<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>         <span class="hljs-comment">&lt;!-- This one too! --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'signup'</span>&gt;</span>Assinar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>      <span class="hljs-comment">&lt;!-- Isto está aninhado agora --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'login'</span>&gt;</span>Entrar<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>         <span class="hljs-comment">&lt;!-- Isso também! --&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
           <p>
-            Instead of having three items, our <code>.menu</code> flex container
-            now has only two (<code>.date</code> and <code>.links</code>). Under
-            the existing <code>space-between</code> behavior, they’ll snap to
-            the left and right side of the page.
+            Ao invés de ter três itens, nosso conteiner flex <code>.menu</code> 
+            agora tem somente dois (<code>.date</code> e <code>.links</code>). 
+            Sobre o comportamento existente do <code>space-between</code>, eles 
+            se ajustarão ao lado esquerdo e direito da página.
           </p>
 
           <figure class="diagram">
@@ -756,16 +754,16 @@
           </figure>
 
           <p>
-            But, now we need to lay out the <code>.links</code> element because
-            it’s using the default block layout mode. The solution: more nested
-            flex containers! Add a new rule to our <code>styles.css</code> file
-            that turns the <code>.links</code> element into a flex container:
+            Mas, agora nós precisamos ajustar o elemento <code>.links</code> por 
+            que ele está usando o modo de bloco padrão. A solução: mais conteineres 
+            flex aninhados! Adicione uma nova regra ao nosso arquivo <code>styles.css</code>
+            que transformará o elemento <code>.links</code> em um conteiner flex:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.links</span> {
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#fff</span>;  <span class="hljs-comment">/* For debugging */</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#fff</span>;  <span class="hljs-comment">/* Para depurar */</span>
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">justify-content</span>: flex-end;
 }
@@ -776,15 +774,14 @@
 </code></pre>
 
           <p>
-            This will put our links right where we want them. Notice that
-            margins still work just like they did in the
-            <a href="../css-box-model/index.html">CSS Box Model</a>. And, as
-            with the normal box model, auto margins have a special meaning in
-            flexbox (we’ll leave that for the
-            <a href="index.html#flex-items-and-auto-margins"
-              >end of the chapter</a
-            >
-            though).
+            Isso colocará nossos links na direita onde queremos. Note que a 
+            margem continua funcionando como feito no 
+            <a href="../css-box-model/index.html">Modelo de Caixa CSS</a>. E, 
+            como um modelo de caixas normal, <code>auto-margins</code> tem um 
+            significado especial dentro da flexbox (no entanto vamos deixar isso 
+            para <a href="index.html#flex-items-and-auto-margins"
+              >o final do capítulo</a
+            >).
           </p>
 
           <figure class="diagram">
@@ -805,8 +802,8 @@
           </figure>
 
           <p>
-            We won’t need those white borders anymore, so you can go ahead and
-            delete them if you like.
+            Não mais precisamos dessas bordas brancas, então você pode apagá-las
+            se você quiser.
           </p>
         </div>
       </div>
@@ -815,14 +812,14 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="cross-axis-vertical-alignment">
-              <span>Cross-Axis (Vertical) Alignment</span>
+              <span>Alinhamento em Eixo Cruzado (Vertical)</span>
             </h2>
           </div>
 
           <p>
-            So far, we’ve been manipulating horizontal alignment, but flex
-            containers can also define the vertical alignment of their items.
-            This is something that’s simply not possible with floats.
+            Até agora, estivemos manipulando o alinhamento horizontal, mas 
+            conteineres flex também podem definir o alinhamento vertical para 
+            seus itens. Isso é algo que simplesmente não é possível com floats.
           </p>
 
           <figure class="diagram">
@@ -843,9 +840,10 @@
           </figure>
 
           <p>
-            To explore this, we need to add a header underneath our menu. Add
-            the following markup to <code>flexbox.html</code> after the
-            <code>.menu-container</code> element:
+            Para explorar isso, vamos precisar adicionar um cabeçalho embaixo 
+            do nosso menu. Adicione a seguinte marcação ao nosso 
+            <code>flexbox.html</code> depois do elemento 
+            <code>.menu-container</code>:
           </p>
 
           <pre
@@ -860,8 +858,8 @@
 </code></pre>
 
           <p>
-            Next, add some base styles to get it aligned with our
-            <code>.menu</code> element:
+            Agora, adicione uma estilização básica para fazer o alinhamento 
+            com nosso elemento <code>.menu</code>:
           </p>
 
           <pre
@@ -882,12 +880,12 @@
 </code></pre>
 
           <p>
-            This should all be familiar; however, the scenario is a little bit
-            different than our menu. Since <code>.header</code> has an explicit
-            height, items can be positioned vertically inside of it. The
-            official specification calls this “cross-axis” alignment (we’ll see
-            why in a moment), but for our purposes it might as well be called
-            “vertical” alignment.
+            Isso deve ser bem familiar; no entanto, o cenário é um pouco diferente 
+            do nosso menu. Uma vez que <code>.header</code> tem uma altura explícita, 
+            os itens podem ser posicionados verticalmente dentro dela. A especificação 
+            oficial chama isso de alinhamento de “eixo cruzado”&dash;<em>cross-axis</em> 
+            (já vamos ver por que daqui a pouco), mas para nosso propósito ele pode 
+            ser chamado de alinhamento “vertical”.
           </p>
 
           <figure class="diagram">
@@ -908,22 +906,22 @@
           </figure>
 
           <p>
-            Vertical alignment is defined by adding an
-            <code>align-items</code> property to a flex container. Make our
-            example page match the above screenshot with the following line:
+            Alinhamento vertical é definido adicionando uma propriedade 
+            <code>align-items</code> em um conteiner flex. Vamos fazer nossa 
+            página de exemplo parecer como a imagem acima com a linha abaixo:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.header</span> {
   <span class="hljs-comment">/* ... */</span>
-  <span class="hljs-attribute">align-items</span>: center;  <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">align-items</span>: center;  <span class="hljs-comment">/* Adicione isso */</span>
 }
 </code></pre>
 
           <p>
-            The available options for <code>align-items</code> is similar to
-            <code>justify-content</code>:
+            As opções disponíveis para <code>align-items</code> são similares 
+            a <code>justify-content</code>:
           </p>
 
           <ul>
@@ -949,16 +947,15 @@
           </figure>
 
           <p>
-            Most of these are pretty straightforward. The
-            <code>stretch</code> option is worth a taking a minute to play with
-            because it lets you display the background of each element. Let’s
-            take a brief look by adding the following to
-            <code>styles.css</code>:
+            A maioria deles é bastante simples. A opção <code>strech</code> 
+            vale a pena brincar um pouco por que ela nos permite mostrar o 
+            fundo de cada elemento. Vamos dar uma olhada nela adicionando 
+            o seguinte código ao nosso <code>styles.css</code>:
           </p>
 
           <pre class="highlight"><code>.header {
   <span class="hljs-comment">/* ... */</span>
-  align-items: stretch;    <span class="hljs-comment">/* Change this */</span>
+  align-items: stretch;    <span class="hljs-comment">/* Mude isso */</span>
 }
 
 .social,
@@ -969,16 +966,17 @@
 </code></pre>
 
           <p>
-            The box for each item extends the full height of the flex container,
-            regardless of how much content it contains. A common use case for
-            this behavior is creating equal-height columns with a variable
-            amount of content in each one&mdash;something very difficult to do
-            with floats.
+            A caixa para cada item estende a altura total do conteiner flex, 
+            independente de quanto conteúdo ele contém. Um uso comum para esse 
+            comportamento é criar colunas com alturas iguais com uma conjunto 
+            variável de conteúdo em cada um&mdash;algo muito difícil de fazer com 
+            floats.
           </p>
 
           <p>
-            Be sure to delete the above changes and vertically center our
-            content inside of <code>.header</code> before moving on.
+            Tenha certeza de que apagou as mudanças acima e centralizar 
+            verticalmente nosso conteúdo dentro do <code>.header</code> 
+            antes de continuar.
           </p>
         </div>
       </div>
@@ -987,16 +985,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="wrapping-flex-items">
-              <span>Wrapping Flex Items</span>
+              <span>Encapsulando Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            Flexbox is a more powerful alternative to
-            <a href="../floats/index.html#floats-for-grids">float-based grids</a
-            >. Not only can it render items as a grid&mdash;it can change their
-            alignment, direction, order, and size, too. To create a grid, we
-            need the <code>flex-wrap</code> property.
+            Flexbox é uma alternativa mais poderosa que 
+            <a href="../floats/index.html#floats-for-grids">grades baseadas em floats</a
+              >. Ela não somente renderiza os itens como uma grade&mdash;ela pode mudar 
+              seu alinhamento, direção, ordem e tamanho também. Para criar uma grade, 
+              precisamos usar a propriedade <code>flex-wrap</code>.
           </p>
 
           <figure class="diagram">
@@ -1017,10 +1015,10 @@
           </figure>
 
           <p>
-            Add a row of photos to <code>flexbox.html</code> so that we have
-            something to work with. This should go inside of
-            <code>&lt;body&gt;</code>, under the
-            <code>.header-container</code> element:
+            Adicione uma linha de fotos ao nosso <code>flexbox.html</code> para 
+            que tenhamos algo com que trabalhar. As fotos devem estar dentro de 
+            <code>&lt;body&gt;</code>, depois do elemento 
+            <code>.header-container</code>:
           </p>
 
           <pre
@@ -1041,8 +1039,7 @@
 </code></pre>
 
           <p>
-            Again, the corresponding CSS should be familiar from previous
-            sections:
+            De novo, a CSS correspondente já deve ser familiar da seção anterior:
           </p>
 
           <pre
@@ -1066,9 +1063,9 @@
 </code></pre>
 
           <p>
-            This should work as expected, but watch what happens when we add
-            more items than can fit into the flex container. Insert an extra two
-            photos into the <code>.photo-grid</code>:
+            Isso deve funcionar como esperado, mas preste atenção no que acontece 
+            quando adicionamos mais itens do que cabem dentro do container flex. 
+            Insira umas duas fotos a mais no código <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1081,7 +1078,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-          <p>By default, they flow off the edge of the page:</p>
+          <p>Por padrão, elas ultrapassam o limite da página:</p>
 
           <figure class="diagram">
             <div class="diagram__wrapper" style="max-width: 470px">
@@ -1101,11 +1098,11 @@
           </figure>
 
           <p>
-            If you’re trying to build a hero banner that lets the user
-            horizontally scroll through a bunch of photos, this might be desired
-            behavior, but that’s not what we want. Adding the following
-            <code>flex-wrap</code> property forces items that don’t fit to get
-            bumped down to the next row:
+            Se você estiver tentando construir um <em>hero banner</em> que deixa 
+            o usuário rolar horizontalmente através de um monte de fotos, esse deve 
+            ser o comportamento esperado, mas não é o que nós queremos agora. 
+            Adicionando a propriedade <code>flex-wrap</code> força os itens que 
+            não couberem naquela linha pularem para próxima:
           </p>
 
           <pre
@@ -1117,11 +1114,12 @@
 </code></pre>
 
           <p>
-            Now, our flex items behave much like floated boxes, except flexbox
-            gives us more control over how “extra” items are aligned in the
-            final row via the <code>justify-content</code> property. For
-            example, the last line is currently left-aligned. Try centering it
-            by updating our <code>.photo-grid</code> rule, like so:
+            Agora, nossos itens flex se comportam muito como caixas flutuantes, 
+            exceto que a flexbox nos dá muito mais controle sobre como os itens 
+            “extra” são alinhados na última linha através da propriedade 
+            <code>justify-content</code>. Por exemplo, a última linha está 
+            alinhada à esquerda. Tente centralizar modificando nossa regra 
+            <code>.photo-grid</code>, assim:
           </p>
 
           <pre
@@ -1129,13 +1127,13 @@
           ><code><span class="hljs-selector-class">.photo-grid</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">900px</span>;
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">justify-content</span>: center;    <span class="hljs-comment">/* Change this */</span>
+  <span class="hljs-attribute">justify-content</span>: center;    <span class="hljs-comment">/* Mude isso */</span>
   <span class="hljs-attribute">flex-wrap</span>: wrap;
 }
 </code></pre>
 
           <p>
-            Achieving this with float-based layouts is ridiculously complicated.
+            Alcançar isso com em um layout baseado em <em>floats</em>> é extremamente complicado.
           </p>
 
           <figure class="diagram">
@@ -1161,16 +1159,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-container-direction">
-              <span>Flex Container Direction</span>
+              <span>Direcionando Contêineres Flex</span>
             </h2>
           </div>
 
           <p>
-            “Direction” refers to whether a container renders its items
-            horizontally or vertically. So far, all the containers we’ve seen
-            use the default horizontal direction, which means items are drawn
-            one after another in the same row before popping down to the next
-            column when they run out of space.
+            A “direção” indica se um conteiner irá renderizar seus itens horizontalmente 
+            ou verticalmente. Até agora, todos os conteineres que vimos tem utilizado 
+            o padrão de direção horizontal, o que significa que os itens são desenhados 
+            um após o outro na mesma linha antes de pular para a próxima coluna quando 
+            ficam sem espaço.
           </p>
 
           <figure class="diagram">
@@ -1191,10 +1189,10 @@
           </figure>
 
           <p>
-            One of the most amazing things about flexbox is its ability to
-            transform rows into columns using only a single line of CSS. Try
-            adding the following <code>flex-direction</code> declaration to our
-            <code>.photo-grid</code> rule:
+            Uma das coisas mais incríveis sobre a flexbox é sua habilidade de 
+            transformar linhas em colunas utilizando uma única linha de CSS. 
+            Tente adicionar a seguinte declaração <code>flex-direction</code> 
+            a nossa regra <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1206,9 +1204,8 @@
 </code></pre>
 
           <p>
-            This changes the direction of the container from the default
-            <code>row</code> value. Instead of a grid, our page now has a single
-            vertical column:
+            Isso muda a direção do conteiner do valor padrão de <code>linha</code>. 
+            Ao invés de uma grade, nossa página agora tem uma simples coluna vertical:
           </p>
 
           <figure class="diagram">
@@ -1229,28 +1226,28 @@
           </figure>
 
           <p>
-            A key tenant of responsive design is presenting the same HTML markup
-            to both mobile and desktop users. This presents a bit of a problem,
-            as most mobile layouts are a single column, while most desktop
-            layouts stack elements horizontally. You can imagine how useful
-            <code>flex-direction</code> is going to become once we start
-            building
-            <a href="../responsive-design/index.html">responsive layouts</a>.
+            Um ponto importante de design responsivo é apresentar a mesma marcação 
+            HTML para ambos os usuários de dispositivos móveis quanto de desktop. 
+            Isso pode ser um problema, como muitos dos layouts móveis são uma simples 
+            coluna, enquanto a maioria dos layouts desktop empilham elementos 
+            horizontalmente. Você pode imaginar como será útil a propriedade 
+            <code>flex-direction</code> assim que começarmos a construir 
+            <a href="../responsive-design/index.html">layouts responsivos</a>.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="alignment-considerations">
-              Alignment Considerations
+              Considerações sobre Alinhamento
             </h3>
           </div>
 
           <p>
-            Notice that the column is hugging the left side of its flex
-            container despite our
-            <code>justify-content: center;</code> declaration. When you rotate
-            the direction of a container, you also rotate the direction of the
-            <code>justify-content</code> property. It now refers to the
-            container’s vertical alignment&mdash;not its horizontal alignment.
+            Note que a coluna está abraçando o lado esquerdo do conteiner flex 
+            mesmo usando a declaração <code>justify-content: center;</code>. 
+            Quando você rotaciona a direção de um conteiner, também pode rotacionar 
+            a direção da propriedade <code>justify-content</code>. Ela agora se 
+            refere ao alinhamento vertical do conteiner&mdash;não ao seu alinhamento 
+            horizontal.
           </p>
 
           <figure class="diagram">
@@ -1271,8 +1268,9 @@
           </figure>
 
           <p>
-            To horizontally center our column, we need to define an
-            <code>align-items</code> property on our <code>.photo-grid</code>:
+            Para centralizar horizontalmente nossa coluna, precisamos definir 
+            uma propriedade <code>align-items</code> no nosso código 
+            <code>.photo-grid</code>:
           </p>
 
           <pre
@@ -1280,7 +1278,7 @@
           ><code><span class="hljs-selector-class">.photo-grid</span> {
   <span class="hljs-comment">/* ... */</span>
   <span class="hljs-attribute">flex-direction</span>: column;
-  <span class="hljs-attribute">align-items</span>: center;      <span class="hljs-comment">/* Add this */</span>
+  <span class="hljs-attribute">align-items</span>: center;      <span class="hljs-comment">/* Adicione isso */</span>
 }
 </code></pre>
         </div>
@@ -1290,16 +1288,16 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-container-order">
-              <span>Flex Container Order</span>
+              <span>Ordenação do Conteiner Flex</span>
             </h2>
           </div>
 
           <p>
-            Up until now, there’s been a tight correlation between the order of
-            our HTML elements and the way boxes are rendered in a web page. With
-            either floats or the flexbox techniques we’ve seen so far, the only
-            way we could make a box appear before or after another one is to
-            move around the underlying HTML markup. That’s about to change.
+            Até agora, nós tínhamos uma correlação entre a ordem dos nossos elementos 
+            HTML e a forma como a caixa é renderizada em uma página web. Seja com 
+            floats como com as técnicas da flexbox nós vimos que até agora, a única 
+            forma de que podemos fazer que uma caixa apareça antes ou depois de outra 
+            é movendo ela através da HTML. Isso vai mudar.
           </p>
 
           <figure class="diagram">
@@ -1317,11 +1315,11 @@
           </figure>
 
           <p>
-            The <code>flex-direction</code> property also offers you control
-            over the order in which items appear via the
-            <code>row-reverse</code> and <code>column-reverse</code> properties.
-            To see this in action, let’s transform our column back into a grid,
-            but this time around we’ll reverse the order of everything:
+            A propriedade <code>flex-direction</code> também oferece um controle 
+            sobre a ordem com que os itens aparecem, através das propriedades  
+            <code>row-reverse</code> e <code>column-reverse</code>. Para ver 
+            isso em ação, vamos transformar nossa coluna de volta em uma grade, 
+            mas dessa vez vamos reverter a ordem de tudo:
           </p>
 
           <pre
@@ -1331,20 +1329,19 @@
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">flex-wrap</span>: wrap;
-  <span class="hljs-attribute">flex-direction</span>: row-reverse;  <span class="hljs-comment">/* &lt;--- Really freaking cool! */</span>
+  <span class="hljs-attribute">flex-direction</span>: row-reverse;  <span class="hljs-comment">/* &lt;--- Isso é muito maneiro!! */</span>
   <span class="hljs-attribute">align-items</span>: center;
 }
 </code></pre>
 
           <p>
-            Both rows are now rendered right-to-left instead of left-to-right.
-            But, notice how this only swaps the order on a per-row basis: the
-            first row doesn’t start at 5, it starts at 3. This is useful
-            behavior for a lot of common design patterns (<code
-              >column-reverse</code
-            >
-            in particular opens up a lot of doors for mobile layouts). We’ll
-            learn how to get even more granular in the next section.
+            Ambas as linhas agora estão renderizadas da direita para esquerda 
+            ao invés do contrário. Mas, note como isso só muda a ordem em uma 
+            linha: a primeira linha não começa em 5, mas sim em 3. Esse é um 
+            comportamento útil para vários padrões de design comuns 
+            (o <code>column-reverse</code> particularmente nos dá várias opções 
+            quando usado em layouts para dispositivos móveis). Vamos aprender 
+            como ter mais granularidade no controle na próxima seção.
           </p>
 
           <figure class="diagram">
@@ -1365,16 +1362,16 @@
           </figure>
 
           <p>
-            Reordering elements from inside a stylesheet is a big deal. Before
-            flexbox, web developers had to resort to JavaScript hacks to
-            accomplish this kind of thing. However, don’t abuse your newfound
-            abilities. As we discussed in the very first chapter of this
-            tutorial, you should always
+            Reordenar elementos a partir de um folha de estilo é bastante coisa. 
+            Antes da flexbox, desenvolvedores web tinham que recorrer a hacks em 
+            JavaScript para alcançar esses tipos de coisas. No entanto, não abuse 
+            das suas novas habilidades. Como já discutimos nos primeiros capítulos 
+            desse tutorial, você deve sempre  
             <a
               href="../basic-web-pages/index.html#structure-versus-presentation"
-              >separate content from presentation</a
-            >. Changing the order like this is purely presentational&mdash;your
-            HTML should still make sense without these styles applied to it.
+              >separar o conteúdo da apresentação</a
+            >. Mudar a ordem assim é puramente apresentação&mdash;seu HTML deve 
+            fazer sentido mesmo sem esses estilos aplicados a ele.
           </p>
         </div>
       </div>
@@ -1383,15 +1380,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-item-order">
-              <span>Flex Item Order</span>
+              <span>Ordenando de Item Flex</span>
             </h2>
           </div>
 
           <p>
-            This entire chapter has been about positioning flex items
-            <em>through their parent containers</em>, but it’s also possible to
-            manipulate individual items. The rest of this chapter is going to
-            shift focus away from flex containers onto the items they contain.
+            Esse capítulo inteiro foi sobre posicionamento de itens flex <em>através 
+              dos seus conteineres pais</em>, mas também é possível manipular itens 
+              individualmente. O resto desse capítulo vai mudar o foco dos conteineres 
+              flex para os itens que eles contém.
           </p>
 
           <figure class="diagram">
@@ -1412,25 +1409,25 @@
           </figure>
 
           <p>
-            Adding an <code>order</code> property to a flex item defines its
-            order in the container without affecting surrounding items. Its
-            default value is <code>0</code>, and increasing or decreasing it
-            from there moves the item to the right or left, respectively.<?p>
+            Adicionando uma propriedade <code>order</code> em um item flex define 
+            sua ordem no conteiner sem afetar os itens ao redor dele. Seu valor 
+            padrão é <code>0</code>, e ao aumentar ou diminuir move o item para 
+            a direita ou para a esquerda, respectivamente.
           </p>
 
           <p>
-            This can be used, for example, to swap order of the
-            <code>.first-item</code> and <code>.last-item</code> elements in our
-            grid. We should also change the <code>row-reverse</code> value from
-            the previous section back to <code>row</code> because it’ll make our
-            edits a little easier to see:
+            Isso pode ser utilizado, por exemplo, para trocar a ordem dos elementos 
+            <code>.first-item</code> e <code>.last-item</code> na sua grade. Também 
+            devemos mudar o valor de <code>row-reverse</code> da seção anterior de 
+            volta para <code>row</code> pois irá fazer com que nossas edições se 
+            tornem um pouco mais fácil de ver:
           </p>
 
           <pre
             class="highlight"
           ><code><span class="hljs-selector-class">.photo-grid</span> {
   <span class="hljs-comment">/* ... */</span>
-  <span class="hljs-attribute">flex-direction</span>: row;  <span class="hljs-comment">/* Update this */</span>
+  <span class="hljs-attribute">flex-direction</span>: row;  <span class="hljs-comment">/* Atualize isso */</span>
   <span class="hljs-attribute">align-items</span>: center;
 }
 
@@ -1444,11 +1441,10 @@
 </code></pre>
 
           <p>
-            Unlike setting <code>row-reverse</code> and
-            <code>column-reverse</code> on a flex container,
-            <code>order</code> works across row/column boundaries. The above
-            snippet will switch our first and last items, even though they
-            appear on different rows.
+            Diferentemente de <code>row-reverse</code> e <code>column-reverse</code>
+            em um conteiner flex, <code>order</code> funciona além dos limites da 
+            linha/coluna. O trecho acima irá trocar nosso primeiro item com o último, 
+            mesmo que ele apareça em uma linha diferente.
           </p>
         </div>
       </div>
@@ -1462,12 +1458,12 @@
           </div>
 
           <p>
-            We can do the same thing with vertical alignment. What if we want
-            that <strong>Subscribe</strong> link and those social icons to go at
-            the bottom of the header instead of the center? Align them
-            individually! This is where the <code>align-self</code> property
-            comes in. Adding this to a flex item overrides the
-            <code>align-items</code> value from its container:
+            Podemos fazer a mesma coisa com o alinhamento vertical. E se quiséssemos 
+            que aquela ligação <strong>Assinar</strong> e os ícones de media social 
+            fossem para a parte mais baixa do cabeçalho ao invés do centro? Alinhe-os 
+            individualmente! É assim que a propriedade <code>align-self</code> funciona.
+            Adicionando isso a um item flex sobreescreve o valor de 
+            <code>align-items</code> do seu conteiner:
           </p>
 
           <pre
@@ -1480,8 +1476,8 @@
 </code></pre>
 
           <p>
-            This should send them to the bottom of the <code>.header</code>.
-            Note that margins (padding, too) work just like you’d expect.
+            Isso deve enviar eles para a parte mais baixa do <code>.header</code>. 
+            Note que as margens (preenchimento, também) funcionam como esperado.
           </p>
 
           <figure class="diagram">
@@ -1502,8 +1498,9 @@
           </figure>
 
           <p>
-            You can align elements in other ways using the same values as the
-            <code>align-items</code> property, listed below for convenience.
+            Você pode alinhar elementos de outras formas utilizando os mesmos valores 
+            assim como a propriedade <code>align-items</code>, listadas abaixo 
+            por conveniência.
           </p>
 
           <ul>
@@ -1520,25 +1517,26 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flexible-items">
-              <span>Flexible Items</span>
+              <span>Itens Flex</span>
             </h2>
           </div>
 
           <p>
-            All our examples have revolved around items with fixed- or
-            content-defined-widths. This has let us focus on the positioning
-            aspects of flexbox, but it also means we’ve been ignoring its
-            eponymous “flexible box” nature. Flex items are <em>flexible</em>:
-            they can shrink and stretch to match the width of their containers.
+            Todos os nossos exemplos giraram em todos de itens fixos ou 
+            com tamanhos de conteúdos fixos. Isso nos permitiu focar nos 
+            aspectos do posicionamento usando flexbox, mas também significa 
+            que nós temos ignorado literalmente a natureza de “caixa flexível”. 
+            Itens Flex são <em>flexíveis</em>: eles podem diminiur ou esticar 
+            para caber no tamanho dos seus conteineres.
           </p>
 
           <p>
-            The <code>flex</code> property defines the width of individual items
-            in a flex container. Or, more accurately, it allows them to have
-            flexible widths. It works as a weight that tells the flex container
-            how to distribute extra space to each item. For example, an item
-            with a <code>flex</code> value of <code>2</code> will grow twice as
-            fast as items with the default value of <code>1</code>.
+            A propriedade <code>flex</code> define a largura dos itens individualmente
+            em um conteiner flex. Ou, mais precisamente, permite que ele tenham 
+            tamanhos flexíveis. Isso funciona como um peso que diz ao conteiner flex 
+            como distribuir o espaço extra de cada item. Por exemplo, um item com um 
+            valor <code>flex</code> de <code>2</code> vai aumentar duas vezes o seu 
+            tamanho do que itens com o valor padrão <code>1</code>.
           </p>
 
           <figure class="diagram">
@@ -1559,8 +1557,8 @@
           </figure>
 
           <p>
-            First, we need a footer to experiment with. Stick this after the
-            <code>.photo-grid-container</code> element:
+            Primeiro nós precisamos de um rodapé, para experimentar isso. Cola isso 
+            depois do nosso elemento <code>.photo-grid-container</code>:
           </p>
 
           <pre
@@ -1572,7 +1570,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-          <p>Then, some CSS:</p>
+          <p>E depois, algum CSS:</p>
 
           <pre
             class="highlight"
@@ -1590,9 +1588,9 @@
 </code></pre>
 
           <p>
-            That <code>flex: 1;</code> line tells the items to stretch to match
-            the width of <code>.footer</code>. Since they all have the same
-            weight, they’ll stretch equally:
+            Aquela linha <code>flex: 1;</code> vai dizer para o item para esticar
+            até caber na largura do <code>.footer</code>. Uma vez que todos eles 
+            tem o mesmo peso, todos vão esticar igualmente:
           </p>
 
           <figure class="diagram">
@@ -1613,9 +1611,9 @@
           </figure>
 
           <p>
-            Increasing the weight of one of the items makes it grow faster than
-            the others. For example, we can make the third item grow twice as
-            fast as the other two with the following rule:
+            Aumentando o peso de um dos itens vai fazer ele aumentar mais rápido 
+            que os outros. Por exemplo, podemos fazer o terceiro item aumentar 
+            duas vezes mais rápido do que os outros dois com a seguinte regra:
           </p>
 
           <pre
@@ -1626,24 +1624,24 @@
 </code></pre>
 
           <p>
-            Compare this to the <code>justify-content</code> property, which
-            distributes extra space <em>between</em> items. This is similar, but
-            now we’re distributing that space into the items themselves. The
-            result is full control over how flex items fit into their
-            containers.
+            Compare isso com a propriedade <code>justify-content</code>, que 
+            distribui o espaço extra <em>entre</em> os itens. Isso é similar, 
+            mas agora estamos distribuindo aquele espaço dentro dos próprios itens. 
+            O resultado é um controle total sobre como os itens flex se posicionam 
+            dentro do seu próprio conteiner.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="static-item-widths">
-              Static Item Widths
+              Itens com Largura Estáticas
             </h3>
           </div>
 
           <p>
-            We can even mix-and-match flexible boxes with fixed-width ones.
-            <code>flex: initial</code> falls back to the item’s explicit
-            <code>width</code> property. This lets us combine static and
-            flexible boxes in complex ways.
+            Podemos até misturar caixas flexíveis com outra de largura fixa. 
+            <code>flex: initial</code> volta a propriedade <code>width</code> 
+            explicita do item. Isso permite combinar caixas estáticas com 
+            flexíveis de formas mais elaboradas.
           </p>
 
           <figure class="diagram">
@@ -1664,10 +1662,10 @@
           </figure>
 
           <p>
-            We’re going to make our footer behave like the above diagram. The
-            center item is flexible, but the ones on either side are always the
-            same size. All we need to do is add the following rule to our
-            stylesheet:
+            Nós vamos fazer um rodapé que se comporta como o diagrama acima. O 
+            item central é flexível, mas os outros ao redor tem sempre o mesmo 
+            tamanho. Tudo que precisamos fazer é adicionar a seguinte linha a 
+            nossa folha de estilo:
           </p>
 
           <pre
@@ -1681,13 +1679,13 @@
 </code></pre>
 
           <p>
-            Without that <code>flex: initial;</code> line, the
-            <code>flex: 1;</code> declaration would be inherited from the
-            <code>.footer-item</code> rule, causing the
-            <code>width</code> properties to be ignored.
-            <code>initial</code> fixes this, and we get a flexible layout that
-            also contains fixed-width items. When you resize the browser window,
-            you’ll see that only the middle box in the footer gets resized.
+            Sem essa linha <code>flex: initial;</code>, a declaração de 
+            <code>flex: 1;</code> deve ser herdada da regra <code>.footer-item</code> 
+            fazendo com que a propriedade <code>width</code> seja ignorada.
+            <code>initial</code> fixa isso, e assim temos um layout flexível 
+            que também contém itens com largura fixa. Quando redimensionamos a 
+            janela do navegador, você verá que somente a caixa do meio do rodapé 
+            será redimensionada.
           </p>
 
           <figure class="diagram">
@@ -1708,11 +1706,11 @@
           </figure>
 
           <p>
-            This is a pretty common layout, and not just in footers, either. For
-            instance, many websites have a fixed-width sidebar (or multiple
-            sidebars) and a flexible content block containing the main text of
-            the page. This is basically a taller version of the footer we just
-            created.
+            Esse é um layout bem comum, e não só para rodapés. Atualmente muitas 
+            páginas web tem barras laterais com largura fixa (ou múltiplas barras) 
+            e um bloco de conteúdo flexível contendo o texto principal da página. 
+            Isso é basicamente uma versão maior do que acabamos de fazer com nosso 
+            rodapé.
           </p>
         </div>
       </div>
@@ -1721,24 +1719,24 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="flex-items-and-auto-margins">
-              <span>Flex Items and Auto-Margins</span>
+              <span>Itens Flex e Auto-Margins</span>
             </h2>
           </div>
 
           <p>
-            Auto-margins in flexbox are special. They can be used as an
-            alternative to an
+            Margens automáticas <em>auto-margins</em> na flexbox são especiais. 
+            Elas podem ser utilizadas como uma alternativa a 
             <a href="index.html#grouping-flex-items"
-              >extra <code>&lt;div&gt;</code></a
+              ><code>&lt;div&gt; extra</code></a
             >
-            when trying to align a group of items to the left/right of a
-            container. Think of auto-margins as a “divider” for flex items in
-            the same container.
+            quando precisamos alinhas um grupo de items para a esquerda/direita 
+            de um conteiner. Pense em auto-margins como um “divisor” para itens 
+            flex no mesmo conteiner.
           </p>
 
           <p>
-            Let’s take a look by flattening our items in <code>.menu</code> so
-            that it matches the following:
+            Vamos dar uma olhada nivelando nossos itens no <code>.menu</code> 
+            para que ele fique como o seguinte:
           </p>
 
           <pre
@@ -1753,10 +1751,10 @@
 </code></pre>
 
           <p>
-            Reloading the page should make the items spread out equally through
-            our menu, just like at the beginning of the chapter. We can
-            replicate the desired layout by sticking an auto-margin between the
-            items we want to separate, like so:
+            Ao atualizar a página ela deve fazer com que os itens se distribuam de 
+            forma igual no nosso menu, como fizemos no começo do capítulo. Podemos 
+            replicar o layout desejado colocando um <code>auto-margin</code> entre 
+            os itens que desejamos separar, assim:
           </p>
 
           <pre
@@ -1767,13 +1765,13 @@
 </code></pre>
 
           <p>
-            Auto-margins eat up <em>all</em> the extra space in a flex
-            container, so instead of distributing items equally, this moves the
-            <code>.signup</code> and any following items (<code>.login</code>)
-            to the right side of the container. This will give you the exact
-            same layout we had before, but without that extra nested
-            <code>&lt;div&gt;</code> to group them. Sometimes, it’s nice to keep
-            your HTML flatter.
+            <em>Auto-margin</em> irá consumir <em>todo o espaço extra</em> em 
+            um conteiner flex, então ao invés de distribuir os itens igualmente, 
+            ela move o <code>.signup</code> e qualquer item seguinte 
+            (<code>.login</code>) para o lado direito do conteiner. Isso te 
+            dará exatamente o mesmo layout que tínhamos antes, mas sem aquela 
+            <code>&lt;div&gt;</code> extra aninhada para agrupa-los. É bom
+            deixar sua HTML bonito.
           </p>
         </div>
       </div>
@@ -1782,77 +1780,74 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            Flexbox gave us a ton of amazing new tools for laying out a web
-            page. Compare these techniques to what we were able to do with
+            Flexbox nos dá um tonelada de novas e incríveis ferramentas para 
+            desenvolver o layout de uma página web. Compare essas técnicas 
+            com o que podíamos fazer com 
             <a href="https://internetingishard.com/html-and-css/floats"
               >floats</a
-            >, and it should be pretty clear that flexbox is a cleaner option
-            for laying out modern websites:
+            >, e deve ficar bem claro que a flexbox é uma opção mais limpa 
+            para o desenvolver layouts modernos para páginas web:
           </p>
 
           <ul>
-            <li>Use <code>display: flex;</code> to create a flex container.</li>
+            <li>Use <code>display: flex;</code> para criar um conteiner flex.</li>
             <li>
-              Use <code>justify-content</code> to define the horizontal
-              alignment of items.
+              Use <code>justify-content</code> para definir o alinhamento horizontal 
+              dos itens.
             </li>
             <li>
-              Use <code>align-items</code> to define the vertical alignment of
-              items.
+              Use <code>align-items</code> para definir o alinhamento vertical dos itens.
             </li>
             <li>
-              Use <code>flex-direction</code> if you need columns instead of
-              rows.
+              Use <code>flex-direction</code> se você precisar de colunas ao invés de linhas.
             </li>
             <li>
-              Use the <code>row-reverse</code> or
-              <code>column-reverse</code> values to flip item order.
+              Use os valores de <code>row-reverse</code> ou <code>column-reverse</code> 
+              para mudar a ordem do item.
             </li>
             <li>
-              Use <code>order</code> to customize the order of individual
-              elements.
+              Use <code>order</code> para customizar a ordem de elementos individuais.
             </li>
             <li>
-              Use <code>align-self</code> to vertically align individual items.
+              Use <code>align-self</code> para verticalmente alinhar itens individuais.
             </li>
             <li>
-              Use <code>flex</code> to create flexible boxes that can stretch
-              and shrink.
+              Use <code>flex</code> para criar caixas flexíveis que podem encolher ou aumentar.
             </li>
           </ul>
 
           <p>
-            Remember that these flexbox properties are just a language that lets
-            you tell browsers how to arrange a bunch of HTML elements. The hard
-            part isn’t actually writing the HTML and CSS code, it’s figuring
-            out, conceptually (on a piece of paper), the behavior of all the
-            necessary boxes to create a given layout.
+            Lembre-se que essas propriedades flexbox são somente uma linguagem que 
+            deixa você dizer ao navegador como organizar esse monte de elementos HTML. 
+            A parte difícil não é escrever o código HTML e CSS, é descobrir, 
+            conceitualmente (em um pedaço de papel), o comportamente de todas as 
+            caixas necessárias para criar um determinado layout.
           </p>
 
           <p>
-            When a designer hands you a mockup to implement, your first task is
-            to draw a bunch of boxes on it and determine how they’re supposed to
-            stack, stretch, and shrink to achieve the desired design. Once
-            you’ve got that done, it should be pretty easy to code it up using
-            these new flexbox techniques.
+            Quando um desinger te entrega um mockup para implementar, sua primeira
+            tarefa é desenhar um monte de caixas dentro uma das outras e determinar 
+            como elas supostamente devem ser organizadas, aumentar e diminuir para 
+            alcançar o design desejado. Uma vez que você tenha conseguido isso, deve 
+            ser bem fácil codificar usando as novas técnicas da flexbox.
           </p>
 
           <p>
-            The flexbox layout mode should be used for most of your web pages,
-            but there are some things it’s not-so-good at, like gently tweaking
-            element positions and preventing them from interacting with the rest
-            of the page. After covering these kinds of advanced positioning
-            techniques in the next chapter, you’ll be an HTML and CSS
-            positioning expert.
+            O modo de layout da flexbox deve ser utilizado para suas páginas web, 
+            mas para algumas coisas elas não são boas, como gentilmente ajustar 
+            os posicionamentos dos elementos e previni-los de interagir com o 
+            resto da página. Depois de estudarmos essas técnicas de posicionamento 
+            avançados no próximo capítulo, você será um mestre na arte do 
+            posicionamento da HTML e CSS.
           </p>
 
           <div class="next-chapter">
-            <a href="../advanced-positioning/index.html">Next Chapter &gt;</a>
+            <a href="../advanced-positioning/index.html">Próximo Capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1862,83 +1857,83 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flexbox-overview"
-                  >Flexbox Overview</a
+                  >Visão Geral da Flexbox</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flex-containers"
-                  >Flex Containers</a
+                  >Conteineres Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#aligning-a-flex-item"
-                  >Aligning a Flex Item</a
+                  >Alinhando um Item Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#distributing-multiple-flex-items"
-                  >Distributing Flex Items</a
+                  >Distribuindo Itens Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#grouping-flex-items"
-                  >Grouping Flex Items</a
+                  >Agrupando Itens Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#cross-axis-vertical-alignment"
-                  >Cross-Axis Alignment</a
+                  >Alinhamento de Eixo Cruzado</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#wrapping-flex-items"
-                  >Wrapping Flex Items</a
+                  >Encapsulando Itens Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#flex-container-direction"
-                  >Flex Container Direction</a
+                  >Direcionamento de Conteiner Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flex-container-order"
-                  >Flex Container Order</a
+                  >Odernanção de Conteiner Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flex-item-order"
-                  >Flex Item Order</a
+                  >Ordenação de Itens Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flex-item-alignment"
-                  >Flex Item Alignment</a
+                  >Alinhamento de Itens Flex</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#flexible-items"
-                  >Flexible Items</a
+                  >Itens Flexíveis</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#flex-items-and-auto-margins"
-                  >Auto-Margins</a
+                  >Margens automáticas</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1953,7 +1948,7 @@
               <img
                 class="about__logo"
                 src="../../img/interneting-is-hard-logo-97b225.svg"
-                alt="Wi-fi signal with exclamation mark through it"
+                alt="Ícone do sinal Wi-Fi com um ponto de exclamação no meio"
               />
               <div class="about__rule-after"></div>
             </div>
@@ -1964,7 +1959,7 @@
                   ><img
                     class="about__twitter"
                     src="../../img/twitter-icon-29cd78.png"
-                    alt="Twitter logo"
+                    alt="Logo do Twitter"
                 /></a>
 
                 <a
@@ -1973,32 +1968,32 @@
                   ><img
                     class="about__facebook"
                     src="../../img/facebook-icon-e6def5.png"
-                    alt="Facebook logo"
+                    alt="Logo do Facebook"
                 /></a>
 
                 <a class="js-obfuscated-email__mailto"
                   ><img
                     class="about__email"
                     src="../../img/email-icon-a4c505.png"
-                    alt="Envelope icon"
+                    alt="Ícone de Envelope de carta"
                 /></a>
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutorials. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir dos leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -2012,14 +2007,14 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
                       class="input-text input-text--small
                               about__mailing-list-email js-about__mailing-list-email"
                       type="email"
-                      placeholder="you@example.com"
+                      placeholder="seunome@exemplo.com"
                     />
 
                     <div class="cta-button about__mailing-list-button">
@@ -2028,7 +2023,7 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
+                        Assinar
                       </button>
                     </div>
                   </div>
@@ -2040,11 +2035,11 @@
                   >
                     <span
                       class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
+                      >Erro!</span
                     >
                     <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
+                      >Não consigo assinar uma lista de e-mail sem um 
+                      endereço de e-mail...</span
                     >
                   </div>
                 </div>
@@ -2062,16 +2057,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
