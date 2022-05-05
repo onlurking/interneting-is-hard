@@ -436,24 +436,25 @@
 </code></pre>
 
           <p>
-            Browsers automatically scale up SVGs for retina devices, so this
-            500&times;250 pixel SVG image will render crisply on both standard
-            and retina devices.
+            Os navegadores ajustarão automaticamente as SVGs para telas retina, 
+            então essa imagem SVG com 500&times;250 pixel será renderizada de 
+            forma adequada tanto em telas padrões como em telas retina.
           </p>
 
           <p>
-            SVGs let us forget about screen resolution issues, but we do need to
-            shrink the illustration to fit neatly into our fluid tablet and
-            mobile layouts. Firefox will do this automatically, but if you open
-            this page with Chrome and make your browser very narrow, you’ll find
-            that the image stays the same size.
+            As SVG fazem a gente esquecer dos problemas de resolução de tela, 
+            mas precisamos diminuir a figura para caber corretamente no nosso 
+            layout para <em>tablets</em> e <em>smartphones</em>. O Firefox 
+            irá fazer isso automaticamente, mas se você abrir esta página com 
+            o Chrome e deixar a tela do seu navegador ficar bem estreita, você
+            vai achar que a imagem está no mesmo tamanho.
           </p>
 
           <p>
-            To get a fluid image in Chrome, we need to tell the illustration to
-            always fill the width of its container. In <code>styles.css</code>,
-            put the following rule with the rest of the base styles, outside of
-            the media queries:
+            Para ter uma imagem fluída no Chrome, precisamos dizer para a figura
+            sempre se ajustar a larguda do seu contêiner. No arquivo 
+            <code>styles.css</code>, coloque a seguinte regra com o resto do 
+            estilo base, fora das <em>media queries</em>:
           </p>
 
           <pre
@@ -464,10 +465,10 @@
 </code></pre>
 
           <p>
-            When we specify <code>100%</code> width on an image, it’ll assume we
-            want to maintain its aspect ratio and calculate its height
-            automatically. This fixes the mobile layout, but now the desktop
-            version is <em>huge</em>:
+            Quando especificamos a largura da nossa imagem em <code>100%</code>
+            ela irá assumir que queremos manter a proporção do aspecto e calculará
+            sua altura de forma automática. Isso corrige o layout para dispositivos
+            móveis, mas agora a versão desktop está <em>imensa</em>:
           </p>
 
           <figure class="diagram">
@@ -488,11 +489,11 @@
           </figure>
 
           <p>
-            This behavior is perfect for some designs (like the full bleed photo
-            we’ll see in the next section), but not right now. We want to cap
-            the width of the illustration to its inherent width, which is 500
-            pixels. We can do this with an
-            <a href="../hello-css/index.html#inline-styles">inline style</a>:
+            Esse comportamento é perfeito para alguns designs (como uma foto com
+            <em>full bleed</em> que veremos na próxima seção), mas não agora.
+            Queremos limitar a largura da figura a sua largura herdada, que é 
+            500 pixels. Conseguimos fazer isso com um
+            <a href="../hello-css/index.html#inline-styles">estilo em linha</a>:
           </p>
 
           <pre
@@ -503,11 +504,11 @@
 </code></pre>
 
           <p>
-            This is one of the rare times an inline style is acceptable, due to
-            the fact that it’s describing an innate property of the image. An
-            image’s physical dimensions are more content than presentation, so
-            it makes sense for this to appear in the HTML rather than the
-            stylesheet.
+            Essa é uma das raras vezes que um estilo em linha é aceitável, 
+            devido o fato que ela está descrevendo uma propriedade inata da 
+            imagem. Uma dimensão física da imagem é mais um conteúdo do que
+            uma apresentação, então faz sentido ela aparecer na HTML ao invés
+            de na folha de estilo.
           </p>
 
           <figure class="diagram">
@@ -537,25 +538,26 @@
               id="responsive-png-gif-and-jpg-images"
             >
               <span
-                >Responsive PNG, GIF, and
+                >Imagens PNG, GIF, e
                 <span class="subheading__desktop-title-br"><br /></span>JPG
-                Images</span
+                responsivas</span
               >
             </h2>
           </div>
 
           <p>
-            Of course, not all images on the web are SVGs. Sometimes you need to
-            include a photo. PNG, GIF, and JPG images are “raster images”,
-            meaning that they are defined pixel-by-pixel instead of with
-            vectors. As a result, they are much more sensitive to screen
-            resolution than SVGs.
+            É claro, nem todas as imagens na web são SVGs. Algumas vezes você 
+            vai precisar incluir uma fotografia. Imagens PNG, GIF e JPG são 
+            “imagens cerrilhadas” (como as <em>bitmap</em>), isso quer dizer 
+            que elas são definidas pixel-por-pixel ao invés de vetores. Como 
+            resultado, elas são mais sensíveis a resolução das telas que a SVG.
           </p>
 
           <p>
-            If you’re not worried about optimization, responsive raster images
-            really aren’t that much harder than using SVG images. Try swapping
-            out our existing <code>illustration.svg</code> with a PNG file:
+            Se vocẽ não estiver preocupada com otimização, imagens responsivas
+            com <em>bitmap</em> não são muito mais difíceis de usar do que 
+            imagens SVG. Tente mudar a imagem <code>illustration.svg</code>
+            por um arquivo PNG:
           </p>
 
           <pre
@@ -568,12 +570,12 @@
 </code></pre>
 
           <p>
-            We changed around the HTML structure a bit, nesting our
-            <code>&lt;img/&gt;</code> tag in another container. Without it, the
-            image would get distorted because flexbox would try to set its
-            height to be the same as the <code>.content</code> container. This
-            requires a little tweak to our <code>.illustration</code> CSS rule,
-            too:
+            Mudamos um pouco a estrutura HTML, aninhando nossa tag
+            <code>&lt;img/&gt;</code> em outro contêiner. Sem isso,
+            a imagem ficaria distorcida por que o flexbox tenta definir
+            sua altura para o mesmo valor do contêiner do <code>.content</code>.
+            Isso requer um pequeno <em>hack</em> na nossa regra CSS da 
+            <code>.illustration</code> também:
           </p>
 
           <pre
@@ -585,12 +587,13 @@
 </code></pre>
 
           <p>
-            Also notice the <code>-big</code> suffix in the image’s filename.
-            This is the high-resolution version of the PNG, which has dimensions
-            of 1000&times;500. Retina devices need this “2x” size to display the
-            image crisply. If we were to use the low-resolution version of this
-            image (500&times;250 pixels), it would look fine on standard
-            screens, but fuzzy on retina devices.
+            Perceba o sufixo <code>-big</code> no nome do arquivo da imagem.
+            Isso é uma versão de alta-resolução do PNG, que tem as dimensões
+            de 1000&times;500. Telas retina precisam de “2x” o tamanho da 
+            imagem para apresentar de forma correta, sem serrilhados. Se 
+            usarmos uma versão de baixa resolução da imagem (por exemplo
+            500&times;250 pixels), vai ficar adequado para telas padrões, 
+            mas vai ficar estranho em uma tela retina.
           </p>
 
           <figure class="diagram">
@@ -611,11 +614,12 @@
           </figure>
 
           <p>
-            Consider this the lazy way to create responsive PNG, GIF, or JPG
-            images, as it assumes everybody needs a high-resolution image, even
-            if they don’t. That is to say, a 1000&times;500 pixel image is
-            overkill for non-retina devices. We’ll get a little smarter about
-            this in the next section.
+            Considere isso uma forma preguiçosa de criar imagens PGN, GIF ou 
+            JPG responsivas, assim como assuma que todos precisam de uma 
+            imagem de alta resolução, mesmo que não. Isso por que, uma imagem 
+            de 1000&times;500 pixel é um exagero para telas padrão (não retina).
+            Vamos ver uma forma mais inteligente de resolver isso na próxima 
+            seção.
           </p>
         </div>
       </div>
@@ -624,7 +628,7 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="responsive-image-optimization">
-              <span>Responsive Image Optimization</span>
+              <span>Otimizando Imagens Responsivas</span>
             </h2>
           </div>
 
