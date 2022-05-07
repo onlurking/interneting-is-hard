@@ -633,33 +633,35 @@
           </div>
 
           <p>
-            Different devices have different image requirements. Fortunately,
-            HTML provides a way to choose the best image for the user’s device.
-            Over the next few sections, we’ll take a look at three scenarios for
-            optimizing responsive images:
+            Diferentes telas tem necessidades de imagens diferentes. Felizmente,
+            a HTML provê um forma de escolher a melhor imagem para a tela do
+            usuário. Nas próximas seções, vamos dar uma olhada em três 
+            cenários para otimizar as imagens responsivas:
           </p>
 
           <ul>
             <li>
-              A standard-resolution screen that doesn’t need a retina-quality
-              image.
+              Uma tela com resolução padrão que não precisa de uma imagem com
+              qualidade de tela retina.
             </li>
             <li>
-              A retina mobile device that can use a standard-quality image
-              because it’s been scaled down so much.
+              Uma tela retina de dispositivo móvel que pode utilizar uma
+              umagem de qualidade padrão porque é muito pequena para perceber
+              a diferença.
             </li>
             <li>
-              A desktop layout that uses a wide image, and an associated mobile
-              layout that uses a taller image.
+              Um layout para desktop que usa uma imagem larga, e um layout para
+              dispositivos móveis associada que usa uma imagem mais alta.
             </li>
           </ul>
 
           <p>
-            The first method is the easiest, and it’s great for images smaller
-            than 600 pixels wide because they aren’t big enough to benefit from
-            the second scenario. The second method is a very important
-            optimization for larger images, especially full-bleed photos. The
-            third is for when you’re feelin’ fancy.
+            O primeiro método é o mais fácil, e é ótimo para imagens menores
+            que 600 pixels por que elas não são grandes o suficiente para 
+            beneficiar o segundo cenário. O segundo método é muito importante
+            para imagens maiores, especialmente para imagens utilizadas em
+            layouts <em>full-bleed</em>. O terceiro é para quando você tá
+            extravagante, tá podendo usufruir de todas as possibilidades.
           </p>
         </div>
       </div>
@@ -671,24 +673,23 @@
               class="subheading__heading"
               id="retina-optimization-using-srcset"
             >
-              <span>Retina Optimization Using srcset</span>
+              <span>Otimização de telas Retina usando srcset</span>
             </h2>
           </div>
 
           <p>
-            High-resolution images are big. Our
-            <code>illustration-big.png</code> file takes up more than twice as
-            much disk space as its low-resolution counterpart. It doesn’t make
-            sense to serve all that extra data when the user doesn’t actually
-            need it.
+            Imagens de alta resolução são realmente grandes! Nosso arquivo com
+            <code>illustration-big.png</code> ocupa duas vezes o tamanho em 
+            disco comparado com uma imagem em baixa resolução. Não faz sentido
+            colocar uma imagem assim tão grande quando o usuário não precisa.
           </p>
 
           <p>
-            Adding a <code>srcset</code> attribute to our
-            <code>&lt;img/&gt;</code> element lets us present our
-            high-resolution image <em>only</em> to retina devices, falling back
-            to the low-resolution version for standard screens. Update our
-            <code>.illustration</code> element to match the following:
+            Adicionando o atributo <code>srcset</code> no nosso elemento
+            <code>&lt;img/&gt;</code> permite que apresentemos nossa 
+            imagem de alta resolução <em>somente</em> para telas retina,
+            e usando a versão de baixa resolução para telas padrões. Altere
+            o elemento <code>.illustration</code> para ficar igual ao seguinte:
           </p>
 
           <pre
@@ -702,13 +703,14 @@
 </code></pre>
 
           <p>
-            The <code>srcset</code> attribute points to a list of alternative
-            image files, along with properties defining when the browser should
-            use each of them. The <code>1x</code> tells the browser to display
-            <code>illustration-small.png</code> on standard-resolution screens.
-            The <code>2x</code> means that <code>illustration-big.png</code> is
-            for retina screens. Older browsers that don’t understand
-            <code>srcset</code> fall back to the <code>src</code> attribute.
+            O atributo <code>srcset</code> aponta para uma lista de arquivos
+            de imagens alternativo, através dessa propriedade podemos definir
+            quando o navegador deve usar cada uma dessas imagens. O <code>lx</code>
+            diz ao navegador para mostrar <code>illustration-small.png</code>
+            nas telas padrões. O <code>2x</code> indica que a 
+            <code>illustration-png.png</code> é para telas retina. navegadores
+            mais antigos que não entendem o atributo <code>srcset</code> vão
+            utilizar o atributo <code>src</code> como alternativa.
           </p>
 
           <figure class="diagram">
@@ -726,17 +728,18 @@
           </figure>
 
           <p>
-            Typically, the low-res and high-res versions of an image would be
-            the exact same (except for their dimensions), but we made
-            <code>illustration-small.png</code> yellow so you can easily
-            differentiate it from the retina version, which is blue.
+            Normalmente as versões de baixa e alta resolução de uma imagem
+            deveriam ser exatamente iguais (exceto pelas suas dimensões), 
+            mas nós utilizamos a <code>illustration-small.png</code> em 
+            amarelo para que você pudesse diferenciar facilmente da versão
+            retina, que é azul.
           </p>
 
           <p>
-            It’s a little hard to see this in action without a real website, so
-            we included the previous snippet on this page. The image below
-            should be blue if you’re viewing it on a retina device. Otherwise,
-            it will be yellow for standard-resolution screens.
+            É um pouco difícil de ver isso funcionando sem uma página real, 
+            então incluímos uma versão de exemplo nesta página. A imagem 
+            abaixo deve ser azul se você estiver vendo em uma tela retina. 
+            Caso contrário, será amarela em telas padrões.
           </p>
 
           <figure style="margin-top: 1em; margin-bottom: 1em;">
@@ -751,10 +754,10 @@
           </figure>
 
           <p>
-            If you’re building these examples on a computer with a retina
-            screen, you can also try temporarily changing that
-            <code>2x</code> to <code>1x</code> to see what a non-retina image
-            looks like. It’s a little fuzzy (and yellow).
+            Se você estiver fazendo esses exemplos em um computador com 
+            uma tela retina, você pode tentar mudar temporariamente o valor 
+            <code>2x</code> para <code>1x</code> para ver como uma tela
+            não-retina se parece. Fica um pouco confuso (e amarelo).
           </p>
         </div>
       </div>
@@ -766,16 +769,16 @@
               class="subheading__heading"
               id="screen-width-optimization-using-srcset"
             >
-              <span>Screen Width Optimization Using srcset</span>
+              <span>Otimização da largura de tela usando srcset</span>
             </h2>
           </div>
 
           <p>
-            Great! We can save some extra bytes for non-retina devices.
-            Regrettably, the above <code>srcset</code> technique misses an
-            important use case for larger images: if the user has a retina
-            smartphone, it’ll download the high-resolution image even when the
-            standard version would suffice.
+            Ótimo! Podemos salvar algum espaço extra para telas não-retina.
+            Infelizmente, a técnica de usar o <code>srcset</code> não 
+            satisfaz um caso muito importante para imagens grande: se o 
+            usuário tem um <em>smartphone</em>, ele irá baixar a imagem
+            em alta resolução, mesmo quando a versão padrão for suficiente.
           </p>
 
           <figure class="diagram">
@@ -796,26 +799,28 @@
           </figure>
 
           <p>
-            Imagine that we wanted to display a big photo in our
-            <code>.header</code> element. The header is 960 pixels wide in our
-            desktop layout, so our photo needs to be at least 1920 pixels wide
-            to display well on retina screens. We’ll also provide a 960
-            pixel-wide photo for standard screens. Now, consider a smartphone
-            with a retina screen. Smartphones are typically less than 400 pixels
-            wide in portrait mode, which means that the corresponding
-            retina-quality image would only need to be 800(ish) pixels wide.
+            Imagine que nós queremos mostrar uma imagem grande 
+            no nosso elemento <code>.header</code>. O cabeçalho tem uma 
+            largura de 960 pixels no layout para desktop, então nossa imagem
+            precisa ter pelo menos 1920 pixels de largura para ser utilizado 
+            em uma tela retina. Também iremos providenciar uma imagem com
+            960 pixels de largura para telas padrões. Agora, considere 
+            um <em>smartphone</em> com tela retina. <em>Smartphones</em> tem
+            normalmente menos de 400 pixels de largura em modo retrato, o que
+            significa que uma imagem correspondente com qualidade de retina 
+            deve ter até 800 pixels de largura.
           </p>
 
           <p>
-            Hey! We can serve our standard-resolution photo to retina
-            smartphones!
+            Ou seja, podemos utilizar uma imagem com resolução padrão 
+            para <em>smartphones</em> com tela retina!
           </p>
 
           <p>
-            The lesson here is that we want to optimize larger images based on
-            their final rendered dimensions, not just the device’s screen
-            resolution. Let’s go ahead and add that big photo to our
-            <code>.header</code> element:
+            A lição aqui é que queremos otimizar imagens largas baseadas 
+            nas dimensões finais de apresentação, não somente na resolução
+            do dispositivo. Vamos lá, adicione a imagem grande ao nosso
+            elemento <code>.header</code>:
           </p>
 
           <pre
@@ -832,15 +837,16 @@
 </code></pre>
 
           <p>
-            We have the same <code>srcset</code> element as the last section,
-            but instead of the <code>1x</code> and <code>2x</code> descriptors,
-            we’re providing the inherent physical width of the image. The
-            <code>2000w</code> tells the browser that the
-            <code>photo-big.jpg</code> file is 2000 pixels wide. Likewise, the
-            <code>1000w</code> means <code>photo-small.jpg</code> has a width of
-            1000 pixels. If you’re wondering about that
-            <code>w</code> character, it’s a special unit used only for this
-            kind of image optimization scenario.
+            Nós temos o mesmo elemento <code>srcset</code> como na última seção,
+            mas ao invés de usar os descritores <code>1x</code> ou <code>2x</code>
+            estamos deixando que a imagem herde a largura física. O valor 
+            <code>2000w</code> diz ao navegador que o arquivo 
+            <code>photo-big.jpg</code> tem 2000 pixels de largura. Assim como,
+            o valor <code>1000w</code> diz que <code>photo-small.jpg</code>
+            tem a largura de 1000 pixels. Se você está imaginando o que o 
+            caracter <code>w</code> significa, é uma unidade especial 
+            utilizada somente para esse tipo de cenário de otimização de 
+            imagens.
           </p>
 
           <figure class="diagram">
@@ -861,12 +867,12 @@
           </figure>
 
           <p>
-            Image width alone isn’t enough for a device to determine which image
-            it should load. We also need to tell it what the final rendered
-            width of the image will be. That’s where the
-            <code>sizes</code> attribute comes in. It defines a series of media
-            queries along with the image’s rendered width when that media query
-            is in effect.
+            A largura de uma imagem sozinha não é suficiente para um dispositivo
+            determinar qual imagem deve ser carregada. Também precisamos dizer 
+            qual a largura final da imagem será usada. É aqui que o atributo
+            <code>sizes</code> entra. Ele define uma série de <em>media queries</em>
+            junto da largura renderizada da imagem quando aquela <em>media query</em>
+            está ativa.
           </p>
 
           <figure class="diagram">
@@ -887,22 +893,23 @@
           </figure>
 
           <p>
-            Here, we’re saying that when the screen is at least
-            <code>960px</code> wide, the image will also be 960 pixels wide.
-            Otherwise, the <code>100vw</code> default value tells the browser
-            that the image’s width will be 100% of the “viewport width” (a fancy
-            term for screen width). You can read more about the
+            Aqui, estamos dizendo que quando a tela tem pelo menos 
+            <code>960px</code> de largura, a imagem terá também 960 pixels
+            de largura. Caso contrário, o valor padrão de <code>100vw</code>
+            será usado e dirá ao navegador que a largura da imagem será 
+            de 100% da largura da “viewport” (é um jeito chique de dizer a
+            largura da tela). Você pode ler mais sobre a 
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"
-              ><code>vw</code> unit</a
-            >
-            over at MDN. All of this matches the image resizing behavior that’s
-            in our CSS.
+              >unidade <code>vw</code></a
+            > na MDN. Tudo isso para casar com o comportamento de 
+            redimensionamento da imagem na nossa CSS.
           </p>
 
           <p>
-            Speaking of which, we need to make some changes to position our new
-            header image correctly. Add both of the following rules to our other
-            base styles, right above the mobile styles media query:
+            Falando nisso, precisamos fazer algumas mudanças para posicionar
+            nossa nova imagem no cabeçalho de forma correta. Adicione as duas
+            regras abaixo aos nossos outros estilos base, logo acima do 
+            <em>media query</em> do estilo para dispositivos móveis:
           </p>
 
           <pre
@@ -920,34 +927,38 @@
 </code></pre>
 
           <p>
-            Remember that our low-resolution photo is 1000 pixels wide, which
-            means that 2x retina devices can use it as long as their screen is
-            less than 500 pixels wide. In Firefox, you should now be able to
-            resize the browser to see the retina version (“Big”) when the window
-            is wider than 500 pixels and the non-retina version (“Small”) for
-            narrower widths.
+            Lembre-se que nossa imagem de baixa resolução tem a largura de 
+            1000 pixels, quer dizer que dispositivos com tela retina podem 
+            utilizar uma vez que suas telas tenham menos que 500 pixels de 
+            largura. No Firefox, você poded agora redimensionar o navegador 
+            para vizualizar a versão com retina (“Grande”) quando a janela
+            é maior que 500 pixels e a versão não-retina (“Pequena”) para 
+            telas mais estreitas.
           </p>
 
           <p>
-            We’re now serving a 115KB image to mobile devices instead of forcing
-            them to use the high-res 445KB image. That’s a big deal, especially
-            for websites that use a lot of photos.
+            Agora estamos ofertando uma imagem de 115KB para dispositivos móveis
+            ao invés de forçá-los a utilizar uma imagem de alta resolução com 
+            445KB. Isso é bastante coisa, especialmente para páginas que usam 
+            muitas imagens.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="testing-with-chrome">
-              Testing With Chrome
+              Testando com o Chrome
             </h3>
           </div>
 
           <p>
-            This technique works just fine in Chrome, but we can’t really tell
-            because it’s being clever. Chrome will always use the high-res
-            version if it has already been cached locally, which means we can’t
-            see the low-res version by simply making the browser window narrow.
-            We have to avoid the local browser cache by opening a new incognito
-            window, then avoid loading <code>photo-big.jpg</code> by making the
-            window very narrow <em>before</em> loading the page.
+            Essa técnica funciona muito bem no Chrome, mas não podemos dizer 
+            que é o mais inteligentes. O Chrome sempre irá utilizar a versão 
+            de alta resolução se ele já tiver ela já tiver sido armazenada
+            no cache localmente, quer dizer que não podemos ver a versão 
+            de baixa resolução simplesmente diminuindo o tamanho da janela 
+            do navegador. Precisamos evitar o cache local do navegador 
+            abrindo uma noga janela <em>incognito</em>, e depois evitando 
+            carregar a versão <code>photo-bit.jpg</code> deixando a janela
+            do navegador bem estreita <em>antes</em> de carregar a página.
           </p>
         </div>
       </div>
@@ -956,24 +967,26 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="art-direction-using-picture">
-              <span>Art Direction Using &lt;picture&gt;</span>
+              <span>Direção de arte usando &lt;picture&gt;</span>
             </h2>
           </div>
 
           <p>
-            The previous section is perfectly acceptable in terms of optimizing
-            data usage. We could stop there and be just fine, but we’re going to
-            get a little bit fancier with “art direction”. Think of art
-            direction as responsive image optimization for designers.
+            A seção anterior é perfeitamente aceitável em termos de otimização
+            para uso de dados. Poderíamos parar por aqui e estaria ótimo, mas
+            vamos deixar as coisas um pouco mais chiques com uma pitada de 
+            “direção de arte”. Pense em direção de arte como otimização de 
+            imagens responsivas para designers.
           </p>
 
           <p>
-            It lets you optimize <em>layouts</em> by sending completely
-            different images to the user depending on their device. Compare this
-            to the previous section, which optimized the <em>same</em> image for
-            different devices. For instance, our header photo is pretty wide.
-            Wouldn’t it be great if we could crop a taller version and present
-            that to mobile devices instead of the wide desktop version?
+            Isso permite que você otimize os <em>layouts</em> enviando imagens
+            completamente diferentes para o usuário dependendo do dispositivo 
+            que estive usando. Compare isso à seção anterior, que otimizamos 
+            a <em>mesma</em> imagem para diferentes dispositivos. Por exemplo,
+            nossa imagem de cabeçalho é bem larga. Não seria ótimos se 
+            pudéssemos cortar uma versão menor e apresentar aos dispositivos 
+            móveis ao invés de uma versão mais larga usando em desktops?
           </p>
 
           <figure class="diagram">
@@ -991,10 +1004,11 @@
           </figure>
 
           <p>
-            For this, we need the <code>&lt;picture&gt;</code> and
-            <code>&lt;source&gt;</code> elements. The former is just a wrapper,
-            and the latter conditionally loads images based on media queries.
-            Try changing our <code>.header</code> element to the following:
+            Para isso, precisamos com utilizar os elementos 
+            <code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code>. O
+            primeiro é somente um empacotador e o segundo carrega a imagem 
+            baseado nos <em>media queries</em>. Tente alterar o elemento 
+            <code>.header</code> para o seguinte:
           </p>
 
           <pre
@@ -1013,13 +1027,13 @@
 </code></pre>
 
           <p>
-            Conceptually, this is pretty similar to using media queries in CSS.
-            In each <code>&lt;source&gt;</code> element, the
-            <code>media</code> attribute defines <em>when</em> the image should
-            be loaded, and <code>srcset</code> defines <em>which</em> image file
-            should be loaded. The <code>&lt;img/&gt;</code> element is only used
-            as a fallback for older browsers. You should be able to see the tall
-            version of the photo when you shrink your browser window:
+            Conceitualmente, isso é muito similar a utilizar as <em>media queries</em>
+            na CSS. Em cada elemento <code>&lt;source&gt;</code>, o atributo
+            <code>media</code> define <em>quando</em> a imagem deve ser carregada, e
+            o elemento <code>srcset</code> define <em>qual</em> arquivo de imagem 
+            deve ser carregado. O elemento <code>&lt;img/&gt;</code> só é usado 
+            como uma garantia para navegadores antigos. Você deve conseguir ver
+            a versão mais alta da imagem quando você diminuir a janela do navegador:
           </p>
 
           <figure class="diagram">
@@ -1040,23 +1054,23 @@
           </figure>
 
           <p>
-            This level of control will make your designer very happy, but the
-            trade off is that it doesn’t let the browser automatically pick the
-            optimal image. This means we lost our retina optimization from the
-            previous section: as long as the screen width is 401 pixels or
-            greater, the browser will <em>always</em> use the high-resolution,
-            wide-cropped image.
+            Esse nível de controle fará seu designer bem feliz, mas em 
+            compensação não vai deixar o navegador pegar a versão automática 
+            a imagem de mais alta qualidade. Isso significa que nós perdemos
+            nossa otimização para telas retina da seção anterior: uma vez que
+            a largura da tela tenha 401 pixels ou mais, o navegador irá 
+            <em>sempre</em> utilizar a versão em alta resolução e cortada.
           </p>
 
           <p>
-            While it is possible to combine the best of both worlds, it gets
-            complicated real quick. Our recommendation is to stick to the
-            <code>1x</code> and <code>2x</code> version of
-            <code>srcset</code> for images less than 600 pixels wide, use the
-            <code>srcset</code> plus <code>sizes</code> method from the previous
-            section for bigger photos, and reserve
-            <code>&lt;picture&gt;</code> for when you’re trying to do something
-            real fancy with your designer.
+            Enquanto é possível combinar o melhor dos dois mundos, isso também
+            pode ficar complicado bem rápido. Nossa recomendação é utilizar a
+            versão de <code>1x</code> e <code>2x</code> do <code>srcset</code>
+            para imagens menores que 600 pixels de largura, use o método do
+            <code>srcset</code> com o <code>sizes</code> da seção anterior 
+            para imagens maiores, e guarde o método com o 
+            <code>&lt;picture&gt;</code> para quando você quiser tentar fazer
+            algo bem diferenciado juntamente com o designer.
           </p>
         </div>
       </div>
@@ -1065,59 +1079,61 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="summary">
-              <span>Summary</span>
+              <span>Resumo</span>
             </h2>
           </div>
 
           <p>
-            Responsive images may seem rather complicated, but there’s really
-            only two problems we’re trying to solve:
+            Imagens responsivas podem parecer muito complicado, mas só tem 
+            realmente dois problemas que estamos tentando resolver:
           </p>
 
           <ul>
             <li>
-              Make images fit into mobile layouts while respecting their
-              intrinsic size
+              Fazer as imagens caberem em layouts para dispositivos móveis
+              respeitando o tamanho intrínseco delas.
             </li>
             <li>
-              Avoid making the user download unnecessarily large image files
+              Evitar fazer <em>downloads</em> desnecessários de imagens 
+              muito grande.
             </li>
           </ul>
 
           <p>
-            We accomplished the former by making images always stretch to fill
-            100% of their container while limiting their size with an inline
-            <code>max-width</code> style. For the latter, we used
-            <code>srcset</code> to optimize for screen resolution,
-            <code>srcset</code> plus <code>sizes</code> to optimize for device
-            width, and finally the <code>&lt;picture&gt;</code> element for
-            manual control over which image file is displayed.
+            Alcançamos o primeiro fazendo com que as imagens sempre se estiquem
+            para preencher 100% de seu contêiner, enquanto limitamos seu tamanho 
+            com um estilo de largura máxima. Para o segundo, usamos o 
+            <code>srcset</code> para otimizar a resolução da tela,
+            <code>srcset</code> mais <code>sizes</code> para otimizar a largura
+            do dispositivo, e finalmente o elemento <code>&lt;picture&gt;</code>
+            para um controle manual sobre qual imagem será apresentado.
           </p>
 
           <p>
-            <a href="../responsive-design/index.html">Responsive design</a> is
-            an evolving topic. Browsers only recently implemented the image
-            optimization techniques covered in this chapter, despite the fact
-            that responsive design has been the standard for half a decade.
-            While the technology used to create a responsive website may change,
-            the fundamental problem of presenting the same content to different
-            devices will never disappear. So, even if you eventually need to
-            learn some new tools, the foundational concepts we just introduced
-            should stay with you forever.
+            <a href="../responsive-design/index.html">Design responsivo</a> é
+            um tópico em evolução. Os navegadores só recentemente implementaram
+            as técnicas de otimização de imagens tratados nesse capítulo, 
+            mesmo que design responsivo seja um padrão por mais de meia década.
+            Enquanto as tecnologias utilizadas para criar uma página responsiva 
+            podem mudar, os problemas fundamentais de apresentação de conteúdo
+            em diferentes dispositivos nunca irão desaparecer. Então, mesmo 
+            que você tenha que eventualmente aprender alguma nova ferramenta,
+            os conceitos fundamentais que introduzimos devem seguir com você
+            pra sempre.
           </p>
 
           <p>
-            These last five chapters focused entirely on layout. We explored
-            floats, flexbox, advanced positioning, and how to apply all those
-            concepts to various screen widths. This is pretty much everything
-            you’ll ever need to lay out web pages with HTML and CSS. The next
-            chapter scuffles back into the world of HTML, introducing a bunch of
-            new elements that will make search engines much happier with our
-            websites.
+            Esses últimos cinco capítulos focaram somente nos layouts. 
+            Exploramos floats, flexbox, posicionamento avançado e como aplicar
+            todos esses conceitos a várias telas de larguras diferentes. Isso
+            é basicamente tudo que você precisa saber para desenvolver páginas
+            web com HTML e CSS. O próximo capítulo volta ao mundo da HTML, 
+            introduzindo um monte de novos elementos que farão os mecanismos
+            de busca muito mais felizes com nossas páginas web.
           </p>
 
           <div class="next-chapter">
-            <a href="../semantic-html/index.html">Next Chapter &gt;</a>
+            <a href="../semantic-html/index.html">Próximo capítulo &gt;</a>
           </div>
         </div>
       </div>
@@ -1127,55 +1143,55 @@
           <div class="sidebar__wrapper">
             <ul class="sidebar__list">
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#setup">Setup</a>
+                <a class="sidebar__link" href="index.html#setup">Configuração</a>
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#retina-screens"
-                  >Retina Screens</a
+                  >Telas Retina</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a class="sidebar__link" href="index.html#responsive-svg-images"
-                  >Responsive SVG Images</a
+                  >Imagens SVG Responsivas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#responsive-png-gif-and-jpg-images"
-                  >Responsive Raster Images</a
+                  >Imagens pixeladas Responsivas</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#responsive-image-optimization"
-                  >Image Optimization</a
+                  >Otimização de Imagem</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#retina-optimization-using-srcset"
-                  >Retina Optimization w/ srcset</a
+                  >Otimizando Retina com srcset</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#screen-width-optimization-using-srcset"
-                  >Screen Width Optimization</a
+                  >Otimização de Largura</a
                 >
               </li>
               <li class="sidebar__list-item">
                 <a
                   class="sidebar__link"
                   href="index.html#art-direction-using-picture"
-                  >Art Direction w/ &lt;picture&gt;</a
+                  >Direção de Arte com &lt;picture&gt;</a
                 >
               </li>
               <li class="sidebar__list-item">
-                <a class="sidebar__link" href="index.html#summary">Summary</a>
+                <a class="sidebar__link" href="index.html#summary">Resumo</a>
               </li>
             </ul>
           </div>
@@ -1222,20 +1238,20 @@
               </div>
 
               <p class="about__description">
-                <em>InternetingIsHard.com</em> is an independent publisher of
-                premium web development tutorials. All content is authored and
-                maintained by Oliver James. He loves hearing from readers, so
-                <a href="../../contact/index.html">come say hello</a>!
+                <em>InternetingIsHard.com</em> é feita de forma independente
+                por um desenvolvedor de tutorials. Todo conteúdo é autoral e 
+                mantido por Oliver James. Ele ama ouvir dos leitores, então
+                <a href="../../contact/index.html">venha dizer um oi</a>!
               </p>
             </div>
 
             <div class="about__mailing-list">
               <div class="about__mailing-list-description">
-                More tutorials are coming. (Lots more.)<br />
-                Enter your email
-                <span class="about__mailing-list-below">below</span
-                ><span class="about__mailing-list-above">above</span>, and we’ll
-                let you know when they get here.
+                Mais tutoriais virão. (Muito mais.)<br />
+                Informe seu e-mail
+                <span class="about__mailing-list-below">abaixo</span
+                ><span class="about__mailing-list-above">acima</span>, e nós
+                vamos te avisar quando eles chegarem aqui.
               </div>
 
               <form
@@ -1249,7 +1265,7 @@
                     <label
                       for="about__mailing-list-email"
                       class="about__mailing-list-email-label"
-                      >Email</label
+                      >E-mail</label
                     >
                     <input
                       id="about__mailing-list-email"
@@ -1265,24 +1281,24 @@
                                  about__mailing-list-button-link
                                  js-about__mailing-list-button-link"
                       >
-                        Subscribe
-                      </button>
-                    </div>
+                      Assinar
+                    </button>
                   </div>
                 </div>
-                <div class="slide-animation slide-animation--hidden">
-                  <div
-                    class="input-status about__mailing-list-status
-                          js-about__mailing-list-status"
+              </div>
+              <div class="slide-animation slide-animation--hidden">
+                <div
+                  class="input-status about__mailing-list-status
+                        js-about__mailing-list-status"
+                >
+                  <span
+                    class="input-status__title js-about__mailing-list-status-title"
+                    >Erro!</span
                   >
-                    <span
-                      class="input-status__title js-about__mailing-list-status-title"
-                      >Error!</span
-                    >
-                    <span class="js-about__mailing-list-status-text"
-                      >Can’t sign up for a mailing list without an email
-                      address...</span
-                    >
+                  <span class="js-about__mailing-list-status-text"
+                    >Não consigo assinar uma lista de e-mail sem um 
+                    endereço de e-mail...</span
+                  >
                   </div>
                 </div>
               </form>
@@ -1299,16 +1315,16 @@
           </div>
           <div class="footer__links">
             <div class="footer__item footer__item--auto">
-              <a href="../../contact/index.html">Contact</a>
+              <a href="../../contact/index.html">Contato</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/licensing/index.html">Licensing</a>
+              <a href="../../legal/licensing/index.html">Licenças</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/privacy/index.html">Privacy</a>
+              <a href="../../legal/privacy/index.html">Privacidade</a>
             </div>
             <div class="footer__item">
-              <a href="../../legal/terms-of-service/index.html">Terms</a>
+              <a href="../../legal/terms-of-service/index.html">Termos</a>
             </div>
           </div>
         </div>
