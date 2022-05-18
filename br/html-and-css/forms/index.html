@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML Forms Tutorial | HTML &amp; CSS Is Hard</title>
+    <title>Tutorial Formulários HTML | HTML &amp; CSS é Difícil</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -168,7 +168,7 @@
         </div>
         <div>
           <a class="main-nav__name" href="../../index.html"
-            >Interneting Is Hard</a
+            >Fazer Front é Difícil</a
           >
         </div>
       </div>
@@ -181,16 +181,16 @@
       <header class="page-header">
         <div class="page-header__wrapper">
           <div class="heading">
-            <h1 class="heading__title">HTML Forms</h1>
+            <h1 class="heading__title">Formulários HTML</h1>
             <div class="heading__parenthesis-rule">
               <div class="heading__rule-before"></div>
               <div class="heading__parenthesis">
-                Nº 13. of <a href="../index.html">HTML &amp; CSS Is Hard</a>
+                Nº 13. de <a href="../index.html">HTML &amp; CSS é Difícil</a>
               </div>
               <div class="heading__rule-after"></div>
             </div>
             <div class="heading__subtitle">
-              A friendly web development tutorial for capturing user input
+              Um tutorial amigável de desenvolvimento web para capturar dados inseridos pelo usuário
             </div>
           </div>
         </div>
@@ -199,10 +199,12 @@
       <div class="content">
         <div class="content__wrapper content__wrapper--first">
           <p>
-            HTML form elements let you collect input from your website’s
-            visitors. Mailing lists, contact forms, and blog post comments are
-            common examples for small websites, but in organizations that rely
-            on their website for revenue, forms are sacred and revered.
+            Formulários HTML permitem que você colete informações dos 
+            visitantes da sua página web. Listas de e-mails, formulários 
+            de contato, e comentários em postagens de blogs são exemplos
+            comuns para páginas web pequenas, mas em organizações que 
+            dependem da sua página web para obtenção de receita, os 
+            formulários são sagrados e reverenciados.
           </p>
 
           <figure class="diagram">
@@ -223,14 +225,16 @@
           </figure>
 
           <p>
-            Forms are the “money pages.” They’re how e-commerce sites sell their
-            products, how SaaS companies collect payment for their service, and
-            how non-profit groups raise money online. Many companies measure the
-            success of their website by the effectiveness of its forms because
-            they answer questions like “how many leads did our website send to
-            our sales team?” and “how many people signed up for our product last
-            week?” This often means that forms are subjected to endless A/B
-            tests and optimizations.
+            Formulários são as “páginas do dinheiro”. São através deles que 
+            páginas tipo e-comércio vendem os seus produtos, como companhias
+            que desenvolvem SaaS recebem os pagamentos por seus serviços, e
+            como grupos sem fins lucrativos conseguem levantar dinheiro on-line.
+            Muitas empresas medem o sucesso da sua página web pela efetividade
+            dos seus formulários porque eles respondem questões como “quantas
+            confirmações foram enviadas para nossa equipe de vendas?” e “quantas
+            pessoas assinaram para receber informações sobre nossos produtos na 
+            última semana?”. Isso normalmente significa que os formulários são
+            temas de testes A/B infinitos e para otimização.
           </p>
 
           <figure class="diagram">
@@ -251,13 +255,15 @@
           </figure>
 
           <p>
-            There are two aspects of a functional HTML form: the frontend user
-            interface and the backend server. The former is the
-            <em>appearance</em> of the form (as defined by HTML and CSS), while
-            the latter is the code that processes it (storing data in a
-            database, sending an email, etc). We’ll be focusing entirely on the
-            frontend this chapter, leaving backend form processing for a future
-            tutorial.
+            Existem dois aspectos de um formulário HTML funcional: a interface
+            com o usuário (<em>frontend</em>) e a comunicação com o servidor
+            (<em>backend</em>). O primeiro é responsável pela <em>aparência</em> 
+            do formalário (conforme for definido pela HTML e CSS), enquanto o 
+            segundo é o código que processa as informações (armazenando dados 
+            em um banco de dados, enviando e-mail, etc). Vamos focar 
+            inteiramente no <em>frontend</em> neste capítulo, deixando o 
+            processamento do formulário no <em>backend</em> para um tutorial 
+            futuro.
           </p>
         </div>
       </div>
@@ -265,15 +271,15 @@
       <div class="content">
         <div class="content__wrapper">
           <div class="subheading">
-            <h2 class="subheading__heading" id="setup"><span>Setup</span></h2>
+            <h2 class="subheading__heading" id="setup"><span>Configuração</span></h2>
           </div>
 
-          <p>
-            Unfortunately, there’s really no getting around that fact that
-            styling forms is <em>hard</em>. It’s always a good idea to have a
-            mockup representing the exact page you want to build before you
-            start coding it up, but this is particularly true for forms. So,
-            here’s the example we’ll be creating in this chapter:
+          <p>Infelizmente, realmente não há como contornar o fato de que a 
+            estilização dos formulários é <em>difícil</em>. É sempre uma boa
+            ideia ter um modelo que represente a página exatamente como você
+            deseja construir antes de você começar a programar, e isso é 
+            particularmente verdade para formulário. Então, aqui está o 
+            exemplo que criaremos neste capítulo:
           </p>
 
           <figure class="diagram">
@@ -294,22 +300,24 @@
           </figure>
 
           <p>
-            As you can see, this is a speaker submission form for a fake
-            conference. It hosts a pretty good selection of HTML forms elements:
-            various types of text fields, a group of radio buttons, a dropdown
-            menu, a checkbox, and a submit button.
+            Como você pode ver, essa é um formulário de submissão para 
+            palestra para uma conferência de mentirinha. Ela contempla 
+            muitos campos de elementos HTML para criar o formulário: 
+            muitos tipos de campos de texto, um grupo de botões rádio, 
+            um menu deslizante, uma caixa de seleção e um botão de submissão.
           </p>
 
           <p>
-            Create a new
+            Crie um novo 
             <a href="../introduction/index.html#atom-text-editor"
-              >Atom project</a
+              >projeto Atom</a
             >
-            called <code>forms</code> and stick a new HTML file in it called
-            <code>speaker-submission.html</code>. For starters, let’s add the
-            markup for the header. (Hey look! It has
-            <a href="../semantic-html/index.html#headers">some semantic HTML</a
-            >!)
+            chamado <code>forms</code> e um novo arquivo HTML chamado
+            <code>speaker-submission.html</code>. Para começar, vamos 
+            adicionar algumas marcações como o cabeçalho (&lt;header&gt;).
+            Veja! Temos alguma 
+            <a href="../semantic-html/index.html#headers">semantica HTML</a
+              >!)
           </p>
 
           <pre
@@ -332,10 +340,11 @@
 </code></pre>
 
           <p>
-            Next, create a <code>styles.css</code> file and add the following
-            CSS. It uses a simple
-            <a href="../flexbox/index.html">flexbox</a> technique to center the
-            header (and form) no matter how wide the browser window is:
+            Próximo, crie um arquivo <code>styles.css</code> e adicione a 
+            seguinte CSS. Usamos uma técnica simples de 
+            <a href="../flexbox/index.html">flexbox</a> para centralizar 
+            o cabeçalho (e o formulário) não importa quanto largo a janela 
+            do navegador seja:
           </p>
 
           <pre class="highlight"><code>* {
@@ -373,16 +382,15 @@
 }
 </code></pre>
 
-          <p>
-            Notice that we’re adhering to the
+          <p>Note que estamos aderindo a abordagem de 
             <a href="../responsive-design/index.html#mobile-first-development"
-              >mobile-first development</a
+              >desenvolvimento primeiro para dispositivos móveis</a
             >
-            approach that we discussed in the
-            <em>Responsive Design</em> chapter. These base CSS rules give us our
-            mobile layout and provide a foundation for the desktop layout, too.
-            We’ll create the media query for a fixed-width desktop layout later
-            in the chapter.
+            que discutimos no capítulo de <em>Design Responsivo</em>. Essas
+            regras CSS básicas proveem um layout para dispositivos móveis uma
+            base para o layout para desktop, também. Criaremos uma 
+            <em>media query</em> para um layout desktop com largura fixa
+            posteriormente nesse capítulo.
           </p>
         </div>
       </div>
@@ -391,19 +399,19 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="html-forms">
-              <span>HTML Forms</span>
+              <span>Formulários HTML</span>
             </h2>
           </div>
 
           <p>
-            On to forms! Every HTML form begins with the aptly named
-            <code>&lt;form&gt;</code> element. It accepts a
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
-              >number of attributes</a
-            >, but the most important ones are <code>action</code> and
-            <code>method</code>. Go ahead and add an empty form to our HTML
-            document, right under the <code>&lt;header&gt;</code>:
+            Vamos aos formulários! Todo formulário na HTML inicia com
+            o elemento, apropriado, <code>&lt;form&gt;</code>. Ele 
+            aceita uma <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+            >série de atributos</a
+            >, mas os mais importantes são <code>action</code> e 
+            <code>method</code>. Vamos lá, adicione um formulário vazio 
+            ao nosso documento HTML, bem abaixo do <code>&lt;header&gt;</code>:
           </p>
 
           <pre
@@ -413,15 +421,16 @@
 </code></pre>
 
           <p>
-            The <code>action</code> attribute defines the URL that processes the
-            form. It’s where the input collected by the form is sent when the
-            user clicks the <strong>Submit</strong> button. This is typically a
-            special URL defined by your web server that knows how to process the
-            data. Common backend technologies for processing forms include
-            <a href="https://nodejs.org/en/">Node.js</a>,
+            O atributo <code>action</code> define a URL que processará o 
+            formulário. É para onde a entrada de dados capturada pelo 
+            formulário será enviada quando o usuário clicar no botão
+            <code>Enviar</code>. Isso é tipicamente uma URL especial definida
+            pelo nosso servidor web que sabe como processar o dado. Algumas 
+            tecnologias (<em>backend</em>) para processar os formulários 
+            são: <a href="https://nodejs.org/en/">Node.js</a>,
             <a href="http://php.net/">PHP</a>, and
-            <a href="http://rubyonrails.org/">Ruby on Rails</a>, but again,
-            we’ll be focusing on the frontend in this chapter.
+            <a href="http://rubyonrails.org/">Ruby on Rails</a>, mas novamente,
+            vamos focar somente no <em>frontend</em> nesse capítulo.
           </p>
 
           <figure class="diagram">
@@ -442,41 +451,43 @@
           </figure>
 
           <p>
-            The <code>method</code> attribute can be either
+            O atributo <code>method</code> pode ser tanto um 
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"
               ><code>post</code></a
-            >
-            or
+            > ou um
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
               ><code>get</code></a
-            >, both of which define how the form is submitted to the backend
-            server. This is largely dependent on how your web server wants to
-            handle the form, but the general rule of thumb is to use
-            <code>post</code> when you’re <em>changing</em> data on the server,
-            reserving <code>get</code> for when you’re only
-            <em>getting</em> data.
+            > (é interessante ressaltar que esses são métodos nativos do 
+            protocolo HTTP, por isso eles não receberão tradução neste tutorial),
+            ambos definem como o formulário será enviado para o servidor no 
+            <em>backend</em>. Isso é amplamente dependente de como seu servidor
+            quer tratar o formulário, mas a regra geral é utilizar o 
+            <code>post</code> quando você está <em>alterando</em> dados no 
+            servidor, e reservando o <code>get</code> para somente quando você
+            estiver realmente pegando dados.
           </p>
 
           <p>
-            By leaving the <code>action</code> attribute blank, we’re telling
-            the form to submit to the same URL. Combined with the
-            <code>get</code> method, this will let us inspect the contents of
-            the form.
+            AO deixar o atributo <code>action</code> em branco, estamos falando
+            ao formulário para enviar os dados para a mesma URL. Combinado
+            com o método <code>get</code>, isso vai permitir que nós 
+            inspecionemos o conteúdo do formulário.
           </p>
 
           <div class="subsubheading content__subsubheading">
             <h3 class="subsubheading__heading" id="styling-forms">
-              Styling Forms
+              Estilizando Formulários
             </h3>
           </div>
 
           <p>
-            Of course, we’re looking at an empty form right now, but that
-            doesn’t mean we can’t add some styles to it like we would a
-            container <code>&lt;div&gt;</code>. This will turn it into a box
-            that matches our <code>&lt;header&gt;</code> element:
+            É claro, estamos olhando para um formulário em branco nesse 
+            momento, mas isso não significa que não podemos adicionar 
+            algum estilo a ele como se tivéssemos um contêiner 
+            <code>&lt;div&gt;</code>. Isso irá transformá-lo em uma caixa
+            como o nosso elemento <code>&lt;header&gt;</code>:
           </p>
 
           <pre
@@ -498,14 +509,15 @@
         <div class="content__wrapper">
           <div class="subheading">
             <h2 class="subheading__heading" id="text-input-fields">
-              <span>Text Input Fields</span>
+              <span>Campos de Entrada de Texto</span>
             </h2>
           </div>
 
           <p>
-            To actually collect user input, we need a new tool: the
-            <code>&lt;input/&gt;</code> element. Insert the following into our
-            <code>&lt;form&gt;</code> to create a text field:
+            Para coletar dados de entrada do usuário, vamos precisar de uma
+            nova ferramenta: o elemento <code>&lt;input/&gt;</code>. Insira
+            o seguinte código dentro do elemento <code>&lt;form&gt;</code>
+            para criar um campo de texto:
           </p>
 
           <pre
